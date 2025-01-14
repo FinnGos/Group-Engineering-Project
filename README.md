@@ -8,4 +8,4 @@ Daniel - Only Coder
 Kadeem - Diversity
 Zey - Women in STEM
 Nickson - Testing Manager
-Finn - Panic Manager
+Finn - Insane - The definition of insane is trying something after failure, without changing anything. 60KG ;)
