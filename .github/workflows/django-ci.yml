@@ -10,7 +10,12 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]  # Run on both Ubuntu and Windows because i like to be a pain
+
+    runs-on: ${{ matrix.os }}
+
 
     services:
       postgres:
