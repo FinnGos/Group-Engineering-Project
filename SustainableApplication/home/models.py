@@ -33,7 +33,7 @@ class CustomUser(AbstractUser):
     """Custom user extends djangos abstract user which is a baseling user model.
     this allows us to add more fields that are associated with a user"""
 
-    points = models.IntegerField(default=0)
 
     def __str__(self):
         return self.username
+

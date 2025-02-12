@@ -12,13 +12,13 @@ from .forms import CustomUserCreationForm
 
 # Create your views here.
 @login_required
-def index(request):
+def home(request):
     """view function for home page of site"""
 
     context = {}
 
     # render HTML template index.HTML with all data in context variable
-    return render(request, "index.html", context=context)
+    return render(request, "home.html", context=context)
 
 
 def signup(request):

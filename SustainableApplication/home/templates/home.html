@@ -1,0 +1,43 @@
+<<<<<<< HEAD
+{%extends "base_generic.html" %} {%block content%}
+<h1>Sustainable Application Home</h1>
+<p>
+  main page of the application developed by
+  <em>Woman in STEM</em>
+</p>
+<h2>Content that can be altered by the models</h2>
+<p>User stats</p>
+<ul>
+  <li><strong>Name: </strong></li>
+  <li><strong>Coins: </strong></li>
+  <li><strong>Something else: </strong></li>
+</ul>
+<div class="col-sm-2">
+  {% block sidebar %}
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <!--Change the href to the view to access pages from a link on the website-->
+    <li><a href="">Account</a></li>
+    <li><a href="">Collectables</a></li>
+  </ul>
+  {% endblock %}
+</div>
+
+{%endblock%}
+=======
+{%extends "base_generic.html" %} {%block content%}
+<h1>Sustainable Application Home</h1>
+<p>
+  main page of the application developed by
+  <em>Woman in STEM</em>
+</p>
+<h2>Content that can be altered by the models</h2>
+<p>User stats</p>
+<ul>
+  <li><strong>Name: </strong></li>
+  <li><strong>Coins: </strong></li>
+  <li><strong>Something else: </strong></li>
+</ul>
+
+{%endblock%}
+>>>>>>> a1732b12d9874ca26334664b3c59fbf223ccc986
