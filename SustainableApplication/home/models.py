@@ -30,10 +30,7 @@ class Collectable(models.Model):
 
 
 class CustomUser(AbstractUser):
-    """Custom user extends djangos abstract user which is a baseling user model.
-    this allows us to add more fields that are associated with a user"""
-
+    """Extending AbstractUser in order to add points to a basic user"""
 
     def __str__(self):
         return self.username
-
