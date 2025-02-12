@@ -92,7 +92,7 @@ class UserAuthTests(TestCase):
     def test_duplicate_username(self):
         """Test that duplicate usernames are not allowed."""
         data = {
-            "username": self.username,  # Already exists
+            "username": self.username, 
             "email": "newemail@example.com",
             "password1": "AnotherPass789!",
             "password2": "AnotherPass789!",
@@ -105,7 +105,7 @@ class UserAuthTests(TestCase):
         """Test that duplicate emails are not allowed."""
         data = {
             "username": "uniqueuser",
-            "email": self.email,  # Already exists
+            "email": self.email,  
             "password1": "UniquePass123!",
             "password2": "UniquePass123!",
         }
