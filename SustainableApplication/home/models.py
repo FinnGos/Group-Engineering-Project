@@ -32,5 +32,7 @@ class Collectable(models.Model):
 class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
 
+    points = models.IntegerField(default=0)
+
     def __str__(self):
         return self.username
