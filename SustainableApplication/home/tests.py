@@ -4,8 +4,7 @@ from django.contrib.auth import get_user_model
 from home.models import Locations, Collectable, CustomUser
 from home.forms import CustomUserCreationForm
 
-
-
+#matt tests
 class LocationsModelTest(TestCase):
     def test_create_location(self):
         location = Locations.objects.create(name="Test Location")
