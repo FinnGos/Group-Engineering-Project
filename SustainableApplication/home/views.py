@@ -1,13 +1,11 @@
 from django.shortcuts import render, redirect
-from .models import Locations, Collectable, CustomUser
+from .models import CustomUser
 from django.views import generic
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm
-
-# FOR HASHING PLESAE USE make_password which is a module from django
 
 
 # Create your views here.

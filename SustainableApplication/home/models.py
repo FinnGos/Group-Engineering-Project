@@ -9,26 +9,6 @@ from django.db import models
 # Create your models here.
 
 
-# I don't know what should be in each model please change accordingly
-class Locations(models.Model):
-    """model associated with a location"""
-
-    name = models.CharField(max_length=200, unique=True)
-
-    # method to return name of location
-    def __str__(self):
-        return self.name
-
-
-class Collectable(models.Model):
-    """model associated with a collectable item"""
-
-    name = models.CharField(max_length=200, unique=True)
-
-    def __str__(self):
-        return self.name
-
-
 class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
 
