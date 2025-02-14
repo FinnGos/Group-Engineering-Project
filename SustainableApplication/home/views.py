@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, redirect
 from .models import Locations, Collectable, CustomUser
 from django.views import generic
