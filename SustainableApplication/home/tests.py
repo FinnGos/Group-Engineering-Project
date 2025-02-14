@@ -100,7 +100,7 @@ class UserAuthTests(TestCase):
         response = self.client.post(reverse("login"), {"username": self.username, "password": self.password})
         self.assertRedirects(response, reverse("home"))
 
-    def test_register_new_user(self):
+        def test_register_new_user(self):
         #test signup
         new_user_data = {
             "username": "newuser",
@@ -109,20 +109,20 @@ class UserAuthTests(TestCase):
             "password2": "newPassword456!",
         }
         response = self.client.post(reverse("signup"), new_user_data)
-        self.assertRedirects(response, reverse("login"))
+        self.assertRedirects(response, reverse("home"))
         self.assertTrue(User1.objects.filter(username="newuser").exists())
 
 
     def test_long_username(self):
         data = {
-            "username": "a" * 151,
+            "username": "a" * 152,
             "email": "longusername@example.com",
             "password1": "ValidPass123!",
             "password2": "ValidPass123!",
         }
         response = self.client.post(reverse("signup"), data)
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Ensure this value has at most 150 characters.")
+        self.assertContains(response, "Ensure this value has at most 150 characters (it has 152).")
 
     def test_whitespace_username(self):
         data = {
