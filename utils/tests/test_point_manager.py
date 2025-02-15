@@ -1,7 +1,7 @@
 import unittest
 from home.models import CustomUser
 from utils.point_manager import PointManager
-from utils.exceptions import NotEnoughPoints
+from utils.exceptions import NotEnoughPoints, NegativePoints
 
 class TestPointManager(unittest.TestCase):
     """Using pyunittest to test pointmanager class"""
@@ -27,7 +27,7 @@ class TestPointManager(unittest.TestCase):
             PointManager.subtract_points(self.user, 100)
 
         self.assertEqual(str(context.exception), "User does not have enough points to subtract")
-        self.assertEqual(context.exception.error_code, "POINTS_INSUFFICIENT")
+        self.assertEqual(context.exception.error_code, 1)
 
     def test_subtract_points_zero(self):
         """Test that subtracting zero points doesn't change the user's points."""
@@ -38,7 +38,7 @@ class TestPointManager(unittest.TestCase):
 
     def test_subtract_points_negative(self):
         """Test that subtracting negative points raises an exception."""
-        with self.assertRaises(ValueError): 
-            # Im not exactly sure how to handle this, we could raise a different exception
-            # but for now im leaving it as this
+        with self.assertRaises(NegativePoints) as context: 
             PointManager.subtract_points(self.user, -10)
+        self.assertEqual(str(context.exception), "Please do not use negative points")
+        self.assertEqual(context.exception.error_code, 2)

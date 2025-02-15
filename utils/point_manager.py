@@ -1,5 +1,5 @@
 from home.models import CustomUser
-from utils.exceptions import NotEnoughPoints
+from utils.exceptions import NotEnoughPoints, NegativePoints
 
 class PointManager:
     """Handles point management logic for users."""
@@ -7,7 +7,9 @@ class PointManager:
     @staticmethod
     def add_points(user, points):
         """Adds points to the user's current points AND all time points and saves it in the db."""
-        user.current_points += points  # Update the user's points
+        if points < 0:
+            raise NegativePoints(message = "Please do not use negative points")    # Update the user's points
+        user.current_points += points
         user.all_time_points += points #Update the user's all time points
         user.save()  # Save changes to the database
 
@@ -15,13 +17,16 @@ class PointManager:
     def subtract_points(user, points):
         """Subtracts points from the user's current points (never all time points) 
         and saves it in the db."""
+        if points < 0:
+            raise NegativePoints(message = "Please ensure you are using positive points",
+                                 error_code=2)
         if user.current_points >= points:
             user.current_points -= points  # Subtract the points from current points
             user.save()  # Save changes to the database
         else:
             # Raise custom exception with a specific message and error code
             raise NotEnoughPoints(message="User does not have enough points to subtract",
-                                  error_code="POINTS_INSUFFICIENT")
+                                  error_code=1)
 
 
     @staticmethod
