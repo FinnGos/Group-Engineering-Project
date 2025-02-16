@@ -1,0 +1,50 @@
+2025-02-16 19:22:54,908 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-16 19:22:55,935 [INFO] django.server: "GET / HTTP/1.1" 302 0
+2025-02-16 19:22:55,993 [INFO] django.server: "GET /accounts/login/ HTTP/1.1" 200 1424
+2025-02-16 19:22:56,065 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:23:05,325 [INFO] django.server: "POST /accounts/login/ HTTP/1.1" 302 0
+2025-02-16 19:23:05,343 [INFO] django.server: "GET /home/ HTTP/1.1" 200 1398
+2025-02-16 19:23:05,399 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:23:06,623 [INFO] django_auth: User logged out: matt3
+2025-02-16 19:23:06,623 [WARNING] django.request: Method Not Allowed (GET): /home/accounts/logout/
+2025-02-16 19:23:06,626 [WARNING] django.request: Method Not Allowed: /home/accounts/logout/
+2025-02-16 19:23:06,626 [WARNING] django.server: "GET /home/accounts/logout/ HTTP/1.1" 405 0
+2025-02-16 19:23:12,604 [INFO] django.server: "GET /home HTTP/1.1" 301 0
+2025-02-16 19:23:12,621 [INFO] django.server: "GET /home/ HTTP/1.1" 200 1398
+2025-02-16 19:23:12,677 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:23:15,139 [INFO] django_auth: User logged out: matt3
+2025-02-16 19:23:15,139 [WARNING] django.request: Method Not Allowed (GET): /home/accounts/logout/
+2025-02-16 19:23:15,139 [WARNING] django.request: Method Not Allowed: /home/accounts/logout/
+2025-02-16 19:23:15,143 [WARNING] django.server: "GET /home/accounts/logout/ HTTP/1.1" 405 0
+2025-02-16 19:23:18,983 [WARNING] django.request: Not Found: /login
+2025-02-16 19:23:18,983 [WARNING] django.server: "GET /login HTTP/1.1" 404 2819
+2025-02-16 19:23:25,773 [INFO] django_auth: User logged out: matt3
+2025-02-16 19:23:25,773 [WARNING] django.request: Method Not Allowed (GET): /home/accounts/logout/
+2025-02-16 19:23:25,773 [WARNING] django.request: Method Not Allowed: /home/accounts/logout/
+2025-02-16 19:23:25,773 [WARNING] django.server: "GET /home/accounts/logout/ HTTP/1.1" 405 0
+2025-02-16 19:23:31,323 [INFO] django.server: "GET /home/accounts/login/ HTTP/1.1" 200 1424
+2025-02-16 19:23:31,383 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:23:32,813 [INFO] django.server: "GET /home/signup/ HTTP/1.1" 200 2411
+2025-02-16 19:23:32,853 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:24:04,353 [WARNING] django_auth: Failed signup attempt.
+2025-02-16 19:24:04,359 [INFO] django.server: "POST /home/signup/ HTTP/1.1" 200 2530
+2025-02-16 19:24:04,383 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:24:24,063 [INFO] django_auth: New user signed up: matt9
+2025-02-16 19:24:24,073 [INFO] django.server: "POST /home/signup/ HTTP/1.1" 302 0
+2025-02-16 19:24:24,086 [INFO] django.server: "GET /home/ HTTP/1.1" 200 1394
+2025-02-16 19:24:24,128 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:24:25,504 [INFO] django_auth: User logged out: matt9
+2025-02-16 19:24:25,504 [WARNING] django.request: Method Not Allowed (GET): /home/accounts/logout/
+2025-02-16 19:24:25,504 [WARNING] django.request: Method Not Allowed: /home/accounts/logout/
+2025-02-16 19:24:25,504 [WARNING] django.server: "GET /home/accounts/logout/ HTTP/1.1" 405 0
+2025-02-16 19:28:39,852 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-16 19:28:41,885 [INFO] django.server: "GET / HTTP/1.1" 302 0
+2025-02-16 19:28:41,922 [INFO] django.server: "GET /accounts/login/ HTTP/1.1" 200 1424
+2025-02-16 19:28:42,012 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:28:52,962 [INFO] django.server: "POST /accounts/login/ HTTP/1.1" 302 0
+2025-02-16 19:28:52,982 [INFO] django.server: "GET /home/ HTTP/1.1" 200 1398
+2025-02-16 19:28:53,037 [WARNING] django.server: "GET /static/css/styles.css HTTP/1.1" 404 1969
+2025-02-16 19:29:00,625 [INFO] django_auth: User logged out: matt3
+2025-02-16 19:29:00,625 [WARNING] django.request: Method Not Allowed (GET): /home/accounts/logout/
+2025-02-16 19:29:00,625 [WARNING] django.request: Method Not Allowed: /home/accounts/logout/
+2025-02-16 19:29:00,625 [WARNING] django.server: "GET /home/accounts/logout/ HTTP/1.1" 405 0
