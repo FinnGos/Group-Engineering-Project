@@ -8,7 +8,7 @@ class PointManager:
     def add_points(user, points):
         """Adds points to the user's current points AND all time points and saves it in the db."""
         if points < 0:
-            raise NegativePoints(message = "Please do not use negative points")    # Update the user's points
+            raise NegativePoints(message = "Please do not use negative points", error_code=2)    # Update the user's points
         user.current_points += points
         user.all_time_points += points #Update the user's all time points
         user.save()  # Save changes to the database
