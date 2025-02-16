@@ -18,25 +18,34 @@ class TestPointManager(TestCase):
 
     def test_subtract_points_success(self):
         """Test that points are correctly subtracted."""
+        initial_all_time_points = self.user.all_time_points
         PointManager.subtract_points(self.user, 20)
         self.user.refresh_from_db()  # Refresh the user instance to get updated points
         self.assertEqual(self.user.current_points, 30)
+        self.assertEqual(self.user.all_time_points, initial_all_time_points)
 
     def test_subtract_points_not_enough(self):
         """Test that NotEnoughPoints exception is raised if points are insufficient."""
+        initial_points = self.user.current_points
+        initial_all_time_points = self.user.all_time_points
+        
         with self.assertRaises(NotEnoughPoints) as context:
             PointManager.subtract_points(self.user, 123)
 
         # Assert the exception message and error code
         self.assertEqual(str(context.exception), "User does not have enough points to subtract (Error Code: 1)")
         self.assertEqual(context.exception.error_code, 1)
+        self.assertEqual(self.user.current_points, initial_points)
+        self.assertEqual(self.user.all_time_points, initial_all_time_points)
 
     def test_subtract_points_zero(self):
         """Test that subtracting zero points doesn't change the user's points."""
         initial_points = self.user.current_points
+        initial_all_time_points = self.user.all_time_points
         PointManager.subtract_points(self.user, 0)
         self.user.refresh_from_db()
-        self.assertEqual(self.user.current_points, initial_points)  # Points should remain unchanged
+        self.assertEqual(self.user.current_points, initial_points)  # Points should remain unchange
+        self.assertEqual(self.user.all_time_points, initial_all_time_points)
 
     def test_subtract_points_negative(self):
         """Test that subtracting negative points raises an exception."""
@@ -54,7 +63,13 @@ class TestPointManager(TestCase):
 
     def test_add_points_negative(self):
         """Test that adding negative points raises an exception"""
+        initial_points = self.user.current_points
+        initial_all_time_points = self.user.all_time_points
         with self.assertRaises(NegativePoints) as context:
             PointManager.add_points(self.user, -10)
         self.assertEqual(str(context.exception), "Please do not use negative points (Error Code: 2)")
         self.assertEqual(context.exception.error_code, 2) 
+        self.assertEqual(self.user.current_points, initial_points)  # Points should remain unchange
+        self.assertEqual(self.user.all_time_points, initial_all_time_points)
+
+
