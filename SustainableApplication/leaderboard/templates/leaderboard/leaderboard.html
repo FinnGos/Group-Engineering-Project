@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        .leaderboard {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .rank-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .rank-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .name {
+            font-size: 18px;
+        }
+        .points {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div class="leaderboard">
+        {% for entry in ranked_users %}
+            <div class="rank-item">
+                <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %} - </span>
+                <span class="name">{{ entry.user.name }}</span>
+                <span class="points"> - {{ entry.user.points }} pts</span>
+            </div>
+        {% empty %}
+            <p>No users found.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
