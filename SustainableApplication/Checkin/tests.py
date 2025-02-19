@@ -4,12 +4,18 @@ from django.urls import reverse
 class ViewsTestCase(TestCase):
     """Test the check-in button"""
     def test_get_location_success(self):
+        """
+        Tests a successful case of location check
+        """
         response = self.client.get(reverse('get_location'), {'lat': '40.7128', 'lon': '-74.0060'})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Check-In Successful! Lat: 40.7128, Lon: -74.0060')
         self.assertTemplateUsed(response, 'index.html')
 
     def test_get_location_missing_params(self):
+        """
+        Tests
+        """
         response = self.client.get(reverse('get_location'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
