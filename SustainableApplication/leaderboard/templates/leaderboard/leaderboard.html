@@ -23,8 +23,11 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .rank-item {
+            display: flex;
+            justify-content: space-between;
             padding: 10px;
             border-bottom: 1px solid #ddd;
+            text-align: left;
         }
         .rank-item:last-child {
             border-bottom: none;
@@ -32,11 +35,14 @@
         .rank {
             font-weight: bold;
             color: #2c3e50;
+            margin-right: 10px;
         }
         .name {
-            font-size: 18px;
+            flex-grow: 1;
+            text-align: left;
         }
         .points {
+            text-align: right;
             color: #888;
         }
     </style>
@@ -46,9 +52,9 @@
     <div class="leaderboard">
         {% for entry in ranked_users %}
             <div class="rank-item">
-                <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %} - </span>
+                <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %}</span>
                 <span class="name">{{ entry.user.name }}</span>
-                <span class="points"> - {{ entry.user.points }} pts</span>
+                <span class="points">{{ entry.user.all_time_points }} pts</span>
             </div>
         {% empty %}
             <p>No users found.</p>
