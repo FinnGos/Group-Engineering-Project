@@ -1,13 +1,78 @@
-{%extends "base_generic.html" %} {%block content%}
-<h1>Tasks</h1>
-<p>
-  Tasks that can be completed
-</p>
-<h2>Content that can be altered by the models</h2>
-<p>Tasks</p>
-<ul>
-  <li><strong>Name: </strong></li>
-  <li><strong>Coins: </strong></li>
-  <li><strong>Something else: </strong></li>
-</ul>
-{%endblock%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Progress</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <h2>Tasks that can be completed</h2>
+
+    {% if tasks %}
+    <ul>
+      {% for task in tasks %}
+      <li>
+        <strong>{{ task.task_name }}</strong>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div
+            class="progress-bar"
+            id="progress-bar-{{ task.id }}"
+            style="width: {{ task.progress_percentage }}%;"
+          >
+            {{ task.current_progress }}/{{ task.target }}
+          </div>
+        </div>
+
+        <!-- Buttons to Update Progress -->
+        <button
+          class="btn btn-decrease"
+          onclick="updateProgress({{ task.id }}, 'decrease')"
+        >
+          -
+        </button>
+        <button
+          class="btn btn-increase"
+          onclick="updateProgress({{ task.id }}, 'increase')"
+        >
+          +
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No tasks available to complete.</p>
+    {% endif %}
+
+    <script>
+      function updateProgress(taskId, action) {
+        $.ajax({
+          url: "/tasks/update_progress/" + taskId + "/" + action + "/",
+          type: "POST",
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token for security
+          success: function (response) {
+            if (response.success) {
+              let progressBar = document.getElementById(
+                "progress-bar-" + taskId
+              );
+              progressBar.style.width = response.new_progress + "%";
+              progressBar.innerText =
+                response.current_progress + "/" + response.target;
+            } else {
+              alert(response.message);
+            }
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
