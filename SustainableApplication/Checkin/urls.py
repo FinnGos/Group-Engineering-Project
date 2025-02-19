@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-#defining URL patterns for the application. Map the URL path 'get location/' view function
+# Defining URL patterns for the application. Map the URL path 'get location/' view function
 urlpatterns = [
     path('get_Location/', views.get_location, name='get_location'),
 ]
