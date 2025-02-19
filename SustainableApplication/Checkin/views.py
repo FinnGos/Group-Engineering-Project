@@ -1,7 +1,6 @@
 from django.http import HttpResponseBadRequest
 from django.shortcuts import render
 
-# Handle get requests and extract latitude and longitude
 def get_location(request):
     """Method that displays the checkin page and gets the location of the user 
 
