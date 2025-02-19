@@ -3,6 +3,15 @@ from django.shortcuts import render
 
 # Handle get requests and extract latitude and longitude
 def get_location(request):
+    """Method that displays the checkin page and gets the location of the user 
+
+    Args:
+        request (HttpRequest): The incoming HTTP request.
+
+    Returns:
+        HttpResponse: checkin_page.html with the location data if valid.
+        HttpResponseBadRequest: A 400 response if the latitude or longitude is invalid.
+    """
     lat = request.GET.get("lat")
     lon = request.GET.get("lon")
 
@@ -25,7 +34,7 @@ def get_location(request):
             return render(request, "checkin_page.html", context)
         # If the location data is not in the correct range: 
         return HttpResponseBadRequest("Invalid location data.")
-       # If user doesnt allow us to acces their data: 
+       # If user doesnt allow us to access their data: 
     context = {
         "message": "Unfortunately, we need you to share your location with us to continue playing the game :(, if you have any concerns about sharing your location with us, you can review our terms and conditions page"
     }
