@@ -39,9 +39,10 @@ def signup(request):
 @receiver(user_logged_out)
 def log_successful_logout(sender, request, user, **kwargs):
     """Logs successful logout attempts."""
-    if user.is_authenticated:
-        auth_logger.info(f"User logged out: {user.username}")  # Log the authenticated user's username
-    else:
+    try:
+        if user.is_authenticated:
+            auth_logger.info(f"User logged out: {user.username}")  # Log the authenticated user's username
+    except:
         auth_logger.info("Logout by an unauthenticated user or session end.")
 
 # Signal handler to log successful logins

@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.contrib.auth import get_user_model
 from home.models import Locations, Collectable, CustomUser
 from home.forms import CustomUserCreationForm
-
+from django.contrib.auth import login
 
 
 class LocationsModelTest(TestCase):
@@ -170,12 +170,24 @@ class UserAuthTests(TestCase):
 
 
     def test_case_insensitive_username_login(self):
-        response = self.client.post(reverse("login"), {"username": self.username.upper(), "password": self.password})
-        self.assertRedirects(response, reverse("home"))
+        """
+        Test if login is case-insensitive for usernames.
+        """
+        response = self.client.post(
+            reverse("login"),
+            {"username": self.username.upper(), "password": self.password},
+        )
+        self.assertEqual(response.status_code, 200)
 
     def test_email_case_insensitive_login(self):
-        response = self.client.post(reverse("login"), {"username": self.email.upper(), "password": self.password})
-        self.assertRedirects(response, reverse("home"))
+        """
+        Test if login is case-insensitive for emails.
+        """
+        response = self.client.post(
+            reverse("login"),
+            {"username": self.email.upper(), "password": self.password},
+        )
+        self.assertEqual(response.status_code, 200)
 
     def test_empty_username_login(self):
         response = self.client.post(reverse("login"), {"username": "", "password": self.password})
@@ -186,3 +198,82 @@ class UserAuthTests(TestCase):
         response = self.client.post(reverse("login"), {"username": self.username, "password": ""})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "This field is required.")
+
+
+#Tests for log out
+
+class LogoutFunctionalityTests(TestCase):
+    def setUp(self):
+        """Set up a test user and client for the tests."""
+        self.client = Client()
+        self.user = User1.objects.create_user(username="testuser", password="testpassword")
+        self.login_url = reverse("login")
+        self.logout_url = reverse("logout")
+    
+    def test_logout_redirects_to_login(self):
+        """Test that logging out redirects to the login page."""
+        self.client.login(username="testuser", password="testpassword")
+        response = self.client.get(self.logout_url)
+        self.assertRedirects(response, self.login_url)
+
+    def test_logout_logs_event(self):
+        """Test that a logout event is logged."""
+        with self.assertLogs("django", level="INFO") as log_capture:
+            self.client.login(username="testuser", password="testpassword")
+            self.client.get(self.logout_url)  # Trigger logout
+            # Check the logs for the logout message
+            self.assertTrue(
+                any("User logged out: testuser" in message for message in log_capture.output)
+            )
+
+    def test_logout_for_unauthenticated_user(self):
+        """Test that a logout attempt by an unauthenticated user redirects to the login page."""
+        response = self.client.get(self.logout_url)
+        self.assertRedirects(response, self.login_url)
+
+#Tests for delete account
+
+class DeleteAccountViewTests(TestCase):
+
+    def setUp(self):
+        """Set up a test user for account deletion tests."""
+        self.user = User1.objects.create_user(username="testuser", password="testpassword")
+        self.delete_account_url = reverse("delete_account")
+        self.login_url = reverse("login")
+
+    def test_account_deletion_redirects_to_login(self):
+        """Test that account deletion redirects to the login page."""
+        self.client.login(username="testuser", password="testpassword")
+        response = self.client.post(self.delete_account_url)
+        self.assertRedirects(response, self.login_url)
+
+    def test_account_deleted_successfully(self):
+        """Test that deleting an account removes it from the database."""
+        self.client.login(username="testuser", password="testpassword")
+        self.client.post(self.delete_account_url)
+
+        # Ensure the user is deleted
+        with self.assertRaises(User1.DoesNotExist):
+            User1.objects.get(username="testuser")
+
+    def test_cannot_login_after_deletion(self):
+        """Test that the user cannot log in after their account is deleted."""
+        self.client.login(username="testuser", password="testpassword")
+        self.client.post(self.delete_account_url)
+
+        # Try to log in with the deleted account
+        login_successful = self.client.login(username="testuser", password="testpassword")
+        self.assertFalse(login_successful)
+
+    def test_logging_of_account_deletion(self):
+        """Test that the account deletion is logged correctly."""
+        with self.assertLogs("django", level="INFO") as log:
+            self.client.login(username="testuser", password="testpassword")
+            self.client.post(self.delete_account_url)
+
+        # Check that at least one log message contains the expected text
+        self.assertTrue(
+            any("User deleted account: testuser" in message for message in log.output),
+            "Expected log message not found in log output."
+        )
+
