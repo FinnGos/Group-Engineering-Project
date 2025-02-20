@@ -15,9 +15,13 @@
   <li><strong>Email: </strong> {{ user.email }}</li>
 </ul>
 
+
 <p>
-  Welcome back, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a>
+  Welcome back, {{ user.username }}! 
+  <a href="{% url 'logout' %}">Logout</a> | 
+  <a href="{% url 'delete_account' %}">Delete Account</a>
 </p>
+
 {% else %}
 <p>
   <a href="{% url 'login' %}">Login</a> or <a href="{% url 'signup' %}">Sign Up</a> to track your stats!

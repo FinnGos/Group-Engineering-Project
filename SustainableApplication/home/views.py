@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm  # Import default user cr
 from django.contrib.auth.views import LoginView, LogoutView  # Import Django’s built-in login and logout views
 from django.contrib.auth.decorators import login_required  # Import decorator to restrict views to logged-in users
 from .forms import CustomUserCreationForm  # Import custom user signup form
-from django.contrib.auth.signals import user_logged_in, user_login_failed  # Import authentication signals
+from django.contrib.auth.signals import user_logged_in, user_login_failed, user_logged_out  # Import authentication signals
 from django.dispatch import receiver  # Import receiver to connect functions to signals
 
 # Set up a logger for authentication events
@@ -36,6 +36,14 @@ def signup(request):
     
     return render(request, "registration/signup.html", {"form": form})  # Render signup template with form
 
+@receiver(user_logged_out)
+def log_successful_logout(sender, request, user, **kwargs):
+    """Logs successful logout attempts."""
+    if user.is_authenticated:
+        auth_logger.info(f"User logged out: {user.username}")  # Log the authenticated user's username
+    else:
+        auth_logger.info("Logout by an unauthenticated user or session end.")
+
 # Signal handler to log successful logins
 @receiver(user_logged_in)
 def log_successful_login(sender, request, user, **kwargs):
@@ -60,4 +68,12 @@ class CustomLogoutView(LogoutView):
         """Logs logout event if the user is authenticated."""
         if request.user.is_authenticated:  # Check if user is logged in before logging the event
             auth_logger.info(f"User logged out: {request.user.username}")  # Log the logout event
-        return super().dispatch(request, *args, **kwargs)  # Continue with default logout behavior
+        return redirect("login")  # Continue with default logout behavior
+
+def delete_account(request):
+    """View to delete the logged-in user's account."""
+    user = request.user
+    auth_logger.info(f"User deleted account: {user.username}")
+    user.delete()
+    return redirect("login")  
+
