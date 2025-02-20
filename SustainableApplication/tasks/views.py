@@ -27,7 +27,7 @@ def update_progress(request, task_id, action):
     return JsonResponse(
         {
             "success": True,
-            "new_progress": task.progress_percentage,
+            "new_progress": (task.current_progress / task.target) * 100,
             "current_progress": task.current_progress,
             "target": task.target,
         }

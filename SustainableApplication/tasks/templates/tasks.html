@@ -56,9 +56,11 @@
     <script>
       function updateProgress(taskId, action) {
         $.ajax({
-          url: "/tasks/update_progress/" + taskId + "/" + action + "/",
+          url: "{% url 'update_progress' 1 'increase' %}"
+            .replace("1", taskId)
+            .replace("increase", action),
           type: "POST",
-          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token for security
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
           success: function (response) {
             if (response.success) {
               let progressBar = document.getElementById(
