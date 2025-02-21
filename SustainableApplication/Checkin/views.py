@@ -1,6 +1,8 @@
 from django.http import HttpResponseBadRequest
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def get_location(request):
     """Method that displays the checkin page and gets the location of the user 
 

@@ -1,63 +1,38 @@
-
 <!-- this is an HTML page for a check-in system that uses geolocation 
 to get the user's location and send it to the Django backend. -->
+
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/button.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check-In Page</title>
-    <style>
-         /* Styling for the entire page */
-        body {
-            background-color: pink; /* Sets the background color */
-            display: flex; /* Uses flexbox for layout */
-            flex-direction: column;  
-            justify-content: center; /* Centers content vertically */
-            align-items: center; /* Centers content horizontally */
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-
-        h1 {
-            /* Styling for the heading */
-            color: white;
-        }
-
-        button {
-            background-color: orange;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 8px; /* Rounds the button corners */
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        /* Button hover effect */
-        button:hover {
-            background-color: rgb(179, 14, 80);
-        }
-    </style>
 </head>
 <body>
     <h1>Check-In System</h1>
     <!-- Django template logic to display messages -->
     {% if message %}
-        <p style="color: green;">{{ message }}</p>
+        <p class="success-message">{{ message }}</p>
     {% elif error %}
-        <p style="color: red;">{{ error }}</p>
+        <p class="error-message">{{ error }}</p>
     {% endif %}
 
     <script>
         function getLocation() {
-            // Check if the browser supports geolocation
+            /**
+                * getLocation - Retrieves the user's current geographic location using the browser's geolocation API.
+                * 
+                * If geolocation is supported on the users browser then it will fetch the users longitiude and latitude. If not supported, an error will pop up.
+                * 
+                * Calls the position function to get the longitude and latitude of the user.
+                * 
+                * Redirects the user using their longitude and latitude.
+                */
             if (navigator.geolocation) {
-                // Get the user's location
                 navigator.geolocation.getCurrentPosition(function(position) {
-                    // Redirect the user to the Django view with latitude and longitude as parameters
                     window.location.href = `/get_Location/?lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
                 });
             } else {

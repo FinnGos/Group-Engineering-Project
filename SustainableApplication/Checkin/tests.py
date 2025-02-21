@@ -82,3 +82,51 @@ class ViewsTestCase(TestCase):
         response = self.client.get(reverse('get_location'), {'lat': '-90.1', 'lon': '-180.1'})
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lat_below_minimum_values(self):
+        """
+        Tests lat going over minimum
+        """
+        response = self.client.get(reverse('get_location'), {'lat': '-90.1', 'lon': '0'})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lon_below_minimum_values(self):
+        """
+        Tests lon going over minimum
+        """
+        response = self.client.get(reverse('get_location'), {'lat': '0', 'lon': '-180.1'})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lat_above_maximum_values(self):
+        """
+        Tests lat going over maximum
+        """
+        response = self.client.get(reverse('get_location'), {'lat': '90.1', 'lon': '0'})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lon_above_maximum_values(self):
+        """
+        Tests lon going over maximum
+        """
+        response = self.client.get(reverse('get_location'), {'lat': '0', 'lon': '180.1'})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lat_invalid_values(self):
+            """
+            Tests if lat is an invalid type is given
+            """
+            response = self.client.get(reverse('get_location'), {'lat': 'abc', 'lon': '0'})
+            self.assertEqual(response.status_code, 400)
+            self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    def test_get_location_lon_invalid_values(self):
+        """
+        Tests if lon is an invalid type is given
+        """
+        response = self.client.get(reverse('get_location'), {'lat': '0', 'lon': 'xyz'})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.content.decode(), 'Invalid location data.')
