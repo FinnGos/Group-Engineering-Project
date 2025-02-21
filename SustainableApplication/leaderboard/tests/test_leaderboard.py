@@ -11,6 +11,8 @@ class LeaderboardTest(TestCase):
         CustomUser.objects.create(username="Eve", all_time_points=200)
 
     def test_leaderboard_order(self):
+        """By creating a list of what the value SHOULD be, we can run
+        our leaderboard and see if they get placed correctly"""
         response = self.client.get('/leaderboard/') 
         self.assertEqual(response.status_code, 200)
 
@@ -26,7 +28,7 @@ class LeaderboardTest(TestCase):
         ]
 
         for i, entry in enumerate(ranked_users):
-            self.assertEqual(entry['user'].username, expected_order[i][0])
+            self.assertEqual(entry['user'].username, expected_order[i][0]) #Ensure users are in the expected order
             self.assertEqual(entry['user'].all_time_points, expected_order[i][1])
 
     def test_same_rank_for_same_points(self):
