@@ -12,7 +12,7 @@ There are many cards to collect, points to earn, and fun facts to be learned, so
 
 ## How to Play:
 - **Explore**🌍 – Follow the treasure hunts and discover sustainability hotspots.
-- **Complete Quests**✅ – Take on eco-friendly challenges daily, weekly, and as part of the larger community, reviewed by our gamemaster Dr. Colum Bailey.
+- **Complete Quests**✅ – Take on eco-friendly challenges daily, weekly, and as part of the larger community, reviewed by our gamemaster Colum Bailey.
 - **Collect and Learn**🏆 – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.
 - **Climb the Leaderboard**🚀 – Compete with friends and prove you’re the ultimate CarboCollector.
 
