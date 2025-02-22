@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "home.apps.HomeConfig",
-    "tasks.app.TasksConfig",
-    "Checkin.app.CheckinConfig",
+    "tasks.apps.TasksConfig",
+    "Checkin.apps.CheckinConfig",
 ]
 
 MIDDLEWARE = [
