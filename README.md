@@ -46,7 +46,7 @@ Follow these steps to get the app running locally:
    First, get the code from our GitHub repository:
    ```bash
    git clone https://github.com/FinnGos/Group-Engineering-Project.git
-```
+	```
 
 
 ## Setting Up Dependencies 
@@ -77,8 +77,8 @@ pip install -r requirements.txt
 1. In order to run the server, navigate to the folder with manage.py (SustainableApplication/SustainableApplication)
 	and run the following 
 	```bash 
-python3 manage.py runserver
-```
+	python3 manage.py runserver
+	```
 	Please note that if this does not work you may need to use python instead of python3
 
 	This starts the app on http://127.0.0.1:8000 (localhost).
