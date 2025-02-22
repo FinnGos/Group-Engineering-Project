@@ -1,4 +1,4 @@
-{% load static %}
+button{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,18 +33,28 @@
           </div>
         </div>
 
-        <!-- Buttons to Update Progress -->
+        <!-- Checkin button -->
+        {%if task.id%}
+        <p>Task ID: {{task.id}}</p>
+        <!--Debugging-->
+        <form action="{%url 'get_location' task.id%}" method="GET">
+          <button type="submit" class="btn btn-primary">Check In</button>
+        </form>
+        {%else%}
+        <p>error no task id</p>
+        {%endif%}
         <button
-          class="btn btn-decrease"
-          onclick="updateProgress({{ task.id }}, 'decrease')"
+          id="claim-button"
+          class="btn btn-success"
+          {%
+          if
+          not
+          task.has_checked_in
+          %}disabled{%
+          endif
+          %}
         >
-          -
-        </button>
-        <button
-          class="btn btn-increase"
-          onclick="updateProgress({{ task.id }}, 'increase')"
-        >
-          +
+          Claim
         </button>
       </li>
       {% endfor %}
