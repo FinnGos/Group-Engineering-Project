@@ -4,56 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 40px;
-        }
-        h1 {
-            color: #333;
-        }
-        .leaderboard {
-            width: 50%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .rank-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-        .rank-item:last-child {
-            border-bottom: none;
-        }
-        .rank {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-right: 10px;
-        }
-        .name {
-            flex-grow: 1;
-            text-align: left;
-        }
-        .points {
-            text-align: right;
-            color: #888;
-        }
-    </style>
+
+    <!-- Load Static Files -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'leaderboard/styles.css' %}">
 </head>
 <body>
     <h1>Leaderboard</h1>
     <div class="leaderboard">
-        {% for entry in ranked_users %}
+        {% for entry in ranked_users|slice:":20" %}
             <div class="rank-item">
                 <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %}</span>
-                <span class="name">{{ entry.user.name }}</span>
+                <span class="name">{{ entry.user.username }}</span>
                 <span class="points">{{ entry.user.all_time_points }} pts</span>
             </div>
         {% empty %}

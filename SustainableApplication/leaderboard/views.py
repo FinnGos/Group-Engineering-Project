@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 from home.models import CustomUser
 
+@login_required(login_url='/accounts/login/')  # Redirects unauthenticated users
 def leaderboard(request):
-    # Order users by points descending, then by username ascending
     users = CustomUser.objects.all().order_by('-all_time_points', 'username')  
     ranked_users = []
     
@@ -13,7 +14,7 @@ def leaderboard(request):
     for user in users:
         actual_rank += 1
         if user.all_time_points != last_points:
-            rank = actual_rank  # Update rank only when points change
+            rank = actual_rank
         ranked_users.append({'rank': rank, 'user': user})
         last_points = user.all_time_points
 
