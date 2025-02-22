@@ -78,6 +78,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'location_db': {  #the new database
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'location_db',
     }
 }
 
@@ -128,3 +132,4 @@ AUTH_USER_MODEL = "home.CustomUser"
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/home/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
+CHECKIN_URL = "/get_Location/"
