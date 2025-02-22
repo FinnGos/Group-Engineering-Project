@@ -3,7 +3,7 @@ from django.urls import reverse
 from home.models import CustomUser
 
 class LeaderboardTest(TestCase):
-    def setUp(self):
+   def setUp(self):
         self.user = CustomUser.objects.create_user(username="testuser", password="testpass")
         self.client.force_login(self.user)
 
@@ -12,14 +12,21 @@ class LeaderboardTest(TestCase):
         CustomUser.objects.create(username="Charlie", all_time_points=100)
         CustomUser.objects.create(username="David", all_time_points=300)
         CustomUser.objects.create(username="Eve", all_time_points=200)
+        
+   def test_leaderboard_order(self):
+      """Test users appear in correct order"""
+      response = self.client.get('/leaderboard/') 
+      self.assertEqual(response.status_code, 200)  # Now it should be 200
 
-        """
-        PLEASE NOTE:
-        the test written below is redundant and deprecated (can be removed after being reviewed)
-        this test has a paradox - it wants to test the leaderboard when there are NO users,
-        but in order to reach the leaderboard you must be logged in 
-        i believe this test to be pointless for this reason
-        """
+
+      
+
+     # PLEASE NOTE:
+       # the test written below is redundant and deprecated (can be removed after being reviewed)
+       # this test has a paradox - it wants to test the leaderboard when there are NO users,
+       # but in order to reach the leaderboard you must be logged in 
+       # i believe this test to be pointless for this reason
+
 
    ## def test_leaderboard_order(self):  
    ##     """Test users appear in correct order"""
