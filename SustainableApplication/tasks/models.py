@@ -7,6 +7,9 @@ class Tasks(models.Model):
     current_progress = models.IntegerField(default=0)
     target = models.IntegerField(default=0)
     reward = models.IntegerField(default=0)
+    # please change to forgein keys from loactions database in implementation
+    lat_location = models.FloatField(default=0)
+    long_location = models.FloatField(default=0)
     completed = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
