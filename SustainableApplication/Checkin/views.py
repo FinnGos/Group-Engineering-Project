@@ -29,8 +29,8 @@ def get_location(request):
             return HttpResponseBadRequest("Invalid location data.")
         
         # Redirect to the database_location view for validation
-        return redirect('database_location', lat=user_lat, lon= user_lon)
-    
+        return database_location(request)
+        
        # If user doesnt allow us to access their data: 
     context = {
         "message": "We need you to share your location with us to continue playing the game, if you have any concerns about sharing your location with us, you can review our terms and conditions page"
@@ -59,8 +59,10 @@ def database_location(request):
         return HttpResponseBadRequest("Invalid location data.")
 
     # Check locations in the database (location_db)
-    locations = Location.objects.all()
+    locations = Location.objects.using('location_db').all()
+    print("Locations in DB:", list(locations))
     for location in locations:
+
         location_coords = (location.latitude, location.longitude)
         user_coords = (user_lat, user_lon)
         distance = geodesic(location_coords, user_coords).meters
@@ -73,7 +75,6 @@ def database_location(request):
             }
             return render(request, "checkin_page.html", context)
         return HttpResponseBadRequest("You are not in the correct location(ｕ_ｕ*)")
-    #return  HttpResponseBadRequest("You are not in the valid location")
-    
-    
+    return HttpResponseBadRequest("You are not in the valid location")
+ 
     
