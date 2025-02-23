@@ -1,406 +1,62 @@
-django.request ERROR 2025-02-20 18:03:41,978 log 28540 8300 Internal Server Error: /accounts/logout/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 137, in dispatch
-    return super().dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 141, in post
-    auth_logout(request)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\__init__.py", line 170, in logout
-    user_logged_out.send(sender=user.__class__, request=request, user=user)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
-    response = receiver(signal=self, sender=sender, **named)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 42, in log_successful_logout
-    if user.is_authenticated:
-       ^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'is_authenticated'
-django INFO 2025-02-20 18:03:42,940 views 28540 8300 User logged in: testuser
-django INFO 2025-02-20 18:03:42,940 views 28540 8300 User deleted account: testuser
-django INFO 2025-02-20 18:03:43,557 views 28540 8300 User logged in: testuser
-django INFO 2025-02-20 18:03:43,557 views 28540 8300 User deleted account: testuser
-django INFO 2025-02-20 18:03:44,174 views 28540 8300 User logged in: testuser
-django INFO 2025-02-20 18:03:44,174 views 28540 8300 User deleted account: testuser
-django INFO 2025-02-20 18:03:44,477 views 28540 8300 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:03:45,395 views 28540 8300 User deleted account: 
-django.request ERROR 2025-02-20 18:03:45,395 log 28540 8300 Internal Server Error: /home/accounts/delete_account/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 77, in delete_account
-    user.delete()
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\models.py", line 449, in delete
-    raise NotImplementedError(
-NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
-django INFO 2025-02-20 18:03:46,011 views 28540 8300 User logged in: testuser
-django INFO 2025-02-20 18:03:46,960 views 28540 8300 User logged in: newuser
-django INFO 2025-02-20 18:03:46,960 views 28540 8300 New user signed up: newuser
-django INFO 2025-02-20 18:03:47,576 views 28540 8300 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:03:48,210 views 28540 8300 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:03:49,551 views 28540 8300 User logged in: testuser
-django WARNING 2025-02-20 18:03:49,852 views 28540 8300 Failed signup attempt.
-django INFO 2025-02-20 18:03:50,799 views 28540 8300 User logged in: newuser
-django INFO 2025-02-20 18:03:50,799 views 28540 8300 New user signed up: newuser
-django WARNING 2025-02-20 18:03:51,099 views 28540 8300 Failed signup attempt.
-django INFO 2025-02-20 18:03:51,716 views 28540 8300 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:03:52,048 views 28540 8300 Failed signup attempt.
-django WARNING 2025-02-20 18:03:52,363 views 28540 8300 Failed signup attempt.
-django.request ERROR 2025-02-20 18:06:11,553 log 13988 14700 Internal Server Error: /accounts/logout/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 137, in dispatch
-    return super().dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 141, in post
-    auth_logout(request)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\__init__.py", line 170, in logout
-    user_logged_out.send(sender=user.__class__, request=request, user=user)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
-    response = receiver(signal=self, sender=sender, **named)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 42, in log_successful_logout
-    if user.is_authenticated:
-       ^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'is_authenticated'
-django INFO 2025-02-20 18:06:12,539 views 13988 14700 User logged in: testuser
-django INFO 2025-02-20 18:06:12,539 views 13988 14700 User deleted account: testuser
-django INFO 2025-02-20 18:06:13,213 views 13988 14700 User logged in: testuser
-django INFO 2025-02-20 18:06:13,213 views 13988 14700 User deleted account: testuser
-django INFO 2025-02-20 18:06:13,890 views 13988 14700 User logged in: testuser
-django INFO 2025-02-20 18:06:13,890 views 13988 14700 User deleted account: testuser
-django INFO 2025-02-20 18:06:14,205 views 13988 14700 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:06:15,167 views 13988 14700 User deleted account: 
-django.request ERROR 2025-02-20 18:06:15,167 log 13988 14700 Internal Server Error: /home/accounts/delete_account/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 77, in delete_account
-    user.delete()
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\models.py", line 449, in delete
-    raise NotImplementedError(
-NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
-django INFO 2025-02-20 18:06:15,818 views 13988 14700 User logged in: testuser
-django INFO 2025-02-20 18:06:16,793 views 13988 14700 User logged in: newuser
-django INFO 2025-02-20 18:06:16,793 views 13988 14700 New user signed up: newuser
-django INFO 2025-02-20 18:06:17,441 views 13988 14700 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:06:18,087 views 13988 14700 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:06:19,829 views 13988 14700 User logged in: testuser
-django WARNING 2025-02-20 18:06:20,304 views 13988 14700 Failed signup attempt.
-django INFO 2025-02-20 18:06:21,737 views 13988 14700 User logged in: newuser
-django INFO 2025-02-20 18:06:21,737 views 13988 14700 New user signed up: newuser
-django WARNING 2025-02-20 18:06:22,198 views 13988 14700 Failed signup attempt.
-django INFO 2025-02-20 18:06:23,180 views 13988 14700 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:06:23,690 views 13988 14700 Failed signup attempt.
-django WARNING 2025-02-20 18:06:24,207 views 13988 14700 Failed signup attempt.
-django.request ERROR 2025-02-20 18:07:42,435 log 14640 33048 Internal Server Error: /accounts/logout/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 137, in dispatch
-    return super().dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\views.py", line 141, in post
-    auth_logout(request)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\__init__.py", line 170, in logout
-    user_logged_out.send(sender=user.__class__, request=request, user=user)
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
-    response = receiver(signal=self, sender=sender, **named)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 42, in log_successful_logout
-    if user.is_authenticated:
-       ^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'is_authenticated'
-django INFO 2025-02-20 18:07:43,378 views 14640 33048 User logged in: testuser
-django INFO 2025-02-20 18:07:43,378 views 14640 33048 User deleted account: testuser
-django INFO 2025-02-20 18:07:43,996 views 14640 33048 User logged in: testuser
-django INFO 2025-02-20 18:07:43,996 views 14640 33048 User deleted account: testuser
-django INFO 2025-02-20 18:07:44,598 views 14640 33048 User logged in: testuser
-django INFO 2025-02-20 18:07:44,598 views 14640 33048 User deleted account: testuser
-django INFO 2025-02-20 18:07:44,897 views 14640 33048 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:07:45,816 views 14640 33048 User deleted account: 
-django.request ERROR 2025-02-20 18:07:45,816 log 14640 33048 Internal Server Error: /home/accounts/delete_account/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 77, in delete_account
-    user.delete()
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\models.py", line 449, in delete
-    raise NotImplementedError(
-NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
-django INFO 2025-02-20 18:07:46,433 views 14640 33048 User logged in: testuser
-django INFO 2025-02-20 18:07:47,367 views 14640 33048 User logged in: newuser
-django INFO 2025-02-20 18:07:47,367 views 14640 33048 New user signed up: newuser
-django INFO 2025-02-20 18:07:47,982 views 14640 33048 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:07:48,585 views 14640 33048 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:07:49,866 views 14640 33048 User logged in: testuser
-django WARNING 2025-02-20 18:07:50,182 views 14640 33048 Failed signup attempt.
-django INFO 2025-02-20 18:07:51,144 views 14640 33048 User logged in: newuser
-django INFO 2025-02-20 18:07:51,144 views 14640 33048 New user signed up: newuser
-django WARNING 2025-02-20 18:07:51,462 views 14640 33048 Failed signup attempt.
-django INFO 2025-02-20 18:07:52,188 views 14640 33048 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:07:52,563 views 14640 33048 Failed signup attempt.
-django WARNING 2025-02-20 18:07:52,926 views 14640 33048 Failed signup attempt.
-django INFO 2025-02-20 18:11:12,042 views 8984 11240 Logout by an unauthenticated user or session end.
-django INFO 2025-02-20 18:11:13,037 views 8984 11240 User logged in: testuser
-django INFO 2025-02-20 18:11:13,053 views 8984 11240 User deleted account: testuser
-django INFO 2025-02-20 18:11:13,671 views 8984 11240 User logged in: testuser
-django INFO 2025-02-20 18:11:13,682 views 8984 11240 User deleted account: testuser
-django INFO 2025-02-20 18:11:14,288 views 8984 11240 User logged in: testuser
-django INFO 2025-02-20 18:11:14,288 views 8984 11240 User deleted account: testuser
-django INFO 2025-02-20 18:11:14,590 views 8984 11240 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:11:15,537 views 8984 11240 User deleted account: 
-django.request ERROR 2025-02-20 18:11:15,537 log 8984 11240 Internal Server Error: /home/accounts/delete_account/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 78, in delete_account
-    user.delete()
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\models.py", line 449, in delete
-    raise NotImplementedError(
-NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
-django INFO 2025-02-20 18:11:16,168 views 8984 11240 User logged in: testuser
-django INFO 2025-02-20 18:11:17,089 views 8984 11240 User logged in: newuser
-django INFO 2025-02-20 18:11:17,089 views 8984 11240 New user signed up: newuser
-django INFO 2025-02-20 18:11:17,705 views 8984 11240 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:11:18,322 views 8984 11240 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:11:19,602 views 8984 11240 User logged in: testuser
-django WARNING 2025-02-20 18:11:19,917 views 8984 11240 Failed signup attempt.
-django INFO 2025-02-20 18:11:20,956 views 8984 11240 User logged in: newuser
-django INFO 2025-02-20 18:11:20,956 views 8984 11240 New user signed up: newuser
-django WARNING 2025-02-20 18:11:21,255 views 8984 11240 Failed signup attempt.
-django INFO 2025-02-20 18:11:21,886 views 8984 11240 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:11:22,202 views 8984 11240 Failed signup attempt.
-django WARNING 2025-02-20 18:11:22,502 views 8984 11240 Failed signup attempt.
-django INFO 2025-02-20 18:12:11,351 views 30644 33432 Logout by an unauthenticated user or session end.
-django INFO 2025-02-20 18:12:12,305 views 30644 33432 User logged in: testuser
-django INFO 2025-02-20 18:12:12,305 views 30644 33432 User deleted account: testuser
-django INFO 2025-02-20 18:12:12,916 views 30644 33432 User logged in: testuser
-django INFO 2025-02-20 18:12:12,916 views 30644 33432 User deleted account: testuser
-django INFO 2025-02-20 18:12:13,533 views 30644 33432 User logged in: testuser
-django INFO 2025-02-20 18:12:13,533 views 30644 33432 User deleted account: testuser
-django INFO 2025-02-20 18:12:13,851 views 30644 33432 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:12:15,130 views 30644 33432 User logged in: testuser
-django INFO 2025-02-20 18:12:16,095 views 30644 33432 User logged in: newuser
-django INFO 2025-02-20 18:12:16,095 views 30644 33432 New user signed up: newuser
-django INFO 2025-02-20 18:12:16,726 views 30644 33432 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:12:17,346 views 30644 33432 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:12:18,581 views 30644 33432 User logged in: testuser
-django WARNING 2025-02-20 18:12:18,915 views 30644 33432 Failed signup attempt.
-django INFO 2025-02-20 18:12:19,957 views 30644 33432 User logged in: newuser
-django INFO 2025-02-20 18:12:19,957 views 30644 33432 New user signed up: newuser
-django WARNING 2025-02-20 18:12:20,341 views 30644 33432 Failed signup attempt.
-django INFO 2025-02-20 18:12:21,039 views 30644 33432 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:12:21,380 views 30644 33432 Failed signup attempt.
-django WARNING 2025-02-20 18:12:21,713 views 30644 33432 Failed signup attempt.
-django INFO 2025-02-20 18:16:46,193 views 30956 20776 Logout by an unauthenticated user or session end.
-django INFO 2025-02-20 18:16:47,137 views 30956 20776 User logged in: testuser
-django INFO 2025-02-20 18:16:47,139 views 30956 20776 User deleted account: testuser
-django INFO 2025-02-20 18:16:47,755 views 30956 20776 User logged in: testuser
-django INFO 2025-02-20 18:16:47,758 views 30956 20776 User deleted account: testuser
-django INFO 2025-02-20 18:16:48,403 views 30956 20776 User logged in: testuser
-django INFO 2025-02-20 18:16:48,404 views 30956 20776 User deleted account: testuser
-django INFO 2025-02-20 18:16:48,765 views 30956 20776 Failed login attempt for username: testuser
-django INFO 2025-02-20 18:16:50,070 views 30956 20776 User logged in: testuser
-django INFO 2025-02-20 18:16:51,971 views 30956 20776 User logged in: testuser
-django INFO 2025-02-20 18:16:51,972 views 30956 20776 User logged out: testuser
-django INFO 2025-02-20 18:16:52,621 views 30956 20776 User logged in: newuser
-django INFO 2025-02-20 18:16:52,622 views 30956 20776 New user signed up: newuser
-django INFO 2025-02-20 18:16:53,260 views 30956 20776 Failed login attempt for username: TESTUSER
-django INFO 2025-02-20 18:16:53,877 views 30956 20776 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-20 18:16:55,124 views 30956 20776 User logged in: testuser
-django WARNING 2025-02-20 18:16:55,444 views 30956 20776 Failed signup attempt.
-django INFO 2025-02-20 18:16:56,390 views 30956 20776 User logged in: newuser
-django INFO 2025-02-20 18:16:56,390 views 30956 20776 New user signed up: newuser
-django WARNING 2025-02-20 18:16:56,707 views 30956 20776 Failed signup attempt.
-django INFO 2025-02-20 18:16:57,352 views 30956 20776 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-20 18:16:57,659 views 30956 20776 Failed signup attempt.
-django WARNING 2025-02-20 18:16:57,969 views 30956 20776 Failed signup attempt.
-django.utils.autoreload INFO 2025-02-23 12:25:21,636 autoreload 31212 15704 Watching for file changes with StatReloader
-django.server INFO 2025-02-23 12:25:24,573 basehttp 31212 13296 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:25:24,620 basehttp 31212 13296 "GET /accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:25:24,712 basehttp 31212 13296 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:25:32,726 basehttp 31212 23068 "GET /home/signup/ HTTP/1.1" 200 2411
-django.server WARNING 2025-02-23 12:25:32,783 basehttp 31212 23068 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django WARNING 2025-02-23 12:25:54,188 views 31212 26068 Failed signup attempt.
-django.server INFO 2025-02-23 12:25:54,193 basehttp 31212 26068 "POST /home/signup/ HTTP/1.1" 200 2549
-django.server WARNING 2025-02-23 12:25:54,237 basehttp 31212 26068 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:26:06,973 views 31212 21616 User logged in: matt3
-django INFO 2025-02-23 12:26:06,973 views 31212 21616 New user signed up: matt3
-django.server INFO 2025-02-23 12:26:06,997 basehttp 31212 21616 "POST /home/signup/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:26:07,027 basehttp 31212 21616 "GET /home/ HTTP/1.1" 200 1605
-django.server WARNING 2025-02-23 12:26:07,080 basehttp 31212 21616 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:26:09,397 basehttp 31212 24140 "GET /home/accounts/change_password/ HTTP/1.1" 200 0
-django.utils.autoreload INFO 2025-02-23 12:26:38,626 autoreload 31212 15704 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py changed, reloading.
-django.utils.autoreload INFO 2025-02-23 12:26:39,457 autoreload 6176 10376 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2025-02-23 12:26:46,277 autoreload 24116 4016 Watching for file changes with StatReloader
-django.server INFO 2025-02-23 12:29:20,281 basehttp 24116 32520 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:29:20,316 basehttp 24116 32520 "GET /accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:29:20,410 basehttp 24116 32520 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:29:45,214 views 24116 32612 User logged in: matt3
-django.server INFO 2025-02-23 12:29:45,238 basehttp 24116 32612 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:29:45,257 basehttp 24116 32612 "GET /home/ HTTP/1.1" 200 1605
-django.server WARNING 2025-02-23 12:29:45,310 basehttp 24116 32612 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:29:53,789 basehttp 24116 12784 "GET /home/accounts/change_password/ HTTP/1.1" 200 0
-django.server INFO 2025-02-23 12:30:20,808 basehttp 24116 12784 "GET /home/accounts/update_profile/ HTTP/1.1" 200 1531
-django.server WARNING 2025-02-23 12:30:20,864 basehttp 24116 12784 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:30:28,668 views 24116 24708 User updated profile: matt4
-django.server INFO 2025-02-23 12:30:28,669 basehttp 24116 24708 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:30:28,688 basehttp 24116 24708 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:30:28,753 basehttp 24116 24708 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:30:30,518 views 24116 4088 User logged out: matt4
-django.server INFO 2025-02-23 12:30:30,526 basehttp 24116 4088 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:30:30,530 basehttp 24116 4088 "GET /home/accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:30:30,583 basehttp 24116 4088 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:30:40,312 views 24116 9104 Failed login attempt for username: matt3
-django.server INFO 2025-02-23 12:30:40,312 basehttp 24116 9104 "POST /home/accounts/login/ HTTP/1.1" 200 1581
-django.server WARNING 2025-02-23 12:30:40,361 basehttp 24116 9104 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:30:50,159 views 24116 31636 User logged in: matt4
-django.server INFO 2025-02-23 12:30:50,181 basehttp 24116 31636 "POST /home/accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:30:50,201 basehttp 24116 31636 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:30:50,246 basehttp 24116 31636 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:30:54,446 basehttp 24116 11640 "GET /home/accounts/change_password/ HTTP/1.1" 200 0
-django.utils.autoreload INFO 2025-02-23 12:34:11,152 autoreload 33504 30648 Watching for file changes with StatReloader
-django.server INFO 2025-02-23 12:34:13,493 basehttp 33504 28568 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:34:13,534 basehttp 33504 28568 "GET /accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:34:13,623 basehttp 33504 28568 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:34:22,353 views 33504 10844 User logged in: matt4
-django.server INFO 2025-02-23 12:34:22,373 basehttp 33504 10844 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:34:22,397 basehttp 33504 10844 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:34:22,453 basehttp 33504 10844 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:34:24,173 basehttp 33504 8948 "GET /home/accounts/change_password/ HTTP/1.1" 200 2145
-django.server WARNING 2025-02-23 12:34:24,223 basehttp 33504 8948 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:34:57,415 basehttp 33504 28972 "POST /home/accounts/change_password/ HTTP/1.1" 200 2240
-django.server WARNING 2025-02-23 12:34:57,467 basehttp 33504 28972 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:35:04,784 basehttp 33504 26224 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:35:04,822 basehttp 33504 26224 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:35:25,780 views 33504 32592 User logged out: matt4
-django.server INFO 2025-02-23 12:35:25,780 basehttp 33504 32592 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:35:25,786 basehttp 33504 32592 "GET /home/accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:35:25,844 basehttp 33504 32592 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:35:32,960 views 33504 16704 Failed login attempt for username: matt4
-django.server INFO 2025-02-23 12:35:32,960 basehttp 33504 16704 "POST /home/accounts/login/ HTTP/1.1" 200 1581
-django.server WARNING 2025-02-23 12:35:33,010 basehttp 33504 16704 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:35:40,258 views 33504 4084 Failed login attempt for username: matt4
-django.server INFO 2025-02-23 12:35:40,258 basehttp 33504 4084 "POST /home/accounts/login/ HTTP/1.1" 200 1581
-django.server WARNING 2025-02-23 12:35:40,282 basehttp 33504 4084 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:35:50,137 views 33504 29456 User logged in: matt4
-django.server INFO 2025-02-23 12:35:50,155 basehttp 33504 29456 "POST /home/accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:35:50,171 basehttp 33504 29456 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:35:50,223 basehttp 33504 29456 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-23 12:35:51,828 basehttp 33504 29100 "GET /home/accounts/change_password/ HTTP/1.1" 200 2145
-django.server WARNING 2025-02-23 12:35:51,885 basehttp 33504 29100 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:37:49,315 views 33504 14108 User changed password: matt4
-django.server INFO 2025-02-23 12:37:49,345 basehttp 33504 14108 "POST /home/accounts/change_password/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:37:49,361 basehttp 33504 14108 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:37:49,430 basehttp 33504 14108 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:37:56,671 views 33504 21672 User logged out: matt4
-django.server INFO 2025-02-23 12:37:56,671 basehttp 33504 21672 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:37:56,681 basehttp 33504 21672 "GET /home/accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:37:56,747 basehttp 33504 21672 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:38:07,543 views 33504 14848 Failed login attempt for username: matt4
-django.server INFO 2025-02-23 12:38:07,543 basehttp 33504 14848 "POST /home/accounts/login/ HTTP/1.1" 200 1581
-django.server WARNING 2025-02-23 12:38:07,591 basehttp 33504 14848 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:38:20,003 views 33504 33732 User logged in: matt4
-django.server INFO 2025-02-23 12:38:20,027 basehttp 33504 33732 "POST /home/accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:38:20,044 basehttp 33504 33732 "GET /home/ HTTP/1.1" 200 1607
-django.server WARNING 2025-02-23 12:38:20,092 basehttp 33504 33732 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:38:21,963 views 33504 14160 User logged out: matt4
-django.server INFO 2025-02-23 12:38:21,963 basehttp 33504 14160 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-02-23 12:38:21,971 basehttp 33504 14160 "GET /home/accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-23 12:38:22,037 basehttp 33504 14160 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-23 12:38:32,280 views 33504 22020 Failed login attempt for username: matt4
-django.server INFO 2025-02-23 12:38:32,288 basehttp 33504 22020 "POST /home/accounts/login/ HTTP/1.1" 200 1581
-django.server WARNING 2025-02-23 12:38:32,329 basehttp 33504 22020 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-23 20:07:36,782 autoreload 15820 30324 Watching for file changes with StatReloader
+django.server INFO 2025-02-23 20:07:37,856 basehttp 15820 14752 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:07:37,920 basehttp 15820 14752 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-23 20:07:38,002 basehttp 15820 14752 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:07:46,441 views 15820 12640 User logged in: matt44
+django.server INFO 2025-02-23 20:07:46,514 basehttp 15820 12640 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:07:46,547 basehttp 15820 12640 "GET /home/ HTTP/1.1" 200 1616
+django.server WARNING 2025-02-23 20:07:46,603 basehttp 15820 12640 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:07:47,963 views 15820 26944 User logged out: matt44
+django.server INFO 2025-02-23 20:07:47,964 basehttp 15820 26944 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:07:47,972 basehttp 15820 26944 "GET /home/accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-23 20:07:48,041 basehttp 15820 26944 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:20:32,602 views 23296 29116 Logout by an unauthenticated user or session end.
+django INFO 2025-02-23 20:23:59,029 views 26484 25848 Logout by an unauthenticated user or session end.
+django INFO 2025-02-23 20:24:00,304 views 26484 25848 User logged in: testuser
+django INFO 2025-02-23 20:24:00,331 views 26484 25848 User deleted account: testuser
+django INFO 2025-02-23 20:24:00,969 views 26484 25848 User logged in: testuser
+django INFO 2025-02-23 20:24:00,994 views 26484 25848 User deleted account: testuser
+django INFO 2025-02-23 20:24:01,639 views 26484 25848 User logged in: testuser
+django INFO 2025-02-23 20:24:01,668 views 26484 25848 User deleted account: testuser
+django INFO 2025-02-23 20:24:01,974 views 26484 25848 Failed login attempt for username: testuser
+django INFO 2025-02-23 20:24:03,254 views 26484 25848 User logged in: testuser
+django INFO 2025-02-23 20:24:05,211 views 26484 25848 User logged in: testuser
+django INFO 2025-02-23 20:24:05,234 views 26484 25848 User logged out: testuser
+django INFO 2025-02-23 20:24:05,884 views 26484 25848 User logged in: newuser
+django INFO 2025-02-23 20:24:05,904 views 26484 25848 New user signed up: newuser
+django INFO 2025-02-23 20:24:06,544 views 26484 25848 Failed login attempt for username: TESTUSER
+django INFO 2025-02-23 20:24:07,185 views 26484 25848 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-23 20:24:08,469 views 26484 25848 User logged in: testuser
+django WARNING 2025-02-23 20:24:08,813 views 26484 25848 Failed signup attempt.
+django INFO 2025-02-23 20:24:09,781 views 26484 25848 User logged in: newuser
+django INFO 2025-02-23 20:24:09,809 views 26484 25848 New user signed up: newuser
+django WARNING 2025-02-23 20:24:10,132 views 26484 25848 Failed signup attempt.
+django INFO 2025-02-23 20:24:10,779 views 26484 25848 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-23 20:24:11,105 views 26484 25848 Failed signup attempt.
+django WARNING 2025-02-23 20:24:11,422 views 26484 25848 Failed signup attempt.
+django.utils.autoreload INFO 2025-02-23 20:28:59,188 autoreload 11460 28428 Watching for file changes with StatReloader
+django.server INFO 2025-02-23 20:29:00,398 basehttp 11460 7604 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:00,439 basehttp 11460 7604 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-23 20:29:00,597 basehttp 11460 7604 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:29:09,409 views 11460 24784 User logged in: matt44
+django.server INFO 2025-02-23 20:29:09,457 basehttp 11460 24784 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:09,484 basehttp 11460 24784 "GET /home/ HTTP/1.1" 200 1616
+django.server WARNING 2025-02-23 20:29:09,531 basehttp 11460 24784 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-23 20:29:11,863 basehttp 11460 14932 "GET /home/accounts/update_profile/ HTTP/1.1" 200 1541
+django.server WARNING 2025-02-23 20:29:11,905 basehttp 11460 14932 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:29:14,568 views 11460 20788 User updated profile (username & email): matt4
+django.server INFO 2025-02-23 20:29:14,568 basehttp 11460 20788 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:14,588 basehttp 11460 20788 "GET /home/ HTTP/1.1" 200 1614
+django.server WARNING 2025-02-23 20:29:14,643 basehttp 11460 20788 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:29:15,646 views 11460 30192 User logged out: matt4
+django.server INFO 2025-02-23 20:29:15,648 basehttp 11460 30192 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:15,654 basehttp 11460 30192 "GET /home/accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-23 20:29:15,723 basehttp 11460 30192 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:29:22,945 views 11460 24964 User logged in: matt4
+django.server INFO 2025-02-23 20:29:22,993 basehttp 11460 24964 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:23,014 basehttp 11460 24964 "GET /home/ HTTP/1.1" 200 1614
+django.server WARNING 2025-02-23 20:29:23,065 basehttp 11460 24964 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-23 20:29:27,041 views 11460 14188 User logged out: matt4
+django.server INFO 2025-02-23 20:29:27,042 basehttp 11460 14188 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-02-23 20:29:27,049 basehttp 11460 14188 "GET /home/accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-23 20:29:27,113 basehttp 11460 14188 "GET /static/css/styles.css HTTP/1.1" 404 1969

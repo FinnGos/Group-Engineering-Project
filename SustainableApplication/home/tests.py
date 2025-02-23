@@ -5,6 +5,11 @@ from home.models import Locations, Collectable, CustomUser
 from home.forms import CustomUserCreationForm
 from django.contrib.auth import login
 
+from datetime import datetime, timedelta
+import os
+from home.views import cleanup_old_logs
+
+TEST_LOG_FILE = "test_django_logs.log"
 
 class LocationsModelTest(TestCase):
     def test_create_location(self):
@@ -82,7 +87,7 @@ class URLTests(TestCase):
         response = self.client.get("/home/")
         self.assertRedirects(response, "/accounts/login/?next=/home/")
 
-# Fins tests
+
 
 User1 = get_user_model()
 
@@ -277,3 +282,55 @@ class DeleteAccountViewTests(TestCase):
             "Expected log message not found in log output."
         )
 
+# Tests for deleting logs
+
+def create_test_log_file():
+    """Creates a test log file with old and recent log entries."""
+    now = datetime.now()
+
+    # Create log entries
+    old_log_time = now - timedelta(days=100)  # 100 days ago (should be deleted)
+    recent_log_time = now - timedelta(days=30)  # 30 days ago (should be kept)
+
+    old_log_entry = f"django INFO {old_log_time.strftime('%Y-%m-%d %H:%M:%S,%f')} views User logged in: old_user\n"
+    recent_log_entry = f"django INFO {recent_log_time.strftime('%Y-%m-%d %H:%M:%S,%f')} views User logged in: recent_user\n"
+
+    # Write logs to file
+    with open(TEST_LOG_FILE, "w", encoding="utf-8") as file:
+        file.writelines([old_log_entry, recent_log_entry])
+
+def test_cleanup_old_logs():
+    """Tests the cleanup_old_logs function."""
+    global LOG_FILE_PATH  # Use the global variable for testing
+    LOG_FILE_PATH = TEST_LOG_FILE  # Temporarily set the log file to the test file
+
+    create_test_log_file()  # Create test logs
+    cleanup_old_logs()  # Run log cleanup
+
+    # Read the cleaned log file
+    with open(TEST_LOG_FILE, "r", encoding="utf-8") as file:
+        remaining_logs = file.readlines()
+
+    # Assertions
+    assert len(remaining_logs) == 1, "Old logs were not deleted!"
+    assert "recent_user" in remaining_logs[0], "Recent log entry was mistakenly deleted!"
+
+#Tests for editing acc detials
+
+
+class AccountTests(TestCase):
+    def setUp(self):
+        """Create a test user before each test."""
+        self.user = User1.objects.create_user(username="testuser", email="test@example.com", password="password123")
+
+    def test_edit_account_details(self):
+        """Test if a user can edit their details successfully."""
+        self.user.first_name = "Updated"
+        self.user.last_name = "Name"
+        self.user.email = "updated@example.com"
+        self.user.save()
+
+        updated_user = User1.objects.get(username="testuser")
+        self.assertEqual(updated_user.first_name, "Updated")
+        self.assertEqual(updated_user.last_name, "Name")
+        self.assertEqual(updated_user.email, "updated@example.com")
