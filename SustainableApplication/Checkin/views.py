@@ -61,7 +61,7 @@ def get_location(request, task_id):
     # If user doesnt allow us to access their data:
     context = {
         "message": "Unfortunately, we need you to share your location with us to continue playing the game :(, if you have any concerns about sharing your location with us, you can review our terms and conditions page",
-        "task": task  # Pass the task object to the template
+        "task": task,  # Pass the task object to the template
     }
 
     return render(request, "checkin_page.html", context)

@@ -44,10 +44,10 @@ button{% load static %}
         <p>error no task id</p>
         {%endif%}
         <button
-          id="claim-button"
+          id="claim-button-{{task.id}}"
           class="btn btn-success"
-          {%
-          if
+          onclick="claimTask({{task.id}})"
+          {%if
           not
           task.has_checked_in
           %}disabled{%
@@ -79,6 +79,28 @@ button{% load static %}
               progressBar.style.width = response.new_progress + "%";
               progressBar.innerText =
                 response.current_progress + "/" + response.target;
+            } else {
+              alert(response.message);
+            }
+          },
+        });
+      }
+      function claimTask(taskId) {
+        $.ajax({
+          url: "{%url 'update_progress' 1 'claim' %}".replace("1", taskId),
+          type: "POST",
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
+          success: function (response) {
+            if (response.success) {
+              let progressBar = document.getElementById(
+                "progress-bar-" + taskId
+              );
+              progressBar.style.width = "100%";
+              progressBar.innerText =
+                response.current_progress + "/" + response.target;
+
+              //Disable button after claiming
+              document.getElementById("claim-button-" + taskId).disabled = true;
             } else {
               alert(response.message);
             }

@@ -18,6 +18,15 @@ def update_progress(request, task_id, action):
         task.current_progress += 1
     elif action == "decrease" and task.current_progress > 0:
         task.current_progress -= 1
+    elif (
+        action == "claim"
+        and not task.has_checked_in
+        and not task.completed
+        and task.current_progress < task.target
+    ):
+
+        task.current_progress = task.target
+        task.completed = True
     else:
         return JsonResponse(
             {"success": False, "message": "Invalid action or limit reached."}
@@ -30,5 +39,6 @@ def update_progress(request, task_id, action):
             "new_progress": (task.current_progress / task.target) * 100,
             "current_progress": task.current_progress,
             "target": task.target,
+            "completed": task.completed,
         }
     )
