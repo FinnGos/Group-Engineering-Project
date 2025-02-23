@@ -52,13 +52,8 @@ Follow these steps to get the app running locally:
 ## Setting Up Dependencies 
 1. **Navigate to "SustainableApplication/SustainableApplication"**
  - this is where manage.py sits and can be done using cd SustainableApplication
-2. **Create the virtual python environment** 
 
-```bash
-python3 -m venv venv
-```
-- This command creates the virtual environment where our dependencies are stored! 
-3. If you are on macOS or Linux, run the following command 
+2. If you are on macOS or Linux, run the following command 
 ```bash 
 source venv/bin/activate
 ```
@@ -67,7 +62,7 @@ If you are on windows run this instead
 venv\Scripts\activate
 ```
 - These commands are designed to activate the virtual environment, when run your terminal should preface every command with (venv)
-4. Install the dependencies in requirements.txt by running this command 
+3. Install the dependencies in requirements.txt by running this command 
 ```bash
 pip install -r requirements.txt
 ```
