@@ -14,11 +14,26 @@ class LeaderboardTest(TestCase):
         CustomUser.objects.create(username="Eve", all_time_points=200)
         
    def test_leaderboard_order(self):
-      """Test users appear in correct order"""
-      response = self.client.get('/leaderboard/') 
-      self.assertEqual(response.status_code, 200)  # Now it should be 200
+    """Test users appear in correct order on the leaderboard"""
+    response = self.client.get('/leaderboard/')  
+    self.assertEqual(response.status_code, 200)  
 
+    ranked_users = response.context['ranked_users']
+    self.assertIsNotNone(ranked_users, "Leaderboard data should not be None")
 
+    expected_order = [
+        ('David', 300),
+        ('Bob', 200),
+        ('Eve', 200),
+        ('Alice', 100),
+        ('Charlie', 100),
+    ]
+
+    # Check if the leaderboard order matches expectations
+    for i, entry in enumerate(ranked_users):
+        self.assertEqual(entry['user'].username, expected_order[i][0])
+        self.assertEqual(entry['user'].all_time_points, expected_order[i][1])
+      
       
 
      # PLEASE NOTE:
