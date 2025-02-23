@@ -34,7 +34,6 @@
   {% block sidebar %}
   <ul class="sidebar-nav">
     <li><a href="{% url 'home' %}">Home</a></li>
-    <!-- Change the href to the view to access pages from a link on the website -->
     {% if user.is_authenticated %}
       <li><a href="#">Account</a></li>
       <li><a href="#">Collectables</a></li>
