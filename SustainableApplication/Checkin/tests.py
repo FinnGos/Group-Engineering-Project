@@ -1,7 +1,20 @@
 from django.test import TestCase, Client
 from django.urls import reverse
+from django.contrib.auth import get_user_model
+
 
 class ViewsTestCase(TestCase):
+
+    """Set up for all the tests"""
+    def setUp(self):
+        """
+        Sets up the tests so that it is forced logged into the system to run the tests
+        """
+        self.client = Client()
+        User = get_user_model()
+        self.user = User.objects.create_user(username='testuser', password='password')
+        self.client.force_login(self.user)
+
     """Test the check-in button"""
     def test_get_location_success(self):
         """
