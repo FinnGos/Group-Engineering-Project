@@ -8,6 +8,11 @@ from django.contrib.auth.decorators import login_required  # Import decorator to
 from .forms import CustomUserCreationForm  # Import custom user signup form
 from django.contrib.auth.signals import user_logged_in, user_login_failed, user_logged_out  # Import authentication signals
 from django.dispatch import receiver  # Import receiver to connect functions to signals
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
+from django.contrib import messages
+from django.contrib.auth.forms import UserChangeForm
+from django import forms
 
 # Set up a logger for authentication events
 auth_logger = logging.getLogger("django")
@@ -78,3 +83,38 @@ def delete_account(request):
     user.delete()
     return redirect("login")  
 
+# Custom form to allow username and email updates
+class CustomUserUpdateForm(forms.ModelForm):
+    class Meta:
+        model = CustomUser
+        fields = ["username", "email"]
+
+def update_profile(request):
+    """View to update username and email."""
+    if request.method == "POST":
+        form = CustomUserUpdateForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            auth_logger.info(f"User updated profile (username & email): {request.user.username}")
+            messages.success(request, "Profile updated successfully!")
+            return redirect("home")
+    else:
+        form = CustomUserUpdateForm(instance=request.user)
+
+    return render(request, "registration/update_profile.html", {"form": form})
+
+
+def change_password(request):
+    """View to change user password."""
+    if request.method == "POST":
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Keep user logged in
+            auth_logger.info(f"User changed password: {request.user.username}")
+            messages.success(request, "Your password was successfully updated!")
+            return redirect("home")
+    else:
+        form = PasswordChangeForm(request.user)
+
+    return render(request, "registration/change_password.html", {"form": form})
