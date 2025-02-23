@@ -18,9 +18,11 @@ def update_progress(request, task_id, action):
         task.current_progress += 1
     elif action == "decrease" and task.current_progress > 0:
         task.current_progress -= 1
+        task.has_checked_in = False
+        task.completed = False
     elif (
         action == "claim"
-        and not task.has_checked_in
+        and task.has_checked_in
         and not task.completed
         and task.current_progress < task.target
     ):
