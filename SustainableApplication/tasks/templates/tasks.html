@@ -56,6 +56,12 @@ button{% load static %}
         >
           Claim
         </button>
+        <button
+          class="btn btn-warning"
+          onclick="updateProgress({{ task.id }}, 'decrease')"
+        >
+          Decrease
+        </button>
       </li>
       {% endfor %}
     </ul>
