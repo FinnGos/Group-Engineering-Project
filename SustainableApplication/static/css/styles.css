@@ -1,0 +1,45 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+.progress-container {
+    width:300px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: green;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    width: 0%;
+    transition: widht 0.3s ease-in-out;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-increase {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-decrease {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-hover {
+    opacity: 0.8;
+}

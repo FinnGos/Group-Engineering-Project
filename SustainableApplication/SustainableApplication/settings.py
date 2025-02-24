@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home.apps.HomeConfig",
     "Checkin.apps.CheckinConfig",
-    "PrivacyPolicy.apps.PrivacypolicyConfig"
+    "PrivacyPolicy.apps.PrivacypolicyConfig",
     "leaderboard.apps.LeaderboardConfig",
+    "tasks.apps.TasksConfig",
 ]
 
 MIDDLEWARE = [
@@ -82,6 +83,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'location_db': {  #the new database
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'location_db',
     }
 }
 

@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Progress</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <h2>Tasks that can be completed</h2>
+
+    {% if tasks %}
+    <ul>
+      {% for task in tasks %}
+      <li>
+        <strong>{{ task.task_name }}</strong>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
+            {{ task.current_progress }}/{{ task.target }}
+          </div>
+        </div>
+
+        <!-- Checkin button -->
+        {%if task.id%}
+        <p>Task ID: {{task.id}}</p>
+        <!--Debugging-->
+        <form action="{%url 'get_location' task.id%}" method="GET">
+          <button type="submit" class="btn btn-primary">Check In</button>
+        </form>
+        {%else%}
+        <p>error no task id</p>
+        {%endif%}
+        <button id="claim-button-{{task.id}}" class="btn btn-success" onclick="claimTask({{task.id}})"{%if not task.has_checked_in %}disabled{% endif %}>Claim</button>
+        <button class="btn btn-warning" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease</button>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No tasks available to complete.</p>
+    {% endif %}
+
+    <script>
+      function updateProgress(taskId, action) {
+        /**
+         * Function called when the decrease button is clicked
+         * Uses ajax to update database without reloading the webpage
+         * will result in the progress bar decreasing and the curren_progress decreasing
+         */
+        $.ajax({
+          url: "{% url 'update_progress' 1 'increase' %}"
+            .replace("1", taskId)
+            .replace("increase", action),
+          type: "POST",
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
+          success: function (response) {
+            if (response.success) {
+              let progressBar = document.getElementById(
+                "progress-bar-" + taskId
+              );
+              progressBar.style.width = response.new_progress + "%";
+              progressBar.innerText =
+                response.current_progress + "/" + response.target;
+            } else {
+              alert(response.message);
+            }
+          },
+        });
+      }
+      function claimTask(taskId) {
+        /**
+         * Function called when the claim button is pressed
+         * Uses ajax to update database without reloading the webpage
+         * Will also disable the claim button after has been pressed to ensure no repeat claims
+         */ 
+        $.ajax({
+          url: "{%url 'update_progress' 1 'claim' %}".replace("1", taskId),
+          type: "POST",
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
+          success: function (response) {
+            if (response.success) {
+              let progressBar = document.getElementById(
+                "progress-bar-" + taskId
+              );
+              progressBar.style.width = "100%";
+              progressBar.innerText =
+                response.current_progress + "/" + response.target;
+
+              //Disable button after claiming
+              document.getElementById("claim-button-" + taskId).disabled = true;
+            } else {
+              alert(response.message);
+            }
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
