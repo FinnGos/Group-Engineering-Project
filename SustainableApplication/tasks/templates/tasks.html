@@ -50,6 +50,11 @@
 
     <script>
       function updateProgress(taskId, action) {
+        /**
+         * Function called when the decrease button is clicked
+         * Uses ajax to update database without reloading the webpage
+         * will result in the progress bar decreasing and the curren_progress decreasing
+         */
         $.ajax({
           url: "{% url 'update_progress' 1 'increase' %}"
             .replace("1", taskId)
@@ -71,6 +76,11 @@
         });
       }
       function claimTask(taskId) {
+        /**
+         * Function called when the claim button is pressed
+         * Uses ajax to update database without reloading the webpage
+         * Will also disable the claim button after has been pressed to ensure no repeat claims
+         */ 
         $.ajax({
           url: "{%url 'update_progress' 1 'claim' %}".replace("1", taskId),
           type: "POST",
