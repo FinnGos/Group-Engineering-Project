@@ -239,3 +239,44 @@ django INFO 2025-02-24 14:08:35,623 views 34276 20188 User logged in: matt4
 django INFO 2025-02-24 14:08:35,655 views 34276 20188 User asked for personal data stored: matt4
 django INFO 2025-02-24 14:08:36,314 views 34276 20188 User logged in: matt4
 django INFO 2025-02-24 14:08:36,346 views 34276 20188 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:30:19,872 views 31660 7048 Logout by an unauthenticated user or session end.
+django INFO 2025-02-24 14:30:20,812 views 31660 7048 User logged in: testuser
+django INFO 2025-02-24 14:30:21,788 views 31660 7048 User logged in: testuser
+django INFO 2025-02-24 14:30:21,813 views 31660 7048 User logged out: testuser
+django INFO 2025-02-24 14:30:22,473 views 31660 7048 User logged in: newuser
+django INFO 2025-02-24 14:30:22,490 views 31660 7048 New user signed up: newuser
+django INFO 2025-02-24 14:30:23,132 views 31660 7048 User logged in: testuser
+django INFO 2025-02-24 14:30:24,115 views 31660 7048 User logged in: newuser
+django INFO 2025-02-24 14:30:24,141 views 31660 7048 New user signed up: newuser
+django WARNING 2025-02-24 14:30:24,456 views 31660 7048 Failed signup attempt.
+django INFO 2025-02-24 14:30:25,085 views 31660 7048 User logged in: matt4
+django INFO 2025-02-24 14:30:25,118 views 31660 7048 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:39:14,240 views 4804 8620 Logout by an unauthenticated user or session end.
+django INFO 2025-02-24 14:39:15,579 views 4804 8620 User logged in: testuser
+django INFO 2025-02-24 14:39:15,612 views 4804 8620 User deleted account: testuser
+django INFO 2025-02-24 14:39:16,250 views 4804 8620 User logged in: testuser
+django INFO 2025-02-24 14:39:16,273 views 4804 8620 User deleted account: testuser
+django INFO 2025-02-24 14:39:16,912 views 4804 8620 User logged in: testuser
+django INFO 2025-02-24 14:39:16,936 views 4804 8620 User deleted account: testuser
+django INFO 2025-02-24 14:39:17,245 views 4804 8620 Failed login attempt for username: testuser
+django INFO 2025-02-24 14:39:18,543 views 4804 8620 User logged in: testuser
+django INFO 2025-02-24 14:39:20,492 views 4804 8620 User logged in: testuser
+django INFO 2025-02-24 14:39:20,516 views 4804 8620 User logged out: testuser
+django INFO 2025-02-24 14:39:21,157 views 4804 8620 User logged in: newuser
+django INFO 2025-02-24 14:39:21,182 views 4804 8620 New user signed up: newuser
+django INFO 2025-02-24 14:39:21,803 views 4804 8620 Failed login attempt for username: TESTUSER
+django INFO 2025-02-24 14:39:22,425 views 4804 8620 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-24 14:39:23,689 views 4804 8620 User logged in: testuser
+django WARNING 2025-02-24 14:39:24,026 views 4804 8620 Failed signup attempt.
+django INFO 2025-02-24 14:39:25,006 views 4804 8620 User logged in: newuser
+django INFO 2025-02-24 14:39:25,023 views 4804 8620 New user signed up: newuser
+django WARNING 2025-02-24 14:39:25,353 views 4804 8620 Failed signup attempt.
+django INFO 2025-02-24 14:39:25,975 views 4804 8620 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-24 14:39:26,299 views 4804 8620 Failed signup attempt.
+django WARNING 2025-02-24 14:39:26,613 views 4804 8620 Failed signup attempt.
+django INFO 2025-02-24 14:39:27,226 views 4804 8620 User logged in: matt4
+django INFO 2025-02-24 14:39:27,259 views 4804 8620 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:39:27,915 views 4804 8620 User logged in: matt4
+django INFO 2025-02-24 14:39:27,965 views 4804 8620 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:39:28,633 views 4804 8620 User logged in: matt4
+django INFO 2025-02-24 14:39:28,674 views 4804 8620 User asked for personal data stored: matt4

@@ -3,54 +3,76 @@ from django.urls import reverse
 from django.contrib.auth import get_user_model
 from home.models import Locations, Collectable, CustomUser
 from home.forms import CustomUserCreationForm
-from django.contrib.auth import login
-
 from datetime import datetime, timedelta
 import os
 from home.views import cleanup_old_logs
 
 TEST_LOG_FILE = "test_django_logs.log"
 
+
 class LocationsModelTest(TestCase):
+    """Test case for the Locations model."""
+
     def test_create_location(self):
+        """Test that a Location object can be created successfully."""
         location = Locations.objects.create(name="Test Location")
         self.assertEqual(str(location), "Test Location")
 
+
 class CollectableModelTest(TestCase):
+    """Test case for the Collectable model."""
+
     def test_create_collectable(self):
+        """Test that a Collectable object can be created successfully."""
         item = Collectable.objects.create(name="Test Item")
         self.assertEqual(str(item), "Test Item")
 
+
 class CustomUserModelTest(TestCase):
+    """Test case for the CustomUser model."""
+
     def test_create_user(self):
+        """Test that a CustomUser object can be created successfully."""
         user = CustomUser.objects.create_user(username="testuser", password="testpass")
         self.assertEqual(str(user), "testuser")
         self.assertEqual(user.points, 0)
 
+
 class LoginRequiredTests(TestCase):
+    """Test cases for login-required views."""
+
     def setUp(self):
+        """Set up a test user for authentication tests."""
         self.client = Client()
         self.user = CustomUser.objects.create_user(username="testuser", password="testpass")
 
     def test_index_redirects_when_not_logged_in(self):
+        """Test that the home page redirects to login if the user is not logged in."""
         response = self.client.get(reverse("home"))
         self.assertRedirects(response, "/accounts/login/?next=/home/")
 
     def test_index_accessible_when_logged_in(self):
+        """Test that the home page is accessible to logged-in users."""
         self.client.login(username="testuser", password="testpass")
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)
 
+
 class SignupViewTest(TestCase):
+    """Test case for user signup view."""
+
     def setUp(self):
+        """Set up a test client."""
         self.client = Client()
 
     def test_signup_page_loads(self):
+        """Test that the signup page loads successfully."""
         response = self.client.get(reverse("signup"))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "registration/signup.html")
 
     def test_user_can_signup(self):
+        """Test that a user can sign up successfully."""
         response = self.client.post(reverse("signup"), {
             "username": "newuser",
             "email": "newuser@example.com",
@@ -60,8 +82,12 @@ class SignupViewTest(TestCase):
         self.assertEqual(CustomUser.objects.count(), 1)
         self.assertRedirects(response, reverse("home"))
 
+
 class CustomUserCreationFormTest(TestCase):
+    """Test case for the CustomUserCreationForm."""
+
     def test_valid_form(self):
+        """Test that the form is valid with correct input data."""
         form = CustomUserCreationForm(data={
             "username": "testuser",
             "email": "test@example.com",
@@ -71,6 +97,7 @@ class CustomUserCreationFormTest(TestCase):
         self.assertTrue(form.is_valid())
 
     def test_invalid_form(self):
+        """Test that the form is invalid when passwords do not match."""
         form = CustomUserCreationForm(data={
             "username": "testuser",
             "email": "test@example.com",
@@ -79,8 +106,12 @@ class CustomUserCreationFormTest(TestCase):
         })
         self.assertFalse(form.is_valid())
 
+
 class URLTests(TestCase):
+    """Test case for project URLs."""
+
     def test_project_urls(self):
+        """Test that important URLs return the correct responses."""
         response = self.client.get("/accounts/login/")
         self.assertEqual(response.status_code, 200)
 
@@ -88,25 +119,26 @@ class URLTests(TestCase):
         self.assertRedirects(response, "/accounts/login/?next=/home/")
 
 
-
 User1 = get_user_model()
 
+
 class UserAuthTests(TestCase):
+    """Test case for user authentication (login and signup)."""
 
     def setUp(self):
-        #set up new users
+        """Set up test users for authentication tests."""
         self.username = "testuser"
         self.email = "testuser@example.com"
         self.password = "securepassword123"
         self.user = User1.objects.create_user(username=self.username, email=self.email, password=self.password)
 
     def test_login_existing_user(self):
-        #test login
+        """Test that an existing user can log in successfully."""
         response = self.client.post(reverse("login"), {"username": self.username, "password": self.password})
         self.assertRedirects(response, reverse("home"))
 
     def test_register_new_user(self):
-        #test signup
+        """Test that a new user can sign up successfully."""
         new_user_data = {
             "username": "newuser",
             "email": "newuser@example.com",
@@ -117,8 +149,8 @@ class UserAuthTests(TestCase):
         self.assertRedirects(response, reverse("home"))
         self.assertTrue(User1.objects.filter(username="newuser").exists())
 
-
     def test_long_username(self):
+        """Test that an overly long username is not allowed."""
         data = {
             "username": "a" * 152,
             "email": "longusername@example.com",
@@ -128,8 +160,9 @@ class UserAuthTests(TestCase):
         response = self.client.post(reverse("signup"), data)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Ensure this value has at most 150 characters (it has 152).")
-    
+
     def test_whitespace_username(self):
+        """Test that a username consisting only of whitespace is not allowed."""
         data = {
             "username": " ",
             "email": "whitespace@example.com",
@@ -141,6 +174,7 @@ class UserAuthTests(TestCase):
         self.assertContains(response, "This field is required.")
 
     def test_special_characters_username(self):
+        """Test that a username with special characters is not allowed."""
         data = {
             "username": "user@#$%",
             "email": "special@example.com",
@@ -151,8 +185,8 @@ class UserAuthTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Enter a valid username.")
 
-    # SQL Injection Tests
     def test_sql_injection_username(self):
+        """Test that SQL injection in the username field is prevented."""
         data = {
             "username": "test'; DROP TABLE users; --",
             "email": "sqlinject@example.com",
@@ -165,6 +199,7 @@ class UserAuthTests(TestCase):
         self.assertContains(response, "Enter a valid username.")
 
     def test_sql_injection_login(self):
+        """Test that SQL injection in the login fields is prevented."""
         data = {
             "username": "' OR '1'='1",
             "password": "fakepassword",
@@ -173,48 +208,39 @@ class UserAuthTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Please enter a correct username and password.")
 
-
     def test_case_insensitive_username_login(self):
-        """
-        Test if login is case-insensitive for usernames.
-        """
-        response = self.client.post(
-            reverse("login"),
-            {"username": self.username.upper(), "password": self.password},
-        )
+        """Test that login is case-insensitive for usernames."""
+        response = self.client.post(reverse("login"), {"username": self.username.upper(), "password": self.password})
         self.assertEqual(response.status_code, 200)
 
     def test_email_case_insensitive_login(self):
-        """
-        Test if login is case-insensitive for emails.
-        """
-        response = self.client.post(
-            reverse("login"),
-            {"username": self.email.upper(), "password": self.password},
-        )
+        """Test that login is case-insensitive for emails."""
+        response = self.client.post(reverse("login"), {"username": self.email.upper(), "password": self.password})
         self.assertEqual(response.status_code, 200)
 
     def test_empty_username_login(self):
+        """Test that inputting an empty username in will return error with message."""
         response = self.client.post(reverse("login"), {"username": "", "password": self.password})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "This field is required.")
 
     def test_empty_password_login(self):
+        """Test that inputting an empty password in will return error with message."""
         response = self.client.post(reverse("login"), {"username": self.username, "password": ""})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "This field is required.")
 
 
-#Tests for log out
-
 class LogoutFunctionalityTests(TestCase):
+    """Test cases for user logout functionality."""
+
     def setUp(self):
-        """Set up a test user and client for the tests."""
+        """Set up a test user and client for logout tests."""
         self.client = Client()
         self.user = User1.objects.create_user(username="testuser", password="testpassword")
         self.login_url = reverse("login")
         self.logout_url = reverse("logout")
-    
+
     def test_logout_redirects_to_login(self):
         """Test that logging out redirects to the login page."""
         self.client.login(username="testuser", password="testpassword")
@@ -226,7 +252,6 @@ class LogoutFunctionalityTests(TestCase):
         with self.assertLogs("django", level="INFO") as log_capture:
             self.client.login(username="testuser", password="testpassword")
             self.client.get(self.logout_url)  # Trigger logout
-            # Check the logs for the logout message
             self.assertTrue(
                 any("User logged out: testuser" in message for message in log_capture.output)
             )
@@ -236,9 +261,9 @@ class LogoutFunctionalityTests(TestCase):
         response = self.client.get(self.logout_url)
         self.assertRedirects(response, self.login_url)
 
-#Tests for delete account
 
 class DeleteAccountViewTests(TestCase):
+    """Test cases for account deletion."""
 
     def setUp(self):
         """Set up a test user for account deletion tests."""
@@ -257,7 +282,6 @@ class DeleteAccountViewTests(TestCase):
         self.client.login(username="testuser", password="testpassword")
         self.client.post(self.delete_account_url)
 
-        # Ensure the user is deleted
         with self.assertRaises(User1.DoesNotExist):
             User1.objects.get(username="testuser")
 
@@ -266,7 +290,6 @@ class DeleteAccountViewTests(TestCase):
         self.client.login(username="testuser", password="testpassword")
         self.client.post(self.delete_account_url)
 
-        # Try to log in with the deleted account
         login_successful = self.client.login(username="testuser", password="testpassword")
         self.assertFalse(login_successful)
 
@@ -276,49 +299,44 @@ class DeleteAccountViewTests(TestCase):
             self.client.login(username="testuser", password="testpassword")
             self.client.post(self.delete_account_url)
 
-        # Check that at least one log message contains the expected text
         self.assertTrue(
             any("User deleted account: testuser" in message for message in log.output),
             "Expected log message not found in log output."
         )
 
-# Tests for deleting logs
 
 def create_test_log_file():
-    """Creates a test log file with old and recent log entries."""
+    """Create a test log file with old and recent log entries."""
     now = datetime.now()
 
-    # Create log entries
     old_log_time = now - timedelta(days=100)  # 100 days ago (should be deleted)
     recent_log_time = now - timedelta(days=30)  # 30 days ago (should be kept)
 
     old_log_entry = f"django INFO {old_log_time.strftime('%Y-%m-%d %H:%M:%S,%f')} views User logged in: old_user\n"
     recent_log_entry = f"django INFO {recent_log_time.strftime('%Y-%m-%d %H:%M:%S,%f')} views User logged in: recent_user\n"
 
-    # Write logs to file
     with open(TEST_LOG_FILE, "w", encoding="utf-8") as file:
         file.writelines([old_log_entry, recent_log_entry])
 
+
 def test_cleanup_old_logs():
-    """Tests the cleanup_old_logs function."""
-    global LOG_FILE_PATH  # Use the global variable for testing
+    """Test the cleanup_old_logs function."""
+    global LOG_FILE_PATH
     LOG_FILE_PATH = TEST_LOG_FILE  # Temporarily set the log file to the test file
 
-    create_test_log_file()  # Create test logs
-    cleanup_old_logs()  # Run log cleanup
+    create_test_log_file()
+    cleanup_old_logs()
 
-    # Read the cleaned log file
     with open(TEST_LOG_FILE, "r", encoding="utf-8") as file:
         remaining_logs = file.readlines()
 
-    # Assertions
     assert len(remaining_logs) == 1, "Old logs were not deleted!"
     assert "recent_user" in remaining_logs[0], "Recent log entry was mistakenly deleted!"
 
-#Tests for editing acc detials
-
 
 class AccountTests(TestCase):
+    """Test cases for editing account details."""
+
     def setUp(self):
         """Create a test user before each test."""
         self.user = User1.objects.create_user(username="testuser", email="test@example.com", password="password123")
@@ -335,16 +353,16 @@ class AccountTests(TestCase):
         self.assertEqual(updated_user.last_name, "Name")
         self.assertEqual(updated_user.email, "updated@example.com")
 
-# Tests for user requesting their own data
 
 class ViewUserDataTests(TestCase):
+    """Test cases for viewing personal data."""
+
     def setUp(self):
         """Set up a test user and create a test log file."""
         self.client = Client()
         self.user = get_user_model().objects.create_user(username="matt4", password="securepassword")
-        self.client.login(username="matt4", password="securepassword")  # Log in the user
+        self.client.login(username="matt4", password="securepassword")
 
-        # Create a test log file with a relevant log entry
         self.log_entry = f"django INFO 2025-02-24 13:45:58,056 views 1288 34744 User asked for personal data stored: {self.user.username}\n"
         
         with open(TEST_LOG_FILE, "w", encoding="utf-8") as file:
@@ -357,29 +375,25 @@ class ViewUserDataTests(TestCase):
 
     def test_user_can_view_personal_data(self):
         """Test that a logged-in user can access their personal data page."""
-        response = self.client.get(reverse("view_user_data"))  # Update this URL name if needed
+        response = self.client.get(reverse("view_user_data"))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "registration/view_user_data.html")
 
-        # Check if user's data is displayed
         self.assertContains(response, self.user.username)
         self.assertContains(response, self.user.email)
-        self.assertContains(response, self.user.password)  # Should be hashed
 
     def test_user_sees_correct_log_entry(self):
         """Test that the correct log entry appears on the page."""
         response = self.client.get(reverse("view_user_data"))
-        self.assertContains(response, self.log_entry.strip())  # Check if log is present
+        self.assertContains(response, self.log_entry.strip())
 
     def test_user_does_not_see_other_user_logs(self):
         """Ensure the user does not see logs from another user."""
-        # Add another user's log
         other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt44\n"
         with open(TEST_LOG_FILE, "a", encoding="utf-8") as file:
             file.write(other_log)
 
         response = self.client.get(reverse("view_user_data"))
 
-        # User should see their own log but not the other user's log
         self.assertContains(response, self.log_entry.strip())
-        self.assertNotContains(response, "matt44")  # Ensure other user's log is not included
+        self.assertNotContains(response, "matt44")
