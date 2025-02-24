@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home.apps.HomeConfig",
     "Checkin.apps.CheckinConfig",
-    "PrivacyPolicy.apps.PrivacypolicyConfig"
+    "PrivacyPolicy.apps.PrivacypolicyConfig",
     "leaderboard.apps.LeaderboardConfig",
 ]
 
