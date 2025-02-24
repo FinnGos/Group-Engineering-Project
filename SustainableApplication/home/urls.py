@@ -10,4 +10,5 @@ urlpatterns = [
     path("accounts/delete_account/", views.delete_account, name="delete_account"),  # Logout
     path("accounts/update_profile/", views.update_profile, name="update_profile"),
     path("accounts/change_password/", views.change_password, name="change_password"),
+    path("accounts/view_data/", views.view_user_data, name="view_user_data"),
 ]

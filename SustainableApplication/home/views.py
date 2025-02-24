@@ -15,6 +15,7 @@ from django.contrib.auth.forms import UserChangeForm
 from django import forms
 import os
 from datetime import datetime, timedelta
+import re # Import regex module for accurate log filtering
 
 # Set up a logger for authentication events
 auth_logger = logging.getLogger("django")
@@ -239,3 +240,36 @@ def cleanup_old_logs():
     # Write the filtered logs back to the file
     with open(LOG_FILE_PATH, "w", encoding="utf-8") as file:
         file.writelines(cleaned_logs)
+
+
+def view_user_data(request):
+    """
+    View that displays all stored information about the logged-in user.
+    
+    This includes their username, email, password (hashed), and a list of logs associated with their username.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: Renders the user data template with user details and logs.
+    """
+    user = request.user
+
+    # Read logs related to the exact username using regex
+    user_logs = []
+    username_pattern = re.compile(rf"\b{re.escape(user.username)}\b")  # Exact match
+
+    if os.path.exists(LOG_FILE_PATH):
+        with open(LOG_FILE_PATH, "r", encoding="utf-8") as file:
+            for line in file:
+                if username_pattern.search(line):  # Match exact username
+                    user_logs.append(line.strip())
+
+    context = {
+        "user": user,
+        "user_logs": user_logs,
+        "hashed_password": user.password  # Django stores hashed passwords
+    }
+    
+    return render(request, "registration/view_user_data.html", context)

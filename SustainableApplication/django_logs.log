@@ -60,3 +60,99 @@ django INFO 2025-02-23 20:29:27,041 views 11460 14188 User logged out: matt4
 django.server INFO 2025-02-23 20:29:27,042 basehttp 11460 14188 "GET /home/accounts/logout/ HTTP/1.1" 302 0
 django.server INFO 2025-02-23 20:29:27,049 basehttp 11460 14188 "GET /home/accounts/login/ HTTP/1.1" 200 1424
 django.server WARNING 2025-02-23 20:29:27,113 basehttp 11460 14188 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-24 13:15:15,606 autoreload 11368 2344 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:15:16,940 basehttp 11368 24064 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:15:17,008 basehttp 11368 24064 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:15:17,151 basehttp 11368 24064 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:15:27,108 views 11368 26568 Failed login attempt for username: matt44
+django.server INFO 2025-02-24 13:15:27,111 basehttp 11368 26568 "POST /accounts/login/ HTTP/1.1" 200 1582
+django.server WARNING 2025-02-24 13:15:27,155 basehttp 11368 26568 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:15:33,154 views 11368 28088 Failed login attempt for username: matt44
+django.server INFO 2025-02-24 13:15:33,157 basehttp 11368 28088 "POST /accounts/login/ HTTP/1.1" 200 1582
+django.server WARNING 2025-02-24 13:15:33,200 basehttp 11368 28088 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:15:39,828 views 11368 28324 User logged in: matt4
+django.server INFO 2025-02-24 13:15:39,887 basehttp 11368 28324 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:15:39,931 basehttp 11368 28324 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:15:39,970 basehttp 11368 28324 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request ERROR 2025-02-24 13:15:42,183 log 11368 23944 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py", line 271, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+django.server ERROR 2025-02-24 13:15:42,193 basehttp 11368 23944 "GET /home/accounts/view_data/ HTTP/1.1" 500 142408
+django.utils.autoreload INFO 2025-02-24 13:17:38,889 autoreload 3452 8080 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:17:39,987 basehttp 3452 23384 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:17:40,027 basehttp 3452 23384 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:17:40,108 basehttp 3452 23384 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:17:46,817 views 3452 13968 User logged in: matt4
+django.server INFO 2025-02-24 13:17:46,874 basehttp 3452 13968 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:17:46,903 basehttp 3452 13968 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:17:46,953 basehttp 3452 13968 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:17:48,099 basehttp 3452 10008 "GET /home/accounts/view_data/ HTTP/1.1" 200 2208
+django.server WARNING 2025-02-24 13:17:48,215 basehttp 3452 10008 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:17:57,864 basehttp 3452 916 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:17:57,921 basehttp 3452 916 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-24 13:19:11,552 autoreload 32848 12708 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:19:12,395 basehttp 32848 11696 "GET /home/accounts/view_data/ HTTP/1.1" 200 2208
+django.server WARNING 2025-02-24 13:19:12,501 basehttp 32848 11696 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:19:12,647 basehttp 32848 27812 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:19:12,680 basehttp 32848 27812 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:19:12,767 basehttp 32848 27812 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-24 13:25:03,991 autoreload 14096 19804 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:25:05,075 basehttp 14096 10876 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:25:05,108 basehttp 14096 10876 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:25:05,227 basehttp 14096 10876 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:25:13,203 views 14096 1708 User logged in: matt4
+django.server INFO 2025-02-24 13:25:13,258 basehttp 14096 1708 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:25:13,290 basehttp 14096 1708 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:25:13,360 basehttp 14096 1708 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:25:14,523 basehttp 14096 30088 "GET /home/accounts/view_data/ HTTP/1.1" 200 1878
+django.server WARNING 2025-02-24 13:25:14,581 basehttp 14096 30088 "GET /static/css/styles.css HTTP/1.1" 404 1969
