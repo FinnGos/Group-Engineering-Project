@@ -22,6 +22,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+<<<<<<< HEAD
+=======
+    path('', include('PrivacyPolicy.urls')),
+>>>>>>> Production
     path('', include('Checkin.urls')),
     path("", RedirectView.as_view(url="/accounts/login/", permanent=False)),
     path("admin/", admin.site.urls),
