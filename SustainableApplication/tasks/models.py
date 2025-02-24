@@ -1,4 +1,5 @@
 from django.db import models
+from Checkin.models import Location
 
 
 # Create your models here.
@@ -9,8 +10,7 @@ class Tasks(models.Model):
     reward = models.IntegerField(default=0)
     # please change to forgein keys from loactions database in implementation
     # artful dodger coordinates at present
-    lat_location = models.FloatField(default=0)
-    long_location = models.FloatField(default=0)
+    location_id = models.IntegerField(null=True, blank=True)
     completed = models.BooleanField(default=False)
     # not sure if needs to be change in future
     has_checked_in = models.BooleanField(default=False)
@@ -18,6 +18,16 @@ class Tasks(models.Model):
     def save(self, *args, **kwargs):
         self.completed = self.current_progress == self.target
         super().save(*args, **kwargs)
+
+    @property
+    def latitude(self):
+        """Retrieve latitude dynamically from related location object"""
+        return self.location.latitude if self.location else None
+    
+    @property
+    def longitude(self):
+        """Retrieve longitude dynamically from related location object"""
+        return self.location.longitude if self.location else None
 
     @property
     def progress_percentage(self):

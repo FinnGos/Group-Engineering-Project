@@ -84,11 +84,13 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     },
-    'location_db': {  #the new database
+    'location_db': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'location_db',
     }
 }
+
+DATABASE_ROUTERS = ['tasks.db_router.TaskLocationRouter']
 
 
 # Password validation
