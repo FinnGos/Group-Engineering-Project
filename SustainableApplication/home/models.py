@@ -12,7 +12,8 @@ from django.db import models
 class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
 
-    points = models.IntegerField(default=0)
+    current_points = models.IntegerField(default=0)
+    all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
 
     def __str__(self):
         return self.username

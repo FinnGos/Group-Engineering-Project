@@ -10,7 +10,7 @@ class ViewsTestCase(TestCase):
     """Set up for all the tests"""
     def setUp(self):
         """
-        Sets up the tests so that it is forced logged into the system to run the tests and the database has something to be tested against
+        Sets up the tests so that it is forced logged into the system to run the tests
         """
         self.client = Client()
         User = get_user_model()

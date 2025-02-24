@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home.apps.HomeConfig",
     "Checkin.apps.CheckinConfig",
+    "PrivacyPolicy.apps.PrivacypolicyConfig"
 ]
 
 MIDDLEWARE = [
