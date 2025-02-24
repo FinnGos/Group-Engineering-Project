@@ -47,6 +47,7 @@
     {% else %}
     <p>No tasks available to complete.</p>
     {% endif %}
+    <p><a href="{% url 'home' %}">Home</a></p>
 
     <script>
       function updateProgress(taskId, action) {

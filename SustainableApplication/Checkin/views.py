@@ -2,6 +2,7 @@ from django.http import HttpResponseBadRequest, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Location # Import location model
+from home.models import CustomUser
 from geopy.distance import geodesic # pip install required (pip install geopy)
 from tasks.models import Tasks
 # geopy is used fot geocoding(converting addresses to coordinates)
@@ -87,6 +88,11 @@ def database_location(request, task):
             }
             task.has_checked_in = True
             task.save()
+            reward = task.reward
+            user = request.user
+            user.current_points += reward
+            user.all_time_points += reward
+            user.save()
             return render(request, "checkin_page.html", context)
     context = {
             "lat": user_lat,

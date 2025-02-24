@@ -16,6 +16,14 @@ to get the user's location and send it to the Django backend. -->
     <!-- Django template logic to display messages -->
     {% if message %}
         <p class="success-message">{{ message }}</p>
+        {%if task%}
+    <script>
+      // Redirect to task page after successful checkin
+      setTimeout(function () {
+        window.location.href = "/tasks/";
+      }, 7000);
+    </script>
+    {%endif%}
     {% elif error %}
         <p class="error-message">{{ error }}</p>
     {% endif %}
