@@ -12,8 +12,14 @@ def tasks_view(request):
 
 
 def update_progress(request, task_id, action):
+    """Update the progress bar depending on which button is pressed
+
+    Returns:
+        JsonResponse: Depending if action is valid, will return update to the web page or an error
+    """
     task = get_object_or_404(Tasks, id=task_id)
 
+    # update functions for the claim button and the decrease button (for testing)
     if action == "increase" and task.current_progress < task.target:
         task.current_progress += 1
     elif action == "decrease" and task.current_progress > 0:

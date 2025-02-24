@@ -1,4 +1,4 @@
-button{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,11 +24,7 @@ button{% load static %}
 
         <!-- Progress Bar -->
         <div class="progress-container">
-          <div
-            class="progress-bar"
-            id="progress-bar-{{ task.id }}"
-            style="width: {{ task.progress_percentage }}%;"
-          >
+          <div class="progress-bar" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
             {{ task.current_progress }}/{{ task.target }}
           </div>
         </div>
@@ -43,25 +39,8 @@ button{% load static %}
         {%else%}
         <p>error no task id</p>
         {%endif%}
-        <button
-          id="claim-button-{{task.id}}"
-          class="btn btn-success"
-          onclick="claimTask({{task.id}})"
-          {%if
-          not
-          task.has_checked_in
-          %}disabled{%
-          endif
-          %}
-        >
-          Claim
-        </button>
-        <button
-          class="btn btn-warning"
-          onclick="updateProgress({{ task.id }}, 'decrease')"
-        >
-          Decrease
-        </button>
+        <button id="claim-button-{{task.id}}" class="btn btn-success" onclick="claimTask({{task.id}})"{%if not task.has_checked_in %}disabled{% endif %}>Claim</button>
+        <button class="btn btn-warning" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease</button>
       </li>
       {% endfor %}
     </ul>
