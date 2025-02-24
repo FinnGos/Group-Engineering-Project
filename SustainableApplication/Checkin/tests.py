@@ -144,8 +144,8 @@ class ViewsTestCase(TestCase):
         """
         mock_geodesic.return_value.meters = 200  # Outside 100m radius
         response = self.client.get(reverse("database_location"), {"lat": "37.7750", "lon": "-122.4195"})
-        self.assertEqual(response.status_code, 400)
-        self.assertIn("You are not in the valid location", response.content.decode())
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Sorry, you are currently not in the right location", response.content.decode())
 
     @patch("Checkin.views.geodesic")
     def test_invalid_range_location_checkin(self, mock_geodesic):
@@ -154,8 +154,8 @@ class ViewsTestCase(TestCase):
         """
         mock_geodesic.return_value.meters = 100.001  # Outside 100m radius
         response = self.client.get(reverse("database_location"), {"lat": "37.7750", "lon": "-122.4195"})
-        self.assertEqual(response.status_code, 400)
-        self.assertIn("You are not in the valid location", response.content.decode())
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Sorry, you are currently not in the right location", response.content.decode())
 
     @patch("Checkin.views.geodesic")  # Mocking geodesic function
     def test_valid_location_checkin(self, mock_geodesic):
