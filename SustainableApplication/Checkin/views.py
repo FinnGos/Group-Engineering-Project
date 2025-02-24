@@ -79,4 +79,10 @@ def database_location(request):
                 "message": f"Check-in Succesfull at {location.name}!"
             }
             return render(request, "checkin_page.html", context)
+        context = {
+                "lat": user_lat,
+                "lon": user_lon,
+                "message": f"Sorry, you are currently not in the right location"
+            }
+        return render(request, "checkin_page.html", context)
     return HttpResponseBadRequest("You are not in the valid location")
