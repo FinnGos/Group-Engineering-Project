@@ -254,6 +254,9 @@ def view_user_data(request):
     Returns:
         HttpResponse: Renders the user data template with user details and logs.
     """
+    # Adding logs
+    auth_logger.info("User asked for personal data stored: %s", request.user.username)
+
     user = request.user
 
     # Read logs related to the exact username using regex

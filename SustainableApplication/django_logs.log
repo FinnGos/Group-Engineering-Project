@@ -156,3 +156,86 @@ django.server INFO 2025-02-24 13:25:13,290 basehttp 14096 1708 "GET /home/ HTTP/
 django.server WARNING 2025-02-24 13:25:13,360 basehttp 14096 1708 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-02-24 13:25:14,523 basehttp 14096 30088 "GET /home/accounts/view_data/ HTTP/1.1" 200 1878
 django.server WARNING 2025-02-24 13:25:14,581 basehttp 14096 30088 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-24 13:33:09,757 autoreload 14096 19804 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRep\Group-Engineering-Project\SustainableApplication\home\views.py changed, reloading.
+django.utils.autoreload INFO 2025-02-24 13:33:10,500 autoreload 5944 10572 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-02-24 13:42:11,247 autoreload 24940 6736 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:42:12,540 basehttp 24940 25460 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:42:12,570 basehttp 24940 25460 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:42:12,704 basehttp 24940 25460 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-24 13:44:05,363 autoreload 1288 20032 Watching for file changes with StatReloader
+django.server INFO 2025-02-24 13:44:06,291 basehttp 1288 33612 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:44:06,341 basehttp 1288 33612 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:44:06,438 basehttp 1288 33612 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:44:14,283 views 1288 22028 User logged in: matt4
+django.server INFO 2025-02-24 13:44:14,363 basehttp 1288 22028 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:44:14,407 basehttp 1288 22028 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:44:14,471 basehttp 1288 22028 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:44:16,330 views 1288 29572 User asked for personal data stored: matt4
+django.server INFO 2025-02-24 13:44:16,350 basehttp 1288 29572 "GET /home/accounts/view_data/ HTTP/1.1" 200 2109
+django.server WARNING 2025-02-24 13:44:16,404 basehttp 1288 29572 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:44:24,032 basehttp 1288 25308 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:44:24,082 basehttp 1288 25308 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:45:58,056 views 1288 34744 User asked for personal data stored: matt4
+django.server INFO 2025-02-24 13:45:58,075 basehttp 1288 34744 "GET /home/accounts/view_data/ HTTP/1.1" 200 2235
+django.server WARNING 2025-02-24 13:45:58,141 basehttp 1288 34744 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-24 13:46:04,047 basehttp 1288 34588 "GET /home/ HTTP/1.1" 200 1587
+django.server WARNING 2025-02-24 13:46:04,094 basehttp 1288 34588 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 13:46:06,089 views 1288 30576 User logged out: matt4
+django.server INFO 2025-02-24 13:46:06,089 basehttp 1288 30576 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-02-24 13:46:06,101 basehttp 1288 30576 "GET /home/accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-24 13:46:06,157 basehttp 1288 30576 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-24 14:07:16,830 views 13796 15936 Logout by an unauthenticated user or session end.
+django INFO 2025-02-24 14:07:18,118 views 13796 15936 User logged in: testuser
+django INFO 2025-02-24 14:07:18,149 views 13796 15936 User deleted account: testuser
+django INFO 2025-02-24 14:07:18,777 views 13796 15936 User logged in: testuser
+django INFO 2025-02-24 14:07:18,793 views 13796 15936 User deleted account: testuser
+django INFO 2025-02-24 14:07:19,436 views 13796 15936 User logged in: testuser
+django INFO 2025-02-24 14:07:19,467 views 13796 15936 User deleted account: testuser
+django INFO 2025-02-24 14:07:19,782 views 13796 15936 Failed login attempt for username: testuser
+django INFO 2025-02-24 14:07:21,039 views 13796 15936 User logged in: testuser
+django INFO 2025-02-24 14:07:23,004 views 13796 15936 User logged in: testuser
+django INFO 2025-02-24 14:07:23,020 views 13796 15936 User logged out: testuser
+django INFO 2025-02-24 14:07:23,695 views 13796 15936 User logged in: newuser
+django INFO 2025-02-24 14:07:23,711 views 13796 15936 New user signed up: newuser
+django INFO 2025-02-24 14:07:24,369 views 13796 15936 Failed login attempt for username: TESTUSER
+django INFO 2025-02-24 14:07:25,030 views 13796 15936 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-24 14:07:26,271 views 13796 15936 User logged in: testuser
+django WARNING 2025-02-24 14:07:26,602 views 13796 15936 Failed signup attempt.
+django INFO 2025-02-24 14:07:27,560 views 13796 15936 User logged in: newuser
+django INFO 2025-02-24 14:07:27,591 views 13796 15936 New user signed up: newuser
+django WARNING 2025-02-24 14:07:27,905 views 13796 15936 Failed signup attempt.
+django INFO 2025-02-24 14:07:28,549 views 13796 15936 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-24 14:07:28,879 views 13796 15936 Failed signup attempt.
+django WARNING 2025-02-24 14:07:29,178 views 13796 15936 Failed signup attempt.
+django INFO 2025-02-24 14:07:29,807 views 13796 15936 User logged in: matt4
+django INFO 2025-02-24 14:07:30,508 views 13796 15936 User logged in: matt4
+django INFO 2025-02-24 14:07:31,142 views 13796 15936 User logged in: matt4
+django INFO 2025-02-24 14:08:21,705 views 34276 20188 Logout by an unauthenticated user or session end.
+django INFO 2025-02-24 14:08:23,056 views 34276 20188 User logged in: testuser
+django INFO 2025-02-24 14:08:23,088 views 34276 20188 User deleted account: testuser
+django INFO 2025-02-24 14:08:23,731 views 34276 20188 User logged in: testuser
+django INFO 2025-02-24 14:08:23,747 views 34276 20188 User deleted account: testuser
+django INFO 2025-02-24 14:08:24,423 views 34276 20188 User logged in: testuser
+django INFO 2025-02-24 14:08:24,438 views 34276 20188 User deleted account: testuser
+django INFO 2025-02-24 14:08:24,831 views 34276 20188 Failed login attempt for username: testuser
+django INFO 2025-02-24 14:08:26,211 views 34276 20188 User logged in: testuser
+django INFO 2025-02-24 14:08:28,145 views 34276 20188 User logged in: testuser
+django INFO 2025-02-24 14:08:28,160 views 34276 20188 User logged out: testuser
+django INFO 2025-02-24 14:08:28,805 views 34276 20188 User logged in: newuser
+django INFO 2025-02-24 14:08:28,837 views 34276 20188 New user signed up: newuser
+django INFO 2025-02-24 14:08:29,496 views 34276 20188 Failed login attempt for username: TESTUSER
+django INFO 2025-02-24 14:08:30,139 views 34276 20188 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-24 14:08:31,428 views 34276 20188 User logged in: testuser
+django WARNING 2025-02-24 14:08:31,758 views 34276 20188 Failed signup attempt.
+django INFO 2025-02-24 14:08:32,700 views 34276 20188 User logged in: newuser
+django INFO 2025-02-24 14:08:32,716 views 34276 20188 New user signed up: newuser
+django WARNING 2025-02-24 14:08:33,038 views 34276 20188 Failed signup attempt.
+django INFO 2025-02-24 14:08:33,659 views 34276 20188 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-24 14:08:33,973 views 34276 20188 Failed signup attempt.
+django WARNING 2025-02-24 14:08:34,303 views 34276 20188 Failed signup attempt.
+django INFO 2025-02-24 14:08:34,948 views 34276 20188 User logged in: matt4
+django INFO 2025-02-24 14:08:34,979 views 34276 20188 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:08:35,623 views 34276 20188 User logged in: matt4
+django INFO 2025-02-24 14:08:35,655 views 34276 20188 User asked for personal data stored: matt4
+django INFO 2025-02-24 14:08:36,314 views 34276 20188 User logged in: matt4
+django INFO 2025-02-24 14:08:36,346 views 34276 20188 User asked for personal data stored: matt4

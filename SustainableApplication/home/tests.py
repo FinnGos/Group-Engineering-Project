@@ -334,3 +334,52 @@ class AccountTests(TestCase):
         self.assertEqual(updated_user.first_name, "Updated")
         self.assertEqual(updated_user.last_name, "Name")
         self.assertEqual(updated_user.email, "updated@example.com")
+
+# Tests for user requesting their own data
+
+class ViewUserDataTests(TestCase):
+    def setUp(self):
+        """Set up a test user and create a test log file."""
+        self.client = Client()
+        self.user = get_user_model().objects.create_user(username="matt4", password="securepassword")
+        self.client.login(username="matt4", password="securepassword")  # Log in the user
+
+        # Create a test log file with a relevant log entry
+        self.log_entry = f"django INFO 2025-02-24 13:45:58,056 views 1288 34744 User asked for personal data stored: {self.user.username}\n"
+        
+        with open(TEST_LOG_FILE, "w", encoding="utf-8") as file:
+            file.write(self.log_entry)
+
+    def tearDown(self):
+        """Clean up the test log file after tests."""
+        if os.path.exists(TEST_LOG_FILE):
+            os.remove(TEST_LOG_FILE)
+
+    def test_user_can_view_personal_data(self):
+        """Test that a logged-in user can access their personal data page."""
+        response = self.client.get(reverse("view_user_data"))  # Update this URL name if needed
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, "registration/view_user_data.html")
+
+        # Check if user's data is displayed
+        self.assertContains(response, self.user.username)
+        self.assertContains(response, self.user.email)
+        self.assertContains(response, self.user.password)  # Should be hashed
+
+    def test_user_sees_correct_log_entry(self):
+        """Test that the correct log entry appears on the page."""
+        response = self.client.get(reverse("view_user_data"))
+        self.assertContains(response, self.log_entry.strip())  # Check if log is present
+
+    def test_user_does_not_see_other_user_logs(self):
+        """Ensure the user does not see logs from another user."""
+        # Add another user's log
+        other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt44\n"
+        with open(TEST_LOG_FILE, "a", encoding="utf-8") as file:
+            file.write(other_log)
+
+        response = self.client.get(reverse("view_user_data"))
+
+        # User should see their own log but not the other user's log
+        self.assertContains(response, self.log_entry.strip())
+        self.assertNotContains(response, "matt44")  # Ensure other user's log is not included
