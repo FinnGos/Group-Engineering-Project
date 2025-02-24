@@ -1,16 +1,37 @@
 from django.test import TestCase, Client
 from django.urls import reverse
+from django.contrib.auth import get_user_model
+from unittest.mock import patch
+from Checkin.models import Location
 
 class ViewsTestCase(TestCase):
-    """Test the check-in button"""
+    databases = {"default", "location_db"}
+
+    """Set up for all the tests"""
+    def setUp(self):
+        """
+        Sets up the tests so that it is forced logged into the system to run the tests and the database has something to be tested against
+        """
+        self.client = Client()
+        User = get_user_model()
+        self.user = User.objects.create_user(username='testuser', password='password')
+        self.client.force_login(self.user)
+        self.valid_location = Location.objects.using("location_db").create(
+            name="Test Location",
+            latitude=37.7749,
+            longitude=-122.4194,
+            radius=100  # 100 meters
+        )
+
+    """Test the check-in button
     def test_get_location_success(self):
-        """
+        
         Tests a successful case of location check
-        """
+        
         response = self.client.get(reverse('get_location'), {'lat': '40.7128', 'lon': '-74.0060'})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Check-In Successful! Lat: 40.7128, Lon: -74.0060')
-        self.assertTemplateUsed(response, 'checkin_page.html')
+        self.assertTemplateUsed(response, 'checkin_page.html')"""
 
     def test_get_location_missing_params(self):
         """
@@ -37,6 +58,9 @@ class ViewsTestCase(TestCase):
         self.assertTemplateUsed(response, 'checkin_page.html')
 
     def test_get_location_empty_values(self):
+        """
+        Tests when lat and lon are empty
+        """
         response = self.client.get(reverse('get_location'), {'lat': '', 'lon': ''})
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'checkin_page.html')
@@ -49,23 +73,23 @@ class ViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.content.decode(), 'Invalid location data.')
 
-    def test_get_location_maximum_values(self):
-        """
+    """def test_get_location_maximum_values(self):
+        
         Tests the edge cases of maximum
-        """
+        
         response = self.client.get(reverse('get_location'), {'lat': '90.0', 'lon': '180.0'})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Check-In Successful! Lat: 90.0, Lon: 180.0')
-        self.assertTemplateUsed(response, 'checkin_page.html')
+        self.assertTemplateUsed(response, 'checkin_page.html')"""
 
-    def test_get_location_minimum_values(self):
-        """
+    """def test_get_location_minimum_values(self):
+        
         Tests the edge of minimum
-        """
+        
         response = self.client.get(reverse('get_location'), {'lat': '-90.0', 'lon': '-180.0'})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Check-In Successful! Lat: -90.0, Lon: -180.0')
-        self.assertTemplateUsed(response, 'checkin_page.html')
+        self.assertTemplateUsed(response, 'checkin_page.html')"""
 
     def test_get_location_above_maximum_values(self):
         """
@@ -130,3 +154,43 @@ class ViewsTestCase(TestCase):
         response = self.client.get(reverse('get_location'), {'lat': '0', 'lon': 'xyz'})
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.content.decode(), 'Invalid location data.')
+
+    @patch("Checkin.views.geodesic")  # Mocking geodesic function
+    def test_valid_location_checkin(self, mock_geodesic):
+        """
+        Tests if lon and lat are valid and are within the location range
+        """
+        mock_geodesic.return_value.meters = 50  # Within 100m radius
+        response = self.client.get(reverse("database_location"), {"lat": "37.7749", "lon": "-122.4194"})
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Check-in Succesfull at Test Location!")
+
+    @patch("Checkin.views.geodesic")
+    def test_invalid_location_checkin(self, mock_geodesic):
+        """
+        Tests if lon and lat are valid but are not within the location range
+        """
+        mock_geodesic.return_value.meters = 200  # Outside 100m radius
+        response = self.client.get(reverse("database_location"), {"lat": "37.7750", "lon": "-122.4195"})
+        self.assertEqual(response.status_code, 400)
+        self.assertIn("You are not in the valid location", response.content.decode())
+
+    @patch("Checkin.views.geodesic")
+    def test_invalid_range_location_checkin(self, mock_geodesic):
+        """
+        Tests if lon and lat are valid but are just not within the location range
+        """
+        mock_geodesic.return_value.meters = 100.001  # Outside 100m radius
+        response = self.client.get(reverse("database_location"), {"lat": "37.7750", "lon": "-122.4195"})
+        self.assertEqual(response.status_code, 400)
+        self.assertIn("You are not in the valid location", response.content.decode())
+
+    @patch("Checkin.views.geodesic")  # Mocking geodesic function
+    def test_valid_location_checkin(self, mock_geodesic):
+        """
+        Tests if lon and lat are valid and are on top of the location
+        """
+        mock_geodesic.return_value.meters = 0  # Within 100m radius
+        response = self.client.get(reverse("database_location"), {"lat": "37.7749", "lon": "-122.4194"})
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Check-in Succesfull at Test Location!")

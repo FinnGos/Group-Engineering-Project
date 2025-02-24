@@ -27,6 +27,10 @@ def get_location(request):
             # If data is non-numeric:
         except ValueError:
             return HttpResponseBadRequest("Invalid location data.")
+
+        # Check if the coordinates are in the valid range
+        if not (-180.0 <= user_lon <= 180.0 and -90.0 <= user_lat <= 90.0):
+            return HttpResponseBadRequest("Invalid location data.")
         
         # Redirect to the database_location view for validation
         return database_location(request)
@@ -40,27 +44,28 @@ def get_location(request):
 
 @login_required
 def database_location(request):
+    """Method that checks the user's location to see if it is in the locations database
+
+    
+    Args:
+        request (HttpRequest): The incoming HTTP request, along with the user's location data.
+
+    Returns:
+        HttpResponse: checkin_page.html with the check in successful comment if valid.
+        HttpResponseBadRequest: A 400 response if the user is not in a valid location.
+    """
 
     lat = request.GET.get("lat")
     lon = request.GET.get("lon")
 
-    if not lat or not lon:
+    user_lat = float(lat)
+    user_lon = float(lon)
+
+    if not user_lat or not user_lon:
         return HttpResponseBadRequest("Missing location data.")
     
-    try:
-        user_lat = float(lat)
-        user_lon = float(lon)
-
-    except ValueError:
-        return HttpResponseBadRequest("Invalid Location data")
-    
-    # Check if the coordinates are in the valid range
-    if not (-180.0 <= user_lon <= 180.0 and -90.0 <= user_lat <= 90.0):
-        return HttpResponseBadRequest("Invalid location data.")
-
     # Check locations in the database (location_db)
     locations = Location.objects.using('location_db').all()
-    print("Locations in DB:", list(locations))
     for location in locations:
 
         location_coords = (location.latitude, location.longitude)
@@ -74,7 +79,4 @@ def database_location(request):
                 "message": f"Check-in Succesfull at {location.name}!"
             }
             return render(request, "checkin_page.html", context)
-        return HttpResponseBadRequest("You are not in the correct location(ｕ_ｕ*)")
     return HttpResponseBadRequest("You are not in the valid location")
- 
-    
