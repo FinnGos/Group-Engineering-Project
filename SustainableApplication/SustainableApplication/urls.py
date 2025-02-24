@@ -22,9 +22,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('PrivacyPolicy.urls')),
     path('', include('Checkin.urls')),
     path("", RedirectView.as_view(url="/accounts/login/", permanent=False)),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("home/", include("home.urls")),
+    path("leaderboard/", include("leaderboard.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

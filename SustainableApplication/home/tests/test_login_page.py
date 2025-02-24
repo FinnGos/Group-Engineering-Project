@@ -14,7 +14,8 @@ class CustomUserModelTest(TestCase):
         """
         user = CustomUser.objects.create_user(username="testuser", password="testpass")
         self.assertEqual(str(user), "testuser")
-        self.assertEqual(user.points, 0)
+        self.assertEqual(user.current_points, 0)
+        self.assertEqual(user.all_time_points, 0)
 
 
 class LoginRequiredTests(TestCase):

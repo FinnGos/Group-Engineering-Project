@@ -23,6 +23,7 @@ SECRET_KEY = "django-insecure-fj8v_l7)&5l^t)dzpmqe)i3c@jnwmh+(*x_=9j8$4rz90qro19
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+STATIC_URL = "/static/"
 
 ALLOWED_HOSTS = []
 
@@ -38,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home.apps.HomeConfig",
     "Checkin.apps.CheckinConfig",
+    "PrivacyPolicy.apps.PrivacypolicyConfig"
+    "leaderboard.apps.LeaderboardConfig",
 ]
 
 MIDDLEWARE = [
