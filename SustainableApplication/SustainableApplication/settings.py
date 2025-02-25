@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "Checkin.apps.CheckinConfig",
     "PrivacyPolicy.apps.PrivacypolicyConfig",
     "leaderboard.apps.LeaderboardConfig",
-    "TermsAndConditions.apps.TermsandconditionsConfig"
+    "tasks.apps.TasksConfig",
+    "TermsAndConditions.apps.TermsandconditionsConfig",
 ]
 
 MIDDLEWARE = [
@@ -83,8 +84,14 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'location_db': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'location_db',
     }
 }
+
+DATABASE_ROUTERS = ['tasks.db_router.TaskLocationRouter']
 
 
 # Password validation

@@ -16,6 +16,14 @@ to get the user's location and send it to the Django backend. -->
     <!-- Django template logic to display messages -->
     {% if message %}
         <p class="success-message">{{ message }}</p>
+        {%if task%}
+    <script>
+      // Redirect to task page after successful checkin
+      setTimeout(function () {
+        window.location.href = "/tasks/";
+      }, 7000);
+    </script>
+    {%endif%}
     {% elif error %}
         <p class="error-message">{{ error }}</p>
     {% endif %}
@@ -33,7 +41,12 @@ to get the user's location and send it to the Django backend. -->
                 */
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
-                    window.location.href = `/get_Location/?lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
+                    const taskId = "{{task.id|default:0}}";
+                    if (taskId == 0) {
+                        alert("Task id not found");
+                        return;
+                    }
+                    window.location.href = `/get_location/${taskId}/?lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
                 });
             } else {
                 alert("Geolocation is not supported by this browser.");
