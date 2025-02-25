@@ -19,8 +19,7 @@ def update_progress(request, task_id, action):
     """
     task = get_object_or_404(Tasks, id=task_id)
 
-    #TODO: Delete decrease button in HTML and here when actually deploying website
-    # update functions for the claim button and the decrease button (for testing)
+    # update functions for the claim button and the decrease button
     if action == "increase" and task.current_progress < task.target:
         task.current_progress += 1
     elif action == "decrease" and task.current_progress > 0:

@@ -8,11 +8,8 @@ class Tasks(models.Model):
     current_progress = models.IntegerField(default=0)
     target = models.IntegerField(default=0)
     reward = models.IntegerField(default=0)
-    # please change to forgein keys from loactions database in implementation
-    # artful dodger coordinates at present
     location_id = models.IntegerField(null=True, blank=True)
     completed = models.BooleanField(default=False)
-    # not sure if needs to be change in future
     has_checked_in = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):

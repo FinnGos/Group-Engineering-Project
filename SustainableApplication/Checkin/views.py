@@ -73,11 +73,6 @@ def database_location(request, task):
     # Check locations in the database (location_db)
     locations = Location.objects.using('location_db').all()
     for location in locations:
-        print("location")
-
-        #location_coords = (location.latitude, location.longitude)
-        #user_coords = (user_lat, user_lon)
-        #distance = geodesic(location_coords, user_coords).meters
 
         if abs(user_lat - location.latitude) <= 0.005 and abs(user_lon - location.longitude) <= 0.005:
             context = {
