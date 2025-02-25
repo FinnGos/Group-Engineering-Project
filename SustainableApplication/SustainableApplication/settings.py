@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "PrivacyPolicy.apps.PrivacypolicyConfig",
     "leaderboard.apps.LeaderboardConfig",
     "tasks.apps.TasksConfig",
+    "TermsAndConditions.apps.TermsandconditionsConfig",
 ]
 
 MIDDLEWARE = [
