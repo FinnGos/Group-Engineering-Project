@@ -6,6 +6,14 @@
 </p>
 <h2>Content that can be altered by the models</h2>
 <p>User stats</p>
+<p>
+  Welcome back, {{ user.username }}! 
+  <a href="{% url 'logout' %}">Logout</a> | 
+  <a href="{% url 'delete_account' %}">Delete Account</a> | 
+  <a href="{% url 'update_profile' %}">Update Profile</a> | 
+  <a href="{% url 'change_password' %}">Change Password</a> |
+  <a href="{% url 'view_user_data' %}">View My Data</a>
+</p>
 <ul>
   <li><strong>Name: </strong></li>
   <li><strong>Coins: </strong></li>
