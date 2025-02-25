@@ -93,7 +93,7 @@ pip install -r requirements.txt
 - Tests are modular, to test you must specify which test to run
 - To run them, navigate to the folder containing manage.py and run
 ```bash 
-	python3 manage.py test <application name>.tests
+python3 manage.py test <application name>.tests
 ```
 replace application name with the application, for example use home.tests to test home page
 ---
