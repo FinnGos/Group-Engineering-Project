@@ -142,3 +142,16 @@ django.server INFO 2025-02-25 10:36:38,299 basehttp 32828 17860 "GET /home/signu
 django.server WARNING 2025-02-25 10:36:38,349 basehttp 32828 17860 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-02-25 10:36:39,652 basehttp 32828 10572 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
 django.server INFO 2025-02-25 10:36:42,199 basehttp 32828 10572 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
+django.utils.autoreload INFO 2025-03-03 14:03:15,193 autoreload 33424 3128 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-03 14:04:14,858 autoreload 2024 29368 Watching for file changes with StatReloader
+django.server INFO 2025-03-03 14:04:16,208 basehttp 2024 9932 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:04:16,333 basehttp 2024 9932 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-03 14:04:16,393 basehttp 2024 9932 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-03 14:04:18,384 views 2024 27908 User logged in: dc754
+django.server INFO 2025-03-03 14:04:18,406 basehttp 2024 27908 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:04:18,416 basehttp 2024 27908 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-03-03 14:04:18,448 basehttp 2024 27908 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-03 14:04:19,993 basehttp 2024 5840 "GET /tasks/ HTTP/1.1" 200 10750
+django.server WARNING 2025-03-03 14:04:20,026 basehttp 2024 5840 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-03 14:04:37,484 basehttp 2024 4396 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-03-03 14:04:37,530 basehttp 2024 4396 "GET /static/css/styles.css HTTP/1.1" 404 1969
