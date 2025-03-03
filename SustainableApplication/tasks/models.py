@@ -11,6 +11,7 @@ class Tasks(models.Model):
     location_id = models.IntegerField(null=True, blank=True)
     completed = models.BooleanField(default=False)
     has_checked_in = models.BooleanField(default=False)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
         self.completed = self.current_progress == self.target
@@ -20,7 +21,7 @@ class Tasks(models.Model):
     def latitude(self):
         """Retrieve latitude dynamically from related location object"""
         return self.location.latitude if self.location else None
-    
+
     @property
     def longitude(self):
         """Retrieve longitude dynamically from related location object"""

@@ -155,3 +155,48 @@ django.server INFO 2025-03-03 14:04:19,993 basehttp 2024 5840 "GET /tasks/ HTTP/
 django.server WARNING 2025-03-03 14:04:20,026 basehttp 2024 5840 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-03-03 14:04:37,484 basehttp 2024 4396 "GET /home/ HTTP/1.1" 200 1735
 django.server WARNING 2025-03-03 14:04:37,530 basehttp 2024 4396 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-03 14:18:34,172 autoreload 5332 24476 Watching for file changes with StatReloader
+django.server INFO 2025-03-03 14:18:35,963 basehttp 5332 20140 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:18:35,991 basehttp 5332 20140 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-03 14:18:36,028 basehttp 5332 20140 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-03 14:18:37,486 views 5332 29340 User logged in: dc754
+django.server INFO 2025-03-03 14:18:37,508 basehttp 5332 29340 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:18:37,521 basehttp 5332 29340 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-03-03 14:18:37,557 basehttp 5332 29340 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-03 14:18:38,924 basehttp 5332 14788 "GET /tasks/ HTTP/1.1" 200 10750
+django.server WARNING 2025-03-03 14:18:38,957 basehttp 5332 14788 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-03 14:18:42,910 basehttp 5332 3096 "GET /get_location/3/? HTTP/1.1" 200 2198
+django.server INFO 2025-03-03 14:18:42,940 basehttp 5332 3096 "GET /static/css/button.css HTTP/1.1" 304 0
+django.server INFO 2025-03-03 14:18:48,095 basehttp 5332 3096 "GET /get_location/3/?lat=50.730677762429345&lon=-3.5421281910313964 HTTP/1.1" 200 2069
+django.server INFO 2025-03-03 14:18:55,138 basehttp 5332 3096 "GET /tasks/ HTTP/1.1" 200 10750
+django.server WARNING 2025-03-03 14:18:55,167 basehttp 5332 3096 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-03 14:42:58,262 autoreload 10508 27212 Watching for file changes with StatReloader
+django.server INFO 2025-03-03 14:42:59,370 basehttp 10508 30592 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:42:59,414 basehttp 10508 30592 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-03 14:42:59,461 basehttp 10508 30592 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-03 14:43:00,863 views 10508 30084 User logged in: dc754
+django.server INFO 2025-03-03 14:43:00,890 basehttp 10508 30084 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:43:00,902 basehttp 10508 30084 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-03-03 14:43:00,933 basehttp 10508 30084 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request ERROR 2025-03-03 14:43:01,933 log 10508 32732 Internal Server Error: /tasks/
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 22, in tasks_view
+    if selected_task.last_updated.date() != today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Tasks' object has no attribute 'last_updated'
+django.server ERROR 2025-03-03 14:43:01,936 basehttp 10508 32732 "GET /tasks/ HTTP/1.1" 500 70348
+django.utils.autoreload INFO 2025-03-03 14:43:44,152 autoreload 10508 27212 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-03 14:43:44,804 autoreload 23316 27632 Watching for file changes with StatReloader
+django.server INFO 2025-03-03 14:43:46,001 basehttp 23316 3620 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:43:46,033 basehttp 23316 3620 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-03 14:43:46,079 basehttp 23316 3620 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-03 14:43:47,417 views 23316 27676 User logged in: dc754
+django.server INFO 2025-03-03 14:43:47,442 basehttp 23316 27676 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-03 14:43:47,453 basehttp 23316 27676 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-03-03 14:43:47,489 basehttp 23316 27676 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-03 14:43:48,233 basehttp 23316 23852 "GET /tasks/ HTTP/1.1" 200 2725
+django.server WARNING 2025-03-03 14:43:48,270 basehttp 23316 23852 "GET /static/css/styles.css HTTP/1.1" 404 1969

@@ -18,13 +18,17 @@
 
     {% if tasks %}
     <ul>
-      {% for task in tasks %}
       <li>
+        <h2>Today's Task</h2>
         <strong>{{ task.task_name }}</strong>
 
         <!-- Progress Bar -->
         <div class="progress-container">
-          <div class="progress-bar" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
+          <div
+            class="progress-bar"
+            id="progress-bar-{{ task.id }}"
+            style="width: {{ task.progress_percentage }}%;"
+          >
             {{ task.current_progress }}/{{ task.target }}
           </div>
         </div>
@@ -39,10 +43,26 @@
         {%else%}
         <p>error no task id</p>
         {%endif%}
-        <button id="claim-button-{{task.id}}" class="btn btn-success" onclick="claimTask({{task.id}})"{%if not task.has_checked_in %}disabled{% endif %}>Claim</button>
-        <button class="btn btn-warning" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease</button>
+        <button
+          id="claim-button-{{task.id}}"
+          class="btn btn-success"
+          onclick="claimTask({{task.id}})"
+          {%if
+          not
+          task.has_checked_in
+          %}disabled{%
+          endif
+          %}
+        >
+          Claim
+        </button>
+        <button
+          class="btn btn-warning"
+          onclick="updateProgress({{ task.id }}, 'decrease')"
+        >
+          Decrease
+        </button>
       </li>
-      {% endfor %}
     </ul>
     {% else %}
     <p>No tasks available to complete.</p>
@@ -81,7 +101,7 @@
          * Function called when the claim button is pressed
          * Uses ajax to update database without reloading the webpage
          * Will also disable the claim button after has been pressed to ensure no repeat claims
-         */ 
+         */
         $.ajax({
           url: "{%url 'update_progress' 1 'claim' %}".replace("1", taskId),
           type: "POST",

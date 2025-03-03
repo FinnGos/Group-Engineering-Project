@@ -2,13 +2,30 @@ from django.shortcuts import render
 from .models import Tasks
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
+from django.utils.timezone import now
+import random
 
 
 # Create your views here.
 def tasks_view(request):
-    incomplete_tasks = Tasks.objects.filter(completed=False)
+    today = now().date()
+    incomplete_tasks = list(Tasks.objects.filter(completed=False))
 
-    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+    # retrieve or select random task for today
+    if not incomplete_tasks:
+        task = None
+    else:
+        # pick random task once per day
+        selected_task = random.choice(incomplete_tasks)
+
+        # reset progress if last update was not today
+        if selected_task.updated_at.date() != today:
+            selected_task.current_progress = 0
+            selected_task.save()
+
+        task = selected_task
+
+    return render(request, "tasks.html", {"task": task})
 
 
 def update_progress(request, task_id, action):

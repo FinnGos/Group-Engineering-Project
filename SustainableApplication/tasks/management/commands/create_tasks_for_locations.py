@@ -19,8 +19,8 @@ class Command(BaseCommand):
                 task_name=f"Task at {location.name}",
                 location_id=location.id,
                 defaults={
-                    "reward": 10,  # default target progress
-                    "target": 100,  # default reward
+                    "reward": 10,  # default reward
+                    "target": 100,  # default target
                 },
             )
             if created:
