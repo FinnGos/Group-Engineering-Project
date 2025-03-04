@@ -7,43 +7,76 @@ to get the user's location and send it to the Django backend. -->
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{% static 'css/button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check-In Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <style>
+        #map {
+            width: 600px; 
+            height: 300px; 
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Check-In System</h1>
-    <!-- Django template logic to display messages -->
+
     {% if message %}
         <p class="success-message">{{ message }}</p>
-        {%if task%}
-    <script>
-      // Redirect to task page after successful checkin
-      setTimeout(function () {
-        window.location.href = "/tasks/";
-      }, 7000);
-    </script>
-    {%endif%}
+        {% if task %}
+        <script>
+            setTimeout(function () {
+                window.location.href = "/tasks/";
+            }, 7000);
+        </script>
+        {% endif %}
     {% elif error %}
         <p class="error-message">{{ error }}</p>
     {% endif %}
 
+    <div id="map"></div>
+
     <script>
+        var map = L.map('map'); // Map initialization
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+    
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            
+            map.setView([lat, lon], 15); // Put marker on user location
+            L.marker([lat, lon]).addTo(map)
+                .bindPopup("You're here!")
+                .openPopup();
+        }
+        
+        var marker = L.marker([50.7354611346658, -3.5339872116477524]).addTo(map)
+            .bindPopup("Forum reycling point")
+            .openPopup();
+
+        var circle = L.circle([50.744283404596366,  -3.54216391886783], 50, {
+            color: 'purple',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map)
+            .bindPopup("Duryard PV solar panels")
+            .openPopup();
+
         function getLocation() {
-            /**
-                * getLocation - Retrieves the user's current geographic location using the browser's geolocation API.
-                * 
-                * If geolocation is supported on the users browser then it will fetch the users longitiude and latitude. If not supported, an error will pop up.
-                * 
-                * Calls the position function to get the longitude and latitude of the user.
-                * 
-                * Redirects the user using their longitude and latitude.
-                */
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    const taskId = "{{task.id|default:0}}";
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    showPosition(position);
+                    const taskId = "{{ task.id|default:0 }}";
                     if (taskId == 0) {
-                        alert("Task id not found");
+                        alert("Task ID not found.");
                         return;
                     }
                     window.location.href = `/get_location/${taskId}/?lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
@@ -52,8 +85,17 @@ to get the user's location and send it to the Django backend. -->
                 alert("Geolocation is not supported by this browser.");
             }
         }
-    </script>
-    <!-- Check-In button that triggers getLocation() function -->
+    
+        // Automatically get and show user's location on page load
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, function (error) {
+                alert("Geolocation failed: " + error.message);
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    </script>    
+
     <button onclick="getLocation()">Check-In</button>
 </body>
 </html>
