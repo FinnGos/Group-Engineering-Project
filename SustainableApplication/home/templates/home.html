@@ -1,34 +1,56 @@
-{%extends "base_generic.html" %} {%block content%}
-<h1>Sustainable Application Home</h1>
-<p>
-  main page of the application developed by
-  <em>Woman in STEM</em>
-</p>
-<h2>Content that can be altered by the models</h2>
-<p>User stats</p>
-<p>
-  Welcome back, {{ user.username }}! 
-  <a href="{% url 'logout' %}">Logout</a> | 
-  <a href="{% url 'delete_account' %}">Delete Account</a> | 
-  <a href="{% url 'update_profile' %}">Update Profile</a> | 
-  <a href="{% url 'change_password' %}">Change Password</a> |
-  <a href="{% url 'view_user_data' %}">View My Data</a>
-</p>
-<ul>
-  <li><strong>Name: </strong></li>
-  <li><strong>Coins: </strong></li>
-  <li><strong>Something else: </strong></li>
-</ul>
-<div class="col-sm-2">
-  {% block sidebar %}
-  <ul class="sidebar-nav">
-    <li><a href="{% url 'home' %}">Home</a></li>
-    <!--Change the href to the view to access pages from a link on the website-->
-    <li><a href="{% url 'leaderboard' %}">Leaderboard</a></li>
-    <li><a href="{%url 'tasks_view'%}">Tasks</a></li>
-  </ul>
-  {% endblock %}
-</div>
-<p><a href="{% url 'privacyPolicy'%}">Privacy Policy</a></p>
+{% load static %}
 
-{%endblock%}
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Top Half Image Section -->
+    <div class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white text-4xl font-bold" 
+        style="background-image: url('{% static "images/Top_Image.jpg" %}');">
+        Welcome to Our Sustainable Future
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="p-8 text-center">
+        <h1 class="text-4xl font-bold">Sustainable Application Home</h1>
+        <p>
+            Main page of the application developed by
+            <em>Women in STEM</em>
+        </p>
+        <h2 class="text-2xl font-semibold mt-4">Content that can be altered by the models</h2>
+        <p>User stats</p>
+        <p>
+            Welcome back, {{ user.username }}! 
+            <a href="{% url 'logout' %}" class="text-green-600 hover:underline">Logout</a> | 
+            <a href="{% url 'delete_account' %}" class="text-green-600 hover:underline">Delete Account</a> | 
+            <a href="{% url 'update_profile' %}" class="text-green-600 hover:underline">Update Profile</a> | 
+            <a href="{% url 'change_password' %}" class="text-green-600 hover:underline">Change Password</a> |
+            <a href="{% url 'view_user_data' %}" class="text-green-600 hover:underline">View My Data</a>
+        </p>
+        <ul class="mt-4">
+            <li><strong>Name: </strong></li>
+            <li><strong>Coins: </strong></li>
+            <li><strong>Something else: </strong></li>
+        </ul>
+    </div>
+
+    <!-- Bottom Half Image Section -->
+    <div class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white text-3xl font-bold"
+        style="background-image: url('{% static "images/Bottom_Image.jpg" %}');">
+        Take Action Today!
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="col-sm-2 p-4">
+        {% block sidebar %}
+        <ul class="sidebar-nav">
+            <li><a href="{% url 'home' %}" class="text-green-600 hover:underline">Home</a></li>
+            <li><a href="{% url 'leaderboard' %}" class="text-green-600 hover:underline">Leaderboard</a></li>
+            <li><a href="{% url 'tasks_view' %}" class="text-green-600 hover:underline">Tasks</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    
+    <p class="text-center mt-4"><a href="{% url 'privacyPolicy' %}" class="text-green-600 hover:underline">Privacy Policy</a></p>
+{% endblock %}
