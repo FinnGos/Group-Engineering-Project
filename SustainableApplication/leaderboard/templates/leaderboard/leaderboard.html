@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+
+    <!-- Load Static Files -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'leaderboard/styles.css' %}">
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div class="leaderboard">
+        {% for entry in ranked_users|slice:":20" %}
+            <div class="rank-item">
+                <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %}</span>
+                <span class="name">{{ entry.user.username }}</span>
+                <span class="points">{{ entry.user.all_time_points }} pts</span>
+            </div>
+        {% empty %}
+            <p>No users found.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
