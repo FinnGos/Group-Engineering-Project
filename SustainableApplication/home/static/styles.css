@@ -1,5 +1,20 @@
 .sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-  }
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #008000; /* Green color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-nav a:hover {
+  color: #004d00; /* Darker green */
+}
