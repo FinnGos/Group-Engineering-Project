@@ -1,0 +1,41 @@
+/* Styling for the entire page */
+body {
+    background-color: white; /* Sets the background color */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column;  
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    /* Styling for the heading */
+    color: black;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px; /* Rounds the button corners */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgb(179, 14, 80);
+}
+
+/* Message styling */
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}

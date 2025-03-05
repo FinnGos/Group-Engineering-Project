@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% load static %}
 
 {% block title %}Home{% endblock %}
@@ -8,104 +7,66 @@
 <style>
     .top-section {
         background-image: url("{% static 'images/Top_Image.jpg' %}");
-        height: 60vh;  /* Adjust height to make more space for the text */
+        height: 50vh;
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
-        flex-direction: column; /* Allow vertical stacking of text */
-        text-align: center; /* Center-align text */
-    }
-
-    .top-section h1 {
-        font-size: 5rem; /* "CarboCollect" size */
+        font-size: 2rem;
         font-weight: bold;
     }
-
-    .top-section p {
-        font-size: 2rem; /* "Be a Part of The Change" size */
-        font-weight: bold;
-        margin-top: 10px; /* Add space between the title and the subtitle */
-    }
-
     .bottom-section {
         background-image: url("{% static 'images/Bottom_Image.jpg' %}");
-        height: 40vh;
+        height: 50vh;
         background-size: cover;
         background-position: center;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         color: white;
-        text-align: center;
-    }
-
-    .bottom-section p {
         font-size: 1.75rem;
         font-weight: bold;
-    }
-
-    .btn {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        margin: 10px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background-color: #45a049;
     }
 </style>
 {% endblock %}
 
 {% block content %}
-<!-- Top Background Image Section -->
-<div class="top-section">
-    <h1>CarboCollect</h1>
-    <p>“Be a Part of The Change”</p>
-</div>
-
-<!-- Main Content Section -->
-<div class="p-8 text-center">
-    <h1 class="text-4xl font-bold">Sustainable Application Home</h1>
-    <p>Main page of the application developed by <em>Women in STEM</em></p>
-    <h2 class="text-2xl font-semibold mt-4">Content that can be altered by the models</h2>
-    <p>User stats</p>
-    <p>Welcome back, {{ user.username }}! 
-        <a href="{% url 'logout' %}" class="text-green-600 hover:underline">Logout</a> | 
-        <a href="{% url 'delete_account' %}" class="text-green-600 hover:underline">Delete Account</a> | 
-        <a href="{% url 'update_profile' %}" class="text-green-600 hover:underline">Update Profile</a> | 
-        <a href="{% url 'change_password' %}" class="text-green-600 hover:underline">Change Password</a> |
-        <a href="{% url 'view_user_data' %}" class="text-green-600 hover:underline">View My Data</a>
-    </p>
-    <ul class="mt-4">
-        <li><strong>Name: </strong></li>
-        <li><strong>Coins: </strong></li>
-        <li><strong>Something else: </strong></li>
-    </ul>
-</div>
-
-<!-- Bottom Background Image Section -->
-<div class="bottom-section">
-    <p>Welcome!</p>
-    <p>This is our task-based collectibles sustainability game, developed by Women in STEM</p>
-    <p><strong>Explore:</strong> Follow the treasure hunts and discover sustainability hotspots.</p>
-    <p><strong>Collect and Learn:</strong> Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</p>
-    <p><strong>Complete Quests:</strong> Take on eco-friendly challenges daily, weekly, and as part of the larger community.</p>
-    <p><strong>Climb the Leaderboard:</strong> Compete with friends and prove you’re the ultimate CarboCollector.</p>
-
-    <!-- Buttons -->
-    <div class="mt-4">
-        <a href="/how-to-play/" class="btn">How to Play</a>
-        <a href="/tasks/" class="btn">Go to Your Daily Tasks</a>
+    <!-- Top Half Image Section -->
+    <div class="top-section">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold">CarboCollect</h1>
+            <p class="text-3xl mt-2">“Be a Part of The Change”</p>
+        </div>
     </div>
-</div>
+
+    <!-- Main Content Section -->
+    <div class="p-8 text-center">
+        <p>
+            Welcome! This is our task-based collectibles sustainability game, developed by Women in STEM.
+        </p>
+        <ul class="mt-4 text-lg">
+            <li><strong>Explore</strong> – Follow the treasure hunts and discover sustainability hotspots.</li>
+            <li><strong>Collect and Learn</strong> – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</li>
+            <li><strong>Complete Quests</strong> – Take on eco-friendly challenges daily, weekly, and as part of the larger community.</li>
+            <li><strong>Climb the Leaderboard</strong> – Compete with friends and prove you’re the ultimate CarboCollector.</li>
+        </ul>
+
+        <!-- Buttons Section -->
+        <div class="mt-8 flex justify-center space-x-4">
+            <a href="{% url 'how_to_play' %}" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">How to Play</a>
+            <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">Go to Your Daily Tasks</a>
+        </div>
+    </div>
+    
+
+    <!-- Bottom Half Image Section -->
+    <div class="bottom-section">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold">Welcome!</h2>
+            <p class="mt-4">This is our task-based collectibles sustainability game, developed by Women in STEM</p>
+        </div>
+    </div>
 
 {% endblock %}
