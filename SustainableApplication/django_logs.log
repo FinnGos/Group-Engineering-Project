@@ -1,0 +1,144 @@
+django INFO 2025-02-24 13:45:58,056 views 1288 34744 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:18:26,333 views 13908 15252 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:18:26,664 views 13908 15252 User logged in: testuser
+django INFO 2025-02-25 10:27:41,371 views 1992 18244 User logged in: testuser
+django.request WARNING 2025-02-25 10:27:41,411 log 1992 18244 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:27:41,736 views 1992 18244 User logged in: testuser
+django.request WARNING 2025-02-25 10:27:41,761 log 1992 18244 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:27:42,081 views 1992 18244 User logged in: testuser
+django.request WARNING 2025-02-25 10:27:42,103 log 1992 18244 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:27:42,432 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:42,799 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:43,141 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:43,491 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:43,841 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:43,886 views 1992 18244 Logout by an unauthenticated user or session end.
+django INFO 2025-02-25 10:27:45,175 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:45,201 views 1992 18244 User deleted account: testuser
+django INFO 2025-02-25 10:27:45,841 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:45,863 views 1992 18244 User deleted account: testuser
+django INFO 2025-02-25 10:27:46,516 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:46,539 views 1992 18244 User deleted account: testuser
+django INFO 2025-02-25 10:27:46,861 views 1992 18244 Failed login attempt for username: testuser
+django INFO 2025-02-25 10:27:48,162 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:50,144 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:27:50,168 views 1992 18244 User logged out: testuser
+django INFO 2025-02-25 10:27:50,841 views 1992 18244 User logged in: newuser
+django INFO 2025-02-25 10:27:50,861 views 1992 18244 New user signed up: newuser
+django INFO 2025-02-25 10:27:51,515 views 1992 18244 Failed login attempt for username: TESTUSER
+django INFO 2025-02-25 10:27:52,165 views 1992 18244 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-25 10:27:53,461 views 1992 18244 User logged in: testuser
+django WARNING 2025-02-25 10:27:53,803 views 1992 18244 Failed signup attempt.
+django INFO 2025-02-25 10:27:54,776 views 1992 18244 User logged in: newuser
+django INFO 2025-02-25 10:27:54,794 views 1992 18244 New user signed up: newuser
+django WARNING 2025-02-25 10:27:55,121 views 1992 18244 Failed signup attempt.
+django INFO 2025-02-25 10:27:55,775 views 1992 18244 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-25 10:27:56,101 views 1992 18244 Failed signup attempt.
+django WARNING 2025-02-25 10:27:56,421 views 1992 18244 Failed signup attempt.
+django INFO 2025-02-25 10:27:57,063 views 1992 18244 User logged in: matt4
+django INFO 2025-02-25 10:27:57,104 views 1992 18244 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:27:57,784 views 1992 18244 User logged in: matt4
+django INFO 2025-02-25 10:27:57,834 views 1992 18244 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:27:58,511 views 1992 18244 User logged in: matt4
+django INFO 2025-02-25 10:27:58,551 views 1992 18244 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:27:58,913 views 1992 18244 User logged in: testuser
+django INFO 2025-02-25 10:28:48,465 views 31236 27216 User logged in: testuser
+django.request WARNING 2025-02-25 10:28:48,500 log 31236 27216 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:28:48,827 views 31236 27216 User logged in: testuser
+django.request WARNING 2025-02-25 10:28:48,856 log 31236 27216 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:28:49,188 views 31236 27216 User logged in: testuser
+django.request WARNING 2025-02-25 10:28:49,211 log 31236 27216 Bad Request: /get_location/1/
+django INFO 2025-02-25 10:28:49,527 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:49,896 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:50,256 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:50,616 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:50,668 views 31236 27216 Logout by an unauthenticated user or session end.
+django INFO 2025-02-25 10:28:52,001 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:52,029 views 31236 27216 User deleted account: testuser
+django INFO 2025-02-25 10:28:52,671 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:52,691 views 31236 27216 User deleted account: testuser
+django INFO 2025-02-25 10:28:53,331 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:53,361 views 31236 27216 User deleted account: testuser
+django INFO 2025-02-25 10:28:53,686 views 31236 27216 Failed login attempt for username: testuser
+django INFO 2025-02-25 10:28:54,981 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:56,961 views 31236 27216 User logged in: testuser
+django INFO 2025-02-25 10:28:56,985 views 31236 27216 User logged out: testuser
+django INFO 2025-02-25 10:28:57,632 views 31236 27216 User logged in: newuser
+django INFO 2025-02-25 10:28:57,651 views 31236 27216 New user signed up: newuser
+django INFO 2025-02-25 10:28:58,294 views 31236 27216 Failed login attempt for username: TESTUSER
+django INFO 2025-02-25 10:28:58,945 views 31236 27216 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-02-25 10:29:00,222 views 31236 27216 User logged in: testuser
+django WARNING 2025-02-25 10:29:00,573 views 31236 27216 Failed signup attempt.
+django INFO 2025-02-25 10:29:01,531 views 31236 27216 User logged in: newuser
+django INFO 2025-02-25 10:29:01,553 views 31236 27216 New user signed up: newuser
+django WARNING 2025-02-25 10:29:01,881 views 31236 27216 Failed signup attempt.
+django INFO 2025-02-25 10:29:02,521 views 31236 27216 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-02-25 10:29:02,846 views 31236 27216 Failed signup attempt.
+django WARNING 2025-02-25 10:29:03,163 views 31236 27216 Failed signup attempt.
+django INFO 2025-02-25 10:29:03,802 views 31236 27216 User logged in: matt4
+django INFO 2025-02-25 10:29:03,844 views 31236 27216 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:29:04,524 views 31236 27216 User logged in: matt4
+django INFO 2025-02-25 10:29:04,574 views 31236 27216 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:29:05,253 views 31236 27216 User logged in: matt4
+django INFO 2025-02-25 10:29:05,291 views 31236 27216 User asked for personal data stored: matt4
+django INFO 2025-02-25 10:29:05,650 views 31236 27216 User logged in: testuser
+django.utils.autoreload INFO 2025-02-25 10:31:25,894 autoreload 6152 11932 Watching for file changes with StatReloader
+django.server INFO 2025-02-25 10:31:27,423 basehttp 6152 3888 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:31:27,485 basehttp 6152 3888 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-25 10:31:27,603 basehttp 6152 3888 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:31:32,804 views 6152 33632 User logged in: matt
+django.server INFO 2025-02-25 10:31:32,922 basehttp 6152 33632 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:31:32,967 basehttp 6152 33632 "GET /home/ HTTP/1.1" 200 1682
+django.server WARNING 2025-02-25 10:31:33,056 basehttp 6152 33632 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:31:38,302 basehttp 6152 12928 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-02-25 10:31:38,473 basehttp 6152 12928 "GET /static/leaderboard/styles.css HTTP/1.1" 200 725
+django.server INFO 2025-02-25 10:31:45,331 basehttp 6152 12928 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-02-25 10:31:45,385 basehttp 6152 12928 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:31:48,682 basehttp 6152 32576 "GET /get_location/1/? HTTP/1.1" 200 2198
+django.server INFO 2025-02-25 10:31:48,735 basehttp 6152 32576 "GET /static/css/button.css HTTP/1.1" 304 0
+django.server INFO 2025-02-25 10:31:50,747 basehttp 6152 32576 "GET /get_location/1/?lat=50.7309945&lon=-3.5420185 HTTP/1.1" 200 2069
+django.server INFO 2025-02-25 10:31:55,816 basehttp 6152 32576 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-02-25 10:31:55,863 basehttp 6152 32576 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:32:01,205 basehttp 6152 8884 "GET /home/ HTTP/1.1" 200 1682
+django.server WARNING 2025-02-25 10:32:01,261 basehttp 6152 8884 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:32:05,423 views 6152 9008 User asked for personal data stored: matt
+django.server INFO 2025-02-25 10:32:05,442 basehttp 6152 9008 "GET /home/accounts/view_data/ HTTP/1.1" 200 1316
+django.server WARNING 2025-02-25 10:32:05,491 basehttp 6152 9008 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:32:13,208 basehttp 6152 10572 "GET /home/ HTTP/1.1" 200 1682
+django.server WARNING 2025-02-25 10:32:13,277 basehttp 6152 10572 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:32:16,880 basehttp 6152 13996 "GET /home/accounts/update_profile/ HTTP/1.1" 200 1521
+django.server WARNING 2025-02-25 10:32:16,931 basehttp 6152 13996 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:32:19,359 views 6152 30884 User updated profile (username & email): matt123
+django.server INFO 2025-02-25 10:32:19,360 basehttp 6152 30884 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:32:19,384 basehttp 6152 30884 "GET /home/ HTTP/1.1" 200 1685
+django.server WARNING 2025-02-25 10:32:19,439 basehttp 6152 30884 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:32:20,914 views 6152 21280 User asked for personal data stored: matt123
+django.server INFO 2025-02-25 10:32:20,932 basehttp 6152 21280 "GET /home/accounts/view_data/ HTTP/1.1" 200 1355
+django.server WARNING 2025-02-25 10:32:20,984 basehttp 6152 21280 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:32:26,855 basehttp 6152 7580 "GET /home/ HTTP/1.1" 200 1685
+django.server WARNING 2025-02-25 10:32:26,933 basehttp 6152 7580 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:32:27,581 views 6152 33636 User logged out: matt123
+django.server INFO 2025-02-25 10:32:27,581 basehttp 6152 33636 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:32:27,588 basehttp 6152 33636 "GET /home/accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-25 10:32:27,666 basehttp 6152 33636 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-02-25 10:34:04,970 autoreload 32424 26292 Watching for file changes with StatReloader
+django.server INFO 2025-02-25 10:34:08,203 basehttp 32424 20600 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:34:08,246 basehttp 32424 20600 "GET /accounts/login/ HTTP/1.1" 200 1424
+django.server WARNING 2025-02-25 10:34:08,349 basehttp 32424 20600 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-02-25 10:34:16,384 views 32424 26132 User logged in: dc754
+django.server INFO 2025-02-25 10:34:16,466 basehttp 32424 26132 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:34:16,506 basehttp 32424 26132 "GET /home/ HTTP/1.1" 200 1735
+django.server WARNING 2025-02-25 10:34:16,554 basehttp 32424 26132 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:34:18,192 basehttp 32424 26520 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
+django.utils.autoreload INFO 2025-02-25 10:36:25,646 autoreload 32828 8920 Watching for file changes with StatReloader
+django.server INFO 2025-02-25 10:36:27,353 basehttp 32828 21672 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-02-25 10:36:27,402 basehttp 32828 21672 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-02-25 10:36:27,500 basehttp 32828 21672 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:36:30,799 basehttp 32828 17860 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
+django.server INFO 2025-02-25 10:36:32,793 basehttp 32828 17860 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-02-25 10:36:34,106 basehttp 32828 17860 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
+django.server INFO 2025-02-25 10:36:35,285 basehttp 32828 17860 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-02-25 10:36:38,299 basehttp 32828 17860 "GET /home/signup/ HTTP/1.1" 200 2526
+django.server WARNING 2025-02-25 10:36:38,349 basehttp 32828 17860 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-02-25 10:36:39,652 basehttp 32828 10572 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
+django.server INFO 2025-02-25 10:36:42,199 basehttp 32828 10572 "GET /TermsAndConditions/ HTTP/1.1" 200 34408

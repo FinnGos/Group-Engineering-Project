@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %} {% block content %}
+<h2>Sign Up</h2>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Sign Up</button>
+</form>
+<p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+<p><a href="{% url 'privacyPolicy'%}">Privacy Policy</a></p>
+<p><a href="{% url 'termsAndConditions'%}">Terms and Conditions</a></p>
+{% endblock %}
