@@ -3151,3 +3151,167 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'how_to_play' not found. 'how_to_play' is not a valid view function or pattern name.
 django.server ERROR 2025-03-05 19:42:23,176 basehttp 7373 139779777754816 "GET /home/ HTTP/1.1" 500 160387
+django.utils.autoreload INFO 2025-03-07 12:18:33,067 autoreload 3210 140658884132992 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:18:34,434 basehttp 3210 140658769655488 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-07 12:18:34,463 basehttp 3210 140658769655488 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-07 12:18:34,559 basehttp 3210 140658769655488 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request ERROR 2025-03-07 12:18:38,464 log 3210 140658769655488 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'how_to_play' not found. 'how_to_play' is not a valid view function or pattern name.
+django.server ERROR 2025-03-07 12:18:38,466 basehttp 3210 140658769655488 "GET /home/ HTTP/1.1" 500 159895
+django.utils.autoreload INFO 2025-03-07 12:21:13,341 autoreload 3210 140658884132992 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:21:13,492 autoreload 3797 140354544447616 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:21:25,979 autoreload 3797 140354544447616 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:21:26,101 autoreload 3887 140401691496576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:21:30,163 autoreload 3887 140401691496576 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:21:30,289 autoreload 3938 140564121755776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:21:31,381 autoreload 3938 140564121755776 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:21:31,548 autoreload 3940 140618832208000 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:22:04,017 autoreload 3940 140618832208000 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:22:04,147 autoreload 4089 140058144022656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:22:17,231 autoreload 4089 140058144022656 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:22:17,365 autoreload 4186 139697219555456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:22:19,467 autoreload 4186 139697219555456 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:22:19,610 autoreload 4233 139644715597952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:22:43,182 autoreload 4233 139644715597952 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:22:43,396 autoreload 4354 140077227315328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:23:48,431 autoreload 4354 140077227315328 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:23:48,599 autoreload 4599 139645291966592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:23:50,697 autoreload 4599 139645291966592 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:23:50,846 autoreload 4646 140442358939776 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:23:54,484 basehttp 4646 140442315331264 "GET /home/ HTTP/1.1" 200 3676
+django.server INFO 2025-03-07 12:24:22,389 basehttp 4646 140442315331264 "GET /home/how-to-play/ HTTP/1.1" 200 32
+django.server INFO 2025-03-07 12:24:24,275 basehttp 4646 140442315331264 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-07 12:24:24,307 basehttp 4646 140442315331264 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-07 12:24:27,712 basehttp 4646 140442315331264 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-07 12:24:27,745 basehttp 4646 140442315331264 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-07 12:26:00,032 basehttp 4646 140442315331264 "GET /home/ HTTP/1.1" 200 4406
+django.server INFO 2025-03-07 12:26:01,378 basehttp 4646 140442315331264 "GET /home/ HTTP/1.1" 200 4406
+django.server INFO 2025-03-07 12:26:02,312 basehttp 4646 140442315331264 "GET /home/how-to-play/ HTTP/1.1" 200 32
+django.server INFO 2025-03-07 12:26:06,204 basehttp 4646 140442315331264 "GET /home/how-to-play/ HTTP/1.1" 200 32
+django.server INFO 2025-03-07 12:26:36,871 basehttp 4646 140442315331264 "GET /home/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-07 12:28:09,976 basehttp 4646 140442315331264 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:28:18,987 basehttp 4646 140442315331264 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-07 12:28:19,019 basehttp 4646 140442315331264 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-07 12:31:56,885 autoreload 4646 140442358939776 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:31:57,208 autoreload 6263 139699855089792 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:32:00,322 autoreload 6263 139699855089792 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:32:00,479 autoreload 6315 140078185820288 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:32:04,113 basehttp 6315 140078074558144 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:32:04,943 basehttp 6315 140078074558144 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:32:37,856 basehttp 6315 140078074558144 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:32:38,451 basehttp 6315 140078074558144 "GET /home/ HTTP/1.1" 200 4432
+django.utils.autoreload INFO 2025-03-07 12:33:05,018 autoreload 6751 140694372749440 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:33:08,215 basehttp 6751 140694329140928 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:33:08,767 basehttp 6751 140694329140928 "GET /home/ HTTP/1.1" 200 4432
+django.server INFO 2025-03-07 12:33:35,447 basehttp 6751 140694329140928 "GET /home/ HTTP/1.1" 200 4533
+django.server INFO 2025-03-07 12:35:08,905 basehttp 6751 140694329140928 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:35:34,446 basehttp 6751 140694329140928 "GET /home/ HTTP/1.1" 200 4351
+django.utils.autoreload INFO 2025-03-07 12:35:52,969 autoreload 6751 140694372749440 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:35:53,143 autoreload 7441 139668873502848 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:35:54,248 autoreload 7441 139668873502848 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:35:54,402 autoreload 7464 140702868439168 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:35:56,564 basehttp 7464 140702824830656 "GET /home/ HTTP/1.1" 200 4351
+django.utils.autoreload INFO 2025-03-07 12:36:13,716 autoreload 7671 139699078418560 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:36:15,542 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:36:15,987 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:36:58,089 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:37:02,563 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:37:26,092 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:37:26,675 basehttp 7671 139699034810048 "GET /home/ HTTP/1.1" 200 4351
+django.utils.autoreload INFO 2025-03-07 12:37:54,169 autoreload 7671 139699078418560 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:37:54,438 autoreload 8139 140081558462592 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:37:56,416 basehttp 8139 140081514854080 "GET /home/ HTTP/1.1" 200 4351
+django.server INFO 2025-03-07 12:38:27,906 basehttp 8139 140081514854080 "GET /home/ HTTP/1.1" 200 4668
+django.utils.autoreload INFO 2025-03-07 12:39:36,472 autoreload 8139 140081558462592 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:39:36,615 autoreload 8545 140265471664256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:39:39,679 autoreload 8545 140265471664256 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:39:39,817 autoreload 8600 140386141958272 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:39:44,278 basehttp 8600 140386098349760 "GET /home/ HTTP/1.1" 200 4668
+django.utils.autoreload INFO 2025-03-07 12:40:26,058 autoreload 8600 140386141958272 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:40:26,305 autoreload 8788 140036001648768 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:40:28,813 basehttp 8788 140035958040256 "GET /home/ HTTP/1.1" 200 4668
+django.server INFO 2025-03-07 12:40:54,048 basehttp 8788 140035958040256 "GET /home/ HTTP/1.1" 200 4348
+django.utils.autoreload INFO 2025-03-07 12:44:15,854 autoreload 8788 140036001648768 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-07 12:44:15,998 autoreload 9606 139943399456896 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-07 12:44:29,441 autoreload 9731 140029245755520 Watching for file changes with StatReloader
+django.server INFO 2025-03-07 12:44:36,737 basehttp 9731 140029202147008 "GET /home/ HTTP/1.1" 200 4348
+django.server INFO 2025-03-07 12:44:37,656 basehttp 9731 140029202147008 "GET /home/ HTTP/1.1" 200 4348
+django.server INFO 2025-03-07 12:44:38,250 basehttp 9731 140029202147008 "GET /home/ HTTP/1.1" 200 4348
+django.server INFO 2025-03-07 12:44:40,886 basehttp 9731 140029202147008 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-07 12:44:40,924 basehttp 9731 140029202147008 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-07 12:45:28,592 basehttp 9731 140029202147008 "GET /home/ HTTP/1.1" 200 4348
+django.request WARNING 2025-03-07 12:45:29,263 log 9731 140029202147008 Not Found: /checkin/
+django.server WARNING 2025-03-07 12:45:29,263 basehttp 9731 140029202147008 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-07 12:45:30,904 log 9731 140029202147008 Not Found: /signin
+django.server WARNING 2025-03-07 12:45:30,904 basehttp 9731 140029202147008 "GET /signin HTTP/1.1" 404 4407
+django INFO 2025-03-07 12:45:31,591 views 9731 140029202147008 User logged out: tst
+django.server INFO 2025-03-07 12:45:31,591 basehttp 9731 140029202147008 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-07 12:45:31,604 basehttp 9731 140029202147008 "GET /home/accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-07 12:45:31,690 basehttp 9731 140029202147008 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-07 12:45:32,411 views 9731 140029202147008 User deleted account: tst
+django.server INFO 2025-03-07 12:45:32,422 basehttp 9731 140029202147008 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-07 12:45:32,429 basehttp 9731 140029202147008 "GET /home/accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-07 12:45:32,503 basehttp 9731 140029202147008 "GET /static/css/styles.css HTTP/1.1" 404 1969
