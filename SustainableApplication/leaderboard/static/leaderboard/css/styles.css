@@ -1,3 +1,11 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-image: url("{% static 'leaderboard/images/carbo placeholder.jpg' %}");
@@ -13,7 +21,8 @@ h1 {
 }
 
 .leaderboard {
-    width: 50%;
+    width: 90%;
+    max-width: 600px; /* Limits max width on larger screens */
     margin: auto;
     background: white;
     padding: 20px;
@@ -21,13 +30,14 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .rank-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px; /* Increased from 10px */
     border-bottom: 1px solid #ddd;
-    text-align: left;
 }
+
 
 .rank-item:last-child {
     border-bottom: none;
@@ -48,3 +58,96 @@ h1 {
     text-align: right;
     color: #888;
 }
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 32px;
+    gap: 0px 24px;
+    
+    width: 100%; /* Ensures full-width on all screens */
+    max-width: 1200px; /* Keeps it centered and limited on larger screens */
+    margin: auto; /* Centers the section */
+    
+    background: #14AE5C;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+/* Section */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 100%; /* Ensures full-width on all screens */
+    max-width: 1200px; /* Keeps it centered and limited on larger screens */
+    margin: auto; /* Centers the section */
+    
+    background: url('image.png');
+    background-size: cover;
+}
+
+/* Panel Image Double */
+.panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 64px;
+    gap: 48px;
+    
+    width: 100%; /* Ensures full-width on all screens */
+    max-width: 1200px; /* Keeps it centered and limited on larger screens */
+    margin: auto; /* Centers the section */
+    
+    background: rgba(20, 174, 92, 0.8); /* Same green color with transparency */
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 32px 32px 160px;
+    gap: 16px;
+    
+    width: 100%; /* Ensures full-width on all screens */
+    max-width: 1200px; /* Keeps it centered and limited on larger screens */
+    margin: auto; /* Centers the section */
+    
+    background: #FFFFFF;
+    border-top: 1px solid #D9D9D9;
+}
+
+/* Stats Card */
+.stats-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    
+    width: 240px;
+    min-width: 240px;
+    height: 196px;
+    
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+
+/* Award Icon */
+.award {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+

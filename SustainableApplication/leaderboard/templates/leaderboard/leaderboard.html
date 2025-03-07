@@ -1,26 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
+{% extends "base.html" %}
+{% load static %}
 
-    <!-- Load Static Files -->
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'leaderboard/css/styles.css' %}">
-</head>
-<body>
-    <h1>Leaderboard</h1>
-    <div class="leaderboard">
-        {% for entry in ranked_users|slice:":20" %}
-            <div class="rank-item">
-                <span class="rank">{{ entry.rank }}{% if entry.rank == 1 %}st{% elif entry.rank == 2 %}nd{% elif entry.rank == 3 %}rd{% else %}th{% endif %}</span>
-                <span class="name">{{ entry.user.username }}</span>
-                <span class="points">{{ entry.user.all_time_points }} pts</span>
-            </div>
-        {% empty %}
-            <p>No users found.</p>
-        {% endfor %}
+{% block title %}Home{% endblock %}
+
+{% block extra_css %}
+<style>
+    .top-section {
+        background-image: url("{% static 'images/leaderboardTop_Image.jpg' %}");
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .bottom-section {
+        background-image: url("{% static 'images/leaderboardBottom_Image.jpg' %}");
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    /* Leaderboard styles */
+    .leaderboard {
+        width: 80%;
+        margin: 40px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .leaderboard h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .rank-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .rank-item:last-child {
+        border-bottom: none;
+    }
+
+    .rank-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    }
+
+    .rank {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .name {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .points {
+        text-align: right;
+        color: #888;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Page Container -->
+<div class="page-container">
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Leaderboard</h1>
     </div>
-</body>
-</html>
+
+    <!-- Top Half: Leaderboard Section -->
+    <div class="top-section">
+        <div class="leaderboard">
+            <h2>Current Rankings</h2>
+            {% for entry in ranked_users %}
+            <div class="rank-item">
+                <span class="rank">{{ entry.rank }}</span>
+                <span class="name">{{ entry.user.username }}</span>
+                <span class="points">{{ entry.user.all_time_points }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Bottom Half: Current Points Section -->
+    <div class="bottom-section">
+        <div class="current-points">
+            <h3>Your Current Points</h3>
+            <p>
+                {% if request.user.is_authenticated %}
+                Points: {{ request.user.all_time_points }}
+                {% else %}
+                Please log in to see your points.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 CarboCollect. All Rights Reserved.</p>
+    </div>
+</div>
+
+{% endblock %}
