@@ -21,7 +21,7 @@ def tasks_view(request):
         # reset progress if last update was not today
         if selected_task.updated_at.date() != today:
             selected_task.current_progress = 0
-            selected_task.save()
+            selected_task.save(update_fields=["current_progress", "updated_at"])
 
         task = selected_task
 
