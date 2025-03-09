@@ -18,3 +18,18 @@
 .sidebar-nav a:hover {
   color: #004d00; /* Darker green */
 }
+
+.bottom-section {
+  background-color: #cccccc;  /* Temporary color for testing */
+  /* Or try a placeholder image */
+  background-image: url('https://via.placeholder.com/150');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: white;
+  position: relative;
+  text-align: center;
+  min-height: 300px;
+}
+
