@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <!-- Displays all images from collectable database -->
+        <div class="collection">
+            {% for collectable in collectable_list %}
+                <img src="{{ collectable.image.url }}" alt="Name: {{ collectable.name }}, Fact: {{ collectable.fact }}" class="card">
+            {% endfor %}
+        </div>
+    </body>
+</html>
