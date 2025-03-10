@@ -3,13 +3,14 @@ Collection of displays for the collectables webpage
 """
 
 from django.shortcuts import render
-from .models import Collectable
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def collectable_gallery(request):
-    """ Displays page of all cards from the collectable database"""
-    # Pulls all records from collectable database and sends them to front end
-    collectables = Collectable.objects.all()
+    """ Displays page of all cards owned by the user from the collectable database"""
+    user_object = request.user
+    collectables = user_object.collectables_owned.all()
 
     context = {"collectable_list": collectables}
     return render(request, "gallery.html", context)
