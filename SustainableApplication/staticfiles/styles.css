@@ -10,18 +10,17 @@
 
 .sidebar-nav a {
   text-decoration: none;
-  color: #008000; /* Green color */
+  color: #008000;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
 
 .sidebar-nav a:hover {
-  color: #004d00; /* Darker green */
+  color: #004d00; 
 }
 
 .bottom-section {
-  background-color: #cccccc;  /* Temporary color for testing */
-  /* Or try a placeholder image */
+  background-color: #cccccc;  
   background-image: url('https://via.placeholder.com/150');
   background-size: cover;
   background-position: center;

@@ -3437,3 +3437,1056 @@ django.server INFO 2025-03-09 15:17:09,530 basehttp 10983 139908845291200 "GET /
 django.server WARNING 2025-03-09 15:17:09,563 basehttp 10983 139908845291200 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.request WARNING 2025-03-09 15:17:09,614 log 10983 139908845291200 Not Found: /favicon.ico
 django.server WARNING 2025-03-09 15:17:09,614 basehttp 10983 139908845291200 "GET /favicon.ico HTTP/1.1" 404 4422
+django.utils.autoreload INFO 2025-03-10 17:25:58,584 autoreload 2702 140719862915200 Watching for file changes with StatReloader
+django.server INFO 2025-03-10 17:25:59,773 basehttp 2702 140719819306688 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-10 17:25:59,800 basehttp 2702 140719819306688 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:25:59,965 basehttp 2702 140719819306688 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-10 17:26:00,015 log 2702 140719819306688 Not Found: /favicon.ico
+django.server INFO 2025-03-10 17:26:01,811 basehttp 2702 140719819306688 "GET /home/signup/ HTTP/1.1" 200 2544
+django.server WARNING 2025-03-10 17:26:01,847 basehttp 2702 140719819306688 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django INFO 2025-03-10 17:26:13,613 views 2702 140719819306688 User logged in: aaa
+django INFO 2025-03-10 17:26:13,622 views 2702 140719819306688 New user signed up: aaa
+django.server INFO 2025-03-10 17:26:13,631 basehttp 2702 140719819306688 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-10 17:26:13,643 basehttp 2702 140719819306688 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-10 17:26:13,765 basehttp 2702 140719806187200 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-10 17:26:13,765 basehttp 2702 140719819306688 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-10 17:26:33,107 basehttp 2702 140719819306688 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-10 17:26:33,146 basehttp 2702 140719819306688 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-10 17:27:54,360 basehttp 2702 140719806187200 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-10 17:27:54,379 basehttp 2702 140719806187200 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:27:54,473 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-10 17:28:28,548 log 2702 140719806187200 Not Found: /accounts/
+django.server WARNING 2025-03-10 17:28:28,548 basehttp 2702 140719806187200 "GET /accounts/ HTTP/1.1" 404 6527
+django.server INFO 2025-03-10 17:28:37,462 basehttp 2702 140719806187200 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:28:37,508 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-10 17:37:51,965 basehttp 2702 140719806187200 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-10 17:37:51,973 basehttp 2702 140719806187200 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:37:52,058 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-10 17:37:52,112 log 2702 140719806187200 Not Found: /favicon.ico
+django.server WARNING 2025-03-10 17:37:52,112 basehttp 2702 140719806187200 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-10 17:42:08,606 basehttp 2702 140719806187200 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:42:08,630 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-10 17:42:08,708 log 2702 140719806187200 Not Found: /favicon.ico
+django.server WARNING 2025-03-10 17:42:08,708 basehttp 2702 140719806187200 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-10 17:42:09,363 basehttp 2702 140719806187200 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-10 17:42:09,386 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-10 17:45:39,739 basehttp 2702 140719806187200 "GET /home/signup/ HTTP/1.1" 200 2544
+django.server WARNING 2025-03-10 17:45:39,770 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-10 17:51:18,075 basehttp 2702 140719806187200 "GET /home/signup/ HTTP/1.1" 200 2544
+django.server WARNING 2025-03-10 17:51:18,099 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-10 17:51:18,179 log 2702 140719806187200 Not Found: /favicon.ico
+django.server WARNING 2025-03-10 17:51:18,179 basehttp 2702 140719806187200 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-10 17:51:18,897 basehttp 2702 140719806187200 "GET /home/signup/ HTTP/1.1" 200 2544
+django.server WARNING 2025-03-10 17:51:18,916 basehttp 2702 140719806187200 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-11 13:13:31,156 autoreload 24328 140574988112000 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-11 13:15:11,305 autoreload 25219 140196263018624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-11 13:18:04,497 autoreload 27849 140232728690816 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-11 13:18:15,705 autoreload 28033 140655901876352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-11 13:21:08,087 autoreload 91070 140629914198144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-11 13:21:39,774 autoreload 91613 140136384614528 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 13:21:48,352 basehttp 91613 140136338761408 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-11 13:21:48,371 basehttp 91613 140136338761408 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:21:48,466 basehttp 91613 140136338761408 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.request WARNING 2025-03-11 13:21:48,511 log 91613 140136338761408 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:21:48,511 basehttp 91613 140136338761408 "GET /favicon.ico HTTP/1.1" 404 3679
+django.utils.autoreload INFO 2025-03-11 13:26:21,412 autoreload 91613 140136384614528 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-11 13:26:21,592 autoreload 93579 139880701599872 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 13:26:24,380 basehttp 93579 139880655746752 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:26:24,409 basehttp 93579 139880655746752 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.request WARNING 2025-03-11 13:26:24,494 log 93579 139880655746752 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:26:24,494 basehttp 93579 139880655746752 "GET /favicon.ico HTTP/1.1" 404 3679
+django.utils.autoreload INFO 2025-03-11 13:27:20,997 autoreload 93579 139880701599872 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-11 13:27:21,180 autoreload 94063 140657048064128 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 13:27:21,889 basehttp 94063 140657002211008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:27:21,914 basehttp 94063 140657002211008 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-11 13:27:22,591 basehttp 94063 140657002211008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:27:22,611 basehttp 94063 140657002211008 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-11 13:27:23,159 basehttp 94063 140657002211008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:27:23,176 basehttp 94063 140657002211008 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-11 13:27:23,676 basehttp 94063 140657002211008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:27:23,703 basehttp 94063 140657002211008 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.utils.autoreload INFO 2025-03-11 13:27:55,718 autoreload 94063 140657048064128 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-11 13:27:55,893 autoreload 94343 139681152602240 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 13:28:11,024 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server WARNING 2025-03-11 13:28:11,048 basehttp 94343 139681106749120 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.request ERROR 2025-03-11 13:28:27,283 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:28:27,284 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:28:28,617 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:28:28,618 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:30:10,517 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:30:10,518 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:30:11,226 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:30:11,228 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:30:11,784 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:30:11,785 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:30:12,319 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:30:12,320 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.request ERROR 2025-03-11 13:30:12,998 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+django.server ERROR 2025-03-11 13:30:12,998 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 163420
+django.server INFO 2025-03-11 13:30:50,014 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4064
+django.server WARNING 2025-03-11 13:30:50,067 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:30:50,328 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.request WARNING 2025-03-11 13:30:50,391 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:30:50,391 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:31:12,027 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:12,086 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:12,151 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:12,930 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:12,976 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:13,043 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:13,587 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:13,638 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:13,705 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:14,024 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:14,072 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:14,294 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:14,341 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:14,395 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:14,556 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:14,604 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:14,674 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:15,053 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:15,097 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:15,147 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:15,354 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:15,399 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:15,451 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:15,954 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:15,976 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:16,072 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:30,271 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:30,328 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:30,386 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:32,029 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:32,077 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:32,132 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:31:37,685 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 0
+django.server INFO 2025-03-11 13:31:40,200 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 0
+django.server INFO 2025-03-11 13:31:40,806 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 0
+django.server INFO 2025-03-11 13:31:42,243 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4063
+django.server WARNING 2025-03-11 13:31:42,291 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:31:42,346 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:35:40,301 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:35:40,365 basehttp 94343 139681106749120 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-11 13:35:40,480 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:35:40,480 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:35:58,202 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4269
+django.request WARNING 2025-03-11 13:35:58,361 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:35:58,361 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:36:18,672 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:36:41,814 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:36:44,490 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:36:45,658 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 0
+django.server INFO 2025-03-11 13:37:16,900 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 0
+django.request WARNING 2025-03-11 13:37:16,959 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:37:16,960 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:37:55,329 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 0
+django.server INFO 2025-03-11 13:38:01,236 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:38:03,685 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4064
+django.server WARNING 2025-03-11 13:38:03,736 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:38:03,791 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:38:05,909 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:38:54,009 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4064
+django.server WARNING 2025-03-11 13:38:54,075 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:38:54,167 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:40:13,626 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:14,467 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:15,707 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4064
+django.server WARNING 2025-03-11 13:40:15,758 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:40:15,809 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:40:16,331 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 4064
+django.server WARNING 2025-03-11 13:40:16,376 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:40:16,434 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:40:17,471 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:29,267 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:30,463 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5234
+django.server WARNING 2025-03-11 13:40:30,514 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:40:30,570 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:40:31,413 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5234
+django.server WARNING 2025-03-11 13:40:31,460 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:40:31,531 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:40:44,301 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:45,526 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4011
+django.server INFO 2025-03-11 13:40:46,666 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5234
+django.server WARNING 2025-03-11 13:40:46,710 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:40:46,764 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:41:12,078 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5234
+django.server WARNING 2025-03-11 13:41:12,136 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:41:12,204 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.request WARNING 2025-03-11 13:41:12,276 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:41:12,276 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:41:13,104 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3934
+django.server WARNING 2025-03-11 13:41:13,148 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:41:13,213 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:41:14,583 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3934
+django.server WARNING 2025-03-11 13:41:14,632 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:41:14,682 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:41:34,996 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3934
+django.server WARNING 2025-03-11 13:41:35,050 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:41:35,106 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:41:36,425 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5234
+django.server WARNING 2025-03-11 13:41:36,472 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:41:36,533 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.request ERROR 2025-03-11 13:41:37,218 log 94343 139681106749120 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:41:37,219 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 500 173944
+django.server INFO 2025-03-11 13:41:46,191 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:41:59,460 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:42:00,749 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5156
+django.server INFO 2025-03-11 13:42:11,285 basehttp 94343 139681106749120 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-11 13:42:11,294 basehttp 94343 139681106749120 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4269
+django.request WARNING 2025-03-11 13:42:15,837 log 94343 139681106749120 Not Found: /checkin/
+django.server WARNING 2025-03-11 13:42:15,837 basehttp 94343 139681106749120 "GET /checkin/ HTTP/1.1" 404 3670
+django.server INFO 2025-03-11 13:42:16,767 basehttp 94343 139681106749120 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4269
+django.request WARNING 2025-03-11 13:42:17,450 log 94343 139681106749120 Not Found: /signin
+django.server WARNING 2025-03-11 13:42:17,451 basehttp 94343 139681106749120 "GET /signin HTTP/1.1" 404 3664
+django.server INFO 2025-03-11 13:42:18,020 basehttp 94343 139681106749120 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:42:18,482 basehttp 94343 139681106749120 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-11 13:42:18,488 basehttp 94343 139681106749120 "GET /home/accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:42:21,735 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5156
+django.server INFO 2025-03-11 13:42:42,013 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5156
+django.server INFO 2025-03-11 13:42:44,198 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:42:44,864 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 4269
+django.server INFO 2025-03-11 13:45:23,108 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 13:45:23,289 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:45:23,289 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:45:24,542 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5156
+django.server INFO 2025-03-11 13:45:25,879 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:45:48,686 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:45:49,704 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5164
+django.server WARNING 2025-03-11 13:45:49,752 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:45:49,804 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:45:53,008 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5156
+django.request ERROR 2025-03-11 13:50:13,923 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:13,924 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 175036
+django.request WARNING 2025-03-11 13:50:13,985 log 94343 139681106749120 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:50:13,985 basehttp 94343 139681106749120 "GET /favicon.ico HTTP/1.1" 404 3679
+django.request ERROR 2025-03-11 13:50:19,970 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:19,971 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 174935
+django.request ERROR 2025-03-11 13:50:20,738 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:20,739 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 174935
+django.request ERROR 2025-03-11 13:50:21,430 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:21,431 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 174935
+django.request ERROR 2025-03-11 13:50:21,946 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:21,947 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 174935
+django.request ERROR 2025-03-11 13:50:22,567 log 94343 139681106749120 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 70, in signup
+    return render(request, "registration/signup.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-11 13:50:22,567 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 500 174935
+django.server INFO 2025-03-11 13:50:37,525 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5164
+django.server WARNING 2025-03-11 13:50:37,615 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:50:38,741 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5164
+django.server WARNING 2025-03-11 13:50:38,785 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server WARNING 2025-03-11 13:50:38,840 basehttp 94343 139681106749120 "GET /static/images/Background_Image.jpg HTTP/1.1" 404 1941
+django.server INFO 2025-03-11 13:50:52,415 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 13:50:54,773 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:51:15,359 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 13:51:16,641 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:51:17,296 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:51:19,371 basehttp 94343 139681106749120 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:51:22,799 basehttp 94343 139681106749120 "GET /home/signup/ HTTP/1.1" 200 5153
+django.utils.autoreload INFO 2025-03-11 13:52:39,533 autoreload 104813 140708453707904 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 13:52:41,010 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
+django.request WARNING 2025-03-11 13:52:41,211 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:52:41,211 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:52:42,062 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:54:23,254 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 13:54:23,428 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:54:23,428 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:54:23,863 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:54:24,900 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 13:54:39,317 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 13:54:39,483 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 13:54:39,483 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 13:54:39,982 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 13:54:40,880 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 13:54:41,792 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 14:08:17,091 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 14:08:17,282 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 14:08:17,282 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 14:08:17,783 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-11 14:09:05,990 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 14:09:06,114 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 14:09:06,114 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 14:09:06,996 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
