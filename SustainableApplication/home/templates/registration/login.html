@@ -1,10 +1,55 @@
-{% extends "base_generic.html" %} {% block content %}
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %} {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
-<p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a>.</p>
-<p><a href="{% url 'privacyPolicy'%}">Privacy Policy</a></p>
-<p><a href="{% url 'termsAndConditions'%}">Terms and Conditions</a></p>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'auth.css' %}">
 {% endblock %}
+
+{% block content %}
+<!-- Background Image Section -->
+<div class="background-section relative">
+  <img src="{% static 'images/signin.jpg' %}" alt="Background Image" class="w-full h-auto">
+
+  <!-- Sign In Form Section -->
+  <div class="form-section moved-down absolute inset-0 flex flex-col justify-center items-center text-white">
+    <h1 class="text-6xl font-bold mb-6 outlined-text">Sign In</h1>
+    <p class="text-3xl mb-6 outlined-text">Welcome back! Please log in to continue.</p>
+
+    <!-- Sign In Form -->
+    <form method="post" class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg" action="">
+      {% csrf_token %}
+
+      <!-- Username Field -->
+      <div class="mb-4">
+        <label for="id_username" class="block text-xl font-bold text-gray-700">Username</label>
+        <input type="text" name="username" id="id_username"
+               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+               required>
+      </div>
+
+      <!-- Password Field -->
+      <div class="mb-4">
+        <label for="id_password" class="block text-xl font-bold text-gray-700">Password</label>
+        <input type="password" name="password" id="id_password"
+               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+               required>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" class="w-full bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+        Log In
+      </button>
+    </form>
+
+    <!-- Sign Up Button -->
+    <div class="mt-4 text-lg text-center">
+      <a href="{% url 'signup' %}" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
+        Sign Up
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
