@@ -4490,3 +4490,23 @@ django.server INFO 2025-03-11 14:09:05,990 basehttp 104813 140708406806208 "GET 
 django.request WARNING 2025-03-11 14:09:06,114 log 104813 140708406806208 Not Found: /favicon.ico
 django.server WARNING 2025-03-11 14:09:06,114 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
 django.server INFO 2025-03-11 14:09:06,996 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5153
+django.server INFO 2025-03-11 14:16:39,089 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5114
+django.request WARNING 2025-03-11 14:16:39,263 log 104813 140708406806208 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 14:16:39,263 basehttp 104813 140708406806208 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 14:16:40,457 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 1504
+django.server WARNING 2025-03-11 14:16:40,478 basehttp 104813 140708406806208 "GET /static/css/styles.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-11 14:16:47,629 basehttp 104813 140708406806208 "GET /home/signup/ HTTP/1.1" 200 5114
+django.server INFO 2025-03-11 14:16:51,336 basehttp 104813 140708406806208 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.utils.autoreload INFO 2025-03-11 14:17:39,308 autoreload 114755 139673508704384 Watching for file changes with StatReloader
+django.server INFO 2025-03-11 14:17:40,760 basehttp 114755 139673462851264 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-11 14:17:40,943 log 114755 139673462851264 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 14:17:40,943 basehttp 114755 139673462851264 "GET /favicon.ico HTTP/1.1" 404 3679
+django.server INFO 2025-03-11 14:17:42,059 basehttp 114755 139673462851264 "GET /home/signup/ HTTP/1.1" 200 5114
+django INFO 2025-03-11 14:18:02,389 views 114755 139673462851264 User logged in: testing
+django INFO 2025-03-11 14:18:02,400 views 114755 139673462851264 New user signed up: testing
+django.server INFO 2025-03-11 14:18:02,411 basehttp 114755 139673462851264 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-11 14:18:02,425 basehttp 114755 139673462851264 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-11 14:18:02,508 basehttp 114755 139673462851264 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-11 14:18:02,508 basehttp 114755 139673448683200 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.request WARNING 2025-03-11 14:18:02,650 log 114755 139673462851264 Not Found: /favicon.ico
+django.server WARNING 2025-03-11 14:18:02,650 basehttp 114755 139673462851264 "GET /favicon.ico HTTP/1.1" 404 3679

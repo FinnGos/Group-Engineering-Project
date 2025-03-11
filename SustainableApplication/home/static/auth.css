@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
@@ -6,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Background Section */
 .background-section {
     position: relative;
     height: 100vh;
@@ -14,13 +12,12 @@ body {
     overflow: hidden;
 }
 
-.background-section img {
+.background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Form Section */
 .form-section {
     position: absolute;
     top: 0;
@@ -33,43 +30,28 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-    z-index: 1;
     padding: 20px;
+    z-index: 1;
 }
 
-/* Moved Down Class */
-.moved-down {
-    margin-top: 100px;
-    /* Adjust this value as needed */
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-/* Outlined Text for Headings and Subheadings */
-.outlined-text {
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+h1, p, a {
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    margin-top: 20px;
 }
 
-/* Input Fields - Ensures black text in all states */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -80,31 +62,20 @@ input[type="password"] {
     margin-bottom: 15px;
     font-size: 1rem;
     color: #000;
-    /* Black text for input */
     background-color: #fff;
-    /* Solid white background for visibility */
 }
 
-/* Placeholder Text - Ensures visibility */
 ::placeholder {
     color: #666;
-    /* Medium gray for clear placeholder text */
     opacity: 1;
-    /* Full opacity for placeholder visibility */
 }
 
-/* Focus State - Ensures text stays black when typing */
 input:focus {
     color: #000;
-    /* Ensure typed text remains black */
     border: 2px solid #4caf50;
-    /* Clear green focus ring */
     outline: none;
-    /* Remove default browser outline */
 }
 
-
-/* Button Styles */
 button {
     width: 100%;
     padding: 15px;
@@ -121,83 +92,17 @@ button:hover {
     background-color: #45a049;
 }
 
-button:active {
-    background-color: #3c8e3c;
-}
-
-/* Helper Text */
-small {
-    display: block;
-    margin-top: 5px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-/* Links */
 a {
-    color: #1e88e5;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 5px;
 }
 
 a:hover {
-    text-decoration: underline;
-}
-
-/* Sign-Up and Login Link Style */
-.text-lg {
-    margin-top: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-blue-500:hover {
-    color: #0d47a1;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .form-section {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    form {
-        padding: 20px;
-    }
-
-    input,
-    button {
-        font-size: 1rem;
-    }
-}
-
-
-.outlined-text {
-    color: white;
-    text-shadow:
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
+    background-color: #0056b3;
 }
