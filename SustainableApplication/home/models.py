@@ -25,7 +25,7 @@ class CustomUser(AbstractUser):
     current_points = models.IntegerField(default=0)
     all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
     # Collectable cards owned by user
-    collectables_owned = models.ManyToManyField(Collectable)
+    collectables_owned = models.ManyToManyField(Collectable, blank=True)
 
     def __str__(self):
         return self.username

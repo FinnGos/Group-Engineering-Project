@@ -7,7 +7,7 @@ from django.db import models
 class CollectableManager(models.Manager):
     """
     Overwrites model manager for Collectable
-    So string name of object can give the object
+    So specific objects can be accessed using their details
     """
 
     def get_by_name(self, card_name):
