@@ -2613,3 +2613,333 @@ django INFO 2025-03-12 15:19:48,213 views 27164 10792 User asked for personal da
 django.server INFO 2025-03-12 15:19:48,254 basehttp 27164 10792 "GET /home/accounts/view_data/ HTTP/1.1" 200 1739
 django.server WARNING 2025-03-12 15:19:48,276 basehttp 27164 10792 "GET /static/css/%7B%%20static%20'tasks/images/tasksTop.jpg'%20%%7D HTTP/1.1" 404 2103
 django.server INFO 2025-03-12 15:19:57,765 basehttp 27164 5248 "GET /home/ HTTP/1.1" 200 4509
+django.server INFO 2025-03-12 15:31:08,155 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:09,012 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:09,867 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:10,460 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:11,030 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:11,437 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:31:12,057 basehttp 27164 13736 "GET /leaderboard/ HTTP/1.1" 200 4374
+django.server INFO 2025-03-12 15:32:05,643 basehttp 27164 13736 "GET /tasks HTTP/1.1" 301 0
+django.server INFO 2025-03-12 15:32:05,649 basehttp 27164 23900 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-12 15:32:05,678 basehttp 27164 23900 "GET /static/css/%7B%%20static%20'tasks/images/tasksTop.jpg'%20%%7D HTTP/1.1" 404 2103
+django.request ERROR 2025-03-12 15:33:44,444 log 27164 14364 Internal Server Error: /tasks/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 11, in tasks_view
+    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 6: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-12 15:33:44,460 basehttp 27164 14364 "GET /tasks/ HTTP/1.1" 500 186914
+django.server INFO 2025-03-12 15:34:02,466 basehttp 27164 14364 "GET /tasks/ HTTP/1.1" 200 5490
+django.server INFO 2025-03-12 15:42:51,237 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5241
+django.server INFO 2025-03-12 15:42:53,449 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5241
+django.server INFO 2025-03-12 15:42:54,599 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5241
+django.server INFO 2025-03-12 15:44:05,894 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:44:06,332 basehttp 27164 7088 "GET /static/images/tasksTop.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-12 15:45:15,293 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:45:18,013 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:45:18,655 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:45:19,150 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:45:48,974 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:45:49,591 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.request ERROR 2025-03-12 15:45:53,011 log 27164 7088 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base_generic.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base_generic.html
+django.server ERROR 2025-03-12 15:45:53,012 basehttp 27164 7088 "GET /accounts/login/ HTTP/1.1" 500 146723
+django.server INFO 2025-03-12 15:45:55,409 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:00,607 basehttp 27164 7088 "GET /tasks/ HTTP/1.1" 200 5613
+django.utils.autoreload INFO 2025-03-12 15:46:13,645 autoreload 17368 15356 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 15:46:21,648 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:22,231 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:36,158 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:36,930 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:37,402 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:37,865 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:38,096 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:46,457 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:46:47,083 basehttp 17368 26952 "GET /tasks/ HTTP/1.1" 200 5612
+django.server WARNING 2025-03-12 15:46:47,098 basehttp 17368 26952 "GET /static/images/taskTop.jpg HTTP/1.1" 404 1981
+django.server INFO 2025-03-12 15:46:47,459 basehttp 17368 24900 "GET /tasks/ HTTP/1.1" 200 5612
+django.server WARNING 2025-03-12 15:46:47,470 basehttp 17368 24900 "GET /static/images/taskTop.jpg HTTP/1.1" 404 1981
+django.server INFO 2025-03-12 15:46:51,371 basehttp 17368 21664 "GET /tasks/ HTTP/1.1" 200 5612
+django.server WARNING 2025-03-12 15:46:51,385 basehttp 17368 21664 "GET /static/images/taskTop.jpg HTTP/1.1" 404 1981
+django.server INFO 2025-03-12 15:46:52,153 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:47:10,378 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:47:10,592 basehttp 17368 10796 "GET /static/images/tasks.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-12 15:48:31,735 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:32,280 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:32,500 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:32,690 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:33,236 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:33,729 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:38,158 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:48:41,497 basehttp 17368 10796 "GET /tasks/ HTTP/1.1" 200 5609
+django.server WARNING 2025-03-12 15:48:41,510 basehttp 17368 10796 "GET /static/images/task.jpg HTTP/1.1" 404 1972
+django.server INFO 2025-03-12 15:48:58,190 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5610
+django.server INFO 2025-03-12 15:49:13,778 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5613
+django.server INFO 2025-03-12 15:49:39,740 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:49:39,751 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-12 15:49:41,237 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:49:41,705 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:51:44,123 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:51:44,134 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:51:58,095 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 6056
+django.server INFO 2025-03-12 15:53:22,045 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5986
+django.server INFO 2025-03-12 15:53:22,055 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:54:08,170 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5996
+django.server INFO 2025-03-12 15:54:08,180 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:54:09,249 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5996
+django.server INFO 2025-03-12 15:54:15,109 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5996
+django.server INFO 2025-03-12 15:54:20,375 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:55:26,237 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5958
+django.server INFO 2025-03-12 15:55:26,247 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:56:07,340 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:56:24,222 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:56:24,230 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:56:25,785 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 6017
+django.server INFO 2025-03-12 15:56:44,513 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:57:06,424 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:57:08,222 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5923
+django.server INFO 2025-03-12 15:57:12,387 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5923
+django.server INFO 2025-03-12 15:57:12,398 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:57:16,674 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:58:04,357 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5476
+django.request ERROR 2025-03-12 15:58:58,777 log 17368 8044 Internal Server Error: /tasks/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 11, in tasks_view
+    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+django.server ERROR 2025-03-12 15:58:58,781 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 500 160279
+django.request ERROR 2025-03-12 15:59:08,215 log 17368 8044 Internal Server Error: /tasks/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 11, in tasks_view
+    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+django.server ERROR 2025-03-12 15:59:08,217 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 500 160471
+django.server INFO 2025-03-12 15:59:14,686 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:59:14,695 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 15:59:19,795 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:59:24,328 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 15:59:56,263 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5331
+django.server INFO 2025-03-12 16:00:02,293 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 16:01:17,347 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5412
+django.server INFO 2025-03-12 16:01:17,357 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 16:01:32,920 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5496
+django.server INFO 2025-03-12 16:01:38,658 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 16:03:01,513 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5615
+django.server INFO 2025-03-12 16:03:01,523 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 16:03:03,002 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5708
+django.server INFO 2025-03-12 16:03:05,429 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5708
+django.server INFO 2025-03-12 16:03:38,401 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5918
+django.server INFO 2025-03-12 16:04:57,970 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5919
+django.server INFO 2025-03-12 16:04:57,981 basehttp 17368 8044 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-12 16:05:03,094 basehttp 17368 8044 "GET /tasks/ HTTP/1.1" 200 5920
+django.server INFO 2025-03-12 16:14:18,844 basehttp 17368 7088 "GET /tasks/ HTTP/1.1" 200 19969
+django.server INFO 2025-03-12 16:14:18,856 basehttp 17368 7088 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-12 16:15:13,452 autoreload 17368 15356 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 16:15:14,143 autoreload 25272 12864 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 16:15:15,208 basehttp 25272 24208 "GET /tasks/ HTTP/1.1" 200 8736

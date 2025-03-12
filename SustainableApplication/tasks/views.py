@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def tasks_view(request):
-    incomplete_tasks = Tasks.objects.filter(completed=False)
+    incomplete_tasks = Tasks.objects.filter(completed=False)[:3]
 
     return render(request, "tasks.html", {"tasks": incomplete_tasks})
 
