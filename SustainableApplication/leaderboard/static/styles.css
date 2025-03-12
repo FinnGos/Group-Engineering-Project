@@ -1,0 +1,63 @@
+/* Top Section */
+.top-section, .bottom-section {
+    position: relative;
+  }
+  
+  .top-text, .bottom-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+    z-index: 1; /* Ensures the text stays above the images */
+  }
+  
+  .top-section img, .bottom-section img {
+    width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .bottom-section {
+    min-height: 300px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /*We can change text style here if we want*/
+  .top-text h1, .bottom-text h1 {
+    font-size: 3rem; 
+    margin: 10px 0;
+  }
+  
+  .top-text p, .bottom-text ul {
+    font-size: 1.5rem; 
+  }
+  
+  /* Sidebar Navigation styles */
+  .sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-nav a {
+    text-decoration: none;
+    color: #008000; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .sidebar-nav a:hover {
+    color: #004d00; 
+  }

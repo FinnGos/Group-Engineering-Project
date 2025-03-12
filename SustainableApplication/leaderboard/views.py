@@ -5,7 +5,7 @@ from home.models import CustomUser
 @login_required(login_url='/accounts/login/')  # Redirects unauthenticated users
 def leaderboard(request):
     # Filter out users with zero points 
-    users = CustomUser.objects.filter(all_time_points__gt=0).order_by('-all_time_points', 'username')  
+    users = CustomUser.objects.filter(all_time_points__gt=0).order_by('-all_time_points', 'username')[:5]
 
     ranked_users = []
     last_points = None
@@ -19,4 +19,4 @@ def leaderboard(request):
         ranked_users.append({'rank': rank, 'user': user})
         last_points = user.all_time_points
 
-    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
