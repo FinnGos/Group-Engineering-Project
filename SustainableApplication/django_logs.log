@@ -4510,3 +4510,1853 @@ django.server INFO 2025-03-11 14:18:02,508 basehttp 114755 139673462851264 "GET 
 django.server INFO 2025-03-11 14:18:02,508 basehttp 114755 139673448683200 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
 django.request WARNING 2025-03-11 14:18:02,650 log 114755 139673462851264 Not Found: /favicon.ico
 django.server WARNING 2025-03-11 14:18:02,650 basehttp 114755 139673462851264 "GET /favicon.ico HTTP/1.1" 404 3679
+django.utils.autoreload INFO 2025-03-12 17:28:10,442 autoreload 32301 140290054533248 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 17:28:12,369 basehttp 32301 140289939338944 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:28:12,385 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:28:12,669 log 32301 140289939338944 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:28:12,670 basehttp 32301 140289939338944 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request WARNING 2025-03-12 17:28:46,709 log 32301 140289939338944 Not Found: /checkin/
+django.server WARNING 2025-03-12 17:28:46,709 basehttp 32301 140289939338944 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 17:28:46,818 log 32301 140289939338944 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:28:46,818 basehttp 32301 140289939338944 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:28:50,636 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:29:37,198 basehttp 32301 140289939338944 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:29:37,204 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:29:37,424 log 32301 140289939338944 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:29:37,424 basehttp 32301 140289939338944 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request WARNING 2025-03-12 17:29:38,197 log 32301 140289939338944 Not Found: /checkin/
+django.server WARNING 2025-03-12 17:29:38,197 basehttp 32301 140289939338944 "GET /checkin/ HTTP/1.1" 404 4413
+django.server INFO 2025-03-12 17:29:39,080 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:29:40,102 log 32301 140289939338944 Not Found: /signin
+django.server WARNING 2025-03-12 17:29:40,102 basehttp 32301 140289939338944 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 17:29:41,950 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:29:43,955 log 32301 140289939338944 Not Found: /signin
+django.server WARNING 2025-03-12 17:29:43,956 basehttp 32301 140289939338944 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 17:29:45,941 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django INFO 2025-03-12 17:29:48,411 views 32301 140289939338944 User asked for personal data stored: 
+django.request ERROR 2025-03-12 17:29:48,434 log 32301 140289939338944 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-12 17:29:48,435 basehttp 32301 140289939338944 "GET /home/accounts/view_data/ HTTP/1.1" 500 79942
+django.server INFO 2025-03-12 17:29:50,939 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request ERROR 2025-03-12 17:29:51,581 log 32301 140289939338944 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-12 17:29:51,581 basehttp 32301 140289939338944 "GET /home/accounts/change_password/ HTTP/1.1" 500 88948
+django.server INFO 2025-03-12 17:29:50,188 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request ERROR 2025-03-12 17:29:50,777 log 32301 140289939338944 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-12 17:29:50,778 basehttp 32301 140289939338944 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85139
+django.server INFO 2025-03-12 17:29:51,512 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django INFO 2025-03-12 17:29:52,085 views 32301 140289939338944 User deleted account: 
+django.request ERROR 2025-03-12 17:29:52,094 log 32301 140289939338944 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-12 17:29:52,094 basehttp 32301 140289939338944 "GET /home/accounts/delete_account/ HTTP/1.1" 500 73928
+django.server INFO 2025-03-12 17:29:52,806 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:29:53,599 basehttp 32301 140289939338944 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:29:53,606 basehttp 32301 140289939338944 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:29:54,504 log 32301 140289939338944 Not Found: /signin
+django.server WARNING 2025-03-12 17:29:54,504 basehttp 32301 140289939338944 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 17:29:55,075 basehttp 32301 140289939338944 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:29:55,533 log 32301 140289939338944 Not Found: /checkin/
+django.server WARNING 2025-03-12 17:29:55,533 basehttp 32301 140289939338944 "GET /checkin/ HTTP/1.1" 404 4413
+django.server INFO 2025-03-12 17:29:56,141 basehttp 32301 140289939338944 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:29:56,598 basehttp 32301 140289939338944 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:29:56,610 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.request WARNING 2025-03-12 17:31:14,933 log 32301 140289939338944 Not Found: /checkin_page
+django.server WARNING 2025-03-12 17:31:14,933 basehttp 32301 140289939338944 "GET /checkin_page HTTP/1.1" 404 4425
+django.server INFO 2025-03-12 17:31:18,585 basehttp 32301 140289939338944 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:31:20,438 basehttp 32301 140289939338944 "GET /home/signup/ HTTP/1.1" 200 5114
+django WARNING 2025-03-12 17:31:33,857 views 32301 140289939338944 Failed signup attempt.
+django.server INFO 2025-03-12 17:31:33,858 basehttp 32301 140289939338944 "POST /home/signup/ HTTP/1.1" 200 5114
+django INFO 2025-03-12 17:31:56,888 views 32301 140289939338944 User logged in: checkinhtml
+django INFO 2025-03-12 17:31:56,899 views 32301 140289939338944 New user signed up: checkinhtml
+django.server INFO 2025-03-12 17:31:56,917 basehttp 32301 140289939338944 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:31:56,926 basehttp 32301 140289939338944 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 17:31:57,122 log 32301 140289939338944 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:31:57,122 basehttp 32301 140289939338944 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:32:01,771 basehttp 32301 140289939338944 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-12 17:32:01,798 basehttp 32301 140289939338944 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-12 17:32:08,866 log 32301 140289939338944 Not Found: /checkin_page
+django.server WARNING 2025-03-12 17:32:08,866 basehttp 32301 140289939338944 "GET /checkin_page HTTP/1.1" 404 4425
+django.request WARNING 2025-03-12 17:32:26,330 log 32301 140289939338944 Not Found: /checkin
+django.server WARNING 2025-03-12 17:32:26,330 basehttp 32301 140289939338944 "GET /checkin HTTP/1.1" 404 4410
+django.server INFO 2025-03-12 17:33:14,266 basehttp 32301 140289939338944 "GET /TermsAndConditions HTTP/1.1" 301 0
+django.server INFO 2025-03-12 17:33:14,278 basehttp 32301 140289939338944 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
+django.request WARNING 2025-03-12 17:33:14,349 log 32301 140289939338944 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:33:14,349 basehttp 32301 140289939338944 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:33:21,458 basehttp 32301 140289939338944 "GET /PrivacyPolicy HTTP/1.1" 301 0
+django.server INFO 2025-03-12 17:33:21,468 basehttp 32301 140289939338944 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
+django.request WARNING 2025-03-12 17:33:34,130 log 32301 140289939338944 Not Found: /get_location
+django.server WARNING 2025-03-12 17:33:34,130 basehttp 32301 140289939338944 "GET /get_location HTTP/1.1" 404 4425
+django.server INFO 2025-03-12 17:33:40,381 basehttp 32301 140289939338944 "GET /database_location HTTP/1.1" 301 0
+django.request ERROR 2025-03-12 17:33:40,399 log 32301 140289939338944 Internal Server Error: /database_location/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: database_location() missing 1 required positional argument: 'task'
+django.server ERROR 2025-03-12 17:33:40,400 basehttp 32301 140289939338944 "GET /database_location/ HTTP/1.1" 500 71248
+django.server INFO 2025-03-12 17:33:58,150 basehttp 32301 140289939338944 "GET /admin/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:33:58,168 basehttp 32301 140289939338944 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3680
+django.server INFO 2025-03-12 17:33:58,239 basehttp 32301 140289928844992 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+django.server INFO 2025-03-12 17:33:58,239 basehttp 32301 140289920452288 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+django.server INFO 2025-03-12 17:33:58,239 basehttp 32301 140289939338944 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+django.server INFO 2025-03-12 17:33:58,266 basehttp 32301 140289928844992 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+django.server INFO 2025-03-12 17:33:58,267 basehttp 32301 140289920452288 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+django.server INFO 2025-03-12 17:33:58,271 basehttp 32301 140289912059584 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+django.server INFO 2025-03-12 17:33:58,272 basehttp 32301 140289903666880 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+django.request WARNING 2025-03-12 17:34:02,592 log 32301 140289939338944 Not Found: /accounrs
+django.server WARNING 2025-03-12 17:34:02,592 basehttp 32301 140289939338944 "GET /accounrs HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 17:34:08,810 log 32301 140289939338944 Not Found: /accounts/
+django.server WARNING 2025-03-12 17:34:08,810 basehttp 32301 140289939338944 "GET /accounts/ HTTP/1.1" 404 6527
+django.server INFO 2025-03-12 17:34:32,426 basehttp 32301 140289939338944 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-12 17:34:32,455 basehttp 32301 140289939338944 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-12 17:34:35,178 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2587
+django.server INFO 2025-03-12 17:35:15,197 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2587
+django.request WARNING 2025-03-12 17:35:15,381 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:35:15,381 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:35:15,950 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2587
+django.server INFO 2025-03-12 17:35:16,571 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2587
+django.server INFO 2025-03-12 17:35:27,591 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2587
+django.server INFO 2025-03-12 17:37:49,282 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.request WARNING 2025-03-12 17:37:49,455 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:37:49,455 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:37:50,263 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.server INFO 2025-03-12 17:38:13,354 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.request WARNING 2025-03-12 17:38:13,529 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:38:13,529 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:38:14,046 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.server INFO 2025-03-12 17:38:49,309 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.server INFO 2025-03-12 17:38:49,973 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2497
+django.server INFO 2025-03-12 17:40:41,315 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2930
+django.request WARNING 2025-03-12 17:40:41,501 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:40:41,501 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:41:06,303 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2928
+django.server WARNING 2025-03-12 17:41:06,365 basehttp 32301 140289903666880 "GET /static/images/checkin.jpg HTTP/1.1" 404 1981
+django.server WARNING 2025-03-12 17:41:06,428 basehttp 32301 140289903666880 "GET /static/images/checkin.jpg HTTP/1.1" 404 1981
+django.server INFO 2025-03-12 17:41:28,708 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2928
+django.server INFO 2025-03-12 17:41:28,729 basehttp 32301 140289903666880 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-12 17:41:28,839 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:41:28,839 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:42:48,258 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2928
+django.request WARNING 2025-03-12 17:42:48,400 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:42:48,401 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:42:48,840 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2928
+django.request ERROR 2025-03-12 17:43:10,456 log 32301 140289903666880 Internal Server Error: /get_location/1/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/Checkin/views.py", line 48, in get_location
+    return render(request, "checkin_page.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-12 17:43:10,458 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 500 201751
+django.server INFO 2025-03-12 17:43:18,121 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2968
+django.server INFO 2025-03-12 17:43:28,857 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:43:28,974 basehttp 32301 140289903666880 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-12 17:43:29,040 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:43:29,040 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-12 17:46:48,922 log 32301 140289903666880 Internal Server Error: /get_location/1/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/Checkin/views.py", line 48, in get_location
+    return render(request, "checkin_page.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 67: 'endblock'. Did you forget to register or load this tag?
+django.server ERROR 2025-03-12 17:46:48,923 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 500 169769
+django.request WARNING 2025-03-12 17:46:48,989 log 32301 140289903666880 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:46:48,989 basehttp 32301 140289903666880 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:46:55,271 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:46:55,397 basehttp 32301 140289903666880 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-12 17:47:09,694 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:47:10,274 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:47:12,239 basehttp 32301 140289903666880 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.utils.autoreload INFO 2025-03-12 17:48:22,980 autoreload 32301 140290054533248 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 17:48:23,368 autoreload 41057 140719873290368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 17:49:19,007 autoreload 41057 140719873290368 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 17:49:19,218 autoreload 41577 140476832751744 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 17:49:42,535 autoreload 41577 140476832751744 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 17:49:42,741 autoreload 41792 140006528245888 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 17:49:41,797 basehttp 41792 140006484637376 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:49:41,923 basehttp 41792 140006484637376 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-12 17:49:41,987 log 41792 140006484637376 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:49:41,987 basehttp 41792 140006484637376 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:49:42,388 basehttp 41792 140006484637376 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:49:44,135 basehttp 41792 140006484637376 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:49:47,841 basehttp 41792 140006484637376 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.request WARNING 2025-03-12 17:49:50,339 log 41792 140006484637376 Not Found: /signin
+django.server WARNING 2025-03-12 17:49:50,340 basehttp 41792 140006484637376 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 17:49:54,296 basehttp 41792 140006484637376 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:50:00,331 basehttp 41792 140006484637376 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:50:00,343 basehttp 41792 140006484637376 "GET /accounts/login/ HTTP/1.1" 200 3924
+django.utils.autoreload INFO 2025-03-12 17:54:19,853 autoreload 43824 140341657337984 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 17:54:21,442 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 17:54:21,641 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:54:21,641 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:54:38,126 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:54:38,899 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:54:39,517 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:54:40,224 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:54:41,309 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:54:42,450 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 17:54:43,838 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 17:54:43,838 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 17:54:45,528 log 43824 140341546055360 Not Found: /signin
+django.server WARNING 2025-03-12 17:54:45,528 basehttp 43824 140341546055360 "GET /signin HTTP/1.1" 404 4407
+django INFO 2025-03-12 17:54:46,513 views 43824 140341546055360 User logged out: checkinhtml
+django.server INFO 2025-03-12 17:54:46,514 basehttp 43824 140341546055360 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 17:54:46,521 basehttp 43824 140341546055360 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:54:50,342 basehttp 43824 140341546055360 "GET /home/signup/ HTTP/1.1" 200 5114
+django.server INFO 2025-03-12 17:55:04,377 basehttp 43824 140341546055360 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.server INFO 2025-03-12 17:55:04,494 basehttp 43824 140341546055360 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-12 17:55:08,601 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 17:55:09,592 basehttp 43824 140341546055360 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-12 17:55:09,612 basehttp 43824 140341546055360 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-12 17:55:43,600 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:55:43,600 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:55:49,570 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 17:55:50,387 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 17:55:50,388 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 17:55:51,344 log 43824 140341546055360 Not Found: /signin
+django.server WARNING 2025-03-12 17:55:51,344 basehttp 43824 140341546055360 "GET /signin HTTP/1.1" 404 4407
+django.request WARNING 2025-03-12 17:55:52,350 log 43824 140341546055360 Not Found: /signin
+django.server WARNING 2025-03-12 17:55:52,350 basehttp 43824 140341546055360 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 17:55:58,025 basehttp 43824 140341546055360 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:57:51,414 basehttp 43824 140341546055360 "GET /get_location/1/? HTTP/1.1" 200 2966
+django.request WARNING 2025-03-12 17:57:51,566 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 17:57:51,566 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 17:57:53,086 basehttp 43824 140341546055360 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:57:55,835 basehttp 43824 140341546055360 "GET /home/signup/ HTTP/1.1" 200 5114
+django.server INFO 2025-03-12 17:57:56,820 basehttp 43824 140341546055360 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 17:57:57,670 basehttp 43824 140341546055360 "GET /home/accounts/login/ HTTP/1.1" 200 3924
+django.server INFO 2025-03-12 18:00:54,260 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 18:00:54,402 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:00:54,402 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:00:55,010 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 18:00:55,665 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 18:01:20,462 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 18:02:09,463 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 18:02:09,593 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:02:09,594 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request WARNING 2025-03-12 18:02:10,349 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:02:10,349 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.server INFO 2025-03-12 18:02:11,935 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.server INFO 2025-03-12 18:02:12,965 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 18:02:14,160 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:02:14,160 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 18:02:17,916 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:02:17,916 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 18:02:18,997 log 43824 140341546055360 Not Found: /signin
+django.server WARNING 2025-03-12 18:02:18,997 basehttp 43824 140341546055360 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 18:02:23,166 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 18:02:41,741 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:02:41,741 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.request WARNING 2025-03-12 18:02:41,848 log 43824 140341546055360 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:02:41,848 basehttp 43824 140341546055360 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:02:56,755 basehttp 43824 140341546055360 "GET /home/ HTTP/1.1" 200 4510
+django.request WARNING 2025-03-12 18:02:57,754 log 43824 140341546055360 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:02:57,754 basehttp 43824 140341546055360 "GET /checkin/ HTTP/1.1" 404 4413
+django.utils.autoreload INFO 2025-03-12 18:03:06,955 autoreload 47912 140000890736768 Watching for file changes with StatReloader
+django.request ERROR 2025-03-12 18:03:08,801 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:08,801 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:09,814 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:09,814 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:10,458 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:10,459 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:10,875 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:10,875 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:11,267 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:11,268 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:11,727 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:11,728 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:12,158 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:12,158 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.request ERROR 2025-03-12 18:03:12,674 log 47912 140000847128256 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+django.server ERROR 2025-03-12 18:03:12,675 basehttp 47912 140000847128256 "GET /home/ HTTP/1.1" 500 91553
+django.server INFO 2025-03-12 18:03:53,794 basehttp 47912 140000847128256 "GET / HTTP/1.1" 302 0
+django.request ERROR 2025-03-12 18:03:53,814 log 47912 140000847128256 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+django.server ERROR 2025-03-12 18:03:53,814 basehttp 47912 140000847128256 "GET /accounts/login/ HTTP/1.1" 500 86387
+django.utils.autoreload INFO 2025-03-12 18:05:31,067 autoreload 49127 139756877897856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:05:46,776 autoreload 49127 139756877897856 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:05:47,066 autoreload 49297 140631885361280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:06:04,389 autoreload 49297 140631885361280 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:06:04,567 autoreload 49488 139868523442304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:06:07,696 autoreload 49488 139868523442304 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:06:07,855 autoreload 49551 139637064528000 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:06:12,969 autoreload 49551 139637064528000 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:06:13,117 autoreload 49614 140622157496448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:08:31,398 autoreload 49614 140622157496448 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:08:31,746 autoreload 50541 139867135058048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:10:30,575 autoreload 50541 139867135058048 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:10:30,913 autoreload 51390 140386519269504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:10:39,117 autoreload 51390 140386519269504 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:10:39,350 autoreload 51496 140028148547712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:10:46,049 autoreload 51496 140028148547712 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:10:46,224 autoreload 51595 140379769573504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:11:37,585 autoreload 51595 140379769573504 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:11:37,893 autoreload 51964 139745831235712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:11:40,021 autoreload 51964 139745831235712 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:11:40,244 autoreload 52015 140291639914624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:11:46,592 autoreload 52128 140680355106944 Watching for file changes with StatReloader
+django.request ERROR 2025-03-12 18:11:54,732 log 52128 140680243443392 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html", {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:11:54,734 basehttp 52128 140680243443392 "GET /home/ HTTP/1.1" 500 181803
+django.request WARNING 2025-03-12 18:11:54,866 log 52128 140680243443392 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:11:54,866 basehttp 52128 140680243443392 "GET /favicon.ico HTTP/1.1" 404 4422
+django.utils.autoreload INFO 2025-03-12 18:12:38,136 autoreload 52128 140680355106944 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:12:38,316 autoreload 52528 140476067930240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:12:41,436 autoreload 52528 140476067930240 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:12:41,607 autoreload 52595 140352759914624 Watching for file changes with StatReloader
+django.request ERROR 2025-03-12 18:12:44,937 log 52595 140352716306112 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:12:44,939 basehttp 52595 140352716306112 "GET /home/ HTTP/1.1" 500 181791
+django.request ERROR 2025-03-12 18:12:45,574 log 52595 140352716306112 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:12:45,575 basehttp 52595 140352716306112 "GET /home/ HTTP/1.1" 500 181791
+django.utils.autoreload INFO 2025-03-12 18:13:43,840 autoreload 53219 140056176853120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:15:06,832 autoreload 53219 140056176853120 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:15:07,023 autoreload 53823 140419034046592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-12 18:15:20,876 autoreload 53823 140419034046592 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:15:21,038 autoreload 53976 140417880993920 Watching for file changes with StatReloader
+django.request ERROR 2025-03-12 18:15:22,966 log 53976 140417837385408 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:22,967 basehttp 53976 140417837385408 "GET /home/ HTTP/1.1" 500 181852
+django.request WARNING 2025-03-12 18:15:23,045 log 53976 140417837385408 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:15:23,046 basehttp 53976 140417837385408 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-12 18:15:23,683 log 53976 140417837385408 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:23,684 basehttp 53976 140417837385408 "GET /home/ HTTP/1.1" 500 181852
+django.request ERROR 2025-03-12 18:15:24,175 log 53976 140417837385408 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:24,176 basehttp 53976 140417837385408 "GET /home/ HTTP/1.1" 500 181852
+django.request ERROR 2025-03-12 18:15:24,599 log 53976 140417837385408 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:24,600 basehttp 53976 140417837385408 "GET /home/ HTTP/1.1" 500 181852
+django.utils.autoreload INFO 2025-03-12 18:15:43,803 autoreload 54291 140264339234944 Watching for file changes with StatReloader
+django.request ERROR 2025-03-12 18:15:43,377 log 54291 140264295626432 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:43,378 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 500 181852
+django.request ERROR 2025-03-12 18:15:44,543 log 54291 140264295626432 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:44,544 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 500 175666
+django.request ERROR 2025-03-12 18:15:45,497 log 54291 140264295626432 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:45,497 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 500 175666
+django.request ERROR 2025-03-12 18:15:46,808 log 54291 140264295626432 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''get_location/1/?' from ''get_location/1/?'
+django.server ERROR 2025-03-12 18:15:46,808 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 500 181852
+django.request ERROR 2025-03-12 18:16:43,182 log 54291 140264295626432 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_location' with keyword arguments '{'id': 1}' not found. 1 pattern(s) tried: ['get_location/(?P<task_id>[0-9]+)/\\Z']
+django.server ERROR 2025-03-12 18:16:43,183 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 500 147233
+django.request WARNING 2025-03-12 18:16:43,251 log 54291 140264295626432 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:16:43,251 basehttp 54291 140264295626432 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-12 18:16:45,423 log 54291 140264295626432 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_location' with keyword arguments '{'id': 1}' not found. 1 pattern(s) tried: ['get_location/(?P<task_id>[0-9]+)/\\Z']
+django.server ERROR 2025-03-12 18:16:45,424 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 500 147233
+django.server INFO 2025-03-12 18:19:15,804 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 3555
+django.request WARNING 2025-03-12 18:19:15,982 log 54291 140264295626432 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:19:15,982 basehttp 54291 140264295626432 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:19:19,790 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 3555
+django.server INFO 2025-03-12 18:19:20,843 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 200 3020
+django.server INFO 2025-03-12 18:19:20,891 basehttp 54291 140264295626432 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-12 18:19:48,125 basehttp 54291 140264295626432 "GET /get_location/1/ HTTP/1.1" 200 3277
+django.server INFO 2025-03-12 18:19:48,178 basehttp 54291 140264295626432 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-12 18:19:48,181 basehttp 54291 140264295626432 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-12 18:20:16,178 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 200 3020
+django.server INFO 2025-03-12 18:20:17,771 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 3555
+django.server INFO 2025-03-12 18:21:10,284 basehttp 54291 140264295626432 "GET /get_location/1/ HTTP/1.1" 200 2961
+django.request WARNING 2025-03-12 18:21:10,431 log 54291 140264295626432 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:21:10,431 basehttp 54291 140264295626432 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:21:11,394 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 4509
+django.server INFO 2025-03-12 18:21:13,987 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 4509
+django.server INFO 2025-03-12 18:21:18,462 basehttp 54291 140264295626432 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-12 18:21:18,482 basehttp 54291 140264295626432 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-12 18:21:20,475 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 4509
+django.request WARNING 2025-03-12 18:21:21,650 log 54291 140264295626432 Not Found: /checkin/
+django.server WARNING 2025-03-12 18:21:21,650 basehttp 54291 140264295626432 "GET /checkin/ HTTP/1.1" 404 4413
+django.server INFO 2025-03-12 18:21:52,219 basehttp 54291 140264295626432 "GET /home/ HTTP/1.1" 200 4504
+django.request WARNING 2025-03-12 18:21:52,421 log 54291 140264295626432 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:21:52,421 basehttp 54291 140264295626432 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:21:53,744 basehttp 54291 140264295626432 "GET /get_location/1/ HTTP/1.1" 200 2956
+django.request WARNING 2025-03-12 18:21:58,374 log 54291 140264295626432 Not Found: /signin
+django.server WARNING 2025-03-12 18:21:58,374 basehttp 54291 140264295626432 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 18:22:04,423 basehttp 54291 140264295626432 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:22:04,432 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.request WARNING 2025-03-12 18:23:46,465 log 54291 140264295626432 Not Found: /signin
+django.server WARNING 2025-03-12 18:23:46,466 basehttp 54291 140264295626432 "GET /signin HTTP/1.1" 404 4407
+django.request WARNING 2025-03-12 18:23:46,576 log 54291 140264295626432 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:23:46,576 basehttp 54291 140264295626432 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:23:47,513 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.server INFO 2025-03-12 18:23:50,115 basehttp 54291 140264295626432 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.utils.autoreload INFO 2025-03-12 18:23:51,526 autoreload 54291 140264339234944 /home/finn/Group-Engineering-Project/SustainableApplication/home/urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-12 18:23:51,879 autoreload 57890 140295565496448 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 18:23:52,769 basehttp 57890 140295521887936 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.server INFO 2025-03-12 18:23:53,196 basehttp 57890 140295521887936 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.request WARNING 2025-03-12 18:23:55,601 log 57890 140295521887936 Not Found: /signin
+django.server WARNING 2025-03-12 18:23:55,601 basehttp 57890 140295521887936 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 18:23:56,442 basehttp 57890 140295521887936 "GET /accounts/login/ HTTP/1.1" 200 3944
+django.server INFO 2025-03-12 18:24:25,707 basehttp 57890 140295521887936 "GET /accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:27,299 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 200 4659
+django.server INFO 2025-03-12 18:24:27,985 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 3111
+django.server INFO 2025-03-12 18:24:28,843 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django INFO 2025-03-12 18:24:29,485 views 57890 140295521887936 User logged out: checkinhtml
+django.server INFO 2025-03-12 18:24:29,486 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:29,492 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django INFO 2025-03-12 18:24:30,146 views 57890 140295521887936 User deleted account: checkinhtml
+django.server INFO 2025-03-12 18:24:30,158 basehttp 57890 140295521887936 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:30,166 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.request ERROR 2025-03-12 18:24:30,969 log 57890 140295521887936 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-12 18:24:30,970 basehttp 57890 140295521887936 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85287
+django.server INFO 2025-03-12 18:24:32,144 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django INFO 2025-03-12 18:24:33,134 views 57890 140295521887936 User deleted account: 
+django.request ERROR 2025-03-12 18:24:33,143 log 57890 140295521887936 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-12 18:24:33,143 basehttp 57890 140295521887936 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74076
+django.server INFO 2025-03-12 18:24:34,343 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:34,998 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:35,005 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:35,970 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:36,519 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:36,526 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django INFO 2025-03-12 18:24:37,228 views 57890 140295521887936 User deleted account: 
+django.request ERROR 2025-03-12 18:24:37,235 log 57890 140295521887936 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-12 18:24:37,236 basehttp 57890 140295521887936 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74076
+django.server INFO 2025-03-12 18:24:37,853 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:39,353 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:39,360 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.request ERROR 2025-03-12 18:24:39,956 log 57890 140295521887936 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-12 18:24:39,957 basehttp 57890 140295521887936 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85287
+django.server INFO 2025-03-12 18:24:40,539 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.request ERROR 2025-03-12 18:24:41,042 log 57890 140295521887936 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-12 18:24:41,043 basehttp 57890 140295521887936 "GET /home/accounts/change_password/ HTTP/1.1" 500 88220
+django.server INFO 2025-03-12 18:24:41,868 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django INFO 2025-03-12 18:24:42,382 views 57890 140295521887936 User asked for personal data stored: 
+django.request ERROR 2025-03-12 18:24:42,411 log 57890 140295521887936 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-12 18:24:42,411 basehttp 57890 140295521887936 "GET /home/accounts/view_data/ HTTP/1.1" 500 80090
+django.server INFO 2025-03-12 18:24:43,464 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:54,391 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:54,399 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4073
+django.request WARNING 2025-03-12 18:24:54,625 log 57890 140295521887936 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:24:54,625 basehttp 57890 140295521887936 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:24:57,411 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:57,418 basehttp 57890 140295521887936 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:24:59,540 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:24:59,546 basehttp 57890 140295521887936 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:01,729 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:25:01,737 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.request WARNING 2025-03-12 18:25:10,025 log 57890 140295521887936 Not Found: /signin
+django.server WARNING 2025-03-12 18:25:10,026 basehttp 57890 140295521887936 "GET /signin HTTP/1.1" 404 4407
+django.request WARNING 2025-03-12 18:25:13,110 log 57890 140295521887936 Not Found: /signin
+django.server WARNING 2025-03-12 18:25:13,110 basehttp 57890 140295521887936 "GET /signin HTTP/1.1" 404 4407
+django.request WARNING 2025-03-12 18:25:16,585 log 57890 140295521887936 Not Found: /signin
+django.server WARNING 2025-03-12 18:25:16,585 basehttp 57890 140295521887936 "GET /signin HTTP/1.1" 404 4407
+django.server INFO 2025-03-12 18:25:18,302 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:25:18,309 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:19,445 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:20,754 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:25:20,760 basehttp 57890 140295521887936 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:21,277 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:25:21,284 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:21,969 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:22,830 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:25:22,836 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4073
+django.server INFO 2025-03-12 18:25:58,110 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 3020
+django.server INFO 2025-03-12 18:25:58,144 basehttp 57890 140295521887936 "GET /static/auth.css HTTP/1.1" 200 1844
+django.request WARNING 2025-03-12 18:25:58,285 log 57890 140295521887936 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:25:58,285 basehttp 57890 140295521887936 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:26:08,396 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4074
+django.server INFO 2025-03-12 18:26:48,456 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4148
+django.request WARNING 2025-03-12 18:26:48,647 log 57890 140295521887936 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:26:48,648 basehttp 57890 140295521887936 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:26:54,946 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:26:54,954 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:26:55,487 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:26:55,493 basehttp 57890 140295521887936 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:26:56,095 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:26:56,612 basehttp 57890 140295521887936 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:26:56,621 basehttp 57890 140295521887936 "GET /home/accounts/login/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:27:28,682 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:27:28,700 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4148
+django.request WARNING 2025-03-12 18:27:28,932 log 57890 140295521887936 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:27:28,932 basehttp 57890 140295521887936 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:27:31,571 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:27:31,579 basehttp 57890 140295521887936 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:27:32,576 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:27:32,582 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:27:38,189 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:27:38,195 basehttp 57890 140295521887936 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 4148
+django.server INFO 2025-03-12 18:27:37,545 basehttp 57890 140295521887936 "GET /home/signup/ HTTP/1.1" 200 5336
+django INFO 2025-03-12 18:27:55,598 views 57890 140295521887936 User logged in: htmljourney
+django INFO 2025-03-12 18:27:55,613 views 57890 140295521887936 New user signed up: htmljourney
+django.server INFO 2025-03-12 18:27:55,623 basehttp 57890 140295521887936 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-12 18:27:55,635 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 200 4683
+django.server INFO 2025-03-12 18:27:58,793 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4405
+django.server INFO 2025-03-12 18:27:58,843 basehttp 57890 140295521887936 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-12 18:27:58,852 basehttp 57890 140295521887936 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-12 18:28:12,717 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4405
+django.server INFO 2025-03-12 18:28:15,159 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 200 4683
+django.server INFO 2025-03-12 18:28:15,778 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4405
+django.server INFO 2025-03-12 18:29:31,118 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4428
+django.request WARNING 2025-03-12 18:29:31,269 log 57890 140295521887936 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:29:31,269 basehttp 57890 140295521887936 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-12 18:29:36,660 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4428
+django.server INFO 2025-03-12 18:29:36,172 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4428
+django.server INFO 2025-03-12 18:29:40,109 basehttp 57890 140295521887936 "GET /home/ HTTP/1.1" 200 4683
+django.server INFO 2025-03-12 18:29:40,781 basehttp 57890 140295521887936 "GET /get_location/1/ HTTP/1.1" 200 4428
+django.utils.autoreload INFO 2025-03-12 18:29:47,164 autoreload 60568 140217323389056 Watching for file changes with StatReloader
+django.server INFO 2025-03-12 18:29:48,374 basehttp 60568 140217279780544 "GET /get_location/1/ HTTP/1.1" 200 4428
+django.server INFO 2025-03-12 18:30:33,727 basehttp 60568 140217279780544 "GET /get_location/1/ HTTP/1.1" 200 4399
+django.request WARNING 2025-03-12 18:30:33,887 log 60568 140217279780544 Not Found: /favicon.ico
+django.server WARNING 2025-03-12 18:30:33,887 basehttp 60568 140217279780544 "GET /favicon.ico HTTP/1.1" 404 4422

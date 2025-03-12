@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
             font-size: 1.2rem;
         }
     </style>
+    {% block extra_css %}{% endblock %}
 </head>
+
 <body class="flex flex-col min-h-screen">
 
     <!-- Navbar (Header) -->
@@ -19,8 +22,10 @@
         <div class="text-xl font-bold">Sustainable App</div>
         <ul class="flex space-x-4">
             <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-            <li><a href="/checkin/" class="hover:underline">Check-in</a></li>
-            <li><a href="/signin" class="hover:underline">Sign-in</a></li>
+            <!-- Checkin button, using correct URL for get_location -->
+            <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+            <!-- Sign-in button with outlined text -->
+            <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
             <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
             <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
             <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
@@ -42,8 +47,12 @@
             <a href="#" class="hover:underline">Instagram</a>
             <a href="#" class="hover:underline">LinkedIn</a>
         </div>
-        <p class="mt-2 footer-text">Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon</p>
+        <p class="mt-2 footer-text">Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem
+            Hanan, Jacob Nixon</p>
     </footer>
 
+    {% block extra_js %}{% endblock %}
+
 </body>
+
 </html>

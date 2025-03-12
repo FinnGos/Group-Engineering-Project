@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Check-In{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'checkin.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Background Image Section -->
+<div class="background-section relative">
+  <img src="{% static 'images/checkin.jpg' %}" alt="Background Image" class="w-full h-auto">
+  <!-- Overlay content -->
+  <div class="form-section moved-down absolute inset-0 flex flex-col justify-center items-center text-white">
+    <h1 class="text-6xl font-bold mb-6 outlined-text">Check-In</h1>
+    <p class="text-3xl mb-6 outlined-text text-center">
+      Click below to check-in.<br>
+      You will only be able to check-in if you are within a registered sustainability hotspot.
+    </p>
+    <button id="checkin-btn" class="w-full max-w-md bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+      Check-In
+    </button>
+  </div>
+</div>
+
+<!-- Map Section -->
+<div class="map-container">
+  <h2 class="text-3xl font-bold text-center mb-4">Your Location</h2>
+  <div id="map" style="width:100%; height:500px;"></div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Leaflet Map Library -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mapElement = document.getElementById("map");
+        if (!mapElement) {
+            console.error("Map container not found!");
+            return;
+        }
+
+
+        //PLEASE NOTE THIS MAP IS NOT FULLY CONNECTED
+        //CURRENTLY IT HAS A PLACEHOLDER VALUE OF POINTING TO FORUM 
+        //IM NOT SURE HOW TO GET OUR LOCATION HERE
+        //POTENTIALLY NOT MY PROBLEM
+
+        
+        // Initialize the map at a default location
+        var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        // Add a placeholder marker
+        L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
+            .bindPopup("This is your location.")
+            .openPopup();
+        
+        // Connect to backend here please
+        document.getElementById('checkin-btn').addEventListener('click', function() {
+            alert("Check-in feature will be enabled with geolocation.");
+        });
+    });
+</script>
+{% endblock %}
