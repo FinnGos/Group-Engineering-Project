@@ -1,9 +1,11 @@
 from django.db import models
 from Checkin.models import Location
+from home.models import CustomUser
 
 
 # Create your models here.
 class Tasks(models.Model):
+    user = models.ManyToManyField(CustomUser,blank = True)
     task_name = models.CharField(max_length=200)
     current_progress = models.IntegerField(default=0)
     target = models.IntegerField(default=0)

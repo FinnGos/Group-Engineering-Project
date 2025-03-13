@@ -8,22 +8,27 @@ import random
 
 # Create your views here.
 def tasks_view(request):
+
+    if not request.user.is_authenticated:
+        return render(request, "tasks.html", {"task": None})
+
+    user = request.user
     today = now().date()
-    incomplete_tasks = list(Tasks.objects.filter(completed=False))
+
+    user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
 
     # retrieve or select random task for today
-    if not incomplete_tasks:
-        task = None
+    if user.selected_task and user.task_assign_date == today:
+        task = user.selected_task
     else:
-        # pick random task once per day
-        selected_task = random.choice(incomplete_tasks)
+        if not user_incomplete_tasks:
+            task = None
+        else:
+            task = random.choice(user_incomplete_tasks)
 
-        # reset progress if last update was not today
-        if selected_task.updated_at.date() != today:
-            selected_task.current_progress = 0
-            selected_task.save(update_fields=["current_progress", "updated_at"])
-
-        task = selected_task
+            user.selected_task = task
+            user.task_assing_date = today
+            user.save()
 
     return render(request, "tasks.html", {"task": task})
 
