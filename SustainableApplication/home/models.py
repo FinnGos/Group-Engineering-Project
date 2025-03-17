@@ -29,7 +29,14 @@ class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
 
     current_points = models.IntegerField(default=0)
-    all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
+    all_time_points = models.IntegerField(
+        default=0
+    )  # 2 types of points for the leaderboard
+
+    selected_task = models.ForeignKey(
+        "tasks.Tasks", null=True, blank=True, on_delete=models.SET_NULL
+    )
+    task_assign_date = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return self.username

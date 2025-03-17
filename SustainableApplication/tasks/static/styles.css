@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("{% static 'tasks/images/tasksTop.jpg' %}");
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    background: #14AE5C;
+    width: 100%;
+    height: 99px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+/* Hero Newsletter */
+.hero-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 24px;
+    gap: 32px;
+    background: url("{% static 'images/tasksTop.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+/* Card Grid Image */
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px;
+    gap: 48px;
+    background: #14AE5C;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Dialog Overlay */
+.dialog-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    z-index: 9999;
+}
+
+/* Check Circle */
+.check-circle {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+background-color: #007bff;
+color: white;
+border: none;
+}
+
+.btn-success {
+background-color: #28a745;
+color: white;
+border: none;
+}
+
+.btn-warning {
+background-color: #ffc107;
+color: black;
+border: none;
+}
+
+.btn:hover {
+opacity: 0.8;
+}
