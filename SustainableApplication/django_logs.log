@@ -6825,3 +6825,19 @@ django.server INFO 2025-03-17 16:43:57,315 basehttp 15952 6636 "GET /tasks/ HTTP
 django.server INFO 2025-03-17 16:43:58,647 basehttp 15952 6636 "GET /tasks/ HTTP/1.1" 200 10430
 django.server INFO 2025-03-17 16:47:47,681 basehttp 15952 6636 "GET /home HTTP/1.1" 301 0
 django.server INFO 2025-03-17 16:47:47,702 basehttp 15952 18940 "GET /home/ HTTP/1.1" 200 6203
+django.utils.autoreload INFO 2025-03-17 16:52:02,809 autoreload 15952 6976 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-17 16:52:04,465 autoreload 4872 20832 Watching for file changes with StatReloader
+django.server INFO 2025-03-17 16:52:05,975 basehttp 4872 23540 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-17 16:52:06,006 basehttp 4872 23540 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-17 16:52:08,507 basehttp 4872 23540 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-17 16:52:09,429 basehttp 4872 23540 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-17 16:52:10,327 basehttp 4872 23540 "GET /tasks/ HTTP/1.1" 200 6247
+django.utils.autoreload INFO 2025-03-17 16:52:42,376 autoreload 4872 20832 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-17 16:52:43,817 autoreload 12768 1992 Watching for file changes with StatReloader
+django.server INFO 2025-03-17 16:52:49,356 basehttp 12768 15120 "GET /tasks/ HTTP/1.1" 200 10430
+django.server INFO 2025-03-17 16:52:50,999 basehttp 12768 15120 "GET /tasks/ HTTP/1.1" 200 10430
+django.server INFO 2025-03-17 16:52:52,062 basehttp 12768 15120 "GET /tasks/ HTTP/1.1" 200 10430
+django.server INFO 2025-03-17 16:52:52,879 basehttp 12768 15120 "GET /tasks/ HTTP/1.1" 200 10430
+django.utils.autoreload INFO 2025-03-17 16:53:08,943 autoreload 12768 1992 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-17 16:53:10,598 autoreload 18200 6368 Watching for file changes with StatReloader
+django.server INFO 2025-03-17 16:53:12,037 basehttp 18200 2368 "GET /tasks/ HTTP/1.1" 200 6247
