@@ -1,9 +1,8 @@
-{%extends "base_generic.html" %} {%block content%}
+{% extends "base_generic.html" %}
+{% block content %}
 <h1>Sustainable Application Home</h1>
-<p>
-  main page of the application developed by
-  <em>Woman in STEM</em>
-</p>
+<p>Main page of the application developed by <em>Women in STEM</em></p>
+
 <h2>Content that can be altered by the models</h2>
 <p>User stats</p>
 <p>
@@ -14,21 +13,26 @@
   <a href="{% url 'change_password' %}">Change Password</a> |
   <a href="{% url 'view_user_data' %}">View My Data</a>
 </p>
+
 <ul>
   <li><strong>Name: </strong></li>
   <li><strong>Coins: </strong></li>
   <li><strong>Something else: </strong></li>
 </ul>
+
 <div class="col-sm-2">
   {% block sidebar %}
   <ul class="sidebar-nav">
     <li><a href="{% url 'home' %}">Home</a></li>
-    <!--Change the href to the view to access pages from a link on the website-->
     <li><a href="{% url 'leaderboard' %}">Leaderboard</a></li>
-    <li><a href="{%url 'tasks_view'%}">Tasks</a></li>
+    <li><a href="{% url 'tasks_view' %}">Tasks</a></li>
+    {% if user.username == "GameMaster" %}
+    <li><a href="{% url 'game_master_gallery' %}">Game Master Gallery</a></li>
+    {% endif %}
   </ul>
   {% endblock %}
 </div>
-<p><a href="{% url 'privacyPolicy'%}">Privacy Policy</a></p>
 
-{%endblock%}
+<p><a href="{% url 'privacyPolicy' %}">Privacy Policy</a></p>
+
+{% endblock %}

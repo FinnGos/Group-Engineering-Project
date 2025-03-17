@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image</title>
+</head>
+<body>
+  <h1>Upload Image for Task: {{ task.task_name }}</h1>
+
+  <!-- Form for image upload -->
+  <form action="{% url 'upload_file' task.id %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <!-- Select Image Button -->
+    <label for="image">Select Image</label>
+    <input type="file" id="image" name="image" required>
+
+    <br><br>
+    
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-success">Upload</button>
+  </form>
+
+  <br><br>
+  <a href="{% url 'tasks_page' %}">
+    <button type="button" class="btn btn-primary">Back to Tasks</button>
+  </a>
+</body>
+</html>

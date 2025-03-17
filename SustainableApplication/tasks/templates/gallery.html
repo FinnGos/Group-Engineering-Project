@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Gallery</h1>
+
+    {% if images %}
+        <div class="gallery-container">
+            {% for image in images %}
+                <div class="image-card">
+                    <img src="{{ image.image.url }}" alt="Task Image">
+                    <p><strong>Task:</strong> {{ image.task.task_name }}</p> <!-- Display Task Name -->
+
+                    <!-- Delete Button -->
+                    <form action="{% url 'delete_image' image.id %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No images available.</p>
+    {% endif %}
+
+    <br><br>
+    <a href="{% url 'tasks_page' %}">
+    <button type="button" class="btn btn-primary">Back to Tasks</button>
+    </a>
+</body>
+</html>

@@ -20,6 +20,7 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from tasks import views
 
 urlpatterns = [
     path('', include('TermsAndConditions.urls')),
@@ -31,4 +32,10 @@ urlpatterns = [
     path("home/", include("home.urls")),
     path("leaderboard/", include("leaderboard.urls")),
     path("tasks/", include("tasks.urls")),
+    path('upload/', views.upload_file, name='upload_file'),
+    path('gallery/', views.image_gallery, name='image_gallery'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+if settings.DEBUG:  # Serve media files in development
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,6 +1,8 @@
 from django.db import models
 from Checkin.models import Location
+from django.contrib.auth import get_user_model
 
+User = get_user_model()
 
 # Create your models here.
 class Tasks(models.Model):
@@ -32,3 +34,16 @@ class Tasks(models.Model):
 
     def __str__(self):
         return self.task_name
+    
+
+class UploadedImage(models.Model):
+    task = models.OneToOneField(
+        Tasks, on_delete=models.CASCADE, related_name="image",
+        null=True, blank=True  # Temporary fix to allow migration
+    )
+    image = models.ImageField(upload_to='MediaPhotos/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    uploaded_by = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Image for {self.task.task_name}" if self.task else "Unassigned Image"
