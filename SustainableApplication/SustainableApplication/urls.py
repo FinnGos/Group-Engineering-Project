@@ -1,6 +1,5 @@
 """
 URL configuration for SustainableApplication project.
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
@@ -34,8 +33,9 @@ urlpatterns = [
     path("tasks/", include("tasks.urls")),
     path('upload/', views.upload_file, name='upload_file'),
     path('gallery/', views.image_gallery, name='image_gallery'),
+    path("collectables/", include("collectables.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
-if settings.DEBUG:  # Serve media files in development
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Adds access to media directory through URLs
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

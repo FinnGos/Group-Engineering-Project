@@ -4,6 +4,7 @@ from . import views
 from django.shortcuts import redirect
 from tasks import views as tviews
 from .views import CustomLogoutView, LoginFormView
+from collectables import views as c_views
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -15,4 +16,5 @@ urlpatterns = [
     path("accounts/update_profile/", views.update_profile, name="update_profile"),
     path("accounts/change_password/", views.change_password, name="change_password"),
     path("accounts/view_data/", views.view_user_data, name="view_user_data"),
+    path("collectable/", c_views.collectable_gallery, name="collectable_gallery")
 ]
