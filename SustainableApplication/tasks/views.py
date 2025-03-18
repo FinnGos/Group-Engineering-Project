@@ -96,7 +96,7 @@ Returns:
         return redirect('tasks_page')  # Redirect to the tasks page after upload
 
     return render(request, 'upload.html', {'task': task})
-
+@login_required
 def tasks_page(request):
     """
     Renders the tasks page with a list of all available tasks.
@@ -110,7 +110,7 @@ def tasks_page(request):
     tasks = Tasks.objects.all()
     return render(request, 'tasks.html', {'tasks': tasks})
 
-
+@login_required
 def image_gallery(request):
     """
     Displays a gallery of all uploaded images linked to tasks.
@@ -124,7 +124,7 @@ def image_gallery(request):
     images = UploadedImage.objects.select_related('task')
     return render(request, 'gallery.html', {'images': images})
 
-
+@login_required
 def delete_image(request, image_id):
     """
     Deletes a specific uploaded image and logs the action.
@@ -140,7 +140,6 @@ def delete_image(request, image_id):
     image.delete()
     auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")    
     return redirect('gallery_page')
-
 
 def is_game_master(user):
     """

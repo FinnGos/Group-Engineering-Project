@@ -8,7 +8,7 @@ from django.test import Client
 User = get_user_model()
 
 class UploadImageTest(TestCase):
-
+    User = get_user_model()
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="password")
         self.client = Client()

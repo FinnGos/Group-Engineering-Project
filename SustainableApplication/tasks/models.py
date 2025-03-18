@@ -2,10 +2,9 @@ from django.db import models
 from Checkin.models import Location
 from django.contrib.auth import get_user_model
 
-User = get_user_model()
 
-# Create your models here.
 class Tasks(models.Model):
+    User = get_user_model()
     task_name = models.CharField(max_length=200)
     current_progress = models.IntegerField(default=0)
     target = models.IntegerField(default=0)
@@ -37,6 +36,7 @@ class Tasks(models.Model):
     
 
 class UploadedImage(models.Model):
+    User = get_user_model()
     task = models.OneToOneField(
         Tasks, on_delete=models.CASCADE, related_name="image",
         null=True, blank=True  # Temporary fix to allow migration
