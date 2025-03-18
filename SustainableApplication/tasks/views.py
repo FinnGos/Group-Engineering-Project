@@ -3,10 +3,12 @@ from .models import Tasks
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.utils.timezone import now
+from django.contrib.auth.decorators import login_required
 import random
 
 
 # Create your views here.
+@login_required
 def tasks_view(request):
 
     if not request.user.is_authenticated:
