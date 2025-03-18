@@ -5,6 +5,8 @@ from django.db.models.functions import Lower  # returns lower case value of fiel
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from collectables.models import Collectable
+
 # IMPORTANT: remember to makemigrations and migrate when you make changes to the models
 # Create your models here.
 class Locations(models.Model):
@@ -17,19 +19,13 @@ class Locations(models.Model):
         return self.name
 
 
-class Collectable(models.Model):
-    """model associated with a collectable item"""
-
-    name = models.CharField(max_length=200, unique=True)
-
-    def __str__(self):
-        return self.name
-
 class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
 
     current_points = models.IntegerField(default=0)
     all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
+    # Collectable cards owned by user
+    collectables_owned = models.ManyToManyField(Collectable, blank=True)
 
     def __str__(self):
         return self.username
