@@ -32,6 +32,7 @@ urlpatterns = [
     path("leaderboard/", include("leaderboard.urls")),
     path("tasks/", include("tasks.urls")),
     path("collectables/", include("collectables.urls")),
+    path("lootboxes/", include("lootboxes.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # Adds access to media directory through URLs

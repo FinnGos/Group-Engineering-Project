@@ -142,3 +142,242 @@ django.server INFO 2025-02-25 10:36:38,299 basehttp 32828 17860 "GET /home/signu
 django.server WARNING 2025-02-25 10:36:38,349 basehttp 32828 17860 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-02-25 10:36:39,652 basehttp 32828 10572 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
 django.server INFO 2025-02-25 10:36:42,199 basehttp 32828 10572 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
+django.utils.autoreload INFO 2025-03-18 21:38:40,783 autoreload 26264 24128 Watching for file changes with StatReloader
+django.server INFO 2025-03-18 21:38:43,172 basehttp 26264 28004 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:38:43,389 basehttp 26264 28004 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-18 21:38:43,582 basehttp 26264 28004 "GET /static/css/styles.css HTTP/1.1" 200 180
+django.request WARNING 2025-03-18 21:38:43,874 log 26264 28004 Not Found: /favicon.ico
+django.server WARNING 2025-03-18 21:38:43,875 basehttp 26264 28004 "GET /favicon.ico HTTP/1.1" 404 4578
+django INFO 2025-03-18 21:38:46,280 views 26264 28004 User logged in: dc754
+django.server INFO 2025-03-18 21:38:46,320 basehttp 26264 28004 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:38:46,339 basehttp 26264 28004 "GET /home/ HTTP/1.1" 200 1790
+django.request ERROR 2025-03-18 21:38:49,051 log 26264 28004 Internal Server Error: /collectables/
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: collectables_collectable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\collectables\views.py", line 16, in collectable_gallery
+    return render(request, "gallery.html", context)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: collectables_collectable
+django.server ERROR 2025-03-18 21:38:49,077 basehttp 26264 28004 "GET /collectables/ HTTP/1.1" 500 177304
+django.utils.autoreload INFO 2025-03-18 21:44:42,355 autoreload 12252 22576 Watching for file changes with StatReloader
+django.server INFO 2025-03-18 21:44:43,856 basehttp 12252 26880 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:44:43,934 basehttp 12252 26880 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-18 21:44:44,044 basehttp 12252 26880 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-18 21:44:46,207 views 12252 26880 User logged in: dc754
+django.server INFO 2025-03-18 21:44:46,251 basehttp 12252 26880 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:44:46,272 basehttp 12252 26880 "GET /home/ HTTP/1.1" 200 1790
+django.request ERROR 2025-03-18 21:44:47,488 log 12252 26880 Internal Server Error: /collectables/
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: home_customuser_collectables_owned
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\collectables\views.py", line 16, in collectable_gallery
+    return render(request, "gallery.html", context)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: home_customuser_collectables_owned
+django.server ERROR 2025-03-18 21:44:47,502 basehttp 12252 26880 "GET /collectables/ HTTP/1.1" 500 177544
+django.utils.autoreload INFO 2025-03-18 21:45:58,811 autoreload 3708 20876 Watching for file changes with StatReloader
+django.server INFO 2025-03-18 21:46:00,651 basehttp 3708 20352 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:46:00,725 basehttp 3708 20352 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-18 21:46:00,843 basehttp 3708 20352 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-18 21:46:03,070 views 3708 20352 User logged in: dc754
+django.server INFO 2025-03-18 21:46:03,123 basehttp 3708 20352 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-18 21:46:03,145 basehttp 3708 20352 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-18 21:46:04,248 basehttp 3708 20352 "GET /collectables/ HTTP/1.1" 200 255
+django.utils.autoreload INFO 2025-03-18 22:03:28,703 autoreload 4068 27784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-18 22:03:54,950 autoreload 4068 27784 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\SustainableApplication\settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-18 22:04:07,097 autoreload 17568 12188 Watching for file changes with StatReloader
+django.server INFO 2025-03-18 22:04:08,815 basehttp 17568 27328 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-18 22:04:08,845 basehttp 17568 27328 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-18 22:04:08,881 basehttp 17568 27328 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-18 22:04:10,761 views 17568 27328 User logged in: dc754
+django.server INFO 2025-03-18 22:04:10,785 basehttp 17568 27328 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-18 22:04:10,795 basehttp 17568 27328 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-18 22:04:11,936 basehttp 17568 27328 "GET /lootboxes/open/ HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:13,658 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:14,529 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:15,015 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:15,229 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:15,439 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:15,673 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:15,911 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:16,293 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:16,480 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:16,878 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:17,112 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:17,550 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:17,975 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:18,393 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:18,621 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:18,843 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:19,071 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:19,670 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:19,901 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:20,412 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:20,622 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:21,018 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:21,462 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:21,865 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:22,098 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:22,328 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:22,554 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:22,987 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:04:23,413 basehttp 17568 27328 "GET /lootboxes/open/? HTTP/1.1" 200 357
+django.utils.autoreload INFO 2025-03-18 22:08:34,141 autoreload 27304 3612 Watching for file changes with StatReloader
+django.server INFO 2025-03-18 22:08:35,369 basehttp 27304 17328 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-18 22:08:35,413 basehttp 27304 17328 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-18 22:08:35,453 basehttp 27304 17328 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-18 22:08:37,043 views 27304 17328 User logged in: dc754
+django.server INFO 2025-03-18 22:08:37,065 basehttp 27304 17328 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-18 22:08:37,075 basehttp 27304 17328 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-18 22:08:38,070 basehttp 27304 17328 "GET /lootboxes/open/ HTTP/1.1" 200 357
+django.server INFO 2025-03-18 22:08:39,342 basehttp 27304 17328 "GET /lootboxes/open/? HTTP/1.1" 200 519
+django.request WARNING 2025-03-18 22:08:39,375 log 27304 17328 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-18 22:08:39,376 basehttp 27304 17328 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-18 22:08:50,216 basehttp 27304 17328 "GET /collectables/ HTTP/1.1" 200 407
+django.request WARNING 2025-03-18 22:08:50,245 log 27304 17328 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-18 22:08:50,245 basehttp 27304 17328 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
