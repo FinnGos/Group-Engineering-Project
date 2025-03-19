@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Sustainable App{% endblock %}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <style>
-        .footer-text {
-            font-size: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Sustainable App{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    .footer-text {
+      font-size: 1rem;
+    }
+    /* Override any unwanted link styling in the footer */
+    footer a {
+      background: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      color: white !important;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  {% block extra_css %}{% endblock %}
 </head>
+
 <body class="flex flex-col min-h-screen">
 
-    <!-- Navbar (Header) -->
-    <nav class="bg-green-700 text-white p-4 flex justify-between items-center">
-        <div class="text-xl font-bold">Sustainable App</div>
-        <ul class="flex space-x-4">
-            <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-            <li><a href="/checkin/" class="hover:underline">Check-in</a></li>
-            <li><a href="/signin" class="hover:underline">Sign-in</a></li>
-            <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-            <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
-            <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-            <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-            <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white p-4" x-data="{ open: false }">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">Sustainable App</div>
 
-    <!-- Main Content -->
-    <div class="flex-1">
-        {% block content %}{% endblock %}
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
+        <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+        <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button @click="open = !open" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-green-900 text-white text-center p-4 mt-auto">
-        <p class="footer-text">Follow us on:</p>
-        <div class="flex justify-center space-x-4">
-            <a href="#" class="hover:underline">Twitter</a>
-            <a href="#" class="hover:underline">Instagram</a>
-            <a href="#" class="hover:underline">LinkedIn</a>
-        </div>
-        <p class="mt-2 footer-text">Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon</p>
-    </footer>
+    <!-- Mobile Dropdown Menu -->
+    <div x-show="open" class="md:hidden bg-green-800 text-white p-4">
+      <ul class="flex flex-col space-y-2 text-lg">
+        <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
+        <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+        <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Main Content -->
+  <div class="flex-1">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white text-center p-4 mt-auto">
+    <div class="container mx-auto">
+      <p class="footer-text">Follow us on:</p>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <a href="#" class="hover:underline">Twitter</a>
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">LinkedIn</a>
+      </div>
+      <p class="mt-2 footer-text">
+        Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon
+      </p>
+    </div>
+  </footer>
+
+  {% block extra_js %}{% endblock %}
 </body>
+
 </html>

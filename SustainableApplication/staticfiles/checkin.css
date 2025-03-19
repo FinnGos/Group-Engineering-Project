@@ -1,0 +1,60 @@
+/* Check-In Page Styles */
+
+/* Background image section */
+.background-section {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay content for the check-in section */
+.form-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Outlined text for headings and paragraphs */
+.outlined-text {
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+/* Check-In button styling */
+#checkin-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Map container */
+.map-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto; /* Centered */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Map element styling */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+}

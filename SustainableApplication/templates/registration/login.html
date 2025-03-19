@@ -5,6 +5,29 @@
 
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'auth.css' %}">
+  <style>
+    /* Override link styling on this page for both navbar and footer */
+    nav a, footer a {
+      background: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      color: white !important;
+      text-decoration: none;
+    }
+    nav a:hover, footer a:hover {
+      text-decoration: underline;
+    }
+    /* Style for messages */
+    .messages {
+      margin-bottom: 20px;
+    }
+    .message {
+      color: red;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
 {% endblock %}
 
 {% block content %}
@@ -17,10 +40,18 @@
     <h1 class="text-6xl font-bold mb-6 outlined-text">Sign In</h1>
     <p class="text-3xl mb-6 outlined-text">Welcome back! Please log in to continue.</p>
 
+    <!-- Messages Block -->
+    {% if messages %}
+      <div class="messages">
+        {% for message in messages %}
+          <div class="message">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Sign In Form -->
     <form method="post" class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg" action="">
       {% csrf_token %}
-
       <!-- Username Field -->
       <div class="mb-4">
         <label for="id_username" class="block text-xl font-bold text-gray-700">Username</label>
@@ -28,7 +59,6 @@
                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                required>
       </div>
-
       <!-- Password Field -->
       <div class="mb-4">
         <label for="id_password" class="block text-xl font-bold text-gray-700">Password</label>
@@ -36,7 +66,6 @@
                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                required>
       </div>
-
       <!-- Login Button -->
       <button type="submit" class="w-full bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
         Log In

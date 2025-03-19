@@ -4,7 +4,31 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'auth.css' %}">
+  <link rel="stylesheet" href="{% static 'auth.css' %}">
+  <style>
+    /* Override navbar styles on this page */
+    nav a {
+      background: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      color: white !important;
+    }
+    footer a {
+      background: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      color: white !important;
+    }
+    /* Style for displaying messages */
+    .messages {
+      margin-bottom: 20px;
+    }
+    .message {
+      color: red;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  </style>
 {% endblock %}
 
 {% block content %}
@@ -17,10 +41,18 @@
     <h1 class="text-6xl font-bold mb-6 outlined-text">Sign Up</h1>
     <p class="text-3xl mb-6 outlined-text">Create an account and start your journey!</p>
 
+    <!-- Messages Block -->
+    {% if messages %}
+      <div class="messages">
+        {% for message in messages %}
+          <div class="message">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Sign Up Form -->
     <form method="post" class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
       {% csrf_token %}
-
       <!-- Username Field -->
       <div class="mb-4">
         <label for="id_username" class="block text-xl font-bold text-gray-700">Username</label>

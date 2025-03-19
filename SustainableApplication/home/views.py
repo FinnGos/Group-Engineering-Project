@@ -39,7 +39,7 @@ def home(request):
     Returns:
         HttpResponse: Renders the home.html template.
     """
-    return render(request, "home.html", {})
+    return render(request, "home.html")
 
 def signup(request):
     """
