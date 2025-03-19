@@ -41,7 +41,7 @@ def home(request):
     """
     return render(request, "home.html", {})
 
-@login_required
+
 def signup(request):
     """
     Handles user signup and logs signup events.
