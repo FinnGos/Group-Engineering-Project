@@ -43,3 +43,13 @@
 .btn-hover {
     opacity: 0.8;
 }
+.collection {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 200px));
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+}
