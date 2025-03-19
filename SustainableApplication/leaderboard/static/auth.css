@@ -106,3 +106,14 @@ a {
 a:hover {
     background-color: #0056b3;
 }
+
+/* Outlined text for headings and paragraphs */
+.outlined-text {
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black;
+}

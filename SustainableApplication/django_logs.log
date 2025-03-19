@@ -6841,3 +6841,785 @@ django.server INFO 2025-03-17 16:52:52,879 basehttp 12768 15120 "GET /tasks/ HTT
 django.utils.autoreload INFO 2025-03-17 16:53:08,943 autoreload 12768 1992 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
 django.utils.autoreload INFO 2025-03-17 16:53:10,598 autoreload 18200 6368 Watching for file changes with StatReloader
 django.server INFO 2025-03-17 16:53:12,037 basehttp 18200 2368 "GET /tasks/ HTTP/1.1" 200 6247
+django.utils.autoreload INFO 2025-03-19 12:12:12,840 autoreload 18500 18576 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 12:12:18,406 basehttp 18500 21092 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 12:12:18,894 basehttp 18500 29816 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-19 12:12:18,901 basehttp 18500 21092 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.request WARNING 2025-03-19 12:12:18,952 log 18500 21092 Not Found: /favicon.ico
+django.server WARNING 2025-03-19 12:12:18,954 basehttp 18500 21092 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-19 12:14:59,490 basehttp 18500 21092 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 12:15:03,124 basehttp 18500 21092 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 12:15:03,136 basehttp 18500 21092 "GET /accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-19 12:15:03,158 basehttp 18500 29816 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 12:15:03,168 basehttp 18500 21092 "GET /static/auth.css HTTP/1.1" 200 1952
+django.server INFO 2025-03-19 12:15:05,185 basehttp 18500 21092 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 12:15:13,411 basehttp 18500 21092 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 12:15:13,434 basehttp 18500 21092 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-19 12:15:24,208 basehttp 18500 21092 "GET /leaderboard HTTP/1.1" 301 0
+django.server INFO 2025-03-19 12:15:24,214 basehttp 18500 29816 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 12:15:33,495 basehttp 18500 29816 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-19 12:15:33,521 basehttp 18500 29816 "GET /static/checkin.css HTTP/1.1" 200 1210
+django.server INFO 2025-03-19 12:15:33,523 basehttp 18500 5424 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-19 12:15:38,764 basehttp 18500 5424 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 13:04:32,260 basehttp 18500 31820 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:38,100 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:38,904 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:39,746 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:55,038 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:57,060 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:09:58,092 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:10:09,852 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:10:11,143 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:10:27,680 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:10:35,984 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:10:37,198 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:23,660 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:24,562 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:24,990 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:25,971 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:27,318 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:13:28,404 basehttp 18500 3688 "GET /leaderboard/ HTTP/1.1" 200 6068
+django INFO 2025-03-19 13:14:15,040 views 8828 28532 Logout by an unauthenticated user or session end.
+django.request ERROR 2025-03-19 13:14:18,862 log 8828 28532 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table home_customuser has no column named selected_task_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 62, in signup
+    user.save()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table home_customuser has no column named selected_task_id
+django INFO 2025-03-19 13:23:51,972 views 28764 6424 User logged in: testuser
+django INFO 2025-03-19 13:26:39,155 views 15152 5896 User logged in: testuser
+django.request WARNING 2025-03-19 13:26:39,374 log 15152 5896 Bad Request: /get_location/1/
+django INFO 2025-03-19 13:26:39,642 views 15152 5896 User logged in: testuser
+django.request WARNING 2025-03-19 13:26:39,817 log 15152 5896 Bad Request: /get_location/1/
+django INFO 2025-03-19 13:26:40,105 views 15152 5896 User logged in: testuser
+django.request WARNING 2025-03-19 13:26:40,232 log 15152 5896 Bad Request: /get_location/1/
+django INFO 2025-03-19 13:26:40,510 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:40,964 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:41,361 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:41,838 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:42,017 views 15152 5896 Logout by an unauthenticated user or session end.
+django INFO 2025-03-19 13:26:43,187 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:43,327 views 15152 5896 User deleted account: testuser
+django INFO 2025-03-19 13:26:43,940 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:44,070 views 15152 5896 User deleted account: testuser
+django INFO 2025-03-19 13:26:44,641 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:44,790 views 15152 5896 User deleted account: testuser
+django INFO 2025-03-19 13:26:45,075 views 15152 5896 Failed login attempt for username: testuser
+django INFO 2025-03-19 13:26:46,298 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:48,152 views 15152 5896 User logged in: testuser
+django INFO 2025-03-19 13:26:48,316 views 15152 5896 User logged out: testuser
+django INFO 2025-03-19 13:26:48,891 views 15152 5896 User logged in: newuser
+django INFO 2025-03-19 13:26:49,031 views 15152 5896 New user signed up: newuser
+django INFO 2025-03-19 13:26:49,591 views 15152 5896 Failed login attempt for username: TESTUSER
+django INFO 2025-03-19 13:26:50,155 views 15152 5896 Failed login attempt for username: TESTUSER@EXAMPLE.COM
+django INFO 2025-03-19 13:26:51,297 views 15152 5896 User logged in: testuser
+django WARNING 2025-03-19 13:26:51,731 views 15152 5896 Failed signup attempt.
+django INFO 2025-03-19 13:26:52,590 views 15152 5896 User logged in: newuser
+django INFO 2025-03-19 13:26:52,764 views 15152 5896 New user signed up: newuser
+django WARNING 2025-03-19 13:26:53,061 views 15152 5896 Failed signup attempt.
+django INFO 2025-03-19 13:26:53,643 views 15152 5896 Failed login attempt for username: ' OR '1'='1
+django WARNING 2025-03-19 13:26:53,920 views 15152 5896 Failed signup attempt.
+django WARNING 2025-03-19 13:26:54,213 views 15152 5896 Failed signup attempt.
+django INFO 2025-03-19 13:26:54,775 views 15152 5896 User logged in: matt4
+django INFO 2025-03-19 13:26:54,880 views 15152 5896 User asked for personal data stored: matt4
+django.request ERROR 2025-03-19 13:26:55,021 log 15152 5896 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django INFO 2025-03-19 13:26:55,611 views 15152 5896 User logged in: matt4
+django INFO 2025-03-19 13:26:55,745 views 15152 5896 User asked for personal data stored: matt4
+django.request ERROR 2025-03-19 13:26:55,781 log 15152 5896 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django INFO 2025-03-19 13:26:56,349 views 15152 5896 User logged in: matt4
+django INFO 2025-03-19 13:26:56,473 views 15152 5896 User asked for personal data stored: matt4
+django.request ERROR 2025-03-19 13:26:56,609 log 15152 5896 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django INFO 2025-03-19 13:26:56,891 views 15152 5896 User logged in: testuser
+django.utils.autoreload INFO 2025-03-19 13:28:52,575 autoreload 25536 20736 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 13:28:54,752 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:28:56,727 basehttp 25536 7632 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:28:57,013 basehttp 25536 7632 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-19 13:28:58,860 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:00,361 basehttp 25536 7632 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:29:01,275 basehttp 25536 7632 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:29:14,061 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:14,868 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:15,494 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:16,153 basehttp 25536 7632 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.utils.autoreload INFO 2025-03-19 13:29:52,414 autoreload 9940 26244 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 13:29:54,468 basehttp 9940 24464 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:29:56,702 basehttp 9940 24464 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:57,547 basehttp 9940 24464 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:58,293 basehttp 9940 24464 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:29:58,996 basehttp 9940 24464 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.utils.autoreload INFO 2025-03-19 13:31:06,592 autoreload 3168 20716 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 13:31:08,027 basehttp 3168 8904 "GET /leaderboard/ HTTP/1.1" 200 6068
+django.server INFO 2025-03-19 13:31:09,827 basehttp 3168 8904 "GET /tasks/ HTTP/1.1" 200 6247
+django INFO 2025-03-19 13:31:18,720 views 30908 15004 User logged in: testuser
+django.utils.autoreload INFO 2025-03-19 13:50:25,596 autoreload 3168 20716 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 13:50:26,283 autoreload 20276 25272 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 13:50:42,637 autoreload 20276 25272 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 13:50:43,336 autoreload 28732 11276 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 13:50:43,894 basehttp 28732 31540 "GET /tasks/ HTTP/1.1" 200 6247
+django INFO 2025-03-19 13:50:55,740 views 22816 21840 User logged in: testuser
+django.server INFO 2025-03-19 13:53:44,944 basehttp 28732 31540 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:53:46,218 basehttp 28732 31540 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 13:56:14,113 basehttp 28732 24124 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 13:58:24,153 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6146
+django.server INFO 2025-03-19 13:58:25,255 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6146
+django.server INFO 2025-03-19 13:59:09,972 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6169
+django.server INFO 2025-03-19 13:59:11,058 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6169
+django.server INFO 2025-03-19 13:59:38,131 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6283
+django.server INFO 2025-03-19 13:59:45,223 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6283
+django.server INFO 2025-03-19 13:59:46,250 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6283
+django.server INFO 2025-03-19 13:59:47,055 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6283
+django.server INFO 2025-03-19 14:00:27,903 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6283
+django.server INFO 2025-03-19 14:00:55,403 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:02:11,566 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6392
+django.server INFO 2025-03-19 14:02:12,804 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6392
+django.server INFO 2025-03-19 14:02:20,945 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:03:24,479 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6308
+django.server INFO 2025-03-19 14:03:25,378 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6308
+django.server INFO 2025-03-19 14:03:40,495 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:03:41,319 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:03:45,329 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:03:50,776 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:03:52,497 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6277
+django.server INFO 2025-03-19 14:04:10,647 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6342
+django.server INFO 2025-03-19 14:04:21,684 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6152
+django.server INFO 2025-03-19 14:04:27,585 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6152
+django.server INFO 2025-03-19 14:06:00,873 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6152
+django.server INFO 2025-03-19 14:06:01,461 basehttp 28732 24124 "GET /leaderboard/ HTTP/1.1" 200 6152
+django.server INFO 2025-03-19 14:07:00,483 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6366
+django.server INFO 2025-03-19 14:07:03,445 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6366
+django.server INFO 2025-03-19 14:07:21,845 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 14:08:16,838 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6435
+django.server INFO 2025-03-19 14:09:33,383 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6247
+django.server INFO 2025-03-19 14:10:33,294 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6226
+django.server INFO 2025-03-19 14:10:46,028 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6256
+django.server INFO 2025-03-19 14:11:14,103 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6332
+django.server INFO 2025-03-19 14:11:43,819 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6332
+django.server INFO 2025-03-19 14:11:48,404 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6332
+django.server INFO 2025-03-19 14:12:38,123 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6385
+django.server INFO 2025-03-19 14:12:59,073 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6385
+django.server INFO 2025-03-19 14:13:06,303 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6386
+django.server INFO 2025-03-19 14:14:08,873 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6473
+django.server INFO 2025-03-19 14:14:23,573 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6473
+django.server INFO 2025-03-19 14:16:57,513 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6612
+django.server INFO 2025-03-19 14:17:11,633 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-19 14:17:30,713 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6561
+django.server INFO 2025-03-19 14:17:40,545 basehttp 28732 24124 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 14:21:40,891 basehttp 28732 24124 "GET /tasks HTTP/1.1" 301 0
+django.server INFO 2025-03-19 14:21:40,909 basehttp 28732 23996 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 14:21:43,422 basehttp 28732 23996 "GET /leaderboard/ HTTP/1.1" 200 6152
+django.server INFO 2025-03-19 14:27:18,070 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6244
+django.server INFO 2025-03-19 14:27:24,730 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6244
+django.server INFO 2025-03-19 14:27:26,258 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6244
+django.server INFO 2025-03-19 14:27:38,884 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6244
+django.server INFO 2025-03-19 14:28:15,329 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6249
+django.server INFO 2025-03-19 14:28:23,669 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6249
+django.server INFO 2025-03-19 14:29:38,119 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6219
+django.server INFO 2025-03-19 14:31:37,722 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6249
+django.server INFO 2025-03-19 14:32:44,368 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6249
+django.server INFO 2025-03-19 14:32:45,718 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6251
+django.server INFO 2025-03-19 14:34:13,687 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6386
+django.server INFO 2025-03-19 14:34:47,122 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 7694
+django.server INFO 2025-03-19 14:35:11,921 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6887
+django.server INFO 2025-03-19 14:35:26,101 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6535
+django.server INFO 2025-03-19 14:37:43,283 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6560
+django.server INFO 2025-03-19 14:37:43,469 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-19 14:39:01,856 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6672
+django.server INFO 2025-03-19 14:39:01,869 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:39:04,553 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6672
+django.server INFO 2025-03-19 14:39:29,317 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6674
+django.server INFO 2025-03-19 14:39:29,328 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:39:37,457 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6674
+django.server INFO 2025-03-19 14:39:38,868 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6674
+django.server INFO 2025-03-19 14:39:39,818 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6674
+django.server INFO 2025-03-19 14:40:40,534 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:40:40,545 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:40:59,112 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:04,392 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:04,401 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:41:05,687 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:06,385 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:10,488 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:11,584 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:21,166 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:25,022 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6663
+django.server INFO 2025-03-19 14:41:26,099 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:26,839 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:27,494 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:29,893 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:29,902 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:41:33,956 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:35,043 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:36,200 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:36,958 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:57,487 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:41:57,495 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:41:59,392 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:42:01,700 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:42:03,003 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:42:08,828 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6661
+django.server INFO 2025-03-19 14:42:09,634 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6661
+django.server INFO 2025-03-19 14:42:19,201 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:42:52,387 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6766
+django.server INFO 2025-03-19 14:42:52,402 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:43:04,108 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:22,006 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:23,071 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:24,128 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:24,779 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:31,402 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6664
+django.server INFO 2025-03-19 14:43:31,412 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:43:37,814 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:38,591 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:42,611 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:43,419 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:44,217 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:49,137 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:43:50,374 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:45:02,845 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:45:02,855 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:45:03,911 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6665
+django.server INFO 2025-03-19 14:45:52,468 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6681
+django.server INFO 2025-03-19 14:45:52,478 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:45:53,781 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6681
+django.server INFO 2025-03-19 14:45:55,039 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6681
+django.server INFO 2025-03-19 14:46:07,411 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6694
+django.server INFO 2025-03-19 14:46:08,761 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6694
+django.server INFO 2025-03-19 14:46:09,537 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6694
+django.server INFO 2025-03-19 14:46:30,409 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:31,545 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:32,700 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:33,533 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:34,217 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:39,450 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:46:45,815 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:47:40,759 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:47:40,773 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:48:22,494 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:48:28,746 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:48:37,767 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:48:38,701 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:48:39,292 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:48:48,718 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:48:48,726 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:48:53,712 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:48:55,175 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:03,037 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:49:10,357 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:11,412 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:12,395 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:13,126 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:13,731 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:14,188 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:18,555 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:19,361 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:19,892 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:20,422 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:21,259 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:49:24,774 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:12,653 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6731
+django.server INFO 2025-03-19 14:50:12,666 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:50:20,583 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:24,550 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:25,695 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:26,267 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:31,243 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6736
+django.server INFO 2025-03-19 14:50:32,042 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6737
+django.server INFO 2025-03-19 14:51:35,670 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:35,685 basehttp 28732 5440 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:51:37,273 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:40,985 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:44,872 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:45,750 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:52,786 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6754
+django.server INFO 2025-03-19 14:51:53,560 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6750
+django.server INFO 2025-03-19 14:52:02,232 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6750
+django.server INFO 2025-03-19 14:52:02,911 basehttp 28732 5440 "GET /leaderboard/ HTTP/1.1" 200 6750
+django.server INFO 2025-03-19 14:56:38,266 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7000
+django.server INFO 2025-03-19 14:56:38,278 basehttp 28732 21456 "GET /static/images/award.png HTTP/1.1" 200 1899
+django.server INFO 2025-03-19 14:56:38,280 basehttp 28732 27760 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:56:39,056 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7000
+django.server INFO 2025-03-19 14:56:39,694 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7000
+django.server INFO 2025-03-19 14:57:06,472 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7012
+django.server INFO 2025-03-19 14:57:06,483 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:58:53,162 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7073
+django.server INFO 2025-03-19 14:58:53,176 basehttp 28732 27760 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:58:53,179 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:58:54,578 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7073
+django.server INFO 2025-03-19 14:59:09,441 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7061
+django.server INFO 2025-03-19 14:59:10,501 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7061
+django.server INFO 2025-03-19 14:59:22,334 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7053
+django.server INFO 2025-03-19 14:59:22,346 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:59:23,255 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7053
+django.server INFO 2025-03-19 14:59:31,505 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:40,763 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:41,967 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:50,208 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:50,217 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 14:59:51,088 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:51,711 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:55,695 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7055
+django.server INFO 2025-03-19 14:59:56,781 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 14:59:57,680 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:03,541 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:16,942 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:23,644 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:23,653 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:00:24,513 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:30,508 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:31,126 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:36,463 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7051
+django.server INFO 2025-03-19 15:00:54,276 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7050
+django.server INFO 2025-03-19 15:00:54,288 basehttp 28732 27760 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:00:58,657 basehttp 28732 27760 "GET /leaderboard/ HTTP/1.1" 200 7050
+django.server INFO 2025-03-19 15:18:48,109 basehttp 28732 28908 "GET /leaderboard/ HTTP/1.1" 200 7048
+django.server INFO 2025-03-19 15:18:48,123 basehttp 28732 28908 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:18:48,125 basehttp 28732 27468 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:19:31,844 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7047
+django.server INFO 2025-03-19 15:19:53,023 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:19:54,259 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:19:54,949 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:20:15,871 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:21:14,837 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:21:14,846 basehttp 28732 27468 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:21:15,509 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:52,673 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:52,686 basehttp 28732 27468 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:23:52,690 basehttp 28732 27468 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:23:54,059 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:55,044 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:55,836 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:58,735 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:23:59,385 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:24:01,182 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:24:01,643 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:24:02,359 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:24:02,680 basehttp 28732 27468 "GET /leaderboard/ HTTP/1.1" 200 7046
+django.server INFO 2025-03-19 15:27:35,035 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7079
+django.server INFO 2025-03-19 15:27:35,045 basehttp 28732 23252 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:27:46,665 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7107
+django.server INFO 2025-03-19 15:27:47,410 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7107
+django.server INFO 2025-03-19 15:28:01,754 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7107
+django.server INFO 2025-03-19 15:28:30,158 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7110
+django.server INFO 2025-03-19 15:28:30,802 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7110
+django.server INFO 2025-03-19 15:28:34,765 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7112
+django.server INFO 2025-03-19 15:28:34,779 basehttp 28732 23252 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:32:10,370 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7154
+django.server INFO 2025-03-19 15:32:10,381 basehttp 28732 23252 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:32:11,445 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7154
+django.server INFO 2025-03-19 15:32:12,141 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7154
+django.server INFO 2025-03-19 15:32:12,667 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7154
+django.server INFO 2025-03-19 15:32:22,457 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7154
+django.server INFO 2025-03-19 15:32:23,624 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7143
+django.server INFO 2025-03-19 15:32:24,619 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7143
+django.server INFO 2025-03-19 15:32:25,325 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7143
+django.server INFO 2025-03-19 15:33:19,041 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:33:20,343 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:33:21,035 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:33:25,432 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:33:26,500 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7157
+django.server INFO 2025-03-19 15:33:27,166 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7157
+django.server INFO 2025-03-19 15:33:27,687 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7157
+django.server INFO 2025-03-19 15:33:35,462 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:34:35,215 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:34:35,227 basehttp 28732 23252 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:34:55,157 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7133
+django.server INFO 2025-03-19 15:34:55,912 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7133
+django.server INFO 2025-03-19 15:35:01,476 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:35:20,030 basehttp 28732 23252 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-19 15:35:20,044 basehttp 28732 23252 "GET /static/checkin.css HTTP/1.1" 200 1210
+django.server INFO 2025-03-19 15:35:20,063 basehttp 28732 23252 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-19 15:35:21,156 basehttp 28732 23252 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-19 15:35:22,737 basehttp 28732 23252 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-19 15:35:28,447 basehttp 28732 23252 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-19 15:36:37,370 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:36:37,381 basehttp 28732 23252 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:36:37,958 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:36:49,362 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7090
+django.server INFO 2025-03-19 15:36:50,258 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7090
+django.server INFO 2025-03-19 15:36:54,417 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:40:48,250 basehttp 28732 23252 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:40:48,263 basehttp 28732 23252 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:40:48,263 basehttp 28732 972 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 15:40:53,666 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:41:01,870 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:41:07,100 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7168
+django.server INFO 2025-03-19 15:41:32,021 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7180
+django.server INFO 2025-03-19 15:41:37,872 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7179
+django.server INFO 2025-03-19 15:41:38,615 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7179
+django.server INFO 2025-03-19 15:41:43,347 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7179
+django.server INFO 2025-03-19 15:41:44,003 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:41:50,282 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:41:50,794 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:41:51,502 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:41:59,330 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:05,463 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:06,080 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:12,846 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:13,963 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:30,335 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7181
+django.server INFO 2025-03-19 15:42:31,043 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7177
+django.server INFO 2025-03-19 15:43:57,839 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7172
+django.server INFO 2025-03-19 15:44:19,159 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7172
+django.server INFO 2025-03-19 15:44:19,841 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7172
+django.server INFO 2025-03-19 15:44:20,452 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7172
+django.server INFO 2025-03-19 15:44:21,121 basehttp 28732 972 "GET /leaderboard/ HTTP/1.1" 200 7172
+django.server INFO 2025-03-19 15:46:19,150 basehttp 28732 972 "GET /tasks/ HTTP/1.1" 200 6713
+django.server INFO 2025-03-19 15:46:52,695 basehttp 28732 972 "GET /tasks/ HTTP/1.1" 200 6898
+django.server INFO 2025-03-19 16:01:03,876 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 7003
+django.server INFO 2025-03-19 16:01:18,354 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6986
+django.server INFO 2025-03-19 16:01:53,630 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 8098
+django.server INFO 2025-03-19 16:01:54,739 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 8098
+django.server INFO 2025-03-19 16:02:21,302 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:02:45,997 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6566
+django.server INFO 2025-03-19 16:03:02,115 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 16:03:29,559 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 16:03:36,326 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 16:03:37,011 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6560
+django.server INFO 2025-03-19 16:03:37,726 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6560
+django.server INFO 2025-03-19 16:04:16,567 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:04:28,134 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6698
+django.server INFO 2025-03-19 16:04:34,720 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6698
+django.server INFO 2025-03-19 16:04:35,400 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6698
+django.server INFO 2025-03-19 16:04:47,862 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6559
+django.server INFO 2025-03-19 16:05:20,140 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6570
+django.server INFO 2025-03-19 16:05:29,906 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6570
+django.server INFO 2025-03-19 16:05:30,553 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6571
+django.server INFO 2025-03-19 16:06:16,062 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6716
+django.server INFO 2025-03-19 16:06:30,496 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6716
+django.server INFO 2025-03-19 16:06:36,964 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6720
+django.server INFO 2025-03-19 16:06:49,510 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6720
+django.server INFO 2025-03-19 16:06:50,422 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6707
+django.server INFO 2025-03-19 16:07:02,594 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6715
+django.server INFO 2025-03-19 16:07:11,949 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6715
+django.server INFO 2025-03-19 16:07:40,446 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:07:41,104 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:07:41,741 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:07:47,876 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:07:48,574 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6732
+django.server INFO 2025-03-19 16:07:50,892 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6732
+django.server INFO 2025-03-19 16:07:55,767 basehttp 28732 22164 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:13:48,175 basehttp 28732 28240 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:13:49,068 basehttp 28732 28240 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:13:49,829 basehttp 28732 28240 "GET /tasks/ HTTP/1.1" 200 6743
+django.server INFO 2025-03-19 16:14:17,848 basehttp 28732 28240 "GET /tasks/ HTTP/1.1" 200 6706
+django.server INFO 2025-03-19 16:14:51,733 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:14:51,746 basehttp 28732 12612 "GET /static/images/award.png HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:14:51,747 basehttp 28732 28240 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:14:52,701 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:17:01,032 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7143
+django.server INFO 2025-03-19 16:17:01,842 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7143
+django.server INFO 2025-03-19 16:18:51,023 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:18:51,726 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:18:52,375 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:18:52,967 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:18:53,701 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 7139
+django.server INFO 2025-03-19 16:20:00,710 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6838
+django.server INFO 2025-03-19 16:20:09,644 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6838
+django.server INFO 2025-03-19 16:21:13,871 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:21:14,502 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:21:15,003 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:24:02,241 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:24:02,805 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:24:03,475 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:24:04,695 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:24:05,328 basehttp 28732 28240 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:49,392 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:49,405 basehttp 28732 21384 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:25:50,196 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:50,791 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:51,274 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:51,698 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:25:52,397 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6852
+django.server INFO 2025-03-19 16:28:37,162 basehttp 28732 21384 "GET /leaderboard/ HTTP/1.1" 200 6853
+django.server INFO 2025-03-19 16:38:03,779 basehttp 28732 29692 "GET /leaderboard/ HTTP/1.1" 200 6946
+django.server INFO 2025-03-19 16:38:03,792 basehttp 28732 21808 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-19 16:38:03,827 basehttp 28732 29692 "GET /static/css/leaderboard.css HTTP/1.1" 404 1984
+django.server INFO 2025-03-19 16:38:04,404 basehttp 28732 21808 "GET /leaderboard/ HTTP/1.1" 200 6946
+django.server WARNING 2025-03-19 16:38:04,417 basehttp 28732 21808 "GET /static/css/leaderboard.css HTTP/1.1" 404 1984
+django.server INFO 2025-03-19 16:38:04,898 basehttp 28732 8360 "GET /leaderboard/ HTTP/1.1" 200 6946
+django.server WARNING 2025-03-19 16:38:04,909 basehttp 28732 8360 "GET /static/css/leaderboard.css HTTP/1.1" 404 1984
+django.server INFO 2025-03-19 16:38:05,770 basehttp 28732 25124 "GET /leaderboard/ HTTP/1.1" 200 6946
+django.server WARNING 2025-03-19 16:38:05,783 basehttp 28732 25124 "GET /static/css/leaderboard.css HTTP/1.1" 404 1984
+django.server INFO 2025-03-19 16:38:06,373 basehttp 28732 30320 "GET /leaderboard/ HTTP/1.1" 200 6946
+django.server WARNING 2025-03-19 16:38:06,384 basehttp 28732 30320 "GET /static/css/leaderboard.css HTTP/1.1" 404 1984
+django.server INFO 2025-03-19 16:39:47,711 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:39:47,721 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 200 2031
+django.server INFO 2025-03-19 16:39:47,736 basehttp 28732 15696 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:39:48,756 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:43,411 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:43,431 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 200 1978
+django.server INFO 2025-03-19 16:42:44,301 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:44,310 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:45,010 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:45,021 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:45,965 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:45,976 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:46,664 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:46,678 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:54,894 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:54,914 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 16:42:56,351 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:56,359 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:57,069 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:57,078 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:42:57,574 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6942
+django.server INFO 2025-03-19 16:42:57,582 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:43:27,109 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6886
+django.server INFO 2025-03-19 16:43:27,118 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:43:27,878 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6886
+django.server INFO 2025-03-19 16:43:55,769 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6880
+django.server INFO 2025-03-19 16:43:55,779 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:44:28,683 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6856
+django.server INFO 2025-03-19 16:44:28,694 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:44:40,526 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 16:44:40,535 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:44:41,112 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 16:44:42,183 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 16:44:55,274 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 16:44:55,285 basehttp 28732 15696 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:44:55,968 basehttp 28732 15696 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 16:47:31,858 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6706
+django.server INFO 2025-03-19 16:47:32,693 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6706
+django.server INFO 2025-03-19 16:47:33,491 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6706
+django.server INFO 2025-03-19 16:47:34,064 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6706
+django.server INFO 2025-03-19 16:47:57,148 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:47:57,168 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 200 2517
+django.server INFO 2025-03-19 16:48:00,000 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:48:00,009 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:48:19,215 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:48:19,228 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:48:19,916 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:48:59,734 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:48:59,754 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 200 2334
+django.server INFO 2025-03-19 16:49:00,368 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:00,379 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:49:15,948 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:15,960 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 200 2517
+django.server INFO 2025-03-19 16:49:16,560 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:16,583 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 200 2372
+django.server INFO 2025-03-19 16:49:49,190 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:49,208 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 200 215
+django.server INFO 2025-03-19 16:49:49,948 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:49,957 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 16:49:51,109 basehttp 28732 15696 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 16:49:51,118 basehttp 28732 15696 "GET /static/tasks.css HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-19 17:17:26,128 autoreload 28732 11276 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:17:39,834 autoreload 23864 12884 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 17:19:15,006 autoreload 23864 12884 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:19:15,594 autoreload 24456 22388 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 17:19:20,424 autoreload 24456 22388 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:19:21,018 autoreload 21956 4824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 17:19:29,574 autoreload 21956 4824 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:19:30,144 autoreload 7628 22400 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 17:19:33,826 basehttp 7628 2672 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 17:19:33,842 basehttp 7628 27084 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:19:34,304 basehttp 7628 2672 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 17:19:47,834 basehttp 7628 2672 "GET /home/signup/ HTTP/1.1" 200 7437
+django.server INFO 2025-03-19 17:19:47,854 basehttp 7628 2672 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:19:47,854 basehttp 7628 27084 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django WARNING 2025-03-19 17:20:06,786 views 7628 27084 Failed signup attempt.
+django.server INFO 2025-03-19 17:20:06,788 basehttp 7628 27084 "POST /home/signup/ HTTP/1.1" 200 7437
+django WARNING 2025-03-19 17:20:32,030 views 7628 27084 Failed signup attempt.
+django.server INFO 2025-03-19 17:20:32,031 basehttp 7628 27084 "POST /home/signup/ HTTP/1.1" 200 7437
+django INFO 2025-03-19 17:22:07,957 views 7628 27084 User logged out: kadeemtesting
+django.server INFO 2025-03-19 17:22:07,957 basehttp 7628 27084 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 17:22:07,962 basehttp 7628 27084 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-19 17:22:09,829 basehttp 7628 27084 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 17:22:09,848 basehttp 7628 27084 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:22:09,848 basehttp 7628 2672 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:22:11,805 basehttp 7628 27084 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-19 17:22:13,272 basehttp 7628 27084 "GET /home/signup/ HTTP/1.1" 200 7437
+django.server INFO 2025-03-19 17:22:14,523 basehttp 7628 27084 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django WARNING 2025-03-19 17:26:15,956 views 7628 14908 Failed signup attempt.
+django.server INFO 2025-03-19 17:26:15,959 basehttp 7628 14908 "POST /home/signup/ HTTP/1.1" 200 7437
+django.server INFO 2025-03-19 17:28:31,212 basehttp 7628 14908 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-19 17:28:31,226 basehttp 7628 14908 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:28:33,483 basehttp 7628 14908 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-19 17:28:36,513 basehttp 7628 14908 "GET /home/ HTTP/1.1" 200 6203
+django.utils.autoreload INFO 2025-03-19 17:30:43,556 autoreload 7628 22400 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:30:44,194 autoreload 29284 7636 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 17:38:29,020 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 6866
+django.server INFO 2025-03-19 17:38:29,032 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:38:29,037 basehttp 29284 26048 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:40:29,903 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 7274
+django.server INFO 2025-03-19 17:45:20,749 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 7687
+django.server INFO 2025-03-19 17:45:20,761 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:45:21,804 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 7687
+django.server INFO 2025-03-19 17:45:22,628 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 7687
+django.server INFO 2025-03-19 17:46:39,589 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8455
+django.server INFO 2025-03-19 17:48:11,004 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:48:12,303 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:49:17,800 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:16,689 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:17,733 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:18,426 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:19,237 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:20,724 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:21,320 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:21,948 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:50:22,868 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8414
+django.server INFO 2025-03-19 17:51:32,220 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8383
+django.server INFO 2025-03-19 17:51:32,455 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 17:51:33,162 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8383
+django.server INFO 2025-03-19 17:51:39,967 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:39,976 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:51:41,671 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:44,071 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:44,746 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:45,330 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:45,976 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:47,952 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:47,961 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 17:51:49,403 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:50,065 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:52,231 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:52,761 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:53,246 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:51:54,159 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:52:40,286 basehttp 29284 26048 "GET /leaderboard/ HTTP/1.1" 200 8670
+django.server INFO 2025-03-19 17:52:40,299 basehttp 29284 26048 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-19 17:53:46,137 autoreload 29284 7636 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 17:53:46,849 autoreload 31876 13372 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 17:53:49,451 basehttp 31876 32620 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 17:53:49,461 basehttp 31876 32620 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:03:34,548 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:03:34,561 basehttp 31876 31868 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:03:34,996 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:03:45,743 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:03:45,762 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:04:42,990 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:04:43,010 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:04:44,383 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:04:44,393 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:05:03,334 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:05:03,354 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:05:06,080 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:05:06,089 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:06:18,156 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:18,177 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:06:31,338 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:31,358 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:06:32,160 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:32,170 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:06:44,714 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:44,733 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2009
+django.server INFO 2025-03-19 18:06:50,500 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:50,519 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2009
+django.server INFO 2025-03-19 18:06:55,621 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:55,641 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2009
+django.server INFO 2025-03-19 18:06:56,649 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:06:56,660 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-19 18:07:02,346 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:07:02,364 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-19 18:07:10,199 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-19 18:07:10,220 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008

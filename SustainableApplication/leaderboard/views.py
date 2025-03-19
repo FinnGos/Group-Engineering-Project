@@ -19,6 +19,9 @@ def leaderboard(request):
         ranked_users.append({'rank': rank, 'user': user})
         last_points = user.all_time_points
 
+    # Limit the leaderboard to top 5 users
+    ranked_users = ranked_users[:5]
+    
     # Debug: Print ranked_users to check if it's empty
     print("Ranked Users:", ranked_users)
 

@@ -38,3 +38,21 @@ h1 {
     text-align: right;
     color: #888;
 }
+
+.rankings {
+    display: flex;
+    flex-direction: column; /* This will make ranks stack vertically */
+    width: 100%;
+    max-width: 3xl;
+}
+
+/* Outlined text for headings and paragraphs */
+.outlined-text {
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}

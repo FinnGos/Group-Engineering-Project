@@ -122,3 +122,22 @@ border: none;
 .btn:hover {
 opacity: 0.8;
 }
+
+/* Overlay content for the check-in section */
+.form-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Outlined text for headings and paragraphs */
+.outlined-text {
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
