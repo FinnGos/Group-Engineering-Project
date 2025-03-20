@@ -14,5 +14,3 @@ def collectable_gallery(request):
 
     context = {"collectable_list": collectables}
     return render(request, "gallery.html", context)
-
-# Create your views here.
