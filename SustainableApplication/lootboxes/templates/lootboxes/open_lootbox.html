@@ -45,14 +45,19 @@
                 $("#user-points").text(`Points: ${response.new_points}`);
 
                 if (response.loot_item) {
+                  let duplicateMessage = response.is_duplicate
+                    ? "<p>(You already own this item, so points were refunded)</p>"
+                    : "";
+
                   lootResult.html(`
                             <h3>Congratulations!</h3>
                             <p>You received: ${response.loot_item.name}</p>
                             <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" />
                             <p>Fun Fact: ${response.loot_item.fact}</p>
+                            ${duplicateMessage}
                         `);
                 } else {
-                  lootResult.html("<p>Oops! You got nothing this time.</p>");
+                  lootResult.html("<p>You got nothing this time.</p>");
                 }
               } else {
                 lootResult.html(

@@ -6,6 +6,7 @@ from collectables.models import Collectable
 from home.models import CustomUser
 
 LOOTBOX_COST = 100
+CHANCE = 0.4
 
 
 @login_required
@@ -25,22 +26,29 @@ def open_lootbox(request):
             )
 
         user.current_points -= LOOTBOX_COST  # Deduct points
-        user.save()  # Save changes
+        user.save()
 
         collectables = Collectable.objects.all()  # Get all collectables
 
         item = None
-        if collectables and random.random() > 0.3:  # 70% chance to win an item
+        is_duplicate = False
+
+        if collectables and random.random() > CHANCE:  # 60% chance to win an item
             item = random.choice(list(collectables))
-            if item not in user.collectables_owned.all():
+            if item in user.collectables_owned.all():
+                is_duplicate = True
+                user.current_points += LOOTBOX_COST  # Refund points
+            else:
                 user.collectables_owned.add(item)  # Add to user's collection
-                user.save()  # Save changes
+
+        user.save()
 
         # Prepare JSON response
         response_data = {
             "success": True,
             "new_points": user.current_points,  # Always include updated points
             "loot_item": None,
+            "is_duplicate": is_duplicate,  # Send duplicate info
         }
 
         if item:

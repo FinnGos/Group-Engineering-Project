@@ -634,3 +634,279 @@ django INFO 2025-03-20 14:52:39,335 views 2224 24372 User logged in: testuser
 django INFO 2025-03-20 14:52:39,996 views 2224 24372 User logged in: testuser
 django INFO 2025-03-20 14:52:40,652 views 2224 24372 User logged in: testuser
 django INFO 2025-03-20 14:52:41,310 views 2224 24372 User logged in: testuser
+django.utils.autoreload INFO 2025-03-20 17:05:23,551 autoreload 25768 18648 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:05:25,110 basehttp 25768 21896 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:05:25,203 basehttp 25768 21896 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 17:05:27,494 views 25768 21896 User logged in: dc754
+django.server INFO 2025-03-20 17:05:27,546 basehttp 25768 21896 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:05:27,585 basehttp 25768 21896 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:05:31,088 basehttp 25768 21896 "GET /lootboxes/open/ HTTP/1.1" 200 2528
+django.server INFO 2025-03-20 17:05:32,599 basehttp 25768 21896 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:05:32,624 log 25768 21896 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:05:32,625 basehttp 25768 21896 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-20 17:09:38,490 autoreload 11432 7164 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:09:39,934 basehttp 11432 26196 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:09:39,994 basehttp 11432 26196 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 17:09:42,302 views 11432 26196 User logged in: dc754
+django.server INFO 2025-03-20 17:09:42,358 basehttp 11432 26196 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:09:42,377 basehttp 11432 26196 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:09:43,537 basehttp 11432 26196 "GET /lootboxes/open/ HTTP/1.1" 200 2712
+django.server INFO 2025-03-20 17:09:44,668 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:09:44,695 log 11432 26196 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:09:44,696 basehttp 11432 26196 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:09:46,745 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:09:46,767 log 11432 26196 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:09:46,767 basehttp 11432 26196 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:09:47,444 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:09:47,692 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:09:48,193 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:09:48,508 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:09:48,781 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:09:48,801 log 11432 26196 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:09:48,801 basehttp 11432 26196 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:09:48,962 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:09:48,981 log 11432 26196 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:09:48,982 basehttp 11432 26196 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:09:49,180 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:09:49,403 basehttp 11432 26196 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:09:49,420 log 11432 26196 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:09:49,421 basehttp 11432 26196 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:10:00,263 basehttp 11432 26196 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:10:01,265 basehttp 11432 26196 "GET /collectables/ HTTP/1.1" 200 519
+django.request WARNING 2025-03-20 17:10:01,346 log 11432 26196 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:10:01,347 basehttp 11432 26196 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.request WARNING 2025-03-20 17:10:01,367 log 11432 26196 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:10:01,368 basehttp 11432 26196 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 17:11:05,635 autoreload 20660 15276 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:11:07,161 basehttp 20660 17344 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:11:07,231 basehttp 20660 17344 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 17:11:09,404 views 20660 17344 User logged in: dc754
+django.server INFO 2025-03-20 17:11:09,457 basehttp 20660 17344 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:11:09,481 basehttp 20660 17344 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:11:11,848 basehttp 20660 17344 "GET /lootboxes/open/ HTTP/1.1" 200 2712
+django.server INFO 2025-03-20 17:11:12,954 basehttp 20660 17344 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:11:12,973 log 20660 17344 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:11:12,974 basehttp 20660 17344 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:11:13,783 basehttp 20660 17344 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.utils.autoreload INFO 2025-03-20 17:13:49,331 autoreload 15176 18812 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:13:50,689 basehttp 15176 16440 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:13:50,746 basehttp 15176 16440 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:13:50,851 basehttp 15176 16440 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 17:13:52,814 views 15176 16440 User logged in: dc754
+django.server INFO 2025-03-20 17:13:52,874 basehttp 15176 16440 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:13:52,895 basehttp 15176 16440 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:13:53,823 basehttp 15176 16440 "GET /lootboxes/open/ HTTP/1.1" 200 2712
+django.server INFO 2025-03-20 17:13:54,880 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:55,975 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:56,805 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:13:56,824 log 15176 16440 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:13:56,824 basehttp 15176 16440 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:13:57,778 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:13:57,797 log 15176 16440 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:13:57,797 basehttp 15176 16440 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:13:58,329 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:58,672 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:58,994 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:59,259 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:13:59,542 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:13:59,561 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:13:59,562 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:13:59,825 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:13:59,840 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:13:59,841 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:00,068 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:00,082 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:00,083 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:00,283 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:00,308 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:00,308 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:00,585 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:00,600 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:00,601 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:00,828 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:00,846 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:00,846 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:01,029 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:14:01,217 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:01,236 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:01,236 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:01,404 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:01,422 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:01,423 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:01,611 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:01,628 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:01,628 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:01,756 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:14:02,057 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:02,072 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:02,072 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:02,269 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:14:02,445 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:02,460 log 15176 16440 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:02,461 basehttp 15176 16440 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:14:02,616 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:14:02,791 basehttp 15176 16440 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.utils.autoreload INFO 2025-03-20 17:14:52,887 autoreload 8840 1256 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:14:54,250 basehttp 8840 15032 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:14:54,307 basehttp 8840 15032 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 17:14:56,346 views 8840 15032 User logged in: dc754
+django.server INFO 2025-03-20 17:14:56,402 basehttp 8840 15032 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:14:56,426 basehttp 8840 15032 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:14:57,576 basehttp 8840 15032 "GET /lootboxes/open/ HTTP/1.1" 200 2708
+django.server INFO 2025-03-20 17:14:58,839 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:14:58,862 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:14:58,863 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:14:59,801 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:14:59,822 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:14:59,823 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:00,472 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:01,111 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:01,129 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:01,130 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:01,556 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:01,573 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:01,574 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:01,755 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:01,773 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:01,774 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:01,960 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:02,136 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:02,153 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:02,153 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:02,326 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:02,346 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:02,347 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:02,488 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:02,504 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:02,505 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:02,658 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:02,883 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:02,897 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:02,898 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:03,099 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:03,114 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:03,114 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:03,267 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:03,281 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:03,282 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:03,441 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:03,461 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:03,461 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:03,614 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:03,767 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:03,784 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:03,785 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:03,940 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:03,957 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:03,958 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:04,100 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:04,115 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:04,116 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:04,257 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:04,275 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:04,276 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:04,432 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:04,627 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:04,646 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:04,647 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:04,798 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:04,963 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:04,982 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:04,983 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:05,139 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:05,155 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:05,156 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:05,299 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:05,317 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:05,318 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:05,476 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:05,656 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:05,826 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:05,844 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:05,845 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:06,026 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:06,219 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:06,390 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:06,408 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:06,410 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:06,573 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:06,593 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:06,594 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:06,746 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:06,766 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:06,767 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:06,928 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:06,946 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:06,946 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:07,096 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:07,116 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:07,116 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:07,265 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:07,460 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:07,476 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:07,477 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:07,597 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:07,617 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:07,618 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:07,784 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:07,804 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:07,805 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:07,974 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:08,156 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:08,173 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:08,173 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:08,350 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:08,370 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:08,371 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:08,535 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:08,555 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:08,556 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:08,718 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:08,894 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:09,077 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:09,258 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 17:15:09,441 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:09,457 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:09,458 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:09,669 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:09,689 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:09,690 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:09,859 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:09,874 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:09,875 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:10,020 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 161
+django.request WARNING 2025-03-20 17:15:10,035 log 8840 15032 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 17:15:10,036 basehttp 8840 15032 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-20 17:15:10,189 basehttp 8840 15032 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 17:15:10,205 log 8840 15032 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:15:10,206 basehttp 8840 15032 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:15:11,188 basehttp 8840 15032 "GET /home/ HTTP/1.1" 200 1842
+django.utils.autoreload INFO 2025-03-20 17:17:18,913 autoreload 19888 6032 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:17:20,396 basehttp 19888 2784 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:17:20,463 basehttp 19888 2784 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 17:17:22,525 views 19888 2784 User logged in: dc754
+django.server INFO 2025-03-20 17:17:22,583 basehttp 19888 2784 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:17:22,605 basehttp 19888 2784 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 17:17:23,698 basehttp 19888 2784 "GET /lootboxes/open/ HTTP/1.1" 200 2750
+django.server INFO 2025-03-20 17:17:25,295 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:26,418 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 148
+django.request WARNING 2025-03-20 17:17:26,439 log 19888 2784 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:17:26,440 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:17:33,654 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:34,564 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:35,640 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:36,300 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:36,898 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:37,418 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:37,815 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 148
+django.request WARNING 2025-03-20 17:17:37,836 log 19888 2784 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:17:37,837 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:17:38,064 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 148
+django.request WARNING 2025-03-20 17:17:38,084 log 19888 2784 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:17:38,085 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:17:41,564 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:42,249 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 80
+django.server INFO 2025-03-20 17:17:42,927 basehttp 19888 2784 "POST /lootboxes/open/ HTTP/1.1" 200 148
+django.request WARNING 2025-03-20 17:17:42,944 log 19888 2784 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 17:17:42,944 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 17:17:44,585 basehttp 19888 2784 "GET /home/ HTTP/1.1" 200 1842
