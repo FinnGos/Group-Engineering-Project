@@ -8080,3 +8080,245 @@ django.server INFO 2025-03-20 15:48:51,359 basehttp 13160 8660 "GET /tasks/ HTTP
 django.server INFO 2025-03-20 15:48:51,370 basehttp 13160 8660 "GET /static/tasks.css HTTP/1.1" 304 0
 django.server INFO 2025-03-20 15:48:55,640 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
 django.server INFO 2025-03-20 15:48:55,652 basehttp 13160 8660 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:51:54,093 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:51:54,101 basehttp 13160 8660 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:51:54,886 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:51:55,426 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:51:55,883 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:51:56,303 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:16,443 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:17,231 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:18,150 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:18,749 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:19,184 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:19,478 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:20,057 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:20,536 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:23,636 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
+django.utils.autoreload INFO 2025-03-20 15:52:31,373 autoreload 20176 7448 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 15:52:33,027 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:33,033 basehttp 20176 13724 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:52:34,043 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:34,953 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:35,653 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:36,311 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:36,878 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:37,333 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:56,561 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,003 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,234 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,433 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,614 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,792 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:57,984 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:58,167 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:58,353 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:52:58,538 basehttp 20176 13724 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:53:00,693 basehttp 20176 13724 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:53:00,700 basehttp 20176 13724 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:53:01,281 basehttp 20176 13724 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:53:01,837 basehttp 20176 13724 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:53:02,345 basehttp 20176 13724 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:53:02,953 basehttp 20176 13724 "GET /tasks/ HTTP/1.1" 200 8922
+django.utils.autoreload INFO 2025-03-20 15:54:02,147 autoreload 3680 5220 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 15:54:06,551 basehttp 3680 11324 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:54:06,561 basehttp 3680 11324 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:54:07,518 basehttp 3680 11324 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 15:54:09,219 basehttp 3680 11324 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:54:09,225 basehttp 3680 11324 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:54:09,764 basehttp 3680 11324 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 15:54:11,709 basehttp 3680 11324 "GET /home/ HTTP/1.1" 200 7152
+django.utils.autoreload INFO 2025-03-20 15:55:04,125 autoreload 3680 5220 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 15:55:04,754 autoreload 14716 14992 Watching for file changes with StatReloader
+django.request ERROR 2025-03-20 15:55:05,931 log 14716 15164 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 15:55:05,933 basehttp 14716 15164 "GET /leaderboard/ HTTP/1.1" 500 95645
+django.request ERROR 2025-03-20 15:55:06,859 log 14716 15164 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 15:55:06,859 basehttp 14716 15164 "GET /leaderboard/ HTTP/1.1" 500 95645
+django.request ERROR 2025-03-20 16:00:49,357 log 14716 14612 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 16:00:49,367 basehttp 14716 14612 "GET /leaderboard/ HTTP/1.1" 500 95645
+django.request ERROR 2025-03-20 16:00:50,127 log 14716 14612 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 16:00:50,133 basehttp 14716 14612 "GET /leaderboard/ HTTP/1.1" 500 95645
+django.request ERROR 2025-03-20 16:00:51,358 log 14716 14612 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 16:00:51,358 basehttp 14716 14612 "GET /leaderboard/ HTTP/1.1" 500 95645
+django.request ERROR 2025-03-20 16:00:58,842 log 14716 14612 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 16:00:58,843 basehttp 14716 14612 "GET /leaderboard/ HTTP/1.1" 500 95782
+django.request ERROR 2025-03-20 16:00:58,973 log 14716 14612 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 25, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /leaderboard.html
+django.server ERROR 2025-03-20 16:00:58,973 basehttp 14716 14612 "GET /leaderboard/ HTTP/1.1" 500 95508
+django INFO 2025-03-20 16:03:02,771 views 14716 14612 User asked for personal data stored: kadeemtesting123
+django.server INFO 2025-03-20 16:03:02,926 basehttp 14716 14612 "GET /home/accounts/view_data/ HTTP/1.1" 200 6815
+django.utils.autoreload INFO 2025-03-20 16:03:17,837 autoreload 14716 14992 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 16:03:18,475 autoreload 10248 3524 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 16:03:22,588 autoreload 10248 3524 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 16:03:23,198 autoreload 8868 16444 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 16:03:42,033 basehttp 8868 16268 "GET /leaderboard/ HTTP/1.1" 200 7782
+django.server INFO 2025-03-20 16:03:45,723 basehttp 8868 16268 "GET /leaderboard/ HTTP/1.1" 200 7782
+django.server INFO 2025-03-20 16:04:00,935 basehttp 8868 16268 "GET /leaderboard/ HTTP/1.1" 200 7782
+django.server INFO 2025-03-20 16:04:32,163 basehttp 8868 16268 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 16:06:12,653 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8883
+django.server INFO 2025-03-20 16:06:12,663 basehttp 8868 16268 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 16:06:24,494 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8923
+django.server INFO 2025-03-20 16:06:30,053 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8923
+django.server INFO 2025-03-20 16:06:30,933 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8923
+django.server INFO 2025-03-20 16:06:32,176 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8925
+django.server INFO 2025-03-20 16:06:40,573 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:06:41,606 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:06:45,817 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:06:46,603 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:06:57,376 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:07:02,926 basehttp 8868 16268 "GET /tasks/ HTTP/1.1" 200 8924
+django.server INFO 2025-03-20 16:07:13,553 basehttp 8868 16268 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 16:07:34,177 basehttp 8868 16268 "GET /home/accounts/login/ HTTP/1.1" 200 7263

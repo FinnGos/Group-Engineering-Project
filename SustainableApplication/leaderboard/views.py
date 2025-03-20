@@ -22,4 +22,4 @@ def leaderboard(request):
     # Limit the leaderboard to top 5 users
     ranked_users = ranked_users[:5]
     
-    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
