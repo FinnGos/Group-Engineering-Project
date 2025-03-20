@@ -19,4 +19,7 @@ def leaderboard(request):
         ranked_users.append({'rank': rank, 'user': user})
         last_points = user.all_time_points
 
+    # Limit the leaderboard to top 5 users
+    ranked_users = ranked_users[:5]
+    
     return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
