@@ -13,6 +13,6 @@ def collectable_gallery(request):
     collectables = user_object.collectables_owned.all()
 
     context = {"collectable_list": collectables}
-    return render(request, "gallery.html", context)
+    return render(request, "collectables/gallery.html")
 
 # Create your views here.

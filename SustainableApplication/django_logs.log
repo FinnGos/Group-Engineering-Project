@@ -8717,3 +8717,170 @@ django.server WARNING 2025-03-13 10:33:18,766 basehttp 16944 22464 "GET /static/
 django.server INFO 2025-03-13 10:33:19,746 basehttp 16944 17264 "GET /tasks/ HTTP/1.1" 200 3713
 django.server WARNING 2025-03-13 10:33:19,796 basehttp 16944 17264 "GET /static/css/styles.css HTTP/1.1" 404 1969
 >>>>>>> 07df814b20b19add3d1bd1201c2db031fb899c2e
+django.utils.autoreload INFO 2025-03-20 23:38:06,708 autoreload 22007 139900737745024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 23:38:12,078 autoreload 22095 140119560528000 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 23:38:14,086 basehttp 22095 140119506261696 "GET /collectables/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 23:38:14,102 basehttp 22095 140119506261696 "GET /accounts/login/?next=/collectables/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 23:38:14,212 basehttp 22095 140119506261696 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-20 23:38:14,245 basehttp 22095 140119506261696 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-20 23:38:14,374 log 22095 140119506261696 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:38:14,375 basehttp 22095 140119506261696 "GET /favicon.ico HTTP/1.1" 404 3918
+django INFO 2025-03-20 23:38:16,676 views 22095 140119506261696 User asked for personal data stored: 
+django.request ERROR 2025-03-20 23:38:16,715 log 22095 140119506261696 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/utils/functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-20 23:38:16,716 basehttp 22095 140119506261696 "GET /home/accounts/view_data/ HTTP/1.1" 500 79623
+django.server INFO 2025-03-20 23:38:17,628 basehttp 22095 140119506261696 "GET /accounts/login/?next=/collectables/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 23:38:23,368 basehttp 22095 140119506261696 "GET /home/signup/ HTTP/1.1" 200 8452
+django WARNING 2025-03-20 23:38:33,726 views 22095 140119506261696 Failed signup attempt.
+django.server INFO 2025-03-20 23:38:33,727 basehttp 22095 140119506261696 "POST /home/signup/ HTTP/1.1" 200 8689
+django WARNING 2025-03-20 23:38:45,089 views 22095 140119506261696 Failed signup attempt.
+django.server INFO 2025-03-20 23:38:45,091 basehttp 22095 140119506261696 "POST /home/signup/ HTTP/1.1" 200 8676
+django.request ERROR 2025-03-20 23:38:55,698 log 22095 140119506261696 Internal Server Error: /home/signup/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table home_customuser has no column named selected_task_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 62, in signup
+    user.save()
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/lib/python3/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/lib/python3/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table home_customuser has no column named selected_task_id
+django.server ERROR 2025-03-20 23:38:55,699 basehttp 22095 140119506261696 "POST /home/signup/ HTTP/1.1" 500 164071
+django.utils.autoreload INFO 2025-03-20 23:39:39,505 autoreload 22537 140083691991168 Watching for file changes with StatReloader
+django INFO 2025-03-20 23:39:42,565 views 22537 140083570616000 User logged in: aaaaaaaaaaaaaaaaaaaaa
+django INFO 2025-03-20 23:39:42,586 views 22537 140083570616000 New user signed up: aaaaaaaaaaaaaaaaaaaaa
+django.server INFO 2025-03-20 23:39:42,598 basehttp 22537 140083570616000 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 23:39:42,611 basehttp 22537 140083570616000 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 23:39:42,722 basehttp 22537 140083570616000 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 23:39:42,723 basehttp 22537 140083557496512 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-20 23:39:44,442 basehttp 22537 140083570616000 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 23:39:44,488 basehttp 22537 140083570616000 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-20 23:39:44,493 basehttp 22537 140083557496512 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-20 23:39:44,494 basehttp 22537 140083570616000 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-20 23:39:45,871 basehttp 22537 140083570616000 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5704
+django INFO 2025-03-20 23:39:47,220 views 22537 140083570616000 User asked for personal data stored: aaaaaaaaaaaaaaaaaaaaa
+django.server INFO 2025-03-20 23:39:47,228 basehttp 22537 140083570616000 "GET /home/accounts/view_data/ HTTP/1.1" 200 5547
+django INFO 2025-03-20 23:39:48,155 views 22537 140083570616000 User logged out: aaaaaaaaaaaaaaaaaaaaa
+django.server INFO 2025-03-20 23:39:48,155 basehttp 22537 140083570616000 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 23:39:48,165 basehttp 22537 140083570616000 "GET /home/accounts/login/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 23:39:50,524 basehttp 22537 140083570616000 "GET /home/ HTTP/1.1" 200 7152
+django.request WARNING 2025-03-20 23:39:50,679 log 22537 140083570616000 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:39:50,679 basehttp 22537 140083570616000 "GET /favicon.ico HTTP/1.1" 404 3918
+django.request WARNING 2025-03-20 23:39:57,173 log 22537 140083570616000 Not Found: /lootboxes
+django.server WARNING 2025-03-20 23:39:57,173 basehttp 22537 140083570616000 "GET /lootboxes HTTP/1.1" 404 3912
+django.server INFO 2025-03-20 23:43:01,803 basehttp 22537 140083570616000 "GET /home/ HTTP/1.1" 200 7341
+django.server INFO 2025-03-20 23:43:01,880 basehttp 22537 140083570616000 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 23:43:01,881 basehttp 22537 140083557496512 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.request WARNING 2025-03-20 23:43:01,970 log 22537 140083570616000 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:43:01,970 basehttp 22537 140083570616000 "GET /favicon.ico HTTP/1.1" 404 3918
+django.server INFO 2025-03-20 23:43:04,484 basehttp 22537 140083570616000 "GET /collectables/ HTTP/1.1" 200 255
+django.server INFO 2025-03-20 23:43:04,504 basehttp 22537 140083570616000 "GET /static/css/styles.css HTTP/1.1" 200 171
+django.server INFO 2025-03-20 23:44:20,451 basehttp 22537 140083570616000 "GET /home/ HTTP/1.1" 200 7341
+django.request WARNING 2025-03-20 23:44:20,619 log 22537 140083570616000 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:44:20,620 basehttp 22537 140083570616000 "GET /favicon.ico HTTP/1.1" 404 3918
+django.request ERROR 2025-03-20 23:44:21,997 log 22537 140083570616000 Internal Server Error: /collectables/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/collectables/views.py", line 16, in collectable_gallery
+    return render(request, "gallery.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gallery.html
+django.server ERROR 2025-03-20 23:44:21,998 basehttp 22537 140083570616000 "GET /collectables/ HTTP/1.1" 500 91314
+django.utils.autoreload INFO 2025-03-20 23:46:15,701 autoreload 22537 140083691991168 /home/finn/Group-Engineering-Project/SustainableApplication/collectables/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 23:46:15,880 autoreload 24093 140503716249728 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 23:46:19,044 autoreload 24093 140503716249728 /home/finn/Group-Engineering-Project/SustainableApplication/collectables/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 23:46:19,213 autoreload 24144 140662376829056 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 23:46:22,092 basehttp 24144 140662255122112 "GET /collectables/ HTTP/1.1" 200 5181
+django.request WARNING 2025-03-20 23:46:22,238 log 24144 140662255122112 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:46:22,239 basehttp 24144 140662255122112 "GET /favicon.ico HTTP/1.1" 404 3918
+django.utils.autoreload INFO 2025-03-20 23:50:37,721 autoreload 25381 140009373094016 Watching for file changes with StatReloader
+django INFO 2025-03-20 23:50:39,879 views 25381 140009318827712 User asked for personal data stored: aaaaaaaaaaaaaaaaaaaaa
+django.server INFO 2025-03-20 23:50:39,891 basehttp 25381 140009318827712 "GET /home/accounts/view_data/ HTTP/1.1" 200 6010
+django.request WARNING 2025-03-20 23:50:40,056 log 25381 140009318827712 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 23:50:40,057 basehttp 25381 140009318827712 "GET /favicon.ico HTTP/1.1" 404 3918
+django.utils.autoreload INFO 2025-03-20 23:56:54,569 autoreload 27497 140106595045504 Watching for file changes with StatReloader
+django INFO 2025-03-20 23:56:56,857 views 27497 140106540779200 User asked for personal data stored: aaaaaaaaaaaaaaaaaaaaa
+django.server INFO 2025-03-20 23:56:56,867 basehttp 27497 140106540779200 "GET /home/accounts/view_data/ HTTP/1.1" 200 6157
+django.server INFO 2025-03-20 23:57:03,045 basehttp 27497 140106540779200 "GET /collectables/ HTTP/1.1" 200 5181
+django.server INFO 2025-03-20 23:57:30,755 basehttp 27497 140106540779200 "GET /collectables/ HTTP/1.1" 200 5181
