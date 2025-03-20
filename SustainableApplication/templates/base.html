@@ -7,10 +7,12 @@
   <title>{% block title %}Sustainable App{% endblock %}</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
   <style>
     .footer-text {
       font-size: 1rem;
     }
+
     /* Override any unwanted link styling in the footer */
     footer a {
       background: none !important;
@@ -19,10 +21,30 @@
       color: white !important;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
   </style>
+
+  <!-- JavaScript to add confirmation on Delete Account link -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Find the "Delete Account" link
+      let deleteAccountLink = document.getElementById("delete-account-link");
+
+      // Add confirmation dialog on click
+      if (deleteAccountLink) {
+        deleteAccountLink.addEventListener("click", function (event) {
+          let confirmDelete = confirm("Are you sure you want to delete your account? This action cannot be undone.");
+          if (!confirmDelete) {
+            event.preventDefault(); // Prevent navigation if user cancels
+          }
+        });
+      }
+    });
+  </script>
+
   {% block extra_css %}{% endblock %}
 </head>
 
@@ -39,18 +61,17 @@
         <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
         <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
         <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-        <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
+        <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="hover:underline text-red-500">Delete Account</a></li>
         <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
         <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
         <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        <li><a href="http://127.0.0.1:8000/leaderboard/" class="hover:underline">Leaderboard</a></li>
       </ul>
 
       <!-- Mobile Menu Button -->
       <button @click="open = !open" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
     </div>
@@ -62,10 +83,11 @@
         <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
         <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
         <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-        <li><a href="{% url 'delete_account' %}" class="hover:underline">Delete Account</a></li>
+        <li><a href="{% url 'delete_account' %}" id="delete-account-link-mobile" class="hover:underline text-red-500">Delete Account</a></li>
         <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
         <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
         <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        <li><a href="http://127.0.0.1:8000/leaderboard/" class="hover:underline">Leaderboard</a></li>
       </ul>
     </div>
   </nav>

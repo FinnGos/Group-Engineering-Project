@@ -6645,3 +6645,821 @@ django.server INFO 2025-03-20 14:28:57,161 basehttp 7583 140279449552576 "GET /h
 django INFO 2025-03-20 14:29:01,589 views 7583 140279449552576 User logged in: loginplease
 django.server INFO 2025-03-20 14:29:01,612 basehttp 7583 140279449552576 "POST /home/accounts/login/ HTTP/1.1" 302 0
 django.server INFO 2025-03-20 14:29:01,621 basehttp 7583 140279449552576 "GET /home/ HTTP/1.1" 200 6203
+django.utils.autoreload INFO 2025-03-20 14:29:21,157 autoreload 7583 140279493161088 /home/finn/Group-Engineering-Project/SustainableApplication/home/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 14:29:21,365 autoreload 8188 140549720154240 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:29:24,998 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:29:26,154 basehttp 8188 140549676545728 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:29:26,205 basehttp 8188 140549676545728 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-20 14:29:26,206 basehttp 8188 140549676545728 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-20 14:37:20,481 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6407
+django.server INFO 2025-03-20 14:37:20,675 basehttp 8188 140549667104448 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-20 14:37:20,676 basehttp 8188 140549676545728 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.request WARNING 2025-03-20 14:37:20,745 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:37:20,745 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 14:37:23,255 basehttp 8188 140549676545728 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 14:37:23,273 basehttp 8188 140549676545728 "GET /static/leaderboard/styles.css HTTP/1.1" 200 685
+django INFO 2025-03-20 14:37:25,875 views 8188 140549676545728 User asked for personal data stored: loginplease
+django.request ERROR 2025-03-20 14:37:25,894 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:37:25,895 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 91240
+django.request ERROR 2025-03-20 14:37:27,429 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:37:27,429 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:37:28,504 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:37:28,504 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django INFO 2025-03-20 14:37:29,445 views 8188 140549676545728 User deleted account: loginplease
+django.server INFO 2025-03-20 14:37:29,456 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:37:29,464 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6518
+django.server INFO 2025-03-20 14:37:29,556 basehttp 8188 140549676545728 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-20 14:37:29,563 basehttp 8188 140549676545728 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-20 14:37:31,612 basehttp 8188 140549676545728 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:37:31,618 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6518
+django INFO 2025-03-20 14:37:32,942 views 8188 140549676545728 User deleted account: 
+django.request ERROR 2025-03-20 14:37:32,949 log 8188 140549676545728 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-20 14:37:32,950 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74061
+django INFO 2025-03-20 14:37:34,769 views 8188 140549676545728 User deleted account: 
+django.request ERROR 2025-03-20 14:37:34,777 log 8188 140549676545728 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-20 14:37:34,778 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74061
+django.request ERROR 2025-03-20 14:38:52,686 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-20 14:38:52,687 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85272
+django.request ERROR 2025-03-20 14:39:00,753 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:39:00,754 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88205
+django INFO 2025-03-20 14:39:05,794 views 8188 140549676545728 User asked for personal data stored: 
+django.request ERROR 2025-03-20 14:39:05,819 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-20 14:39:05,820 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 80074
+django.server INFO 2025-03-20 14:39:19,863 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6518
+django.server INFO 2025-03-20 14:39:19,915 basehttp 8188 140549676545728 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 14:39:21,334 basehttp 8188 140549676545728 "GET /home/signup/ HTTP/1.1" 200 7707
+django WARNING 2025-03-20 14:39:35,498 views 8188 140549676545728 Failed signup attempt.
+django.server INFO 2025-03-20 14:39:35,499 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 200 7931
+django INFO 2025-03-20 14:39:53,340 views 8188 140549676545728 User logged in: testingalot
+django INFO 2025-03-20 14:39:53,356 views 8188 140549676545728 New user signed up: testingalot
+django.server INFO 2025-03-20 14:39:53,366 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:39:53,374 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6407
+django INFO 2025-03-20 14:39:57,363 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:39:57,375 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:39:57,375 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 90116
+django.request ERROR 2025-03-20 14:39:59,152 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:39:59,152 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:40:00,391 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:40:00,392 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django INFO 2025-03-20 14:40:44,792 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:40:44,805 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:40:44,805 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 90760
+django.request WARNING 2025-03-20 14:40:44,921 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:40:44,921 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-20 14:40:48,980 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:40:48,981 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django INFO 2025-03-20 14:40:59,554 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:40:59,566 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:40:59,567 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 91404
+django.request ERROR 2025-03-20 14:41:03,442 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:41:03,442 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:41:13,029 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:41:13,030 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django.server INFO 2025-03-20 14:43:21,372 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6386
+django.server INFO 2025-03-20 14:43:21,503 basehttp 8188 140549667104448 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-20 14:43:21,503 basehttp 8188 140549676545728 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.request WARNING 2025-03-20 14:43:21,579 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:43:21,579 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django INFO 2025-03-20 14:43:22,425 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:43:22,441 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:43:22,442 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 92048
+django.request ERROR 2025-03-20 14:43:23,581 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:43:23,581 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.server INFO 2025-03-20 14:44:12,063 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6315
+django.request WARNING 2025-03-20 14:44:12,255 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:44:12,255 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-20 14:44:13,088 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:44:13,089 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:44:44,818 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:44:44,818 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:44:46,015 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:44:46,015 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django INFO 2025-03-20 14:44:46,992 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:44:47,005 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:44:47,005 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 92692
+django.request ERROR 2025-03-20 14:44:47,832 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:44:47,833 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django.request WARNING 2025-03-20 14:45:24,349 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:45:24,349 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request ERROR 2025-03-20 14:45:28,655 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:45:28,655 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django.request ERROR 2025-03-20 14:45:46,457 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:45:46,458 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 87979
+django.request ERROR 2025-03-20 14:45:53,224 log 8188 140549676545728 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:45:53,225 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 500 88203
+django INFO 2025-03-20 14:46:00,820 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.request ERROR 2025-03-20 14:46:00,833 log 8188 140549676545728 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:46:00,833 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 500 93336
+django.server INFO 2025-03-20 14:50:28,429 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 14:50:28,557 basehttp 8188 140549676545728 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 14:50:28,559 basehttp 8188 140549667104448 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.request WARNING 2025-03-20 14:50:28,641 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:50:28,641 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 14:50:29,471 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4953
+django.server INFO 2025-03-20 14:50:32,544 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django INFO 2025-03-20 14:50:35,800 views 8188 140549676545728 User asked for personal data stored: testingalot
+django.server INFO 2025-03-20 14:50:35,805 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 5555
+django.server INFO 2025-03-20 14:50:56,772 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:51:10,994 basehttp 8188 140549676545728 "POST /home/accounts/change_password/ HTTP/1.1" 200 5736
+django.server INFO 2025-03-20 14:53:55,561 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:53:56,396 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4953
+django INFO 2025-03-20 14:54:00,020 views 8188 140549676545728 User updated profile (username & email): testingalot
+django.server INFO 2025-03-20 14:54:00,020 basehttp 8188 140549676545728 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:54:00,029 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 14:54:02,684 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5082
+django INFO 2025-03-20 14:54:09,345 views 8188 140549676545728 User updated profile (username & email): nottestingalot
+django.server INFO 2025-03-20 14:54:09,345 basehttp 8188 140549676545728 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:54:09,353 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 14:54:10,393 views 8188 140549676545728 User asked for personal data stored: nottestingalot
+django.server INFO 2025-03-20 14:54:10,400 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 4658
+django.server INFO 2025-03-20 14:54:35,282 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5085
+django.server INFO 2025-03-20 14:54:36,497 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django INFO 2025-03-20 14:54:37,735 views 8188 140549676545728 User asked for personal data stored: nottestingalot
+django.server INFO 2025-03-20 14:54:37,741 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 4797
+django.server INFO 2025-03-20 14:54:38,459 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:54:38,999 basehttp 8188 140549676545728 "GET /leaderboard/ HTTP/1.1" 200 608
+django INFO 2025-03-20 14:55:52,018 views 8188 140549676545728 User asked for personal data stored: nottestingalot
+django.server INFO 2025-03-20 14:55:52,023 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 4936
+django.server INFO 2025-03-20 14:55:56,536 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4956
+django.server INFO 2025-03-20 14:56:01,915 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:56:02,473 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4956
+django.server INFO 2025-03-20 14:56:02,997 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django INFO 2025-03-20 14:56:03,712 views 8188 140549676545728 User asked for personal data stored: nottestingalot
+django.server INFO 2025-03-20 14:56:03,718 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 5075
+django.server INFO 2025-03-20 14:56:04,195 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:56:04,776 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4956
+django INFO 2025-03-20 14:57:29,796 views 8188 140549676545728 User asked for personal data stored: nottestingalot
+django.server INFO 2025-03-20 14:57:29,803 basehttp 8188 140549676545728 "GET /home/accounts/view_data/ HTTP/1.1" 200 5214
+django.request WARNING 2025-03-20 14:57:29,982 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:57:29,982 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 14:57:31,288 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:57:32,241 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 200 4956
+django.server INFO 2025-03-20 14:57:33,128 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5577
+django.server INFO 2025-03-20 14:58:50,253 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5674
+django.request WARNING 2025-03-20 14:58:50,415 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:58:50,415 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 14:59:39,406 basehttp 8188 140549676545728 "GET /home/accounts/change_password/ HTTP/1.1" 200 5674
+django.request WARNING 2025-03-20 14:59:39,580 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:59:39,581 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 14:59:40,349 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 14:59:40,404 basehttp 8188 140549676545728 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 14:59:40,405 basehttp 8188 140549667104448 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django INFO 2025-03-20 14:59:41,025 views 8188 140549676545728 User deleted account: nottestingalot
+django.server INFO 2025-03-20 14:59:41,035 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:59:41,042 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 14:59:41,139 basehttp 8188 140549676545728 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-20 14:59:41,141 basehttp 8188 140549667104448 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django INFO 2025-03-20 14:59:42,966 views 8188 140549676545728 User deleted account: 
+django.request ERROR 2025-03-20 14:59:42,975 log 8188 140549676545728 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-20 14:59:42,975 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74061
+django.request ERROR 2025-03-20 14:59:44,000 log 8188 140549676545728 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-20 14:59:44,000 basehttp 8188 140549676545728 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85272
+django.server INFO 2025-03-20 14:59:47,343 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:59:47,351 basehttp 8188 140549676545728 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 14:59:52,490 basehttp 8188 140549676545728 "GET /home/signup/ HTTP/1.1" 200 7687
+django WARNING 2025-03-20 15:00:08,050 views 8188 140549676545728 Failed signup attempt.
+django.server INFO 2025-03-20 15:00:08,051 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 200 8028
+django INFO 2025-03-20 15:00:25,949 views 8188 140549676545728 User logged in: delete
+django INFO 2025-03-20 15:00:25,966 views 8188 140549676545728 New user signed up: delete
+django.server INFO 2025-03-20 15:00:25,976 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:00:25,987 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.request WARNING 2025-03-20 15:00:26,209 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:00:26,209 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 15:01:37,115 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.request WARNING 2025-03-20 15:01:37,313 log 8188 140549676545728 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:01:37,313 basehttp 8188 140549676545728 "GET /favicon.ico HTTP/1.1" 404 4422
+django INFO 2025-03-20 15:01:38,093 views 8188 140549676545728 User deleted account: delete
+django.server INFO 2025-03-20 15:01:38,103 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:01:38,110 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.security.csrf WARNING 2025-03-20 15:01:50,990 log 8188 140549676545728 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-20 15:01:50,991 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-20 15:01:54,658 basehttp 8188 140549676545728 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:02:01,034 views 8188 140549676545728 User logged in: delete
+django INFO 2025-03-20 15:02:01,049 views 8188 140549676545728 New user signed up: delete
+django.server INFO 2025-03-20 15:02:01,058 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:02:01,067 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 15:02:09,377 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 15:02:11,589 views 8188 140549676545728 User deleted account: delete
+django.server INFO 2025-03-20 15:02:11,599 basehttp 8188 140549676545728 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:02:11,606 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:02:14,014 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:02:44,903 basehttp 8188 140549676545728 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:02:45,998 basehttp 8188 140549676545728 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:02:46,005 basehttp 8188 140549676545728 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:02:47,725 basehttp 8188 140549676545728 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:03:01,067 views 8188 140549676545728 User logged in: delete
+django INFO 2025-03-20 15:03:01,082 views 8188 140549676545728 New user signed up: delete
+django.server INFO 2025-03-20 15:03:01,092 basehttp 8188 140549676545728 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:03:01,104 basehttp 8188 140549676545728 "GET /home/ HTTP/1.1" 200 6387
+django.utils.autoreload INFO 2025-03-20 15:03:18,336 autoreload 15702 139959385231488 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 15:03:19,954 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 15:03:21,624 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:03:21,634 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:03:21,642 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:03:21,741 basehttp 15702 139959341622976 "GET /static/auth.css HTTP/1.1" 304 0
+django INFO 2025-03-20 15:03:46,639 views 15702 139959341622976 User deleted account: 
+django.request ERROR 2025-03-20 15:03:46,650 log 15702 139959341622976 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 160, in delete_account
+    user.delete()
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-20 15:03:46,651 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 500 74061
+django.request WARNING 2025-03-20 15:03:46,764 log 15702 139959341622976 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:03:46,765 basehttp 15702 139959341622976 "GET /favicon.ico HTTP/1.1" 404 4422
+django.security.csrf WARNING 2025-03-20 15:03:48,893 log 15702 139959341622976 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-20 15:03:48,893 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-20 15:03:49,815 basehttp 15702 139959341622976 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:03:54,635 views 15702 139959341622976 User logged in: delete
+django INFO 2025-03-20 15:03:54,652 views 15702 139959341622976 New user signed up: delete
+django.server INFO 2025-03-20 15:03:54,662 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:03:54,670 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 15:03:55,792 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:03:55,802 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:03:55,809 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:03:57,320 basehttp 15702 139959341622976 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:04:08,932 views 15702 139959341622976 User logged in: delete
+django INFO 2025-03-20 15:04:08,947 views 15702 139959341622976 New user signed up: delete
+django.server INFO 2025-03-20 15:04:08,957 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:04:08,971 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 15:05:01,625 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django.request WARNING 2025-03-20 15:05:01,793 log 15702 139959341622976 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:05:01,793 basehttp 15702 139959341622976 "GET /favicon.ico HTTP/1.1" 404 4422
+django INFO 2025-03-20 15:05:02,583 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:05:02,593 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:05:02,600 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:05:04,381 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.server INFO 2025-03-20 15:05:12,126 basehttp 15702 139959341622976 "GET /home/signup/ HTTP/1.1" 200 7687
+django.server INFO 2025-03-20 15:05:12,230 basehttp 15702 139959341622976 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-20 15:05:19,635 views 15702 139959341622976 User logged in: delete
+django INFO 2025-03-20 15:05:19,650 views 15702 139959341622976 New user signed up: delete
+django.server INFO 2025-03-20 15:05:19,660 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:05:19,670 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 15:05:19,828 basehttp 15702 139959341622976 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:05:19,830 basehttp 15702 139959327454912 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:05:27,861 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 15:05:28,673 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:05:28,683 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:05:28,690 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.request WARNING 2025-03-20 15:05:53,412 log 15702 139959341622976 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:05:53,413 basehttp 15702 139959341622976 "GET /favicon.ico HTTP/1.1" 404 4422
+django.security.csrf WARNING 2025-03-20 15:05:58,893 log 15702 139959341622976 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-20 15:05:58,893 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-20 15:05:59,558 basehttp 15702 139959341622976 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:06:02,605 views 15702 139959341622976 User logged in: delete
+django INFO 2025-03-20 15:06:02,621 views 15702 139959341622976 New user signed up: delete
+django.server INFO 2025-03-20 15:06:02,632 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:06:02,641 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django INFO 2025-03-20 15:06:09,667 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:06:09,677 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:06:09,685 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 6498
+django.request WARNING 2025-03-20 15:06:46,455 log 15702 139959341622976 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:06:46,455 basehttp 15702 139959341622976 "GET /favicon.ico HTTP/1.1" 404 4422
+django.security.csrf WARNING 2025-03-20 15:06:48,502 log 15702 139959341622976 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-20 15:06:48,502 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-20 15:06:48,969 basehttp 15702 139959341622976 "GET /home/signup/ HTTP/1.1" 200 7687
+django INFO 2025-03-20 15:06:51,526 views 15702 139959341622976 User logged in: delete
+django INFO 2025-03-20 15:06:51,543 views 15702 139959341622976 New user signed up: delete
+django.server INFO 2025-03-20 15:06:51,554 basehttp 15702 139959341622976 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:06:51,566 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 6387
+django.server INFO 2025-03-20 15:08:40,360 basehttp 15702 139959341622976 "GET /home/ HTTP/1.1" 200 7152
+django.request WARNING 2025-03-20 15:08:40,555 log 15702 139959341622976 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:08:40,556 basehttp 15702 139959341622976 "GET /favicon.ico HTTP/1.1" 404 4422
+django INFO 2025-03-20 15:08:46,169 views 15702 139959341622976 User deleted account: delete
+django.server INFO 2025-03-20 15:08:46,179 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:08:46,186 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 15:08:46,276 basehttp 15702 139959341622976 "GET /static/auth.css HTTP/1.1" 200 1844
