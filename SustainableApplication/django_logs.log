@@ -7463,3 +7463,25 @@ django INFO 2025-03-20 15:08:46,169 views 15702 139959341622976 User deleted acc
 django.server INFO 2025-03-20 15:08:46,179 basehttp 15702 139959341622976 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
 django.server INFO 2025-03-20 15:08:46,186 basehttp 15702 139959341622976 "GET /home/accounts/login/ HTTP/1.1" 200 7263
 django.server INFO 2025-03-20 15:08:46,276 basehttp 15702 139959341622976 "GET /static/auth.css HTTP/1.1" 200 1844
+django.utils.autoreload INFO 2025-03-20 22:54:08,282 autoreload 25428 24560 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 22:54:11,812 basehttp 25428 25564 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:54:11,852 basehttp 25428 25564 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 22:54:11,891 basehttp 25428 25564 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 22:54:11,892 basehttp 25428 13160 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.request WARNING 2025-03-20 22:54:12,159 log 25428 13160 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 22:54:12,160 basehttp 25428 13160 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 22:54:13,789 basehttp 25428 13160 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:54:13,791 basehttp 25428 13160 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 7263
+django INFO 2025-03-20 22:54:24,313 views 25428 13160 Failed login attempt for username: kadeemtesting123
+django.server INFO 2025-03-20 22:54:24,322 basehttp 25428 13160 "POST /accounts/login/?next=/home/ HTTP/1.1" 200 7505
+django.server INFO 2025-03-20 22:54:26,707 basehttp 25428 13160 "GET /home/signup/ HTTP/1.1" 200 8452
+django INFO 2025-03-20 22:54:47,511 views 25428 13160 User logged in: kadeemtesting123
+django INFO 2025-03-20 22:54:47,745 views 25428 13160 New user signed up: kadeemtesting123
+django.server INFO 2025-03-20 22:54:47,770 basehttp 25428 13160 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:54:47,777 basehttp 25428 13160 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 22:54:47,791 basehttp 25428 13160 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 22:54:47,793 basehttp 25428 13160 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 22:54:49,327 basehttp 25428 13160 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 22:54:49,339 basehttp 25428 13160 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 22:55:00,768 basehttp 25428 13160 "GET /tasks/ HTTP/1.1" 200 3439
+django.server WARNING 2025-03-20 22:55:00,793 basehttp 25428 13160 "GET /static/css/styles.css HTTP/1.1" 404 1969
