@@ -7485,3 +7485,5 @@ django.server INFO 2025-03-20 22:54:49,327 basehttp 25428 13160 "GET /leaderboar
 django.server INFO 2025-03-20 22:54:49,339 basehttp 25428 13160 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
 django.server INFO 2025-03-20 22:55:00,768 basehttp 25428 13160 "GET /tasks/ HTTP/1.1" 200 3439
 django.server WARNING 2025-03-20 22:55:00,793 basehttp 25428 13160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-20 22:56:09,340 autoreload 25428 24560 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\home\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 22:56:09,972 autoreload 19604 8476 Watching for file changes with StatReloader
