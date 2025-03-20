@@ -90,14 +90,8 @@ pip install -r requirements.txt
 
 - The server runs on **Django**: Make sure you have Python 3.x and pip installed.
 - For testing features, make sure to follow the test plan provided in the **docs/** folder (if applicable).
-- Tests are modular, to test you must specify which test to run
-- To run them, navigate to the folder containing manage.py and run
-```bash 
-python3 manage.py test <application name>.tests
-```
-replace application name with the application, for example use home.tests to test home page
----
 
+---
 
 ## 📩 Contact:
 Got questions, issues, or ideas? Direct all queries to our gamemaster: [cb1265@exeter.ac.uk](mailto:email@domain.com)

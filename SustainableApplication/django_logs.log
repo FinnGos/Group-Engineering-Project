@@ -7969,3 +7969,88 @@ django.request WARNING 2025-03-20 15:06:35,583 log 7640 20712 Not Found: /favico
 django.server WARNING 2025-03-20 15:06:35,583 basehttp 7640 20712 "GET /favicon.ico HTTP/1.1" 404 4422
 django.request WARNING 2025-03-20 15:06:41,591 log 7640 20712 Not Found: /home/open/
 django.server WARNING 2025-03-20 15:06:41,591 basehttp 7640 20712 "GET /home/open/ HTTP/1.1" 404 8049
+django.server INFO 2025-03-20 15:35:34,093 basehttp 7640 19992 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:35:34,211 basehttp 7640 19992 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 15:35:46,553 views 7640 19992 Failed login attempt for username: kadeemtesting123
+django.server INFO 2025-03-20 15:35:46,560 basehttp 7640 19992 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 15:35:48,185 basehttp 7640 19992 "GET /home/signup/ HTTP/1.1" 200 7437
+django INFO 2025-03-20 15:36:07,075 views 7640 19992 User logged in: kadeemtesting123
+django INFO 2025-03-20 15:36:07,212 views 7640 19992 New user signed up: kadeemtesting123
+django.server INFO 2025-03-20 15:36:07,226 basehttp 7640 19992 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 15:36:07,237 basehttp 7640 19992 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 15:36:11,555 basehttp 7640 19992 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:11,573 basehttp 7640 19992 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:36:11,573 basehttp 7640 13188 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 15:36:29,084 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:30,034 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:30,813 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:31,484 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:32,262 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:33,010 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:36:33,947 basehttp 7640 13188 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.utils.autoreload INFO 2025-03-20 15:38:01,325 autoreload 13640 17356 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 15:38:02,684 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:38:03,709 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:38:06,317 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 15:38:19,123 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.request ERROR 2025-03-20 15:38:20,451 log 13640 18964 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: bas.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\views.py", line 28, in leaderboard
+    return render(request, 'leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bas.html
+django.server ERROR 2025-03-20 15:38:20,460 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 500 158068
+django.server INFO 2025-03-20 15:38:25,860 basehttp 13640 18964 "GET /leaderboard/ HTTP/1.1" 200 8322
