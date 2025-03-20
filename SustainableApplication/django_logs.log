@@ -7623,3 +7623,349 @@ django.server INFO 2025-03-19 18:07:02,346 basehttp 31876 32036 "GET /leaderboar
 django.server INFO 2025-03-19 18:07:02,364 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
 django.server INFO 2025-03-19 18:07:10,199 basehttp 31876 32036 "GET /leaderboard/ HTTP/1.1" 200 8322
 django.server INFO 2025-03-19 18:07:10,220 basehttp 31876 32036 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.utils.autoreload INFO 2025-03-20 13:16:54,523 autoreload 10668 10672 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 13:16:58,008 basehttp 10668 27208 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 13:16:58,111 basehttp 10668 27208 "GET /accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 13:16:58,147 basehttp 10668 30084 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:16:58,147 basehttp 10668 27208 "GET /static/auth.css HTTP/1.1" 304 0
+django.request WARNING 2025-03-20 13:16:58,335 log 10668 27208 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 13:16:58,337 basehttp 10668 27208 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 13:17:00,379 basehttp 10668 27208 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 13:17:00,400 basehttp 10668 27208 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:00,400 basehttp 10668 30084 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:06,696 basehttp 10668 30084 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 13:17:06,712 basehttp 10668 30084 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:06,712 basehttp 10668 27208 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:06,712 basehttp 10668 25160 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:19,508 basehttp 10668 25160 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 13:17:19,524 basehttp 10668 25160 "GET /static/checkin.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:17:19,530 basehttp 10668 27208 "GET /static/images/checkin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:18:25,066 basehttp 10668 27208 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 13:18:29,112 basehttp 10668 27208 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-20 13:18:29,140 basehttp 10668 27208 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:18:29,142 basehttp 10668 25160 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 13:49:57,591 basehttp 10668 21992 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 13:49:57,595 basehttp 10668 21992 "GET /accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 13:59:22,930 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 13:59:26,183 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 13:59:27,300 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 13:59:28,604 views 10668 28612 User logged out: kadeemtesting
+django.server INFO 2025-03-20 13:59:28,606 basehttp 10668 28612 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 13:59:28,609 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 13:59:29,897 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 13:59:32,854 basehttp 10668 28612 "GET /home/signup/ HTTP/1.1" 200 7437
+django WARNING 2025-03-20 13:59:53,496 views 10668 28612 Failed signup attempt.
+django.server INFO 2025-03-20 13:59:53,496 basehttp 10668 28612 "POST /home/signup/ HTTP/1.1" 200 7437
+django INFO 2025-03-20 14:00:00,723 views 10668 28612 User logged out: kadeemtesting
+django.server INFO 2025-03-20 14:00:00,723 basehttp 10668 28612 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:00:00,725 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:00:09,276 views 10668 28612 Failed login attempt for username: kadeemtesting
+django.server INFO 2025-03-20 14:00:09,285 basehttp 10668 28612 "POST /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:00:16,853 views 10668 28612 Failed login attempt for username: kadeemtesting
+django.server INFO 2025-03-20 14:00:16,853 basehttp 10668 28612 "POST /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:00:31,917 views 10668 28612 User deleted account: kadeemtesting
+django.server INFO 2025-03-20 14:00:31,930 basehttp 10668 28612 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:00:31,933 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:00:32,832 views 10668 28612 User deleted account: 
+django.request ERROR 2025-03-20 14:00:32,970 log 10668 28612 Internal Server Error: /home/accounts/delete_account/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 160, in delete_account
+    user.delete()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\models.py", line 449, in delete
+    raise NotImplementedError(
+NotImplementedError: Django doesn't provide a DB representation for AnonymousUser.
+django.server ERROR 2025-03-20 14:00:32,970 basehttp 10668 28612 "GET /home/accounts/delete_account/ HTTP/1.1" 500 79982
+django.server INFO 2025-03-20 14:00:35,242 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.request ERROR 2025-03-20 14:00:36,499 log 10668 28612 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 189, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-20 14:00:36,505 basehttp 10668 28612 "GET /home/accounts/update_profile/ HTTP/1.1" 500 91345
+django.server INFO 2025-03-20 14:00:37,938 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.request ERROR 2025-03-20 14:00:39,314 log 10668 28612 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:00:39,316 basehttp 10668 28612 "GET /home/accounts/change_password/ HTTP/1.1" 500 96044
+django.server INFO 2025-03-20 14:00:40,473 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:00:41,524 views 10668 28612 User asked for personal data stored: 
+django.request ERROR 2025-03-20 14:00:41,608 log 10668 28612 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-20 14:00:41,608 basehttp 10668 28612 "GET /home/accounts/view_data/ HTTP/1.1" 500 86056
+django.server INFO 2025-03-20 14:00:49,382 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:00:59,167 basehttp 10668 28612 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:00:59,170 basehttp 10668 28612 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:01:01,413 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:01:01,417 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:01:03,016 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:01:03,017 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:01:05,761 basehttp 10668 28612 "GET /home/signup/ HTTP/1.1" 200 7437
+django INFO 2025-03-20 14:01:30,359 views 10668 28612 User logged in: kadeemtesting123
+django INFO 2025-03-20 14:01:30,508 views 10668 28612 New user signed up: kadeemtesting123
+django.server INFO 2025-03-20 14:01:30,523 basehttp 10668 28612 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:01:30,531 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:01:37,200 basehttp 10668 28612 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.server INFO 2025-03-20 14:02:14,996 basehttp 10668 28612 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-20 14:02:19,510 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:02:29,354 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.request ERROR 2025-03-20 14:03:24,505 log 10668 28612 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:03:24,505 basehttp 10668 28612 "GET /home/accounts/update_profile/ HTTP/1.1" 500 95814
+django.request ERROR 2025-03-20 14:03:28,981 log 10668 28612 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:03:28,981 basehttp 10668 28612 "GET /home/accounts/change_password/ HTTP/1.1" 500 96042
+django INFO 2025-03-20 14:03:31,370 views 10668 28612 User asked for personal data stored: kadeemtesting123
+django.request ERROR 2025-03-20 14:03:31,422 log 10668 28612 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:03:31,422 basehttp 10668 28612 "GET /home/accounts/view_data/ HTTP/1.1" 500 98004
+django INFO 2025-03-20 14:03:35,527 views 10668 28612 User deleted account: kadeemtesting123
+django.server INFO 2025-03-20 14:03:35,552 basehttp 10668 28612 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:35,552 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:41,229 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:41,235 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:49,375 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:49,375 basehttp 10668 28612 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:50,284 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:50,286 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:51,448 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:51,453 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:51,811 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:51,811 basehttp 10668 28612 "GET /accounts/login/?next=/get_location/1/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:03:53,515 basehttp 10668 28612 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:03:53,519 basehttp 10668 28612 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django INFO 2025-03-20 14:04:10,204 views 10668 28612 Failed login attempt for username: kadeemtesting123
+django.server INFO 2025-03-20 14:04:10,204 basehttp 10668 28612 "POST /accounts/login/?next=/home/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:04:14,225 basehttp 10668 28612 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:04:14,229 basehttp 10668 28612 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:04:17,194 basehttp 10668 28612 "GET /home/signup/ HTTP/1.1" 200 7437
+django INFO 2025-03-20 14:04:35,027 views 10668 28612 User logged in: kadeemtesting123
+django INFO 2025-03-20 14:04:35,175 views 10668 28612 New user signed up: kadeemtesting123
+django.server INFO 2025-03-20 14:04:35,187 basehttp 10668 28612 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:04:35,194 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:04:38,676 basehttp 10668 28612 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.request ERROR 2025-03-20 14:05:12,838 log 10668 28612 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 191, in update_profile
+    return render(request, "registration/update_profile.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/update_profile.html
+django.server ERROR 2025-03-20 14:05:12,840 basehttp 10668 28612 "GET /home/accounts/update_profile/ HTTP/1.1" 500 95811
+django.request ERROR 2025-03-20 14:05:15,971 log 10668 28612 Internal Server Error: /home/accounts/change_password/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 214, in change_password
+    return render(request, "registration/change_password.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/change_password.html
+django.server ERROR 2025-03-20 14:05:15,980 basehttp 10668 28612 "GET /home/accounts/change_password/ HTTP/1.1" 500 96039
+django INFO 2025-03-20 14:05:18,596 views 10668 28612 User asked for personal data stored: kadeemtesting123
+django.request ERROR 2025-03-20 14:05:18,769 log 10668 28612 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\home\views.py", line 281, in view_user_data
+    return render(request, "registration/view_user_data.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/view_user_data.html
+django.server ERROR 2025-03-20 14:05:18,769 basehttp 10668 28612 "GET /home/accounts/view_data/ HTTP/1.1" 500 100921
+django.server INFO 2025-03-20 14:05:42,787 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:05:55,853 basehttp 10668 28612 "GET /tasks/ HTTP/1.1" 200 6783
+django.server INFO 2025-03-20 14:06:02,492 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:06:11,513 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:06:32,980 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:06:38,189 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:06:39,084 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:06:46,220 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:06:55,382 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:07:08,763 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:07:17,115 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:07:20,782 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:07:23,703 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:07:24,851 basehttp 10668 28612 "GET /home/accounts/login/ HTTP/1.1" 200 6248
+django.server INFO 2025-03-20 14:07:34,702 basehttp 10668 28612 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:07:43,997 basehttp 10668 28612 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:08:37,909 basehttp 10668 27248 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.server INFO 2025-03-20 14:08:50,565 basehttp 10668 27248 "GET /get_location/1/ HTTP/1.1" 200 6142
+django.utils.autoreload INFO 2025-03-20 14:31:15,322 autoreload 10668 10672 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 14:31:15,949 autoreload 14124 30704 Watching for file changes with StatReloader
+django.request WARNING 2025-03-20 14:31:33,539 log 14124 22416 Not Found: /leaderboard/
+django.server WARNING 2025-03-20 14:31:33,539 basehttp 14124 22416 "GET /leaderboard/ HTTP/1.1" 404 4547
+django.request WARNING 2025-03-20 14:31:34,422 log 14124 22416 Not Found: /leaderboard/
+django.server WARNING 2025-03-20 14:31:34,422 basehttp 14124 22416 "GET /leaderboard/ HTTP/1.1" 404 4547
+django.utils.autoreload INFO 2025-03-20 14:31:46,598 autoreload 14124 30704 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\leaderboard\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 14:31:47,094 autoreload 30980 13696 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:31:47,476 basehttp 30980 31160 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.utils.autoreload INFO 2025-03-20 14:44:47,576 autoreload 3196 4864 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:45:33,644 basehttp 3196 17328 "GET /leaderboard/ HTTP/1.1" 200 8322
+django.request WARNING 2025-03-20 14:45:33,832 log 3196 17328 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:45:33,832 basehttp 3196 17328 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request WARNING 2025-03-20 14:58:38,054 log 3196 16828 Not Found: /lootboxes
+django.server WARNING 2025-03-20 14:58:38,058 basehttp 3196 16828 "GET /lootboxes HTTP/1.1" 404 4416
+django.request WARNING 2025-03-20 14:58:51,508 log 3196 16828 Not Found: /open
+django.server WARNING 2025-03-20 14:58:51,513 basehttp 3196 16828 "GET /open HTTP/1.1" 404 4401
+django.request WARNING 2025-03-20 14:59:01,723 log 3196 16828 Not Found: /open_lootbox
+django.server WARNING 2025-03-20 14:59:01,723 basehttp 3196 16828 "GET /open_lootbox HTTP/1.1" 404 4425
+django.utils.autoreload INFO 2025-03-20 15:05:17,563 autoreload 11360 17736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 15:05:38,668 autoreload 21228 11456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 15:05:44,874 autoreload 7640 4376 Watching for file changes with StatReloader
+django.request WARNING 2025-03-20 15:05:46,750 log 7640 7268 Not Found: /open_lootbox
+django.server WARNING 2025-03-20 15:05:46,750 basehttp 7640 7268 "GET /open_lootbox HTTP/1.1" 404 4425
+django.request WARNING 2025-03-20 15:05:47,394 log 7640 7268 Not Found: /open_lootbox
+django.server WARNING 2025-03-20 15:05:47,394 basehttp 7640 7268 "GET /open_lootbox HTTP/1.1" 404 4425
+django.request WARNING 2025-03-20 15:05:49,003 log 7640 7268 Not Found: /lootboxes
+django.server WARNING 2025-03-20 15:05:49,003 basehttp 7640 7268 "GET /lootboxes HTTP/1.1" 404 4416
+django.request WARNING 2025-03-20 15:05:51,546 log 7640 7268 Not Found: /open_lootbox
+django.server WARNING 2025-03-20 15:05:51,548 basehttp 7640 7268 "GET /open_lootbox HTTP/1.1" 404 4425
+django.request WARNING 2025-03-20 15:05:52,874 log 7640 7268 Not Found: /lootboxes
+django.server WARNING 2025-03-20 15:05:52,874 basehttp 7640 7268 "GET /lootboxes HTTP/1.1" 404 4416
+django.request WARNING 2025-03-20 15:06:35,540 log 7640 20712 Not Found: /open/
+django.server WARNING 2025-03-20 15:06:35,540 basehttp 7640 20712 "GET /open/ HTTP/1.1" 404 4404
+django.request WARNING 2025-03-20 15:06:35,583 log 7640 20712 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 15:06:35,583 basehttp 7640 20712 "GET /favicon.ico HTTP/1.1" 404 4422
+django.request WARNING 2025-03-20 15:06:41,591 log 7640 20712 Not Found: /home/open/
+django.server WARNING 2025-03-20 15:06:41,591 basehttp 7640 20712 "GET /home/open/ HTTP/1.1" 404 8049
