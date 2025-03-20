@@ -8080,3 +8080,129 @@ django.server INFO 2025-03-20 15:48:51,359 basehttp 13160 8660 "GET /tasks/ HTTP
 django.server INFO 2025-03-20 15:48:51,370 basehttp 13160 8660 "GET /static/tasks.css HTTP/1.1" 304 0
 django.server INFO 2025-03-20 15:48:55,640 basehttp 13160 8660 "GET /leaderboard/ HTTP/1.1" 200 608
 django.server INFO 2025-03-20 15:48:55,652 basehttp 13160 8660 "GET /static/leaderboard/styles.css HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-20 22:20:15,059 autoreload 2135 140361921581184 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 22:20:21,395 basehttp 2135 140361810835136 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:20:21,412 basehttp 2135 140361810835136 "GET /accounts/login/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 22:20:21,509 basehttp 2135 140361810835136 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-20 22:20:21,545 basehttp 2135 140361810835136 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-20 22:20:21,855 log 2135 140361810835136 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 22:20:21,855 basehttp 2135 140361810835136 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 22:20:25,197 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:20:25,206 basehttp 2135 140361810835136 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7263
+django INFO 2025-03-20 22:20:25,738 views 2135 140361810835136 User asked for personal data stored: 
+django.request ERROR 2025-03-20 22:20:25,775 log 2135 140361810835136 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 278, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-20 22:20:25,776 basehttp 2135 140361810835136 "GET /home/accounts/view_data/ HTTP/1.1" 500 79954
+django.server INFO 2025-03-20 22:20:26,489 basehttp 2135 140361810835136 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 22:20:32,400 basehttp 2135 140361810835136 "GET /home/signup/ HTTP/1.1" 200 8452
+django INFO 2025-03-20 22:20:44,919 views 2135 140361810835136 User logged in: ahhhh
+django INFO 2025-03-20 22:20:44,938 views 2135 140361810835136 New user signed up: ahhhh
+django.server INFO 2025-03-20 22:20:44,948 basehttp 2135 140361810835136 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 22:20:44,957 basehttp 2135 140361810835136 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 22:20:45,066 basehttp 2135 140361810835136 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 22:20:45,066 basehttp 2135 140361796146880 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-20 22:20:47,043 basehttp 2135 140361810835136 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 22:20:47,845 basehttp 2135 140361810835136 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5688
+django.server INFO 2025-03-20 22:20:48,549 basehttp 2135 140361810835136 "GET /home/accounts/change_password/ HTTP/1.1" 200 6439
+django INFO 2025-03-20 22:20:49,644 views 2135 140361810835136 User asked for personal data stored: ahhhh
+django.server INFO 2025-03-20 22:20:49,652 basehttp 2135 140361810835136 "GET /home/accounts/view_data/ HTTP/1.1" 200 5480
+django.server INFO 2025-03-20 22:20:50,617 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 200 608
+django.server INFO 2025-03-20 22:20:50,635 basehttp 2135 140361810835136 "GET /static/leaderboard/styles.css HTTP/1.1" 200 685
+django.request ERROR 2025-03-20 22:21:30,571 log 2135 140361810835136 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: leaderboard/leaderboard.html
+django.server ERROR 2025-03-20 22:21:30,571 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 500 92652
+django.request ERROR 2025-03-20 22:21:38,287 log 2135 140361810835136 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: leaderboard/leaderboard.html
+django.server ERROR 2025-03-20 22:21:38,288 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 500 92652
+django.request ERROR 2025-03-20 22:21:57,511 log 2135 140361810835136 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: leaderboard/leaderboard.html
+django.server ERROR 2025-03-20 22:21:57,512 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 500 92652
+django.server INFO 2025-03-20 22:22:32,797 basehttp 2135 140361810835136 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 22:22:32,843 basehttp 2135 140361810835136 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-20 22:22:32,847 basehttp 2135 140361796146880 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-20 22:22:32,848 basehttp 2135 140361810835136 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-20 22:22:49,334 basehttp 2135 140361810835136 "GET /home/ HTTP/1.1" 200 7152
+django.request WARNING 2025-03-20 22:22:49,457 log 2135 140361810835136 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 22:22:49,457 basehttp 2135 140361810835136 "GET /favicon.ico HTTP/1.1" 404 4422
+django.server INFO 2025-03-20 22:22:50,761 basehttp 2135 140361810835136 "GET /tasks/ HTTP/1.1" 200 8922
+django.server INFO 2025-03-20 22:22:50,811 basehttp 2135 140361810835136 "GET /static/tasks.css HTTP/1.1" 200 215
+django.server INFO 2025-03-20 22:22:50,812 basehttp 2135 140361796146880 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-20 22:22:53,476 basehttp 2135 140361810835136 "GET /get_location/1/? HTTP/1.1" 200 7091
+django.server INFO 2025-03-20 22:22:53,528 basehttp 2135 140361810835136 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-20 22:22:53,532 basehttp 2135 140361810835136 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
