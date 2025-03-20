@@ -1,0 +1,116 @@
+/* Outlined text for headings and paragraphs (keep this for headings only) */
+.outlined-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+      -2px -2px 0 black,
+       2px -2px 0 black,
+      -2px  2px 0 black,
+       2px  2px 0 black;
+}
+
+/* Image Section */
+.top-section {
+  position: relative;
+}
+
+.top-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Leaderboard Section Styles */
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Rank Item Styles */
+.rank-item {
+  background-color: #4a4a4a;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rank-item:hover {
+  transform: scale(1.05);
+}
+
+/* Rank-specific Styles */
+.rank-1 {
+  border: 4px solid #ecad0f;
+  background-color: #ecad0f;
+}
+
+.rank-2 {
+  border: 4px solid #8f8f8f;
+  background-color: #8f8f8f;
+}
+
+.rank-3 {
+  border: 4px solid #cd7f32;
+  background-color: #cd7f32;
+}
+
+.rank-4 {
+  border: 4px solid #464f59;
+  background-color: #464f59;
+}
+
+.rank-5 {
+  border: 4px solid #2f363d;
+  background-color: #2f363d;
+}
+
+/* Text inside rank items */
+.rank {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.points {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Current Player's Points Section */
+.current-points {
+  background-color: #28a745;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.current-points h3 {
+  font-size: 1.5rem;
+}
+
+.current-points p {
+  font-size: 1.2rem;
+}
+
+/* Buttons Section */
+.buttons-section a, .buttons-section button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttons-section a:hover, .buttons-section button:hover {
+  background-color: #0056b3;
+}

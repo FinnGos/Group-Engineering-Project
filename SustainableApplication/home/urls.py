@@ -3,6 +3,7 @@ from django.contrib.auth import views as auth_views
 from . import views
 from django.shortcuts import redirect
 from tasks import views as tviews
+from leaderboard import views as lviews
 from .views import CustomLogoutView, LoginFormView
 from django.http import HttpResponse
 from django.conf import settings
@@ -24,5 +25,6 @@ urlpatterns = [
     path("accounts/view_data/", views.view_user_data, name="view_user_data"),
     path("how-to-play/", placeholder_view, name="how_to_play"),
     path("tasks-view/", placeholder_view, name="tasks_view"),
+    path("leaderboard/", lviews.leaderboard, name="leaderboard"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
 
