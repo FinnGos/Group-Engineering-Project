@@ -2,13 +2,37 @@ from django.shortcuts import render
 from .models import Tasks
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
+from django.utils.timezone import now
+from django.contrib.auth.decorators import login_required
+import random
 
 
 # Create your views here.
+@login_required
 def tasks_view(request):
-    incomplete_tasks = Tasks.objects.filter(completed=False)
 
-    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+    if not request.user.is_authenticated:
+        return render(request, "tasks.html", {"task": None})
+
+    user = request.user
+    today = now().date()
+
+    user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
+
+    # retrieve or select random task for today
+    if user.selected_task and user.task_assign_date == today:
+        task = user.selected_task
+    else:
+        if not user_incomplete_tasks:
+            task = None
+        else:
+            task = random.choice(user_incomplete_tasks)
+
+            user.selected_task = task
+            user.task_assing_date = today
+            user.save()
+
+    return render(request, "tasks.html", {"task": task})
 
 
 def update_progress(request, task_id, action):

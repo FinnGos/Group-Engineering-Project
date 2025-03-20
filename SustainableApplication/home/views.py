@@ -1,6 +1,6 @@
 import logging  # Import Python's logging module for logging authentication events
 from django.shortcuts import render, redirect  # Import functions to render templates and redirect users
-from .models import Locations, Collectable, CustomUser  # Import custom models for the application
+from .models import CustomUser  # Import custom models for the application
 from django.contrib.auth import login, logout  # Import authentication functions for login and logout
 from django.contrib.auth.forms import UserCreationForm  # Import default user creation form
 from django.contrib.auth.views import LoginView, LogoutView  # Import Django’s built-in login and logout views

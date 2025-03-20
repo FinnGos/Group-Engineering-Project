@@ -31,9 +31,13 @@ urlpatterns = [
     path("home/", include("home.urls")),
     path("leaderboard/", include("leaderboard.urls")),
     path("tasks/", include("tasks.urls")),
+    path("collectables/", include("collectables.urls")),
 ]
 
 # Serve static and media files in development mode
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Adds access to media directory through URLs
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

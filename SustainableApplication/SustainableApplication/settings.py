@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "leaderboard.apps.LeaderboardConfig",
     "tasks.apps.TasksConfig",
     "TermsAndConditions.apps.TermsandconditionsConfig",
+    'collectables.apps.CollectablesConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ USE_TZ = True
 # Static Files
 STATIC_URL = "/static/"
 # Updated static files configuration
-STATICFILES_DIRS = [BASE_DIR / "static"]  # Correct the static directory path here
+STATICFILES_DIRS = [BASE_DIR / "static"] 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
