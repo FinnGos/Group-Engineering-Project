@@ -1,0 +1,10 @@
+/* Outlined text for headings */
+.outlined-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+      -2px -2px 0 black,
+       2px -2px 0 black,
+      -2px  2px 0 black,
+       2px  2px 0 black;
+}
