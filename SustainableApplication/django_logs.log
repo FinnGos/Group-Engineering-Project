@@ -381,3 +381,224 @@ django.server WARNING 2025-03-18 22:08:39,376 basehttp 27304 17328 "GET /media/m
 django.server INFO 2025-03-18 22:08:50,216 basehttp 27304 17328 "GET /collectables/ HTTP/1.1" 200 407
 django.request WARNING 2025-03-18 22:08:50,245 log 27304 17328 Not Found: /media/media/business_school.jpg
 django.server WARNING 2025-03-18 22:08:50,245 basehttp 27304 17328 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-19 16:15:08,869 autoreload 28168 2256 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:15:09,961 basehttp 28168 11924 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:15:09,998 basehttp 28168 11924 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:15:11,223 views 28168 11924 User logged in: dc754
+django.server INFO 2025-03-19 16:15:11,245 basehttp 28168 11924 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:15:11,255 basehttp 28168 11924 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:15:12,234 basehttp 28168 11924 "GET /lootboxes/open/ HTTP/1.1" 200 556
+django.request WARNING 2025-03-19 16:15:12,263 log 28168 11924 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:15:12,263 basehttp 28168 11924 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:15:18,448 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 506
+django.request WARNING 2025-03-19 16:15:18,475 log 28168 11924 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:15:18,476 basehttp 28168 11924 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:15:18,960 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 556
+django.request WARNING 2025-03-19 16:15:18,996 log 28168 11924 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:15:18,997 basehttp 28168 11924 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:15:19,134 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 556
+django.request WARNING 2025-03-19 16:15:19,159 log 28168 11924 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:15:19,160 basehttp 28168 11924 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:15:19,310 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 506
+django.request WARNING 2025-03-19 16:15:19,339 log 28168 11924 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:15:19,339 basehttp 28168 11924 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:15:19,485 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 506
+django.request WARNING 2025-03-19 16:15:19,514 log 28168 11924 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:15:19,515 basehttp 28168 11924 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:15:19,658 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 394
+django.server INFO 2025-03-19 16:15:19,860 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 394
+django.server INFO 2025-03-19 16:15:20,978 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 556
+django.request WARNING 2025-03-19 16:15:21,011 log 28168 11924 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:15:21,011 basehttp 28168 11924 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:15:21,727 basehttp 28168 11924 "GET /lootboxes/open/? HTTP/1.1" 200 506
+django.request WARNING 2025-03-19 16:15:21,758 log 28168 11924 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:15:21,758 basehttp 28168 11924 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-19 16:17:55,465 autoreload 3068 25380 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:17:56,772 basehttp 3068 25656 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:17:56,810 basehttp 3068 25656 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:17:58,215 views 3068 25656 User logged in: dc754
+django.server INFO 2025-03-19 16:17:58,237 basehttp 3068 25656 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:17:58,247 basehttp 3068 25656 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:17:59,165 basehttp 3068 25656 "GET /lootboxes/open/ HTTP/1.1" 200 506
+django.request WARNING 2025-03-19 16:17:59,193 log 3068 25656 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:17:59,194 basehttp 3068 25656 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:18:00,669 basehttp 3068 25656 "GET /lootboxes/open/? HTTP/1.1" 200 394
+django.server INFO 2025-03-19 16:18:01,784 basehttp 3068 25656 "GET /lootboxes/open/? HTTP/1.1" 200 556
+django.request WARNING 2025-03-19 16:18:01,811 log 3068 25656 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:18:01,811 basehttp 3068 25656 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-19 16:22:45,861 autoreload 27704 23640 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:22:46,911 basehttp 27704 14620 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:22:46,947 basehttp 27704 14620 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-19 16:22:46,985 basehttp 27704 14620 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-19 16:22:48,287 views 27704 14620 User logged in: dc754
+django.server INFO 2025-03-19 16:22:48,309 basehttp 27704 14620 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:22:48,319 basehttp 27704 14620 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:22:50,180 basehttp 27704 14620 "GET /lootboxes/open/ HTTP/1.1" 200 643
+django.server INFO 2025-03-19 16:22:50,242 basehttp 27704 14620 "GET /static/js/lootbox.js HTTP/1.1" 200 1170
+django.server INFO 2025-03-19 16:22:52,583 basehttp 27704 14620 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.utils.autoreload INFO 2025-03-19 16:24:44,695 autoreload 5996 11768 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:24:45,794 basehttp 5996 28476 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:24:45,828 basehttp 5996 28476 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:24:47,220 views 5996 28476 User logged in: dc754
+django.server INFO 2025-03-19 16:24:47,241 basehttp 5996 28476 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:24:47,251 basehttp 5996 28476 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:24:48,155 basehttp 5996 28476 "GET /lootboxes/open/ HTTP/1.1" 200 727
+django.server INFO 2025-03-19 16:24:48,221 basehttp 5996 28476 "GET /static/js/lootbox.js HTTP/1.1" 200 1422
+django.server INFO 2025-03-19 16:24:49,182 basehttp 5996 28476 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.utils.autoreload INFO 2025-03-19 16:27:28,204 autoreload 5996 11768 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 16:27:28,835 autoreload 24812 26428 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 16:27:58,398 autoreload 14224 10068 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:28:00,584 basehttp 14224 6448 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:28:00,613 basehttp 14224 6448 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:28:02,039 views 14224 6448 User logged in: dc754
+django.server INFO 2025-03-19 16:28:02,065 basehttp 14224 6448 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:28:02,077 basehttp 14224 6448 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:28:03,035 basehttp 14224 6448 "GET /lootboxes/open/ HTTP/1.1" 200 731
+django.server INFO 2025-03-19 16:28:03,102 basehttp 14224 6448 "GET /static/js/lootbox.js HTTP/1.1" 200 1337
+django.server INFO 2025-03-19 16:28:04,291 basehttp 14224 6448 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.utils.autoreload INFO 2025-03-19 16:30:08,838 autoreload 14224 10068 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-19 16:30:09,517 autoreload 10520 20692 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-19 16:31:01,535 autoreload 27972 22892 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:31:02,499 basehttp 27972 26680 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:31:02,532 basehttp 27972 26680 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:31:03,936 views 27972 26680 User logged in: dc754
+django.server INFO 2025-03-19 16:31:03,958 basehttp 27972 26680 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:31:03,969 basehttp 27972 26680 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:31:04,818 basehttp 27972 26680 "GET /lootboxes/open/ HTTP/1.1" 200 2245
+django.server INFO 2025-03-19 16:31:06,271 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.request WARNING 2025-03-19 16:31:06,280 log 27972 26680 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:31:06,280 basehttp 27972 26680 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:31:12,918 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-19 16:31:13,705 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-19 16:31:14,311 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.request WARNING 2025-03-19 16:31:14,317 log 27972 26680 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:31:14,318 basehttp 27972 26680 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:31:14,924 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.request WARNING 2025-03-19 16:31:14,933 log 27972 26680 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:31:14,933 basehttp 27972 26680 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:31:15,469 basehttp 27972 26680 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-19 16:31:16,560 basehttp 27972 26680 "GET /home/ HTTP/1.1" 200 1842
+django.utils.autoreload INFO 2025-03-19 16:31:56,434 autoreload 24012 19428 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:31:57,441 basehttp 24012 4344 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:31:57,478 basehttp 24012 4344 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:32:00,753 views 24012 4344 User logged in: dc754
+django.server INFO 2025-03-19 16:32:00,776 basehttp 24012 4344 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:32:00,787 basehttp 24012 4344 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:32:03,527 basehttp 24012 4344 "GET /lootboxes/open/ HTTP/1.1" 200 2245
+django.server INFO 2025-03-19 16:32:08,967 basehttp 24012 4344 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-19 16:32:17,272 basehttp 24012 4344 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-19 16:32:18,240 basehttp 24012 4344 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.request WARNING 2025-03-19 16:32:18,250 log 24012 4344 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:32:18,250 basehttp 24012 4344 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-19 16:34:05,388 autoreload 26544 10508 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:34:06,278 basehttp 26544 28376 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:34:06,313 basehttp 26544 28376 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:34:07,719 views 26544 28376 User logged in: dc754
+django.server INFO 2025-03-19 16:34:07,742 basehttp 26544 28376 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:34:07,751 basehttp 26544 28376 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:34:12,529 basehttp 26544 28376 "GET /lootboxes/open/ HTTP/1.1" 200 2245
+django.server INFO 2025-03-19 16:34:14,891 basehttp 26544 28376 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.request WARNING 2025-03-19 16:34:14,904 log 26544 28376 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:34:14,905 basehttp 26544 28376 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-19 16:34:20,312 basehttp 26544 28376 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.request WARNING 2025-03-19 16:34:20,322 log 26544 28376 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:34:20,322 basehttp 26544 28376 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-19 16:40:12,422 autoreload 1824 28428 Watching for file changes with StatReloader
+django.server INFO 2025-03-19 16:40:14,434 basehttp 1824 11208 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:40:14,468 basehttp 1824 11208 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-19 16:40:17,328 views 1824 11208 User logged in: dc754
+django.server INFO 2025-03-19 16:40:17,351 basehttp 1824 11208 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-19 16:40:17,362 basehttp 1824 11208 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:40:18,787 basehttp 1824 11208 "GET /lootboxes/open/ HTTP/1.1" 200 2245
+django.server INFO 2025-03-19 16:40:20,113 basehttp 1824 11208 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.request WARNING 2025-03-19 16:40:20,123 log 1824 11208 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:40:20,124 basehttp 1824 11208 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.server INFO 2025-03-19 16:40:26,442 basehttp 1824 11208 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-19 16:40:31,994 basehttp 1824 11208 "GET /collectables/ HTTP/1.1" 200 519
+django.request WARNING 2025-03-19 16:40:32,020 log 1824 11208 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-19 16:40:32,020 basehttp 1824 11208 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.request WARNING 2025-03-19 16:40:32,027 log 1824 11208 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-19 16:40:32,028 basehttp 1824 11208 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 11:52:01,000 autoreload 22536 24364 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 11:52:03,025 basehttp 22536 3420 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:52:03,277 basehttp 22536 3420 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 11:52:03,355 basehttp 22536 3420 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 11:52:05,370 views 22536 3420 User logged in: dc754
+django.server INFO 2025-03-20 11:52:05,422 basehttp 22536 3420 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:52:05,445 basehttp 22536 3420 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 11:52:06,639 basehttp 22536 3420 "GET /collectables/ HTTP/1.1" 200 255
+django.server INFO 2025-03-20 11:52:10,866 basehttp 22536 3420 "GET /lootboxes/open/ HTTP/1.1" 200 2245
+django.server INFO 2025-03-20 11:52:12,113 basehttp 22536 3420 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.request WARNING 2025-03-20 11:52:12,155 log 22536 3420 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 11:52:12,156 basehttp 22536 3420 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 11:52:13,395 basehttp 22536 3420 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 11:52:14,463 basehttp 22536 3420 "GET /collectables/ HTTP/1.1" 200 367
+django.request WARNING 2025-03-20 11:52:14,513 log 22536 3420 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 11:52:14,514 basehttp 22536 3420 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 11:53:10,730 autoreload 24828 17292 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 11:53:12,205 basehttp 24828 14468 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:53:12,270 basehttp 24828 14468 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 11:53:14,438 views 24828 14468 User logged in: dc754
+django.server INFO 2025-03-20 11:53:14,495 basehttp 24828 14468 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:53:14,516 basehttp 24828 14468 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 11:53:16,117 basehttp 24828 14468 "GET /collectables/ HTTP/1.1" 200 367
+django.request WARNING 2025-03-20 11:53:16,167 log 24828 14468 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 11:53:16,167 basehttp 24828 14468 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 11:53:20,614 basehttp 24828 14468 "GET /collectables/ HTTP/1.1" 200 367
+django.request WARNING 2025-03-20 11:53:20,686 log 24828 14468 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 11:53:20,687 basehttp 24828 14468 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 11:54:32,092 autoreload 11468 8056 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 11:54:34,024 basehttp 11468 1728 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:54:34,091 basehttp 11468 1728 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 11:54:36,660 views 11468 1728 User logged in: dc754
+django.server INFO 2025-03-20 11:54:36,717 basehttp 11468 1728 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 11:54:36,738 basehttp 11468 1728 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 11:54:37,936 basehttp 11468 1728 "GET /collectables/ HTTP/1.1" 200 367
+django.request WARNING 2025-03-20 11:54:38,007 log 11468 1728 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 11:54:38,008 basehttp 11468 1728 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 14:31:39,003 autoreload 2436 1956 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:31:40,550 basehttp 2436 6376 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:31:40,621 basehttp 2436 6376 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 14:31:40,656 basehttp 2436 6376 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 14:31:43,745 views 2436 6376 User logged in: dc754
+django.server INFO 2025-03-20 14:31:43,772 basehttp 2436 6376 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:31:43,794 basehttp 2436 6376 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 14:31:45,339 basehttp 2436 6376 "GET /lootboxes/open/ HTTP/1.1" 200 2194
+django.server INFO 2025-03-20 14:31:47,059 basehttp 2436 6376 "POST /lootboxes/open/ HTTP/1.1" 200 19
+django.server INFO 2025-03-20 14:31:49,578 basehttp 2436 6376 "POST /lootboxes/open/ HTTP/1.1" 200 88
+django.request WARNING 2025-03-20 14:31:49,599 log 2436 6376 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 14:31:49,599 basehttp 2436 6376 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.utils.autoreload INFO 2025-03-20 14:33:31,535 autoreload 24412 24236 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:33:32,686 basehttp 24412 4044 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:33:32,720 basehttp 24412 4044 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 14:33:35,048 views 24412 4044 User logged in: dc754
+django.server INFO 2025-03-20 14:33:35,073 basehttp 24412 4044 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:33:35,083 basehttp 24412 4044 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 14:33:40,172 basehttp 24412 4044 "GET /lootboxes/open/ HTTP/1.1" 200 2194
+django.server INFO 2025-03-20 14:33:44,226 basehttp 24412 4044 "POST /lootboxes/open/ HTTP/1.1" 200 123
+django.request WARNING 2025-03-20 14:33:44,239 log 24412 4044 Not Found: /media/media/business_school.jpg
+django.server WARNING 2025-03-20 14:33:44,239 basehttp 24412 4044 "GET /media/media/business_school.jpg HTTP/1.1" 404 5093
+django.utils.autoreload INFO 2025-03-20 14:39:18,504 autoreload 3092 7868 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:39:19,633 basehttp 3092 16060 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:39:19,666 basehttp 3092 16060 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 14:39:21,556 views 3092 16060 User logged in: dc754
+django.server INFO 2025-03-20 14:39:21,583 basehttp 3092 16060 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:39:21,593 basehttp 3092 16060 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 14:39:22,563 basehttp 3092 16060 "GET /lootboxes/open/ HTTP/1.1" 200 2524
+django.request WARNING 2025-03-20 14:39:24,214 log 3092 16060 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-20 14:39:24,215 basehttp 3092 16060 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-20 14:40:15,196 autoreload 22288 27804 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:40:17,117 basehttp 22288 17636 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:40:17,155 basehttp 22288 17636 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 14:40:18,551 views 22288 17636 User logged in: dc754
+django.server INFO 2025-03-20 14:40:18,576 basehttp 22288 17636 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:40:18,587 basehttp 22288 17636 "GET /home/ HTTP/1.1" 200 1842
+django.server INFO 2025-03-20 14:40:19,503 basehttp 22288 17636 "GET /lootboxes/open/ HTTP/1.1" 200 2529
+django.server INFO 2025-03-20 14:40:21,079 basehttp 22288 17636 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 14:40:21,088 log 22288 17636 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 14:40:21,089 basehttp 22288 17636 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 14:40:26,941 basehttp 22288 17636 "POST /lootboxes/open/ HTTP/1.1" 200 57
+django.server INFO 2025-03-20 14:40:28,740 basehttp 22288 17636 "POST /lootboxes/open/ HTTP/1.1" 200 126
+django.request WARNING 2025-03-20 14:40:28,749 log 22288 17636 Not Found: /media/media/forum.jpg
+django.server WARNING 2025-03-20 14:40:28,749 basehttp 22288 17636 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
+django.server INFO 2025-03-20 14:40:31,915 basehttp 22288 17636 "GET /home/ HTTP/1.1" 200 1842
