@@ -8,6 +8,7 @@ from .views import CustomLogoutView, LoginFormView
 from django.http import HttpResponse
 from django.conf import settings
 from django.conf.urls.static import static
+from collectables import views as c_views
 
 # Placeholder views
 def placeholder_view(request):
@@ -23,8 +24,4 @@ urlpatterns = [
     path("accounts/update_profile/", views.update_profile, name="update_profile"),
     path("accounts/change_password/", views.change_password, name="change_password"),
     path("accounts/view_data/", views.view_user_data, name="view_user_data"),
-    path("how-to-play/", placeholder_view, name="how_to_play"),
-    path("tasks-view/", placeholder_view, name="tasks_view"),
-    path("leaderboard/", lviews.leaderboard, name="leaderboard"),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
-
+]
