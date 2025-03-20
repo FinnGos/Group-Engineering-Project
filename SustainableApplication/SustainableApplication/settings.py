@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "tasks.apps.TasksConfig",
     "TermsAndConditions.apps.TermsandconditionsConfig",
     'collectables.apps.CollectablesConfig',
+    "unlockables.apps.UnlockablesConfig",
 ]
 
 MIDDLEWARE = [

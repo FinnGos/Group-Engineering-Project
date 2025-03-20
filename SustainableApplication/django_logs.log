@@ -501,3 +501,824 @@ django.server INFO 2025-03-13 10:33:18,687 basehttp 16944 22464 "GET /home/ HTTP
 django.server WARNING 2025-03-13 10:33:18,766 basehttp 16944 22464 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-03-13 10:33:19,746 basehttp 16944 17264 "GET /tasks/ HTTP/1.1" 200 3713
 django.server WARNING 2025-03-13 10:33:19,796 basehttp 16944 17264 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-20 17:00:42,711 autoreload 23168 16436 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:00:44,135 basehttp 23168 2360 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:00:44,206 basehttp 23168 2360 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:00:44,433 basehttp 23168 2360 "GET /static/css/styles.css HTTP/1.1" 200 180
+django.request WARNING 2025-03-20 17:00:44,545 log 23168 2360 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 17:00:44,545 basehttp 23168 2360 "GET /favicon.ico HTTP/1.1" 404 4578
+django INFO 2025-03-20 17:00:55,907 views 23168 2360 User logged in: superadmin
+django.server INFO 2025-03-20 17:00:55,933 basehttp 23168 2360 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:00:55,942 basehttp 23168 2360 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 17:01:04,978 basehttp 23168 2360 "GET /admin/ HTTP/1.1" 200 5296
+django.server INFO 2025-03-20 17:01:05,024 basehttp 23168 2360 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+django.server INFO 2025-03-20 17:01:05,026 basehttp 23168 14664 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+django.server INFO 2025-03-20 17:01:05,026 basehttp 23168 20560 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+django.server INFO 2025-03-20 17:01:05,026 basehttp 23168 21508 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+django.server INFO 2025-03-20 17:01:05,026 basehttp 23168 24156 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+django.server INFO 2025-03-20 17:01:05,027 basehttp 23168 18060 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+django.server INFO 2025-03-20 17:01:05,126 basehttp 23168 18060 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+django.server INFO 2025-03-20 17:01:05,126 basehttp 23168 21508 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+django.server INFO 2025-03-20 17:01:05,127 basehttp 23168 24156 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+django.server INFO 2025-03-20 17:01:07,307 basehttp 23168 21508 "GET /admin/auth/group/ HTTP/1.1" 200 7093
+django.server INFO 2025-03-20 17:01:07,338 basehttp 23168 21508 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+django.server INFO 2025-03-20 17:01:07,360 basehttp 23168 24156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:01:07,360 basehttp 23168 18060 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+django.server INFO 2025-03-20 17:01:07,361 basehttp 23168 14664 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+django.server INFO 2025-03-20 17:01:07,361 basehttp 23168 2360 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+django.server INFO 2025-03-20 17:01:07,361 basehttp 23168 20560 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+django.server INFO 2025-03-20 17:01:07,365 basehttp 23168 24156 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+django.server INFO 2025-03-20 17:01:07,365 basehttp 23168 20560 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+django.server INFO 2025-03-20 17:01:07,367 basehttp 23168 21508 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+django.server INFO 2025-03-20 17:01:07,373 basehttp 23168 21508 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+django.server INFO 2025-03-20 17:01:07,422 basehttp 23168 21508 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+django.server INFO 2025-03-20 17:01:07,469 basehttp 23168 21508 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+django.server INFO 2025-03-20 17:01:07,486 basehttp 23168 21508 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+django.server INFO 2025-03-20 17:01:10,241 basehttp 23168 21508 "GET /admin/auth/ HTTP/1.1" 200 5316
+django.server INFO 2025-03-20 17:01:11,761 basehttp 23168 21508 "GET /admin/auth/group/ HTTP/1.1" 200 7093
+django.server INFO 2025-03-20 17:01:11,807 basehttp 23168 21508 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:01:13,705 basehttp 23168 21508 "GET /admin/auth/ HTTP/1.1" 200 5316
+django.server INFO 2025-03-20 17:01:14,366 basehttp 23168 21508 "GET /admin/ HTTP/1.1" 200 5296
+django.server INFO 2025-03-20 17:01:16,163 basehttp 23168 21508 "GET /admin/auth/group/add/ HTTP/1.1" 200 12031
+django.server INFO 2025-03-20 17:01:16,209 basehttp 23168 2360 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+django.server INFO 2025-03-20 17:01:16,209 basehttp 23168 20560 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+django.server INFO 2025-03-20 17:01:16,210 basehttp 23168 14664 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+django.server INFO 2025-03-20 17:01:16,210 basehttp 23168 21508 "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+django.server INFO 2025-03-20 17:01:16,213 basehttp 23168 24156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:01:16,316 basehttp 23168 21508 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+django.server INFO 2025-03-20 17:01:16,317 basehttp 23168 24156 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+django.server INFO 2025-03-20 17:01:16,350 basehttp 23168 24156 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+django.server INFO 2025-03-20 17:01:16,351 basehttp 23168 14664 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+django.server INFO 2025-03-20 17:01:16,351 basehttp 23168 21508 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+django.server INFO 2025-03-20 17:01:55,058 basehttp 23168 21508 "GET /admin/auth/ HTTP/1.1" 200 5316
+django.server INFO 2025-03-20 17:01:56,355 basehttp 23168 21508 "GET /admin/ HTTP/1.1" 200 5296
+django.utils.autoreload INFO 2025-03-20 17:06:55,033 autoreload 23168 16436 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:06:55,790 autoreload 14176 5560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:07:01,980 autoreload 12820 5368 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:07:03,138 basehttp 12820 2856 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:07:03,166 basehttp 12820 2856 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:07:03,291 basehttp 12820 2856 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 17:07:21,464 views 12820 2856 User logged in: superadmin
+django.server INFO 2025-03-20 17:07:21,482 basehttp 12820 2856 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:07:21,493 basehttp 12820 2856 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 17:07:25,396 basehttp 12820 2856 "GET /admin/ HTTP/1.1" 200 5296
+django.server INFO 2025-03-20 17:07:32,196 basehttp 12820 2856 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:07:32,211 basehttp 12820 2856 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:07:33,825 basehttp 12820 2856 "GET /admin/ HTTP/1.1" 200 5296
+django.server INFO 2025-03-20 17:07:39,048 basehttp 12820 2856 "GET /admin/auth/group/ HTTP/1.1" 200 7093
+django.server INFO 2025-03-20 17:07:39,085 basehttp 12820 2856 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 17:09:14,676 autoreload 12820 5368 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\home\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:09:15,513 autoreload 25948 4092 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:09:19,189 basehttp 25948 12644 "GET /admin/auth/group/ HTTP/1.1" 200 7741
+django.server INFO 2025-03-20 17:09:19,218 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:09:21,893 basehttp 25948 12644 "GET /admin/home/customuser/add/ HTTP/1.1" 200 25536
+django.server INFO 2025-03-20 17:09:21,928 basehttp 25948 17420 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:09:22,055 basehttp 25948 12644 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+django.server INFO 2025-03-20 17:09:22,056 basehttp 25948 23776 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+django.server INFO 2025-03-20 17:09:22,156 basehttp 25948 23776 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+django.server INFO 2025-03-20 17:09:22,156 basehttp 25948 12644 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+django.server INFO 2025-03-20 17:09:47,840 basehttp 25948 12644 "GET /admin/auth/group/add/ HTTP/1.1" 200 12679
+django.server INFO 2025-03-20 17:09:47,871 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:15,411 basehttp 25948 12644 "GET /admin/home/customuser/add/ HTTP/1.1" 200 25536
+django.server INFO 2025-03-20 17:10:15,439 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:18,601 basehttp 25948 12644 "GET /admin/auth/group/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8854
+django.server INFO 2025-03-20 17:10:18,625 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:32,934 basehttp 25948 12644 "GET /admin/home/customuser/ HTTP/1.1" 200 10781
+django.server INFO 2025-03-20 17:10:32,977 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:35,163 basehttp 25948 12644 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 25954
+django.server INFO 2025-03-20 17:10:35,192 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:46,647 basehttp 25948 12644 "POST /admin/home/customuser/10/change/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:10:46,698 basehttp 25948 12644 "GET /admin/home/customuser/ HTTP/1.1" 200 10986
+django.server INFO 2025-03-20 17:10:46,805 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:46,932 basehttp 25948 12644 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+django.server INFO 2025-03-20 17:10:50,611 basehttp 25948 12644 "GET /admin/auth/group/ HTTP/1.1" 200 7741
+django.server INFO 2025-03-20 17:10:50,639 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:10:51,991 basehttp 25948 12644 "GET /admin/home/customuser/ HTTP/1.1" 200 10781
+django.server INFO 2025-03-20 17:10:52,017 basehttp 25948 12644 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 17:12:15,043 autoreload 25948 4092 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\collectables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:12:15,879 autoreload 15916 18164 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:12:36,050 autoreload 15916 18164 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\collectables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:12:36,815 autoreload 21376 23592 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:12:38,245 basehttp 21376 11780 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:12:38,286 basehttp 21376 11780 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:12:38,461 basehttp 21376 11780 "GET /static/css/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 17:12:41,229 basehttp 21376 11780 "GET /admin/home/customuser/ HTTP/1.1" 200 11505
+django.server INFO 2025-03-20 17:12:41,281 basehttp 21376 11780 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:12:43,428 basehttp 21376 11780 "GET /admin/collectables/collectable/ HTTP/1.1" 200 8186
+django.server INFO 2025-03-20 17:12:43,455 basehttp 21376 11780 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:12:45,797 basehttp 21376 11780 "GET /admin/collectables/collectable/add/ HTTP/1.1" 200 10203
+django.server INFO 2025-03-20 17:12:45,826 basehttp 21376 11780 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:12:49,858 basehttp 21376 11780 "GET /admin/collectables/collectable/ HTTP/1.1" 200 8186
+django.utils.autoreload INFO 2025-03-20 17:13:57,200 autoreload 21376 23592 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\tasks\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:13:57,992 autoreload 5432 10108 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:14:01,383 basehttp 5432 25848 "GET /admin/collectables/collectable/ HTTP/1.1" 200 8818
+django.server INFO 2025-03-20 17:14:01,410 basehttp 5432 25848 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:14:04,024 basehttp 5432 25848 "GET /admin/tasks/tasks/ HTTP/1.1" 200 13017
+django.server INFO 2025-03-20 17:14:04,056 basehttp 5432 25848 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:14:13,685 basehttp 5432 25848 "GET /admin/tasks/tasks/11/change/ HTTP/1.1" 200 14995
+django.server INFO 2025-03-20 17:14:13,727 basehttp 5432 25848 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:14:22,388 basehttp 5432 25848 "GET /admin/collectables/collectable/ HTTP/1.1" 200 8818
+django.server INFO 2025-03-20 17:14:22,417 basehttp 5432 25848 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:14:23,617 basehttp 5432 25848 "GET /admin/home/customuser/ HTTP/1.1" 200 12137
+django.server INFO 2025-03-20 17:14:23,659 basehttp 5432 25848 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 17:15:25,828 autoreload 5432 10108 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:15:26,659 autoreload 18676 1060 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:15:30,352 basehttp 18676 26500 "GET /admin/home/customuser/ HTTP/1.1" 200 12137
+django.server INFO 2025-03-20 17:15:30,384 basehttp 18676 26500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 17:15:30,388 autoreload 18676 1060 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:15:31,265 autoreload 11972 22220 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:15:31,688 basehttp 11972 26508 "GET /admin/home/customuser/ HTTP/1.1" 200 12137
+django.server INFO 2025-03-20 17:15:31,720 basehttp 11972 26508 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 17:17:24,530 autoreload 23760 11808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:21:51,168 autoreload 23760 11808 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:21:51,924 autoreload 21688 3176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:22:02,869 autoreload 18196 15912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:22:47,362 autoreload 18196 15912 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:22:48,119 autoreload 26240 1908 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:23:00,840 autoreload 26240 1908 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:23:01,618 autoreload 772 11968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:24:08,305 autoreload 772 11968 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:24:09,038 autoreload 1988 10772 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:25:51,398 autoreload 1988 10772 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 17:25:52,156 autoreload 26176 11756 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 17:26:18,564 autoreload 6332 4356 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 17:26:20,557 basehttp 6332 23748 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:26:20,594 basehttp 6332 23748 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 17:26:20,709 basehttp 6332 23748 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 17:26:31,938 views 6332 23748 User logged in: superadmin
+django.server INFO 2025-03-20 17:26:31,958 basehttp 6332 23748 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 17:26:31,969 basehttp 6332 23748 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 17:26:35,904 basehttp 6332 23748 "GET /admin/ HTTP/1.1" 200 10368
+django.server INFO 2025-03-20 17:26:40,377 basehttp 6332 23748 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 10412
+django.server INFO 2025-03-20 17:26:40,428 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:42,125 basehttp 6332 23748 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 17:26:42,149 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:43,700 basehttp 6332 23748 "GET /admin/unlockables/building/ HTTP/1.1" 200 10386
+django.server INFO 2025-03-20 17:26:43,729 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:45,422 basehttp 6332 23748 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 17:26:45,449 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:46,807 basehttp 6332 23748 "GET /admin/unlockables/item/add/ HTTP/1.1" 200 13012
+django.server INFO 2025-03-20 17:26:46,854 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:51,884 basehttp 6332 23748 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 10412
+django.server INFO 2025-03-20 17:26:51,911 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:53,618 basehttp 6332 23748 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 17:26:53,645 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:59,393 basehttp 6332 23748 "GET /admin/home/customuser/6/change/ HTTP/1.1" 200 31324
+django.server INFO 2025-03-20 17:26:59,422 basehttp 6332 23748 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:26:59,533 basehttp 6332 23748 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+django.server INFO 2025-03-20 17:26:59,539 basehttp 6332 7156 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+django.server INFO 2025-03-20 17:27:20,381 basehttp 6332 7156 "GET /admin/collectables/collectable/add/ HTTP/1.1" 200 12428
+django.server INFO 2025-03-20 17:27:20,410 basehttp 6332 7156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:27:24,546 basehttp 6332 7156 "GET /admin/unlockables/ HTTP/1.1" 200 6561
+django.server INFO 2025-03-20 17:27:25,934 basehttp 6332 7156 "GET /admin/collectables/collectable/add/ HTTP/1.1" 200 12428
+django.server INFO 2025-03-20 17:27:27,535 basehttp 6332 7156 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 17:27:27,564 basehttp 6332 7156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:27:32,286 basehttp 6332 7156 "GET /admin/unlockables/item/add/ HTTP/1.1" 200 13012
+django.server INFO 2025-03-20 17:27:32,313 basehttp 6332 7156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:27:34,472 basehttp 6332 7156 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 17:27:35,926 basehttp 6332 7156 "GET /admin/unlockables/item/add/ HTTP/1.1" 200 13012
+django.server INFO 2025-03-20 17:27:35,953 basehttp 6332 7156 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 17:27:37,615 basehttp 6332 7156 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 18:05:47,261 basehttp 6332 5368 "GET /admin/unlockables/building/ HTTP/1.1" 200 10386
+django.server INFO 2025-03-20 18:05:47,295 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:08:42,086 basehttp 6332 5368 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 18:08:42,117 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:08:46,874 basehttp 6332 5368 "GET /admin/home/customuser/9/change/ HTTP/1.1" 200 31316
+django.server INFO 2025-03-20 18:08:46,908 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:08:56,674 basehttp 6332 5368 "GET /admin/collectables/collectable/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5640
+django.server INFO 2025-03-20 18:08:56,694 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:09:46,628 basehttp 6332 5368 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 18:09:47,316 basehttp 6332 5368 "GET /admin/unlockables/building/ HTTP/1.1" 200 10386
+django.server INFO 2025-03-20 18:09:47,861 basehttp 6332 5368 "GET /admin/unlockables/item/ HTTP/1.1" 200 10358
+django.server INFO 2025-03-20 18:09:48,642 basehttp 6332 5368 "GET /admin/collectables/collectable/add/ HTTP/1.1" 200 12428
+django.server INFO 2025-03-20 18:09:49,221 basehttp 6332 5368 "GET /admin/home/customuser/6/change/ HTTP/1.1" 200 31324
+django.server INFO 2025-03-20 18:09:56,238 basehttp 6332 5368 "GET /admin/ HTTP/1.1" 200 10368
+django.server INFO 2025-03-20 18:09:57,719 basehttp 6332 5368 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 18:09:57,762 basehttp 6332 5368 "GET /static/css/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 18:09:59,247 basehttp 6332 5368 "GET /collectables/ HTTP/1.1" 200 255
+django.server INFO 2025-03-20 18:10:21,668 basehttp 6332 5368 "GET /admin/ HTTP/1.1" 200 10368
+django.server INFO 2025-03-20 18:10:23,293 basehttp 6332 5368 "GET /admin/collectables/collectable/add/ HTTP/1.1" 200 12428
+django.server INFO 2025-03-20 18:10:23,343 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:10:26,807 basehttp 6332 5368 "GET /admin/collectables/collectable/ HTTP/1.1" 200 10411
+django.server INFO 2025-03-20 18:10:26,851 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:10:29,352 basehttp 6332 5368 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 18:10:29,380 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:10:30,685 basehttp 6332 5368 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 31352
+django.server INFO 2025-03-20 18:10:30,713 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:10:36,238 basehttp 6332 5368 "GET /admin/collectables/collectable/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5640
+django.server INFO 2025-03-20 18:10:36,259 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.request WARNING 2025-03-20 18:11:08,595 log 6332 5368 Not Found: /buy/
+django.server WARNING 2025-03-20 18:11:08,596 basehttp 6332 5368 "GET /buy/ HTTP/1.1" 404 4836
+django.request WARNING 2025-03-20 18:11:20,028 log 6332 5368 Not Found: /buy/item/
+django.server WARNING 2025-03-20 18:11:20,029 basehttp 6332 5368 "GET /buy/item/ HTTP/1.1" 404 4851
+django.server INFO 2025-03-20 18:15:32,931 basehttp 6332 5368 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 31352
+django.server INFO 2025-03-20 18:18:52,662 basehttp 6332 5368 "GET /admin/collectables/collectable/ HTTP/1.1" 200 10411
+django.server INFO 2025-03-20 18:18:52,690 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:19:07,133 basehttp 6332 5368 "GET /admin/unlockables/item/add/ HTTP/1.1" 200 13012
+django.server INFO 2025-03-20 18:19:07,161 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:21:29,590 basehttp 6332 5368 "POST /admin/unlockables/item/add/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 18:21:29,645 basehttp 6332 5368 "GET /admin/unlockables/item/ HTTP/1.1" 200 11858
+django.server INFO 2025-03-20 18:21:29,771 basehttp 6332 5368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:21:42,160 basehttp 6332 5368 "GET /admin/ HTTP/1.1" 200 10722
+django.request WARNING 2025-03-20 18:21:49,207 log 6332 5368 Not Found: /buy
+django.server WARNING 2025-03-20 18:21:49,208 basehttp 6332 5368 "GET /buy HTTP/1.1" 404 4833
+django.server INFO 2025-03-20 18:21:57,147 basehttp 6332 5368 "GET /buy/item/1 HTTP/1.1" 301 0
+django.request ERROR 2025-03-20 18:21:57,211 log 6332 26604 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 18:21:57,218 basehttp 6332 26604 "GET /buy/item/1/ HTTP/1.1" 500 83241
+django.request ERROR 2025-03-20 18:22:01,782 log 6332 26604 Internal Server Error: /buy/item/0/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 8, in buy_item
+    item = Item.objects.get(id=item_id)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+unlockables.models.Item.DoesNotExist: Item matching query does not exist.
+django.server ERROR 2025-03-20 18:22:01,786 basehttp 6332 26604 "GET /buy/item/0/ HTTP/1.1" 500 83009
+django.server INFO 2025-03-20 18:22:07,943 basehttp 6332 26604 "GET /admin/ HTTP/1.1" 200 10722
+django.server INFO 2025-03-20 18:22:12,274 basehttp 6332 26604 "GET /admin/unlockables/item/ HTTP/1.1" 200 11650
+django.server INFO 2025-03-20 18:22:12,321 basehttp 6332 26604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:22:13,987 basehttp 6332 26604 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 13444
+django.server INFO 2025-03-20 18:22:14,029 basehttp 6332 26604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:22:23,839 basehttp 6332 26604 "GET /admin/unlockables/item/ HTTP/1.1" 200 11650
+django.server INFO 2025-03-20 18:22:25,960 basehttp 6332 26604 "GET /admin/ HTTP/1.1" 200 10722
+django.server INFO 2025-03-20 18:22:52,023 basehttp 6332 26604 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 13444
+django.server INFO 2025-03-20 18:22:52,057 basehttp 6332 26604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:22:56,484 basehttp 6332 26604 "POST /admin/unlockables/item/1/change/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 18:22:56,531 basehttp 6332 26604 "GET /admin/unlockables/item/ HTTP/1.1" 200 11860
+django.server INFO 2025-03-20 18:22:56,771 basehttp 6332 26604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 18:22:58,752 basehttp 6332 26604 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 13444
+django.server INFO 2025-03-20 18:22:59,306 basehttp 6332 26604 "GET /admin/ HTTP/1.1" 200 11081
+django.server INFO 2025-03-20 18:22:59,920 basehttp 6332 26604 "GET /admin/unlockables/item/ HTTP/1.1" 200 11650
+django.server INFO 2025-03-20 18:23:02,258 basehttp 6332 26604 "GET /admin/unlockables/item/add/ HTTP/1.1" 200 13012
+django.server INFO 2025-03-20 18:23:02,953 basehttp 6332 26604 "GET /admin/collectables/collectable/ HTTP/1.1" 200 10411
+django.server INFO 2025-03-20 18:23:03,535 basehttp 6332 26604 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 31352
+django.server INFO 2025-03-20 18:23:03,870 basehttp 6332 26604 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 18:23:04,410 basehttp 6332 26604 "GET /admin/collectables/collectable/ HTTP/1.1" 200 10411
+django.server INFO 2025-03-20 18:23:04,892 basehttp 6332 26604 "GET /admin/ HTTP/1.1" 200 11081
+django.request ERROR 2025-03-20 18:23:21,998 log 6332 26604 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 18:23:22,003 basehttp 6332 26604 "GET /buy/item/1/ HTTP/1.1" 500 83241
+django.request ERROR 2025-03-20 18:23:36,755 log 6332 26604 Internal Server Error: /buy/item/0/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 8, in buy_item
+    item = Item.objects.get(id=item_id)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+unlockables.models.Item.DoesNotExist: Item matching query does not exist.
+django.server ERROR 2025-03-20 18:23:36,758 basehttp 6332 26604 "GET /buy/item/0/ HTTP/1.1" 500 83009
+django.request ERROR 2025-03-20 18:23:40,096 log 6332 26604 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 18:23:40,100 basehttp 6332 26604 "GET /buy/item/1/ HTTP/1.1" 500 83241
+django.utils.autoreload INFO 2025-03-20 19:04:51,043 autoreload 19556 23728 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 19:04:52,269 basehttp 19556 11784 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:04:52,352 basehttp 19556 11784 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 19:04:52,634 basehttp 19556 11784 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-20 19:05:04,159 views 19556 11784 User logged in: superadmin
+django.server INFO 2025-03-20 19:05:04,189 basehttp 19556 11784 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:05:04,198 basehttp 19556 11784 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 19:05:07,141 basehttp 19556 11784 "GET /admin/ HTTP/1.1" 200 11081
+django.server INFO 2025-03-20 19:05:11,974 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 10412
+django.server INFO 2025-03-20 19:05:12,026 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:05:14,020 basehttp 19556 11784 "GET /admin/unlockables/userprofile/add/ HTTP/1.1" 200 14566
+django.server INFO 2025-03-20 19:05:14,064 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:05:50,786 basehttp 19556 11784 "GET /admin/unlockables/building/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5675
+django.server INFO 2025-03-20 19:05:50,810 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:06:09,841 basehttp 19556 11784 "POST /admin/unlockables/userprofile/add/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:06:09,894 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11971
+django.server INFO 2025-03-20 19:06:10,016 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.request ERROR 2025-03-20 19:06:25,495 log 19556 11784 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 19:06:25,501 basehttp 19556 11784 "GET /buy/item/1/ HTTP/1.1" 500 83241
+django.server INFO 2025-03-20 19:06:42,021 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:06:45,532 basehttp 19556 11784 "GET /admin/unlockables/userprofile/1/change/ HTTP/1.1" 200 14833
+django.server INFO 2025-03-20 19:06:45,563 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:08:54,978 basehttp 19556 11784 "POST /admin/unlockables/userprofile/1/change/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:08:55,028 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11973
+django.server INFO 2025-03-20 19:08:55,256 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:06,612 basehttp 19556 11784 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 19:10:06,641 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:11,358 basehttp 19556 11784 "GET /admin/home/customuser/9/change/ HTTP/1.1" 200 31316
+django.server INFO 2025-03-20 19:10:11,388 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:24,326 basehttp 19556 11784 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 19:10:27,776 basehttp 19556 11784 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 31352
+django.server INFO 2025-03-20 19:10:27,820 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:38,222 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:10:38,247 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:40,500 basehttp 19556 11784 "GET /admin/unlockables/userprofile/1/change/ HTTP/1.1" 200 14833
+django.server INFO 2025-03-20 19:10:40,541 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:46,187 basehttp 19556 11784 "GET /admin/unlockables/userprofile/add/ HTTP/1.1" 200 14566
+django.server INFO 2025-03-20 19:10:46,216 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:48,089 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:10:48,116 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:10:57,317 basehttp 19556 11784 "GET /admin/unlockables/ HTTP/1.1" 200 6561
+django.server INFO 2025-03-20 19:10:59,387 basehttp 19556 11784 "GET /admin/ HTTP/1.1" 200 11838
+django.server INFO 2025-03-20 19:11:01,276 basehttp 19556 11784 "GET /admin/collectables/collectable/ HTTP/1.1" 200 10411
+django.server INFO 2025-03-20 19:11:01,310 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:03,224 basehttp 19556 11784 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 19:11:03,251 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:04,050 basehttp 19556 11784 "GET /admin/tasks/tasks/ HTTP/1.1" 200 14610
+django.server INFO 2025-03-20 19:11:04,077 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:06,238 basehttp 19556 11784 "GET /admin/tasks/tasks/11/change/ HTTP/1.1" 200 16588
+django.server INFO 2025-03-20 19:11:06,265 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:15,616 basehttp 19556 11784 "GET /admin/unlockables/building/ HTTP/1.1" 200 10386
+django.server INFO 2025-03-20 19:11:15,646 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:18,056 basehttp 19556 11784 "GET /admin/unlockables/item/ HTTP/1.1" 200 11650
+django.server INFO 2025-03-20 19:11:18,083 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:19,719 basehttp 19556 11784 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 13444
+django.server INFO 2025-03-20 19:11:19,745 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:24,416 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:11:24,446 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:27,256 basehttp 19556 11784 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 19:11:27,282 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:29,265 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:11:29,307 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:31,504 basehttp 19556 11784 "GET /admin/unlockables/userprofile/1/change/ HTTP/1.1" 200 14833
+django.server INFO 2025-03-20 19:11:31,534 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:37,815 basehttp 19556 11784 "GET /admin/unlockables/item/ HTTP/1.1" 200 11650
+django.server INFO 2025-03-20 19:11:37,863 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:39,109 basehttp 19556 11784 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 13444
+django.server INFO 2025-03-20 19:11:39,137 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:41,039 basehttp 19556 11784 "GET /admin/unlockables/building/ HTTP/1.1" 200 10386
+django.server INFO 2025-03-20 19:11:41,067 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:42,243 basehttp 19556 11784 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:11:42,273 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:48,872 basehttp 19556 11784 "GET /admin/unlockables/userprofile/1/change/ HTTP/1.1" 200 14833
+django.server INFO 2025-03-20 19:11:48,901 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:11:49,942 basehttp 19556 11784 "GET /admin/unlockables/building/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5675
+django.server INFO 2025-03-20 19:11:49,965 basehttp 19556 11784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 19:12:10,754 autoreload 22116 4208 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 19:12:11,911 basehttp 22116 11552 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:12:11,945 basehttp 22116 11552 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 19:12:20,398 basehttp 22116 11552 "GET /admin/home/customuser/ HTTP/1.1" 200 13730
+django.server INFO 2025-03-20 19:12:20,428 basehttp 22116 11552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:12:26,027 basehttp 22116 11552 "GET /home/signup/ HTTP/1.1" 200 2544
+django INFO 2025-03-20 19:12:41,596 views 22116 11552 User logged in: jacob
+django INFO 2025-03-20 19:12:41,613 views 22116 11552 New user signed up: jacob
+django.server INFO 2025-03-20 19:12:41,621 basehttp 22116 11552 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:12:41,631 basehttp 22116 11552 "GET /home/ HTTP/1.1" 200 1790
+django.request ERROR 2025-03-20 19:12:54,378 log 22116 11552 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 19:12:54,385 basehttp 22116 11552 "GET /buy/item/1/ HTTP/1.1" 500 83495
+django.request ERROR 2025-03-20 19:12:54,661 log 22116 11552 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+home.models.CustomUser.userprofile.RelatedObjectDoesNotExist: CustomUser has no userprofile.
+django.server ERROR 2025-03-20 19:12:54,666 basehttp 22116 11552 "GET /buy/item/1/ HTTP/1.1" 500 83221
+django.server INFO 2025-03-20 19:12:59,598 basehttp 22116 11552 "GET /admin/unlockables/userprofile/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:12:59,629 basehttp 22116 11552 "GET /admin/login/?next=/admin/unlockables/userprofile/ HTTP/1.1" 200 3722
+django.server INFO 2025-03-20 19:12:59,851 basehttp 22116 11552 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+django INFO 2025-03-20 19:13:14,749 views 22116 11552 User logged in: superadmin
+django.server INFO 2025-03-20 19:13:14,771 basehttp 22116 11552 "POST /admin/login/?next=/admin/unlockables/userprofile/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:13:14,822 basehttp 22116 11552 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:13:15,059 basehttp 22116 11552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:13:18,512 basehttp 22116 11552 "GET /admin/unlockables/userprofile/ HTTP/1.1" 200 11741
+django.server INFO 2025-03-20 19:13:18,541 basehttp 22116 11552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:14:16,492 basehttp 22116 11552 "GET /admin/home/customuser/ HTTP/1.1" 200 13996
+django.server INFO 2025-03-20 19:14:16,521 basehttp 22116 11552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:14:34,780 basehttp 22116 11552 "GET /admin/home/customuser/11/change/ HTTP/1.1" 200 31309
+django.server INFO 2025-03-20 19:14:34,808 basehttp 22116 11552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 19:21:15,645 autoreload 19556 11108 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 19:21:17,150 basehttp 19556 21008 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:21:17,201 basehttp 19556 21008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 19:21:17,270 basehttp 19556 21008 "GET /static/css/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 19:21:17,633 basehttp 19556 21008 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:21:17,643 basehttp 19556 21008 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 19:21:40,364 views 19556 21008 User logged in: superadmin
+django.server INFO 2025-03-20 19:21:40,388 basehttp 19556 21008 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:21:40,400 basehttp 19556 21008 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 19:21:45,987 basehttp 19556 21008 "GET /admin/ HTTP/1.1" 200 10431
+django.server INFO 2025-03-20 19:21:48,221 basehttp 19556 21008 "GET /admin/unlockables/item/ HTTP/1.1" 200 10731
+django.server INFO 2025-03-20 19:21:48,276 basehttp 19556 21008 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:21:50,454 basehttp 19556 21008 "GET /admin/unlockables/item/1/change/ HTTP/1.1" 200 12525
+django.server INFO 2025-03-20 19:21:50,483 basehttp 19556 21008 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 19:22:16,860 autoreload 19556 11108 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 19:22:17,741 autoreload 11024 21816 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 19:39:40,229 autoreload 8656 10916 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 19:39:43,807 basehttp 8656 21812 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:39:43,842 basehttp 8656 21812 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 19:39:44,039 basehttp 8656 21812 "GET /static/css/styles.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 19:39:44,254 basehttp 8656 21812 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:39:44,262 basehttp 8656 21812 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-20 19:39:57,156 views 8656 21812 User logged in: superadmin
+django.server INFO 2025-03-20 19:39:57,180 basehttp 8656 21812 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:39:57,191 basehttp 8656 21812 "GET /home/ HTTP/1.1" 200 1795
+django.server INFO 2025-03-20 19:40:03,887 basehttp 8656 21812 "GET /admin/ HTTP/1.1" 200 11107
+django.server INFO 2025-03-20 19:40:05,923 basehttp 8656 21812 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 9988
+django.server INFO 2025-03-20 19:40:05,973 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:40:10,001 basehttp 8656 21812 "GET /admin/unlockables/userinventory/add/ HTTP/1.1" 200 14916
+django.server INFO 2025-03-20 19:40:10,046 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:40:19,239 basehttp 8656 21812 "POST /admin/unlockables/userinventory/add/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:40:19,290 basehttp 8656 21812 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 11557
+django.server INFO 2025-03-20 19:40:19,516 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:40:22,554 basehttp 8656 21812 "GET /admin/unlockables/userinventory/1/change/ HTTP/1.1" 200 15187
+django.server INFO 2025-03-20 19:40:22,585 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:40:23,948 basehttp 8656 21812 "GET /admin/unlockables/userinventory/1/delete/ HTTP/1.1" 200 10149
+django.server INFO 2025-03-20 19:40:24,041 basehttp 8656 21812 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+django.server INFO 2025-03-20 19:40:32,581 basehttp 8656 21812 "POST /admin/unlockables/userinventory/1/delete/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 19:40:32,623 basehttp 8656 21812 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 10167
+django.server INFO 2025-03-20 19:40:32,774 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.request ERROR 2025-03-20 19:40:45,043 log 8656 21812 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'userprofile'
+django.server ERROR 2025-03-20 19:40:45,049 basehttp 8656 21812 "GET /buy/item/1/ HTTP/1.1" 500 78824
+django.request ERROR 2025-03-20 19:40:45,266 log 8656 21812 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'userprofile'
+django.server ERROR 2025-03-20 19:40:45,271 basehttp 8656 21812 "GET /buy/item/1/ HTTP/1.1" 500 78550
+django.server INFO 2025-03-20 19:40:57,870 basehttp 8656 21812 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 9988
+django.server INFO 2025-03-20 19:41:00,514 basehttp 8656 21812 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 9988
+django.server INFO 2025-03-20 19:41:00,541 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:41:01,534 basehttp 8656 21812 "GET /admin/home/customuser/ HTTP/1.1" 200 13558
+django.server INFO 2025-03-20 19:41:01,572 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 19:41:03,591 basehttp 8656 21812 "GET /admin/home/customuser/11/change/ HTTP/1.1" 200 31102
+django.server INFO 2025-03-20 19:41:03,635 basehttp 8656 21812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 20:57:43,479 basehttp 8656 2036 "GET /admin/unlockables/userinventory/ HTTP/1.1" 200 9988
+django.server INFO 2025-03-20 20:57:43,521 basehttp 8656 2036 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 20:57:45,499 basehttp 8656 2036 "GET /admin/unlockables/userinventory/add/ HTTP/1.1" 200 14916
+django.server INFO 2025-03-20 20:57:45,546 basehttp 8656 2036 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.request ERROR 2025-03-20 20:57:59,092 log 8656 2036 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.userprofile
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'userprofile'
+django.server ERROR 2025-03-20 20:57:59,096 basehttp 8656 2036 "GET /buy/item/1/ HTTP/1.1" 500 78550
+django.request ERROR 2025-03-20 20:58:27,338 log 8656 2036 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 9, in buy_item
+    profile = request.user.User
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'userprofile'
+django.server ERROR 2025-03-20 20:58:27,342 basehttp 8656 2036 "GET /buy/item/1/ HTTP/1.1" 500 78673
+django.utils.autoreload INFO 2025-03-20 20:58:27,515 autoreload 8656 10916 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:58:28,334 autoreload 18896 26104 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 20:58:36,561 autoreload 18896 26104 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:58:37,348 autoreload 27144 10244 Watching for file changes with StatReloader
+django.request ERROR 2025-03-20 20:58:38,141 log 27144 12892 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 11, in buy_item
+    if profile.carbo_coins >= item.price:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'carbo_coins'
+django.server ERROR 2025-03-20 20:58:38,146 basehttp 27144 12892 "GET /buy/item/1/ HTTP/1.1" 500 74757
+django.request ERROR 2025-03-20 20:58:50,573 log 27144 12892 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 11, in buy_item
+    if profile.carbo_coins >= item.price:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'carbo_coins'
+django.server ERROR 2025-03-20 20:58:50,577 basehttp 27144 12892 "GET /buy/item/1/ HTTP/1.1" 500 74748
+django.utils.autoreload INFO 2025-03-20 20:58:50,628 autoreload 27144 10244 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:58:51,436 autoreload 27420 15428 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 20:58:54,756 autoreload 27420 15428 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:58:55,587 autoreload 3824 26104 Watching for file changes with StatReloader
+django.request ERROR 2025-03-20 20:58:55,944 log 3824 7276 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 11, in buy_item
+    if profile.carbo_coins >= item.price:
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'carbo_coins'
+django.server ERROR 2025-03-20 20:58:55,950 basehttp 3824 7276 "GET /buy/item/1/ HTTP/1.1" 500 78848
+django.request ERROR 2025-03-20 20:58:56,305 log 3824 7276 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 11, in buy_item
+    if profile.carbo_coins >= item.price:
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'carbo_coins'
+django.server ERROR 2025-03-20 20:58:56,310 basehttp 3824 7276 "GET /buy/item/1/ HTTP/1.1" 500 78848
+django.server INFO 2025-03-20 20:59:04,506 basehttp 3824 13496 "GET /admin/unlockables/userinventory/add/ HTTP/1.1" 200 14916
+django.server INFO 2025-03-20 20:59:06,186 basehttp 3824 13496 "GET /admin/home/customuser/ HTTP/1.1" 200 13558
+django.server INFO 2025-03-20 20:59:06,214 basehttp 3824 13496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.server INFO 2025-03-20 20:59:08,158 basehttp 3824 13496 "GET /admin/home/customuser/10/change/ HTTP/1.1" 200 31145
+django.server INFO 2025-03-20 20:59:08,191 basehttp 3824 13496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-20 20:59:32,119 autoreload 3824 26104 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:59:33,020 autoreload 10796 16208 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 20:59:34,608 basehttp 10796 10916 "GET /admin/home/customuser/ HTTP/1.1" 200 13558
+django.request ERROR 2025-03-20 20:59:43,448 log 10796 10916 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 18, in buy_item
+    return redirect('game_page')  # Redirect to the main game page
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'game_page' not found. 'game_page' is not a valid view function or pattern name.
+django.server ERROR 2025-03-20 20:59:43,453 basehttp 10796 10916 "GET /buy/item/1/ HTTP/1.1" 500 92675
+django.request ERROR 2025-03-20 20:59:55,937 log 10796 10916 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 18, in buy_item
+    return redirect('game')  # Redirect to the main game page
+           ~~~~~~~~^^^^^^^^~~~~~
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'game_page' not found. 'game_page' is not a valid view function or pattern name.
+django.server ERROR 2025-03-20 20:59:55,940 basehttp 10796 10916 "GET /buy/item/1/ HTTP/1.1" 500 93053
+django.utils.autoreload INFO 2025-03-20 20:59:56,629 autoreload 10796 16208 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 20:59:57,391 autoreload 25984 16588 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:00:00,685 autoreload 25984 16588 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:00:01,429 autoreload 21700 15396 Watching for file changes with StatReloader
+django.request ERROR 2025-03-20 21:00:03,413 log 21700 18104 Internal Server Error: /buy/item/1/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 18, in buy_item
+    return redirect('game')  # Redirect to the main game page
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'game' not found. 'game' is not a valid view function or pattern name.
+django.server ERROR 2025-03-20 21:00:03,418 basehttp 21700 18104 "GET /buy/item/1/ HTTP/1.1" 500 92979
+django.utils.autoreload INFO 2025-03-20 21:00:14,649 autoreload 21700 15396 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:00:15,442 autoreload 956 26816 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:00:18,657 autoreload 956 26816 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:00:19,466 autoreload 22580 3176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:03:38,279 autoreload 22580 3176 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:03:39,088 autoreload 21896 5612 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:04:09,682 autoreload 21896 5612 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:04:10,456 autoreload 10736 26472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:04:20,876 autoreload 10736 26472 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:04:21,627 autoreload 4932 10096 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:04:24,462 autoreload 4932 10096 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:04:25,181 autoreload 26948 7576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-20 21:04:37,814 autoreload 26948 7576 C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-20 21:04:38,549 autoreload 2932 9640 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 21:04:40,494 basehttp 2932 26472 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-20 21:04:40,531 basehttp 2932 26472 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-20 21:04:40,682 basehttp 2932 26472 "GET /static/css/styles.css HTTP/1.1" 304 0
+django.request ERROR 2025-03-20 21:04:48,472 log 2932 26472 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Jacob\Group software\Group-Engineering-Project-6\SustainableApplication\unlockables\views.py", line 23, in shop
+    return render(request, 'shop.html', {'items': items})
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jacob\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+django.server ERROR 2025-03-20 21:04:48,479 basehttp 2932 26472 "GET /shop/ HTTP/1.1" 500 140403

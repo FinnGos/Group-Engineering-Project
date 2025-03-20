@@ -22,6 +22,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('unlockables.urls')),
     path('', include('TermsAndConditions.urls')),
     path('', include('PrivacyPolicy.urls')),
     path('', include('Checkin.urls')),

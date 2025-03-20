@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Shop</h2>
+
+<h3>Buy Collectables</h3>
+<ul>
+    {% for item in items %}
+    <li>
+        {{ item.name }} - {{ item.price }} Carbo Coins 
+        <a href="{% url 'buy_collectable' collectable.id %}">Buy</a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
