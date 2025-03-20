@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Daily Tasks{% endblock %}
+
+{% block content %}
+<!-- Link to tasks.css -->
+<link rel="stylesheet" href="{% static 'tasks.css' %}">
+
+<!-- Image Section -->
+<div class="top-section relative">
+    <div class="image-container bg-green-700 overflow-hidden" style="height: 800px;">
+        <img src="{% static 'images/dailyTasks.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center top;">
+    </div>
+
+    <!-- Tasks Section -->
+    <div class="tasks-section absolute inset-0 flex flex-col justify-center items-center text-white">
+        <div class="text-white text-center mb-6">
+            <h1 class="text-6xl font-bold text-center mb-6 outlined-text">Daily Tasks</h1>
+            <h2 class="text-3xl text-center mb-4 outlined-text">Tasks that can be completed</h2>
+        </div>
+        
+        <div class="task-grid grid grid-cols-3 gap-8">  <!-- Added grid layout with 3 columns -->
+            {% if tasks %}
+                {% for task in tasks %}
+                    <div class="task-item p-4 mb-4 bg-gray-800 rounded-lg">
+                        <strong class="task-name text-xl text-white">{{ task.task_name }}</strong>
+
+                        <!-- Progress Bar -->
+                        <div class="progress-container mt-2">
+                            <div class="progress-bar bg-green-400 text-center text-white" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
+                                {{ task.current_progress }}/{{ task.target }}
+                            </div>
+                        </div>
+
+                        <!-- Task Actions -->
+                        <div class="task-actions mt-4">
+                            <!-- Check In Button -->
+                            <form action="{% url 'get_location' task.id %}" method="GET">
+                                <button type="submit" class="btn btn-primary">Check In</button>
+                            </form>
+
+                            <!-- Claim Task Button -->
+                            <button id="claim-button-{{ task.id }}" class="btn btn-success mt-2" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
+                                Claim Task /
+                            </button>
+
+                            <!-- Progress Update Buttons -->
+                            <button class="btn btn-warning mt-2" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease Progress</button>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-span-3 text-center mt-6 bg-gray-800 text-white p-4 rounded-lg shadow-lg mb-6 flex justify-center">
+                    <p class="text-white">No tasks available to complete.</p>
+                </div>
+            {% endif %}
+        </div>
+        
+        <p class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6">
+            <a href="{% url 'home' %}" class="text-white">Back to Home</a>
+        </p>
+    </div>
+</div>
+
+<!-- JavaScript Section for AJAX Functionality -->
+<script>
+    function updateProgress(taskId, action) {
+        $.ajax({
+            url: "{% url 'update_progress' 1 'increase' %}".replace("1", taskId).replace("increase", action),
+            type: "POST",
+            data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
+            success: function(response) {
+                if (response.success) {
+                    let progressBar = document.getElementById("progress-bar-" + taskId);
+                    progressBar.style.width = response.new_progress + "%";
+                    progressBar.innerText = response.current_progress + "/" + response.target;
+                } else {
+                    alert(response.message);
+                }
+            }
+        });
+    }
+
+    function claimTask(taskId) {
+        $.ajax({
+            url: "{% url 'update_progress' 1 'claim' %}".replace("1", taskId),
+            type: "POST",
+            data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
+            success: function(response) {
+                if (response.success) {
+                    let progressBar = document.getElementById("progress-bar-" + taskId);
+                    progressBar.style.width = "100%";
+                    progressBar.innerText = response.current_progress + "/" + response.target;
+
+                    // Disable the claim button after it has been clicked
+                    document.getElementById("claim-button-" + taskId).disabled = true;
+                } else {
+                    alert(response.message);
+                }
+            }
+        });
+    }
+</script>
+
+{% endblock %}
