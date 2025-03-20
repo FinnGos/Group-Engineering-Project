@@ -6605,3 +6605,43 @@ django INFO 2025-03-13 12:50:02,026 views 2443 139937571116736 Failed login atte
 django.server INFO 2025-03-13 12:50:02,027 basehttp 2443 139937571116736 "POST /home/accounts/login/ HTTP/1.1" 200 6248
 django INFO 2025-03-13 12:50:05,100 views 2443 139937571116736 Failed login attempt for username: d
 django.server INFO 2025-03-13 12:50:05,101 basehttp 2443 139937571116736 "POST /home/accounts/login/ HTTP/1.1" 200 6248
+django.utils.autoreload INFO 2025-03-20 14:26:57,572 autoreload 7583 140279493161088 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 14:26:58,924 basehttp 7583 140279449552576 "GET /home/signup/ HTTP/1.1" 200 7503
+django.server INFO 2025-03-20 14:26:58,979 basehttp 7583 140279449552576 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-20 14:26:59,036 basehttp 7583 140279449552576 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-20 14:26:59,111 log 7583 140279449552576 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:26:59,111 basehttp 7583 140279449552576 "GET /favicon.ico HTTP/1.1" 404 4422
+django WARNING 2025-03-20 14:27:03,422 views 7583 140279449552576 Failed signup attempt.
+django.server INFO 2025-03-20 14:27:03,423 basehttp 7583 140279449552576 "POST /home/signup/ HTTP/1.1" 200 7830
+django.request WARNING 2025-03-20 14:27:03,598 log 7583 140279449552576 Not Found: /favicon.ico
+django.server WARNING 2025-03-20 14:27:03,599 basehttp 7583 140279449552576 "GET /favicon.ico HTTP/1.1" 404 4422
+django WARNING 2025-03-20 14:27:11,271 views 7583 140279449552576 Failed signup attempt.
+django.server INFO 2025-03-20 14:27:11,273 basehttp 7583 140279449552576 "POST /home/signup/ HTTP/1.1" 200 7936
+django INFO 2025-03-20 14:27:53,979 views 7583 140279449552576 User logged in: realusertest
+django INFO 2025-03-20 14:27:53,995 views 7583 140279449552576 New user signed up: realusertest
+django.server INFO 2025-03-20 14:27:54,005 basehttp 7583 140279449552576 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:27:54,015 basehttp 7583 140279449552576 "GET /home/ HTTP/1.1" 200 6203
+django.server INFO 2025-03-20 14:27:54,117 basehttp 7583 140279449552576 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-20 14:27:54,119 basehttp 7583 140279435384512 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django INFO 2025-03-20 14:27:56,608 views 7583 140279449552576 User logged out: realusertest
+django.server INFO 2025-03-20 14:27:56,608 basehttp 7583 140279449552576 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:27:56,618 basehttp 7583 140279449552576 "GET /home/accounts/login/ HTTP/1.1" 200 6314
+django.server INFO 2025-03-20 14:27:56,705 basehttp 7583 140279449552576 "GET /static/auth.css HTTP/1.1" 200 1844
+django INFO 2025-03-20 14:28:03,534 views 7583 140279449552576 Failed login attempt for username: testuser
+django.server INFO 2025-03-20 14:28:03,535 basehttp 7583 140279449552576 "POST /home/accounts/login/ HTTP/1.1" 200 6556
+django INFO 2025-03-20 14:28:16,607 views 7583 140279449552576 Failed login attempt for username: testUser
+django.server INFO 2025-03-20 14:28:16,608 basehttp 7583 140279449552576 "POST /home/accounts/login/ HTTP/1.1" 200 6556
+django.server INFO 2025-03-20 14:28:17,679 basehttp 7583 140279449552576 "GET /home/signup/ HTTP/1.1" 200 7503
+django WARNING 2025-03-20 14:28:39,442 views 7583 140279449552576 Failed signup attempt.
+django.server INFO 2025-03-20 14:28:39,442 basehttp 7583 140279449552576 "POST /home/signup/ HTTP/1.1" 200 7727
+django.server INFO 2025-03-20 14:28:39,485 basehttp 7583 140279449552576 "GET /static/auth.css HTTP/1.1" 200 1844
+django INFO 2025-03-20 14:28:55,481 views 7583 140279449552576 User logged in: loginplease
+django INFO 2025-03-20 14:28:55,494 views 7583 140279449552576 New user signed up: loginplease
+django.server INFO 2025-03-20 14:28:55,504 basehttp 7583 140279449552576 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:28:55,511 basehttp 7583 140279449552576 "GET /home/ HTTP/1.1" 200 6203
+django INFO 2025-03-20 14:28:57,153 views 7583 140279449552576 User logged out: loginplease
+django.server INFO 2025-03-20 14:28:57,153 basehttp 7583 140279449552576 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:28:57,161 basehttp 7583 140279449552576 "GET /home/accounts/login/ HTTP/1.1" 200 6314
+django INFO 2025-03-20 14:29:01,589 views 7583 140279449552576 User logged in: loginplease
+django.server INFO 2025-03-20 14:29:01,612 basehttp 7583 140279449552576 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 14:29:01,621 basehttp 7583 140279449552576 "GET /home/ HTTP/1.1" 200 6203

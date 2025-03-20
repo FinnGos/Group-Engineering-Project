@@ -41,11 +41,25 @@
     <h1 class="text-6xl font-bold mb-6 outlined-text">Sign Up</h1>
     <p class="text-3xl mb-6 outlined-text">Create an account and start your journey!</p>
 
-    <!-- Messages Block -->
+    <!-- Messages Block for Django messages -->
     {% if messages %}
       <div class="messages">
         {% for message in messages %}
           <div class="message">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Display form errors if any -->
+    {% if form.errors %}
+      <div class="messages">
+        {% for field in form %}
+          {% for error in field.errors %}
+            <div class="message">{{ error }}</div>
+          {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+          <div class="message">{{ error }}</div>
         {% endfor %}
       </div>
     {% endif %}
