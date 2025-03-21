@@ -89,10 +89,12 @@
                     : "";
 
                   lootResult.html(`
-                <div class="lootbox-result">
+                <div class="lootbox-result" style="text-align: center;">
                   <h3>Congratulations!</h3>
                   <p>You received: <strong>${response.loot_item.name}</strong></p>
-                  <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px;" />
+                  <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 320px; display: flex; justify-content: flex-start; align-items: center;">
+                    <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px; margin-left: 500; margin-right: 500;" />
+                  </div>
                   <p>Fun Fact: ${response.loot_item.fact}</p>
                   ${duplicateMessage}
                 </div>

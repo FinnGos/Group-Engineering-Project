@@ -1,0 +1,23 @@
+#loot-result {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 200px; /* Ensure the result area has enough height */
+    text-align: center; /* Optional: Center text within the div */
+  }
+  
+  .lootbox-result {
+    width: 100%;
+    max-width: 500px; /* Optional: Limit the width */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Center horizontally */
+  }
+  
+  .lootbox-result img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 20px auto; /* Centers the image horizontally and adds some space above/below it */
+  }
+  
