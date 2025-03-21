@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My Task{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'tasks.css' %}">
+  <style>
+    /* Green Theme Styles for Task Page */
+    .task-container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #f0fff0;
+      border: 2px solid #4caf50;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .task-header {
+      text-align: center;
+      color: #2e7d32;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .task-details h2 {
+      color: #388e3c;
+      text-align: center;
+    }
+    .progress-container {
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+      border-radius: 8px;
+      margin: 20px 0;
+      height: 30px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: #4caf50;
+      transition: width 0.3s ease;
+    }
+    .progress-text {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #2e7d32;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .action-btn {
+      background: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .action-btn:hover {
+      background: #388e3c;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="task-container">
+  <h1 class="task-header">Your Task</h1>
+  {% if task %}
+    <div class="task-details">
+      <h2>{{ task.task_name }}</h2>
+      <!-- Progress Bar Section -->
+      <div class="progress-container">
+        <div class="progress-bar" style="width: {{ task.progress_percentage }}%;"></div>
+      </div>
+      <p class="progress-text">{{ task.current_progress }} / {{ task.target }} completed</p>
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="action-btn" onclick="updateProgress({{ task.id }}, 'increase')">Increase</button>
+        <button class="action-btn" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease</button>
+        <button class="action-btn" onclick="updateProgress({{ task.id }}, 'claim')">Claim Reward</button>
+      </div>
+    </div>
+  {% else %}
+    <p class="task-header">No tasks available. Great job on completing them all!</p>
+  {% endif %}
+</div>
+
+<script>
+  function updateProgress(taskId, action) {
+    fetch(`/update_progress/${taskId}/${action}`)
+      .then(response => response.json())
+      .then(data => {
+        if(data.success) {
+          // Update UI, e.g., reload the page to reflect the changes
+          location.reload();
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch(error => console.error('Error:', error));
+  }
+</script>
+{% endblock %}

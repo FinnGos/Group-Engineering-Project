@@ -1024,3 +1024,48 @@ django.server INFO 2025-03-21 13:47:18,522 basehttp 18821 140567962973888 "GET /
 django.server INFO 2025-03-21 13:47:19,250 basehttp 18821 140567962973888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
 django.server WARNING 2025-03-21 13:47:19,270 basehttp 18821 140567962973888 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-03-21 13:47:24,279 basehttp 18821 140567962973888 "GET /home/ HTTP/1.1" 200 7455
+django.utils.autoreload INFO 2025-03-21 18:47:56,255 autoreload 4155 140353976619136 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 18:48:00,203 basehttp 4155 140353926592192 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:48:00,222 basehttp 4155 140353926592192 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 18:48:00,334 basehttp 4155 140353926592192 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-21 18:48:00,361 basehttp 4155 140353926592192 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-21 18:48:00,746 log 4155 140353926592192 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 18:48:00,746 basehttp 4155 140353926592192 "GET /favicon.ico HTTP/1.1" 404 4900
+django.server INFO 2025-03-21 18:48:03,884 basehttp 4155 140353926592192 "GET /home/signup/ HTTP/1.1" 200 8755
+django INFO 2025-03-21 18:48:15,424 views 4155 140353926592192 User logged in: adsadsa
+django INFO 2025-03-21 18:48:15,430 views 4155 140353926592192 New user signed up: adsadsa
+django.server INFO 2025-03-21 18:48:15,441 basehttp 4155 140353926592192 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:48:15,452 basehttp 4155 140353926592192 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 18:48:15,596 basehttp 4155 140353913472704 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-21 18:48:15,598 basehttp 4155 140353926592192 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-21 18:48:29,935 basehttp 4155 140353926592192 "GET /home/tasks HTTP/1.1" 301 0
+django.server INFO 2025-03-21 18:48:29,962 basehttp 4155 140353913472704 "GET /home/tasks/ HTTP/1.1" 200 8035
+django.server INFO 2025-03-21 18:48:30,025 basehttp 4155 140353913472704 "GET /static/tasks.css HTTP/1.1" 200 205
+django.server INFO 2025-03-21 18:48:30,180 basehttp 4155 140353913472704 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.request WARNING 2025-03-21 18:49:06,637 log 4155 140353913472704 Not Found: /home/tasks_view
+django.server WARNING 2025-03-21 18:49:06,637 basehttp 4155 140353913472704 "GET /home/tasks_view HTTP/1.1" 404 7205
+django.request WARNING 2025-03-21 18:49:06,756 log 4155 140353913472704 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 18:49:06,757 basehttp 4155 140353913472704 "GET /favicon.ico HTTP/1.1" 404 4900
+django.request WARNING 2025-03-21 18:52:21,124 log 4155 140353913472704 Not Found: /get_locatiopn
+django.server WARNING 2025-03-21 18:52:21,194 basehttp 4155 140353913472704 "GET /get_locatiopn HTTP/1.1" 404 4906
+django.request WARNING 2025-03-21 18:52:21,317 log 4155 140353913472704 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 18:52:21,318 basehttp 4155 140353913472704 "GET /favicon.ico HTTP/1.1" 404 4900
+django.request WARNING 2025-03-21 18:52:23,676 log 4155 140353913472704 Not Found: /get_location
+django.server WARNING 2025-03-21 18:52:23,676 basehttp 4155 140353913472704 "GET /get_location HTTP/1.1" 404 4903
+django.request WARNING 2025-03-21 18:52:27,995 log 4155 140353913472704 Not Found: /home/get_location
+django.server WARNING 2025-03-21 18:52:27,995 basehttp 4155 140353913472704 "GET /home/get_location HTTP/1.1" 404 7211
+django.server INFO 2025-03-21 18:52:31,806 basehttp 4155 140353913472704 "GET /get_location/1/ HTTP/1.1" 200 7394
+django.server INFO 2025-03-21 18:52:31,883 basehttp 4155 140353913472704 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-21 18:52:31,885 basehttp 4155 140353913472704 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-21 18:52:38,331 log 4155 140353913472704 Not Found: /get_location/task
+django.server WARNING 2025-03-21 18:52:38,331 basehttp 4155 140353913472704 "GET /get_location/task HTTP/1.1" 404 4918
+django.request WARNING 2025-03-21 18:52:40,299 log 4155 140353913472704 Not Found: /get_location/tasks
+django.server WARNING 2025-03-21 18:52:40,299 basehttp 4155 140353913472704 "GET /get_location/tasks HTTP/1.1" 404 4921
+django.server INFO 2025-03-21 18:52:43,604 basehttp 4155 140353913472704 "GET /home/ HTTP/1.1" 200 7455
+django.request WARNING 2025-03-21 19:26:53,136 log 4155 140353913472704 Not Found: /tasks_views
+django.server WARNING 2025-03-21 19:26:53,137 basehttp 4155 140353913472704 "GET /tasks_views HTTP/1.1" 404 4900
+django.request WARNING 2025-03-21 19:26:53,262 log 4155 140353913472704 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 19:26:53,262 basehttp 4155 140353913472704 "GET /favicon.ico HTTP/1.1" 404 4900
+django.request WARNING 2025-03-21 19:26:55,932 log 4155 140353913472704 Not Found: /tasks_view
+django.server WARNING 2025-03-21 19:26:55,932 basehttp 4155 140353913472704 "GET /tasks_view HTTP/1.1" 404 4897
+django.server INFO 2025-03-21 19:27:02,065 basehttp 4155 140353913472704 "GET /tasks/ HTTP/1.1" 200 8035
