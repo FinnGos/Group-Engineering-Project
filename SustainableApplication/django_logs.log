@@ -1104,6 +1104,7 @@ django.server INFO 2025-03-21 14:45:38,242 basehttp 7280 25688 "GET /lootboxes/o
 django.server WARNING 2025-03-21 14:45:38,253 basehttp 7280 25688 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
 django.server INFO 2025-03-21 14:45:38,608 basehttp 7280 11896 "GET /lootboxes/open/ HTTP/1.1" 200 8405
 django.server WARNING 2025-03-21 14:45:38,618 basehttp 7280 11896 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+<<<<<<< HEAD
 django.server INFO 2025-03-21 14:46:04,917 basehttp 7280 16280 "GET /lootboxes/open/ HTTP/1.1" 200 8405
 django.server INFO 2025-03-21 14:46:04,930 basehttp 7280 27024 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
 django.server WARNING 2025-03-21 14:46:04,933 basehttp 7280 16280 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
@@ -1424,3 +1425,211 @@ django.server INFO 2025-03-21 16:20:54,473 basehttp 7280 7420 "POST /lootboxes/o
 django.server INFO 2025-03-21 16:20:57,928 basehttp 7280 7420 "GET /lootboxes/open/ HTTP/1.1" 200 9282
 django.server INFO 2025-03-21 16:21:13,778 basehttp 7280 7420 "GET /lootboxes/open/ HTTP/1.1" 200 9293
 django.server WARNING 2025-03-21 16:21:13,791 basehttp 7280 7420 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+=======
+django.utils.autoreload INFO 2025-03-21 17:03:21,827 autoreload 25392 22296 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:03:23,521 basehttp 25392 23660 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:03:23,550 basehttp 25392 23660 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:03:23,642 basehttp 25392 23660 "GET /static/auth.css HTTP/1.1" 200 1952
+django.server INFO 2025-03-21 17:03:23,670 basehttp 25392 15436 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django INFO 2025-03-21 17:03:26,514 views 25392 15436 User logged in: dc754
+django.server INFO 2025-03-21 17:03:26,541 basehttp 25392 15436 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:03:26,552 basehttp 25392 15436 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:03:26,593 basehttp 25392 15436 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-21 17:03:26,594 basehttp 25392 23660 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-21 17:03:40,158 basehttp 25392 23660 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server WARNING 2025-03-21 17:03:40,189 basehttp 25392 23660 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:03:40,206 basehttp 25392 15392 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-21 17:03:40,208 basehttp 25392 15436 "GET /static/images/lootboxes.jpg HTTP/1.1" 200 337166
+django.server INFO 2025-03-21 17:03:41,591 basehttp 25392 15436 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.utils.autoreload INFO 2025-03-21 17:04:49,713 autoreload 16356 6384 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:04:50,936 basehttp 16356 20520 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:04:50,962 basehttp 16356 20520 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:04:50,994 basehttp 16356 20520 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:04:51,005 basehttp 16356 20520 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:04:52,678 views 16356 20520 User logged in: dc754
+django.server INFO 2025-03-21 17:04:52,708 basehttp 16356 20520 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:04:52,719 basehttp 16356 20520 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:04:52,748 basehttp 16356 20520 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:04:52,748 basehttp 16356 28480 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:04:53,962 basehttp 16356 28480 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server WARNING 2025-03-21 17:04:53,989 basehttp 16356 28480 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:04:53,996 basehttp 16356 20520 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:04:53,996 basehttp 16356 8128 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:04:59,080 basehttp 16356 8128 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 17:05:05,474 basehttp 16356 8128 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server INFO 2025-03-21 17:05:06,606 basehttp 16356 8128 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-21 17:05:10,635 basehttp 16356 8128 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server INFO 2025-03-21 17:05:11,565 basehttp 16356 8128 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-21 17:05:14,256 basehttp 16356 8128 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server INFO 2025-03-21 17:05:15,039 basehttp 16356 8128 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 17:05:21,035 basehttp 16356 8128 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.server INFO 2025-03-21 17:05:22,501 basehttp 16356 8128 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 17:05:24,848 basehttp 16356 8128 "GET /lootboxes/open/ HTTP/1.1" 200 8407
+django.utils.autoreload INFO 2025-03-21 17:15:02,070 autoreload 12376 20932 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:15:03,185 basehttp 12376 21764 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:15:03,213 basehttp 12376 21764 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:15:03,252 basehttp 12376 21764 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:15:03,264 basehttp 12376 21764 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:15:05,150 views 12376 21764 User logged in: dc754
+django.server INFO 2025-03-21 17:15:05,179 basehttp 12376 21764 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:15:05,189 basehttp 12376 21764 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:15:05,213 basehttp 12376 21764 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:15:05,220 basehttp 12376 21764 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.request ERROR 2025-03-21 17:15:06,608 log 12376 21764 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 63, in open_lootbox
+    return render(request, "lootboxes/open_lootbox.html")  # Render page for GET request
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dc754\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 1: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-21 17:15:06,614 basehttp 12376 21764 "GET /lootboxes/open/ HTTP/1.1" 500 181573
+django.utils.autoreload INFO 2025-03-21 17:15:42,477 autoreload 28188 20424 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:15:43,692 basehttp 28188 16956 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:15:43,726 basehttp 28188 16956 "GET /accounts/login/ HTTP/1.1" 200 7566
+django INFO 2025-03-21 17:15:45,425 views 28188 16956 User logged in: dc754
+django.server INFO 2025-03-21 17:15:45,458 basehttp 28188 16956 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:15:45,467 basehttp 28188 16956 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:15:46,666 basehttp 28188 16956 "GET /lootboxes/open/ HTTP/1.1" 200 9012
+django.server WARNING 2025-03-21 17:15:46,692 basehttp 28188 16956 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:15:46,700 basehttp 28188 21996 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:15:46,700 basehttp 28188 22680 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:15:48,042 basehttp 28188 22680 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.server INFO 2025-03-21 17:15:52,004 basehttp 28188 22680 "GET /lootboxes/open/ HTTP/1.1" 200 9010
+django.request WARNING 2025-03-21 17:15:53,199 log 28188 22680 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 17:15:53,200 basehttp 28188 22680 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-21 17:16:54,335 autoreload 5516 21716 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:16:55,566 basehttp 5516 22468 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:16:55,589 basehttp 5516 22468 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:16:55,629 basehttp 5516 22468 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:16:55,640 basehttp 5516 22468 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:16:58,076 views 5516 22468 User logged in: dc754
+django.server INFO 2025-03-21 17:16:58,115 basehttp 5516 22468 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:16:58,125 basehttp 5516 22468 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:16:58,157 basehttp 5516 22468 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:16:58,157 basehttp 5516 28048 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:16:59,848 basehttp 5516 28048 "GET /lootboxes/open/ HTTP/1.1" 200 9013
+django.server WARNING 2025-03-21 17:16:59,875 basehttp 5516 28048 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:17:01,125 basehttp 5516 22468 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.utils.autoreload INFO 2025-03-21 17:18:41,567 autoreload 7572 12516 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:18:42,684 basehttp 7572 28544 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:18:42,709 basehttp 7572 28544 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:18:42,749 basehttp 7572 28544 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:18:42,759 basehttp 7572 28544 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:18:44,648 views 7572 28544 User logged in: dc754
+django.server INFO 2025-03-21 17:18:44,683 basehttp 7572 28544 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:18:44,692 basehttp 7572 28544 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:18:44,716 basehttp 7572 28544 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:18:44,725 basehttp 7572 28544 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:18:45,604 basehttp 7572 28544 "GET /lootboxes/open/ HTTP/1.1" 200 9196
+django.server WARNING 2025-03-21 17:18:45,635 basehttp 7572 28544 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:18:45,642 basehttp 7572 21760 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:18:45,642 basehttp 7572 18860 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:18:46,786 basehttp 7572 18860 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.utils.autoreload INFO 2025-03-21 17:21:44,657 autoreload 21356 13888 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:21:45,634 basehttp 21356 27344 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:21:45,660 basehttp 21356 27344 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:21:45,697 basehttp 21356 27344 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:21:45,708 basehttp 21356 27344 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:21:47,625 views 21356 27344 User logged in: dc754
+django.server INFO 2025-03-21 17:21:47,657 basehttp 21356 27344 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:21:47,667 basehttp 21356 27344 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:21:47,695 basehttp 21356 27344 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:21:47,703 basehttp 21356 27344 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:21:54,120 basehttp 21356 27344 "GET /lootboxes/open/ HTTP/1.1" 200 9196
+django.server WARNING 2025-03-21 17:21:54,159 basehttp 21356 27344 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:21:54,171 basehttp 21356 14556 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:21:54,172 basehttp 21356 25952 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:22:00,875 basehttp 21356 25952 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:25:08,285 basehttp 21356 25952 "GET /lootboxes/open/ HTTP/1.1" 200 9196
+django.utils.autoreload INFO 2025-03-21 17:26:40,040 autoreload 24764 27420 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:26:41,443 basehttp 24764 26372 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:26:41,479 basehttp 24764 26372 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:26:41,529 basehttp 24764 26372 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:26:41,541 basehttp 24764 26372 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:26:43,036 views 24764 26372 User logged in: dc754
+django.server INFO 2025-03-21 17:26:43,065 basehttp 24764 26372 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:26:43,075 basehttp 24764 26372 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:26:43,102 basehttp 24764 26372 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:26:43,110 basehttp 24764 26372 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:26:43,810 basehttp 24764 26372 "GET /lootboxes/open/ HTTP/1.1" 200 9222
+django.server WARNING 2025-03-21 17:26:43,834 basehttp 24764 26372 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:26:43,851 basehttp 24764 17812 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:26:43,852 basehttp 24764 27392 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:26:45,179 basehttp 24764 27392 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.utils.autoreload INFO 2025-03-21 17:29:14,398 autoreload 19388 2528 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:29:15,453 basehttp 19388 9524 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:29:15,482 basehttp 19388 9524 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 17:29:15,526 basehttp 19388 9524 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:29:15,539 basehttp 19388 9524 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-21 17:29:16,948 views 19388 9524 User logged in: dc754
+django.server INFO 2025-03-21 17:29:16,979 basehttp 19388 9524 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:29:16,988 basehttp 19388 9524 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:29:17,016 basehttp 19388 9524 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:29:17,024 basehttp 19388 9524 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:29:17,851 basehttp 19388 9524 "GET /lootboxes/open/ HTTP/1.1" 200 9163
+django.server WARNING 2025-03-21 17:29:17,879 basehttp 19388 9524 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:29:17,889 basehttp 19388 164 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:29:17,890 basehttp 19388 11928 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:29:19,040 basehttp 19388 11928 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:29:19,099 basehttp 19388 11928 "GET /media/placeholder.jpg HTTP/1.1" 200 1358618
+django.utils.autoreload INFO 2025-03-21 17:31:17,560 autoreload 17592 6204 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:31:18,591 basehttp 17592 15772 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:31:18,615 basehttp 17592 15772 "GET /accounts/login/ HTTP/1.1" 200 7566
+django INFO 2025-03-21 17:31:20,763 views 17592 15772 User logged in: dc754
+django.server INFO 2025-03-21 17:31:20,792 basehttp 17592 15772 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:31:20,803 basehttp 17592 15772 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:31:22,413 basehttp 17592 15772 "GET /leaderboard/ HTTP/1.1" 200 8088
+django.server INFO 2025-03-21 17:31:22,497 basehttp 17592 15772 "GET /static/leaderboard.css HTTP/1.1" 200 2008
+django.server INFO 2025-03-21 17:31:22,527 basehttp 17592 14556 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-21 17:31:22,536 basehttp 17592 23064 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-21 17:31:28,777 basehttp 17592 23064 "GET /home/ HTTP/1.1" 200 7455
+>>>>>>> 54f028182b20ef40ec14ff02c5703043c1caadc3

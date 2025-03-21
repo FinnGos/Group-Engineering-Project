@@ -1,25 +1,34 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}Open Lootbox{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title %}Open
+Lootbox{%endblock %} {% block content %}
 <!-- Link to open_lootbox.css -->
-<link rel="stylesheet" href="{% static 'css/open_lootbox.css' %}">
+<link rel="stylesheet" href="{% static 'css/open_lootbox.css' %}" />
 
 <!-- Image Section -->
 <div class="top-section relative">
-  <div class="image-container bg-green-700 overflow-hidden" style="height: 800px;">
-    <img src="{% static 'images/lootboxes.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
+  <div
+    class="image-container bg-green-700 overflow-hidden"
+    style="height: 800px"
+  >
+    <img
+      src="{% static 'images/lootboxes.jpg' %}"
+      alt="Image"
+      class="w-full h-full rounded-lg object-cover"
+      style="object-position: center"
+    />
   </div>
 
   <!-- Lootbox Section -->
-  <div class="mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
+  <div
+    class="mt-8 absolute inset-0 flex flex-col justify-top items-center text-white"
+  >
     <div class="font-bold outlined-text text-white text-center p-6 mb-6">
       <h1 class="text-6xl mb-1">Lootboxes</h1>
-      <p class="text-3xl" id="user-points">Current Points: {{ request.user.current_points }}</p>
+      <p class="text-3xl" id="user-points">
+        Current Points: {{ request.user.current_points }}
+      </p>
     </div>
 
+<<<<<<< HEAD
   <!-- Lootbox Popup Section -->
   <div x-data="{ openLootbox: false }" class="mb-6">
     <!-- Lootbox Image (Triggers Popup) -->
@@ -48,19 +57,45 @@
       Open Lootbox - 100 Points
     </button>
   </form>
+=======
+    <!-- Lootbox Icon -->
+    <div class="mb-6">
+      <img
+        src="{% static 'images/lootbox.png' %}"
+        alt="Lootbox"
+        class="w-48 h-auto transition-transform duration-300 transform hover:scale-110"
+      />
+    </div>
 
-  <!-- Display Lootbox Result -->
-  <div id="loot-result"></div>
+    <!-- Lootbox Button -->
+    <form id="lootboxForm" method="POST">
+      {% csrf_token %}
+      <button
+        type="submit"
+        id="openLootboxButton"
+        class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg transition-transform duration-300 transform hover:scale-110"
+      >
+        Open Lootbox - 100 Points
+      </button>
+    </form>
+>>>>>>> 54f028182b20ef40ec14ff02c5703043c1caadc3
 
-  <p class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-110">
-    <a href="{% url 'home' %}" class="text-white">Back to Home</a>
-  </p>
+    <!-- Display Lootbox Result -->
+    <div id="loot-result"></div>
 
-  <script>
-    $(document).ready(function () {
-      $("#lootboxForm").submit(function (event) {
-        event.preventDefault(); // Prevent normal form submission
+    <p
+      class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-110"
+    >
+      <a href="{% url 'home' %}" class="text-white">Back to Home</a>
+    </p>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#lootboxForm").submit(function (event) {
+          event.preventDefault(); // Stop normal form submission
+
+<<<<<<< HEAD
         $.ajax({
           url: '{% url "open_lootbox" %}',
           type: "POST",
@@ -73,12 +108,25 @@
 
             if (response.success) {
               userPoints.text(`Points: ${response.new_points}`);
+=======
+          let button = $("#openLootboxButton");
+          button.prop("disabled", true); // Disable button to prevent spam
 
-              if (response.loot_item) {
-                let duplicateMessage = response.is_duplicate
-                  ? "<p>(You already own this item, so points were refunded)</p>"
-                  : "";
+          $.ajax({
+            url: $("#lootboxForm").attr("action"),
+            type: "POST",
+            data: $("#lootboxForm").serialize(),
+            dataType: "json",
+            success: function (response) {
+              const lootResult = $("#loot-result");
+>>>>>>> 54f028182b20ef40ec14ff02c5703043c1caadc3
 
+              if (response.success) {
+                $("#user-points").text(
+                  `Current Points: ${response.new_points}`
+                );
+
+<<<<<<< HEAD
                 lootResult.html(`
                   <h3>Congratulations!</h3>
                   <p>You received: ${response.loot_item.name}</p>
@@ -86,9 +134,35 @@
                   <p>Fun Fact: ${response.loot_item.fact}</p>
                   ${duplicateMessage}
                 `);
+=======
+                if (response.loot_item) {
+                  let duplicateMessage = response.is_duplicate
+                    ? "<p style='color: red;'>(You already own this item, so points were refunded!)</p>"
+                    : "";
+
+                  lootResult.html(`
+                <div class="lootbox-result">
+                  <h3>Congratulations!</h3>
+                  <p>You received: <strong>${response.loot_item.name}</strong></p>
+                  <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px;" />
+                  <p>Fun Fact: ${response.loot_item.fact}</p>
+                  ${duplicateMessage}
+                </div>
+              `);
+                } else {
+                  lootResult.html(
+                    "<p style='color: red;'>You got nothing this time.</p>"
+                  );
+                }
+>>>>>>> 54f028182b20ef40ec14ff02c5703043c1caadc3
               } else {
-                lootResult.html("<p>You got nothing this time.</p>");
+                lootResult.html(
+                  `<p style="color:red;">${
+                    response.error || "Something went wrong!"
+                  }</p>`
+                );
               }
+<<<<<<< HEAD
             } else {
               lootResult.html(`
                 <p style="color:red;">${response.error || "Something went wrong!"}</p>
@@ -99,9 +173,21 @@
             const errorMessage = xhr.responseJSON?.error || "Error: Unable to open lootbox.";
             alert(errorMessage);
           },
+=======
+            },
+            error: function (xhr) {
+              const errorMessage =
+                xhr.responseJSON?.error || "Error: Unable to open lootbox.";
+              alert(errorMessage);
+            },
+            complete: function () {
+              button.prop("disabled", false); // Re-enable button after request completes
+            },
+          });
+>>>>>>> 54f028182b20ef40ec14ff02c5703043c1caadc3
         });
       });
-    });
-  </script>
+    </script>
+  </div>
+  {% endblock %}
 </div>
-{% endblock %}
