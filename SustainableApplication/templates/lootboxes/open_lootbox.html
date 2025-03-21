@@ -1,5 +1,8 @@
-{% extends "base.html" %} {% load static %} {% block title %}Open
-Lootbox{%endblock %} {% block content %}
+{% extends "base.html" %} {% load static %} 
+
+{% block title %}Open Lootbox{%endblock %} 
+
+{% block content %}
 <!-- Link to open_lootbox.css -->
 <link rel="stylesheet" href="{% static 'css/open_lootbox.css' %}" />
 
@@ -7,7 +10,7 @@ Lootbox{%endblock %} {% block content %}
 <div class="top-section relative">
   <div
     class="image-container bg-green-700 overflow-hidden"
-    style="height: 800px"
+    style="height: 1000px"
   >
     <img
       src="{% static 'images/lootboxes.jpg' %}"
@@ -82,7 +85,7 @@ Lootbox{%endblock %} {% block content %}
 
                 if (response.loot_item) {
                   let duplicateMessage = response.is_duplicate
-                    ? "<p style='color: red;'>(You already own this item, so points were refunded!)</p>"
+                    ? "<p style='color: white;'>(You already own this item, so points were refunded!)</p>"
                     : "";
 
                   lootResult.html(`
@@ -96,7 +99,7 @@ Lootbox{%endblock %} {% block content %}
               `);
                 } else {
                   lootResult.html(
-                    "<p style='color: red;'>You got nothing this time.</p>"
+                    "<p style='color: white;'>You got nothing this time.</p>"
                   );
                 }
               } else {
