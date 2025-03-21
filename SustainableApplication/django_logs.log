@@ -9445,3 +9445,713 @@ django.request WARNING 2025-03-20 17:17:42,944 log 19888 2784 Not Found: /media/
 django.server WARNING 2025-03-20 17:17:42,944 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
 django.server INFO 2025-03-20 17:17:44,585 basehttp 19888 2784 "GET /home/ HTTP/1.1" 200 1842
 >>>>>>> 7ff0a9f45319651f9149519d511e748c4644a178
+django.utils.autoreload INFO 2025-03-20 23:29:42,833 autoreload 16020 26356 Watching for file changes with StatReloader
+django.server INFO 2025-03-20 23:29:47,024 basehttp 16020 9600 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 23:29:47,062 basehttp 16020 9600 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7263
+django.request ERROR 2025-03-20 23:29:54,070 log 16020 9600 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: home_customuser.selected_task_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 326, in full_clean
+    self._clean_form()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 342, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 356, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: home_customuser.selected_task_id
+django.server ERROR 2025-03-20 23:29:54,098 basehttp 16020 9600 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 500 252846
+django.server INFO 2025-03-20 23:30:05,430 basehttp 16020 9600 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-20 23:30:06,973 basehttp 16020 9600 "GET /home/signup/ HTTP/1.1" 200 8452
+django WARNING 2025-03-20 23:30:26,103 views 16020 9600 Failed signup attempt.
+django.server INFO 2025-03-20 23:30:26,104 basehttp 16020 9600 "POST /home/signup/ HTTP/1.1" 200 8689
+django.server INFO 2025-03-20 23:30:27,717 basehttp 16020 9600 "GET /home/accounts/login/ HTTP/1.1" 200 7263
+django.request ERROR 2025-03-20 23:30:33,928 log 16020 9600 Internal Server Error: /home/accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: home_customuser.selected_task_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 326, in full_clean
+    self._clean_form()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\forms\forms.py", line 342, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 356, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: home_customuser.selected_task_id
+django.server ERROR 2025-03-20 23:30:33,930 basehttp 16020 9600 "POST /home/accounts/login/ HTTP/1.1" 500 252089
+django INFO 2025-03-20 23:32:13,433 views 16020 9600 User logged in: kadeemtesting123
+django.server INFO 2025-03-20 23:32:13,967 basehttp 16020 9600 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-20 23:32:13,974 basehttp 16020 9600 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-20 23:32:17,183 basehttp 16020 9600 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 23:32:17,195 basehttp 16020 9600 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 23:32:17,195 basehttp 16020 11960 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 23:32:17,197 basehttp 16020 2620 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.request WARNING 2025-03-20 23:32:26,029 log 16020 2620 Not Found: /lootboxes
+django.server WARNING 2025-03-20 23:32:26,029 basehttp 16020 2620 "GET /lootboxes HTTP/1.1" 404 4725
+django.request WARNING 2025-03-20 23:32:36,548 log 16020 2620 Not Found: /lootboxes/
+django.server WARNING 2025-03-20 23:32:36,549 basehttp 16020 2620 "GET /lootboxes/ HTTP/1.1" 404 4844
+django.request WARNING 2025-03-20 23:32:45,605 log 16020 2620 Not Found: /home/lootboxes
+django.server WARNING 2025-03-20 23:32:45,605 basehttp 16020 2620 "GET /home/lootboxes HTTP/1.1" 404 7033
+django.server INFO 2025-03-20 23:32:54,638 basehttp 16020 2620 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 23:34:15,395 basehttp 16020 2620 "GET /tasks/ HTTP/1.1" 200 7732
+django.server INFO 2025-03-20 23:34:15,407 basehttp 16020 2620 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 23:34:15,411 basehttp 16020 2620 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.request WARNING 2025-03-20 23:36:50,093 log 16020 2620 Not Found: /open
+django.server WARNING 2025-03-20 23:36:50,093 basehttp 16020 2620 "GET /open HTTP/1.1" 404 4710
+django.server INFO 2025-03-20 23:37:03,253 basehttp 16020 2620 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-20 23:37:03,265 basehttp 16020 9600 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-20 23:37:03,265 basehttp 16020 2620 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-20 23:37:03,265 basehttp 16020 11960 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 304 0
+django.request WARNING 2025-03-20 23:37:07,213 log 16020 2620 Not Found: /lootboxes
+django.server WARNING 2025-03-20 23:37:07,213 basehttp 16020 2620 "GET /lootboxes HTTP/1.1" 404 4725
+django.server INFO 2025-03-20 23:38:56,527 basehttp 16020 2620 "GET /lootboxes/open HTTP/1.1" 301 0
+django.server INFO 2025-03-20 23:38:56,563 basehttp 16020 11960 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-20 23:38:57,017 basehttp 16020 11960 "GET /static/css/styles.css HTTP/1.1" 200 180
+django.request WARNING 2025-03-20 23:39:07,480 log 16020 11960 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-20 23:39:07,480 basehttp 16020 11960 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.request WARNING 2025-03-20 23:39:09,753 log 16020 11960 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-20 23:39:09,754 basehttp 16020 11960 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-21 10:36:29,979 autoreload 3656 6692 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 10:36:35,454 basehttp 3656 23128 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-21 10:36:35,476 basehttp 3656 24140 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:35,476 basehttp 3656 23128 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:35,477 basehttp 3656 20424 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 304 0
+django.request WARNING 2025-03-21 10:36:35,767 log 3656 20424 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 10:36:35,767 basehttp 3656 20424 "GET /favicon.ico HTTP/1.1" 404 4731
+django.server INFO 2025-03-21 10:36:38,528 basehttp 3656 20424 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-21 10:36:38,545 basehttp 3656 23128 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:38,546 basehttp 3656 20424 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:39,878 basehttp 3656 20424 "GET /get_location/1/ HTTP/1.1" 200 7091
+django.server INFO 2025-03-21 10:36:39,890 basehttp 3656 23128 "GET /static/images/checkin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:39,891 basehttp 3656 20424 "GET /static/checkin.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:41,101 basehttp 3656 20424 "GET /home/accounts/login/ HTTP/1.1" 200 7263
+django.server INFO 2025-03-21 10:36:41,122 basehttp 3656 20424 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 10:36:41,122 basehttp 3656 23128 "GET /static/auth.css HTTP/1.1" 304 0
+django INFO 2025-03-21 10:36:50,294 views 3656 26456 User logged in: kadeemtesting123
+django.server INFO 2025-03-21 10:36:50,686 basehttp 3656 26456 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 10:36:50,692 basehttp 3656 26456 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-21 10:36:53,291 basehttp 3656 26456 "GET /leaderboard/ HTTP/1.1" 200 7783
+django.server INFO 2025-03-21 10:37:06,497 basehttp 3656 26456 "GET /lootboxes/open HTTP/1.1" 301 0
+django.server INFO 2025-03-21 10:37:06,532 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:37:06,994 basehttp 3656 22976 "GET /static/css/styles.css HTTP/1.1" 200 180
+django.request WARNING 2025-03-21 10:37:16,538 log 3656 22976 Not Found: /lootboxes/open_lootbox
+django.server WARNING 2025-03-21 10:37:16,538 basehttp 3656 22976 "GET /lootboxes/open_lootbox HTTP/1.1" 404 4880
+django.request WARNING 2025-03-21 10:40:12,258 log 3656 22976 Not Found: /lootboxes
+django.server WARNING 2025-03-21 10:40:12,259 basehttp 3656 22976 "GET /lootboxes HTTP/1.1" 404 4725
+django.server INFO 2025-03-21 10:41:24,943 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:25,673 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:26,219 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:26,667 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:27,037 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:27,366 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:27,649 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:27,873 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:28,114 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server INFO 2025-03-21 10:41:35,688 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 2739
+django.server INFO 2025-03-21 10:43:15,101 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 4702
+django.server INFO 2025-03-21 10:43:16,467 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 4702
+django.server INFO 2025-03-21 10:43:57,401 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 4702
+django.server INFO 2025-03-21 10:43:58,415 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 4702
+django.server INFO 2025-03-21 10:43:59,007 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 4702
+django.server INFO 2025-03-21 10:47:03,337 basehttp 3656 22976 "GET /lootboxes/open/ HTTP/1.1" 200 7037
+django.server WARNING 2025-03-21 10:47:03,349 basehttp 3656 22976 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 10:47:04,322 basehttp 3656 23860 "GET /lootboxes/open/ HTTP/1.1" 200 7037
+django.server WARNING 2025-03-21 10:47:04,338 basehttp 3656 23860 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 10:47:05,129 basehttp 3656 23864 "GET /lootboxes/open/ HTTP/1.1" 200 7037
+django.server WARNING 2025-03-21 10:47:05,141 basehttp 3656 23864 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 10:47:08,101 basehttp 3656 1616 "GET /home/ HTTP/1.1" 200 7152
+django.request WARNING 2025-03-21 10:47:11,816 log 3656 1616 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 10:47:11,817 basehttp 3656 1616 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.server INFO 2025-03-21 10:49:36,851 basehttp 3656 1616 "GET /lootboxes/open/ HTTP/1.1" 200 7150
+django.server WARNING 2025-03-21 10:49:36,876 basehttp 3656 1616 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 10:49:38,287 basehttp 3656 15868 "GET /lootboxes/open/ HTTP/1.1" 200 7150
+django.server WARNING 2025-03-21 10:49:38,298 basehttp 3656 15868 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 10:49:40,016 basehttp 3656 1704 "GET /home/ HTTP/1.1" 200 7152
+django.server INFO 2025-03-21 10:49:55,090 basehttp 3656 1704 "GET /lootboxes/open/ HTTP/1.1" 200 7037
+django.server WARNING 2025-03-21 10:49:55,100 basehttp 3656 1704 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:00:29,228 basehttp 3656 4880 "GET /lootboxes/open/ HTTP/1.1" 200 7267
+django.server WARNING 2025-03-21 11:00:29,245 basehttp 3656 4880 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:00:30,160 basehttp 3656 25244 "GET /lootboxes/open/ HTTP/1.1" 200 7267
+django.server WARNING 2025-03-21 11:00:30,170 basehttp 3656 25244 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:00:30,686 basehttp 3656 16980 "GET /lootboxes/open/ HTTP/1.1" 200 7267
+django.server WARNING 2025-03-21 11:00:30,697 basehttp 3656 16980 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:00:31,487 basehttp 3656 26348 "GET /lootboxes/open/ HTTP/1.1" 200 7267
+django.server WARNING 2025-03-21 11:00:31,500 basehttp 3656 26348 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:03:18,451 basehttp 3656 13060 "GET /lootboxes/open/ HTTP/1.1" 200 7459
+django.server WARNING 2025-03-21 11:03:18,472 basehttp 3656 13060 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:03:19,437 basehttp 3656 8768 "GET /lootboxes/open/ HTTP/1.1" 200 7459
+django.server WARNING 2025-03-21 11:03:19,450 basehttp 3656 8768 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:03:20,113 basehttp 3656 23256 "GET /lootboxes/open/ HTTP/1.1" 200 7459
+django.server WARNING 2025-03-21 11:03:20,125 basehttp 3656 23256 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:03:29,234 basehttp 3656 7380 "GET /lootboxes/open/ HTTP/1.1" 200 7454
+django.server WARNING 2025-03-21 11:03:29,247 basehttp 3656 7044 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:03:29,249 basehttp 3656 7380 "GET /static/images/lootboxes.jpg HTTP/1.1" 200 337166
+django.server INFO 2025-03-21 11:04:17,709 basehttp 3656 7380 "GET /lootboxes/open/ HTTP/1.1" 200 7606
+django.server INFO 2025-03-21 11:04:17,718 basehttp 3656 24120 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:04:17,731 basehttp 3656 7380 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:04:25,824 basehttp 3656 24120 "GET /lootboxes/open/ HTTP/1.1" 200 7606
+django.server WARNING 2025-03-21 11:04:25,835 basehttp 3656 24120 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:04:27,172 basehttp 3656 8988 "GET /lootboxes/open/ HTTP/1.1" 200 7602
+django.server WARNING 2025-03-21 11:04:27,184 basehttp 3656 8988 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:04:44,029 basehttp 3656 1912 "GET /lootboxes/open/ HTTP/1.1" 200 7604
+django.server WARNING 2025-03-21 11:04:44,040 basehttp 3656 1912 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.request WARNING 2025-03-21 11:05:51,942 log 3656 8936 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 11:05:51,942 basehttp 3656 8936 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.server INFO 2025-03-21 11:06:28,822 basehttp 3656 8936 "GET /lootboxes/open/ HTTP/1.1" 200 7717
+django.server INFO 2025-03-21 11:06:28,833 basehttp 3656 12996 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:06:28,841 basehttp 3656 8936 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:06:29,740 basehttp 3656 12996 "GET /lootboxes/open/ HTTP/1.1" 200 7717
+django.server WARNING 2025-03-21 11:06:29,752 basehttp 3656 12996 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:06:45,160 basehttp 3656 24868 "GET /lootboxes/open/ HTTP/1.1" 200 7725
+django.server WARNING 2025-03-21 11:06:45,172 basehttp 3656 24868 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:06:52,512 basehttp 3656 10304 "GET /lootboxes/open/ HTTP/1.1" 200 7717
+django.server WARNING 2025-03-21 11:06:52,754 basehttp 3656 10304 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:07:41,195 basehttp 3656 14168 "GET /lootboxes/open/ HTTP/1.1" 200 7705
+django.server INFO 2025-03-21 11:07:41,205 basehttp 3656 6684 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:07:41,208 basehttp 3656 14168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:07:41,995 basehttp 3656 6684 "GET /lootboxes/open/ HTTP/1.1" 200 7705
+django.server WARNING 2025-03-21 11:07:42,007 basehttp 3656 6684 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:07:43,166 basehttp 3656 25548 "GET /lootboxes/open/ HTTP/1.1" 200 7705
+django.server WARNING 2025-03-21 11:07:43,179 basehttp 3656 25548 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:08:22,734 basehttp 3656 17596 "GET /lootboxes/open/ HTTP/1.1" 200 7713
+django.server WARNING 2025-03-21 11:08:22,746 basehttp 3656 17596 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:08:28,977 basehttp 3656 24476 "GET /lootboxes/open/ HTTP/1.1" 200 7713
+django.server WARNING 2025-03-21 11:08:28,988 basehttp 3656 24476 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:08:50,108 basehttp 3656 10684 "GET /lootboxes/open/ HTTP/1.1" 200 7716
+django.server INFO 2025-03-21 11:08:50,118 basehttp 3656 21340 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:08:50,123 basehttp 3656 10684 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:08:50,932 basehttp 3656 21340 "GET /lootboxes/open/ HTTP/1.1" 200 7716
+django.server WARNING 2025-03-21 11:08:50,943 basehttp 3656 21340 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:09:28,745 basehttp 3656 25800 "GET /lootboxes/open/ HTTP/1.1" 200 7733
+django.server WARNING 2025-03-21 11:09:28,758 basehttp 3656 25800 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:09:35,346 basehttp 3656 26248 "GET /lootboxes/open/ HTTP/1.1" 200 7733
+django.server WARNING 2025-03-21 11:09:35,356 basehttp 3656 26248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:09:44,213 basehttp 3656 24536 "GET /lootboxes/open/ HTTP/1.1" 200 7733
+django.server WARNING 2025-03-21 11:09:44,226 basehttp 3656 24536 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:18:10,520 basehttp 3656 5808 "GET /lootboxes/open/ HTTP/1.1" 200 7788
+django.server INFO 2025-03-21 11:18:10,530 basehttp 3656 16040 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:18:10,540 basehttp 3656 5808 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:18:18,445 basehttp 3656 16040 "GET /lootboxes/open/ HTTP/1.1" 200 7795
+django.server WARNING 2025-03-21 11:18:18,476 basehttp 3656 16040 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:18:19,124 basehttp 3656 25548 "GET /lootboxes/open/ HTTP/1.1" 200 7795
+django.server WARNING 2025-03-21 11:18:19,137 basehttp 3656 25548 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:21:43,148 basehttp 3656 20736 "GET /lootboxes/open/ HTTP/1.1" 200 7922
+django.server WARNING 2025-03-21 11:21:43,166 basehttp 3656 20736 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server WARNING 2025-03-21 11:21:43,170 basehttp 3656 24804 "GET /static/images/lootbox.png HTTP/1.1" 404 1981
+django.server INFO 2025-03-21 11:21:43,170 basehttp 3656 25256 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:22:18,620 basehttp 3656 25256 "GET /lootboxes/open/ HTTP/1.1" 200 7922
+django.server WARNING 2025-03-21 11:22:18,635 basehttp 3656 25256 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:22:18,635 basehttp 3656 22884 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-21 11:23:35,708 basehttp 3656 22884 "GET /lootboxes/open/ HTTP/1.1" 200 7982
+django.server INFO 2025-03-21 11:23:35,723 basehttp 3656 25972 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:23:35,734 basehttp 3656 22884 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:24:05,255 basehttp 3656 25972 "GET /lootboxes/open/ HTTP/1.1" 200 8042
+django.server INFO 2025-03-21 11:24:05,258 basehttp 3656 13108 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:24:05,267 basehttp 3656 6172 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:24:05,272 basehttp 3656 25972 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:26:46,212 basehttp 3656 6172 "GET /lootboxes/open/ HTTP/1.1" 200 8102
+django.server WARNING 2025-03-21 11:26:46,224 basehttp 3656 6172 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:26:46,225 basehttp 3656 13108 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:26:46,227 basehttp 3656 26088 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:27:13,432 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7843
+django.server INFO 2025-03-21 11:27:32,089 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7844
+django.server INFO 2025-03-21 11:27:41,392 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7844
+django.server INFO 2025-03-21 11:27:45,132 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7844
+django.server INFO 2025-03-21 11:27:54,466 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7844
+django.server INFO 2025-03-21 11:28:01,264 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7844
+django.server INFO 2025-03-21 11:28:22,602 basehttp 3656 26088 "GET /leaderboard/ HTTP/1.1" 200 7904
+django.server INFO 2025-03-21 11:28:40,618 basehttp 3656 26088 "GET /tasks/ HTTP/1.1" 200 7732
+django.server INFO 2025-03-21 11:28:40,629 basehttp 3656 26088 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:28:40,629 basehttp 3656 13108 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:28:50,720 basehttp 3656 13108 "GET /tasks/ HTTP/1.1" 200 7792
+django.server INFO 2025-03-21 11:28:58,758 basehttp 3656 13108 "GET /lootboxes/open/ HTTP/1.1" 200 8102
+django.server INFO 2025-03-21 11:28:58,770 basehttp 3656 26088 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:28:58,773 basehttp 3656 13108 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:36:59,129 basehttp 3656 22908 "GET /lootboxes/open/ HTTP/1.1" 200 8102
+django.server INFO 2025-03-21 11:36:59,156 basehttp 3656 11524 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 11:36:59,157 basehttp 3656 22908 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:36:59,164 basehttp 3656 16540 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.request WARNING 2025-03-21 11:37:01,472 log 3656 16540 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 11:37:01,472 basehttp 3656 16540 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.request WARNING 2025-03-21 11:39:22,339 log 3656 16540 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 11:39:22,339 basehttp 3656 16540 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-21 11:43:52,772 autoreload 3656 6692 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-21 11:43:53,544 autoreload 20472 10304 Watching for file changes with StatReloader
+django.request ERROR 2025-03-21 11:43:58,035 log 20472 25988 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 63, in open_lootbox
+    return render(request, "open_lootbox.html")  # Render page for GET request
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: open_lootbox.html
+django.server ERROR 2025-03-21 11:43:58,047 basehttp 20472 25988 "GET /lootboxes/open/ HTTP/1.1" 500 100313
+django.utils.autoreload INFO 2025-03-21 11:44:02,856 autoreload 20472 10304 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-21 11:44:03,422 autoreload 6272 11820 Watching for file changes with StatReloader
+django.request ERROR 2025-03-21 11:44:11,335 log 6272 21528 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 63, in open_lootbox
+    return render(request, "lootboxes/open_lootbox.html")  # Render page for GET request
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'lootboxes/open_lootbox.html' not found. 'lootboxes/open_lootbox.html' is not a valid view function or pattern name.
+django.server ERROR 2025-03-21 11:44:11,372 basehttp 6272 21528 "GET /lootboxes/open/ HTTP/1.1" 500 184259
+django.request ERROR 2025-03-21 11:44:13,084 log 6272 21528 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 63, in open_lootbox
+    return render(request, "lootboxes/open_lootbox.html")  # Render page for GET request
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'lootboxes/open_lootbox.html' not found. 'lootboxes/open_lootbox.html' is not a valid view function or pattern name.
+django.server ERROR 2025-03-21 11:44:13,086 basehttp 6272 21528 "GET /lootboxes/open/ HTTP/1.1" 500 184259
+django.request ERROR 2025-03-21 11:44:16,517 log 6272 21528 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 63, in open_lootbox
+    return render(request, "lootboxes/open_lootbox.html")  # Render page for GET request
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'lootboxes/open_lootbox.html' not found. 'lootboxes/open_lootbox.html' is not a valid view function or pattern name.
+django.server ERROR 2025-03-21 11:44:16,519 basehttp 6272 21528 "GET /lootboxes/open/ HTTP/1.1" 500 184259
+django.server INFO 2025-03-21 11:44:17,825 basehttp 6272 21528 "GET /lootboxes/open/ HTTP/1.1" 200 8102
+django.server WARNING 2025-03-21 11:44:17,839 basehttp 6272 21528 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:44:17,839 basehttp 6272 25468 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 11:44:17,840 basehttp 6272 17596 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.request WARNING 2025-03-21 11:44:19,128 log 6272 17596 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 11:44:19,129 basehttp 6272 17596 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.server INFO 2025-03-21 11:46:41,790 basehttp 6272 17596 "GET /lootboxes/open/ HTTP/1.1" 200 8105
+django.server WARNING 2025-03-21 11:46:41,802 basehttp 6272 17596 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 11:46:43,409 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 11:46:47,373 basehttp 6272 25468 "GET /lootboxes/open/ HTTP/1.1" 200 8104
+django.server INFO 2025-03-21 11:46:48,871 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 11:46:50,401 basehttp 6272 25468 "GET /lootboxes/open/ HTTP/1.1" 200 8104
+django.server INFO 2025-03-21 11:46:51,111 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 11:46:52,368 basehttp 6272 25468 "GET /lootboxes/open/ HTTP/1.1" 200 8104
+django.server INFO 2025-03-21 11:47:03,219 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 11:47:04,341 basehttp 6272 25468 "GET /lootboxes/open/ HTTP/1.1" 200 8104
+django.server INFO 2025-03-21 11:47:05,155 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-21 11:47:05,977 basehttp 6272 25468 "GET /lootboxes/open/ HTTP/1.1" 200 8104
+django.server INFO 2025-03-21 11:49:08,901 basehttp 6272 25468 "POST /lootboxes/open/ HTTP/1.1" 200 78

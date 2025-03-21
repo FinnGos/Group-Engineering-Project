@@ -59,13 +59,13 @@
     </div>
 
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center "> 
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-transform duration-300 transform hover:scale-110">
             Go to Your Daily Tasks
         </a>
 
         <!-- "How to Play" Button -->
-        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition-transform duration-300 transform hover:scale-110">
             How to Play
         </button>
 
