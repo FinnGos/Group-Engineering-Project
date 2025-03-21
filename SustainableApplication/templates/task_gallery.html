@@ -35,12 +35,38 @@
         .btn-danger:hover {
             background: darkred;
         }
+        .btn-primary {
+            background: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background: darkblue;
+        }
+        .btn-upload {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-upload:hover {
+            background-color: darkgreen;
+        }
     </style>
 {% endblock %}
 
 {% block content %}
     <div class="container mx-auto text-center py-10">
         <h1 class="text-4xl font-bold text-gray-900">Gallery</h1>
+
+        <!-- Button to Upload Image -->
+        <div class="mt-8">
+            <a href="{% url 'upload_file' 0 %}" class="btn-upload">Upload New Image</a>
+        </div>
 
         {% if images %}
             <div class="gallery-container">
@@ -71,3 +97,4 @@
         </div>
     </div>
 {% endblock %}
+

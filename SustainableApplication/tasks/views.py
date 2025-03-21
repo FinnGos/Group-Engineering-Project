@@ -97,22 +97,20 @@ def update_progress(request, task_id, action):
 
 
 
-@login_required  # Ensures only logged-in users can upload images
+@login_required
 def upload_file(request, task_id):
     """
-Handles image uploads for a specific task.
-
-This view allows logged-in users to upload an image associated with a given task. 
-If the request method is POST and an image file is provided, the image is saved 
-to the database, linked to the task, and the user is redirected to the tasks page.
-
-Args:
-    request (HttpRequest): The HTTP request object.
-    task_id (int): The ID of the task for which the image is being uploaded.
-
-Returns:
-    HttpResponse: Renders the upload page or redirects to the tasks page upon successful upload.
+    Handles image uploads for a specific task.
+    If task_id is 0, create a new task for uploading or redirect to a default task page.
     """
+    # If task_id is 0, handle as a special case (create a new task or redirect)
+    if task_id == 0:
+        # Create a new task or set some default task for uploading
+        task = Tasks.objects.create(task_name="New Task", completed=False)
+        # You can also redirect to the new task upload page if needed
+        return redirect('upload_file', task_id=task.id)
+    
+    # If task_id is not 0, get the existing task
     task = get_object_or_404(Tasks, id=task_id)
 
     if request.method == 'POST' and request.FILES.get('image'):
@@ -128,6 +126,8 @@ Returns:
         return redirect('tasks_page')  # Redirect to the tasks page after upload
 
     return render(request, 'upload.html', {'task': task})
+
+
 @login_required
 def tasks_page(request):
     """
