@@ -20,6 +20,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
+from tasks import views
 
 urlpatterns = [
     path('', include('TermsAndConditions.urls')),
@@ -31,6 +34,8 @@ urlpatterns = [
     path("home/", include("home.urls")),
     path("leaderboard/", include("leaderboard.urls")),
     path("tasks/", include("tasks.urls")),
+    path('upload/', views.upload_file, name='upload_file'),
+    path('gallery/', views.image_gallery, name='image_gallery'),
     path("collectables/", include("collectables.urls")),
     path("lootboxes/", include("lootboxes.urls")),
 ]

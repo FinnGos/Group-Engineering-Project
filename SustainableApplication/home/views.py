@@ -41,6 +41,7 @@ def home(request):
     """
     return render(request, "home.html")
 
+
 def signup(request):
     """
     Handles user signup and logs signup events.
