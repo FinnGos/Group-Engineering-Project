@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Lootbox</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Lootbox</h1>
+
+    <p id="user-points">Points: {{ request.user.current_points }}</p>
+
+    <!-- Lootbox Button -->
+    <form id="lootboxForm" method="POST">
+      {% csrf_token %}
+      <button type="submit" id="openLootboxButton" class="btn btn-primary">
+        Open Lootbox - 100 Points
+      </button>
+    </form>
+
+    <!-- Display Lootbox Result -->
+    <div id="loot-result"></div>
+
+    <p><a href="{% url 'home' %}">Home</a></p>
+
+    <script>
+      $(document).ready(function () {
+        $("#lootboxForm").submit(function (event) {
+          event.preventDefault(); // Prevent normal form submission
+
+          $.ajax({
+            url: '{% url "open_lootbox" %}',
+            type: "POST",
+            data: {
+              csrfmiddlewaretoken: "{{ csrf_token }}",
+            },
+            success: function (response) {
+              const lootResult = $("#loot-result");
+
+              if (response.success) {
+                // Update user points
+                $("#user-points").text(`Points: ${response.new_points}`);
+
+                if (response.loot_item) {
+                  let duplicateMessage = response.is_duplicate
+                    ? "<p>(You already own this item, so points were refunded)</p>"
+                    : "";
+
+                  lootResult.html(`
+                            <h3>Congratulations!</h3>
+                            <p>You received: ${response.loot_item.name}</p>
+                            <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" />
+                            <p>Fun Fact: ${response.loot_item.fact}</p>
+                            ${duplicateMessage}
+                        `);
+                } else {
+                  lootResult.html("<p>You got nothing this time.</p>");
+                }
+              } else {
+                lootResult.html(
+                  `<p style="color:red;">${
+                    response.error || "Something went wrong!"
+                  }</p>`
+                );
+              }
+            },
+            error: function (xhr) {
+              const errorMessage =
+                xhr.responseJSON?.error || "Error: Unable to open lootbox.";
+              alert(errorMessage);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

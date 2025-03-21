@@ -1,2 +1,11 @@
 *.pyc
 __pycache__/
+
+
+#ignore database files
+*.sqlite3
+db.sqlite3
+
+#ignore logs
+logs/
+*log

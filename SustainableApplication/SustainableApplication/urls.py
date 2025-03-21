@@ -32,6 +32,7 @@ urlpatterns = [
     path("leaderboard/", include("leaderboard.urls")),
     path("tasks/", include("tasks.urls")),
     path("collectables/", include("collectables.urls")),
+    path("lootboxes/", include("lootboxes.urls")),
 ]
 
 # Serve static and media files in development mode
