@@ -8884,3 +8884,32 @@ django INFO 2025-03-20 23:56:56,857 views 27497 140106540779200 User asked for p
 django.server INFO 2025-03-20 23:56:56,867 basehttp 27497 140106540779200 "GET /home/accounts/view_data/ HTTP/1.1" 200 6157
 django.server INFO 2025-03-20 23:57:03,045 basehttp 27497 140106540779200 "GET /collectables/ HTTP/1.1" 200 5181
 django.server INFO 2025-03-20 23:57:30,755 basehttp 27497 140106540779200 "GET /collectables/ HTTP/1.1" 200 5181
+django.utils.autoreload INFO 2025-03-21 12:39:13,758 autoreload 2255 139845009784960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 12:39:22,379 autoreload 2369 140010095632512 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 12:42:15,248 autoreload 3157 140371904184448 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 12:42:37,205 basehttp 3157 140371854096064 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 12:42:37,222 basehttp 3157 140371854096064 "GET /accounts/login/ HTTP/1.1" 200 7452
+django.server INFO 2025-03-21 12:42:37,302 basehttp 3157 140371854096064 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-21 12:42:37,464 basehttp 3157 140371854096064 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-21 12:42:37,689 log 3157 140371854096064 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 12:42:37,689 basehttp 3157 140371854096064 "GET /favicon.ico HTTP/1.1" 404 4747
+django.server INFO 2025-03-21 12:42:52,057 basehttp 3157 140371854096064 "GET /home/signup/ HTTP/1.1" 200 8641
+django INFO 2025-03-21 12:43:03,971 views 3157 140371854096064 User logged in: nightmare
+django INFO 2025-03-21 12:43:03,992 views 3157 140371854096064 New user signed up: nightmare
+django.server INFO 2025-03-21 12:43:04,001 basehttp 3157 140371854096064 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 12:43:04,011 basehttp 3157 140371854096064 "GET /home/ HTTP/1.1" 200 7341
+django.server INFO 2025-03-21 12:43:04,110 basehttp 3157 140371839928000 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-21 12:43:04,110 basehttp 3157 140371854096064 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-21 12:43:06,395 basehttp 3157 140371854096064 "GET /collectables/ HTTP/1.1" 200 5181
+django.server INFO 2025-03-21 12:43:08,562 basehttp 3157 140371854096064 "GET /leaderboard/ HTTP/1.1" 200 7972
+django.server INFO 2025-03-21 12:43:08,608 basehttp 3157 140371854096064 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-21 12:43:08,614 basehttp 3157 140371854096064 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-21 12:43:08,614 basehttp 3157 140371839928000 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django INFO 2025-03-21 12:43:09,699 views 3157 140371854096064 User asked for personal data stored: nightmare
+django.server INFO 2025-03-21 12:43:09,707 basehttp 3157 140371854096064 "GET /home/accounts/view_data/ HTTP/1.1" 200 5681
+django.server INFO 2025-03-21 12:43:13,203 basehttp 3157 140371854096064 "GET /home/ HTTP/1.1" 200 7341
+django.server INFO 2025-03-21 12:43:14,436 basehttp 3157 140371854096064 "GET /get_location/1/ HTTP/1.1" 200 7280
+django.server INFO 2025-03-21 12:43:14,455 basehttp 3157 140371854096064 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-21 12:43:14,556 basehttp 3157 140371854096064 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-21 12:43:20,545 basehttp 3157 140371854096064 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5877
+django.server INFO 2025-03-21 12:43:23,432 basehttp 3157 140371854096064 "GET /home/accounts/change_password/ HTTP/1.1" 200 6628
