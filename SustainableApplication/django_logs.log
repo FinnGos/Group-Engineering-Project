@@ -3207,3 +3207,6 @@ django.server INFO 2025-03-21 13:47:18,522 basehttp 18821 140567962973888 "GET /
 django.server INFO 2025-03-21 13:47:19,250 basehttp 18821 140567962973888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
 django.server WARNING 2025-03-21 13:47:19,270 basehttp 18821 140567962973888 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-03-21 13:47:24,279 basehttp 18821 140567962973888 "GET /home/ HTTP/1.1" 200 7455
+django.utils.autoreload INFO 2025-03-21 20:45:51,290 autoreload 32433 139852227432576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 20:46:00,860 autoreload 32622 140191332135040 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 20:46:16,947 autoreload 32753 140281790263424 Watching for file changes with StatReloader

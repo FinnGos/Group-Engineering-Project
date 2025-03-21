@@ -11,7 +11,6 @@
 <!-- Background Image Section -->
 <div class="background-section relative">
   <img src="{% static 'images/checkin.jpg' %}" alt="Background Image" class="w-full h-auto">
-  <!-- Overlay content -->
   <div class="form-section moved-down absolute inset-0 flex flex-col justify-center items-center text-white">
     <h1 class="text-6xl font-bold mb-6 outlined-text">Check-In</h1>
     <p class="text-3xl mb-6 outlined-text text-center">
@@ -44,27 +43,46 @@
             return;
         }
 
-
-        //PLEASE NOTE THIS MAP IS NOT FULLY CONNECTED
-        //CURRENTLY IT HAS A PLACEHOLDER VALUE OF POINTING TO FORUM 
-        //IM NOT SURE HOW TO GET OUR LOCATION HERE
-        //POTENTIALLY NOT MY PROBLEM
-
-        
-        // Initialize the map at a default location
+        // Initialize map
         var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
-        // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
-        // Add a placeholder marker
-        L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
-            .bindPopup("This is your location.")
+
+        var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
+            .bindPopup("Your location")
             .openPopup();
-        
-        // Connect to backend here please
+
+        // Function to get user's geolocation
+        function getLocation(task_id) {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+
+                    // Update map marker
+                    marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
+                    map.setView([lat, lon], 15);
+
+                    // Send location to the backend
+                    fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            alert(data.message);
+                        })
+                        .catch(error => console.error('Error:', error));
+                }, function (error) {
+                    alert("Error getting location. Please enable location services.");
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        // Attach event listener to the check-in button
         document.getElementById('checkin-btn').addEventListener('click', function() {
-            alert("Check-in feature will be enabled with geolocation.");
+            const taskId = 1; // Replace with dynamic task ID
+            getLocation(taskId);
         });
     });
 </script>

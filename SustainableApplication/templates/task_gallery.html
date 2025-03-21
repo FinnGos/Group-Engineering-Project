@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Image Gallery{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <style>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .btn-danger {
+            background: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-danger:hover {
+            background: darkred;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container mx-auto text-center py-10">
+        <h1 class="text-4xl font-bold text-gray-900">Gallery</h1>
+
+        {% if images %}
+            <div class="gallery-container">
+                {% for image in images %}
+                    <div class="image-card">
+                        <img src="{{ image.image.url }}" alt="Task Image">
+                        <p class="mt-2 text-lg font-semibold text-gray-700">
+                            <strong>Task:</strong> {{ image.task.task_name }}
+                        </p>
+
+                        <!-- Delete Button -->
+                        <form action="{% url 'delete_image' image.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="btn-danger">Delete</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="text-lg text-gray-600 mt-6">No images available.</p>
+        {% endif %}
+
+        <!-- Back to Tasks Button -->
+        <div class="mt-8">
+            <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+                Go to Your Daily Tasks
+            </a>
+        </div>
+    </div>
+{% endblock %}
