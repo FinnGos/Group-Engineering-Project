@@ -1,0 +1,37 @@
+/* CSS for resizing images and adjusting layout */
+.item img, .slot img {
+    width: 100px;  /* Adjust the width of images */
+    height: auto;  /* Maintain the aspect ratio */
+    object-fit: cover;  /* Ensure the image covers the area without stretching */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Automatically adjusts columns */
+    gap: 10px; /* Space between slots */
+}
+
+.items {
+    margin-top: 20px;
+}
+
+.item {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100px; /* Same size as grid images */
+    height: auto;
+}
+
+.slot {
+    position: relative;
+    width: 100px;  /* Make slots consistent in size */
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

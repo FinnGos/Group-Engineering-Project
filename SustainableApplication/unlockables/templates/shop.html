@@ -2,14 +2,17 @@
 {% block content %}
 <h2>Shop</h2>
 
-<h3>Buy Collectables</h3>
+<h3>Buy Items</h3>
 <ul>
     {% for item in items %}
     <li>
         {{ item.name }} - {{ item.price }} Carbo Coins 
-        <a href="{% url 'buy_collectable' collectable.id %}">Buy</a>
+        <a href="{% url 'buy_item' item.id %}">Buy</a>
     </li>
+    {% empty %}
+    <li>No items available.</li>
     {% endfor %}
 </ul>
+
 
 {% endblock %}
