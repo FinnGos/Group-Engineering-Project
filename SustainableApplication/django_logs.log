@@ -910,3 +910,117 @@ django.server INFO 2025-03-20 17:17:42,927 basehttp 19888 2784 "POST /lootboxes/
 django.request WARNING 2025-03-20 17:17:42,944 log 19888 2784 Not Found: /media/media/forum.jpg
 django.server WARNING 2025-03-20 17:17:42,944 basehttp 19888 2784 "GET /media/media/forum.jpg HTTP/1.1" 404 5053
 django.server INFO 2025-03-20 17:17:44,585 basehttp 19888 2784 "GET /home/ HTTP/1.1" 200 1842
+django.utils.autoreload INFO 2025-03-21 13:26:36,780 autoreload 12629 139814202617984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 13:29:23,301 autoreload 13421 140359032684672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-21 13:31:22,865 autoreload 14007 140292364284032 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 13:31:27,394 basehttp 14007 140292314363584 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:31:27,409 basehttp 14007 140292314363584 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:31:27,528 basehttp 14007 140292314363584 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-21 13:31:27,641 basehttp 14007 140292314363584 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-21 13:31:27,752 log 14007 140292314363584 Not Found: /favicon.ico
+django.server INFO 2025-03-21 13:31:28,892 basehttp 14007 140292314363584 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:31:28,901 basehttp 14007 140292314363584 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:31:38,771 basehttp 14007 140292304922304 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:31:38,807 basehttp 14007 140292304922304 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-21 13:31:38,809 basehttp 14007 140292304922304 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-21 13:31:39,168 log 14007 140292304922304 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 13:31:39,168 basehttp 14007 140292304922304 "GET /favicon.ico HTTP/1.1" 404 4900
+django.server INFO 2025-03-21 13:31:44,218 basehttp 14007 140292304922304 "GET /home/signup/ HTTP/1.1" 200 8755
+django WARNING 2025-03-21 13:32:00,199 views 14007 140292304922304 Failed signup attempt.
+django.server INFO 2025-03-21 13:32:00,200 basehttp 14007 140292304922304 "POST /home/signup/ HTTP/1.1" 200 8992
+django INFO 2025-03-21 13:32:15,643 views 14007 140292304922304 User logged in: uh
+django INFO 2025-03-21 13:32:15,648 views 14007 140292304922304 New user signed up: uh
+django.server INFO 2025-03-21 13:32:15,658 basehttp 14007 140292304922304 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:32:15,668 basehttp 14007 140292304922304 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:32:15,775 basehttp 14007 140292304922304 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-21 13:32:15,778 basehttp 14007 140292086822592 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-21 13:32:18,552 basehttp 14007 140292304922304 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:32:18,578 basehttp 14007 140292304922304 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:32:20,752 basehttp 14007 140292086822592 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:32:21,747 basehttp 14007 140292086822592 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:32:23,543 basehttp 14007 140292086822592 "GET /leaderboard/ HTTP/1.1" 200 8086
+django.server INFO 2025-03-21 13:32:23,565 basehttp 14007 140292086822592 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-21 13:32:23,608 basehttp 14007 140292086822592 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-21 13:32:23,612 basehttp 14007 140292078429888 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.request WARNING 2025-03-21 13:32:23,705 log 14007 140292086822592 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 13:32:23,705 basehttp 14007 140292086822592 "GET /favicon.ico HTTP/1.1" 404 4900
+django INFO 2025-03-21 13:32:24,624 views 14007 140292086822592 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:32:24,626 basehttp 14007 140292086822592 "GET /home/accounts/view_data/ HTTP/1.1" 200 5770
+django.server INFO 2025-03-21 13:32:25,370 basehttp 14007 140292086822592 "GET /leaderboard/ HTTP/1.1" 200 8086
+django.server INFO 2025-03-21 13:33:08,737 basehttp 14007 140292086822592 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:33:16,780 basehttp 14007 140292086822592 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:33:16,814 basehttp 14007 140292086822592 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:33:18,942 basehttp 14007 140292078429888 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:33:19,924 basehttp 14007 140292078429888 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:33:24,322 basehttp 14007 140292078429888 "GET /leaderboard/ HTTP/1.1" 200 8086
+django INFO 2025-03-21 13:33:24,920 views 14007 140292078429888 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:33:24,923 basehttp 14007 140292078429888 "GET /home/accounts/view_data/ HTTP/1.1" 200 5898
+django.server INFO 2025-03-21 13:33:25,569 basehttp 14007 140292078429888 "GET /home/accounts/change_password/ HTTP/1.1" 200 6742
+django.server INFO 2025-03-21 13:33:26,271 basehttp 14007 140292078429888 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5984
+django INFO 2025-03-21 13:33:27,111 views 14007 140292078429888 User logged out: uh
+django.server INFO 2025-03-21 13:33:27,112 basehttp 14007 140292078429888 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:33:27,119 basehttp 14007 140292078429888 "GET /home/accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:33:28,110 basehttp 14007 140292078429888 "GET /home/accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:33:29,893 basehttp 14007 140292078429888 "GET /get_location/1/ HTTP/1.1" 200 7394
+django.server INFO 2025-03-21 13:33:29,948 basehttp 14007 140292078429888 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-21 13:33:29,985 basehttp 14007 140292078429888 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-21 13:33:30,826 basehttp 14007 140292078429888 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:33:32,284 basehttp 14007 140292078429888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:33:32,303 basehttp 14007 140292078429888 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:33:34,027 basehttp 14007 140292078429888 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:33:39,364 basehttp 14007 140292078429888 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:34:29,729 basehttp 14007 140292078429888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:34:29,756 basehttp 14007 140292078429888 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:34:34,087 basehttp 14007 140292078429888 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:35:43,411 basehttp 14007 140292078429888 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:37:53,047 basehttp 14007 140292078429888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:37:53,081 basehttp 14007 140292078429888 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-21 13:37:54,081 log 14007 140292078429888 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-21 13:37:54,081 basehttp 14007 140292078429888 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.server INFO 2025-03-21 13:37:56,401 basehttp 14007 140292078429888 "GET /home/ HTTP/1.1" 200 7455
+django.utils.autoreload INFO 2025-03-21 13:39:02,976 autoreload 15995 140071553806464 Watching for file changes with StatReloader
+django INFO 2025-03-21 13:39:04,225 views 15995 140071432877760 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:39:04,232 basehttp 15995 140071432877760 "GET /home/accounts/view_data/ HTTP/1.1" 200 6134
+django.utils.autoreload INFO 2025-03-21 13:44:56,048 autoreload 18257 139796919160960 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 13:44:58,850 basehttp 18257 139796868495040 "GET /home/ HTTP/1.1" 200 7455
+django.request WARNING 2025-03-21 13:44:58,994 log 18257 139796868495040 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 13:44:58,995 basehttp 18257 139796868495040 "GET /favicon.ico HTTP/1.1" 404 4900
+django.server INFO 2025-03-21 13:45:00,229 basehttp 18257 139796868495040 "GET /collectables/ HTTP/1.1" 200 5295
+django INFO 2025-03-21 13:45:01,664 views 18257 139796868495040 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:45:01,666 basehttp 18257 139796868495040 "GET /home/accounts/view_data/ HTTP/1.1" 200 6262
+django INFO 2025-03-21 13:45:07,048 views 18257 139796868495040 User logged out: uh
+django.server INFO 2025-03-21 13:45:07,048 basehttp 18257 139796868495040 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:45:07,058 basehttp 18257 139796868495040 "GET /home/accounts/login/ HTTP/1.1" 200 7566
+django INFO 2025-03-21 13:45:11,772 views 18257 139796868495040 User logged in: uh
+django.server INFO 2025-03-21 13:45:11,788 basehttp 18257 139796868495040 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 13:45:11,795 basehttp 18257 139796868495040 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:45:13,798 basehttp 18257 139796868495040 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:45:15,184 basehttp 18257 139796868495040 "GET /leaderboard/ HTTP/1.1" 200 8086
+django.server INFO 2025-03-21 13:45:16,031 basehttp 18257 139796868495040 "GET /collectables/ HTTP/1.1" 200 5295
+django.server INFO 2025-03-21 13:45:16,503 basehttp 18257 139796868495040 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:45:16,523 basehttp 18257 139796868495040 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:45:18,223 basehttp 18257 139796868495040 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:45:19,514 basehttp 18257 139796868495040 "GET /collectables/ HTTP/1.1" 200 5295
+django.utils.autoreload INFO 2025-03-21 13:46:40,573 autoreload 18257 139796919160960 /home/finn/Group-Engineering-Project/SustainableApplication/collectables/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-21 13:46:40,762 autoreload 18715 140549664350336 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 13:46:44,259 basehttp 18715 140549613942464 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-21 13:46:44,325 basehttp 18715 140549613942464 "GET /media/placeholder.jpg HTTP/1.1" 200 1358618
+django.request WARNING 2025-03-21 13:46:44,391 log 18715 140549613942464 Not Found: /favicon.ico
+django.server WARNING 2025-03-21 13:46:44,391 basehttp 18715 140549613942464 "GET /favicon.ico HTTP/1.1" 404 4900
+django.utils.autoreload INFO 2025-03-21 13:46:50,941 autoreload 18715 140549664350336 /home/finn/Group-Engineering-Project/SustainableApplication/collectables/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-21 13:46:51,107 autoreload 18821 140568080806016 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 13:47:07,105 basehttp 18821 140567962973888 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 13:47:07,983 basehttp 18821 140567962973888 "GET /get_location/1/ HTTP/1.1" 200 7394
+django.server INFO 2025-03-21 13:47:08,597 basehttp 18821 140567962973888 "GET /home/accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-21 13:47:10,138 basehttp 18821 140567962973888 "GET /home/ HTTP/1.1" 200 7455
+django INFO 2025-03-21 13:47:14,514 views 18821 140567962973888 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:47:14,515 basehttp 18821 140567962973888 "GET /home/accounts/view_data/ HTTP/1.1" 200 6605
+django.server INFO 2025-03-21 13:47:15,365 basehttp 18821 140567962973888 "GET /home/accounts/change_password/ HTTP/1.1" 200 6742
+django.server INFO 2025-03-21 13:47:16,037 basehttp 18821 140567962973888 "GET /home/accounts/update_profile/ HTTP/1.1" 200 5984
+django INFO 2025-03-21 13:47:16,843 views 18821 140567962973888 User asked for personal data stored: uh
+django.server INFO 2025-03-21 13:47:16,844 basehttp 18821 140567962973888 "GET /home/accounts/view_data/ HTTP/1.1" 200 6733
+django.server INFO 2025-03-21 13:47:17,445 basehttp 18821 140567962973888 "GET /leaderboard/ HTTP/1.1" 200 8086
+django.server INFO 2025-03-21 13:47:18,522 basehttp 18821 140567962973888 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-21 13:47:19,250 basehttp 18821 140567962973888 "GET /lootboxes/open/ HTTP/1.1" 200 2740
+django.server WARNING 2025-03-21 13:47:19,270 basehttp 18821 140567962973888 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-21 13:47:24,279 basehttp 18821 140567962973888 "GET /home/ HTTP/1.1" 200 7455
