@@ -154,7 +154,7 @@ def image_gallery(request):
         HttpResponse: Renders the 'gallery.html' template with uploaded images.
     """
     images = UploadedImage.objects.select_related('task')
-    return render(request, 'gallery.html', {'images': images})
+    return render(request, "task_gallery.html", {"images": images})
 
 @login_required
 def delete_image(request, image_id):
