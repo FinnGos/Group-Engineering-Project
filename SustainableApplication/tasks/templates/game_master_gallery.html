@@ -1,0 +1,45 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Game Master Gallery</h1>
+
+  <h2>Select a user to view their uploaded images:</h2>
+
+  <!-- User Selection Dropdown -->
+  <form method="GET" action="{% url 'game_master_gallery' %}">
+    <label for="user">Select a User:</label>
+    <select name="user" id="user" onchange="this.form.submit()">
+      <option value="">-- Choose a User --</option>
+      {% for user in users %}
+        <option value="{{ user.id }}" {% if user.id == selected_user.id %}selected{% endif %}>{{ user.username }}</option>
+      {% endfor %}
+    </select>
+  </form>
+
+  <!-- Show images of selected user -->
+  {% if selected_user %}
+    <h3>Images uploaded by {{ selected_user.username }}:</h3>
+    <ul>
+      {% for image in selected_user.uploadedimage_set.all %}
+        <li>
+          <img src="{{ image.image.url }}" alt="Uploaded Image" style="max-width: 100px;"/>
+          <p>Uploaded by: {{ image.uploaded_by.username }}</p>
+          <form method="POST" action="{% url 'delete_image' image.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Delete Image</button>
+          </form>
+        </li>
+      {% empty %}
+        <p>No images uploaded by this user.</p>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Please select a user to see their uploaded images.</p>
+  {% endif %}
+
+  <!-- Go to Home Page Button -->
+  <a href="{% url 'home' %}">
+    <button type="button" class="btn btn-primary">Go to Home Page</button>
+  </a>
+
+{% endblock %}

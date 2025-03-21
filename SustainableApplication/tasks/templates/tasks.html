@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Progress</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/styles.css' %}"
-    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -34,12 +30,34 @@
         </div>
 
         <!-- Checkin button -->
-        {%if task.id%}
-        <p>Task ID: {{task.id}}</p>
-        <!--Debugging-->
-        <form action="{%url 'get_location' task.id%}" method="GET">
+        {% if task.id %}
+        <p>Task ID: {{ task.id }}</p>
+        <form action="{% url 'get_location' task.id %}" method="GET">
           <button type="submit" class="btn btn-primary">Check In</button>
         </form>
+        {% else %}
+        <p>Error: No task ID</p>
+        {% endif %}
+
+        <button id="claim-button-{{task.id}}" class="btn btn-success" onclick="claimTask({{task.id}})" {% if not task.has_checked_in %} disabled {% endif %}>Claim</button>
+        <button class="btn btn-warning" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease</button>
+
+        <p><a href="{% url 'upload_file' task.id %}" class="btn btn-info">Upload Image</a></p>
+        <p><a href="{% url 'image_gallery' %}" class="btn btn-info">View Uploaded Images</a></p>
+
+        <!-- Display images if they exist for the task -->
+        {% comment %} {% if task.uploadedimage_set.all %}
+        <ul>
+          {% for image in task.uploadedimage_set.all %}
+            <li>
+              <img src="{{ image.image.url }}" alt="Uploaded Image" style="max-width: 100px;"/>
+              <p>Uploaded by: {{ image.uploaded_by.username }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p>No images uploaded yet.</p>
+        {% endif %} {% endcomment %}
         {%else%}
         <p>error no task id</p>
         {%endif%}
@@ -67,55 +85,38 @@
     {% else %}
     <p>No tasks available to complete.</p>
     {% endif %}
+    
     <p><a href="{% url 'home' %}">Home</a></p>
 
     <script>
       function updateProgress(taskId, action) {
-        /**
-         * Function called when the decrease button is clicked
-         * Uses ajax to update database without reloading the webpage
-         * will result in the progress bar decreasing and the curren_progress decreasing
-         */
         $.ajax({
-          url: "{% url 'update_progress' 1 'increase' %}"
-            .replace("1", taskId)
-            .replace("increase", action),
+          url: "{% url 'update_progress' 1 'increase' %}".replace("1", taskId).replace("increase", action),
           type: "POST",
-          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
           success: function (response) {
             if (response.success) {
-              let progressBar = document.getElementById(
-                "progress-bar-" + taskId
-              );
+              let progressBar = document.getElementById("progress-bar-" + taskId);
               progressBar.style.width = response.new_progress + "%";
-              progressBar.innerText =
-                response.current_progress + "/" + response.target;
+              progressBar.innerText = response.current_progress + "/" + response.target;
             } else {
               alert(response.message);
             }
           },
         });
       }
+
       function claimTask(taskId) {
-        /**
-         * Function called when the claim button is pressed
-         * Uses ajax to update database without reloading the webpage
-         * Will also disable the claim button after has been pressed to ensure no repeat claims
-         */
         $.ajax({
-          url: "{%url 'update_progress' 1 'claim' %}".replace("1", taskId),
+          url: "{% url 'update_progress' 1 'claim' %}".replace("1", taskId),
           type: "POST",
-          data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // CSRF token
+          data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
           success: function (response) {
             if (response.success) {
-              let progressBar = document.getElementById(
-                "progress-bar-" + taskId
-              );
+              let progressBar = document.getElementById("progress-bar-" + taskId);
               progressBar.style.width = "100%";
-              progressBar.innerText =
-                response.current_progress + "/" + response.target;
+              progressBar.innerText = response.current_progress + "/" + response.target;
 
-              //Disable button after claiming
               document.getElementById("claim-button-" + taskId).disabled = true;
             } else {
               alert(response.message);
@@ -126,3 +127,4 @@
     </script>
   </body>
 </html>
+

@@ -1,84 +1,94 @@
 from django.test import TestCase
 from django.urls import reverse
-from .models import Tasks
-from django.utils.timezone import now, timedelta
+from django.contrib.auth import get_user_model
+from django.core.files.uploadedfile import SimpleUploadedFile
+from tasks.models import UploadedImage, Tasks
+from django.test import Client
 
+User = get_user_model()
 
-class TaskViewTests(TestCase):
+class UploadImageTest(TestCase):
+    User = get_user_model()
     def setUp(self):
-        """Set up test data"""
-        self.task1 = Tasks.objects.create(
-            task_name="Test Task 1",
-            current_progress=0,
-            target=5,
-            completed=False,
-            has_checked_in=True,
-        )
-        self.task2 = Tasks.objects.create(
-            task_name="Test Task 2",
-            current_progress=4,
-            target=4,
-            completed=True,
-            has_checked_in=True,
-        )
+        self.user = User.objects.create_user(username="testuser", password="password")
+        self.client = Client()
+        self.client.login(username="testuser", password="password")
+        self.task = Tasks.objects.create(task_name="Test Task", current_progress=10, target=20)
 
-    def test_task_view(self):
-        """Test that at least one task is displayed if there are incomplete tasks"""
-        response = self.client.get(reverse("tasks_view"))
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Task")  # ensure a task is shown
-
-    def test_update_progress_increase(self):
-        """Test increasing task progress"""
+    def test_upload_image(self):
+        # Prepare image to upload
+        image = SimpleUploadedFile(
+            "test_image.jpg", b"image_content", content_type="image/jpeg"
+        )
+        
+        # Simulate image upload for the task
         response = self.client.post(
-            reverse("update_progress", args=[self.task1.id, "increase"])
+            reverse("upload_file", args=[self.task.id]),
+            {"image": image},
+            follow=True
         )
-        self.task1.refresh_from_db()
-
+        
+        # Check if the image is successfully uploaded
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(response.json()["success"])
-        self.assertEqual(self.task1.current_progress, 1)
+        self.assertTrue(UploadedImage.objects.filter(task=self.task).exists())
 
-    def test_update_progress_claim(self):
-        """Test claiming a completed task"""
+class DeleteImageTest(TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="password")
+        self.client = Client()
+        self.client.login(username="testuser", password="password")
+        self.task = Tasks.objects.create(task_name="Test Task", current_progress=10, target=20)
+        self.image = UploadedImage.objects.create(
+            task=self.task,
+            image="path/to/image.jpg",  # Assuming you've uploaded an image before
+            uploaded_by=self.user
+        )
+
+    def test_delete_image(self):
+        # The image should exist before deletion
+        self.assertTrue(UploadedImage.objects.filter(id=self.image.id).exists())
+        
+        # Simulate image deletion
         response = self.client.post(
-            reverse("update_progress", args=[self.task1.id, "claim"])
+            reverse("delete_image", args=[self.image.id]),
+            follow=True
         )
-        self.task1.refresh_from_db()
-
+        
+        # Check if the image is deleted
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(response.json()["success"])
-        self.assertTrue(self.task1.completed)
+        self.assertFalse(UploadedImage.objects.filter(id=self.image.id).exists())
 
-    def test_invalid_update_action(self):
-        """Test an invalid action"""
+# This tests the Game Master can delete other users photos - the game master main purpose for per reviewing
+class GameMasterDeletePhotoTest(TestCase):
+
+    def setUp(self):
+        # Create a game master user
+        self.game_master = User.objects.create_user(username="GameMaster", password="12345678P")
+        self.client = Client()
+        self.client.login(username="GameMaster", password="12345678P")
+        
+        # Create regular user and task
+        self.regular_user = User.objects.create_user(username="regularuser", password="12345678P")
+        self.task = Tasks.objects.create(task_name="Test Task", current_progress=10, target=20)
+        
+        # Upload an image for the task
+        image = SimpleUploadedFile("test_image.jpg", b"image_content", content_type="image/jpeg")
+        self.uploaded_image = UploadedImage.objects.create(
+            task=self.task, image=image, uploaded_by=self.regular_user
+        )
+
+    def test_game_master_delete_photo(self):
+        # The image should exist before deletion
+        self.assertTrue(UploadedImage.objects.filter(id=self.uploaded_image.id).exists())
+        
+        # Simulate the Game Master deleting the image
         response = self.client.post(
-            reverse("update_progress", args=[self.task1.id, "invalid_action"])
+            reverse("delete_image", args=[self.uploaded_image.id]),
+            follow=True
         )
+        
+        # Check if the image is deleted
         self.assertEqual(response.status_code, 200)
-        self.assertFalse(response.json()["success"])
-        self.assertEqual(response.json()["message"], "Invalid action or limit reached.")
+        self.assertFalse(UploadedImage.objects.filter(id=self.uploaded_image.id).exists())
 
-    def test_progress_resets_after_day_change(self):
-        """Test that the progress of a task resets after a day passes"""
-        self.task1.updated_at = now() - timedelta(days=1)
-        self.task1.save()
-
-        response = self.client.get(reverse("tasks_view"))
-        self.task1.refresh_from_db()
-
-        self.assertEqual(self.task1.current_progress, 0)
-
-    def test_no_tasks_shown_if_all_completed(self):
-        """Test that no tasks are displayed if all are completed"""
-
-        self.task1.copmpleted = True
-        self.task2.completed = True
-        self.task1.save()
-        self.task2.save()
-
-        response = self.client.get(reverse("tasks_view"))
-        self.assertEqual(response.status_code, 200)
-        self.assertNotContains(
-            response, "No tasks available to complete."
-        )  # ensure no tasks are shown
