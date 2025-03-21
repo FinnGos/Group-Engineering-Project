@@ -5497,3 +5497,41 @@ django.server INFO 2025-03-21 17:28:18,791 basehttp 27656 28752 "GET /shop/ HTTP
 django.server INFO 2025-03-21 17:28:22,080 basehttp 27656 28752 "GET /admin/ HTTP/1.1" 200 14182
 django.server INFO 2025-03-21 17:28:25,134 basehttp 27656 28752 "GET /admin/unlockables/useritem/ HTTP/1.1" 200 17170
 django.server INFO 2025-03-21 17:28:25,178 basehttp 27656 28752 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+django.utils.autoreload INFO 2025-03-21 17:49:52,084 autoreload 22628 22008 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:49:53,179 basehttp 22628 18272 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:49:53,219 basehttp 22628 18272 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-21 17:49:53,257 basehttp 22628 18272 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-21 17:49:54,677 views 22628 18272 User logged in: dc754
+django.server INFO 2025-03-21 17:49:54,725 basehttp 22628 18272 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:49:54,735 basehttp 22628 18272 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-21 17:49:58,207 basehttp 22628 18272 "GET /shop/ HTTP/1.1" 200 1547
+django.utils.autoreload INFO 2025-03-21 17:50:45,740 autoreload 22612 17628 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:50:46,737 basehttp 22612 26580 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:50:46,780 basehttp 22612 26580 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-21 17:50:48,355 views 22612 26580 User logged in: dc754
+django.server INFO 2025-03-21 17:50:48,404 basehttp 22612 26580 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:50:48,414 basehttp 22612 26580 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-21 17:50:52,506 basehttp 22612 26580 "GET /shop/ HTTP/1.1" 200 1406
+django.server INFO 2025-03-21 17:51:03,958 basehttp 22612 26580 "GET /map/ HTTP/1.1" 200 1410
+django.server INFO 2025-03-21 17:51:04,085 basehttp 22612 26580 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-21 17:51:04,103 basehttp 22612 27824 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-21 17:51:04,110 basehttp 22612 2220 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.server INFO 2025-03-21 17:51:14,004 basehttp 22612 2220 "GET /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 17:51:14,019 basehttp 22612 2220 "GET /shop/ HTTP/1.1" 200 1579
+django.server INFO 2025-03-21 17:51:16,200 basehttp 22612 2220 "GET /map/ HTTP/1.1" 200 1526
+django.server INFO 2025-03-21 17:51:16,228 basehttp 22612 2220 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:51:16,240 basehttp 22612 27824 "GET /media/buildings/Forum_locked.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:51:16,241 basehttp 22612 26580 "GET /static/images/grass_background.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:51:16,243 basehttp 22612 2220 "GET /media/items/solar_panel_heFXH0T.png HTTP/1.1" 200 292058
+django INFO 2025-03-21 18:05:47,960 views 15976 14768 User logged in: testuser
+django INFO 2025-03-21 18:05:48,335 views 15976 14768 User logged in: testuser
+django INFO 2025-03-21 18:05:48,697 views 15976 14768 User logged in: testuser
+django INFO 2025-03-21 18:06:18,309 views 19324 25128 User logged in: testuser
+django INFO 2025-03-21 18:06:18,685 views 19324 25128 User logged in: testuser
+django INFO 2025-03-21 18:06:19,049 views 19324 25128 User logged in: testuser
+django INFO 2025-03-21 18:06:49,979 views 13080 7092 User logged in: testuser
+django INFO 2025-03-21 18:06:50,029 views 13080 7092 User logged in: testuser
+django INFO 2025-03-21 18:06:50,398 views 13080 7092 User logged in: testuser
+django INFO 2025-03-21 18:06:50,444 views 13080 7092 User logged in: testuser
+django INFO 2025-03-21 18:06:50,811 views 13080 7092 User logged in: testuser
+django INFO 2025-03-21 18:06:50,857 views 13080 7092 User logged in: testuser
