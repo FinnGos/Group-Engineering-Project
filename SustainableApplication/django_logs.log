@@ -5535,3 +5535,22 @@ django INFO 2025-03-21 18:06:50,398 views 13080 7092 User logged in: testuser
 django INFO 2025-03-21 18:06:50,444 views 13080 7092 User logged in: testuser
 django INFO 2025-03-21 18:06:50,811 views 13080 7092 User logged in: testuser
 django INFO 2025-03-21 18:06:50,857 views 13080 7092 User logged in: testuser
+django.utils.autoreload INFO 2025-03-21 18:08:59,701 autoreload 25752 10920 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 18:09:02,379 basehttp 25752 28412 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:09:02,413 basehttp 25752 28412 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-21 18:09:02,446 basehttp 25752 28412 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-21 18:09:04,484 views 25752 28412 User logged in: dc754
+django.server INFO 2025-03-21 18:09:04,544 basehttp 25752 28412 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:09:04,557 basehttp 25752 28412 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-21 18:09:09,787 basehttp 25752 28412 "GET /shop/ HTTP/1.1" 200 1406
+django.server INFO 2025-03-21 18:09:12,559 basehttp 25752 28412 "GET /map/ HTTP/1.1" 200 1526
+django.server INFO 2025-03-21 18:09:12,586 basehttp 25752 28412 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:09:12,598 basehttp 25752 28412 "GET /media/buildings/Forum_locked.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:09:12,598 basehttp 25752 13900 "GET /media/items/solar_panel_heFXH0T.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:09:12,600 basehttp 25752 25024 "GET /static/images/grass_background.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:09:16,125 basehttp 25752 25024 "GET /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:09:16,139 basehttp 25752 25024 "GET /shop/ HTTP/1.1" 200 1579
+django.server INFO 2025-03-21 18:09:17,942 basehttp 25752 25024 "GET /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-21 18:09:17,955 basehttp 25752 25024 "GET /shop/ HTTP/1.1" 200 1572
+django.server INFO 2025-03-21 18:09:19,506 basehttp 25752 25024 "GET /map/ HTTP/1.1" 200 1759
+django.server INFO 2025-03-21 18:09:19,587 basehttp 25752 25024 "GET /media/items/tree_TrrWjHH_UCFOgZZ.png HTTP/1.1" 200 85207
