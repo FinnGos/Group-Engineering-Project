@@ -3989,3 +3989,43 @@ django.server INFO 2025-03-21 22:06:45,638 basehttp 4029 140183400871616 "GET /t
 django.server WARNING 2025-03-21 22:06:45,684 basehttp 4029 140183400871616 "GET /static/css/styles.css HTTP/1.1" 404 1969
 django.server INFO 2025-03-21 22:06:45,695 basehttp 4029 140183400871616 "GET /media/MediaPhotos/MSI.png HTTP/1.1" 200 4760613
 django.server WARNING 2025-03-21 22:06:45,704 basehttp 4029 140183391430336 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-22 11:55:08,824 autoreload 7852 139635171016832 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:55:10,282 basehttp 7852 139635120404160 "GET /tasks/upload/8/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:55:10,297 basehttp 7852 139635120404160 "GET /accounts/login/?next=/tasks/upload/8/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 11:55:16,167 views 7852 139635120404160 User logged in: nightmare
+django.server INFO 2025-03-22 11:55:16,189 basehttp 7852 139635120404160 "POST /accounts/login/?next=/tasks/upload/8/ HTTP/1.1" 302 0
+django.request WARNING 2025-03-22 11:55:16,199 log 7852 139635120404160 Not Found: /tasks/upload/8/
+django.server WARNING 2025-03-22 11:55:16,199 basehttp 7852 139635120404160 "GET /tasks/upload/8/ HTTP/1.1" 404 4966
+django.server INFO 2025-03-22 11:55:17,710 basehttp 7852 139635120404160 "GET /accounts/login/?next=/tasks/upload/8/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 11:55:19,257 basehttp 7852 139635120404160 "GET /home/ HTTP/1.1" 200 7637
+django.server INFO 2025-03-22 11:55:21,793 basehttp 7852 139635120404160 "GET /tasks/ HTTP/1.1" 200 9629
+django.server INFO 2025-03-22 11:55:23,391 basehttp 7852 139635120404160 "GET /tasks/gallery/ HTTP/1.1" 200 7982
+django.server WARNING 2025-03-22 11:55:23,410 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 11:55:23,456 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 11:55:24,893 basehttp 7852 139635120404160 "GET /tasks/upload/0/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:55:24,901 basehttp 7852 139635120404160 "GET /tasks/upload/3/ HTTP/1.1" 200 6766
+django.server INFO 2025-03-22 11:56:12,944 basehttp 7852 139635120404160 "GET /tasks/upload/3/ HTTP/1.1" 200 7638
+django.request WARNING 2025-03-22 11:56:13,076 log 7852 139635120404160 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 11:56:13,077 basehttp 7852 139635120404160 "GET /favicon.ico HTTP/1.1" 404 4966
+django.server INFO 2025-03-22 11:56:59,635 basehttp 7852 139635120404160 "GET /tasks/ HTTP/1.1" 200 9629
+django.server INFO 2025-03-22 11:57:02,325 basehttp 7852 139635120404160 "GET /tasks/gallery/ HTTP/1.1" 200 7982
+django.server WARNING 2025-03-22 11:57:02,347 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 11:57:02,394 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 11:57:19,139 basehttp 7852 139635120404160 "GET /tasks/gallery/ HTTP/1.1" 200 7694
+django.server WARNING 2025-03-22 11:57:19,194 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 11:57:19,213 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 11:57:19,914 basehttp 7852 139635120404160 "GET /tasks/gallery/ HTTP/1.1" 200 7694
+django.server WARNING 2025-03-22 11:57:19,957 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 11:57:19,974 basehttp 7852 139635120404160 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 11:57:30,300 basehttp 7852 139635120404160 "GET /tasks/upload/0/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:57:30,309 basehttp 7852 139635120404160 "GET /tasks/upload/4/ HTTP/1.1" 200 7638
+django.utils.autoreload INFO 2025-03-22 11:58:22,113 autoreload 7852 139635171016832 /home/finn/Group-Engineering-Project/SustainableApplication/tasks/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 11:58:22,328 autoreload 8689 139935906697344 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:58:22,672 basehttp 8689 139935857243840 "GET /tasks/upload/4/ HTTP/1.1" 200 7837
+django.server INFO 2025-03-22 11:58:42,257 basehttp 8689 139935857243840 "GET /tasks/upload/0/ HTTP/1.1" 200 7837
+django.server INFO 2025-03-22 11:58:51,415 basehttp 8689 139935857243840 "POST /tasks/upload/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:58:51,425 basehttp 8689 139935857243840 "GET /tasks/tasks/ HTTP/1.1" 200 13781
+django.server INFO 2025-03-22 11:58:53,261 basehttp 8689 139935857243840 "GET /tasks/gallery/ HTTP/1.1" 200 8156
+django.server WARNING 2025-03-22 11:58:53,312 basehttp 8689 139935857243840 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 11:58:53,320 basehttp 8689 139935857243840 "GET /media/MediaPhotos/MSI_PRO.jpg HTTP/1.1" 200 1390750
+django.server WARNING 2025-03-22 11:58:53,327 basehttp 8689 139935846753984 "GET /static/css/styles.css HTTP/1.1" 404 1969

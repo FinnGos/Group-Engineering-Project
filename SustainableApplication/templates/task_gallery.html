@@ -77,11 +77,13 @@
                             <strong>Task:</strong> {{ image.task.task_name }}
                         </p>
 
-                        <!-- Delete Button -->
-                        <form action="{% url 'delete_image' image.id %}" method="POST">
-                            {% csrf_token %}
-                            <button type="submit" class="btn-danger">Delete</button>
-                        </form>
+                        <!-- Delete Button (Only visible to Game Masters) -->
+                        {% if user.is_authenticated and user.is_game_master %}
+                            <form action="{% url 'delete_image' image.id %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn-danger">Delete</button>
+                            </form>
+                        {% endif %}
                     </div>
                 {% endfor %}
             </div>
@@ -97,4 +99,3 @@
         </div>
     </div>
 {% endblock %}
-

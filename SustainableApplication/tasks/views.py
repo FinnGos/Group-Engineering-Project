@@ -97,35 +97,31 @@ def update_progress(request, task_id, action):
 
 
 
-@login_required
 def upload_file(request, task_id):
     """
     Handles image uploads for a specific task.
     If task_id is 0, create a new task for uploading or redirect to a default task page.
     """
-    # If task_id is 0, handle as a special case (create a new task or redirect)
+    # Get the list of all daily tasks
+    tasks = Tasks.objects.all()  # You can filter if needed
+
+    # If task_id is 0, redirect to task selection
     if task_id == 0:
-        # Create a new task or set some default task for uploading
-        task = Tasks.objects.create(task_name="New Task", completed=False)
-        # You can also redirect to the new task upload page if needed
-        return redirect('upload_file', task_id=task.id)
-    
-    # If task_id is not 0, get the existing task
-    task = get_object_or_404(Tasks, id=task_id)
+        task = None
+    else:
+        task = get_object_or_404(Tasks, id=task_id)
 
     if request.method == 'POST' and request.FILES.get('image'):
         image = request.FILES['image']
         
-        # Create and save the uploaded image
         uploaded_image = UploadedImage.objects.create(
             task=task, 
             image=image, 
             uploaded_by=request.user
         )
-        auth_logger.info(f"User {request.user.username} uploaded an image for Task {task.task_name} (ID: {task.id}). Image filename: {uploaded_image.image.name}")
-        return redirect('tasks_page')  # Redirect to the tasks page after upload
+        return redirect('tasks_page')  # Redirect after upload
 
-    return render(request, 'upload.html', {'task': task})
+    return render(request, 'upload.html', {'task': task, 'tasks': tasks})
 
 
 @login_required
