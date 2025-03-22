@@ -213,3 +213,32 @@ django.server INFO 2025-03-22 19:01:44,832 basehttp 102535 140700078307008 "GET 
 django.server INFO 2025-03-22 19:01:44,948 basehttp 102535 140700078307008 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
 django.server INFO 2025-03-22 19:01:44,948 basehttp 102535 140700064138944 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
 django.server INFO 2025-03-22 19:01:46,592 basehttp 102535 140700078307008 "GET /home/ HTTP/1.1" 200 7949
+django.utils.autoreload INFO 2025-03-22 20:35:54,650 autoreload 132549 139625343238272 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 20:35:56,479 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 6785
+django.server INFO 2025-03-22 20:35:56,543 basehttp 132549 139625226041024 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 20:35:56,546 basehttp 132549 139625226041024 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 20:35:56,671 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:35:56,671 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:35:58,637 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 7974
+django.server INFO 2025-03-22 20:36:42,791 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 7574
+django.server INFO 2025-03-22 20:36:57,779 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django.server INFO 2025-03-22 20:37:15,688 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django.server INFO 2025-03-22 20:37:17,454 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 7616
+django.server INFO 2025-03-22 20:37:19,192 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 7616
+django.server INFO 2025-03-22 20:37:20,151 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django WARNING 2025-03-22 20:37:34,551 views 132549 139625226041024 Failed signup attempt.
+django.server INFO 2025-03-22 20:37:34,552 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 200 8642
+django INFO 2025-03-22 20:37:45,821 views 132549 139625226041024 User logged in: thisishell
+django INFO 2025-03-22 20:37:45,823 views 132549 139625226041024 New user signed up: thisishell
+django.server INFO 2025-03-22 20:37:45,835 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:37:45,843 basehttp 132549 139625226041024 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:37:45,943 basehttp 132549 139625226041024 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-22 20:37:45,944 basehttp 132549 139625211872960 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-22 20:37:47,896 basehttp 132549 139625226041024 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:37:48,805 basehttp 132549 139625226041024 "GET /get_location/1/ HTTP/1.1" 200 11183
+django.server WARNING 2025-03-22 20:37:48,864 basehttp 132549 139625211872960 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 20:37:48,864 basehttp 132549 139625226041024 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-22 20:37:48,864 basehttp 132549 139625203480256 "GET /static/css/map.css HTTP/1.1" 200 851
+django.server INFO 2025-03-22 20:37:48,871 basehttp 132549 139625203480256 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server INFO 2025-03-22 20:37:48,872 basehttp 132549 139625226041024 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server WARNING 2025-03-22 20:37:48,901 basehttp 132549 139625211872960 "GET /static/css/button.css HTTP/1.1" 404 1969
