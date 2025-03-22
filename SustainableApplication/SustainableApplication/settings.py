@@ -43,10 +43,10 @@ MEDIA_ROOT = BASE_DIR / "media"
 # Allowed hosts
 ALLOWED_HOSTS = ["group-engineering-project.onrender.com", "127.0.0.1"]
 
-CSRF_TRUSTED_ORIGINS = ["https://group-engineering-project.onrender.com/",]
+CSRF_TRUSTED_ORIGINS = ["https://group-engineering-project.onrender.com",]
 SECRET_KEY = os.environ["SECRET_KEY"]
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
 
 # Application definition
 

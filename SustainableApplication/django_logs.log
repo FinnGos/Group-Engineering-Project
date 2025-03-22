@@ -253,3 +253,15 @@ django.server INFO 2025-03-22 20:44:55,777 basehttp 132549 139625226041024 "GET 
 django.request WARNING 2025-03-22 20:44:55,987 log 132549 139625226041024 Not Found: /favicon.ico
 django.server WARNING 2025-03-22 20:44:55,987 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
 django.server INFO 2025-03-22 20:44:56,764 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 9726
+django.utils.autoreload INFO 2025-03-22 20:48:58,522 autoreload 132549 139625343238272 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 20:48:58,764 autoreload 135738 140180470964352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 20:49:15,654 autoreload 135738 140180470964352 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 20:49:15,838 autoreload 135863 139955367571584 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 20:49:21,589 basehttp 135863 139955316717248 "GET /home/signup/ HTTP/1.1" 200 9726
+django.request WARNING 2025-03-22 20:49:21,756 log 135863 139955316717248 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:49:21,757 basehttp 135863 139955316717248 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:49:23,514 basehttp 135863 139955316717248 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-22 20:49:28,178 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:49:28,191 basehttp 135863 139955316717248 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:49:28,201 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:49:29,383 basehttp 135863 139955316717248 "GET /home/accounts/login/ HTTP/1.1" 200 8927
