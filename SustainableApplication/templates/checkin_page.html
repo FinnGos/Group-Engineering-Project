@@ -5,126 +5,185 @@
 
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'checkin.css' %}">
+  <link rel="stylesheet" href="{% static 'css/button.css' %}">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <style>
+    /* Background Section */
+    .background-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .background-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%); /* Less dimming */
+    }
+
+    /* Overlay for additional dimming control */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+    }
+
+    /* Form Section */
+    .form-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6); /* Slightly transparent black */
+      border-radius: 15px;
+      max-width: 600px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center everything inside */
+    }
+
+    /* Text Styling */
+    .outlined-text {
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* Check-in Button */
+    .checkin-btn {
+      width: 80%;
+      max-width: 300px;
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px; /* Add spacing */
+      text-align: center;
+    }
+
+    .checkin-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Map Container */
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    #map {
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+  </style>
 {% endblock %}
 
 {% block content %}
 <!-- Background Image Section -->
-<div class="background-section relative">
-  <img src="{% static 'images/checkin.jpg' %}" alt="Background Image" class="w-full h-auto">
-  <div class="form-section moved-down absolute inset-0 flex flex-col justify-center items-center text-white">
+<div class="background-section">
+  <img src="{% static 'images/checkin.jpg' %}" alt="Background Image">
+  <div class="background-overlay"></div>
+  
+  <!-- Form Section with Text and Button -->
+  <div class="form-section">
     <h1 class="text-6xl font-bold mb-6 outlined-text">Check-In</h1>
     <p class="text-3xl mb-6 outlined-text text-center">
       Click below to check-in.<br>
       You will only be able to check-in if you are within a registered sustainability hotspot.
     </p>
-    <button id="checkin-btn" class="w-full max-w-md bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
-      Check-In
-    </button>
+    <button id="checkin-btn" class="checkin-btn">Check-In</button>
   </div>
 </div>
 
-<!-- this is an HTML page for a check-in system that uses geolocation 
-to get the user's location and send it to the Django backend. -->
-
-{% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'css/button.css' %}">
-    <link rel="stylesheet" href="{% static 'css/map.css' %}">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check-In Page</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <style>
-        #map {
-            width: 600px; 
-            height: 300px; 
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Check-In System</h1>
-
-    {% if message %}
-        <p class="success-message">{{ message }}</p>
-        {% if task %}
-        <script>
-            setTimeout(function () {
-                window.location.href = "/tasks/";
-            }, 7000);
-        </script>
-        {% endif %}
-    {% elif error %}
-        <p class="error-message">{{ error }}</p>
+<!-- Map Section -->
+<div class="map-container">
+  {% if message %}
+    <p class="success-message">{{ message }}</p>
+    {% if task %}
+      <script>
+        setTimeout(function () {
+          window.location.href = "/tasks/";
+        }, 7000);
+      </script>
     {% endif %}
+  {% elif error %}
+    <p class="error-message">{{ error }}</p>
+  {% endif %}
 
-    <div id="map"></div>
+  <div id="map"></div>
+</div>
 
-    <!-- Hidden element to store task ID -->
-    <span id="taskData" data-task-id="{{ task.id|default:0 }}"></span>
+<!-- Hidden element to store task ID -->
+<span id="taskData" data-task-id="{{ task.id|default:0 }}"></span>
 
-    <button onclick="getLocation()">Check-In</button>
-
-    <!-- Link to external JavaScript file -->
-    <script src="{% static 'js/checkin.js' %}"></script>
-</body>
-</html>
-
+<script src="{% static 'js/checkin.js' %}"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var mapElement = document.getElementById("map");
-        if (!mapElement) {
-            console.error("Map container not found!");
-            return;
-        }
+  document.addEventListener("DOMContentLoaded", function () {
+      var mapElement = document.getElementById("map");
+      if (!mapElement) {
+          console.error("Map container not found!");
+          return;
+      }
 
-        // Initialize map
-        var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-        }).addTo(map);
+      // Initialize map
+      var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
-        var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
-            .bindPopup("Your location")
-            .openPopup();
+      var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
+          .bindPopup("Your location")
+          .openPopup();
 
-        // Function to get user's geolocation
-        function getLocation(task_id) {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var lat = position.coords.latitude;
-                    var lon = position.coords.longitude;
+      // Function to get user's geolocation
+      function getLocation(task_id) {
+          if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function (position) {
+                  var lat = position.coords.latitude;
+                  var lon = position.coords.longitude;
 
-                    // Update map marker
-                    marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
-                    map.setView([lat, lon], 15);
+                  // Update map marker
+                  marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
+                  map.setView([lat, lon], 15);
 
-                    // Send location to the backend
-                    fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
-                        .then(response => response.json())
-                        .then(data => {
-                            alert(data.message);
-                        })
-                        .catch(error => console.error('Error:', error));
-                }, function (error) {
-                    alert("Error getting location. Please enable location services.");
-                });
-            } else {
-                alert("Geolocation is not supported by this browser.");
-            }
-        }
+                  // Send location to the backend
+                  fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
+                      .then(response => response.json())
+                      .then(data => {
+                          alert(data.message);
+                      })
+                      .catch(error => console.error('Error:', error));
+              }, function (error) {
+                  alert("Error getting location. Please enable location services.");
+              });
+          } else {
+              alert("Geolocation is not supported by this browser.");
+          }
+      }
 
-        // Attach event listener to the check-in button
-        document.getElementById('checkin-btn').addEventListener('click', function() {
-            const taskId = 1; // Replace with dynamic task ID
-            getLocation(taskId);
-        });
-    });
+      // Attach event listener to the check-in button
+      document.getElementById('checkin-btn').addEventListener('click', function() {
+          const taskId = 1; // Replace with dynamic task ID
+          getLocation(taskId);
+      });
+  });
 </script>
 {% endblock %}

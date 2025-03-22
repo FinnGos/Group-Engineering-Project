@@ -11058,3 +11058,79 @@ django.server INFO 2025-03-22 16:25:54,047 basehttp 21028 25220 "GET /tasks/ HTT
 django.server INFO 2025-03-22 16:25:54,067 basehttp 21028 25220 "GET /static/tasks.css HTTP/1.1" 200 215
 django.server INFO 2025-03-22 16:25:54,073 basehttp 21028 20020 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
 >>>>>>> ed22091ccad314d2068b70907f915ef2355332d9
+django.utils.autoreload INFO 2025-03-22 17:09:24,556 autoreload 80172 139621217742976 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:09:35,215 basehttp 80172 139621167003328 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:09:35,232 basehttp 80172 139621167003328 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:09:35,333 basehttp 80172 139621167003328 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 17:09:35,372 basehttp 80172 139621167003328 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 17:09:35,755 log 80172 139621167003328 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 17:09:35,755 basehttp 80172 139621167003328 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 17:09:38,921 basehttp 80172 139621167003328 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 17:09:49,091 views 80172 139621167003328 User logged in: asdadas
+django INFO 2025-03-22 17:09:49,125 views 80172 139621167003328 New user signed up: asdadas
+django.server INFO 2025-03-22 17:09:49,137 basehttp 80172 139621167003328 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:09:49,145 basehttp 80172 139621167003328 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:09:49,246 basehttp 80172 139621167003328 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-22 17:09:49,249 basehttp 80172 139621152315072 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-22 17:09:52,803 basehttp 80172 139621167003328 "GET /get_location/1/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-22 17:09:52,862 basehttp 80172 139621167003328 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server WARNING 2025-03-22 17:09:52,873 basehttp 80172 139621152315072 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:09:52,874 basehttp 80172 139621143922368 "GET /static/css/map.css HTTP/1.1" 200 851
+django.server INFO 2025-03-22 17:09:52,876 basehttp 80172 139621152315072 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server INFO 2025-03-22 17:09:52,878 basehttp 80172 139621167003328 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server WARNING 2025-03-22 17:09:52,907 basehttp 80172 139621152315072 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:10:00,268 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:10:00,316 basehttp 80172 139621167003328 "GET /static/tasks.css HTTP/1.1" 200 205
+django.server INFO 2025-03-22 17:10:00,320 basehttp 80172 139621167003328 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-22 17:11:44,954 basehttp 80172 139621167003328 "GET /get_location/1/ HTTP/1.1" 200 10032
+django.server WARNING 2025-03-22 17:11:45,015 basehttp 80172 139621167003328 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:11:45,015 basehttp 80172 139621143922368 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server WARNING 2025-03-22 17:11:45,035 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 17:11:45,185 log 80172 139621143922368 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 17:11:45,185 basehttp 80172 139621143922368 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 17:11:52,403 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:11:53,928 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 9543
+django.server WARNING 2025-03-22 17:11:53,982 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 17:11:54,002 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:01,370 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:12:06,463 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 9543
+django.server WARNING 2025-03-22 17:12:06,521 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:06,526 basehttp 80172 139621143922368 "GET /static/js/checkin.js HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 17:12:06,537 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:10,272 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 9543
+django.server WARNING 2025-03-22 17:12:10,326 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 17:12:10,346 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:17,710 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:12:24,113 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 10032
+django.server WARNING 2025-03-22 17:12:24,138 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 17:12:24,181 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:25,796 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 10032
+django.server WARNING 2025-03-22 17:12:25,843 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:25,845 basehttp 80172 139621143922368 "GET /static/js/checkin.js HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 17:12:25,867 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:12:33,233 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:12:40,196 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 10032
+django.server WARNING 2025-03-22 17:12:40,262 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server WARNING 2025-03-22 17:12:40,284 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 17:12:40,413 log 80172 139621143922368 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 17:12:40,414 basehttp 80172 139621143922368 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 17:12:47,674 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:13:50,867 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 10366
+django.server WARNING 2025-03-22 17:13:50,937 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:13:50,938 basehttp 80172 139621143922368 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server WARNING 2025-03-22 17:13:50,956 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 17:13:51,093 log 80172 139621143922368 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 17:13:51,093 basehttp 80172 139621143922368 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 17:13:58,321 basehttp 80172 139621143922368 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:14:06,973 basehttp 80172 139621143922368 "GET /get_location/1/ HTTP/1.1" 200 10366
+django.server WARNING 2025-03-22 17:14:07,010 basehttp 80172 139621143922368 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:14:07,011 basehttp 80172 139621167003328 "GET /static/css/map.css HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 17:14:07,053 basehttp 80172 139621167003328 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:14:13,107 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:15:05,934 basehttp 80172 139621167003328 "GET /get_location/1/ HTTP/1.1" 200 10541
+django.server WARNING 2025-03-22 17:15:05,994 basehttp 80172 139621167003328 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 17:15:05,995 basehttp 80172 139621167003328 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server WARNING 2025-03-22 17:15:06,013 basehttp 80172 139621167003328 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 17:15:06,162 log 80172 139621167003328 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 17:15:06,163 basehttp 80172 139621167003328 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 17:15:12,774 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23660
