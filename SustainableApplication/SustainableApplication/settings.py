@@ -33,7 +33,9 @@ STATIC_URL = "/static/"
 ALLOWED_HOSTS = [
     "group-engineering-project.onrender.com"
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://group-engineering-project.onrender.com",
+]
 
 # Application definition
 
