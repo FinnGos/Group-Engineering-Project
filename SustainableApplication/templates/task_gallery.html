@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block title %}Image Gallery{% endblock %}
 
 {% block extra_css %}
@@ -72,18 +71,23 @@
             <div class="gallery-container">
                 {% for image in images %}
                     <div class="image-card">
+                        <p class="mt-2 text-lg font-semibold text-gray-700">
+                            <strong>Uploaded by:</strong> {{ image.uploaded_by.username }}
+                        </p>
                         <img src="{{ image.image.url }}" alt="Task Image">
                         <p class="mt-2 text-lg font-semibold text-gray-700">
                             <strong>Task:</strong> {{ image.task.task_name }}
                         </p>
 
                         <!-- Delete Button (Only visible to Game Masters) -->
-                        {% if user.is_authenticated and user.is_game_master %}
+                        {% if user.is_authenticated %}
+                            {% if user.username == "GameMaster" or user == image.uploaded_by %}
                             <form action="{% url 'delete_image' image.id %}" method="POST">
                                 {% csrf_token %}
                                 <button type="submit" class="btn-danger">Delete</button>
                             </form>
-                        {% endif %}
+                            {% endif %}
+                        {% endif %}                        
                     </div>
                 {% endfor %}
             </div>

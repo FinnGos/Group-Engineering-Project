@@ -10562,3 +10562,662 @@ django.server INFO 2025-03-22 16:25:46,944 basehttp 21028 25220 "GET /static/css
 django.server INFO 2025-03-22 16:25:54,047 basehttp 21028 25220 "GET /tasks/ HTTP/1.1" 200 23688
 django.server INFO 2025-03-22 16:25:54,067 basehttp 21028 25220 "GET /static/tasks.css HTTP/1.1" 200 215
 django.server INFO 2025-03-22 16:25:54,073 basehttp 21028 20020 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.utils.autoreload INFO 2025-03-22 16:46:45,794 autoreload 43264 18228 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 16:46:48,579 basehttp 43264 18072 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:46:48,627 basehttp 43264 18072 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:46:48,887 basehttp 43264 18072 "GET /static/auth.css HTTP/1.1" 200 1952
+django.server INFO 2025-03-22 16:46:48,892 basehttp 43264 33368 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-22 16:47:00,125 basehttp 43264 33368 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:47:00,133 basehttp 43264 33368 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:47:00,210 basehttp 43264 18072 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:00,210 basehttp 43264 33368 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:01,716 basehttp 43264 33368 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:47:01,723 basehttp 43264 33368 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:47:04,816 basehttp 43264 33368 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:47:04,823 basehttp 43264 33368 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:47:05,871 basehttp 43264 33368 "GET /home/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:47:05,880 basehttp 43264 33368 "GET /accounts/login/?next=/home/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:47:05,960 basehttp 43264 33368 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:05,961 basehttp 43264 18072 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:07,393 basehttp 43264 18072 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 16:47:13,176 views 43264 18072 Failed login attempt for username: matt4
+django.server INFO 2025-03-22 16:47:13,179 basehttp 43264 18072 "POST /home/accounts/login/ HTTP/1.1" 200 7990
+django.server INFO 2025-03-22 16:47:13,213 basehttp 43264 18072 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:13,223 basehttp 43264 33368 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:47:16,124 basehttp 43264 33368 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 16:47:36,103 views 43264 33368 User logged in: matt4
+django INFO 2025-03-22 16:47:36,250 views 43264 33368 New user signed up: matt4
+django.server INFO 2025-03-22 16:47:36,278 basehttp 43264 33368 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:47:36,301 basehttp 43264 33368 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 16:47:36,382 basehttp 43264 18072 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-22 16:47:36,386 basehttp 43264 33368 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-22 16:47:44,207 basehttp 43264 18072 "GET /map/ HTTP/1.1" 200 7176
+django.server INFO 2025-03-22 16:47:44,250 basehttp 43264 18072 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 16:47:44,261 basehttp 43264 33368 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 16:47:44,448 basehttp 43264 33368 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.server INFO 2025-03-22 16:47:58,016 basehttp 43264 33368 "GET /shop/ HTTP/1.1" 200 7890
+django.server INFO 2025-03-22 16:48:02,062 basehttp 43264 33368 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 16:48:02,103 basehttp 43264 33368 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:48:02,114 basehttp 43264 33368 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:48:03,832 basehttp 43264 33368 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:48:03,878 basehttp 43264 33368 "GET /static/tasks.css HTTP/1.1" 200 215
+django.server INFO 2025-03-22 16:48:03,890 basehttp 43264 18072 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-22 16:48:07,611 basehttp 43264 18072 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django.server INFO 2025-03-22 16:48:09,194 basehttp 43264 18072 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 16:48:15,657 basehttp 43264 18072 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:48:15,719 basehttp 43264 18072 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:48:15,721 basehttp 43264 33368 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:49:09,301 basehttp 43264 33368 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django.server INFO 2025-03-22 16:49:10,759 basehttp 43264 33368 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 16:49:17,179 basehttp 43264 33368 "POST /tasks/upload/8/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:49:17,204 basehttp 43264 33368 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:49:17,256 basehttp 43264 33368 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:49:17,272 basehttp 43264 33368 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:49:19,572 basehttp 43264 33368 "GET /tasks/gallery/ HTTP/1.1" 200 7740
+django.server INFO 2025-03-22 16:49:19,630 basehttp 43264 33368 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 200 123845
+django INFO 2025-03-22 16:49:23,868 views 43264 33368 User asked for personal data stored: matt4
+django.server INFO 2025-03-22 16:49:23,917 basehttp 43264 33368 "GET /home/accounts/view_data/ HTTP/1.1" 200 18596
+django INFO 2025-03-22 16:49:25,407 views 43264 33368 User logged out: matt4
+django.server INFO 2025-03-22 16:49:25,407 basehttp 43264 33368 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:49:25,414 basehttp 43264 33368 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:49:25,484 basehttp 43264 33368 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:49:25,486 basehttp 43264 18072 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:49:26,384 basehttp 43264 18072 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 16:50:16,060 views 43264 18072 User logged in: matt44
+django INFO 2025-03-22 16:50:16,212 views 43264 18072 New user signed up: matt44
+django.server INFO 2025-03-22 16:50:16,244 basehttp 43264 18072 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:50:16,264 basehttp 43264 18072 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 16:50:16,325 basehttp 43264 18072 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:50:16,331 basehttp 43264 18072 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:50:18,517 basehttp 43264 18072 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:50:18,582 basehttp 43264 18072 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:50:18,588 basehttp 43264 18072 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:50:26,978 basehttp 43264 18072 "GET /tasks/gallery/ HTTP/1.1" 200 7740
+django.server INFO 2025-03-22 16:50:27,026 basehttp 43264 18072 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:51:03,719 basehttp 43264 18072 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:51:03,765 basehttp 43264 18072 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:51:03,781 basehttp 43264 18072 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 16:51:25,857 views 43264 18072 Failed login attempt for username: GameMaster
+django.server INFO 2025-03-22 16:51:25,860 basehttp 43264 18072 "POST /home/accounts/login/ HTTP/1.1" 200 7990
+django.server INFO 2025-03-22 16:51:29,399 basehttp 43264 18072 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 16:53:14,196 views 43264 18072 User logged in: GameMaster
+django INFO 2025-03-22 16:53:14,292 views 43264 18072 New user signed up: GameMaster
+django.server INFO 2025-03-22 16:53:14,323 basehttp 43264 18072 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:53:14,344 basehttp 43264 18072 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 16:53:14,404 basehttp 43264 18072 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:53:14,409 basehttp 43264 18072 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:53:16,277 basehttp 43264 18072 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:53:16,326 basehttp 43264 18072 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:53:16,337 basehttp 43264 18072 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:53:20,015 basehttp 43264 18072 "GET /tasks/gallery/ HTTP/1.1" 200 7740
+django.server INFO 2025-03-22 16:53:20,066 basehttp 43264 18072 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-22 17:15:52,359 autoreload 27952 41180 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:15:53,988 basehttp 27952 33860 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:15:54,025 basehttp 27952 33860 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:15:54,163 basehttp 27952 46448 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:15:54,163 basehttp 27952 33860 "GET /static/auth.css HTTP/1.1" 304 0
+django INFO 2025-03-22 17:16:26,777 views 27952 33860 User logged in: GameMaster
+django.server INFO 2025-03-22 17:16:26,930 basehttp 27952 33860 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:16:26,968 basehttp 27952 33860 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:16:27,037 basehttp 27952 33860 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:16:27,040 basehttp 27952 46448 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:16:28,392 views 27952 46448 User logged out: GameMaster
+django.server INFO 2025-03-22 17:16:28,392 basehttp 27952 46448 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:16:28,397 basehttp 27952 46448 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:16:33,428 views 27952 46448 User logged in: matt4
+django.server INFO 2025-03-22 17:16:33,618 basehttp 27952 46448 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:16:33,637 basehttp 27952 46448 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:16:42,188 basehttp 27952 46448 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:16:42,250 basehttp 27952 46448 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:16:42,254 basehttp 27952 46448 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:16:44,514 basehttp 27952 46448 "GET /tasks/gallery/ HTTP/1.1" 200 7910
+django.request WARNING 2025-03-22 17:16:44,572 log 27952 46448 Not Found: /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg
+django.server WARNING 2025-03-22 17:16:44,573 basehttp 27952 46448 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 404 6041
+django.server INFO 2025-03-22 17:17:34,276 basehttp 27952 39480 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:17:42,112 basehttp 27952 39480 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:17:44,071 basehttp 27952 39480 "GET /tasks/gallery/ HTTP/1.1" 200 7910
+django.request WARNING 2025-03-22 17:17:44,113 log 27952 39480 Not Found: /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg
+django.server WARNING 2025-03-22 17:17:44,113 basehttp 27952 39480 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 404 6041
+django.server INFO 2025-03-22 17:17:45,949 basehttp 27952 39480 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:17:51,253 basehttp 27952 39480 "POST /tasks/upload/6/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:17:51,278 basehttp 27952 39480 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:17:53,044 basehttp 27952 39480 "GET /tasks/gallery/ HTTP/1.1" 200 8563
+django.server INFO 2025-03-22 17:17:53,200 basehttp 27952 39480 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 200 123845
+django.utils.autoreload INFO 2025-03-22 17:26:28,931 autoreload 38992 19216 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:26:35,574 basehttp 38992 40444 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:26:35,615 basehttp 38992 40444 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:26:35,749 basehttp 38992 47576 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:26:35,749 basehttp 38992 40444 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:26:39,504 basehttp 38992 40444 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:26:39,518 basehttp 38992 40444 "GET /accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:26:51,768 views 38992 40444 User logged in: matt4
+django.server INFO 2025-03-22 17:26:51,943 basehttp 38992 40444 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:26:51,966 basehttp 38992 40444 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:26:52,047 basehttp 38992 40444 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:26:52,048 basehttp 38992 47576 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:26:55,003 basehttp 38992 47576 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:26:55,070 basehttp 38992 47576 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:26:55,072 basehttp 38992 40444 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.request ERROR 2025-03-22 17:26:57,284 log 38992 40444 Internal Server Error: /tasks/gallery/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'import'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 151, in image_gallery
+    return render(request, "task_gallery.html", {"images": images})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'import'. Did you forget to register or load this tag?
+django.server ERROR 2025-03-22 17:26:57,294 basehttp 38992 40444 "GET /tasks/gallery/ HTTP/1.1" 500 185571
+django.utils.autoreload INFO 2025-03-22 17:27:21,575 autoreload 41920 43712 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:27:23,247 basehttp 41920 21820 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:27:23,282 basehttp 41920 21820 "GET /accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:27:32,384 views 41920 21820 User logged in: matt4
+django.server INFO 2025-03-22 17:27:32,626 basehttp 41920 21820 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:27:32,646 basehttp 41920 21820 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:27:34,567 basehttp 41920 21820 "GET /tasks/ HTTP/1.1" 200 23688
+django.request ERROR 2025-03-22 17:27:36,290 log 41920 21820 Internal Server Error: /tasks/gallery/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '(user.username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 151, in image_gallery
+    return render(request, "task_gallery.html", {"images": images})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(user.username' from '(user.username'
+django.server ERROR 2025-03-22 17:27:36,309 basehttp 41920 21820 "GET /tasks/gallery/ HTTP/1.1" 500 266085
+django.utils.autoreload INFO 2025-03-22 17:28:27,570 autoreload 41060 47320 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:28:31,019 basehttp 41060 40664 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:28:31,059 basehttp 41060 40664 "GET /accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:28:40,047 views 41060 40664 User logged in: matt4
+django.server INFO 2025-03-22 17:28:40,292 basehttp 41060 40664 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:28:40,315 basehttp 41060 40664 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:28:54,209 basehttp 41060 40664 "GET /tasks/ HTTP/1.1" 200 23688
+django.request ERROR 2025-03-22 17:28:56,117 log 41060 40664 Internal Server Error: /tasks/gallery/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 151, in image_gallery
+    return render(request, "task_gallery.html", {"images": images})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 563, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 87: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+django.server ERROR 2025-03-22 17:28:56,133 basehttp 41060 40664 "GET /tasks/gallery/ HTTP/1.1" 500 228931
+django.utils.autoreload INFO 2025-03-22 17:30:15,938 autoreload 34220 13572 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:30:17,471 basehttp 34220 45788 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:17,511 basehttp 34220 45788 "GET /accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:30:25,137 views 34220 45788 User logged in: matt4
+django.server INFO 2025-03-22 17:30:25,363 basehttp 34220 45788 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:25,383 basehttp 34220 45788 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:30:27,159 basehttp 34220 45788 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:30:30,915 basehttp 34220 45788 "GET /tasks/gallery/ HTTP/1.1" 200 9251
+django.server INFO 2025-03-22 17:30:30,983 basehttp 34220 45788 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:30:32,396 views 34220 45788 User matt4 deleted image for Task Task at INTO_Building
+django.server INFO 2025-03-22 17:30:32,398 basehttp 34220 45788 "POST /tasks/delete_image/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:32,426 basehttp 34220 45788 "GET /tasks/gallery/ HTTP/1.1" 200 8254
+django INFO 2025-03-22 17:30:33,744 views 34220 45788 User matt4 deleted image for Task Task at Queens_Building
+django.server INFO 2025-03-22 17:30:33,745 basehttp 34220 45788 "POST /tasks/delete_image/1/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:33,768 basehttp 34220 45788 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django INFO 2025-03-22 17:30:35,141 views 34220 45788 User logged out: matt4
+django.server INFO 2025-03-22 17:30:35,142 basehttp 34220 45788 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:35,146 basehttp 34220 45788 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.utils.autoreload INFO 2025-03-22 17:30:43,622 autoreload 28132 36880 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:30:45,273 basehttp 28132 17988 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:45,311 basehttp 28132 17988 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:30:45,449 basehttp 28132 17988 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:30:45,450 basehttp 28132 45640 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:30:50,820 views 28132 45640 User logged in: matt4
+django.server INFO 2025-03-22 17:30:51,087 basehttp 28132 45640 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:30:51,109 basehttp 28132 45640 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:30:55,336 basehttp 28132 45640 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:30:56,718 basehttp 28132 45640 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django.server INFO 2025-03-22 17:30:59,314 basehttp 28132 45640 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:31:05,053 basehttp 28132 45640 "POST /tasks/upload/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:31:05,080 basehttp 28132 45640 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:31:05,127 basehttp 28132 45640 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:31:05,138 basehttp 28132 17988 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:31:06,747 basehttp 28132 17988 "GET /tasks/gallery/ HTTP/1.1" 200 8262
+django.server INFO 2025-03-22 17:31:06,911 basehttp 28132 17988 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery_X9xJ78x.jpg HTTP/1.1" 200 123845
+django INFO 2025-03-22 17:31:23,430 views 28132 17988 User deleted account: matt4
+django.server INFO 2025-03-22 17:31:23,479 basehttp 28132 17988 "GET /home/accounts/delete_account/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:31:23,498 basehttp 28132 17988 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:31:24,907 basehttp 28132 17988 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 17:31:35,508 views 28132 17988 User logged in: matt4
+django INFO 2025-03-22 17:31:35,714 views 28132 17988 New user signed up: matt4
+django.server INFO 2025-03-22 17:31:35,751 basehttp 28132 17988 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:31:35,775 basehttp 28132 17988 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:31:35,844 basehttp 28132 17988 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:31:35,862 basehttp 28132 45640 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:31:38,463 basehttp 28132 45640 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:31:39,760 basehttp 28132 45640 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django INFO 2025-03-22 17:31:52,816 views 28132 45640 User logged out: matt4
+django.server INFO 2025-03-22 17:31:52,816 basehttp 28132 45640 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:31:52,821 basehttp 28132 45640 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.utils.autoreload INFO 2025-03-22 17:35:20,999 autoreload 18076 43832 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:35:22,411 basehttp 18076 15844 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:35:22,443 basehttp 18076 15844 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:35:22,574 basehttp 18076 15844 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:35:22,574 basehttp 18076 42088 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:35:27,554 views 18076 42088 User logged in: matt4
+django.server INFO 2025-03-22 17:35:27,671 basehttp 18076 42088 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:35:27,690 basehttp 18076 42088 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:35:29,346 basehttp 18076 42088 "GET /tasks/ HTTP/1.1" 200 23688
+django.request ERROR 2025-03-22 17:35:31,238 log 18076 42088 Internal Server Error: /tasks/gallery/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '(user.username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 151, in image_gallery
+    return render(request, "task_gallery.html", {"images": images})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(user.username' from '(user.username'
+django.server ERROR 2025-03-22 17:35:31,255 basehttp 18076 42088 "GET /tasks/gallery/ HTTP/1.1" 500 265653
+django.utils.autoreload INFO 2025-03-22 17:41:18,202 autoreload 23960 35308 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 17:41:19,827 basehttp 23960 11364 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:41:19,864 basehttp 23960 11364 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:41:19,996 basehttp 23960 11364 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:41:19,997 basehttp 23960 46880 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:41:26,763 views 23960 46880 User logged in: matt4
+django.server INFO 2025-03-22 17:41:27,056 basehttp 23960 46880 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:41:27,081 basehttp 23960 46880 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:41:27,132 basehttp 23960 46880 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:41:27,155 basehttp 23960 46880 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:41:28,807 basehttp 23960 46880 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:41:28,871 basehttp 23960 46880 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:41:28,883 basehttp 23960 46880 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:41:30,425 basehttp 23960 46880 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django.server INFO 2025-03-22 17:41:32,434 basehttp 23960 46880 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:41:38,214 basehttp 23960 46880 "POST /tasks/upload/5/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:41:38,239 basehttp 23960 46880 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:41:39,829 basehttp 23960 46880 "GET /tasks/gallery/ HTTP/1.1" 200 8380
+django.server INFO 2025-03-22 17:41:39,994 basehttp 23960 46880 "GET /media/MediaPhotos/Screenshot_20250120_115820_Snapchat.jpg HTTP/1.1" 200 227153
+django INFO 2025-03-22 17:42:18,259 views 23960 46880 User matt4 deleted image for Task Task at Innovation_Center
+django.server INFO 2025-03-22 17:42:18,259 basehttp 23960 46880 "POST /tasks/delete_image/4/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:42:18,281 basehttp 23960 46880 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django.server INFO 2025-03-22 17:42:19,649 basehttp 23960 46880 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:42:31,014 basehttp 23960 46880 "POST /tasks/upload/5/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:42:31,039 basehttp 23960 46880 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:42:32,654 basehttp 23960 46880 "GET /tasks/gallery/ HTTP/1.1" 200 8363
+django.server INFO 2025-03-22 17:42:32,709 basehttp 23960 46880 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 200 59007
+django.server INFO 2025-03-22 17:42:36,116 basehttp 23960 46880 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:42:37,759 basehttp 23960 46880 "GET /tasks/gallery/ HTTP/1.1" 200 8363
+django.server INFO 2025-03-22 17:42:37,812 basehttp 23960 46880 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:42:38,799 basehttp 23960 46880 "GET /tasks/ HTTP/1.1" 200 23688
+django INFO 2025-03-22 17:42:43,575 views 23960 46880 User logged out: matt4
+django.server INFO 2025-03-22 17:42:43,576 basehttp 23960 46880 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:42:43,581 basehttp 23960 46880 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 17:43:18,330 basehttp 23960 41380 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 17:43:35,633 views 23960 41380 User logged in: matt5
+django INFO 2025-03-22 17:43:35,875 views 23960 41380 New user signed up: matt5
+django.server INFO 2025-03-22 17:43:35,904 basehttp 23960 41380 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:43:35,926 basehttp 23960 41380 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:43:41,853 basehttp 23960 41380 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:43:44,180 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 7974
+django.server INFO 2025-03-22 17:43:44,214 basehttp 23960 41380 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:43:47,813 basehttp 23960 41380 "GET /tasks/upload/0/ HTTP/1.1" 200 8439
+django.server INFO 2025-03-22 17:43:52,908 basehttp 23960 41380 "POST /tasks/upload/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:43:52,934 basehttp 23960 41380 "GET /tasks/tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:43:54,637 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 9068
+django.server INFO 2025-03-22 17:43:54,673 basehttp 23960 41380 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:43:54,701 basehttp 23960 41380 "GET /media/MediaPhotos/colum1.jpg HTTP/1.1" 200 244025
+django INFO 2025-03-22 17:44:40,001 views 23960 41380 User logged out: matt5
+django.server INFO 2025-03-22 17:44:40,002 basehttp 23960 41380 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:44:40,007 basehttp 23960 41380 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:44:46,109 views 23960 41380 User logged in: GameMaster
+django.server INFO 2025-03-22 17:44:46,266 basehttp 23960 41380 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:44:46,288 basehttp 23960 41380 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:44:47,868 basehttp 23960 41380 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:44:49,421 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 9457
+django.server INFO 2025-03-22 17:44:49,464 basehttp 23960 41380 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 17:44:49,470 basehttp 23960 41380 "GET /media/MediaPhotos/colum1.jpg HTTP/1.1" 304 0
+django INFO 2025-03-22 17:44:53,517 views 23960 41380 User GameMaster deleted image for Task Task at Innovation_Center
+django.server INFO 2025-03-22 17:44:53,518 basehttp 23960 41380 "POST /tasks/delete_image/5/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:44:53,544 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 8349
+django INFO 2025-03-22 17:44:54,343 views 23960 41380 User GameMaster deleted image for Task Task at Business_School
+django.server INFO 2025-03-22 17:44:54,344 basehttp 23960 41380 "POST /tasks/delete_image/6/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:44:54,364 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 7250
+django INFO 2025-03-22 17:44:56,865 views 23960 41380 User logged out: GameMaster
+django.server INFO 2025-03-22 17:44:56,866 basehttp 23960 41380 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:44:56,874 basehttp 23960 41380 "GET /home/accounts/login/ HTTP/1.1" 200 7748
+django INFO 2025-03-22 17:45:01,225 views 23960 41380 Failed login attempt for username: matt4
+django.server INFO 2025-03-22 17:45:01,227 basehttp 23960 41380 "POST /home/accounts/login/ HTTP/1.1" 200 7990
+django INFO 2025-03-22 17:45:06,152 views 23960 41380 User logged in: matt4
+django.server INFO 2025-03-22 17:45:06,306 basehttp 23960 41380 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 17:45:06,325 basehttp 23960 41380 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 17:45:07,643 basehttp 23960 41380 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 17:45:09,924 basehttp 23960 41380 "GET /tasks/gallery/ HTTP/1.1" 200 7250

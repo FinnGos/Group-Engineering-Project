@@ -222,6 +222,14 @@ def delete_image_game_master(request, image_id):
         HttpResponseRedirect: Redirects back to the Game Master gallery.
     """
     image = get_object_or_404(UploadedImage, id=image_id)
-    auth_logger.info(f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}")
-    image.delete()
 
+    # Check if user is the owner or GameMaster
+    if request.user == image.uploaded_by or request.user.username == "GameMaster":
+        image.delete()
+        auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")
+    else:
+        return JsonResponse({"success": False, "message": "Permission denied."}, status=403)
+    
+    auth_logger.info(f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}")
+
+    return redirect('gallery_page')
