@@ -7,15 +7,6 @@ import random
 
 @login_required
 def buy_item(request, item_id):
-    """Function to see if user has enough points to buy an item and the place the item if they have enough points
-
-    Args:
-        request: The request made to the shop page
-        item_id: The id of the item the user tries to buy
-
-    Returns:
-        Redirect to the shop page once user has bought or failed to buy the item
-    """
     item = get_object_or_404(Item, id=item_id)
     user = request.user
 
@@ -24,12 +15,14 @@ def buy_item(request, item_id):
         user.current_points -= item.price
         user.save()
 
-        # Call the place_item function to randomly place the item on the map
+        # Place the item
         place_item(user, item)
 
-        messages.success(request, f"You bought {item.name} and placed it on the map!")
+        # Success message
+        messages.success(request, "Purchase successful!")
     else:
-        messages.error(request, "Not enough Carbo Coins!")
+        # Error message for insufficient points
+        messages.error(request, "Insufficient points to complete the purchase.")
 
     return redirect("shop")
 

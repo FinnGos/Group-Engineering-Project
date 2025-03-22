@@ -7,6 +7,15 @@
 <!-- Top Half Image Section -->
 <div class="top-section relative">
     <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto">
+
+    <!-- Go to Map Button -->
+    <div class="absolute top-[75%] left-1/2 transform -translate-x-1/2">
+        <a href="{% url 'map' %}">
+            <button class="px-10 py-6 text-2xl font-bold text-white bg-green-700 border-4 border-white rounded-lg hover:bg-green-600 transition duration-300">
+                Go to Map
+            </button>
+        </a>
+    </div>
 </div>
 
 <!-- Bottom Half Image Section -->

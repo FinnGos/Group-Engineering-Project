@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+
+{% block content %}
+  <!-- Map Title -->
+  <div class="text-center my-10">
+    <h1 class="text-5xl font-bold">Your Exeter Campus</h1>
+  </div>
+
+  <!-- Go to Shop Button -->
+  <div class="text-center mb-6">
+    <a href="{% url 'shop' %}">
+      <button class="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-600 transition">Go to Shop</button>
+    </a>
+  </div>
+
+  <!-- Map Container -->
+  <div class="flex justify-center my-8">
+    <div class="map-container">
+      <!-- Buildings -->
+      {% for building in buildings %}
+        {% if user_buildings|get_item:building.id %}
+          <img src="{{ building.image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+        {% else %}
+          <img src="{{ building.locked_image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+        {% endif %}
+      {% endfor %}
+
+      <!-- User's Items -->
+      {% for item in user_items %}
+        <img src="{{ item.item.image.url }}" class="item" style="top: {{ item.y }}px; left: {{ item.x }}px;">
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block extra_css %}
+  <style>
+    /* Map Container */
+    .map-container {
+      position: relative;
+      width: 1800px; /* Adjust based on your game map size */
+      height: 800px;
+      background: url('{% static "images/grass_background.png" %}') no-repeat center;
+      background-size: cover;
+      border: 2px solid black;
+      /* Center map in the middle of the page */
+      overflow: hidden; /* Ensure nothing goes outside the map container */
+    }
+
+    /* Buildings */
+    .building {
+      position: absolute;
+      width: 150px;  /* Adjust based on image size */
+      height: 150px;
+      /* Prevent items from appearing outside the container */
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Items (Trees, Solar Panels, etc.) */
+    .item {
+      position: absolute;
+      width: 30px;  /* Adjust based on image size */
+      height: 30px;
+      /* Prevent items from appearing outside the container */
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Go to Shop Button */
+    .go-to-shop-button {
+      position: absolute;
+      bottom: 20px; /* Adjust the vertical position of the button */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+{% endblock %}

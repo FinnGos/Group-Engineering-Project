@@ -9197,3 +9197,168 @@ django.request WARNING 2025-03-22 13:33:00,903 log 31795 140611511375552 Not Fou
 django.server WARNING 2025-03-22 13:33:00,904 basehttp 31795 140611511375552 "GET /store HTTP/1.1" 404 5727
 django.server INFO 2025-03-22 13:33:05,174 basehttp 31795 140611511375552 "GET /shop HTTP/1.1" 301 0
 django.server INFO 2025-03-22 13:33:05,185 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 5433
+django.server INFO 2025-03-22 13:34:12,798 basehttp 31795 140611525015232 "GET /map/ HTTP/1.1" 200 1414
+django.request WARNING 2025-03-22 13:34:12,863 log 31795 140611525015232 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:34:12,863 basehttp 31795 140611525015232 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:34:16,649 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 5433
+django.server INFO 2025-03-22 13:36:17,382 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.request WARNING 2025-03-22 13:36:17,546 log 31795 140611525015232 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:36:17,546 basehttp 31795 140611525015232 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:36:19,509 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-22 13:36:20,093 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-22 13:36:20,507 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-22 13:36:22,151 basehttp 31795 140611525015232 "GET /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:36:22,160 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-22 13:36:23,810 basehttp 31795 140611525015232 "GET /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:36:23,820 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6530
+django.server INFO 2025-03-22 13:37:39,390 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6864
+django.request WARNING 2025-03-22 13:37:39,516 log 31795 140611525015232 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:37:39,517 basehttp 31795 140611525015232 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:37:40,343 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:37:42,103 basehttp 31795 140611525015232 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:37:42,111 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:37:42,870 basehttp 31795 140611525015232 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:37:42,877 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:37:43,527 basehttp 31795 140611525015232 "GET /map/ HTTP/1.1" 200 1883
+django.server INFO 2025-03-22 13:37:43,556 basehttp 31795 140611511375552 "GET /media/items/tree_TrrWjHH_UCFOgZZ.png HTTP/1.1" 200 85207
+django.server INFO 2025-03-22 13:37:43,556 basehttp 31795 140611525015232 "GET /media/items/solar_panel_heFXH0T.png HTTP/1.1" 200 292058
+django.server INFO 2025-03-22 13:37:43,596 basehttp 31795 140611502982848 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 13:37:43,601 basehttp 31795 140611494590144 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 13:37:43,604 basehttp 31795 140611486197440 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.utils.autoreload INFO 2025-03-22 13:39:01,876 autoreload 31795 140611642904704 /home/finn/Group-Engineering-Project/SustainableApplication/unlockables/views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 13:39:02,168 autoreload 33645 140368914309248 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 13:39:02,065 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:39:03,079 basehttp 33645 140368792254144 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:39:03,091 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:39:03,832 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:39:03,841 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 6864
+django.server INFO 2025-03-22 13:39:14,074 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 10218
+django.server INFO 2025-03-22 13:39:16,695 basehttp 33645 140368792254144 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:39:16,706 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:39:18,813 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:39:18,822 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:39:27,775 basehttp 33645 140368792254144 "GET /map/ HTTP/1.1" 200 2349
+django.request WARNING 2025-03-22 13:40:00,077 log 33645 140368792254144 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:40:00,077 basehttp 33645 140368792254144 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:40:01,241 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:01,250 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:02,606 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:02,613 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:03,536 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:03,545 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:04,530 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:04,538 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:04,878 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:04,885 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:03,959 basehttp 33645 140368792254144 "POST /buy/item/3/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:03,970 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:04,847 basehttp 33645 140368792254144 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:04,855 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:05,187 basehttp 33645 140368792254144 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:40:05,196 basehttp 33645 140368792254144 "GET /shop/ HTTP/1.1" 200 8288
+django.server INFO 2025-03-22 13:40:05,622 basehttp 33645 140368792254144 "GET /map/ HTTP/1.1" 200 3287
+django.server INFO 2025-03-22 13:40:49,467 basehttp 33645 140368792254144 "GET /map/ HTTP/1.1" 200 8230
+django.server INFO 2025-03-22 13:40:49,558 basehttp 33645 140368792254144 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 13:40:49,559 basehttp 33645 140368783861440 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 13:40:49,560 basehttp 33645 140368767076032 "GET /media/items/tree_TrrWjHH_UCFOgZZ.png HTTP/1.1" 200 85207
+django.server INFO 2025-03-22 13:40:49,560 basehttp 33645 140368775468736 "GET /media/items/solar_panel_heFXH0T.png HTTP/1.1" 200 292058
+django.server INFO 2025-03-22 13:40:49,629 basehttp 33645 140368775468736 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.request WARNING 2025-03-22 13:40:49,648 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:40:49,648 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:41:56,730 basehttp 33645 140368775468736 "GET /map/ HTTP/1.1" 200 8953
+django.request WARNING 2025-03-22 13:41:56,853 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:41:56,853 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:42:08,788 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7637
+django.server INFO 2025-03-22 13:42:58,038 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7909
+django.request WARNING 2025-03-22 13:42:58,174 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:42:58,175 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:43:43,011 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7982
+django.server INFO 2025-03-22 13:44:35,315 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7995
+django.request WARNING 2025-03-22 13:44:35,475 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:44:35,475 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:45:11,161 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7995
+django.request WARNING 2025-03-22 13:45:11,319 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:45:11,319 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:45:11,956 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7995
+django.server INFO 2025-03-22 13:45:12,713 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7995
+django.server INFO 2025-03-22 13:46:09,607 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7996
+django.request ERROR 2025-03-22 13:46:18,696 log 33645 140368775468736 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 42, in home
+    return render(request, "home.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+django.server ERROR 2025-03-22 13:46:18,698 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 500 199228
+django.request WARNING 2025-03-22 13:46:18,809 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:46:18,810 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:46:32,012 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7996
+django.server INFO 2025-03-22 13:46:34,296 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7996
+django.server INFO 2025-03-22 13:46:42,086 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 13:46:56,003 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 13:47:02,564 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 13:48:00,209 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7998
+django.request WARNING 2025-03-22 13:48:00,346 log 33645 140368775468736 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:48:00,346 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 13:48:10,638 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7997
