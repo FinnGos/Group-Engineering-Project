@@ -2194,3 +2194,217 @@ django.server WARNING 2025-03-22 11:40:17,195 basehttp 3356 24188 "GET /static/c
 django.server INFO 2025-03-22 11:40:17,968 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 79
 django.server INFO 2025-03-22 11:40:18,636 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 79
 django.server INFO 2025-03-22 11:40:19,601 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:45:56,117 basehttp 3356 25812 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:45:56,148 basehttp 3356 25812 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:46:43,162 basehttp 3356 23908 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:46:48,053 basehttp 3356 23908 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.utils.autoreload INFO 2025-03-22 11:53:55,361 autoreload 3356 30052 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 11:54:13,639 autoreload 27400 15660 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:54:21,714 basehttp 27400 28256 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-22 11:54:26,338 basehttp 27400 28256 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:54:28,053 basehttp 27400 28256 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:54:28,106 basehttp 27400 28256 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:54:30,137 basehttp 27400 2940 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:54:31,059 basehttp 27400 2940 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:54:31,073 basehttp 27400 2940 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:54:33,561 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:35,605 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:35,771 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:35,937 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,144 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,434 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,584 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,790 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,974 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,140 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,339 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:37,513 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,720 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,903 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,088 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,266 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,467 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,643 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,851 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,085 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:39,302 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:39,511 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,720 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,922 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:40,121 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:40,313 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:40,502 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:41,010 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:41,226 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,426 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,643 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,840 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:42,052 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:42,293 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:42,585 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:42,863 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:43,062 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:43,289 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:43,453 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:56:47,845 basehttp 27400 12524 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 11:56:47,865 basehttp 27400 12524 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:56:49,617 basehttp 27400 14832 "POST /lootboxes/open/ HTTP/1.1" 200 10357
+django.utils.autoreload INFO 2025-03-22 11:57:07,081 autoreload 27400 15660 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 11:57:07,645 autoreload 2520 11828 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:57:24,471 basehttp 2520 26744 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 11:57:24,498 basehttp 2520 26744 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.request WARNING 2025-03-22 11:57:25,449 log 2520 29096 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-22 11:57:25,449 basehttp 2520 29096 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-22 12:06:41,440 autoreload 2520 11828 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:06:42,003 autoreload 23680 27112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:27,096 autoreload 23680 27112 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:27,708 autoreload 30312 4200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:31,550 autoreload 30312 4200 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:32,076 autoreload 24916 12300 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:33,877 autoreload 24916 12300 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:34,427 autoreload 28388 17424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:01,188 autoreload 28388 17424 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:01,791 autoreload 24688 18664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:08,816 autoreload 24688 18664 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:09,317 autoreload 17576 22084 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:11,049 autoreload 17576 22084 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:11,657 autoreload 29524 4880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:17,511 autoreload 29524 4880 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:18,036 autoreload 26588 7940 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:31,611 autoreload 26588 7940 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:32,162 autoreload 7376 21292 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:43,487 autoreload 7376 21292 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:44,045 autoreload 30232 19784 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:14:44,425 basehttp 30232 1332 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:44,447 basehttp 30232 1332 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:45,688 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:47,228 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:47,832 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:48,340 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.utils.autoreload INFO 2025-03-22 12:14:54,957 autoreload 30232 19784 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:14:55,595 autoreload 5432 3604 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:14:56,190 basehttp 5432 6764 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:56,209 basehttp 5432 6764 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:57,704 basehttp 5432 14692 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:57,728 basehttp 5432 14692 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:58,525 basehttp 5432 29752 "POST /lootboxes/open/ HTTP/1.1" 200 54
+django.server INFO 2025-03-22 12:14:59,646 basehttp 5432 29752 "POST /lootboxes/open/ HTTP/1.1" 200 54
+django.utils.autoreload INFO 2025-03-22 12:15:23,576 autoreload 5432 3604 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:24,158 autoreload 16264 27512 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:15:25,923 autoreload 16264 27512 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:26,428 autoreload 536 12824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:15:29,184 autoreload 536 12824 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:29,752 autoreload 26244 8020 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:15:41,207 basehttp 26244 29556 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:15:41,225 basehttp 26244 29556 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:15:42,287 basehttp 26244 26060 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:15:43,563 basehttp 26244 26060 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:16:18,561 basehttp 26244 26060 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:16:18,583 basehttp 26244 26060 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:16:34,333 basehttp 26244 7236 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:16:34,356 basehttp 26244 7236 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.request ERROR 2025-03-22 12:16:35,898 log 26244 30168 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:35,898 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.request ERROR 2025-03-22 12:16:39,855 log 26244 30168 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:39,855 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.request ERROR 2025-03-22 12:16:47,881 log 26244 30168 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:47,881 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.server INFO 2025-03-22 12:17:00,291 basehttp 26244 30168 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:17:00,314 basehttp 26244 30168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:17:01,114 basehttp 26244 30660 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.utils.autoreload INFO 2025-03-22 12:17:21,308 autoreload 26244 8020 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:21,933 autoreload 22516 10404 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:17:30,840 autoreload 22516 10404 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:31,321 autoreload 27904 13232 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:17:38,259 autoreload 27904 13232 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:38,847 autoreload 28948 17236 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:18:08,866 autoreload 28948 17236 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:18:09,439 autoreload 27548 26988 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:13,239 autoreload 27548 26988 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:13,816 autoreload 24952 27772 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:45,165 autoreload 24952 27772 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:45,811 autoreload 13208 29556 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:50,708 autoreload 13208 29556 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:51,282 autoreload 29856 27228 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:56,221 autoreload 29856 27228 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:56,777 autoreload 8604 24900 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:21:04,880 basehttp 8604 24268 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:21:04,896 basehttp 8604 24268 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:06,835 basehttp 8604 16132 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:07,523 basehttp 8604 16132 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:24,249 basehttp 8604 16132 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:21:24,273 basehttp 8604 16132 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:31,668 basehttp 8604 28980 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:31,683 basehttp 8604 28980 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:32,898 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:35,028 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:35,692 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:36,363 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:37,317 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:37,882 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:38,416 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:38,931 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:39,614 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:40,215 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:41,706 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.server INFO 2025-03-22 12:21:42,207 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:43,066 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:43,725 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:50,766 basehttp 8604 22248 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:50,782 basehttp 8604 22248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:51,424 basehttp 8604 14884 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:51,439 basehttp 8604 14884 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:22:02,400 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:04,338 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:10,414 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:11,490 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:13,129 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:13,675 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:14,297 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:14,790 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:15,463 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:15,990 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:16,189 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.server INFO 2025-03-22 12:22:16,539 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
