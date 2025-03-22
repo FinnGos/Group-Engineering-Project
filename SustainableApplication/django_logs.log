@@ -54,3 +54,80 @@ django.utils.autoreload INFO 2025-03-22 18:39:03,940 autoreload 101030 140322500
 django.utils.autoreload INFO 2025-03-22 18:39:04,116 autoreload 101211 140545121677440 Watching for file changes with StatReloader
 django.server INFO 2025-03-22 18:39:05,765 basehttp 101211 140545071511232 "GET /home/accounts/login/ HTTP/1.1" 200 7747
 django.server INFO 2025-03-22 18:39:05,820 basehttp 101211 140545071511232 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 18:41:42,934 basehttp 101211 140545071511232 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 18:41:42,944 basehttp 101211 140545071511232 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:43,035 basehttp 101211 140545062069952 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 18:41:43,045 basehttp 101211 140545071511232 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 18:41:43,295 log 101211 140545071511232 Not Found: /favicon.ico
+django INFO 2025-03-22 18:41:43,969 views 101211 140545062069952 User asked for personal data stored: 
+django.request ERROR 2025-03-22 18:41:43,981 log 101211 140545062069952 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 279, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-22 18:41:43,982 basehttp 101211 140545062069952 "GET /home/accounts/view_data/ HTTP/1.1" 500 80788
+django.request WARNING 2025-03-22 18:41:44,101 log 101211 140545062069952 Not Found: /favicon.ico
+django.server INFO 2025-03-22 18:41:44,872 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:45,338 basehttp 101211 140545062069952 "GET /home/accounts/change_password/ HTTP/1.1" 200 6923
+django.server INFO 2025-03-22 18:41:45,920 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:46,640 basehttp 101211 140545062069952 "GET /collectables/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 18:41:46,648 basehttp 101211 140545062069952 "GET /accounts/login/?next=/collectables/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:47,550 basehttp 101211 140545062069952 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 18:41:47,557 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django INFO 2025-03-22 18:41:48,135 views 101211 140545062069952 User asked for personal data stored: 
+django.request ERROR 2025-03-22 18:41:48,143 log 101211 140545062069952 Internal Server Error: /home/accounts/view_data/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 279, in view_user_data
+    "hashed_password": user.password  # Django stores hashed passwords
+                       ^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'password'
+django.server ERROR 2025-03-22 18:41:48,144 basehttp 101211 140545062069952 "GET /home/accounts/view_data/ HTTP/1.1" 500 80788
+django.server INFO 2025-03-22 18:41:48,923 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:49,375 basehttp 101211 140545062069952 "GET /home/accounts/change_password/ HTTP/1.1" 200 6923
+django.server INFO 2025-03-22 18:41:49,943 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.request ERROR 2025-03-22 18:41:50,479 log 101211 140545062069952 Internal Server Error: /home/accounts/update_profile/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/home/views.py", line 190, in update_profile
+    form = CustomUserUpdateForm(instance=request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 369, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/forms/models.py", line 110, in model_to_dict
+    opts = instance._meta
+           ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+django.server ERROR 2025-03-22 18:41:50,480 basehttp 101211 140545062069952 "GET /home/accounts/update_profile/ HTTP/1.1" 500 85816
+django.server INFO 2025-03-22 18:41:51,226 basehttp 101211 140545062069952 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 7747
+django.server INFO 2025-03-22 18:41:51,743 basehttp 101211 140545062069952 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 18:41:51,751 basehttp 101211 140545062069952 "GET /home/accounts/login/ HTTP/1.1" 200 7747
+django.utils.autoreload INFO 2025-03-22 18:44:36,389 autoreload 101211 140545121677440 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 18:44:36,626 autoreload 102535 140700128727168 Watching for file changes with StatReloader
