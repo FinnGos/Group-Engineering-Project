@@ -46,7 +46,7 @@
       <button
         type="submit"
         id="openLootboxButton"
-        class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg transition-transform duration-300 transform hover:scale-110"
+        class="current-points text-white text-center p-4 mt-6 bg-green-700 rounded-lg transition-transform duration-300 transform hover:scale-110"
       >
         Open Lootbox - 100 Points
       </button>
@@ -92,8 +92,8 @@
                 <div class="lootbox-result" style="text-align: center;">
                   <h3>Congratulations!</h3>
                   <p>You received: <strong>${response.loot_item.name}</strong></p>
-                  <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 320px; display: flex; justify-content: flex-start; align-items: center;">
-                    <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px; margin-left: 500; margin-right: 500;" />
+                  <div class="image-container p-10 border-12 overflow-hidden" style="height: 300px; display: flex; justify-content: flex-end; align-items: center;">
+                    <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px; position: absolute; left: 50%; top: 68%; transform: translate(-50%, -50%);"/>
                   </div>
                   <p>Fun Fact: ${response.loot_item.fact}</p>
                   ${duplicateMessage}
