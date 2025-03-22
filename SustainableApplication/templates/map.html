@@ -31,6 +31,19 @@
       {% for item in user_items %}
         <img src="{{ item.item.image.url }}" class="item" style="top: {{ item.y }}px; left: {{ item.x }}px;">
       {% endfor %}
+
+       <!-- Display Rubbish -->
+      {% for trash in rubbish %}
+        <img 
+            src="{{ trash.image.url }}" 
+            alt="Rubbish" 
+            style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 40px; height: 40px;" 
+        />
+        <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:35 }}px;">
+            {% csrf_token %}
+            <button type="submit">Clean</button>
+        </form>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}

@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.utils.timezone import now
 
 class Building(models.Model):
     name = models.CharField(max_length=100)

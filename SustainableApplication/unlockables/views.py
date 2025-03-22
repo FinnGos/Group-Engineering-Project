@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Item, Building, UserBuilding, UserItem, Rubbish
 import random
+from django.utils.timezone import now
 
 @login_required
 @login_required
@@ -45,6 +46,14 @@ def shop(request):
 def game_map(request):
     user = request.user
     buildings = Building.objects.all()
+
+    # Respawn rubbish that was cleaned more than 3 days ago
+    for rubbish in Rubbish.objects.filter(cleaned=True):
+        if rubbish.should_respawn():
+            rubbish.cleaned = False
+            rubbish.cleaned_at = None
+            rubbish.save()
+
     rubbish = Rubbish.objects.filter(cleaned=False)  # Only show uncleaned rubbish
 
     # Get names of collectables the user owns
@@ -102,6 +111,7 @@ def clean_rubbish(request, rubbish_id):
         request.user.save()
 
         rubbish.cleaned = True
+        rubbish.cleaned_at = now()
         rubbish.save()
 
         messages.success(request, "You cleaned up some rubbish for 5 Carbo Coins!")
