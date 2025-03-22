@@ -265,3 +265,8 @@ django INFO 2025-03-22 20:49:28,178 views 135863 139955316717248 User logged in:
 django.server INFO 2025-03-22 20:49:28,191 basehttp 135863 139955316717248 "POST /home/accounts/login/ HTTP/1.1" 302 0
 django.server INFO 2025-03-22 20:49:28,201 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 8639
 django.server INFO 2025-03-22 20:49:29,383 basehttp 135863 139955316717248 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-22 20:54:31,337 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:54:31,349 basehttp 135863 139955316717248 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:54:31,362 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9081
+django.request WARNING 2025-03-22 20:54:31,545 log 135863 139955316717248 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:54:31,545 basehttp 135863 139955316717248 "GET /favicon.ico HTTP/1.1" 404 5745

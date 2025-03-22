@@ -6,12 +6,13 @@
 {% block content %}
 <!-- Top Half Image Section -->
 <div class="top-section relative">
-    <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto">
+    <!-- Make image responsive by setting it to cover the width and adjust height automatically -->
+    <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto object-cover">
 
     <!-- Go to Map Button -->
     <div class="absolute top-[75%] left-1/2 transform -translate-x-1/2">
         <a href="{% url 'map' %}">
-            <button class="px-10 py-6 text-2xl font-bold text-white bg-green-700 border-4 border-white rounded-lg hover:bg-green-600 transition duration-300">
+            <button class="px-10 py-6 text-2xl font-bold text-white bg-green-700 border-4 border-white rounded-lg hover:bg-green-600 transition duration-300 w-full sm:w-auto">
                 Go to Map
             </button>
         </a>
@@ -20,40 +21,40 @@
 
 <!-- Bottom Half Image Section -->
 <div class="bottom-section relative">
-    <img src="{% static 'images/Bottom_Image.jpg' %}" alt="Bottom Image" class="w-full h-auto">
+    <!-- Make image responsive by setting it to cover the width and adjust height automatically -->
+    <img src="{% static 'images/Bottom_Image.jpg' %}" alt="Bottom Image" class="w-full h-auto object-cover">
     
     <!-- Text and Content for the Bottom Section -->
-    <div class="bottom-text absolute inset-0 flex flex-col justify-center items-center text-white">
+    <div class="bottom-text absolute inset-0 flex flex-col justify-center items-center text-white px-4 sm:px-8">
         <!-- Welcome Heading: Larger and higher -->
-        <h1 class="text-6xl font-bold mb-6">Welcome!</h1>
+        <h1 class="text-5xl sm:text-6xl font-bold mb-6 text-center">Welcome!</h1>
         
         <!-- Introduction Text: Larger than other text -->
-        <p class="text-3xl mb-6">This is our task-based collectibles sustainability game, developed by Women in STEM</p>
+        <p class="text-2xl sm:text-3xl mb-6 text-center">This is our task-based collectibles sustainability game, developed by Women in STEM</p>
         
         <!-- Rest of the List -->
-        <ul class="mt-4 text-lg">
+        <ul class="mt-4 text-base sm:text-lg">
             <li><strong>Explore</strong> – Follow the treasure hunts and discover sustainability hotspots.</li>
             <li><strong>Collect and Learn</strong> – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</li>
             <li><strong>Complete Quests</strong> – Take on eco-friendly challenges daily, weekly, and as part of the larger community.</li>
             <li><strong>Climb the Leaderboard</strong> – Compete with friends and prove you’re the ultimate CarboCollector.</li>
         </ul>
     </div>
-    
 
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-10 w-full text-center">
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+    <div x-data="{ open: false }" class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 absolute bottom-10 w-full text-center px-4">
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 w-full sm:w-auto text-center">
             Go to Your Daily Tasks
         </a>
 
         <!-- "How to Play" Button -->
-        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 w-full sm:w-auto text-center">
             How to Play
         </button>
 
         <!-- Popup Modal -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
                 <h2 class="text-2xl font-bold mb-4">How to Play</h2>
                 <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
                 <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
@@ -63,3 +64,4 @@
 </div>
 
 {% endblock %}
+
