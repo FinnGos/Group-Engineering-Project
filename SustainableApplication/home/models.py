@@ -17,7 +17,7 @@ class CustomUser(AbstractUser):
     selected_task = models.ForeignKey(
         "tasks.Tasks", null=True, blank=True, on_delete=models.SET_NULL
     )
-    task_assign_date = models.DateTimeField(null=True, blank=True)
+    task_assign_date = models.DateField(null=True, blank=True)
     all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
     # Collectable cards owned by user
     collectables_owned = models.ManyToManyField(Collectable, blank=True)

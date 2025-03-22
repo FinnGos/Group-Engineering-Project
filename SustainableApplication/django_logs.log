@@ -5554,3 +5554,67 @@ django.server INFO 2025-03-21 18:09:17,942 basehttp 25752 25024 "GET /buy/item/3
 django.server INFO 2025-03-21 18:09:17,955 basehttp 25752 25024 "GET /shop/ HTTP/1.1" 200 1572
 django.server INFO 2025-03-21 18:09:19,506 basehttp 25752 25024 "GET /map/ HTTP/1.1" 200 1759
 django.server INFO 2025-03-21 18:09:19,587 basehttp 25752 25024 "GET /media/items/tree_TrrWjHH_UCFOgZZ.png HTTP/1.1" 200 85207
+django.utils.autoreload INFO 2025-03-22 12:08:53,987 autoreload 16388 24692 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:08:55,878 basehttp 16388 11268 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:08:56,152 basehttp 16388 11268 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-22 12:08:56,238 basehttp 16388 11268 "GET /static/css/styles.css HTTP/1.1" 304 0
+django INFO 2025-03-22 12:08:59,576 views 16388 11268 User logged in: dc754
+django.server INFO 2025-03-22 12:08:59,698 basehttp 16388 11268 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:08:59,750 basehttp 16388 11268 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:09:05,492 basehttp 16388 11268 "GET /tasks/ HTTP/1.1" 200 3722
+django.server INFO 2025-03-22 12:09:22,122 basehttp 16388 11268 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:09:23,578 basehttp 16388 11268 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:09:25,388 basehttp 16388 11268 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:09:26,630 basehttp 16388 11268 "GET /tasks/ HTTP/1.1" 200 3713
+django.utils.autoreload INFO 2025-03-22 12:20:46,540 autoreload 29568 23092 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:20:48,134 basehttp 29568 23356 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:20:48,205 basehttp 29568 23356 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-22 12:20:50,342 views 29568 23356 User logged in: dc754
+django.server INFO 2025-03-22 12:20:50,465 basehttp 29568 23356 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:20:50,485 basehttp 29568 23356 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:20:51,774 basehttp 29568 23356 "GET /tasks/ HTTP/1.1" 200 3711
+django.server INFO 2025-03-22 12:20:55,254 basehttp 29568 23356 "GET /tasks/ HTTP/1.1" 200 3711
+django.server INFO 2025-03-22 12:21:00,526 basehttp 29568 23356 "GET /tasks/ HTTP/1.1" 200 3707
+django.server INFO 2025-03-22 12:21:06,709 basehttp 29568 23356 "GET /tasks/ HTTP/1.1" 200 3721
+django.utils.autoreload INFO 2025-03-22 12:22:20,995 autoreload 14468 25380 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:22:22,481 basehttp 14468 22424 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:22:22,557 basehttp 14468 22424 "GET /accounts/login/ HTTP/1.1" 200 1539
+django.server INFO 2025-03-22 12:22:25,006 basehttp 14468 22424 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:22:25,031 basehttp 14468 22424 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:22:26,374 basehttp 14468 22424 "GET /tasks/ HTTP/1.1" 200 3721
+django.server INFO 2025-03-22 12:22:28,775 basehttp 14468 22424 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:22:29,913 basehttp 14468 22424 "GET /tasks/ HTTP/1.1" 200 3709
+django.server INFO 2025-03-22 12:22:31,538 basehttp 14468 22424 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:22:43,252 basehttp 14468 22424 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:23:05,162 basehttp 14468 22424 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:23:06,351 basehttp 14468 22424 "GET /tasks/ HTTP/1.1" 200 3713
+django.utils.autoreload INFO 2025-03-22 12:25:57,758 autoreload 8860 29272 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:25:59,201 basehttp 8860 2556 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:25:59,270 basehttp 8860 2556 "GET /accounts/login/ HTTP/1.1" 200 1539
+django INFO 2025-03-22 12:26:01,323 views 8860 2556 User logged in: dc754
+django.server INFO 2025-03-22 12:26:01,462 basehttp 8860 2556 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 12:26:01,482 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:26:02,661 basehttp 8860 2556 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:26:04,223 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:26:05,523 basehttp 8860 2556 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:26:06,913 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:26:07,810 basehttp 8860 2556 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:26:08,983 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:26:10,002 basehttp 8860 2556 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:26:11,559 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django.server INFO 2025-03-22 12:26:12,750 basehttp 8860 2556 "GET /tasks/ HTTP/1.1" 200 3713
+django.server INFO 2025-03-22 12:26:15,530 basehttp 8860 2556 "GET /home/ HTTP/1.1" 200 1790
+django INFO 2025-03-22 12:35:44,100 views 21268 21628 User logged in: testuser
+django INFO 2025-03-22 12:35:45,823 views 21268 21628 User logged in: testuser
+django INFO 2025-03-22 12:35:47,491 views 21268 21628 User logged in: testuser
+django INFO 2025-03-22 12:35:49,255 views 21268 21628 User logged in: testuser
+django INFO 2025-03-22 12:35:50,918 views 21268 21628 User logged in: testuser
+django INFO 2025-03-22 12:37:57,391 views 6228 20104 User logged in: testuser
+django INFO 2025-03-22 12:37:59,034 views 6228 20104 User logged in: testuser
+django INFO 2025-03-22 12:38:00,723 views 6228 20104 User logged in: testuser
+django INFO 2025-03-22 12:38:02,424 views 6228 20104 User logged in: testuser
+django INFO 2025-03-22 12:38:04,030 views 6228 20104 User logged in: testuser
+django INFO 2025-03-22 12:38:18,806 views 27504 29016 User logged in: testuser
+django INFO 2025-03-22 12:38:20,475 views 27504 29016 User logged in: testuser
+django INFO 2025-03-22 12:38:22,120 views 27504 29016 User logged in: testuser
+django INFO 2025-03-22 12:38:23,744 views 27504 29016 User logged in: testuser

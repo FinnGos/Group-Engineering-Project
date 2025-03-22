@@ -10,27 +10,24 @@ import random
 # Create your views here.
 @login_required
 def tasks_view(request):
-
     if not request.user.is_authenticated:
         return render(request, "tasks.html", {"task": None})
 
     user = request.user
-    today = now().date()
+    today = now().date()  # Ensure date-only comparison
 
-    user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
-
-    # retrieve or select random task for today
+    # Get user's existing task if assigned today
     if user.selected_task and user.task_assign_date == today:
         task = user.selected_task
     else:
-        if not user_incomplete_tasks:
-            task = None
-        else:
+        user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
+        if user_incomplete_tasks:
             task = random.choice(user_incomplete_tasks)
-
             user.selected_task = task
-            user.task_assing_date = today
-            user.save()
+            user.task_assign_date = today  # Save as date
+            user.save(update_fields=["selected_task", "task_assign_date"])
+        else:
+            task = None  # No tasks available
 
     return render(request, "tasks.html", {"task": task})
 
