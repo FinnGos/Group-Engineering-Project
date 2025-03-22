@@ -270,3 +270,31 @@ django.server INFO 2025-03-22 20:54:31,349 basehttp 135863 139955316717248 "POST
 django.server INFO 2025-03-22 20:54:31,362 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9081
 django.request WARNING 2025-03-22 20:54:31,545 log 135863 139955316717248 Not Found: /favicon.ico
 django.server WARNING 2025-03-22 20:54:31,545 basehttp 135863 139955316717248 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:57:18,781 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:57:18,794 basehttp 135863 139955316717248 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-22 20:57:19,099 basehttp 135863 139955316717248 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 20:57:19,111 basehttp 135863 139955316717248 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 20:57:19,169 log 135863 139955316717248 Not Found: /favicon.ico
+django INFO 2025-03-22 20:57:25,209 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:57:25,221 basehttp 135863 139955316717248 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:57:25,234 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 20:57:25,335 basehttp 135863 139955316717248 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-22 20:57:25,359 basehttp 135863 139955307275968 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-22 20:57:25,361 basehttp 135863 139955316717248 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.server INFO 2025-03-22 20:57:30,238 basehttp 135863 139955316717248 "GET /lootboxes/open/ HTTP/1.1" 200 11179
+django.server WARNING 2025-03-22 20:57:30,304 basehttp 135863 139955316717248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:30,308 basehttp 135863 139955316717248 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-22 20:57:30,313 basehttp 135863 139955307275968 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 200 2674413
+django.server WARNING 2025-03-22 20:57:30,329 basehttp 135863 139955316717248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:31,039 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:31,854 basehttp 135863 139955307275968 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 20:57:32,680 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:33,997 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:34,318 basehttp 135863 139955307275968 "GET /lootboxes/open/ HTTP/1.1" 200 11179
+django.server WARNING 2025-03-22 20:57:34,381 basehttp 135863 139955307275968 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server WARNING 2025-03-22 20:57:34,405 basehttp 135863 139955307275968 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:49,862 basehttp 135863 139955307275968 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 21:00:33,658 basehttp 135863 139955307275968 "GET /home/ HTTP/1.1" 200 9181
+django.request WARNING 2025-03-22 21:00:33,872 log 135863 139955307275968 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 21:00:33,873 basehttp 135863 139955307275968 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 21:00:35,768 basehttp 135863 139955307275968 "GET /home/ HTTP/1.1" 200 9181
