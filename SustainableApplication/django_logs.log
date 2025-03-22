@@ -10524,3 +10524,41 @@ django.server WARNING 2025-03-09 23:51:45,376 basehttp 26572 14756 "GET /static/
 django.server INFO 2025-03-09 23:51:52,408 basehttp 26572 27048 "GET /tasks/ HTTP/1.1" 200 2725
 django.server WARNING 2025-03-09 23:51:52,450 basehttp 26572 27048 "GET /static/css/styles.css HTTP/1.1" 404 1969
 >>>>>>> Interactivemap
+django.utils.autoreload INFO 2025-03-22 16:24:15,507 autoreload 21028 10820 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 16:24:19,192 basehttp 21028 20020 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:24:19,212 basehttp 21028 20020 "GET /accounts/login/ HTTP/1.1" 200 7748
+django.server INFO 2025-03-22 16:24:19,293 basehttp 21028 20020 "GET /static/auth.css HTTP/1.1" 200 1952
+django.server INFO 2025-03-22 16:24:19,295 basehttp 21028 23632 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 16:24:19,629 log 21028 23632 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 16:24:19,629 basehttp 21028 23632 "GET /favicon.ico HTTP/1.1" 404 5745
+django INFO 2025-03-22 16:24:21,579 views 21028 23632 Failed login attempt for username: Zeynep
+django.server INFO 2025-03-22 16:24:21,581 basehttp 21028 23632 "POST /accounts/login/ HTTP/1.1" 200 7990
+django INFO 2025-03-22 16:24:30,450 views 21028 23632 Failed login attempt for username: zeynep
+django.server INFO 2025-03-22 16:24:30,452 basehttp 21028 23632 "POST /accounts/login/ HTTP/1.1" 200 7990
+django INFO 2025-03-22 16:24:31,837 views 21028 23632 Failed login attempt for username: Zeynep
+django.server INFO 2025-03-22 16:24:31,839 basehttp 21028 23632 "POST /accounts/login/ HTTP/1.1" 200 7990
+django.server INFO 2025-03-22 16:24:31,864 basehttp 21028 20020 "GET /static/images/signin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:24:31,864 basehttp 21028 23632 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:24:34,387 basehttp 21028 23632 "GET /home/signup/ HTTP/1.1" 200 8937
+django INFO 2025-03-22 16:24:45,449 views 21028 23632 User logged in: Zeynep
+django INFO 2025-03-22 16:24:45,502 views 21028 23632 New user signed up: Zeynep
+django.server INFO 2025-03-22 16:24:45,508 basehttp 21028 23632 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 16:24:45,520 basehttp 21028 23632 "GET /home/ HTTP/1.1" 200 7997
+django.server INFO 2025-03-22 16:24:45,547 basehttp 21028 20020 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-22 16:24:45,552 basehttp 21028 23632 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-22 16:24:47,530 basehttp 21028 23632 "GET /map/ HTTP/1.1" 200 7176
+django.server INFO 2025-03-22 16:24:47,556 basehttp 21028 23632 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 16:24:47,556 basehttp 21028 20020 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 16:24:47,613 basehttp 21028 20020 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.server INFO 2025-03-22 16:24:50,028 basehttp 21028 20020 "GET /get_location/1/ HTTP/1.1" 200 8410
+django.server INFO 2025-03-22 16:24:50,054 basehttp 21028 20020 "GET /static/checkin.css HTTP/1.1" 200 1210
+django.server INFO 2025-03-22 16:24:50,057 basehttp 21028 23632 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-22 16:25:46,918 basehttp 21028 23632 "GET /get_location/1/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-22 16:25:46,933 basehttp 21028 20020 "GET /static/checkin.css HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 16:25:46,936 basehttp 21028 23632 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 16:25:46,936 basehttp 21028 25220 "GET /static/images/checkin.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 16:25:46,944 basehttp 21028 20020 "GET /static/js/checkin.js HTTP/1.1" 200 2039
+django.server INFO 2025-03-22 16:25:46,944 basehttp 21028 25220 "GET /static/css/map.css HTTP/1.1" 200 888
+django.server INFO 2025-03-22 16:25:54,047 basehttp 21028 25220 "GET /tasks/ HTTP/1.1" 200 23688
+django.server INFO 2025-03-22 16:25:54,067 basehttp 21028 25220 "GET /static/tasks.css HTTP/1.1" 200 215
+django.server INFO 2025-03-22 16:25:54,073 basehttp 21028 20020 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
