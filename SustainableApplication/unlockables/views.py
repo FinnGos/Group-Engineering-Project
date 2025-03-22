@@ -4,9 +4,19 @@ from django.contrib import messages
 from .models import Item, Building, UserBuilding, UserItem, Rubbish
 import random
 
+
 @login_required
 @login_required
 def buy_item(request, item_id):
+    """Function to see if user has enough points to buy an item and the place the item if they have enough points
+
+    Args:
+        request: The request made to the shop page
+        item_id: The id of the item the user tries to buy
+
+    Returns:
+        Redirect to the shop page once user has bought or failed to buy the item
+    """
     item = get_object_or_404(Item, id=item_id)
     user = request.user
 
@@ -31,18 +41,33 @@ def buy_item(request, item_id):
     else:
         messages.error(request, "Not enough Carbo Coins!")
 
-    return redirect('shop')
-
+    return redirect("shop")
 
 
 
 @login_required
 def shop(request):
+    """Load the html for the shop webpage
+
+    Args:
+        request: The request made to the shop page
+
+    Returns:
+        The HTML render for the shop page
+    """
     items = Item.objects.all()
-    return render(request, 'shop.html', {'items': items})
+    return render(request, "shop.html", {"items": items})
 
 @login_required
 def game_map(request):
+    """Function to load the game map html
+
+    Args:
+        request: The request made to the shop page
+
+    Returns:
+        The HTML render for the game map page
+    """
     user = request.user
     buildings = Building.objects.all()
     rubbish = Rubbish.objects.filter(cleaned=False)  # Only show uncleaned rubbish
@@ -64,6 +89,12 @@ def game_map(request):
 
 @login_required
 def place_item(user, item):
+    """Function to place the item on the game map making sure it doesn't collide with anything on the map
+
+    Args:
+        user: The users that the map belongs to
+        item: The item to be placed on the map
+    """
     existing_objects = UserItem.objects.filter(user=user)
     map_width, map_height = 1800, 800  # Size of the map
     object_size = 30  # Approximate object size
