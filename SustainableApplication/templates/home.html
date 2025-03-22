@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Top Half Image Section -->
+<div class="top-section relative">
+    <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto">
+</div>
+
+<!-- Bottom Half Image Section -->
+<div class="bottom-section relative">
+    <img src="{% static 'images/Bottom_Image.jpg' %}" alt="Bottom Image" class="w-full h-auto">
+    
+    <!-- Text and Content for the Bottom Section -->
+    <div class="bottom-text absolute inset-0 flex flex-col justify-center items-center text-white">
+        <!-- Welcome Heading: Larger and higher -->
+        <h1 class="text-6xl font-bold mb-6">Welcome!</h1>
+        
+        <!-- Introduction Text: Larger than other text -->
+        <p class="text-3xl mb-6">This is our task-based collectibles sustainability game, developed by Women in STEM</p>
+        
+        <!-- Rest of the List -->
+        <ul class="mt-4 text-lg">
+            <li><strong>Explore</strong> – Follow the treasure hunts and discover sustainability hotspots.</li>
+            <li><strong>Collect and Learn</strong> – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</li>
+            <li><strong>Complete Quests</strong> – Take on eco-friendly challenges daily, weekly, and as part of the larger community.</li>
+            <li><strong>Climb the Leaderboard</strong> – Compete with friends and prove you’re the ultimate CarboCollector.</li>
+        </ul>
+    </div>
+    
+
+    <!-- Buttons Section -->
+    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-10 w-full text-center">
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+            Go to Your Daily Tasks
+        </a>
+
+        <!-- "How to Play" Button -->
+        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+            How to Play
+        </button>
+
+        <!-- Popup Modal -->
+        <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+                <h2 class="text-2xl font-bold mb-4">How to Play</h2>
+                <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

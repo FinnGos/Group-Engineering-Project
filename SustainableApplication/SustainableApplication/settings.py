@@ -25,8 +25,22 @@ SECRET_KEY = "django-insecure-fj8v_l7)&5l^t)dzpmqe)i3c@jnwmh+(*x_=9j8$4rz90qro19
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# The URL that handles the static files
 STATIC_URL = "/static/"
 
+# Static files configuration
+# Make sure this directory exists
+STATICFILES_DIRS = [BASE_DIR / "static"]  
+
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# Media files configuration (for user-uploaded files)
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+# Allowed hosts
 ALLOWED_HOSTS = []
 
 
@@ -46,6 +60,7 @@ INSTALLED_APPS = [
     "tasks.apps.TasksConfig",
     "TermsAndConditions.apps.TermsandconditionsConfig",
     'collectables.apps.CollectablesConfig',
+    "lootboxes.apps.LootboxesConfig",
     "unlockables.apps.UnlockablesConfig",
 ]
 
@@ -64,7 +79,7 @@ ROOT_URLCONF = "SustainableApplication.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR],
+        "DIRS": [BASE_DIR / "templates"],  # Templates directory is located here
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -130,27 +145,27 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
+# Static Files
+STATIC_URL = "/static/"
+# Updated static files configuration
+STATICFILES_DIRS = [BASE_DIR / "static"] 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
-STATIC_URL = "static/"
-
-
-# Media files (PNGs, JPEGs, Images)
-MEDIA_URL = "media/"
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# Use custom user model
 AUTH_USER_MODEL = "home.CustomUser"
 
+# Redirects after login/logout
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/home/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
-
 
 LOGGING = {
     "version": 1,

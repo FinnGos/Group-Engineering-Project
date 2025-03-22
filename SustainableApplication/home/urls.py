@@ -3,8 +3,16 @@ from django.contrib.auth import views as auth_views
 from . import views
 from django.shortcuts import redirect
 from tasks import views as tviews
+from leaderboard import views as lviews
 from .views import CustomLogoutView, LoginFormView
+from django.http import HttpResponse
+from django.conf import settings
+from django.conf.urls.static import static
 from collectables import views as c_views
+
+# Placeholder views
+def placeholder_view(request):
+    return HttpResponse("This page is under construction.", content_type="text/plain")
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -16,5 +24,4 @@ urlpatterns = [
     path("accounts/update_profile/", views.update_profile, name="update_profile"),
     path("accounts/change_password/", views.change_password, name="change_password"),
     path("accounts/view_data/", views.view_user_data, name="view_user_data"),
-    path("collectable/", c_views.collectable_gallery, name="collectable_gallery")
 ]
