@@ -7,6 +7,7 @@
 <!-- Top Half Image Section -->
 <div class="top-section relative">
     <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto object-cover">
+
     <!-- Go to Map Button -->
     <div class="absolute top-[80%] left-1/2 transform -translate-x-1/2 sm:top-[75%]">
         <a href="{% url 'map' %}">
@@ -43,7 +44,7 @@
     </div>
 
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-12 sm:mt-16 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 absolute bottom-10 w-full text-center px-4">
+    <div x-data="{ open: false }" class="mt-8 sm:mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 absolute bottom-6 w-full text-center px-4">
         <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 w-full sm:w-auto text-center">
             Go to Your Daily Tasks
         </a>
@@ -65,3 +66,62 @@
 </div>
 
 {% endblock %}
+
+<!-- Add Media Queries for Mobile View Adjustments -->
+<style>
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .top-section img {
+            height: 300px; /* Adjusting the height for better mobile view */
+        }
+        .bottom-text {
+            margin-top: 8rem !important; /* More space at the top for better alignment */
+        }
+        .bottom-text h1 {
+            font-size: 2.5rem; /* Smaller text for mobile */
+        }
+        .bottom-text p {
+            font-size: 1.25rem; /* Adjusted for mobile readability */
+        }
+        .bottom-section img {
+            object-position: center; /* Keeps the background aligned on mobile */
+        }
+        .bottom-text ul li {
+            font-size: 1rem; /* Smaller font for mobile */
+        }
+        .btn {
+            width: 100%; /* Full width buttons on mobile */
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        .absolute {
+            position: relative !important;
+        }
+        .absolute.bottom-6 {
+            bottom: 6rem; /* Move buttons further down to avoid overlap with text */
+        }
+        .sm\:top-\[75%\] {
+            top: 85%; /* Move the "Go to Map" button further down */
+        }
+    }
+
+    /* Larger Screens (Desktops) */
+    @media (min-width: 769px) {
+        .top-section img {
+            height: auto;
+        }
+        .bottom-text {
+            margin-top: 6rem;
+        }
+        .bottom-text h1 {
+            font-size: 3.5rem;
+        }
+        .bottom-text p {
+            font-size: 2rem;
+        }
+        .bottom-text ul li {
+            font-size: 1.125rem;
+        }
+    }
+</style>
+
