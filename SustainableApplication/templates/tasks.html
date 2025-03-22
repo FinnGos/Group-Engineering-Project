@@ -56,7 +56,13 @@
                 </div>
             {% endif %}
         </div>
-        
+        <!-- Button to Go to Task Gallery -->
+<div class="text-center mt-6">
+    <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 shadow-lg">
+        View Task Gallery
+    </a>
+</div>
+
         <p class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6">
             <a href="{% url 'home' %}" class="text-white">Back to Home</a>
         </p>
