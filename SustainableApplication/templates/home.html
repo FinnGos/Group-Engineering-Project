@@ -6,9 +6,7 @@
 {% block content %}
 <!-- Top Half Image Section -->
 <div class="top-section relative">
-    <!-- Make image responsive and ensure it covers the width of the container -->
     <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto object-cover">
-
     <!-- Go to Map Button -->
     <div class="absolute top-[80%] left-1/2 transform -translate-x-1/2 sm:top-[75%]">
         <a href="{% url 'map' %}">
@@ -20,7 +18,7 @@
 </div>
 
 <!-- Bottom Half Image Section -->
-<div class="bottom-section relative bg-cover bg-no-repeat bg-bottom">
+<div class="bottom-section relative">
     <img src="{% static 'images/Bottom_Image.jpg' %}" alt="Bottom Image" class="w-full h-auto object-cover">
     
     <!-- Text and Content for the Bottom Section -->
@@ -67,4 +65,3 @@
 </div>
 
 {% endblock %}
-
