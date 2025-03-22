@@ -31,13 +31,25 @@
       </p>
     </div>
 
-    <!-- Lootbox Icon -->
-    <div class="mb-6">
-      <img
-        src="{% static 'images/lootbox.png' %}"
-        alt="Lootbox"
-        class="w-48 h-auto transition-transform duration-300 transform hover:scale-110"
-      />
+    <!-- Lootbox Popup Section -->
+    <div x-data="{ openLootbox: false }" class="mb-6">
+      <!-- Lootbox Image (Triggers Popup) -->
+      <img @click="openLootbox = true" 
+          src="{% static 'images/lootbox.png' %}" 
+          alt="Lootbox" 
+          class="w-48 h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer">
+
+      <!-- Popup Modal -->
+      <div x-show="openLootbox" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div class="bg-white p-4 rounded-lg shadow-lg max-w-md text-center">
+              <h2 class="text-gray-700 text-2xl font-bold mb-4">Mystery Lootbox</h2>
+              <p class="text-gray-700 p-2">Points earned can be spent here.</p>
+              <p class="text-gray-700">Opening lootboxes gives you a chance to earn CarboCards for your collection.</p>
+              <p class="text-gray-700">Duplicates will return back points.</p>
+              <p class="text-gray-700 p-4">Click 'Open Lootbox' to see what you get!</p>
+              <button @click="openLootbox = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+          </div>
+      </div>
     </div>
 
     <!-- Lootbox Button -->
