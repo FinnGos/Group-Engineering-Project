@@ -12,7 +12,7 @@
             position: relative;
             width: 2000px;  /* Adjust based on your game map size */
             height: 1000px;
-            background: url('{% static "images/grass_background.png" %}') no-repeat center;
+            background: url('{% static "images/grassbackground.png" %}') no-repeat center;
             background-size: cover;
             border: 2px solid black;
         }
@@ -20,8 +20,8 @@
         /* Buildings */
         .building {
             position: absolute;
-            width: 150px;  /* Adjust based on image size */
-            height: 150px;
+            width: 200px;  /* Adjust based on image size */
+            height: 200px;
         }
 
         /* Items (Trees, Solar Panels, etc.) */
@@ -35,6 +35,13 @@
 <body>
 
     <h1>Your Exeter Campus</h1>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
     
     <div class="map-container">
         <!-- Buildings -->
@@ -50,6 +57,20 @@
         {% for item in user_items %}
             <img src="{{ item.item.image.url }}" class="item" style="top: {{ item.y }}px; left: {{ item.x }}px;">
         {% endfor %}
+
+         <!-- Display Rubbish -->
+        {% for trash in rubbish %}
+            <img 
+                src="{{ trash.image.url }}" 
+                alt="Rubbish" 
+                style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 40px; height: 40px;" 
+            />
+            <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:35 }}px;">
+                {% csrf_token %}
+                <button type="submit">Clean</button>
+            </form>
+        {% endfor %}
+
     </div>
 
 </body>
