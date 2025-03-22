@@ -16,14 +16,12 @@ def open_lootbox(request):
 
     if request.method == "POST":
         if user.current_points < LOOTBOX_COST:
-            return JsonResponse(
-                {
-                    "success": False,
-                    "error": "Not enough points to open a lootbox",
-                    "new_points": user.current_points,
-                },
-                status=400,
-            )
+            response_data = {
+                "success": False,
+                "error": "Not enough points to open a lootbox",
+                "new_points": user.current_points,
+            }
+            return JsonResponse(response_data) 
 
         user.current_points -= LOOTBOX_COST  # Deduct points
         user.save()
@@ -45,7 +43,7 @@ def open_lootbox(request):
 
         # Prepare JSON response
         response_data = {
-            "success": True,
+            "success": True,    
             "new_points": user.current_points,  # Always include updated points
             "loot_item": None,
             "is_duplicate": is_duplicate,  # Send duplicate info

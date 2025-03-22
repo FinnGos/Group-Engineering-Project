@@ -1,637 +1,717 @@
-django INFO 2025-02-24 13:45:58,056 views 1288 34744 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:18:26,333 views 13908 15252 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:18:26,664 views 13908 15252 User logged in: testuser
-django INFO 2025-02-25 10:27:41,371 views 1992 18244 User logged in: testuser
-django.request WARNING 2025-02-25 10:27:41,411 log 1992 18244 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:27:41,736 views 1992 18244 User logged in: testuser
-django.request WARNING 2025-02-25 10:27:41,761 log 1992 18244 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:27:42,081 views 1992 18244 User logged in: testuser
-django.request WARNING 2025-02-25 10:27:42,103 log 1992 18244 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:27:42,432 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:42,799 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:43,141 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:43,491 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:43,841 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:43,886 views 1992 18244 Logout by an unauthenticated user or session end.
-django INFO 2025-02-25 10:27:45,175 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:45,201 views 1992 18244 User deleted account: testuser
-django INFO 2025-02-25 10:27:45,841 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:45,863 views 1992 18244 User deleted account: testuser
-django INFO 2025-02-25 10:27:46,516 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:46,539 views 1992 18244 User deleted account: testuser
-django INFO 2025-02-25 10:27:46,861 views 1992 18244 Failed login attempt for username: testuser
-django INFO 2025-02-25 10:27:48,162 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:50,144 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:27:50,168 views 1992 18244 User logged out: testuser
-django INFO 2025-02-25 10:27:50,841 views 1992 18244 User logged in: newuser
-django INFO 2025-02-25 10:27:50,861 views 1992 18244 New user signed up: newuser
-django INFO 2025-02-25 10:27:51,515 views 1992 18244 Failed login attempt for username: TESTUSER
-django INFO 2025-02-25 10:27:52,165 views 1992 18244 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-25 10:27:53,461 views 1992 18244 User logged in: testuser
-django WARNING 2025-02-25 10:27:53,803 views 1992 18244 Failed signup attempt.
-django INFO 2025-02-25 10:27:54,776 views 1992 18244 User logged in: newuser
-django INFO 2025-02-25 10:27:54,794 views 1992 18244 New user signed up: newuser
-django WARNING 2025-02-25 10:27:55,121 views 1992 18244 Failed signup attempt.
-django INFO 2025-02-25 10:27:55,775 views 1992 18244 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-25 10:27:56,101 views 1992 18244 Failed signup attempt.
-django WARNING 2025-02-25 10:27:56,421 views 1992 18244 Failed signup attempt.
-django INFO 2025-02-25 10:27:57,063 views 1992 18244 User logged in: matt4
-django INFO 2025-02-25 10:27:57,104 views 1992 18244 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:27:57,784 views 1992 18244 User logged in: matt4
-django INFO 2025-02-25 10:27:57,834 views 1992 18244 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:27:58,511 views 1992 18244 User logged in: matt4
-django INFO 2025-02-25 10:27:58,551 views 1992 18244 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:27:58,913 views 1992 18244 User logged in: testuser
-django INFO 2025-02-25 10:28:48,465 views 31236 27216 User logged in: testuser
-django.request WARNING 2025-02-25 10:28:48,500 log 31236 27216 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:28:48,827 views 31236 27216 User logged in: testuser
-django.request WARNING 2025-02-25 10:28:48,856 log 31236 27216 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:28:49,188 views 31236 27216 User logged in: testuser
-django.request WARNING 2025-02-25 10:28:49,211 log 31236 27216 Bad Request: /get_location/1/
-django INFO 2025-02-25 10:28:49,527 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:49,896 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:50,256 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:50,616 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:50,668 views 31236 27216 Logout by an unauthenticated user or session end.
-django INFO 2025-02-25 10:28:52,001 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:52,029 views 31236 27216 User deleted account: testuser
-django INFO 2025-02-25 10:28:52,671 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:52,691 views 31236 27216 User deleted account: testuser
-django INFO 2025-02-25 10:28:53,331 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:53,361 views 31236 27216 User deleted account: testuser
-django INFO 2025-02-25 10:28:53,686 views 31236 27216 Failed login attempt for username: testuser
-django INFO 2025-02-25 10:28:54,981 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:56,961 views 31236 27216 User logged in: testuser
-django INFO 2025-02-25 10:28:56,985 views 31236 27216 User logged out: testuser
-django INFO 2025-02-25 10:28:57,632 views 31236 27216 User logged in: newuser
-django INFO 2025-02-25 10:28:57,651 views 31236 27216 New user signed up: newuser
-django INFO 2025-02-25 10:28:58,294 views 31236 27216 Failed login attempt for username: TESTUSER
-django INFO 2025-02-25 10:28:58,945 views 31236 27216 Failed login attempt for username: TESTUSER@EXAMPLE.COM
-django INFO 2025-02-25 10:29:00,222 views 31236 27216 User logged in: testuser
-django WARNING 2025-02-25 10:29:00,573 views 31236 27216 Failed signup attempt.
-django INFO 2025-02-25 10:29:01,531 views 31236 27216 User logged in: newuser
-django INFO 2025-02-25 10:29:01,553 views 31236 27216 New user signed up: newuser
-django WARNING 2025-02-25 10:29:01,881 views 31236 27216 Failed signup attempt.
-django INFO 2025-02-25 10:29:02,521 views 31236 27216 Failed login attempt for username: ' OR '1'='1
-django WARNING 2025-02-25 10:29:02,846 views 31236 27216 Failed signup attempt.
-django WARNING 2025-02-25 10:29:03,163 views 31236 27216 Failed signup attempt.
-django INFO 2025-02-25 10:29:03,802 views 31236 27216 User logged in: matt4
-django INFO 2025-02-25 10:29:03,844 views 31236 27216 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:29:04,524 views 31236 27216 User logged in: matt4
-django INFO 2025-02-25 10:29:04,574 views 31236 27216 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:29:05,253 views 31236 27216 User logged in: matt4
-django INFO 2025-02-25 10:29:05,291 views 31236 27216 User asked for personal data stored: matt4
-django INFO 2025-02-25 10:29:05,650 views 31236 27216 User logged in: testuser
-django.utils.autoreload INFO 2025-02-25 10:31:25,894 autoreload 6152 11932 Watching for file changes with StatReloader
-django.server INFO 2025-02-25 10:31:27,423 basehttp 6152 3888 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:31:27,485 basehttp 6152 3888 "GET /accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-25 10:31:27,603 basehttp 6152 3888 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:31:32,804 views 6152 33632 User logged in: matt
-django.server INFO 2025-02-25 10:31:32,922 basehttp 6152 33632 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:31:32,967 basehttp 6152 33632 "GET /home/ HTTP/1.1" 200 1682
-django.server WARNING 2025-02-25 10:31:33,056 basehttp 6152 33632 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:31:38,302 basehttp 6152 12928 "GET /leaderboard/ HTTP/1.1" 200 608
-django.server INFO 2025-02-25 10:31:38,473 basehttp 6152 12928 "GET /static/leaderboard/styles.css HTTP/1.1" 200 725
-django.server INFO 2025-02-25 10:31:45,331 basehttp 6152 12928 "GET /tasks/ HTTP/1.1" 200 3439
-django.server WARNING 2025-02-25 10:31:45,385 basehttp 6152 12928 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:31:48,682 basehttp 6152 32576 "GET /get_location/1/? HTTP/1.1" 200 2198
-django.server INFO 2025-02-25 10:31:48,735 basehttp 6152 32576 "GET /static/css/button.css HTTP/1.1" 304 0
-django.server INFO 2025-02-25 10:31:50,747 basehttp 6152 32576 "GET /get_location/1/?lat=50.7309945&lon=-3.5420185 HTTP/1.1" 200 2069
-django.server INFO 2025-02-25 10:31:55,816 basehttp 6152 32576 "GET /tasks/ HTTP/1.1" 200 3439
-django.server WARNING 2025-02-25 10:31:55,863 basehttp 6152 32576 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:32:01,205 basehttp 6152 8884 "GET /home/ HTTP/1.1" 200 1682
-django.server WARNING 2025-02-25 10:32:01,261 basehttp 6152 8884 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:32:05,423 views 6152 9008 User asked for personal data stored: matt
-django.server INFO 2025-02-25 10:32:05,442 basehttp 6152 9008 "GET /home/accounts/view_data/ HTTP/1.1" 200 1316
-django.server WARNING 2025-02-25 10:32:05,491 basehttp 6152 9008 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:32:13,208 basehttp 6152 10572 "GET /home/ HTTP/1.1" 200 1682
-django.server WARNING 2025-02-25 10:32:13,277 basehttp 6152 10572 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:32:16,880 basehttp 6152 13996 "GET /home/accounts/update_profile/ HTTP/1.1" 200 1521
-django.server WARNING 2025-02-25 10:32:16,931 basehttp 6152 13996 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:32:19,359 views 6152 30884 User updated profile (username & email): matt123
-django.server INFO 2025-02-25 10:32:19,360 basehttp 6152 30884 "POST /home/accounts/update_profile/ HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:32:19,384 basehttp 6152 30884 "GET /home/ HTTP/1.1" 200 1685
-django.server WARNING 2025-02-25 10:32:19,439 basehttp 6152 30884 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:32:20,914 views 6152 21280 User asked for personal data stored: matt123
-django.server INFO 2025-02-25 10:32:20,932 basehttp 6152 21280 "GET /home/accounts/view_data/ HTTP/1.1" 200 1355
-django.server WARNING 2025-02-25 10:32:20,984 basehttp 6152 21280 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:32:26,855 basehttp 6152 7580 "GET /home/ HTTP/1.1" 200 1685
-django.server WARNING 2025-02-25 10:32:26,933 basehttp 6152 7580 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:32:27,581 views 6152 33636 User logged out: matt123
-django.server INFO 2025-02-25 10:32:27,581 basehttp 6152 33636 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:32:27,588 basehttp 6152 33636 "GET /home/accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-25 10:32:27,666 basehttp 6152 33636 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-02-25 10:34:04,970 autoreload 32424 26292 Watching for file changes with StatReloader
-django.server INFO 2025-02-25 10:34:08,203 basehttp 32424 20600 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:34:08,246 basehttp 32424 20600 "GET /accounts/login/ HTTP/1.1" 200 1424
-django.server WARNING 2025-02-25 10:34:08,349 basehttp 32424 20600 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-02-25 10:34:16,384 views 32424 26132 User logged in: dc754
-django.server INFO 2025-02-25 10:34:16,466 basehttp 32424 26132 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:34:16,506 basehttp 32424 26132 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-02-25 10:34:16,554 basehttp 32424 26132 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:34:18,192 basehttp 32424 26520 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
-django.utils.autoreload INFO 2025-02-25 10:36:25,646 autoreload 32828 8920 Watching for file changes with StatReloader
-django.server INFO 2025-02-25 10:36:27,353 basehttp 32828 21672 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-02-25 10:36:27,402 basehttp 32828 21672 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-02-25 10:36:27,500 basehttp 32828 21672 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:36:30,799 basehttp 32828 17860 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
-django.server INFO 2025-02-25 10:36:32,793 basehttp 32828 17860 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server INFO 2025-02-25 10:36:34,106 basehttp 32828 17860 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
-django.server INFO 2025-02-25 10:36:35,285 basehttp 32828 17860 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server INFO 2025-02-25 10:36:38,299 basehttp 32828 17860 "GET /home/signup/ HTTP/1.1" 200 2526
-django.server WARNING 2025-02-25 10:36:38,349 basehttp 32828 17860 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-02-25 10:36:39,652 basehttp 32828 10572 "GET /PrivacyPolicy/ HTTP/1.1" 200 72592
-django.server INFO 2025-02-25 10:36:42,199 basehttp 32828 10572 "GET /TermsAndConditions/ HTTP/1.1" 200 34408
-django.utils.autoreload INFO 2025-03-08 23:56:39,567 autoreload 6220 16564 Watching for file changes with StatReloader
-django.server INFO 2025-03-08 23:56:46,596 basehttp 6220 31656 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-08 23:56:46,672 basehttp 6220 31656 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-08 23:56:46,773 basehttp 6220 31656 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-08 23:56:54,197 views 6220 31692 Failed login attempt for username: matt4
-django.server INFO 2025-03-08 23:56:54,197 basehttp 6220 31692 "POST /accounts/login/ HTTP/1.1" 200 1696
-django.server WARNING 2025-03-08 23:56:54,246 basehttp 6220 31692 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-08 23:56:59,004 views 6220 31032 Failed login attempt for username: matt4
-django.server INFO 2025-03-08 23:56:59,007 basehttp 6220 31032 "POST /accounts/login/ HTTP/1.1" 200 1696
-django.server WARNING 2025-03-08 23:56:59,047 basehttp 6220 31032 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-08 23:57:04,277 views 6220 21664 Failed login attempt for username: matt4
-django.server INFO 2025-03-08 23:57:04,280 basehttp 6220 21664 "POST /accounts/login/ HTTP/1.1" 200 1696
-django.server WARNING 2025-03-08 23:57:04,317 basehttp 6220 21664 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-08 23:57:08,082 basehttp 6220 28388 "GET /home/signup/ HTTP/1.1" 200 2526
-django.server WARNING 2025-03-08 23:57:08,134 basehttp 6220 28388 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django WARNING 2025-03-08 23:57:20,707 views 6220 5940 Failed signup attempt.
-django.server INFO 2025-03-08 23:57:20,710 basehttp 6220 5940 "POST /home/signup/ HTTP/1.1" 200 2645
-django.server WARNING 2025-03-08 23:57:20,763 basehttp 6220 5940 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-08 23:57:38,672 views 6220 29084 User logged in: matt4
-django INFO 2025-03-08 23:57:38,704 views 6220 29084 New user signed up: matt4
-django.server INFO 2025-03-08 23:57:38,718 basehttp 6220 29084 "POST /home/signup/ HTTP/1.1" 302 0
-django.server INFO 2025-03-08 23:57:38,734 basehttp 6220 29084 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-08 23:57:38,773 basehttp 6220 29084 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-08 23:57:41,499 basehttp 6220 26864 "GET /tasks/ HTTP/1.1" 200 3439
-django.server WARNING 2025-03-08 23:57:41,553 basehttp 6220 26864 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-08 23:57:45,463 basehttp 6220 15472 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-08 23:57:45,505 basehttp 6220 15472 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-08 23:57:52,438 basehttp 6220 25984 "GET /tasks/ HTTP/1.1" 200 3439
-django.server WARNING 2025-03-08 23:57:52,481 basehttp 6220 25984 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-08 23:57:56,300 basehttp 6220 31296 "GET /get_location/1/? HTTP/1.1" 200 2198
-django.server INFO 2025-03-08 23:57:56,458 basehttp 6220 31296 "GET /static/css/button.css HTTP/1.1" 200 868
-django.server INFO 2025-03-08 23:57:58,052 basehttp 6220 31296 "GET /get_location/1/?lat=50.7310169&lon=-3.5140733 HTTP/1.1" 200 2069
-django.server INFO 2025-03-08 23:57:59,587 basehttp 6220 31296 "GET /get_location/1/?lat=50.7310169&lon=-3.5140733 HTTP/1.1" 200 2069
-django.server INFO 2025-03-08 23:58:03,709 basehttp 6220 31296 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-08 23:58:03,753 basehttp 6220 31296 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-03-09 00:00:00,498 autoreload 7920 6336 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 00:00:01,928 basehttp 7920 26784 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:00:01,978 basehttp 7920 26784 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 00:00:02,086 basehttp 7920 26784 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 00:00:11,023 views 7920 9024 User logged in: matt4
-django.server INFO 2025-03-09 00:00:11,066 basehttp 7920 9024 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:00:11,077 basehttp 7920 9024 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 00:00:11,158 basehttp 7920 9024 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 00:00:12,351 basehttp 7920 15544 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 00:00:12,400 basehttp 7920 15544 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.request ERROR 2025-03-09 00:00:14,523 log 7920 20680 Internal Server Error: /upload/
+django.utils.autoreload INFO 2025-03-21 17:39:47,254 autoreload 6448 11460 Watching for file changes with StatReloader
+django.server INFO 2025-03-21 17:39:50,623 basehttp 6448 24200 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server INFO 2025-03-21 17:39:50,637 basehttp 6448 17292 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 17:39:50,637 basehttp 6448 29504 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 17:39:50,652 basehttp 6448 24200 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:51,473 basehttp 6448 29504 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:51,485 basehttp 6448 29504 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:52,160 basehttp 6448 17292 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:52,170 basehttp 6448 17292 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:53,301 basehttp 6448 24804 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:39:54,674 basehttp 6448 24804 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server INFO 2025-03-21 17:39:55,194 basehttp 6448 24804 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:55,204 basehttp 6448 24804 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:56,111 basehttp 6448 26884 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:39:57,611 basehttp 6448 26884 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server INFO 2025-03-21 17:39:58,056 basehttp 6448 26884 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:58,068 basehttp 6448 26884 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:58,502 basehttp 6448 24516 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:58,512 basehttp 6448 24516 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:58,859 basehttp 6448 25372 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:58,868 basehttp 6448 25372 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:59,090 basehttp 6448 23364 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:59,100 basehttp 6448 23364 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:59,285 basehttp 6448 24640 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:59,295 basehttp 6448 24640 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:59,492 basehttp 6448 28620 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:59,502 basehttp 6448 28620 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:59,677 basehttp 6448 11404 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:59,688 basehttp 6448 11404 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:39:59,877 basehttp 6448 17424 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:39:59,886 basehttp 6448 17424 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:40:00,074 basehttp 6448 12872 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:40:00,084 basehttp 6448 12872 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:40:00,285 basehttp 6448 26672 "GET /lootboxes/open/ HTTP/1.1" 200 11382
+django.server WARNING 2025-03-21 17:40:00,295 basehttp 6448 26672 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:40:18,152 basehttp 6448 14044 "GET /lootboxes/open/ HTTP/1.1" 200 10491
+django.server WARNING 2025-03-21 17:40:18,162 basehttp 6448 14044 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:40:18,778 basehttp 6448 29004 "GET /lootboxes/open/ HTTP/1.1" 200 10491
+django.server WARNING 2025-03-21 17:40:18,789 basehttp 6448 29004 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:40:20,702 basehttp 6448 27504 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:40:22,571 basehttp 6448 27504 "GET /lootboxes/open/ HTTP/1.1" 200 10491
+django.server INFO 2025-03-21 17:40:22,908 basehttp 6448 27504 "GET /lootboxes/open/ HTTP/1.1" 200 10491
+django.server WARNING 2025-03-21 17:40:22,919 basehttp 6448 27504 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:41:55,139 basehttp 6448 12360 "GET /lootboxes/open/ HTTP/1.1" 200 9102
+django.server WARNING 2025-03-21 17:41:55,158 basehttp 6448 12360 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:41:56,471 basehttp 6448 11320 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:41:59,495 basehttp 6448 11320 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:42:25,195 basehttp 6448 11320 "GET /lootboxes/open/ HTTP/1.1" 200 9102
+django.server WARNING 2025-03-21 17:42:25,209 basehttp 6448 11320 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:42:26,192 basehttp 6448 25816 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:55:16,301 basehttp 6448 28444 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:55:19,774 basehttp 6448 28444 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:55:20,507 basehttp 6448 28444 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:55:27,752 basehttp 6448 28444 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-21 17:55:29,410 basehttp 6448 28444 "GET /lootboxes/open/ HTTP/1.1" 200 9102
+django.server WARNING 2025-03-21 17:55:29,429 basehttp 6448 28444 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:55:30,666 basehttp 6448 20572 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:55:51,449 basehttp 6448 20572 "GET /lootboxes/open/ HTTP/1.1" 200 9102
+django.server WARNING 2025-03-21 17:55:51,460 basehttp 6448 20572 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:56:38,020 basehttp 6448 27376 "GET /lootboxes/open/ HTTP/1.1" 200 9103
+django.server WARNING 2025-03-21 17:56:38,032 basehttp 6448 27376 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:56:39,463 basehttp 6448 25564 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:56:40,683 basehttp 6448 25564 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:56:57,558 basehttp 6448 25564 "GET /lootboxes/open/ HTTP/1.1" 200 9105
+django.server WARNING 2025-03-21 17:56:57,568 basehttp 6448 25564 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:56:58,437 basehttp 6448 10988 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:57:06,657 basehttp 6448 10988 "GET /lootboxes/open/ HTTP/1.1" 200 9105
+django.server WARNING 2025-03-21 17:57:06,694 basehttp 6448 10988 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:57:07,425 basehttp 6448 12056 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:57:35,527 basehttp 6448 12056 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server INFO 2025-03-21 17:57:35,535 basehttp 6448 28460 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server WARNING 2025-03-21 17:57:35,537 basehttp 6448 12056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:57:36,454 basehttp 6448 28460 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:57:41,033 basehttp 6448 28460 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:57:42,017 basehttp 6448 28460 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server WARNING 2025-03-21 17:57:42,028 basehttp 6448 28460 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:57:42,656 basehttp 6448 20272 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:57:43,900 basehttp 6448 20272 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server WARNING 2025-03-21 17:57:43,911 basehttp 6448 20272 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 17:57:44,476 basehttp 6448 7112 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:57:46,220 basehttp 6448 7112 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:57:47,019 basehttp 6448 7112 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 17:57:47,942 basehttp 6448 7112 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 17:57:48,518 basehttp 6448 7112 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:13:25,410 basehttp 6448 23208 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server WARNING 2025-03-21 18:13:25,431 basehttp 6448 23208 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:13:25,431 basehttp 6448 24268 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:13:26,676 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:13:26,676 basehttp 6448 24268 "GET /media/placeholder.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:15:04,944 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:15:05,434 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:15:06,360 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:15:06,746 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:15:07,296 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:15:07,890 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:15:13,126 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:15:13,882 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:15:14,999 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:15:15,845 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:15:16,446 basehttp 6448 24268 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:16:29,137 basehttp 6448 24268 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server WARNING 2025-03-21 18:16:29,149 basehttp 6448 24268 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:16:30,286 basehttp 6448 26284 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:16:31,356 basehttp 6448 26284 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:16:31,878 basehttp 6448 26284 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:17:54,305 basehttp 6448 26284 "GET /lootboxes/open/ HTTP/1.1" 200 9107
+django.server WARNING 2025-03-21 18:17:54,316 basehttp 6448 26284 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:17:54,317 basehttp 6448 7716 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-21 18:17:55,211 basehttp 6448 7716 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:18:00,430 basehttp 6448 7716 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:18:00,948 basehttp 6448 7716 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:19:08,178 basehttp 6448 7716 "GET /lootboxes/open/ HTTP/1.1" 200 9237
+django.server WARNING 2025-03-21 18:19:08,188 basehttp 6448 7716 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:19:08,874 basehttp 6448 8112 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:19:27,377 basehttp 6448 8112 "GET /lootboxes/open/ HTTP/1.1" 200 9135
+django.server WARNING 2025-03-21 18:19:27,391 basehttp 6448 8112 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:19:28,085 basehttp 6448 5808 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:19:28,896 basehttp 6448 5808 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:19:29,701 basehttp 6448 5808 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:20:24,755 basehttp 6448 5808 "GET /lootboxes/open/ HTTP/1.1" 200 9160
+django.server WARNING 2025-03-21 18:20:24,767 basehttp 6448 5808 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:20:25,332 basehttp 6448 11224 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:20:30,660 basehttp 6448 11224 "GET /lootboxes/open/ HTTP/1.1" 200 9160
+django.server WARNING 2025-03-21 18:20:30,671 basehttp 6448 11224 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:20:31,949 basehttp 6448 23744 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:20:32,460 basehttp 6448 23744 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:21:12,116 basehttp 6448 23744 "GET /lootboxes/open/ HTTP/1.1" 200 9154
+django.server WARNING 2025-03-21 18:21:12,128 basehttp 6448 23744 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:21:12,909 basehttp 6448 7084 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:21:34,711 basehttp 6448 7084 "GET /lootboxes/open/ HTTP/1.1" 200 9160
+django.server WARNING 2025-03-21 18:21:34,721 basehttp 6448 7084 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:21:35,457 basehttp 6448 5212 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:24:24,397 basehttp 6448 5212 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:24:24,409 basehttp 6448 5212 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:24:25,627 basehttp 6448 28548 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:24:48,364 basehttp 6448 28548 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:24:48,377 basehttp 6448 28548 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:24:49,151 basehttp 6448 13224 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:24:49,617 basehttp 6448 13224 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:24:58,035 basehttp 6448 13224 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:24:58,048 basehttp 6448 13224 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:24:58,277 basehttp 6448 18384 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:24:58,287 basehttp 6448 18384 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:24:59,394 basehttp 6448 27628 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:25:22,828 basehttp 6448 27628 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:25:22,840 basehttp 6448 27628 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:25:23,960 basehttp 6448 25432 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:25:34,373 basehttp 6448 25432 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:25:34,385 basehttp 6448 25432 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:25:35,622 basehttp 6448 26728 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:25:42,457 basehttp 6448 26728 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:25:43,743 basehttp 6448 26728 "GET /lootboxes/open/ HTTP/1.1" 200 9294
+django.server WARNING 2025-03-21 18:25:43,753 basehttp 6448 26728 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:25:44,681 basehttp 6448 12096 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:26:41,944 basehttp 6448 12096 "GET /lootboxes/open/ HTTP/1.1" 200 9308
+django.server WARNING 2025-03-21 18:26:41,956 basehttp 6448 12096 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:26:42,589 basehttp 6448 19552 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:26:43,094 basehttp 6448 19552 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:26:44,067 basehttp 6448 19552 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:26:49,817 basehttp 6448 19552 "GET /lootboxes/open/ HTTP/1.1" 200 9309
+django.server WARNING 2025-03-21 18:26:49,835 basehttp 6448 19552 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:26:50,721 basehttp 6448 20620 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:26:51,191 basehttp 6448 20620 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:26:51,843 basehttp 6448 20620 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:27:28,393 basehttp 6448 20620 "GET /lootboxes/open/ HTTP/1.1" 200 9336
+django.server WARNING 2025-03-21 18:27:28,404 basehttp 6448 20620 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:27:29,224 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:29,779 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:30,483 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:31,171 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:31,698 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:32,208 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:27:32,753 basehttp 6448 26356 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:28:02,678 basehttp 6448 26356 "GET /lootboxes/open/ HTTP/1.1" 200 9330
+django.server WARNING 2025-03-21 18:28:02,693 basehttp 6448 26356 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:28:03,410 basehttp 6448 1340 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:28:41,487 basehttp 6448 1340 "GET /lootboxes/open/ HTTP/1.1" 200 9331
+django.server WARNING 2025-03-21 18:28:41,501 basehttp 6448 1340 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:28:42,148 basehttp 6448 28580 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:28:42,569 basehttp 6448 28580 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:28:43,189 basehttp 6448 28580 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:28:43,700 basehttp 6448 28580 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:28:48,350 basehttp 6448 28580 "GET /lootboxes/open/ HTTP/1.1" 200 9331
+django.server WARNING 2025-03-21 18:28:48,362 basehttp 6448 28580 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:28:49,037 basehttp 6448 27060 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:28:49,268 basehttp 6448 27060 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:28:57,158 basehttp 6448 27060 "GET /lootboxes/open/ HTTP/1.1" 200 9332
+django.server WARNING 2025-03-21 18:28:57,170 basehttp 6448 27060 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:28:58,150 basehttp 6448 196 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:29:03,009 basehttp 6448 196 "GET /lootboxes/open/ HTTP/1.1" 200 9332
+django.server WARNING 2025-03-21 18:29:03,025 basehttp 6448 196 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:29:03,710 basehttp 6448 21328 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:29:20,504 basehttp 6448 21328 "GET /lootboxes/open/ HTTP/1.1" 200 9332
+django.server WARNING 2025-03-21 18:29:20,514 basehttp 6448 21328 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:29:21,256 basehttp 6448 23296 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:29:21,693 basehttp 6448 23296 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:29:25,757 basehttp 6448 23296 "GET /lootboxes/open/ HTTP/1.1" 200 9397
+django.server WARNING 2025-03-21 18:29:25,768 basehttp 6448 23296 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:29:26,436 basehttp 6448 28912 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-21 18:29:39,267 basehttp 6448 28912 "GET /lootboxes/open/ HTTP/1.1" 200 9397
+django.server WARNING 2025-03-21 18:29:39,276 basehttp 6448 28912 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-21 18:29:40,005 basehttp 6448 29128 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-21 18:29:40,433 basehttp 6448 29128 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.utils.autoreload INFO 2025-03-22 11:12:02,958 autoreload 3356 30052 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:12:07,296 basehttp 3356 12428 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:12:07,387 basehttp 3356 12428 "GET /accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-22 11:12:07,527 basehttp 3356 12428 "GET /static/auth.css HTTP/1.1" 200 1952
+django.server INFO 2025-03-22 11:12:07,535 basehttp 3356 21272 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 11:12:07,664 log 3356 21272 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 11:12:07,664 basehttp 3356 21272 "GET /favicon.ico HTTP/1.1" 404 4900
+django INFO 2025-03-22 11:12:15,234 views 3356 21272 User logged in: kadeemtesting123
+django.server INFO 2025-03-22 11:12:15,375 basehttp 3356 21272 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 11:12:15,408 basehttp 3356 21272 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:12:15,431 basehttp 3356 21272 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 11:12:15,435 basehttp 3356 12428 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 11:12:19,126 basehttp 3356 21272 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:12:19,148 basehttp 3356 21272 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:12:19,152 basehttp 3356 12428 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-22 11:12:19,152 basehttp 3356 10164 "GET /static/images/lootboxes.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 11:12:22,566 basehttp 3356 10164 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-22 11:12:22,584 basehttp 3356 10164 "GET /media/placeholder.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 11:12:24,591 basehttp 3356 10164 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:12:24,617 basehttp 3356 10164 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:15:17,837 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:23,098 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:23,676 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:24,354 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:25,335 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:28,253 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:28,453 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:28,653 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:28,845 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:29,031 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:29,212 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:29,370 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:29,545 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:29,727 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:29,883 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,050 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,242 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,417 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,609 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,777 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:30,951 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:31,119 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:31,277 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:31,443 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:31,617 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:31,808 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:31,975 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:32,158 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:32,348 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:32,510 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:32,685 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:32,883 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:15:33,358 basehttp 3356 12428 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:40,694 basehttp 3356 12428 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:15:46,961 basehttp 3356 12428 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:15:46,990 basehttp 3356 12428 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:15:49,524 basehttp 3356 29384 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:15:52,561 basehttp 3356 29384 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:15:54,023 basehttp 3356 29384 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:15:54,055 basehttp 3356 29384 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:15:57,186 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:07,740 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:11,570 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:12,585 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:13,068 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:13,268 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:13,443 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:13,610 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:13,783 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:13,977 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:14,151 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:14,352 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:14,550 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:14,710 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:14,893 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,069 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,250 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,442 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,608 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,773 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:15,980 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:16,173 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:16,306 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:16,496 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:16,671 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:16,838 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:17,036 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:17,213 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:17,386 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:17,570 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:17,779 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:17,970 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:18,161 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:18,342 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:18,541 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:18,724 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:18,938 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:19,112 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:19,311 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:19,495 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:19,704 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:19,875 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:20,066 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:20,250 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:20,445 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:20,641 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:20,848 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:21,029 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:21,202 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:21,418 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:21,612 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:21,808 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:22,011 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:22,207 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:22,408 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:22,604 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:22,784 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:22,958 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:23,134 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:23,320 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:23,502 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:23,718 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:23,898 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:24,074 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:24,289 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:24,460 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:24,675 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:24,854 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:25,062 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:25,255 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:25,454 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:25,644 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:25,837 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:26,046 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:26,250 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:26,442 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:26,628 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:26,826 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:27,010 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:27,193 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:27,400 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:27,591 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:27,784 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:27,969 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:28,161 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:28,338 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:28,511 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:28,737 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:28,916 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:16:29,109 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:29,285 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:29,488 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:29,672 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:29,869 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:30,061 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:30,261 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:16:30,445 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:30,646 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:30,829 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:31,026 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:31,213 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:31,395 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:31,581 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:31,769 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:31,977 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:32,162 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:32,337 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:32,505 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:32,687 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:32,893 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:33,088 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:33,270 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:33,469 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:33,665 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:33,841 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:34,019 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:34,221 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:34,418 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:34,613 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:34,828 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 11:16:35,021 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:35,208 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 11:16:35,399 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.request WARNING 2025-03-22 11:16:35,642 log 3356 24156 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-22 11:16:35,642 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.request WARNING 2025-03-22 11:16:47,543 log 3356 24156 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-22 11:16:47,543 basehttp 3356 24156 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.server INFO 2025-03-22 11:24:46,617 basehttp 3356 5432 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:24:46,637 basehttp 3356 5432 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:24:48,389 basehttp 3356 12840 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:24:48,412 basehttp 3356 12840 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:24:58,417 basehttp 3356 17356 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-22 11:24:59,263 basehttp 3356 17356 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:24:59,287 basehttp 3356 17356 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:00,691 basehttp 3356 15288 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:00,714 basehttp 3356 15372 "GET /static/images/leaderboardTop.jpg HTTP/1.1" 200 228443
+django.server INFO 2025-03-22 11:25:00,716 basehttp 3356 15368 "GET /static/images/leaderboardBottom.jpg HTTP/1.1" 200 96365
+django.server INFO 2025-03-22 11:25:00,729 basehttp 3356 15288 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-22 11:25:01,479 basehttp 3356 15288 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:01,494 basehttp 3356 15288 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:40,989 basehttp 3356 15368 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:41,013 basehttp 3356 15368 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:41,671 basehttp 3356 15372 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:41,700 basehttp 3356 15372 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:42,146 basehttp 3356 10436 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:42,169 basehttp 3356 10436 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:42,603 basehttp 3356 13724 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:42,627 basehttp 3356 13724 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:43,068 basehttp 3356 21168 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:25:43,084 basehttp 3356 21168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:25:50,083 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:53,831 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:54,787 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:55,462 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:56,146 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:56,704 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:25:57,245 basehttp 3356 29312 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.server INFO 2025-03-22 11:27:42,608 basehttp 3356 29312 "GET /lootboxes/open/ HTTP/1.1" 200 9397
+django.server WARNING 2025-03-22 11:27:42,640 basehttp 3356 29312 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:28:15,978 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:28:20,663 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:28:23,197 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:28:28,322 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:28:30,325 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:28:33,036 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:28:35,487 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:28:37,735 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:28:39,446 basehttp 3356 29032 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:29:48,108 basehttp 3356 29032 "GET /lootboxes/open/ HTTP/1.1" 200 9396
+django.server WARNING 2025-03-22 11:29:48,127 basehttp 3356 29032 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:29:49,231 basehttp 3356 5552 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:29:49,668 basehttp 3356 5552 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:29:50,162 basehttp 3356 5552 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:30:40,220 basehttp 3356 5552 "GET /lootboxes/open/ HTTP/1.1" 200 9400
+django.server WARNING 2025-03-22 11:30:40,237 basehttp 3356 5552 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:30:41,334 basehttp 3356 11828 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:31:09,254 basehttp 3356 11828 "GET /lootboxes/open/ HTTP/1.1" 200 9358
+django.server WARNING 2025-03-22 11:31:09,268 basehttp 3356 11828 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:31:10,101 basehttp 3356 14860 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:31:10,279 basehttp 3356 14860 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:31:36,522 basehttp 3356 14860 "GET /lootboxes/open/ HTTP/1.1" 200 9356
+django.server WARNING 2025-03-22 11:31:36,542 basehttp 3356 14860 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:31:37,826 basehttp 3356 24212 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:31:38,289 basehttp 3356 24212 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:33:08,669 basehttp 3356 24212 "GET /lootboxes/open/ HTTP/1.1" 200 9323
+django.server WARNING 2025-03-22 11:33:08,686 basehttp 3356 24212 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:33:09,605 basehttp 3356 23048 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:33:10,037 basehttp 3356 23048 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:33:30,348 basehttp 3356 23048 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:33:30,948 basehttp 3356 23048 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:33:31,917 basehttp 3356 23048 "GET /lootboxes/open/ HTTP/1.1" 200 9400
+django.server WARNING 2025-03-22 11:33:31,944 basehttp 3356 23048 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:33:36,214 basehttp 3356 26708 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:34:13,414 basehttp 3356 26708 "GET /lootboxes/open/ HTTP/1.1" 200 9356
+django.server WARNING 2025-03-22 11:34:13,437 basehttp 3356 26708 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:34:14,408 basehttp 3356 22048 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:34:48,288 basehttp 3356 22048 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:34:48,311 basehttp 3356 22048 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:34:49,040 basehttp 3356 2376 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:34:57,840 basehttp 3356 2376 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:34:57,864 basehttp 3356 2376 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:34:58,483 basehttp 3356 11988 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:02,139 basehttp 3356 11988 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:02,160 basehttp 3356 11988 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:02,751 basehttp 3356 29352 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:03,238 basehttp 3356 29352 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:07,647 basehttp 3356 29352 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:07,672 basehttp 3356 29352 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:08,344 basehttp 3356 2168 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:11,663 basehttp 3356 2168 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:11,680 basehttp 3356 2168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:12,352 basehttp 3356 30308 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:12,793 basehttp 3356 30308 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:13,494 basehttp 3356 30308 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:14,152 basehttp 3356 30308 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:14,975 basehttp 3356 30308 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:19,804 basehttp 3356 30308 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:19,821 basehttp 3356 30308 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:20,511 basehttp 3356 28016 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:24,633 basehttp 3356 28016 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:24,662 basehttp 3356 28016 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:25,621 basehttp 3356 19540 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:34,886 basehttp 3356 19540 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:34,911 basehttp 3356 19540 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:35,673 basehttp 3356 11348 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:36,259 basehttp 3356 11348 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:35:36,923 basehttp 3356 11348 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:44,070 basehttp 3356 11348 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:44,091 basehttp 3356 11348 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:44,883 basehttp 3356 30556 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:44,904 basehttp 3356 30556 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:45,796 basehttp 3356 30204 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:35:51,429 basehttp 3356 30204 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:51,453 basehttp 3356 30204 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:52,144 basehttp 3356 15788 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:52,176 basehttp 3356 15788 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:53,236 basehttp 3356 20172 "GET /lootboxes/open/ HTTP/1.1" 200 9431
+django.server WARNING 2025-03-22 11:35:53,260 basehttp 3356 20172 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:35:54,069 basehttp 3356 24600 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:36:15,296 basehttp 3356 24600 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:36:15,322 basehttp 3356 24600 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:36:16,051 basehttp 3356 28944 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:36:16,777 basehttp 3356 28944 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:36:17,418 basehttp 3356 28944 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:36:36,820 basehttp 3356 28944 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:36:36,845 basehttp 3356 28944 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:36:37,842 basehttp 3356 29288 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:36:38,357 basehttp 3356 29288 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:36:55,709 basehttp 3356 29288 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:36:56,542 basehttp 3356 29288 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:38:24,212 basehttp 3356 29288 "GET /lootboxes/open/ HTTP/1.1" 200 9400
+django.server WARNING 2025-03-22 11:38:24,236 basehttp 3356 29288 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:38:48,335 basehttp 3356 15796 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:38:48,350 basehttp 3356 15796 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:38:49,819 basehttp 3356 29420 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:38:49,835 basehttp 3356 29420 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:38:54,731 basehttp 3356 25208 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:38:54,750 basehttp 3356 25208 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:38:57,978 basehttp 3356 16564 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:38:57,994 basehttp 3356 16564 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:01,469 basehttp 3356 18832 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:01,486 basehttp 3356 18832 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:02,730 basehttp 3356 26968 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:39:15,365 basehttp 3356 26968 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:15,389 basehttp 3356 26968 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:16,511 basehttp 3356 1436 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:39:18,260 basehttp 3356 1436 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:39:19,097 basehttp 3356 1436 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:39:19,977 basehttp 3356 1436 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:39:22,267 basehttp 3356 1436 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:22,283 basehttp 3356 1436 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:23,010 basehttp 3356 24620 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:39:27,753 basehttp 3356 24620 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:27,769 basehttp 3356 24620 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:28,521 basehttp 3356 8400 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:28,544 basehttp 3356 8400 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:29,650 basehttp 3356 8936 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:39:35,193 basehttp 3356 8936 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:35,210 basehttp 3356 8936 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:36,974 basehttp 3356 12924 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:39:37,563 basehttp 3356 12924 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:39:54,205 basehttp 3356 12924 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:39:54,223 basehttp 3356 12924 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:39:55,447 basehttp 3356 29760 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:39:57,044 basehttp 3356 29760 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:40:06,911 basehttp 3356 29760 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:40:06,939 basehttp 3356 29760 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:40:07,882 basehttp 3356 20120 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:40:08,534 basehttp 3356 20120 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:40:09,193 basehttp 3356 20120 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:40:09,867 basehttp 3356 20120 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:40:16,468 basehttp 3356 20120 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:40:16,492 basehttp 3356 20120 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:40:17,162 basehttp 3356 24188 "GET /lootboxes/open/ HTTP/1.1" 200 9401
+django.server WARNING 2025-03-22 11:40:17,195 basehttp 3356 24188 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:40:17,968 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:40:18,636 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:40:19,601 basehttp 3356 20508 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:45:56,117 basehttp 3356 25812 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:45:56,148 basehttp 3356 25812 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:46:43,162 basehttp 3356 23908 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:46:48,053 basehttp 3356 23908 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.utils.autoreload INFO 2025-03-22 11:53:55,361 autoreload 3356 30052 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 11:54:13,639 autoreload 27400 15660 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:54:21,714 basehttp 27400 28256 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-22 11:54:26,338 basehttp 27400 28256 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:54:28,053 basehttp 27400 28256 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:54:28,106 basehttp 27400 28256 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:54:30,137 basehttp 27400 2940 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 11:54:31,059 basehttp 27400 2940 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 11:54:31,073 basehttp 27400 2940 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:54:33,561 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:35,605 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:35,771 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:35,937 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,144 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,434 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,584 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,790 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:36,974 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,140 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,339 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:37,513 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,720 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:37,903 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,088 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,266 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,467 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,643 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:38,851 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,085 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:39,302 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:39,511 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,720 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:39,922 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:40,121 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:40,313 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:40,502 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:41,010 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:41,226 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,426 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,643 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:41,840 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:42,052 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:42,293 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:42,585 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:42,863 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:54:43,062 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:43,289 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 155
+django.server INFO 2025-03-22 11:54:43,453 basehttp 27400 12524 "POST /lootboxes/open/ HTTP/1.1" 200 79
+django.server INFO 2025-03-22 11:56:47,845 basehttp 27400 12524 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 11:56:47,865 basehttp 27400 12524 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 11:56:49,617 basehttp 27400 14832 "POST /lootboxes/open/ HTTP/1.1" 200 10357
+django.utils.autoreload INFO 2025-03-22 11:57:07,081 autoreload 27400 15660 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 11:57:07,645 autoreload 2520 11828 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 11:57:24,471 basehttp 2520 26744 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 11:57:24,498 basehttp 2520 26744 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.request WARNING 2025-03-22 11:57:25,449 log 2520 29096 Bad Request: /lootboxes/open/
+django.server WARNING 2025-03-22 11:57:25,449 basehttp 2520 29096 "POST /lootboxes/open/ HTTP/1.1" 400 83
+django.utils.autoreload INFO 2025-03-22 12:06:41,440 autoreload 2520 11828 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:06:42,003 autoreload 23680 27112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:27,096 autoreload 23680 27112 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:27,708 autoreload 30312 4200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:31,550 autoreload 30312 4200 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:32,076 autoreload 24916 12300 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:11:33,877 autoreload 24916 12300 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:11:34,427 autoreload 28388 17424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:01,188 autoreload 28388 17424 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:01,791 autoreload 24688 18664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:08,816 autoreload 24688 18664 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:09,317 autoreload 17576 22084 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:11,049 autoreload 17576 22084 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:11,657 autoreload 29524 4880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:17,511 autoreload 29524 4880 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:18,036 autoreload 26588 7940 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:31,611 autoreload 26588 7940 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:32,162 autoreload 7376 21292 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:13:43,487 autoreload 7376 21292 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:13:44,045 autoreload 30232 19784 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:14:44,425 basehttp 30232 1332 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:44,447 basehttp 30232 1332 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:45,688 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:47,228 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:47,832 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.server INFO 2025-03-22 12:14:48,340 basehttp 30232 4716 "POST /lootboxes/open/ HTTP/1.1" 200 53
+django.utils.autoreload INFO 2025-03-22 12:14:54,957 autoreload 30232 19784 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:14:55,595 autoreload 5432 3604 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:14:56,190 basehttp 5432 6764 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:56,209 basehttp 5432 6764 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:57,704 basehttp 5432 14692 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:14:57,728 basehttp 5432 14692 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:14:58,525 basehttp 5432 29752 "POST /lootboxes/open/ HTTP/1.1" 200 54
+django.server INFO 2025-03-22 12:14:59,646 basehttp 5432 29752 "POST /lootboxes/open/ HTTP/1.1" 200 54
+django.utils.autoreload INFO 2025-03-22 12:15:23,576 autoreload 5432 3604 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:24,158 autoreload 16264 27512 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:15:25,923 autoreload 16264 27512 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:26,428 autoreload 536 12824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:15:29,184 autoreload 536 12824 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:15:29,752 autoreload 26244 8020 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:15:41,207 basehttp 26244 29556 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:15:41,225 basehttp 26244 29556 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:15:42,287 basehttp 26244 26060 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:15:43,563 basehttp 26244 26060 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:16:18,561 basehttp 26244 26060 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:16:18,583 basehttp 26244 26060 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:16:34,333 basehttp 26244 7236 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:16:34,356 basehttp 26244 7236 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.request ERROR 2025-03-22 12:16:35,898 log 26244 30168 Internal Server Error: /lootboxes/open/
 Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 65, in upload_file
-    return render(request, 'tasks/upload.html', {'form': form})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: tasks/upload.html
-django.server ERROR 2025-03-09 00:00:14,531 basehttp 7920 20680 "GET /upload/ HTTP/1.1" 500 85629
-django.utils.autoreload INFO 2025-03-09 00:01:41,978 autoreload 26544 17184 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 00:01:43,400 basehttp 26544 31104 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:01:43,448 basehttp 26544 31104 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 00:01:43,573 basehttp 26544 31104 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 00:01:50,941 views 26544 14400 User logged in: matt4
-django.server INFO 2025-03-09 00:01:50,988 basehttp 26544 14400 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:01:51,004 basehttp 26544 14400 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 00:01:51,081 basehttp 26544 14400 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 00:01:52,320 basehttp 26544 29444 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 00:01:52,370 basehttp 26544 29444 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 00:01:54,098 basehttp 26544 25620 "GET /upload/ HTTP/1.1" 200 575
-django.server INFO 2025-03-09 00:01:59,497 basehttp 26544 25620 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:01:59,520 basehttp 26544 25620 "GET /gallery/ HTTP/1.1" 200 298
-django.server INFO 2025-03-09 00:01:59,685 basehttp 26544 25620 "GET /media/MediaPhotos/colum1.jpg HTTP/1.1" 200 244025
-django.server INFO 2025-03-09 00:02:05,063 basehttp 26544 25620 "GET /upload/ HTTP/1.1" 200 575
-django.server INFO 2025-03-09 00:02:10,328 basehttp 26544 25620 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 00:02:10,339 basehttp 26544 25620 "GET /gallery/ HTTP/1.1" 200 448
-django.server INFO 2025-03-09 00:02:10,395 basehttp 26544 25620 "GET /media/MediaPhotos/colum1.jpg HTTP/1.1" 304 0
-django.server INFO 2025-03-09 00:02:10,418 basehttp 26544 25620 "GET /media/MediaPhotos/Screenshot_20250120_115820_Snapchat.jpg HTTP/1.1" 200 227153
-django.server INFO 2025-03-09 00:02:13,617 basehttp 26544 25620 "GET /upload/ HTTP/1.1" 200 575
-django.utils.autoreload INFO 2025-03-09 18:11:16,183 autoreload 22592 4016 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:11:19,079 basehttp 22592 20648 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:11:19,144 basehttp 22592 20648 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:11:19,275 basehttp 22592 20648 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:12:02,631 views 22592 26088 User logged in: matt4
-django.server INFO 2025-03-09 18:12:02,695 basehttp 22592 26088 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:12:02,727 basehttp 22592 26088 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:12:02,760 basehttp 22592 26088 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:12:04,812 basehttp 22592 18780 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:12:04,852 basehttp 22592 18780 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.request ERROR 2025-03-09 18:12:08,221 log 22592 33232 Internal Server Error: /upload/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 71, in upload_file
-    return render(request, 'tasks/upload.html', {'form': form})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: tasks/upload.html
-django.server ERROR 2025-03-09 18:12:08,229 basehttp 22592 33232 "GET /upload/ HTTP/1.1" 500 85832
-django.utils.autoreload INFO 2025-03-09 18:12:39,368 autoreload 33380 24688 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:12:44,989 basehttp 33380 18992 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:12:45,046 basehttp 33380 18992 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:12:45,152 basehttp 33380 18992 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:13:45,018 views 33380 20920 User logged in: matt4
-django.server INFO 2025-03-09 18:13:45,076 basehttp 33380 20920 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:13:45,092 basehttp 33380 20920 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:13:45,149 basehttp 33380 20920 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:13:46,735 basehttp 33380 26096 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:13:46,793 basehttp 33380 26096 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.request ERROR 2025-03-09 18:13:48,577 log 33380 29828 Internal Server Error: /upload/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 71, in upload_file
-    return render(request, 'upload.html', {'form': form})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'tasks_page' not found. 'tasks_page' is not a valid view function or pattern name.
-django.server ERROR 2025-03-09 18:13:48,593 basehttp 33380 29828 "GET /upload/ HTTP/1.1" 500 116869
-django.utils.autoreload INFO 2025-03-09 18:15:54,816 autoreload 2564 19208 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:15:56,566 basehttp 2564 31924 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:15:56,599 basehttp 2564 31924 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:15:56,785 basehttp 2564 31924 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:16:11,024 views 2564 31976 User logged in: matt4
-django.server INFO 2025-03-09 18:16:11,082 basehttp 2564 31976 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:16:11,108 basehttp 2564 31976 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:16:11,170 basehttp 2564 31976 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:16:12,499 basehttp 2564 31248 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:16:12,563 basehttp 2564 31248 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.request ERROR 2025-03-09 18:16:14,113 log 2564 28272 Internal Server Error: /upload/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 71, in upload_file
-    return render(request, 'upload.html', {'form': form})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 107, in render
-    return self.template.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 480, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\urls\base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'tasks' not found. 'tasks' is not a valid view function or pattern name.
-django.server ERROR 2025-03-09 18:16:14,151 basehttp 2564 28272 "GET /upload/ HTTP/1.1" 500 116749
-django.utils.autoreload INFO 2025-03-09 18:22:57,128 autoreload 17476 30908 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:23:01,270 basehttp 17476 25880 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:23:01,326 basehttp 17476 25880 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:23:01,440 basehttp 17476 25880 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:23:09,439 views 17476 32988 User logged in: matt4
-django.server INFO 2025-03-09 18:23:09,471 basehttp 17476 32988 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:23:09,488 basehttp 17476 32988 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:23:09,585 basehttp 17476 32988 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:23:11,417 basehttp 17476 33544 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:23:11,473 basehttp 17476 33544 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:23:12,865 basehttp 17476 30796 "GET /upload/ HTTP/1.1" 200 829
-django.request ERROR 2025-03-09 18:23:25,573 log 17476 30796 Internal Server Error: /upload/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py", line 64, in upload_file
-    task.image.delete()
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\base.py", line 1265, in delete
-    raise ValueError(
-ValueError: UploadedImage object can't be deleted because its id attribute is set to None.
-django.server ERROR 2025-03-09 18:23:25,573 basehttp 17476 30796 "POST /upload/ HTTP/1.1" 500 73715
-django.utils.autoreload INFO 2025-03-09 18:24:56,230 autoreload 29452 23448 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:24:59,005 basehttp 29452 33168 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:24:59,045 basehttp 29452 33168 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:24:59,110 basehttp 29452 33168 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:25:04,625 views 29452 33752 User logged in: matt4
-django.server INFO 2025-03-09 18:25:04,657 basehttp 29452 33752 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:25:04,673 basehttp 29452 33752 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:25:04,763 basehttp 29452 33752 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:25:06,262 basehttp 29452 18992 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:25:06,302 basehttp 29452 18992 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:25:07,967 basehttp 29452 28488 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-09 18:25:14,047 basehttp 29452 28488 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:25:14,054 basehttp 29452 28488 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:25:14,135 basehttp 29452 28488 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:25:15,942 basehttp 29452 13784 "GET /gallery/ HTTP/1.1" 200 316
-django.server INFO 2025-03-09 18:25:16,079 basehttp 29452 13784 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 200 59007
-django.server INFO 2025-03-09 18:25:19,313 basehttp 29452 13784 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-09 18:25:25,605 basehttp 29452 13784 "POST /upload/ HTTP/1.1" 200 933
-django.server INFO 2025-03-09 18:25:28,330 basehttp 29452 13784 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:25:28,362 basehttp 29452 13784 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:25:29,740 basehttp 29452 2564 "GET /gallery/ HTTP/1.1" 200 316
-django.server INFO 2025-03-09 18:25:29,796 basehttp 29452 2564 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
-django.server INFO 2025-03-09 18:25:36,741 basehttp 29452 2564 "GET /tasks/upload/ HTTP/1.1" 200 829
-django.utils.autoreload INFO 2025-03-09 18:38:00,983 autoreload 27372 33344 Watching for file changes with StatReloader
-django.server INFO 2025-03-09 18:38:02,828 basehttp 27372 17476 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:38:02,877 basehttp 27372 17476 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:38:02,983 basehttp 27372 17476 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:38:09,477 views 27372 20440 User logged in: matt4
-django.server INFO 2025-03-09 18:38:09,515 basehttp 27372 20440 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:38:09,523 basehttp 27372 20440 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:38:09,603 basehttp 27372 20440 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:10,878 basehttp 27372 11872 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:38:10,918 basehttp 27372 11872 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:12,507 basehttp 27372 15028 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-09 18:38:17,611 basehttp 27372 15028 "POST /upload/ HTTP/1.1" 200 933
-django.server INFO 2025-03-09 18:38:19,205 basehttp 27372 15028 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:38:19,229 basehttp 27372 15028 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:20,077 basehttp 27372 5804 "GET /gallery/ HTTP/1.1" 200 1084
-django.server INFO 2025-03-09 18:38:20,101 basehttp 27372 31088 "GET /media/MediaPhotos/Snapchat-813462288.jpg HTTP/1.1" 304 0
-django.server WARNING 2025-03-09 18:38:20,101 basehttp 27372 5804 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:23,038 basehttp 27372 31088 "POST /tasks/delete_image/1/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:38:23,046 basehttp 27372 31088 "GET /tasks/gallery/ HTTP/1.1" 200 403
-django.server WARNING 2025-03-09 18:38:23,126 basehttp 27372 31088 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:24,753 basehttp 27372 24740 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:38:24,809 basehttp 27372 24740 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:27,226 basehttp 27372 11344 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-09 18:38:35,198 basehttp 27372 11344 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:38:35,206 basehttp 27372 11344 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:38:35,288 basehttp 27372 11344 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:36,626 basehttp 27372 17344 "GET /gallery/ HTTP/1.1" 200 1100
-django.server WARNING 2025-03-09 18:38:36,674 basehttp 27372 17344 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:36,771 basehttp 27372 25328 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 200 123845
-django.server INFO 2025-03-09 18:38:40,695 basehttp 27372 25328 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-09 18:38:40,743 basehttp 27372 25328 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-09 18:38:43,642 basehttp 27372 30072 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-09 18:38:43,667 basehttp 27372 30072 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-09 18:38:45,999 views 27372 33328 User logged out: matt4
-django.server INFO 2025-03-09 18:38:45,999 basehttp 27372 33328 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-03-09 18:38:46,007 basehttp 27372 33328 "GET /home/accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-09 18:38:46,040 basehttp 27372 33328 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-03-10 12:08:47,146 autoreload 18320 11540 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 12:08:49,000 basehttp 18320 28968 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:08:49,066 basehttp 18320 28968 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 12:08:49,227 basehttp 18320 28968 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:08:54,151 views 18320 19012 User logged in: matt4
-django.server INFO 2025-03-10 12:08:54,192 basehttp 18320 19012 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:08:54,224 basehttp 18320 19012 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:08:54,305 basehttp 18320 19012 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:08:58,028 views 18320 30268 User logged out: matt4
-django.server INFO 2025-03-10 12:08:58,028 basehttp 18320 30268 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:08:58,035 basehttp 18320 30268 "GET /home/accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 12:08:58,092 basehttp 18320 30268 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:09:05,702 views 18320 28304 User logged in: matt4
-django.server INFO 2025-03-10 12:09:05,735 basehttp 18320 28304 "POST /home/accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:09:05,743 basehttp 18320 28304 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:09:05,840 basehttp 18320 28304 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:07,165 basehttp 18320 30388 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:07,213 basehttp 18320 30388 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:12,224 basehttp 18320 9368 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-10 12:09:17,263 basehttp 18320 9368 "POST /upload/ HTTP/1.1" 200 933
-django.server INFO 2025-03-10 12:09:19,851 basehttp 18320 9368 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:19,875 basehttp 18320 9368 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:20,901 basehttp 18320 29680 "GET /gallery/ HTTP/1.1" 200 1100
-django.server INFO 2025-03-10 12:09:20,925 basehttp 18320 29092 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery.jpg HTTP/1.1" 304 0
-django.server WARNING 2025-03-10 12:09:20,925 basehttp 18320 29680 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:31,170 basehttp 18320 29092 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:31,208 basehttp 18320 29092 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:32,875 basehttp 18320 14520 "GET /gallery/ HTTP/1.1" 200 1100
-django.server WARNING 2025-03-10 12:09:32,915 basehttp 18320 14520 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:34,494 basehttp 18320 18992 "POST /tasks/delete_image/2/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:09:34,502 basehttp 18320 18992 "GET /tasks/gallery/ HTTP/1.1" 200 403
-django.server WARNING 2025-03-10 12:09:34,559 basehttp 18320 18992 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:35,944 basehttp 18320 1848 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:35,977 basehttp 18320 1848 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:36,823 basehttp 18320 24584 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-10 12:09:43,423 basehttp 18320 24584 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:09:43,439 basehttp 18320 24584 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:43,512 basehttp 18320 24584 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:45,107 basehttp 18320 15472 "GET /gallery/ HTTP/1.1" 200 1092
-django.server WARNING 2025-03-10 12:09:45,147 basehttp 18320 15472 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:45,235 basehttp 18320 29908 "GET /media/MediaPhotos/Snapchat-813462288_Q3HGmj7.jpg HTTP/1.1" 200 59007
-django.server INFO 2025-03-10 12:09:47,198 basehttp 18320 29908 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:09:47,238 basehttp 18320 29908 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:09:49,613 basehttp 18320 13976 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:09:49,637 basehttp 18320 13976 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:09:52,440 views 18320 7388 User asked for personal data stored: matt4
-django.server INFO 2025-03-10 12:09:52,464 basehttp 18320 7388 "GET /home/accounts/view_data/ HTTP/1.1" 200 4716
-django.server WARNING 2025-03-10 12:09:52,512 basehttp 18320 7388 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:10:01,459 basehttp 18320 28240 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:10:01,499 basehttp 18320 28240 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-03-10 12:47:50,344 autoreload 32496 30576 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 12:47:52,031 basehttp 32496 33352 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:47:52,094 basehttp 32496 33352 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 12:47:52,164 basehttp 32496 33352 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:47:56,708 views 32496 23308 User logged in: matt4
-django.server INFO 2025-03-10 12:47:56,743 basehttp 32496 23308 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:47:56,767 basehttp 32496 23308 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:47:56,836 basehttp 32496 23308 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:47:58,241 basehttp 32496 20520 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:47:58,306 basehttp 32496 20520 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:47:59,851 basehttp 32496 8912 "GET /gallery/ HTTP/1.1" 200 1092
-django.server WARNING 2025-03-10 12:47:59,884 basehttp 32496 8912 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:47:59,893 basehttp 32496 32780 "GET /media/MediaPhotos/Snapchat-813462288_Q3HGmj7.jpg HTTP/1.1" 304 0
-django.request ERROR 2025-03-10 12:48:01,410 log 32496 32780 Internal Server Error: /tasks/delete_image/3/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: delete_image() missing 1 required positional argument: 'user'
-django.server ERROR 2025-03-10 12:48:01,412 basehttp 32496 32780 "POST /tasks/delete_image/3/ HTTP/1.1" 500 64980
-django.utils.autoreload INFO 2025-03-10 12:53:44,070 autoreload 32496 30576 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
-django.utils.autoreload INFO 2025-03-10 12:53:45,205 autoreload 5508 23028 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2025-03-10 12:53:53,894 autoreload 5508 23028 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo5\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
-django.utils.autoreload INFO 2025-03-10 12:53:54,719 autoreload 32908 22948 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2025-03-10 12:54:00,193 autoreload 20780 3640 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 12:54:01,731 basehttp 20780 3332 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:54:01,778 basehttp 20780 3332 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 12:54:01,851 basehttp 20780 3332 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:54:07,330 views 20780 32404 User logged in: matt4
-django.server INFO 2025-03-10 12:54:07,369 basehttp 20780 32404 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:54:07,383 basehttp 20780 32404 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:54:07,468 basehttp 20780 32404 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:08,835 basehttp 20780 14920 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:54:08,869 basehttp 20780 14920 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:10,319 basehttp 20780 21588 "GET /upload/ HTTP/1.1" 200 829
-django.server INFO 2025-03-10 12:54:15,449 basehttp 20780 21588 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:54:15,486 basehttp 20780 21588 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:16,355 basehttp 20780 24812 "GET /gallery/ HTTP/1.1" 200 1092
-django.server WARNING 2025-03-10 12:54:16,399 basehttp 20780 24812 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:16,413 basehttp 20780 11960 "GET /media/MediaPhotos/Snapchat-813462288_Q3HGmj7.jpg HTTP/1.1" 304 0
-django INFO 2025-03-10 12:54:18,018 views 20780 11960 User matt4 deleted image for Task Check in to Business School
-django.server INFO 2025-03-10 12:54:18,019 basehttp 20780 11960 "POST /tasks/delete_image/3/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:54:18,029 basehttp 20780 11960 "GET /tasks/gallery/ HTTP/1.1" 200 403
-django.server WARNING 2025-03-10 12:54:18,088 basehttp 20780 11960 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:19,475 basehttp 20780 17548 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:54:19,516 basehttp 20780 17548 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:20,521 basehttp 20780 33548 "GET /upload/ HTTP/1.1" 200 829
-django INFO 2025-03-10 12:54:25,028 views 20780 33548 User matt4 uploaded an image for Task Check in to Business School
-django.server INFO 2025-03-10 12:54:25,029 basehttp 20780 33548 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:54:25,038 basehttp 20780 33548 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 12:54:25,119 basehttp 20780 33548 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:26,300 basehttp 20780 21780 "GET /gallery/ HTTP/1.1" 200 1108
-django.server WARNING 2025-03-10 12:54:26,362 basehttp 20780 21780 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:54:26,431 basehttp 20780 30136 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery_YsjxlJY.jpg HTTP/1.1" 200 123845
-django INFO 2025-03-10 12:54:28,441 views 20780 30136 User matt4 deleted image for Task Check in to Business School
-django.server INFO 2025-03-10 12:54:28,442 basehttp 20780 30136 "POST /tasks/delete_image/4/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:54:28,453 basehttp 20780 30136 "GET /tasks/gallery/ HTTP/1.1" 200 403
-django.server WARNING 2025-03-10 12:54:28,521 basehttp 20780 30136 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-03-10 12:55:00,452 autoreload 24176 33472 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 12:55:02,084 basehttp 24176 27728 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:55:02,127 basehttp 24176 27728 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 12:55:02,238 basehttp 24176 27728 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:55:07,129 views 24176 27584 User logged in: matt4
-django.server INFO 2025-03-10 12:55:07,163 basehttp 24176 27584 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 12:55:07,179 basehttp 24176 27584 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:55:07,272 basehttp 24176 27584 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 12:55:09,311 views 24176 15404 User asked for personal data stored: matt4
-django.server INFO 2025-03-10 12:55:09,331 basehttp 24176 15404 "GET /home/accounts/view_data/ HTTP/1.1" 200 5603
-django.server WARNING 2025-03-10 12:55:09,372 basehttp 24176 15404 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 12:55:16,951 basehttp 24176 31508 "GET /home/ HTTP/1.1" 200 1735
-django.server WARNING 2025-03-10 12:55:17,001 basehttp 24176 31508 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.utils.autoreload INFO 2025-03-10 18:25:35,352 autoreload 30076 31856 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 18:25:37,052 basehttp 30076 33724 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:25:37,092 basehttp 30076 33724 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 18:25:37,178 basehttp 30076 33724 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:25:40,951 basehttp 30076 18596 "GET /home/signup/ HTTP/1.1" 200 2526
-django.server WARNING 2025-03-10 18:25:40,994 basehttp 30076 18596 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django WARNING 2025-03-10 18:26:23,881 views 30076 17420 Failed signup attempt.
-django.server INFO 2025-03-10 18:26:23,884 basehttp 30076 17420 "POST /home/signup/ HTTP/1.1" 200 2669
-django.server WARNING 2025-03-10 18:26:23,938 basehttp 30076 17420 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 18:26:34,265 views 30076 32984 User logged in: GameMaster
-django INFO 2025-03-10 18:26:34,288 views 30076 32984 New user signed up: GameMaster
-django.server INFO 2025-03-10 18:26:34,305 basehttp 30076 32984 "POST /home/signup/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:26:34,319 basehttp 30076 32984 "GET /home/ HTTP/1.1" 200 1740
-django.server WARNING 2025-03-10 18:26:34,386 basehttp 30076 32984 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 18:26:37,169 views 30076 15964 User logged out: GameMaster
-django.server INFO 2025-03-10 18:26:37,171 basehttp 30076 15964 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:26:37,176 basehttp 30076 15964 "GET /home/accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 18:26:37,265 basehttp 30076 15964 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:26:44,063 basehttp 30076 19508 "GET /home/accounts/login/ HTTP/1.1" 200 1539
-django.utils.autoreload INFO 2025-03-10 18:38:05,963 autoreload 24040 18116 Watching for file changes with StatReloader
-django.server INFO 2025-03-10 18:38:07,629 basehttp 24040 31652 "GET / HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:38:07,674 basehttp 24040 31652 "GET /accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 18:38:07,808 basehttp 24040 31652 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 18:38:15,506 views 24040 21332 User logged in: matt4
-django.server INFO 2025-03-10 18:38:15,579 basehttp 24040 21332 "POST /accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:38:15,611 basehttp 24040 21332 "GET /home/ HTTP/1.1" 200 1656
-django.server WARNING 2025-03-10 18:38:15,662 basehttp 24040 21332 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:38:16,781 basehttp 24040 26316 "GET /tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 18:38:16,834 basehttp 24040 26316 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:38:17,920 basehttp 24040 22720 "GET /upload/ HTTP/1.1" 200 829
-django INFO 2025-03-10 18:38:22,485 views 24040 22720 User matt4 uploaded an image for Task Check in to Business School
-django.server INFO 2025-03-10 18:38:22,486 basehttp 24040 22720 "POST /upload/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:38:22,498 basehttp 24040 22720 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 18:38:22,580 basehttp 24040 22720 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:38:23,807 basehttp 24040 13228 "GET /gallery/ HTTP/1.1" 200 1108
-django.server WARNING 2025-03-10 18:38:23,846 basehttp 24040 13228 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:38:23,975 basehttp 24040 22860 "GET /media/MediaPhotos/Screenshot_20250120_120638_Gallery_c39o3wh.jpg HTTP/1.1" 200 123845
-django.server INFO 2025-03-10 18:38:26,320 basehttp 24040 22860 "GET /tasks/tasks/ HTTP/1.1" 200 3023
-django.server WARNING 2025-03-10 18:38:26,348 basehttp 24040 22860 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.server INFO 2025-03-10 18:38:27,521 basehttp 24040 3568 "GET /home/ HTTP/1.1" 200 1656
-django.server WARNING 2025-03-10 18:38:27,561 basehttp 24040 3568 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 18:38:28,688 views 24040 28844 User logged out: matt4
-django.server INFO 2025-03-10 18:38:28,689 basehttp 24040 28844 "GET /home/accounts/logout/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:38:28,697 basehttp 24040 28844 "GET /home/accounts/login/ HTTP/1.1" 200 1539
-django.server WARNING 2025-03-10 18:38:28,777 basehttp 24040 28844 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django INFO 2025-03-10 18:38:35,335 views 24040 25780 User logged in: GameMaster
-django.server INFO 2025-03-10 18:38:35,380 basehttp 24040 25780 "POST /home/accounts/login/ HTTP/1.1" 302 0
-django.server INFO 2025-03-10 18:38:35,397 basehttp 24040 25780 "GET /home/ HTTP/1.1" 200 1741
-django.server WARNING 2025-03-10 18:38:35,461 basehttp 24040 25780 "GET /static/css/styles.css HTTP/1.1" 404 1969
-django.request ERROR 2025-03-10 18:38:36,991 log 24040 29960 Internal Server Error: /tasks/game-master-gallery/
-Traceback (most recent call last):
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:35,898 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.request ERROR 2025-03-22 12:16:39,855 log 26244 30168 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:39,855 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.request ERROR 2025-03-22 12:16:47,881 log 26244 30168 Internal Server Error: /lootboxes/open/
+Traceback (most recent call last):
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<<<<<<< HEAD
   File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -9362,3 +9442,224 @@ django.server INFO 2025-03-22 13:48:00,209 basehttp 33645 140368775468736 "GET /
 django.request WARNING 2025-03-22 13:48:00,346 log 33645 140368775468736 Not Found: /favicon.ico
 django.server WARNING 2025-03-22 13:48:00,346 basehttp 33645 140368775468736 "GET /favicon.ico HTTP/1.1" 404 5745
 django.server INFO 2025-03-22 13:48:10,638 basehttp 33645 140368775468736 "GET /home/ HTTP/1.1" 200 7997
+=======
+  File "C:\Users\kadee\OneDrive\Documents\University\kadeem uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py", line 25, in open_lootbox
+    return JsonResponse(response_data)
+                       ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'response_data' where it is not associated with a value
+django.server ERROR 2025-03-22 12:16:47,881 basehttp 26244 30168 "POST /lootboxes/open/ HTTP/1.1" 500 81816
+django.server INFO 2025-03-22 12:17:00,291 basehttp 26244 30168 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:17:00,314 basehttp 26244 30168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:17:01,114 basehttp 26244 30660 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.utils.autoreload INFO 2025-03-22 12:17:21,308 autoreload 26244 8020 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:21,933 autoreload 22516 10404 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:17:30,840 autoreload 22516 10404 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:31,321 autoreload 27904 13232 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:17:38,259 autoreload 27904 13232 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:17:38,847 autoreload 28948 17236 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:18:08,866 autoreload 28948 17236 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:18:09,439 autoreload 27548 26988 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:13,239 autoreload 27548 26988 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:13,816 autoreload 24952 27772 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:45,165 autoreload 24952 27772 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:45,811 autoreload 13208 29556 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:50,708 autoreload 13208 29556 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:51,282 autoreload 29856 27228 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 12:20:56,221 autoreload 29856 27228 C:\Users\kadee\OneDrive\Documents\University\Kadeem Uni\Group-Engineering-Project\SustainableApplication\lootboxes\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 12:20:56,777 autoreload 8604 24900 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:21:04,880 basehttp 8604 24268 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:21:04,896 basehttp 8604 24268 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:06,835 basehttp 8604 16132 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:07,523 basehttp 8604 16132 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:24,249 basehttp 8604 16132 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:21:24,273 basehttp 8604 16132 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:31,668 basehttp 8604 28980 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:31,683 basehttp 8604 28980 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:32,898 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:35,028 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:35,692 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:36,363 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:37,317 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:37,882 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:38,416 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:38,931 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:39,614 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:21:40,215 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:21:41,706 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.server INFO 2025-03-22 12:21:42,207 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:43,066 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:43,725 basehttp 8604 22248 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:21:50,766 basehttp 8604 22248 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:50,782 basehttp 8604 22248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:21:51,424 basehttp 8604 14884 "GET /lootboxes/open/ HTTP/1.1" 200 10359
+django.server WARNING 2025-03-22 12:21:51,439 basehttp 8604 14884 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:22:02,400 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:04,338 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:10,414 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:11,490 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:13,129 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:13,675 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:14,297 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:14,790 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:15,463 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 12:22:15,990 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 12:22:16,189 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 76
+django.server INFO 2025-03-22 12:22:16,539 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:17,451 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:17,627 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:17,813 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:17,969 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:18,126 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:18,276 basehttp 8604 28992 "POST /lootboxes/open/ HTTP/1.1" 200 83
+django.server INFO 2025-03-22 12:22:55,814 basehttp 8604 28992 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 12:22:57,581 basehttp 8604 28992 "GET /tasks/ HTTP/1.1" 200 8035
+django.server INFO 2025-03-22 12:22:57,677 basehttp 8604 14796 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.server INFO 2025-03-22 12:22:57,690 basehttp 8604 28992 "GET /static/tasks.css HTTP/1.1" 200 205
+django.server INFO 2025-03-22 12:23:02,752 basehttp 8604 28992 "GET /leaderboard/ HTTP/1.1" 200 8482
+django.utils.autoreload INFO 2025-03-22 12:47:56,840 autoreload 22936 8468 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 12:48:01,038 basehttp 22936 28920 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:01,072 basehttp 22936 28920 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:03,268 basehttp 22936 4752 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:03,280 basehttp 22936 4752 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:03,897 basehttp 22936 24728 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:03,916 basehttp 22936 24728 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:04,449 basehttp 22936 27688 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:04,463 basehttp 22936 27688 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:04,933 basehttp 22936 28840 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:04,955 basehttp 22936 28840 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:05,455 basehttp 22936 26900 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:05,480 basehttp 22936 26900 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:46,883 basehttp 22936 24992 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:46,906 basehttp 22936 24992 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:47,489 basehttp 22936 20308 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:47,506 basehttp 22936 20308 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:48,039 basehttp 22936 9736 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:48,054 basehttp 22936 9736 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:48:48,544 basehttp 22936 23328 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 12:48:48,558 basehttp 22936 23328 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:49:06,115 basehttp 22936 25408 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:49:06,134 basehttp 22936 25408 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:49:06,206 basehttp 22936 21200 "GET /static/images/lootboxes_v2.jpg HTTP/1.1" 200 2813152
+django.server INFO 2025-03-22 12:49:07,133 basehttp 22936 21200 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:49:07,148 basehttp 22936 21200 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:49:52,799 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8485
+django.server INFO 2025-03-22 12:49:52,825 basehttp 22936 10728 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-22 12:50:48,613 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8488
+django.server INFO 2025-03-22 12:50:48,632 basehttp 22936 26444 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:50:48,632 basehttp 22936 10728 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.server INFO 2025-03-22 12:50:49,712 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8488
+django.server INFO 2025-03-22 12:50:49,722 basehttp 22936 10728 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:51:03,014 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8488
+django.server INFO 2025-03-22 12:51:03,026 basehttp 22936 10728 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:51:03,663 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 12:51:04,525 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 12:51:07,606 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 12:51:07,616 basehttp 22936 10728 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:55:53,119 basehttp 22936 10728 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 12:55:53,129 basehttp 22936 10728 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:55:53,129 basehttp 22936 23744 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:55:54,487 basehttp 22936 23744 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:55:54,511 basehttp 22936 10728 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:55:54,569 basehttp 22936 23744 "GET /static/images/lootboxes_v3.jpg HTTP/1.1" 200 3026673
+django.server INFO 2025-03-22 12:56:09,312 basehttp 22936 23744 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server INFO 2025-03-22 12:56:09,329 basehttp 22936 19836 "GET /static/images/lootboxes_v3.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 12:56:09,329 basehttp 22936 23744 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:56:10,015 basehttp 22936 19836 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:56:10,031 basehttp 22936 19836 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:56:12,829 basehttp 22936 30684 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:56:12,846 basehttp 22936 30684 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 12:56:12,846 basehttp 22936 24900 "GET /static/images/lootboxes_v3.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 12:56:13,381 basehttp 22936 24900 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 12:56:13,398 basehttp 22936 24900 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:35,809 basehttp 22936 16992 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:35,826 basehttp 22936 16992 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:35,826 basehttp 22936 7016 "GET /static/images/lootboxes_v3.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:02:36,975 basehttp 22936 7016 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:36,994 basehttp 22936 7016 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:37,702 basehttp 22936 5596 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:37,715 basehttp 22936 5596 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:38,366 basehttp 22936 13336 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:38,378 basehttp 22936 13336 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:39,093 basehttp 22936 28760 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:39,112 basehttp 22936 28760 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:44,850 basehttp 22936 27500 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:44,870 basehttp 22936 25452 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:44,875 basehttp 22936 27500 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 200 2674413
+django.server INFO 2025-03-22 13:02:45,441 basehttp 22936 27500 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:45,453 basehttp 22936 27500 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:46,082 basehttp 22936 11492 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:46,099 basehttp 22936 11492 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:46,101 basehttp 22936 14744 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:02:47,275 basehttp 22936 14744 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:47,288 basehttp 22936 14744 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:47,807 basehttp 22936 14044 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:47,822 basehttp 22936 14044 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:48,307 basehttp 22936 24564 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:48,320 basehttp 22936 24564 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:48,323 basehttp 22936 12428 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:02:48,726 basehttp 22936 12428 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:48,743 basehttp 22936 12428 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:51,652 basehttp 22936 23384 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server INFO 2025-03-22 13:02:51,666 basehttp 22936 29168 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 13:02:51,672 basehttp 22936 23384 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:51,852 basehttp 22936 29168 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:51,865 basehttp 22936 29168 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:52,076 basehttp 22936 12056 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:52,090 basehttp 22936 12056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:52,243 basehttp 22936 30716 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:52,257 basehttp 22936 30716 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:02:52,407 basehttp 22936 14804 "GET /lootboxes/open/ HTTP/1.1" 200 10360
+django.server WARNING 2025-03-22 13:02:52,419 basehttp 22936 14804 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:05:44,516 basehttp 22936 11436 "GET /lootboxes/open/ HTTP/1.1" 200 10362
+django.server WARNING 2025-03-22 13:05:44,540 basehttp 22936 11436 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:05:44,540 basehttp 22936 18672 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:05:45,897 basehttp 22936 18672 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.utils.autoreload INFO 2025-03-22 13:11:43,534 autoreload 2040 6844 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 13:11:50,204 basehttp 2040 10372 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 13:11:51,552 basehttp 2040 10372 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 13:11:53,991 basehttp 2040 10372 "GET /lootboxes/open/ HTTP/1.1" 200 10362
+django.server INFO 2025-03-22 13:11:54,010 basehttp 2040 19920 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 13:11:54,016 basehttp 2040 10372 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:11:55,965 basehttp 2040 19920 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 13:11:59,523 basehttp 2040 19920 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 13:12:00,074 basehttp 2040 19920 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 13:12:00,663 basehttp 2040 19920 "POST /lootboxes/open/ HTTP/1.1" 200 78
+django.server INFO 2025-03-22 13:12:01,360 basehttp 2040 19920 "POST /lootboxes/open/ HTTP/1.1" 200 154
+django.server INFO 2025-03-22 13:12:23,471 basehttp 2040 19920 "GET /collectables/ HTTP/1.1" 200 5524
+django.server INFO 2025-03-22 13:12:26,753 basehttp 2040 19920 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 13:12:26,794 basehttp 2040 28488 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:12:26,794 basehttp 2040 19920 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:12:29,837 basehttp 2040 28488 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 13:12:32,782 basehttp 2040 28488 "GET /get_location/1/ HTTP/1.1" 200 7394
+django.server INFO 2025-03-22 13:12:33,046 basehttp 2040 28488 "GET /static/checkin.css HTTP/1.1" 200 1210
+django.server INFO 2025-03-22 13:12:33,052 basehttp 2040 19920 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-22 13:12:35,676 basehttp 2040 19920 "GET /home/accounts/login/ HTTP/1.1" 200 7566
+django.server INFO 2025-03-22 13:12:37,156 basehttp 2040 19920 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 13:12:42,046 basehttp 2040 19920 "GET /tasks/ HTTP/1.1" 200 8035
+django.server INFO 2025-03-22 13:12:47,365 basehttp 2040 19920 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.utils.autoreload INFO 2025-03-22 13:13:50,343 autoreload 6872 8020 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 13:13:54,736 basehttp 6872 16960 "GET /tasks/ HTTP/1.1" 200 8007
+django.server INFO 2025-03-22 13:15:15,971 basehttp 6872 24408 "GET /lootboxes/open/ HTTP/1.1" 200 10362
+django.server WARNING 2025-03-22 13:15:16,006 basehttp 6872 24408 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:15:16,008 basehttp 6872 19680 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:15:16,008 basehttp 6872 29660 "GET /static/images/lootbox.png HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:15:32,396 basehttp 6872 29660 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 13:15:32,421 basehttp 6872 29660 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:15:32,421 basehttp 6872 29660 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:15:34,547 basehttp 6872 29660 "GET /lootboxes/open/ HTTP/1.1" 200 10362
+django.server WARNING 2025-03-22 13:15:34,571 basehttp 6872 29660 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:15:35,106 basehttp 6872 19680 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 13:15:35,902 basehttp 6872 19680 "GET /lootboxes/open/ HTTP/1.1" 200 10362
+django.server WARNING 2025-03-22 13:15:35,927 basehttp 6872 19680 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:16:43,634 basehttp 6872 28068 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server INFO 2025-03-22 13:16:43,650 basehttp 6872 29000 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-22 13:16:43,650 basehttp 6872 28068 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:18:20,491 basehttp 6872 29000 "GET /home/ HTTP/1.1" 200 7455
+django.server INFO 2025-03-22 13:18:21,842 basehttp 6872 29000 "GET /tasks/ HTTP/1.1" 200 8007
+django.server INFO 2025-03-22 13:18:48,835 basehttp 6872 29000 "GET /leaderboard/ HTTP/1.1" 200 8474
+django.server INFO 2025-03-22 13:18:48,853 basehttp 6872 29000 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:18:48,856 basehttp 6872 29000 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 13:18:50,813 basehttp 6872 29000 "GET /lootboxes/open/ HTTP/1.1" 200 10357
+django.server WARNING 2025-03-22 13:18:50,838 basehttp 6872 29000 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 13:18:50,842 basehttp 6872 16928 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+>>>>>>> origin/production-fix
