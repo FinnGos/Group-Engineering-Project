@@ -7963,3 +7963,4 @@ django.server INFO 2025-03-22 13:08:05,598 basehttp 23340 12852 "GET /shop/ HTTP
 django.request WARNING 2025-03-22 13:08:27,354 log 23340 12852 Not Found: /riddles
 django.server WARNING 2025-03-22 13:08:27,354 basehttp 23340 12852 "GET /riddles HTTP/1.1" 404 5637
 django.server INFO 2025-03-22 13:08:51,493 basehttp 23340 12852 "GET /map/ HTTP/1.1" 200 12088
+django.utils.autoreload INFO 2025-03-22 13:14:24,295 autoreload 24816 25548 Watching for file changes with StatReloader
