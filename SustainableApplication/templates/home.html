@@ -71,37 +71,59 @@
 <style>
     /* Mobile adjustments */
     @media (max-width: 768px) {
+        /* Hamburger menu: Fix the white space when the menu is expanded */
+        .navbar-collapse {
+            max-height: 400px !important;
+            overflow-y: auto;
+        }
+        .navbar-toggler {
+            margin-right: 10px;
+        }
+
+        /* Top image adjustments */
         .top-section img {
-            height: 300px; /* Adjusting the height for better mobile view */
+            height: 250px; /* Adjusting the height for better mobile view */
         }
+
+        /* Bottom text spacing */
         .bottom-text {
-            margin-top: 8rem !important; /* More space at the top for better alignment */
+            margin-top: 5rem !important; /* Move it down for better alignment */
         }
+
+        /* Buttons: Size and spacing adjustments */
+        .bottom-section .w-full {
+            width: 100%; /* Ensure full-width on mobile */
+        }
+
+        .bottom-section button {
+            padding: 12px 20px;
+            font-size: 1rem; /* Smaller text on mobile */
+        }
+
+        .bottom-section button:hover {
+            background-color: #4CAF50; /* Adjust the hover color */
+        }
+
+        /* Background image adjustments for mobile */
+        .bottom-section img {
+            object-position: center center;
+        }
+
         .bottom-text h1 {
-            font-size: 2.5rem; /* Smaller text for mobile */
+            font-size: 2.5rem; /* Smaller header text */
         }
+
         .bottom-text p {
             font-size: 1.25rem; /* Adjusted for mobile readability */
         }
-        .bottom-section img {
-            object-position: center; /* Keeps the background aligned on mobile */
-        }
+
         .bottom-text ul li {
             font-size: 1rem; /* Smaller font for mobile */
         }
-        .btn {
-            width: 100%; /* Full width buttons on mobile */
-            padding: 15px;
-            font-size: 1.2rem;
-        }
-        .absolute {
-            position: relative !important;
-        }
+
+        /* Space for footer on mobile */
         .absolute.bottom-6 {
-            bottom: 6rem; /* Move buttons further down to avoid overlap with text */
-        }
-        .sm\:top-\[75%\] {
-            top: 85%; /* Move the "Go to Map" button further down */
+            bottom: 4rem; /* Move buttons further down */
         }
     }
 
