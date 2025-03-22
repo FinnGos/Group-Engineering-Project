@@ -242,3 +242,14 @@ django.server INFO 2025-03-22 20:37:48,864 basehttp 132549 139625203480256 "GET 
 django.server INFO 2025-03-22 20:37:48,871 basehttp 132549 139625203480256 "GET /static/js/checkin.js HTTP/1.1" 200 1980
 django.server INFO 2025-03-22 20:37:48,872 basehttp 132549 139625226041024 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
 django.server WARNING 2025-03-22 20:37:48,901 basehttp 132549 139625211872960 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 20:44:36,197 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:44:36,197 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.security.csrf WARNING 2025-03-22 20:44:37,951 log 132549 139625226041024 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-22 20:44:37,951 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-22 20:44:39,205 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 9179
+django.server INFO 2025-03-22 20:44:40,659 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.server INFO 2025-03-22 20:44:42,431 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.server INFO 2025-03-22 20:44:55,777 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.request WARNING 2025-03-22 20:44:55,987 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:44:55,987 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:44:56,764 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 9726
