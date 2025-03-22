@@ -9166,3 +9166,34 @@ django.server WARNING 2025-03-22 11:58:53,312 basehttp 8689 139935857243840 "GET
 django.server INFO 2025-03-22 11:58:53,320 basehttp 8689 139935857243840 "GET /media/MediaPhotos/MSI_PRO.jpg HTTP/1.1" 200 1390750
 django.server WARNING 2025-03-22 11:58:53,327 basehttp 8689 139935846753984 "GET /static/css/styles.css HTTP/1.1" 404 1969
 >>>>>>> Production
+django.utils.autoreload INFO 2025-03-22 13:28:32,949 autoreload 30172 140690233262208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:29:40,497 autoreload 30172 140690233262208 /home/finn/Group-Engineering-Project/SustainableApplication/home/migrations/0006_customuser_collectables_owned.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 13:29:40,808 autoreload 30448 139845064188032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:29:45,627 autoreload 30543 139656129831040 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:29:57,969 autoreload 30543 139656129831040 /home/finn/Group-Engineering-Project/SustainableApplication/collectables/migrations/0001_initial.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 13:29:58,146 autoreload 30622 140644926001280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:29:59,122 autoreload 30682 140605713137792 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:30:27,321 autoreload 31039 140479312621696 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 13:32:17,347 autoreload 31795 140611642904704 Watching for file changes with StatReloader
+django INFO 2025-03-22 13:32:20,597 views 31795 140611525015232 Failed login attempt for username: nightmare
+django.server INFO 2025-03-22 13:32:20,607 basehttp 31795 140611525015232 "POST /accounts/login/ HTTP/1.1" 200 7990
+django.request WARNING 2025-03-22 13:32:20,790 log 31795 140611525015232 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:32:20,790 basehttp 31795 140611525015232 "GET /favicon.ico HTTP/1.1" 404 5745
+django INFO 2025-03-22 13:32:26,224 views 31795 140611525015232 Failed login attempt for username: nightmare
+django.server INFO 2025-03-22 13:32:26,225 basehttp 31795 140611525015232 "POST /accounts/login/ HTTP/1.1" 200 7990
+django.server INFO 2025-03-22 13:32:33,825 basehttp 31795 140611525015232 "GET /home/signup/ HTTP/1.1" 200 8937
+django.request WARNING 2025-03-22 13:32:34,020 log 31795 140611525015232 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 13:32:34,021 basehttp 31795 140611525015232 "GET /favicon.ico HTTP/1.1" 404 5745
+django INFO 2025-03-22 13:32:45,721 views 31795 140611525015232 User logged in: nightmare
+django INFO 2025-03-22 13:32:45,747 views 31795 140611525015232 New user signed up: nightmare
+django.server INFO 2025-03-22 13:32:45,758 basehttp 31795 140611525015232 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 13:32:45,767 basehttp 31795 140611525015232 "GET /home/ HTTP/1.1" 200 7637
+django.server INFO 2025-03-22 13:32:50,788 basehttp 31795 140611525015232 "GET /map HTTP/1.1" 301 0
+django.server INFO 2025-03-22 13:32:50,799 basehttp 31795 140611525015232 "GET /map/ HTTP/1.1" 200 1414
+django.server INFO 2025-03-22 13:32:50,823 basehttp 31795 140611525015232 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 13:32:50,825 basehttp 31795 140611511375552 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 13:32:50,964 basehttp 31795 140611511375552 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.request WARNING 2025-03-22 13:33:00,903 log 31795 140611511375552 Not Found: /store
+django.server WARNING 2025-03-22 13:33:00,904 basehttp 31795 140611511375552 "GET /store HTTP/1.1" 404 5727
+django.server INFO 2025-03-22 13:33:05,174 basehttp 31795 140611511375552 "GET /shop HTTP/1.1" 301 0
+django.server INFO 2025-03-22 13:33:05,185 basehttp 31795 140611525015232 "GET /shop/ HTTP/1.1" 200 5433
