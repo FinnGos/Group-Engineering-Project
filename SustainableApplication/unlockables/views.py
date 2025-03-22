@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Item, Building, UserBuilding, UserItem
+from .models import Item, Building, UserBuilding, UserItem, Rubbish
 import random
 
 
@@ -10,21 +10,28 @@ def buy_item(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     user = request.user
 
-    # Check if user has enough points
+    # Get the max quantity allowed for this item
+    max_quantity = item.max_quantity
+
+    # Count how many of this item the user already owns
+    user_item_count = UserItem.objects.filter(user=user, item=item).count()
+
+    if user_item_count >= max_quantity:
+        messages.error(request, f"You can't own more than {max_quantity} of {item.name}!")
+        return redirect('shop')
+
     if user.current_points >= item.price:
         user.current_points -= item.price
         user.save()
 
-        # Place the item
+        # Place the item on the map
         place_item(user, item)
 
-        # Success message
-        messages.success(request, "Purchase successful!")
+        messages.success(request, f"You bought {item.name} and placed it on the map!")
     else:
-        # Error message for insufficient points
-        messages.error(request, "Insufficient points to complete the purchase.")
+        messages.error(request, "Not enough Carbo Coins!")
 
-    return redirect("shop")
+    return redirect('shop')
 
 
 @login_required
@@ -52,20 +59,22 @@ def game_map(request):
     """
     user = request.user
     buildings = Building.objects.all()
-    user_buildings = {
-        ub.building.id: ub.unlocked for ub in UserBuilding.objects.filter(user=user)
-    }
+    rubbish = Rubbish.objects.filter(cleaned=False)  # Only show uncleaned rubbish
+
+    # Get names of collectables the user owns
+    unlocked_collectable_names = list(user.collectables_owned.values_list("name", flat=True))
+
+    # Create a dictionary to mark unlocked buildings
+    user_buildings = {building.id: (building.name in unlocked_collectable_names) for building in buildings}
+
     user_items = UserItem.objects.filter(user=user)
 
-    return render(
-        request,
-        "map.html",
-        {
-            "buildings": buildings,
-            "user_buildings": user_buildings,
-            "user_items": user_items,
-        },
-    )
+    return render(request, "map.html", {
+        "buildings": buildings,
+        "user_buildings": user_buildings,
+        "user_items": user_items,
+        "rubbish": rubbish
+    })
 
 
 def place_item(user, item):
@@ -101,3 +110,23 @@ def place_item(user, item):
 
     # Create a new UserItem with randomly assigned x and y values
     UserItem.objects.create(user=user, item=item, x=x, y=y)
+
+@login_required
+def clean_rubbish(request, rubbish_id):
+    rubbish = get_object_or_404(Rubbish, id=rubbish_id)
+
+    if rubbish.cleaned:
+        messages.info(request, "This rubbish has already been cleaned.")
+    elif request.user.current_points >= 5:  # Require 5 Carbo Coins to clean
+        request.user.current_points -= 5
+        request.user.save()
+
+        rubbish.cleaned = True
+
+        rubbish.save()
+
+        messages.success(request, "You cleaned up some rubbish for 5 Carbo Coins!")
+    else:
+        messages.error(request, "Not enough Carbo Coins to clean up the rubbish, you need 5 Carbo Coins!")
+
+    return redirect("map")
