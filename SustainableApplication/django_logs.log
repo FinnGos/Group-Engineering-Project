@@ -11134,3 +11134,13 @@ django.server WARNING 2025-03-22 17:15:06,013 basehttp 80172 139621167003328 "GE
 django.request WARNING 2025-03-22 17:15:06,162 log 80172 139621167003328 Not Found: /favicon.ico
 django.server WARNING 2025-03-22 17:15:06,163 basehttp 80172 139621167003328 "GET /favicon.ico HTTP/1.1" 404 5745
 django.server INFO 2025-03-22 17:15:12,774 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23660
+django.server INFO 2025-03-22 17:15:53,234 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23670
+django.server INFO 2025-03-22 17:15:56,664 basehttp 80172 139621167003328 "GET /lootboxes/open/ HTTP/1.1" 200 10547
+django.server WARNING 2025-03-22 17:15:56,722 basehttp 80172 139621167003328 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 17:15:56,727 basehttp 80172 139621143922368 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server WARNING 2025-03-22 17:15:56,742 basehttp 80172 139621143922368 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 17:15:56,876 basehttp 80172 139621167003328 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 200 2674413
+django.server INFO 2025-03-22 17:16:13,476 basehttp 80172 139621167003328 "GET /tasks/ HTTP/1.1" 200 23659
+django.server INFO 2025-03-22 17:16:15,299 basehttp 80172 139621167003328 "GET /lootboxes/open/ HTTP/1.1" 200 10536
+django.server WARNING 2025-03-22 17:16:15,349 basehttp 80172 139621167003328 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server WARNING 2025-03-22 17:16:15,369 basehttp 80172 139621167003328 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
