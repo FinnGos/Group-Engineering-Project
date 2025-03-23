@@ -388,3 +388,60 @@ django.server WARNING 2025-03-23 14:31:00,911 basehttp 3953 140658635437760 "GET
 django.server INFO 2025-03-23 14:31:21,897 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9013
 django.server INFO 2025-03-23 14:31:22,605 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9072
 django.server INFO 2025-03-23 14:31:39,780 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:34:14,909 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.request WARNING 2025-03-23 14:34:15,062 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:34:15,062 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:34:15,499 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:01,539 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:01,539 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 302 0
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:01,548 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:01,548 basehttp 3953 140658627045056 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-23 14:35:01,632 basehttp 3953 140658627045056 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-23 14:35:01,841 basehttp 3953 140658627045056 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-23 14:35:01,900 log 3953 140658627045056 Not Found: /favicon.ico
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:06,770 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:06,771 basehttp 3953 140658627045056 "GET /home/signup/ HTTP/1.1" 200 8952
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:07,964 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:07,964 basehttp 3953 140658627045056 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:15,323 base 3953 140658627045056 Session data corrupted
+django INFO 2025-03-23 14:35:15,351 views 3953 140658627045056 User logged in: nightmare
+django.server INFO 2025-03-23 14:35:15,362 basehttp 3953 140658627045056 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:15,377 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:15,504 basehttp 3953 140658627045056 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:15,520 basehttp 3953 140658627045056 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:15,522 basehttp 3953 140658618652352 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:17,510 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:17,563 basehttp 3953 140658627045056 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:17,666 basehttp 3953 140658627045056 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:18,769 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:19,919 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:20,150 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:21,300 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:21,349 basehttp 3953 140658635437760 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-23 14:35:21,355 basehttp 3953 140658610259648 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-23 14:35:21,356 basehttp 3953 140658635437760 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.request WARNING 2025-03-23 14:35:21,452 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:35:21,452 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:35:22,511 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django INFO 2025-03-23 14:35:23,481 views 3953 140658627045056 User logged out: nightmare
+django.server INFO 2025-03-23 14:35:23,482 basehttp 3953 140658627045056 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:23,490 basehttp 3953 140658627045056 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-23 14:35:35,590 views 3953 140658627045056 User logged in: nightmare
+django.server INFO 2025-03-23 14:35:35,601 basehttp 3953 140658627045056 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:35,617 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:37,826 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:37:17,866 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9173
+django.request WARNING 2025-03-23 14:37:18,051 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:37:18,051 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.request WARNING 2025-03-23 14:37:18,941 log 3953 140658635437760 Not Found: /home/{^ url 'leaderboard' %}
+django.server WARNING 2025-03-23 14:37:18,941 basehttp 3953 140658635437760 "GET /home/%7B%5E%20url%20'leaderboard'%20%%7D HTTP/1.1" 404 8133
+django.request WARNING 2025-03-23 14:37:37,991 log 3953 140658635437760 Not Found: /home/{^ url 'leaderboard' %}
+django.server WARNING 2025-03-23 14:37:37,991 basehttp 3953 140658635437760 "GET /home/%7B%5E%20url%20'leaderboard'%20%%7D HTTP/1.1" 404 8133
+django.server INFO 2025-03-23 14:37:58,714 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9163
+django.request WARNING 2025-03-23 14:37:58,881 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:37:58,881 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:37:59,590 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9266
+django.server INFO 2025-03-23 14:39:00,346 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:41:11,458 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.request WARNING 2025-03-23 14:41:11,593 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:41:11,594 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745

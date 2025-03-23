@@ -37,18 +37,18 @@
     </div>
 </div>
 
-<!-- Image Section -->
+<!-- Bottom Section -->
 <div class="bottom-section relative">
-    <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
+    <!-- Responsive Image Container: smaller on mobile, larger on desktop -->
+    <div class="image-container bg-green-700 p-4 border-4 border-green-700 overflow-hidden h-64 sm:h-[600px]">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
     
-    <!-- Leaderboard Section -->
-    <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
-        <!-- Current Player's Points Section -->
-        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
-            <h3 class="text-3xl mb-4">Your Current Points</h3>
-            <p class="text-xl">
+    <!-- Current Points Section -->
+    <div class="leaderboard mt-4 sm:mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+        <div class="current-points text-white text-center p-4 sm:p-6 mt-4 bg-green-700 rounded-lg">
+            <h3 class="text-xl sm:text-3xl mb-2">Your Current Points</h3>
+            <p class="text-base sm:text-xl">
                 {% if request.user.is_authenticated %}
                     Points: <strong>{{ request.user.all_time_points }}</strong>
                 {% else %}
@@ -59,13 +59,13 @@
     </div>
 
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+    <div x-data="{ open: false }" class="mt-4 sm:mt-8 flex justify-center space-x-4 absolute bottom-10 w-full text-center"> 
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-800">
             Go to your Daily Tasks
         </a>
 
         <!-- "How to Play" Button -->
-        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
+        <button @click="open = true" class="bg-green-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-green-800">
             How to Play
         </button>
 
