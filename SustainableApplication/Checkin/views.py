@@ -86,7 +86,6 @@ def database_location(request, task):
             reward = task.reward
             user = request.user
             user.current_points += reward
-            user.all_time_points += reward
             user.save()
             return render(request, "checkin_page.html", context)
     context = {

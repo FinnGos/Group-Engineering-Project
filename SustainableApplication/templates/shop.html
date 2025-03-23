@@ -50,17 +50,18 @@
     const messageText = document.getElementById("message-text");
     const closeButton = document.getElementById("close-message");
 
-    // Check if there are any messages from the backend
+    // Check if there are any messages from Django's messages framework
     {% if messages %}
       {% for message in messages %}
-        // Display the appropriate message
-        if ("{{ message.tags }}" === "success") {
-          messageText.textContent = "Purchase successful!";
-          messageBox.classList.remove("hidden");
-        } else if ("{{ message.tags }}" === "error") {
-          messageText.textContent = "Insufficient points to complete the purchase.";
-          messageBox.classList.remove("hidden");
-        }
+        setTimeout(() => {
+          if ("{{ message.tags }}" === "success") {
+            messageText.textContent = "Purchase successful!";
+            messageBox.classList.remove("hidden");
+          } else if ("{{ message.tags }}" === "error") {
+            messageText.textContent = "{{ message|escapejs }}";  // Ensure safe JavaScript output
+            messageBox.classList.remove("hidden");
+          }
+        }, 100); // Slight delay to ensure elements exist
       {% endfor %}
     {% endif %}
 

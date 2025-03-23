@@ -13,6 +13,8 @@ def leaderboard(request):
     actual_rank = 0
 
     for user in users:
+        if user.username == "superadmin" or user.username == "admin":
+            continue
         actual_rank += 1
         if user.all_time_points != last_points:
             rank = actual_rank
