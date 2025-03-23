@@ -37,45 +37,55 @@
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            /* Move header up */
+            /* Move header up and reduce size */
             .mobile-header-container {
                 padding-top: 0 !important;
-                margin-top: -30px !important;
+                padding-bottom: 0 !important;
+                margin-top: -20px !important;
+                margin-bottom: 0 !important;
             }
             
-            /* Header text size reduction to 50% */
+            /* Header text size reduction to 40% */
             .top-section h1 {
-                font-size: 1.8rem !important; /* 50% of 6xl */
+                font-size: 1.5rem !important; /* 40% of 6xl */
+                margin-bottom: 0 !important;
             }
             .top-section h2 {
-                font-size: 1rem !important; /* 50% of 3xl */
+                font-size: 0.8rem !important; /* 40% of 3xl */
+                margin-bottom: 2px !important;
             }
             .top-section h3 {
-                font-size: 1.25rem !important; /* 50% of 4xl */
+                font-size: 1rem !important; /* 40% of 4xl */
+                margin-bottom: 2px !important;
             }
             
-            /* Move rankings up */
+            /* Fix rankings visibility and move up */
             .mobile-rankings {
-                margin-top: -25px !important;
+                margin-top: -10px !important;
+                display: block !important;
+                visibility: visible !important;
+                width: 90% !important;
+                max-width: 90% !important;
             }
             
             /* Half size leaderboard entries */
             .rank-item {
-                padding: 0.5rem !important;
-                margin-bottom: 0.5rem !important;
+                padding: 0.4rem !important;
+                margin-bottom: 0.4rem !important;
                 border-width: 2px !important;
+                min-height: 0 !important;
             }
             
             .rank {
-                font-size: 1rem !important; /* 50% of 2xl */
+                font-size: 0.8rem !important; /* 40% of 2xl */
             }
             
             .name {
-                font-size: 0.875rem !important; /* 50% of xl */
+                font-size: 0.7rem !important; /* 40% of xl */
             }
             
             .points {
-                font-size: 0.75rem !important; /* 50% of lg */
+                font-size: 0.6rem !important; /* 40% of lg */
             }
             
             /* Bottom section image adjustments */
@@ -83,12 +93,12 @@
                 padding: 0 !important;
                 border: none !important;
                 background-color: transparent !important;
-                height: 220px !important; /* Increased height */
-                margin-top: 30px !important; /* Move down */
+                height: 180px !important;
+                margin-top: 20px !important; /* Move down */
             }
             
             .mobile-bottom-image {
-                height: 220px !important;
+                height: 180px !important;
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
@@ -99,35 +109,39 @@
                 display: none !important;
             }
             
-            /* Points section */
+            /* Points section - make smaller */
             .mobile-current-points {
-                transform: scale(0.5);
-                padding: 4px !important;
-                width: 80% !important;
-                max-width: 200px !important;
+                padding: 2px !important;
+                width: 60% !important;
+                max-width: 150px !important;
                 position: absolute;
-                bottom: 80px !important; /* Move down */
+                bottom: 60px !important;
+                transform: scale(0.4) !important;
+                transform-origin: center bottom !important;
             }
             
             .mobile-current-points h3 {
-                font-size: 1.2rem !important;
-                margin-bottom: 2px !important;
+                font-size: 0.9rem !important;
+                margin-bottom: 0 !important;
             }
             
             .mobile-current-points p {
-                font-size: 0.9rem !important;
+                font-size: 0.7rem !important;
+                margin-bottom: 0 !important;
             }
             
-            /* Button adjustments */
+            /* Button adjustments - make smaller */
             .mobile-buttons-container {
-                bottom: 20px !important; /* Move down */
+                bottom: 10px !important;
+                transform: scale(0.7) !important;
+                transform-origin: center bottom !important;
+                width: 100% !important;
             }
             
             .mobile-button {
-                padding: 4px 8px !important;
-                font-size: 0.7rem !important;
-                width: 50% !important;
-                margin: 2px auto !important;
+                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
+                margin: 1px auto !important;
             }
         }
     </style>
@@ -215,3 +229,4 @@
     </div>
 </div>
 {% endblock %}
+
