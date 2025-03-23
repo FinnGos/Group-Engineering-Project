@@ -331,3 +331,24 @@ django.server INFO 2025-03-22 21:12:00,998 basehttp 135863 139955289441984 "GET 
 django.request WARNING 2025-03-22 21:12:01,142 log 135863 139955289441984 Not Found: /favicon.ico
 django.server WARNING 2025-03-22 21:12:01,142 basehttp 135863 139955289441984 "GET /favicon.ico HTTP/1.1" 404 5745
 django.server INFO 2025-03-22 21:12:01,703 basehttp 135863 139955289441984 "GET /home/ HTTP/1.1" 200 9064
+django.utils.autoreload INFO 2025-03-23 14:09:56,246 autoreload 3953 140658757853312 Watching for file changes with StatReloader
+django.server INFO 2025-03-23 14:10:03,260 basehttp 3953 140658635437760 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:10:03,277 basehttp 3953 140658635437760 "GET /accounts/login/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-23 14:10:03,389 basehttp 3953 140658635437760 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-23 14:10:03,784 basehttp 3953 140658635437760 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-23 14:10:03,846 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:10:03,846 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django INFO 2025-03-23 14:10:27,109 views 3953 140658635437760 User logged in: nightmare
+django.server INFO 2025-03-23 14:10:27,119 basehttp 3953 140658635437760 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:10:27,126 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9064
+django.server INFO 2025-03-23 14:10:27,222 basehttp 3953 140658635437760 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-23 14:10:27,223 basehttp 3953 140658627045056 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.request WARNING 2025-03-23 14:10:27,346 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:10:27,347 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:10:33,579 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8856
+django.server INFO 2025-03-23 14:12:57,592 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.request WARNING 2025-03-23 14:12:57,730 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:12:57,730 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:13:21,207 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.server INFO 2025-03-23 14:13:22,090 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.server INFO 2025-03-23 14:13:25,658 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865

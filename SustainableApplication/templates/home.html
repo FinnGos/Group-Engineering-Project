@@ -4,10 +4,9 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<!-- Top Half Image Section -->
-<div class="top-section relative">
-    <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-auto object-cover">
-
+<!-- Top Section -->
+<div class="relative">
+    <img src="{% static 'images/Top_Image.jpg' %}" alt="Top Image" class="w-full h-[250px] sm:h-auto object-cover">
     <!-- Go to Map Button -->
     <div class="absolute top-[80%] left-1/2 transform -translate-x-1/2 sm:top-[75%]">
         <a href="{% url 'map' %}">
@@ -18,23 +17,21 @@
     </div>
 </div>
 
-<!-- Bottom Half Image Section -->
-<div class="bottom-section relative">
-    <img src="{% static 'images/Bottom_Image.jpg' %}" alt="Bottom Image" class="w-full h-auto object-cover">
-    
-    <!-- Text and Content for the Bottom Section -->
-    <div class="bottom-text absolute inset-0 flex flex-col justify-center items-center text-white px-6 sm:px-8 mt-12 sm:mt-20">
-        <!-- Welcome Heading: Move it down and adjust text size for mobile -->
-        <h1 class="text-4xl sm:text-5xl font-bold mb-6 text-center">
+<!-- Bottom Section with Background Image -->
+<div class="relative min-h-[300px] bg-cover bg-center" style="background-image: url('{% static 'images/Bottom_Image.jpg' %}');">
+    <!-- Overlay for content -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="absolute top-0 left-0 right-0 bottom-20 flex flex-col justify-center items-center text-white px-6 sm:px-8">
+
+        <!-- Welcome Heading -->
+        <h1 class="text-3xl sm:text-5xl font-bold mb-1 text-center">
             Welcome!
         </h1>
-        
-        <!-- Introduction Text: Larger than other text, adjusted for mobile -->
-        <p class="text-xl sm:text-2xl mb-6 text-center">
+        <!-- Introduction Text -->
+        <p class="text-lg sm:text-2xl mb-6 text-center">
             This is our task-based collectibles sustainability game, developed by Women in STEM
         </p>
-        
-        <!-- Rest of the List: Adjust text size for mobile -->
+        <!-- List -->
         <ul class="mt-4 text-base sm:text-lg">
             <li><strong>Explore</strong> – Follow the treasure hunts and discover sustainability hotspots.</li>
             <li><strong>Collect and Learn</strong> – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</li>
@@ -44,17 +41,14 @@
     </div>
 
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-8 sm:mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 absolute bottom-6 w-full text-center px-4">
+    <div x-data="{ open: false }" class="absolute bottom-6 w-full flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 px-4">
         <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 w-full sm:w-auto text-center">
             Go to Your Daily Tasks
         </a>
-
-        <!-- "How to Play" Button -->
         <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 w-full sm:w-auto text-center">
             How to Play
         </button>
-
-        <!-- Popup Modal -->
+        <!-- Modal Popup -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
                 <h2 class="text-2xl font-bold mb-4">How to Play</h2>
@@ -64,86 +58,5 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
-
-<!-- Add Media Queries for Mobile View Adjustments -->
-<style>
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
-        /* Hamburger menu: Fix the white space when the menu is expanded */
-        .navbar-collapse {
-            max-height: 400px !important;
-            overflow-y: auto;
-        }
-        .navbar-toggler {
-            margin-right: 10px;
-        }
-
-        /* Top image adjustments */
-        .top-section img {
-            height: 250px; /* Adjusting the height for better mobile view */
-        }
-
-        /* Bottom text spacing */
-        .bottom-text {
-            margin-top: 5rem !important; /* Move it down for better alignment */
-        }
-
-        /* Buttons: Size and spacing adjustments */
-        .bottom-section .w-full {
-            width: 100%; /* Ensure full-width on mobile */
-        }
-
-        .bottom-section button {
-            padding: 12px 20px;
-            font-size: 1rem; /* Smaller text on mobile */
-        }
-
-        .bottom-section button:hover {
-            background-color: #4CAF50; /* Adjust the hover color */
-        }
-
-        /* Background image adjustments for mobile */
-        .bottom-section img {
-            object-position: center center;
-        }
-
-        .bottom-text h1 {
-            font-size: 2.5rem; /* Smaller header text */
-        }
-
-        .bottom-text p {
-            font-size: 1.25rem; /* Adjusted for mobile readability */
-        }
-
-        .bottom-text ul li {
-            font-size: 1rem; /* Smaller font for mobile */
-        }
-
-        /* Space for footer on mobile */
-        .absolute.bottom-6 {
-            bottom: 4rem; /* Move buttons further down */
-        }
-    }
-
-    /* Larger Screens (Desktops) */
-    @media (min-width: 769px) {
-        .top-section img {
-            height: auto;
-        }
-        .bottom-text {
-            margin-top: 6rem;
-        }
-        .bottom-text h1 {
-            font-size: 3.5rem;
-        }
-        .bottom-text p {
-            font-size: 2rem;
-        }
-        .bottom-text ul li {
-            font-size: 1.125rem;
-        }
-    }
-</style>
 
