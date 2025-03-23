@@ -6,13 +6,13 @@
 <link rel="stylesheet" href="{% static 'leaderboard.css' %}">
 <!-- Image Section -->
 <div class="top-section relative">
-    <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
+    <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto" style="height: 750px;"> <!-- Increased height to 750px -->
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
         <div class="font-bold text-white text-center p-6 mb-6 mobile-header-container">
-            <h1 class="text-xl sm:text-4xl mb-1">Leaderboard</h1> <!-- Reduced font size by 25% -->
+            <h1 class="text-xl sm:text-3xl mb-1">Leaderboard</h1> <!-- Reduced font size by 25% -->
             <h2 class="text-lg sm:text-2xl mb-4">Can you become the ultimate CarboCollector?</h2> <!-- Reduced font size by 25% -->
-            <h3 class="text-xl sm:text-3xl">Current Rankings:</h3> <!-- Reduced font size by 25% -->
+            <h3 class="text-xl sm:text-2xl">Current Rankings:</h3> <!-- Reduced font size by 25% -->
         </div>
         <!-- Display the Top 5 Leaderboard Entries -->
         <div class="rankings w-full max-w-3xl mobile-rankings">
@@ -23,15 +23,14 @@
                 {% elif entry.rank == 3 %}rank-3 border-4
                 {% elif entry.rank == 4 %}rank-4
                 {% elif entry.rank == 5 %}rank-5{% endif %}">
-                <span class="rank text-sm sm:text-2xl text-white">{{ entry.rank }}</span> <!-- Reduced font size by 25% -->
-                <span class="name text-sm sm:text-xl text-white">{{ entry.user.username }}</span> <!-- Reduced font size by 25% -->
-                <span class="points text-sm sm:text-lg text-white">{{ entry.user.all_time_points }}</span> <!-- Reduced font size by 25% -->
+                <span class="rank text-sm sm:text-xl text-white">{{ entry.rank }}</span> <!-- Reduced font size by 25% -->
+                <span class="name text-sm sm:text-lg text-white">{{ entry.user.username }}</span> <!-- Reduced font size by 25% -->
+                <span class="points text-sm sm:text-base text-white">{{ entry.user.all_time_points }}</span> <!-- Reduced font size by 25% -->
             </div>
             {% endfor %}
         </div>
     </div>
 </div>
-
 <!-- Image Section -->
 <div class="bottom-section relative">
     <style>
@@ -47,15 +46,15 @@
             
             /* Header text size reduction for mobile */
             .top-section h1 {
-                font-size: 1.3rem !important; /* Reduced by 25% from 1.75rem */
+                font-size: 1.25rem !important; /* Further reduced text size */
                 margin-bottom: 0 !important;
             }
             .top-section h2 {
-                font-size: 1.0rem !important; /* Reduced by 25% from 1.25rem */
+                font-size: 0.75rem !important; /* Further reduced text size */
                 margin-bottom: 2px !important;
             }
             .top-section h3 {
-                font-size: 1.2rem !important; /* Reduced by 25% from 1.5rem */
+                font-size: 1rem !important; /* Further reduced text size */
                 margin-bottom: 2px !important;
             }
             
@@ -81,15 +80,15 @@
             }
             
             .rank {
-                font-size: 0.55rem !important; /* Reduced by 25% from 0.75rem */
+                font-size: 0.5rem !important; /* Further reduced font size */
             }
             
             .name {
-                font-size: 0.55rem !important; /* Reduced by 25% from 0.75rem */
+                font-size: 0.5rem !important; /* Further reduced font size */
             }
             
             .points {
-                font-size: 0.55rem !important; /* Reduced by 25% from 0.75rem */
+                font-size: 0.5rem !important; /* Further reduced font size */
             }
             
             /* Bottom section image adjustments */
@@ -97,13 +96,13 @@
                 padding: 0 !important;
                 border: none !important;
                 background-color: transparent !important;
-                height: 220px !important; /* Increased height from 200px */
+                height: 180px !important;
                 margin-top: 20px !important; /* Move down */
                 z-index: 10 !important; /* Lower than rankings */
             }
             
             .mobile-bottom-image {
-                height: 220px !important; /* Increased height from 200px */
+                height: 180px !important;
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
@@ -116,45 +115,45 @@
             
             /* Points section - make smaller */
             .mobile-current-points {
-                padding: 4px !important; /* Increased padding */
-                width: 70% !important; /* Increased width */
-                max-width: 160px !important; /* Increased max-width */
+                padding: 2px !important;
+                width: 60% !important;
+                max-width: 150px !important;
                 position: absolute;
                 bottom: 60px !important;
-                transform: scale(0.5) !important; /* Slightly larger */
+                transform: scale(0.4) !important;
                 transform-origin: center bottom !important;
                 z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
             
             .mobile-current-points h3 {
-                font-size: 0.8rem !important; /* Reduced by 25% from 1rem */
+                font-size: 0.9rem !important;
                 margin-bottom: 0 !important;
             }
             
             .mobile-current-points p {
-                font-size: 0.6rem !important; /* Reduced by 25% from 0.8rem */
+                font-size: 0.7rem !important;
                 margin-bottom: 0 !important;
             }
             
             /* Button adjustments - make smaller */
             .mobile-buttons-container {
                 bottom: 10px !important;
-                transform: scale(0.8) !important; /* Increased scale */
+                transform: scale(0.7) !important;
                 transform-origin: center bottom !important;
                 width: 100% !important;
                 z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
             
             .mobile-button {
-                padding: 4px 8px !important; /* Increased padding */
-                font-size: 0.5rem !important; /* Reduced by 25% from 0.7rem */
+                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
                 margin: 1px auto !important;
             }
         }
     </style>
 
     <!-- Desktop version of bottom section -->
-    <div class="hidden sm:block image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 700px;"> <!-- Increased height from 650px -->
+    <div class="hidden sm:block image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
     
@@ -167,8 +166,8 @@
     <div class="leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white hidden sm:flex">
         <!-- Current Player's Points Section -->
         <div class="current-points desktop-current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
-            <h3 class="text-2xl mb-4">Your Current Points</h3> <!-- Reduced font size by 25% -->
-            <p class="text-lg">
+            <h3 class="text-3xl mb-4">Your Current Points</h3>
+            <p class="text-xl">
                 {% if request.user.is_authenticated %}
                     Points: <strong>{{ request.user.all_time_points }}</strong>
                 {% else %}
@@ -182,8 +181,8 @@
     <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
         <!-- Current Player's Points Section - MOBILE -->
         <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg">
-            <h3 class="text-2xl mb-2">Your Current Points</h3> <!-- Reduced font size by 25% -->
-            <p class="text-lg">
+            <h3 class="text-3xl mb-2">Your Current Points</h3>
+            <p class="text-xl">
                 {% if request.user.is_authenticated %}
                     Points: <strong>{{ request.user.all_time_points }}</strong>
                 {% else %}
