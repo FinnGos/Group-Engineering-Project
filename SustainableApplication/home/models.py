@@ -1,9 +1,6 @@
+"""Defines entities for database"""
 from django.db import models
-from django.urls import reverse  # enables retrieval of url information
-from django.db.models import UniqueConstraint  # constrains fields to unique values
-from django.db.models.functions import Lower  # returns lower case value of field
 from django.contrib.auth.models import AbstractUser
-from django.db import models
 from collectables.models import Collectable
 
 
@@ -13,7 +10,7 @@ class CustomUser(AbstractUser):
     current_points = models.IntegerField(default=300)
     all_time_points = models.IntegerField(
         default=300
-    )  # 2 types of points for the leaderboard
+    ) # 2 types of points for the leaderboard
 
     selected_task = models.ForeignKey(
         "tasks.Tasks", null=True, blank=True, on_delete=models.SET_NULL
@@ -21,7 +18,7 @@ class CustomUser(AbstractUser):
     task_assign_date = models.DateField(null=True, blank=True)
     all_time_points = models.IntegerField(
         default=0
-    )  # 2 types of points for the leaderboard
+    ) # 2 types of points for the leaderboard
     # Collectable cards owned by user
     collectables_owned = models.ManyToManyField(Collectable, blank=True)
 
