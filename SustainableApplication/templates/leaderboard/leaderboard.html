@@ -9,13 +9,13 @@
     <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
-        <div class="font-bold text-white text-center p-6 mb-6">
+        <div class="font-bold text-white text-center p-6 mb-6 mobile-header-container">
             <h1 class="text-6xl mb-1">Leaderboard</h1>
             <h2 class="text-3xl mb-4">Can you become the ultimate CarboCollector?</h2>
             <h3 class="text-4xl">Current Rankings:</h3>
         </div>
         <!-- Display the Top 5 Leaderboard Entries -->
-        <div class="rankings w-full max-w-3xl">
+        <div class="rankings w-full max-w-3xl mobile-rankings">
             {% for entry in ranked_users %}
             <div class="rank-item bg-gray-700 p-4 mb-4 flex justify-between items-center rounded-lg
                 {% if entry.rank == 1 %}rank-1 border-4
@@ -37,6 +37,12 @@
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
+            /* Move header up */
+            .mobile-header-container {
+                padding-top: 0 !important;
+                margin-top: -10px !important;
+            }
+            
             /* Header text size reduction to 60% */
             .top-section h1 {
                 font-size: 2.25rem !important; /* 60% of 6xl */
@@ -46,6 +52,11 @@
             }
             .top-section h3 {
                 font-size: 1.5rem !important; /* 60% of 4xl */
+            }
+            
+            /* Move rankings up */
+            .mobile-rankings {
+                margin-top: -15px !important;
             }
             
             /* Bottom section image adjustments */
@@ -67,9 +78,11 @@
             .mobile-current-points {
                 transform: scale(0.5);
                 padding: 4px !important;
-                margin-bottom: 45px !important;
+                margin-top: 85px !important;
                 width: 80% !important;
                 max-width: 200px !important;
+                position: absolute;
+                bottom: 40px;
             }
             
             .mobile-current-points h3 {
@@ -84,6 +97,7 @@
             /* Button adjustments */
             .mobile-buttons-container {
                 bottom: 3px !important;
+                margin-top: 15px !important;
             }
             
             .mobile-button {
@@ -122,37 +136,35 @@
     
     <!-- Mobile Content Overlay (Points + Buttons) -->
     <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
-        <div class="space-y-3 w-full flex flex-col items-center">
-            <!-- Current Player's Points Section - MOBILE -->
-            <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg">
-                <h3 class="text-3xl mb-2">Your Current Points</h3>
-                <p class="text-xl">
-                    {% if request.user.is_authenticated %}
-                        Points: <strong>{{ request.user.all_time_points }}</strong>
-                    {% else %}
-                        Please log in to see your points.
-                    {% endif %}
-                </p>
+        <!-- Current Player's Points Section - MOBILE -->
+        <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg">
+            <h3 class="text-3xl mb-2">Your Current Points</h3>
+            <p class="text-xl">
+                {% if request.user.is_authenticated %}
+                    Points: <strong>{{ request.user.all_time_points }}</strong>
+                {% else %}
+                    Please log in to see your points.
+                {% endif %}
+            </p>
+        </div>
+        
+        <!-- Buttons Section - Mobile -->
+        <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute bottom-0">
+            <div class="flex flex-col items-center space-y-1">
+                <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
+                    Go to your Daily Tasks
+                </a>
+                <button @click="open = true" class="mobile-button bg-green-700 text-white rounded-lg hover:bg-green-800 px-4 py-2 text-sm">
+                    How to Play
+                </button>
             </div>
             
-            <!-- Buttons Section - Mobile -->
-            <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center">
-                <div class="flex flex-col items-center space-y-1">
-                    <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
-                        Go to your Daily Tasks
-                    </a>
-                    <button @click="open = true" class="mobile-button bg-green-700 text-white rounded-lg hover:bg-green-800 px-4 py-2 text-sm">
-                        How to Play
-                    </button>
-                </div>
-                
-                <!-- Popup Modal -->
-                <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
-                        <h2 class="text-2xl font-bold mb-4">How to Play</h2>
-                        <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
-                        <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
-                    </div>
+            <!-- Popup Modal -->
+            <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+                    <h2 class="text-2xl font-bold mb-4">How to Play</h2>
+                    <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                    <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
                 </div>
             </div>
         </div>
