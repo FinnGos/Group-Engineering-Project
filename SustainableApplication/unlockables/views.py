@@ -5,9 +5,20 @@ from .models import Item, Building, UserBuilding, UserItem, Rubbish, UserRubbish
 import random
 from django.utils.timezone import now
 
+CLEAN_COST = 5
 
 @login_required
 def buy_item(request, item_id):
+    """Fuction that will be called when user clicks button to purchase an item
+    will allow them to purchase and place on map or reject
+
+    Args:
+        request: Request made to shop HTML
+        item_id: id of item to be purchased
+
+    Returns:
+        Redirect to the shop HTML
+    """
     item = get_object_or_404(Item, id=item_id)
     current_user = request.user
 
@@ -16,8 +27,10 @@ def buy_item(request, item_id):
 
 
     if user_item_count >= max_quantity:
-        messages.error(request, f"You can't own more than {max_quantity} of {item.name}!")
-        return redirect('shop')
+        messages.error(
+            request, f"You can't own more than {max_quantity} of {item.name}!"
+        )
+        return redirect("shop")
 
     if current_user.current_points >= item.price:
         current_user.current_points -= item.price
@@ -30,7 +43,7 @@ def buy_item(request, item_id):
     else:
         messages.error(request, "Not enough Carbo Coins!")
 
-    return redirect('shop')
+    return redirect("shop")
 
 
 @login_required
@@ -93,19 +106,28 @@ def game_map(request):
     rubbish = [ur.item for ur in user_rubbish]
 
     # Get names of collectables the user owns
-    unlocked_collectable_names = list(current_user.collectables_owned.values_list("name", flat=True))
+    unlocked_collectable_names = list(
+        user.collectables_owned.values_list("name", flat=True)
+    )
 
     # Create a dictionary to mark unlocked buildings
-    user_buildings = {building.id: (building.name in unlocked_collectable_names) for building in buildings}
+    user_buildings = {
+        building.id: (building.name in unlocked_collectable_names)
+        for building in buildings
+    }
 
     user_items = UserItem.objects.filter(useritem=current_user)
 
-    return render(request, "map.html", {
-        "buildings": buildings,
-        "user_buildings": user_buildings,
-        "user_items": user_items,
-        "rubbish": rubbish
-    })
+    return render(
+        request,
+        "map.html",
+        {
+            "buildings": buildings,
+            "user_buildings": user_buildings,
+            "user_items": user_items,
+            "rubbish": rubbish,
+        },
+    )
 
 
 
@@ -156,15 +178,25 @@ def place_item(Current_user, item):
     UserItem.objects.create(useritem=Current_user, item=item, x=x, y=y, size=item.size)
 
 
-def clean_rubbish(request, rubbish_id):
-    current_user = request.user
-    rubbish = get_object_or_404(UserRubbish, id=rubbish_id)
-    rubbishScore = get_object_or_404(Rubbish, id=rubbish_id)
 
-    if current_user.current_points >= 5:
-        current_user.current_points -= 5
-        current_user.all_time_points -= rubbishScore.sustainability_score  # Update sustainability score
-        current_user.save()
+@login_required
+def clean_rubbish(request, rubbish_id):
+    """Function that is called when user clicks on button to clean up rubbish
+
+    Args:
+        request: The request made to the map page
+        rubbish_id: The id of the rubbish pile to be cleaned
+
+    Returns:
+        _type_: _description_
+    """
+    rubbish = get_object_or_404(Rubbish, id=rubbish_id)
+
+    if rubbish.cleaned:
+        messages.info(request, "This rubbish has already been cleaned.")
+    elif request.user.current_points >= CLEAN_COST:  # Require 5 Carbo Coins to clean
+        request.user.current_points -= CLEAN_COST
+        request.user.save()
 
         rubbish.cleaned = True
         rubbish.cleaned_at = now()
@@ -172,6 +204,9 @@ def clean_rubbish(request, rubbish_id):
 
         messages.success(request, "You cleaned up some rubbish for 5 Carbo Coins!")
     else:
-        messages.error(request, "Not enough Carbo Coins to clean up the rubbish!")
+        messages.error(
+            request,
+            "Not enough Carbo Coins to clean up the rubbish, you need 5 Carbo Coins!",
+        )
 
     return redirect("map")
