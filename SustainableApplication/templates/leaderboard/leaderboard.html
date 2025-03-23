@@ -52,11 +52,14 @@
             }
             .top-section h2 {
                 font-size: 0.8rem !important; /* 40% of 3xl */
-                margin-bottom: 2px !important;
+                margin-bottom: 0 !important; /* Reduce gap */
+                line-height: 1 !important; /* Tighten line height */
             }
             .top-section h3 {
                 font-size: 1rem !important; /* 40% of 4xl */
+                margin-top: 0.25rem !important; /* Minimal gap */
                 margin-bottom: 2px !important;
+                line-height: 1 !important; /* Tighten line height */
             }
             
             /* Fix rankings visibility, make smaller, and ensure they're on top */
@@ -98,7 +101,7 @@
                 border: none !important;
                 background-color: transparent !important;
                 height: 180px !important;
-                margin-top: 20px !important; /* Move down */
+                margin-top: 0 !important; /* Remove gap - was 20px */
                 z-index: 10 !important; /* Lower than rankings */
             }
             
@@ -149,6 +152,17 @@
                 padding: 3px 6px !important;
                 font-size: 0.6rem !important;
                 margin: 1px auto !important;
+            }
+            
+            /* Ensure no white space between images on mobile */
+            .top-section, .bottom-section {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            /* Eliminate gap between sections */
+            .top-section + .bottom-section {
+                margin-top: -1px !important;
             }
         }
     </style>
