@@ -37,41 +37,12 @@
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            /* Adjusting the top image to extend down by 15% */
-            .top-section img {
-                height: 115% !important; /* Extends down by 15% */
-                object-fit: cover !important;
-                object-position: top center !important;
-            }
-
-            /* Adjusting the bottom image to extend down by 20% */
-            .mobile-bottom-image {
-                height: 120% !important; /* Extends down by 20% */
-                object-fit: cover !important;
-                object-position: bottom center !important;
-            }
-
-            /* Mobile Header Adjustments */
-            .mobile-header-container {
-                padding-top: 0 !important;
+            /* Remove any unwanted space at the top of the leaderboard */
+            .top-section {
+                margin-bottom: 0 !important;
                 padding-bottom: 0 !important;
-                margin-top: -20px !important;
-                margin-bottom: 0 !important;
             }
-            
-            .top-section h1 {
-                font-size: 1.5rem !important; /* 40% of 6xl */
-                margin-bottom: 0 !important;
-            }
-            .top-section h2 {
-                font-size: 0.8rem !important; /* 40% of 3xl */
-                margin-bottom: 2px !important;
-            }
-            .top-section h3 {
-                font-size: 1rem !important; /* 40% of 4xl */
-                margin-bottom: 2px !important;
-            }
-            
+
             /* Fix rankings visibility, make smaller, and ensure they're on top */
             .mobile-rankings {
                 margin-top: -10px !important;
@@ -80,54 +51,35 @@
                 width: 90% !important;
                 max-width: 90% !important;
                 position: relative !important;
-                z-index: 50 !important; /* Ensure rankings are on top */
-                transform: scale(0.8) !important; /* Make entire rankings container smaller */
+                z-index: 50 !important;
+                transform: scale(0.8) !important;
                 transform-origin: top center !important;
             }
-            
-            /* Shrink leaderboard entries even more */
-            .rank-item {
-                padding: 0.25rem !important;
-                margin-bottom: 0.25rem !important;
-                border-width: 1px !important;
-                min-height: 0 !important;
-            }
-            
-            .rank {
-                font-size: 0.6rem !important; /* Smaller text */
-            }
-            
-            .name {
-                font-size: 0.6rem !important; /* Smaller text */
-            }
-            
-            .points {
-                font-size: 0.5rem !important; /* Smaller text */
-            }
-            
-            /* Bottom section image adjustments */
+
+            /* Bottom section adjustments */
             .mobile-bottom-container {
-                padding: 0 !important;
-                border: none !important;
-                background-color: transparent !important;
-                height: 180px !important;
-                margin-top: 20px !important; /* Move down */
-                z-index: 10 !important; /* Lower than rankings */
+                padding: 0 !important; /* Remove padding */
+                margin-top: 0 !important; /* Remove any space above */
+                margin-bottom: 0 !important; /* Remove space below */
+                height: auto !important; /* Let it adjust to image size */
+                z-index: 10 !important;
             }
-            
+
             .mobile-bottom-image {
-                height: 180px !important;
+                height: auto !important;
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
+                margin-bottom: 0 !important; /* Remove any bottom margin */
             }
-            
-            /* Fix the duplicate current points issue - hide desktop version on mobile */
-            .desktop-current-points {
+
+            /* Hide desktop version of current points and buttons */
+            .desktop-current-points,
+            .desktop-buttons-container {
                 display: none !important;
             }
-            
-            /* Points section - make smaller */
+
+            /* Adjust mobile current points container to remove space */
             .mobile-current-points {
                 padding: 2px !important;
                 width: 60% !important;
@@ -136,28 +88,18 @@
                 bottom: 60px !important;
                 transform: scale(0.4) !important;
                 transform-origin: center bottom !important;
-                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+                z-index: 20 !important;
             }
-            
-            .mobile-current-points h3 {
-                font-size: 0.9rem !important;
-                margin-bottom: 0 !important;
-            }
-            
-            .mobile-current-points p {
-                font-size: 0.7rem !important;
-                margin-bottom: 0 !important;
-            }
-            
-            /* Button adjustments - make smaller */
+
+            /* Adjust mobile button container to reduce space */
             .mobile-buttons-container {
                 bottom: 10px !important;
                 transform: scale(0.7) !important;
                 transform-origin: center bottom !important;
                 width: 100% !important;
-                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+                z-index: 20 !important;
             }
-            
+
             .mobile-button {
                 padding: 3px 6px !important;
                 font-size: 0.6rem !important;
