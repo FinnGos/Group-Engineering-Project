@@ -1,3 +1,4 @@
+"""Views for the lootboxes app"""
 import random
 from django.shortcuts import render
 from django.http import JsonResponse

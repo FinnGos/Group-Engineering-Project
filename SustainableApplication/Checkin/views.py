@@ -1,10 +1,10 @@
 from django.http import HttpResponseBadRequest, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.decorators import login_required
-from .models import Location # Import location model
 from home.models import CustomUser
 from geopy.distance import geodesic # pip install required (pip install geopy)
+from django.contrib.auth.decorators import login_required
 from tasks.models import Tasks
+from .models import Location # Import location model
 # geopy is used fot geocoding(converting addresses to coordinates)
 
 @login_required

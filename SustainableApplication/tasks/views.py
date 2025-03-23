@@ -1,14 +1,19 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import Tasks
-from django.http import JsonResponse
+"""This module contains the views for the tasks app."""
+# Standard library imports
+import logging
+import os
+
+# Related third-party imports
+from django.conf import settings
+from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.models import User
-from django.contrib.auth import get_user_model
+from django.http import JsonResponse
+from django.shortcuts import render, redirect, get_object_or_404
+
+# Local application/library specific imports
 from .forms import ImageUploadForm
-from .models import UploadedImage
-import logging 
-import os
-from django.conf import settings
+from .models import Tasks, UploadedImage
 
 # Set up a logger for authentication events
 auth_logger = logging.getLogger("django")

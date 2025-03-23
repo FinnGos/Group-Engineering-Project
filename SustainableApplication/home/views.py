@@ -1,22 +1,27 @@
-import logging  # Import Python's logging module for logging authentication events
-from django.shortcuts import render, redirect  # Import functions to render templates and redirect users
-from .models import CustomUser  # Import custom models for the application
-from django.contrib.auth import login, logout  # Import authentication functions for login and logout
-from django.contrib.auth.forms import UserCreationForm  # Import default user creation form
-from django.contrib.auth.views import LoginView, LogoutView  # Import Django’s built-in login and logout views
-from django.contrib.auth.decorators import login_required  # Import decorator to restrict views to logged-in users
-from .forms import CustomUserCreationForm  # Import custom user signup form
-from django.contrib.auth.signals import user_logged_in, user_login_failed, user_logged_out  # Import authentication signals
-from django.dispatch import receiver  # Import receiver to connect functions to signals
-from django.contrib.auth.forms import PasswordChangeForm
-from django.contrib.auth import update_session_auth_hash
-from django.contrib import messages
-from django.contrib.auth.forms import UserChangeForm
-from django import forms
+""" Views for the home app. """
+# Standard library imports
+import logging
 import os
+import re
 from datetime import datetime, timedelta
-import re # Import regex module for accurate log filtering
+
+# Related third-party imports
+from django import forms
 from django.conf import settings
+from django.contrib import messages
+from django.contrib.auth import login, logout, update_session_auth_hash
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import (
+    UserCreationForm, PasswordChangeForm, UserChangeForm
+)
+from django.contrib.auth.signals import user_logged_in, user_login_failed, user_logged_out
+from django.contrib.auth.views import LoginView, LogoutView
+from django.dispatch import receiver
+from django.shortcuts import render, redirect
+
+# Local application/library specific imports
+from .forms import CustomUserCreationForm
+from .models import CustomUser
 
 # Set up a logger for authentication events
 auth_logger = logging.getLogger("django")
@@ -166,6 +171,7 @@ class CustomUserUpdateForm(forms.ModelForm):
     Custom form to allow users to update their username and email.
     """
     class Meta:
+        """" Meta class for the CustomUserUpdateForm. """
         model = CustomUser
         fields = ["username", "email"]
 
@@ -250,7 +256,8 @@ def view_user_data(request):
     """
     View that displays all stored information about the logged-in user.
     
-    This includes their username, email, password (hashed), and a list of logs associated with their username.
+    This includes their username, email, password (hashed), 
+    and a list of logs associated with their username.
 
     Args:
         request (HttpRequest): The HTTP request object.

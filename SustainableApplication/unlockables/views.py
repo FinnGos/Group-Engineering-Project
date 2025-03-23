@@ -1,3 +1,4 @@
+"""This module contains the views for the unlockables app"""
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -7,6 +8,7 @@ import random
 
 @login_required
 def buy_item(request, item_id):
+    """Function to buy an item from the shop"""
     item = get_object_or_404(Item, id=item_id)
     user = request.user
 
