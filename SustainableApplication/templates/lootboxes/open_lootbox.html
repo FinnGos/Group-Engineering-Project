@@ -93,8 +93,6 @@
           event.preventDefault(); // Stop normal form submission
 
           let button = $("#openLootboxButton");
-          // Disable button to prevent spam
-          //button.prop("disabled", true);
 
           $.ajax({
             url: $("#lootboxForm").attr("action"),
@@ -162,10 +160,6 @@
               const errorMessage =
                 xhr.responseJSON?.error || "Error: Unable to open lootbox.";
               alert(errorMessage);
-            },
-            complete: function () {
-              // Re-enable button after animation
-              //button.prop("disabled", false)
             },
           });
         });
