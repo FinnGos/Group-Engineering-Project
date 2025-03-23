@@ -1,11 +1,13 @@
+"""Tests for Checkin"""
+from unittest.mock import patch
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth import get_user_model
-from unittest.mock import patch
 from Checkin.models import Location
 from tasks.models import Tasks
 
 class ViewsTestCase(TestCase):
+    """Tests for Checkin"""
     databases = {"default", "location_db"}
 
     def setUp(self):

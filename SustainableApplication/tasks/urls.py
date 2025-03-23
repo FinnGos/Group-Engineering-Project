@@ -1,7 +1,6 @@
+"""Tests for daily tasks"""
 from django.urls import path
-from django.contrib.auth import views as auth_views
 from . import views
-from django.shortcuts import redirect
 from .views import update_progress, game_master_gallery, delete_image_game_master
 
 urlpatterns = [

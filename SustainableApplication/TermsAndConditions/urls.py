@@ -1,3 +1,4 @@
+"""Tests for terms and conditions"""
 from django.urls import path
 from . import views
 

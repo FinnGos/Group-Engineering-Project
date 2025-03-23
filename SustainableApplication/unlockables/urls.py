@@ -1,3 +1,4 @@
+"""Tests for unlockables"""
 from django.urls import path
 from .views import buy_item, shop, game_map
 
