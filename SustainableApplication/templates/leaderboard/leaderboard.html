@@ -174,16 +174,33 @@
                 overflow: hidden !important;
             }
             
+            /* Remove the previous ::after fix that didn't work well */
             .bottom-section::after {
+                display: none !important;
+            }
+            
+            /* Add infinite green background that stretches down */
+            body::after {
                 content: "";
                 display: block;
-                position: absolute;
-                bottom: -10px; /* Extend past visible area */
+                position: fixed;
+                bottom: 0;
                 left: 0;
                 width: 100%;
-                height: 20px;
-                background-color: #064e3b; /* Match color of image bottom or adjust as needed */
-                z-index: 5;
+                height: 100vh; /* Use viewport height to ensure it covers everything */
+                background-color: #064e3b; /* Match green color */
+                z-index: -1; /* Place behind all content */
+            }
+            
+            /* Ensure green background extends below all content */
+            .green-extension {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: #064e3b;
+                z-index: 1; /* Above body but below content */
             }
         }
     </style>
@@ -272,4 +289,8 @@
         </div>
     </div>
 </div>
+
+<!-- Add green extension div - only visible on mobile -->
+<div class="green-extension sm:hidden"></div>
+
 {% endblock %}
