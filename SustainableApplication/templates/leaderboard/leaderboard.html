@@ -5,7 +5,7 @@
 <!-- Link to leaderboard.css -->
 <link rel="stylesheet" href="{% static 'leaderboard.css' %}">
 <!-- Image Section -->
-<div class="top-section relative" style="background-color: #d4edda;">
+<div class="top-section relative">
     <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
@@ -32,21 +32,10 @@
     </div>
 </div>
 <!-- Image Section -->
-<div class="bottom-section relative" style="background-color: #d4edda;">
+<div class="bottom-section relative">
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            /* Set the background color to light green */
-            .top-section, .bottom-section {
-                background-color: #d4edda !important; /* Light green background */
-            }
-            
-            /* Make sure the sections cover the full width */
-            .top-section img, .bottom-section img {
-                width: 100vw !important;  /* Ensure images stretch full width */
-                height: auto !important;
-            }
-
             /* Header adjustments */
             .mobile-header-container {
                 padding-top: 0 !important;
@@ -54,10 +43,19 @@
                 margin-top: -20px !important;
                 margin-bottom: 0 !important;
             }
-
-            /* Ensure no white space below top image */
-            .top-section {
-                margin-bottom: 0 !important; /* Remove any space under the top image */
+            
+            /* Header text size reduction for mobile */
+            .top-section h1 {
+                font-size: 1.5rem !important; /* 40% of 6xl */
+                margin-bottom: 0 !important;
+            }
+            .top-section h2 {
+                font-size: 1rem !important; /* 40% of 3xl */
+                margin-bottom: 2px !important;
+            }
+            .top-section h3 {
+                font-size: 1.25rem !important; /* Reduced from 4xl */
+                margin-bottom: 2px !important;
             }
             
             /* Rankings section: Adjust the layout and reduce text size */
@@ -92,7 +90,7 @@
             .points {
                 font-size: 0.75rem !important; /* Reduced font size */
             }
-
+            
             /* Bottom section image adjustments */
             .mobile-bottom-container {
                 padding: 0 !important;
@@ -108,6 +106,48 @@
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
+            }
+            
+            /* Fix the duplicate current points issue - hide desktop version on mobile */
+            .desktop-current-points {
+                display: none !important;
+            }
+            
+            /* Points section - make smaller */
+            .mobile-current-points {
+                padding: 2px !important;
+                width: 60% !important;
+                max-width: 150px !important;
+                position: absolute;
+                bottom: 60px !important;
+                transform: scale(0.4) !important;
+                transform-origin: center bottom !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-current-points h3 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            .mobile-current-points p {
+                font-size: 0.7rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Button adjustments - make smaller */
+            .mobile-buttons-container {
+                bottom: 10px !important;
+                transform: scale(0.7) !important;
+                transform-origin: center bottom !important;
+                width: 100% !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-button {
+                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
+                margin: 1px auto !important;
             }
         }
     </style>
