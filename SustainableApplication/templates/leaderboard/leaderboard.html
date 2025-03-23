@@ -36,7 +36,12 @@
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            /* Header adjustments */
+            /* Move the leaderboard down by half the screen height */
+            .leaderboard {
+                margin-top: 50vh; /* Push down by half the page height */
+            }
+
+            /* Mobile-specific header adjustments */
             .mobile-header-container {
                 padding-top: 0 !important;
                 padding-bottom: 0 !important;
@@ -235,3 +240,4 @@
     </div>
 </div>
 {% endblock %}
+
