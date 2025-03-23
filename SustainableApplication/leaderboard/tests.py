@@ -1,10 +1,9 @@
+"""Tests for leaderboard"""
 from django.test import TestCase
-
-from django.test import TestCase
-from django.urls import reverse
 from home.models import CustomUser
 
 class LeaderboardTest(TestCase):
+   """Test case for leaderboard"""
    def setUp(self):
         self.user = CustomUser.objects.create_user(username="testuser", password="testpass")
         self.client.force_login(self.user)

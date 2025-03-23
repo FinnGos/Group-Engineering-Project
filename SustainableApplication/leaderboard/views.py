@@ -1,11 +1,13 @@
+"""This module contains the view function for the leaderboard page of the site."""
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from home.models import CustomUser
 
 @login_required(login_url='/accounts/login/')  # Redirects unauthenticated users
 def leaderboard(request):
-    # Filter out users with zero points 
-    users = CustomUser.objects.filter(all_time_points__gt=0).order_by('-all_time_points', 'username')  
+    """View function for the leaderboard page of the site."""
+    # Filter out users with zero points
+    users = CustomUser.objects.filter(all_time_points__gt=0).order_by('-all_time_points', 'username') 
 
     ranked_users = []
     last_points = None

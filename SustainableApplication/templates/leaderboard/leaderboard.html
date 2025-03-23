@@ -1,26 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block title %}Leaderboard{% endblock %}
-
 {% block content %}
 <!-- Link to leaderboard.css -->
 <link rel="stylesheet" href="{% static 'leaderboard.css' %}">
-
 <!-- Image Section -->
 <div class="top-section relative">
-    <img src="{% static 'images/leaderboardTop.jpg' %}" alt="Top Image" class="w-full h-auto">
-
+    <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto"> <!-- Reverted to original size -->
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
-        <div class="font-bold outlined-text text-white text-center p-6 mb-6">
-            <h1 class="text-6xl mb-1">Leaderboard</h1>
-            <h2 class="text-3xl mb-4">Can you become the ultimate CarboCollector?</h2>
-            <h3 class="text-4xl">Current Rankings:</h3>
+        <div class="font-bold text-white text-center p-6 mb-6 mobile-header-container">
+            <h1 class="text-xl sm:text-3xl mb-1">Leaderboard</h1> <!-- Reduced font size by 25% -->
+            <h2 class="text-lg sm:text-2xl mb-4">Can you become the ultimate CarboCollector?</h2> <!-- Reduced font size by 25% -->
+            <h3 class="text-xl sm:text-2xl">Current Rankings:</h3> <!-- Reduced font size by 25% -->
         </div>
-
         <!-- Display the Top 5 Leaderboard Entries -->
-        <div class="rankings w-full max-w-3xl">
+        <div class="rankings w-full max-w-3xl mobile-rankings">
             {% for entry in ranked_users %}
             <div class="rank-item bg-gray-700 p-4 mb-4 flex justify-between items-center rounded-lg
                 {% if entry.rank == 1 %}rank-1 border-4
@@ -28,25 +23,149 @@
                 {% elif entry.rank == 3 %}rank-3 border-4
                 {% elif entry.rank == 4 %}rank-4
                 {% elif entry.rank == 5 %}rank-5{% endif %}">
-                <span class="rank text-2xl text-white">{{ entry.rank }}</span>
-                <span class="name text-xl text-white">{{ entry.user.username }}</span>
-                <span class="points text-lg text-white">{{ entry.user.all_time_points }}</span>
+                <span class="rank text-sm sm:text-xl text-white">{{ entry.rank }}</span> <!-- Reduced font size by 25% -->
+                <span class="name text-sm sm:text-lg text-white">{{ entry.user.username }}</span> <!-- Reduced font size by 25% -->
+                <span class="points text-sm sm:text-base text-white">{{ entry.user.all_time_points }}</span> <!-- Reduced font size by 25% -->
             </div>
             {% endfor %}
         </div>
     </div>
 </div>
-
 <!-- Image Section -->
 <div class="bottom-section relative">
-    <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
-        <img src="{% static 'images/leaderboardBottom.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
+    <style>
+        /* Mobile-specific styles */
+        @media (max-width: 640px) {
+            /* Header adjustments */
+            .mobile-header-container {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                margin-top: -20px !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Header text size reduction for mobile */
+            .top-section h1 {
+                font-size: 1.25rem !important; /* Further reduced text size */
+                margin-bottom: 0 !important;
+            }
+            .top-section h2 {
+                font-size: 0.75rem !important; /* Further reduced text size */
+                margin-bottom: 2px !important;
+            }
+            .top-section h3 {
+                font-size: 1rem !important; /* Further reduced text size */
+                margin-bottom: 2px !important;
+            }
+            
+            /* Rankings section: Adjust the layout and reduce text size */
+            .mobile-rankings {
+                margin-top: 20px !important;
+                display: block !important;
+                visibility: visible !important;
+                width: 90% !important;
+                max-width: 90% ! important;
+                position: relative !important;
+                z-index: 50 !important; /* Ensure rankings are on top */
+                transform: scale(0.9) !important; /* Make entire rankings container smaller */
+                transform-origin: top center !important;
+            }
+            
+            /* Shrink leaderboard entries even more */
+            .rank-item {
+                padding: 0.25rem !important;
+                margin-bottom: 0.25rem !important;
+                border-width: 1px !important;
+                min-height: 0 !important;
+            }
+            
+            .rank {
+                font-size: 0.5rem !important; /* Further reduced font size */
+            }
+            
+            .name {
+                font-size: 0.5rem !important; /* Further reduced font size */
+            }
+            
+            .points {
+                font-size: 0.5rem !important; /* Further reduced font size */
+            }
+            
+            /* Bottom section image adjustments */
+            .mobile-bottom-container {
+                padding: 0 !important;
+                border: none !important;
+                background-color: transparent !important;
+                height: 300px !important; /* Increased bottom image height */
+                margin-top: 20px !important; /* Move down */
+                z-index: 10 !important; /* Lower than rankings */
+            }
+            
+            .mobile-bottom-image {
+                height: 300px !important; /* Increased bottom image height */
+                width: 100vw !important;
+                object-fit: cover !important;
+                object-position: center !important;
+            }
+            
+            /* Fix the duplicate current points issue - hide desktop version on mobile */
+            .desktop-current-points {
+                display: none !important;
+            }
+            
+            /* Points section - make smaller */
+            .mobile-current-points {
+                padding: 2px !important;
+                width: 60% !important;
+                max-width: 150px !important;
+                position: absolute;
+                bottom: 60px !important;
+                transform: scale(0.4) !important;
+                transform-origin: center bottom !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-current-points h3 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            .mobile-current-points p {
+                font-size: 0.7rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Button adjustments - make smaller */
+            .mobile-buttons-container {
+                bottom: 10px !important;
+                transform: scale(0.7) !important;
+                transform-origin: center bottom !important;
+                width: 100% !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-button {
+                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
+                margin: 1px auto !important;
+            }
+        }
+    </style>
+
+    <!-- Desktop version of bottom section -->
+    <div class="hidden sm:block image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 800px;"> <!-- Increased bottom image height -->
+        <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
     
-    <!-- Leaderboard Section -->
-    <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+    <!-- Mobile version of bottom section -->
+    <div class="sm:hidden mobile-bottom-container overflow-hidden">
+        <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="mobile-bottom-image">
+    </div>
+   
+    <!-- Desktop Leaderboard Section -->
+    <div class="leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white hidden sm:flex">
         <!-- Current Player's Points Section -->
-        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
+        <div class="current-points desktop-current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
             <h3 class="text-3xl mb-4">Your Current Points</h3>
             <p class="text-xl">
                 {% if request.user.is_authenticated %}
@@ -57,18 +176,54 @@
             </p>
         </div>
     </div>
-
-    <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
-            Go to Your Daily Tasks
-        </a>
-
-        <!-- "How to Play" Button -->
-        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
-            How to Play
-        </button>
-
+    
+    <!-- Mobile Content Overlay (Points + Buttons) -->
+    <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
+        <!-- Current Player's Points Section - MOBILE -->
+        <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg">
+            <h3 class="text-3xl mb-2">Your Current Points</h3>
+            <p class="text-xl">
+                {% if request.user.is_authenticated %}
+                    Points: <strong>{{ request.user.all_time_points }}</strong>
+                {% else %}
+                    Please log in to see your points.
+                {% endif %}
+            </p>
+        </div>
+        
+        <!-- Buttons Section - Mobile -->
+        <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute">
+            <div class="flex flex-col items-center space-y-1">
+                <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
+                    Go to your Daily Tasks
+                </a>
+                <button @click="open = true" class="mobile-button bg-green-700 text-white rounded-lg hover:bg-green-800 px-4 py-2 text-sm">
+                    How to Play
+                </button>
+            </div>
+            
+            <!-- Popup Modal -->
+            <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+                    <h2 class="text-2xl font-bold mb-4">How to Play</h2>
+                    <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                    <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Buttons Section - Desktop -->
+    <div x-data="{ open: false }" class="hidden sm:block absolute bottom-20 w-full text-center">
+        <div class="flex justify-center">
+            <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 mx-2 inline-block" style="max-width: 250px;">
+                Go to your Daily Tasks
+            </a>
+            <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 mx-2 inline-block" style="max-width: 250px;">
+                How to Play
+            </button>
+        </div>
+        
         <!-- Popup Modal -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
@@ -79,5 +234,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}

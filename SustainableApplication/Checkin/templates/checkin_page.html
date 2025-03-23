@@ -1,0 +1,52 @@
+<!-- this is an HTML page for a check-in system that uses geolocation 
+to get the user's location and send it to the Django backend. -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-In Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <style>
+        #map {
+            width: 600px; 
+            height: 300px; 
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check-In System</h1>
+
+    {% if message %}
+        <p class="success-message">{{ message }}</p>
+        {% if task %}
+        <script>
+            setTimeout(function () {
+                window.location.href = "/tasks/";
+            }, 7000);
+        </script>
+        {% endif %}
+    {% elif error %}
+        <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <div id="map"></div>
+
+    <!-- Hidden element to store task ID -->
+    <span id="taskData" data-task-id="{{ task.id|default:0 }}"></span>
+
+    <button onclick="getLocation()">Check-In</button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="{% static 'js/checkin.js' %}"></script>
+</body>
+</html>

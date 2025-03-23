@@ -1,3 +1,4 @@
+"""Views for the lootboxes app"""
 import random
 from django.shortcuts import render
 from django.http import JsonResponse
@@ -8,6 +9,7 @@ from unlockables.models import Building
 
 LOOTBOX_COST = 100
 CHANCE = 0.4
+REFUND = 60
 
 
 @login_required
@@ -17,14 +19,12 @@ def open_lootbox(request):
 
     if request.method == "POST":
         if user.current_points < LOOTBOX_COST:
-            return JsonResponse(
-                {
-                    "success": False,
-                    "error": "Not enough points to open a lootbox",
-                    "new_points": user.current_points,
-                },
-                status=400,
-            )
+            response_data = {
+                "success": False,
+                "error": "Not enough points to open a lootbox",
+                "new_points": user.current_points,
+            }
+            return JsonResponse(response_data)
 
         user.current_points -= LOOTBOX_COST  # Deduct points
         user.save()
@@ -39,7 +39,7 @@ def open_lootbox(request):
 
             if item in user.collectables_owned.all():
                 is_duplicate = True
-                user.current_points += LOOTBOX_COST  # Refund points for duplicate
+                user.current_points += REFUND # Refund points
             else:
                 user.collectables_owned.add(item)  # Add new collectable to user's collection
                 
@@ -52,7 +52,7 @@ def open_lootbox(request):
 
         # Prepare JSON response
         response_data = {
-            "success": True,
+            "success": True,    
             "new_points": user.current_points,  # Always include updated points
             "loot_item": None,
             "is_duplicate": is_duplicate,  # Send duplicate info

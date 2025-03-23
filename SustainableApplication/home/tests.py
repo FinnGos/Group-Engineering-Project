@@ -1,15 +1,14 @@
+"""Tests for Home"""
+from datetime import datetime, timedelta
+import os
+import logging
+import tempfile
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from home.models import CustomUser
 from home.forms import CustomUserCreationForm
-from datetime import datetime, timedelta
-import os
-import logging
-import tempfile
 from home.views import cleanup_old_logs
-from Checkin.models import Location
-from django.conf import settings
 
 TEST_LOG_FILE = os.path.join(tempfile.gettempdir(), "django_test_logs.log")
 
@@ -308,8 +307,6 @@ def create_test_log_file():
 
 def test_cleanup_old_logs():
     """Test the cleanup_old_logs function."""
-    global LOG_FILE_PATH
-    LOG_FILE_PATH = TEST_LOG_FILE  # Temporarily set the log file to the test file
 
     create_test_log_file()
     cleanup_old_logs()

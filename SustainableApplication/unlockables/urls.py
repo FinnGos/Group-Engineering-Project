@@ -1,3 +1,4 @@
+"""URLs for the unlockables app."""
 from django.urls import path
 from .views import buy_item, shop, game_map, clean_rubbish
 

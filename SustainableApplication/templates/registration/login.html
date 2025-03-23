@@ -27,16 +27,45 @@
       margin-bottom: 10px;
       text-align: center;
     }
+
+    /* Background Section */
+    .background-section {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      background-image: url("{% static 'images/signin.jpg' %}");
+      background-size: cover; /* Make sure the image covers the entire area */
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Sign In Form Styling */
+    .form-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .form-section {
+        padding: 15px;
+      }
+    }
   </style>
 {% endblock %}
 
 {% block content %}
 <!-- Background Image Section -->
-<div class="background-section relative">
-  <img src="{% static 'images/signin.jpg' %}" alt="Background Image" class="w-full h-auto">
+<div class="background-section">
 
   <!-- Sign In Form Section -->
-  <div class="form-section moved-down absolute inset-0 flex flex-col justify-center items-center text-white">
+  <div class="form-section">
     <h1 class="text-6xl font-bold mb-6 outlined-text">Sign In</h1>
     <p class="text-3xl mb-6 outlined-text">Welcome back! Please log in to continue.</p>
 
@@ -64,7 +93,7 @@
     {% endif %}
 
     <!-- Sign In Form -->
-    <form method="post" class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg" action="">
+    <form method="post" class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
       {% csrf_token %}
       <!-- Username Field -->
       <div class="mb-4">
@@ -95,3 +124,4 @@
   </div>
 </div>
 {% endblock %}
+

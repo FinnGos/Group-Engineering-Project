@@ -1,9 +1,11 @@
+"""Tests for lootboxes"""
 from django.test import TestCase
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from collectables.models import Collectable
 
 class LootboxTests(TestCase):
+    """Test case for lootboxes"""
     def setUp(self):
         """Set up a test user and collectables."""
         self.user = get_user_model().objects.create_user(username="testuser", password="testpass")
