@@ -48,6 +48,23 @@
       }
     });
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the current URL
+      const currentUrl = window.location.pathname;
+
+      // Disable navbar buttons if on login or signup pages
+      const navbarLinks = document.querySelectorAll("nav a");
+
+      if (currentUrl.includes("login") || currentUrl.includes("signup")) {
+        navbarLinks.forEach(link => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();  // Prevent navigation if on login or signup page
+          });
+        });
+      }
+    });
+  </script>
 
   {% block extra_css %}{% endblock %}
 </head>
@@ -64,23 +81,33 @@
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
 
-        {% if user.is_authenticated %}
-          <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-          <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-          <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        <!-- Check if user is on login/signup page, and disable specific links -->
+        {% if request.path == '/signup/' or request.path == '/login/' %}
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
         {% else %}
-          <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        {% endif %}
+        {% endif %}
+
+        {% if not user.is_authenticated %}
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
         {% endif %}
 
         {% if user.is_authenticated %}
-          <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
         {% endif %}
 
-        <li><a href="http://127.0.0.1:8000/leaderboard/" class="hover:underline">Leaderboard</a></li>
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="hover:underline text-red-500">Delete Account</a></li>
+        <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="hover:underline text-red-500">Delete
+            Account</a></li>
         {% endif %}
       </ul>
 
@@ -98,17 +125,28 @@
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
 
-        {% if user.is_authenticated %}
-          <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-          <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-          <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-          <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-          <li><a href="{% url 'delete_account' %}" id="delete-account-link-mobile" class="hover:underline text-red-500">Delete Account</a></li>
+        <!-- Check if user is on login/signup page, and disable specific links for mobile -->
+        {% if request.path == '/signup/' or request.path == '/login/' %}
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
+        <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
         {% else %}
-          <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        {% endif %}
         {% endif %}
 
-        <li><a href="http://127.0.0.1:8000/leaderboard/" class="hover:underline">Leaderboard</a></li>
+        {% if not user.is_authenticated %}
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+        {% endif %}
+
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
       </ul>

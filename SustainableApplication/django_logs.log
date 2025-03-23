@@ -213,3 +213,655 @@ django.server INFO 2025-03-22 19:01:44,832 basehttp 102535 140700078307008 "GET 
 django.server INFO 2025-03-22 19:01:44,948 basehttp 102535 140700078307008 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
 django.server INFO 2025-03-22 19:01:44,948 basehttp 102535 140700064138944 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
 django.server INFO 2025-03-22 19:01:46,592 basehttp 102535 140700078307008 "GET /home/ HTTP/1.1" 200 7949
+django.utils.autoreload INFO 2025-03-22 20:35:54,650 autoreload 132549 139625343238272 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 20:35:56,479 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 6785
+django.server INFO 2025-03-22 20:35:56,543 basehttp 132549 139625226041024 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 20:35:56,546 basehttp 132549 139625226041024 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 20:35:56,671 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:35:56,671 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:35:58,637 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 7974
+django.server INFO 2025-03-22 20:36:42,791 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 7574
+django.server INFO 2025-03-22 20:36:57,779 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django.server INFO 2025-03-22 20:37:15,688 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django.server INFO 2025-03-22 20:37:17,454 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 7616
+django.server INFO 2025-03-22 20:37:19,192 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 7616
+django.server INFO 2025-03-22 20:37:20,151 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 8405
+django WARNING 2025-03-22 20:37:34,551 views 132549 139625226041024 Failed signup attempt.
+django.server INFO 2025-03-22 20:37:34,552 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 200 8642
+django INFO 2025-03-22 20:37:45,821 views 132549 139625226041024 User logged in: thisishell
+django INFO 2025-03-22 20:37:45,823 views 132549 139625226041024 New user signed up: thisishell
+django.server INFO 2025-03-22 20:37:45,835 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:37:45,843 basehttp 132549 139625226041024 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:37:45,943 basehttp 132549 139625226041024 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-22 20:37:45,944 basehttp 132549 139625211872960 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-22 20:37:47,896 basehttp 132549 139625226041024 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:37:48,805 basehttp 132549 139625226041024 "GET /get_location/1/ HTTP/1.1" 200 11183
+django.server WARNING 2025-03-22 20:37:48,864 basehttp 132549 139625211872960 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-22 20:37:48,864 basehttp 132549 139625226041024 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server INFO 2025-03-22 20:37:48,864 basehttp 132549 139625203480256 "GET /static/css/map.css HTTP/1.1" 200 851
+django.server INFO 2025-03-22 20:37:48,871 basehttp 132549 139625203480256 "GET /static/js/checkin.js HTTP/1.1" 200 1980
+django.server INFO 2025-03-22 20:37:48,872 basehttp 132549 139625226041024 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server WARNING 2025-03-22 20:37:48,901 basehttp 132549 139625211872960 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.request WARNING 2025-03-22 20:44:36,197 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:44:36,197 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.security.csrf WARNING 2025-03-22 20:44:37,951 log 132549 139625226041024 Forbidden (CSRF token from POST incorrect.): /home/signup/
+django.server WARNING 2025-03-22 20:44:37,951 basehttp 132549 139625226041024 "POST /home/signup/ HTTP/1.1" 403 2503
+django.server INFO 2025-03-22 20:44:39,205 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 9179
+django.server INFO 2025-03-22 20:44:40,659 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.server INFO 2025-03-22 20:44:42,431 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.server INFO 2025-03-22 20:44:55,777 basehttp 132549 139625226041024 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django.request WARNING 2025-03-22 20:44:55,987 log 132549 139625226041024 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:44:55,987 basehttp 132549 139625226041024 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:44:56,764 basehttp 132549 139625226041024 "GET /home/signup/ HTTP/1.1" 200 9726
+django.utils.autoreload INFO 2025-03-22 20:48:58,522 autoreload 132549 139625343238272 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 20:48:58,764 autoreload 135738 140180470964352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-22 20:49:15,654 autoreload 135738 140180470964352 /home/finn/Group-Engineering-Project/SustainableApplication/SustainableApplication/settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-22 20:49:15,838 autoreload 135863 139955367571584 Watching for file changes with StatReloader
+django.server INFO 2025-03-22 20:49:21,589 basehttp 135863 139955316717248 "GET /home/signup/ HTTP/1.1" 200 9726
+django.request WARNING 2025-03-22 20:49:21,756 log 135863 139955316717248 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:49:21,757 basehttp 135863 139955316717248 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:49:23,514 basehttp 135863 139955316717248 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-22 20:49:28,178 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:49:28,191 basehttp 135863 139955316717248 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:49:28,201 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 8639
+django.server INFO 2025-03-22 20:49:29,383 basehttp 135863 139955316717248 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-22 20:54:31,337 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:54:31,349 basehttp 135863 139955316717248 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:54:31,362 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9081
+django.request WARNING 2025-03-22 20:54:31,545 log 135863 139955316717248 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 20:54:31,545 basehttp 135863 139955316717248 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 20:57:18,781 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:57:18,794 basehttp 135863 139955316717248 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-22 20:57:19,099 basehttp 135863 139955316717248 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-22 20:57:19,111 basehttp 135863 139955316717248 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-22 20:57:19,169 log 135863 139955316717248 Not Found: /favicon.ico
+django INFO 2025-03-22 20:57:25,209 views 135863 139955316717248 User logged in: nightmare
+django.server INFO 2025-03-22 20:57:25,221 basehttp 135863 139955316717248 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 20:57:25,234 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 20:57:25,335 basehttp 135863 139955316717248 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-22 20:57:25,359 basehttp 135863 139955307275968 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-22 20:57:25,361 basehttp 135863 139955316717248 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.server INFO 2025-03-22 20:57:30,238 basehttp 135863 139955316717248 "GET /lootboxes/open/ HTTP/1.1" 200 11179
+django.server WARNING 2025-03-22 20:57:30,304 basehttp 135863 139955316717248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:30,308 basehttp 135863 139955316717248 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-22 20:57:30,313 basehttp 135863 139955307275968 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 200 2674413
+django.server WARNING 2025-03-22 20:57:30,329 basehttp 135863 139955316717248 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:31,039 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:31,854 basehttp 135863 139955307275968 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 20:57:32,680 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:33,997 basehttp 135863 139955307275968 "GET /collectables/ HTTP/1.1" 200 6119
+django.server INFO 2025-03-22 20:57:34,318 basehttp 135863 139955307275968 "GET /lootboxes/open/ HTTP/1.1" 200 11179
+django.server WARNING 2025-03-22 20:57:34,381 basehttp 135863 139955307275968 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server WARNING 2025-03-22 20:57:34,405 basehttp 135863 139955307275968 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-22 20:57:49,862 basehttp 135863 139955307275968 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 21:00:33,658 basehttp 135863 139955307275968 "GET /home/ HTTP/1.1" 200 9181
+django.request WARNING 2025-03-22 21:00:33,872 log 135863 139955307275968 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 21:00:33,873 basehttp 135863 139955307275968 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 21:00:35,768 basehttp 135863 139955307275968 "GET /home/ HTTP/1.1" 200 9181
+django.server INFO 2025-03-22 21:01:53,653 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 21:01:55,249 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9181
+django.server INFO 2025-03-22 21:01:55,314 basehttp 135863 139955316717248 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 21:01:55,316 basehttp 135863 139955297834688 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-22 21:03:11,895 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9181
+django.server INFO 2025-03-22 21:03:12,731 basehttp 135863 139955316717248 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-22 21:03:52,214 basehttp 135863 139955297834688 "GET /home/ HTTP/1.1" 200 9065
+django.request WARNING 2025-03-22 21:03:52,403 log 135863 139955297834688 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 21:03:52,403 basehttp 135863 139955297834688 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 21:05:12,908 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9065
+django.server INFO 2025-03-22 21:05:13,655 basehttp 135863 139955316717248 "GET /home/ HTTP/1.1" 200 9065
+django.server INFO 2025-03-22 21:05:14,794 basehttp 135863 139955316717248 "GET /map/ HTTP/1.1" 200 9595
+django.server INFO 2025-03-22 21:05:14,863 basehttp 135863 139955316717248 "GET /media/buildings/Sports_park_pixel_locked.png HTTP/1.1" 200 9801
+django.server INFO 2025-03-22 21:05:14,866 basehttp 135863 139955307275968 "GET /media/buildings/Forum_locked.png HTTP/1.1" 200 26454
+django.server INFO 2025-03-22 21:05:14,871 basehttp 135863 139955289441984 "GET /media/items/solar_panel_heFXH0T.png HTTP/1.1" 200 292058
+django.server INFO 2025-03-22 21:05:14,871 basehttp 135863 139955281049280 "GET /media/items/tree_TrrWjHH_UCFOgZZ.png HTTP/1.1" 200 85207
+django.server INFO 2025-03-22 21:05:14,939 basehttp 135863 139955289441984 "GET /static/images/grass_background.png HTTP/1.1" 200 967284
+django.server INFO 2025-03-22 21:05:16,608 basehttp 135863 139955289441984 "GET /shop/ HTTP/1.1" 200 8532
+django.server INFO 2025-03-22 21:05:18,075 basehttp 135863 139955289441984 "GET /map/ HTTP/1.1" 200 9595
+django.server INFO 2025-03-22 21:05:18,815 basehttp 135863 139955289441984 "GET /home/ HTTP/1.1" 200 9065
+django.server INFO 2025-03-22 21:05:19,836 basehttp 135863 139955289441984 "GET /map/ HTTP/1.1" 200 9595
+django.server INFO 2025-03-22 21:05:20,456 basehttp 135863 139955289441984 "GET /shop/ HTTP/1.1" 200 8532
+django.server INFO 2025-03-22 21:05:20,730 basehttp 135863 139955289441984 "POST /buy/item/2/ HTTP/1.1" 302 0
+django.server INFO 2025-03-22 21:05:20,742 basehttp 135863 139955289441984 "GET /shop/ HTTP/1.1" 200 8930
+django.server INFO 2025-03-22 21:05:22,042 basehttp 135863 139955289441984 "GET /map/ HTTP/1.1" 200 9706
+django.server INFO 2025-03-22 21:05:24,545 basehttp 135863 139955289441984 "GET /shop/ HTTP/1.1" 200 8532
+django.server INFO 2025-03-22 21:07:47,845 basehttp 135863 139955289441984 "GET /home/ HTTP/1.1" 200 9064
+django.request WARNING 2025-03-22 21:07:48,028 log 135863 139955289441984 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 21:07:48,028 basehttp 135863 139955289441984 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 21:12:00,998 basehttp 135863 139955289441984 "GET /home/ HTTP/1.1" 200 9064
+django.request WARNING 2025-03-22 21:12:01,142 log 135863 139955289441984 Not Found: /favicon.ico
+django.server WARNING 2025-03-22 21:12:01,142 basehttp 135863 139955289441984 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-22 21:12:01,703 basehttp 135863 139955289441984 "GET /home/ HTTP/1.1" 200 9064
+django.utils.autoreload INFO 2025-03-23 14:09:56,246 autoreload 3953 140658757853312 Watching for file changes with StatReloader
+django.server INFO 2025-03-23 14:10:03,260 basehttp 3953 140658635437760 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:10:03,277 basehttp 3953 140658635437760 "GET /accounts/login/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-23 14:10:03,389 basehttp 3953 140658635437760 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-23 14:10:03,784 basehttp 3953 140658635437760 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-23 14:10:03,846 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:10:03,846 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django INFO 2025-03-23 14:10:27,109 views 3953 140658635437760 User logged in: nightmare
+django.server INFO 2025-03-23 14:10:27,119 basehttp 3953 140658635437760 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:10:27,126 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9064
+django.server INFO 2025-03-23 14:10:27,222 basehttp 3953 140658635437760 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-23 14:10:27,223 basehttp 3953 140658627045056 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.request WARNING 2025-03-23 14:10:27,346 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:10:27,347 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:10:33,579 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8856
+django.server INFO 2025-03-23 14:12:57,592 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.request WARNING 2025-03-23 14:12:57,730 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:12:57,730 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:13:21,207 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.server INFO 2025-03-23 14:13:22,090 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.server INFO 2025-03-23 14:13:25,658 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8865
+django.server INFO 2025-03-23 14:18:52,298 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.request WARNING 2025-03-23 14:18:52,469 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:18:52,469 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:18:53,032 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:18:53,701 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:19:03,312 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:24:15,713 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9028
+django.request WARNING 2025-03-23 14:24:15,869 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:24:15,869 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:24:16,597 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9028
+django.server INFO 2025-03-23 14:24:23,885 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:24:33,047 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:24:33,709 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:24:34,625 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 8999
+django.server INFO 2025-03-23 14:24:41,857 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9028
+django.server INFO 2025-03-23 14:28:29,414 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.request WARNING 2025-03-23 14:28:29,563 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:28:29,564 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:28:30,107 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.server INFO 2025-03-23 14:28:30,798 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.server INFO 2025-03-23 14:28:33,319 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.server INFO 2025-03-23 14:29:18,708 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.request WARNING 2025-03-23 14:29:18,877 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:29:18,878 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:29:24,562 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9074
+django.server INFO 2025-03-23 14:29:26,315 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9074
+django.server INFO 2025-03-23 14:29:31,084 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.server INFO 2025-03-23 14:29:37,574 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9073
+django.server INFO 2025-03-23 14:29:57,258 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9122
+django.server INFO 2025-03-23 14:30:00,167 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9122
+django.server INFO 2025-03-23 14:31:00,788 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9013
+django.request WARNING 2025-03-23 14:31:00,910 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:31:00,911 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:31:21,897 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9013
+django.server INFO 2025-03-23 14:31:22,605 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9072
+django.server INFO 2025-03-23 14:31:39,780 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:34:14,909 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.request WARNING 2025-03-23 14:34:15,062 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:34:15,062 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:34:15,499 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:01,539 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:01,539 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 302 0
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:01,548 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:01,548 basehttp 3953 140658627045056 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.server INFO 2025-03-23 14:35:01,632 basehttp 3953 140658627045056 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-23 14:35:01,841 basehttp 3953 140658627045056 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-23 14:35:01,900 log 3953 140658627045056 Not Found: /favicon.ico
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:06,770 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:06,771 basehttp 3953 140658627045056 "GET /home/signup/ HTTP/1.1" 200 8952
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:07,964 base 3953 140658627045056 Session data corrupted
+django.server INFO 2025-03-23 14:35:07,964 basehttp 3953 140658627045056 "GET /accounts/login/?next=/leaderboard/ HTTP/1.1" 200 8153
+django.security.SuspiciousSession WARNING 2025-03-23 14:35:15,323 base 3953 140658627045056 Session data corrupted
+django INFO 2025-03-23 14:35:15,351 views 3953 140658627045056 User logged in: nightmare
+django.server INFO 2025-03-23 14:35:15,362 basehttp 3953 140658627045056 "POST /accounts/login/?next=/leaderboard/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:15,377 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:15,504 basehttp 3953 140658627045056 "GET /static/leaderboard.css HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:15,520 basehttp 3953 140658627045056 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:15,522 basehttp 3953 140658618652352 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:17,510 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:17,563 basehttp 3953 140658627045056 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:17,666 basehttp 3953 140658627045056 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-23 14:35:18,769 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:19,919 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:20,150 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:21,300 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:35:21,349 basehttp 3953 140658635437760 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-23 14:35:21,355 basehttp 3953 140658610259648 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-23 14:35:21,356 basehttp 3953 140658635437760 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.request WARNING 2025-03-23 14:35:21,452 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:35:21,452 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:35:22,511 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9184
+django INFO 2025-03-23 14:35:23,481 views 3953 140658627045056 User logged out: nightmare
+django.server INFO 2025-03-23 14:35:23,482 basehttp 3953 140658627045056 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:23,490 basehttp 3953 140658627045056 "GET /home/accounts/login/ HTTP/1.1" 200 8927
+django INFO 2025-03-23 14:35:35,590 views 3953 140658627045056 User logged in: nightmare
+django.server INFO 2025-03-23 14:35:35,601 basehttp 3953 140658627045056 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 14:35:35,617 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9184
+django.server INFO 2025-03-23 14:35:37,826 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9287
+django.server INFO 2025-03-23 14:37:17,866 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9173
+django.request WARNING 2025-03-23 14:37:18,051 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:37:18,051 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.request WARNING 2025-03-23 14:37:18,941 log 3953 140658635437760 Not Found: /home/{^ url 'leaderboard' %}
+django.server WARNING 2025-03-23 14:37:18,941 basehttp 3953 140658635437760 "GET /home/%7B%5E%20url%20'leaderboard'%20%%7D HTTP/1.1" 404 8133
+django.request WARNING 2025-03-23 14:37:37,991 log 3953 140658635437760 Not Found: /home/{^ url 'leaderboard' %}
+django.server WARNING 2025-03-23 14:37:37,991 basehttp 3953 140658635437760 "GET /home/%7B%5E%20url%20'leaderboard'%20%%7D HTTP/1.1" 404 8133
+django.server INFO 2025-03-23 14:37:58,714 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9163
+django.request WARNING 2025-03-23 14:37:58,881 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:37:58,881 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:37:59,590 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9266
+django.server INFO 2025-03-23 14:39:00,346 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:41:11,458 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.request WARNING 2025-03-23 14:41:11,593 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:41:11,594 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:42:39,135 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:40,483 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:41,681 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:42:42,662 basehttp 3953 140658627045056 "GET /lootboxes/open/ HTTP/1.1" 200 11137
+django.server WARNING 2025-03-23 14:42:42,719 basehttp 3953 140658627045056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-23 14:42:42,722 basehttp 3953 140658627045056 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-23 14:42:42,722 basehttp 3953 140658610259648 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-23 14:42:42,741 basehttp 3953 140658627045056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-23 14:42:43,390 basehttp 3953 140658610259648 "GET /collectables/ HTTP/1.1" 200 6077
+django.server INFO 2025-03-23 14:42:43,880 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:44,864 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:13,122 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:14,347 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:27,777 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:43:29,587 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:45:31,291 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.request WARNING 2025-03-23 14:45:31,437 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:45:31,437 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:45:36,057 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.request WARNING 2025-03-23 14:45:36,194 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:45:36,194 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:45:38,746 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.server INFO 2025-03-23 14:46:26,164 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:46:26,873 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:46:27,394 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:47:39,951 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8896
+django.request WARNING 2025-03-23 14:47:40,102 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:47:40,103 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:48:40,612 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:48:42,347 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:48:44,560 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:50:55,951 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9560
+django.server INFO 2025-03-23 14:50:59,837 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9560
+django.server INFO 2025-03-23 14:52:04,404 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:52:05,399 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:52:28,379 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:52:29,261 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:55:31,403 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.request WARNING 2025-03-23 14:55:31,526 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:55:31,527 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:56:39,768 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.request WARNING 2025-03-23 14:56:39,922 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:56:39,922 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:56:40,563 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:56:43,825 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:56:44,473 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:56:44,773 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:56:45,777 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:57:32,724 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9585
+django.server INFO 2025-03-23 14:57:33,410 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9585
+django.server INFO 2025-03-23 14:58:06,056 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:07,661 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:12,291 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:21,690 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:44,827 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 15:00:07,958 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 15:02:02,410 basehttp 3953 140658635437760 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 15:09:44,740 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 10825
+django.request WARNING 2025-03-23 15:09:44,882 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:09:44,883 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:15:22,712 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 11326
+django.request WARNING 2025-03-23 15:15:22,877 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:15:22,877 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:25:10,630 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 12048
+django.request WARNING 2025-03-23 15:25:10,751 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:25:10,751 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:25:12,828 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 12048
+django.server INFO 2025-03-23 15:26:45,056 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 12955
+django.server INFO 2025-03-23 15:31:34,377 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 13655
+django.request WARNING 2025-03-23 15:31:34,532 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:31:34,533 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:42:25,964 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 14765
+django.request WARNING 2025-03-23 15:42:27,341 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:42:27,342 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:46:07,583 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 15443
+django.request WARNING 2025-03-23 15:46:07,728 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:46:07,728 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:49:17,650 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 16017
+django.request WARNING 2025-03-23 15:49:17,756 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:49:17,756 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:53:31,084 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 16017
+django.request WARNING 2025-03-23 15:53:31,283 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:53:31,283 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:54:57,004 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 16624
+django.request WARNING 2025-03-23 15:54:57,133 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:54:57,134 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 16:18:33,370 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 18401
+django.request WARNING 2025-03-23 16:18:33,549 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 16:18:33,549 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 16:20:27,397 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 18401
+django.request WARNING 2025-03-23 16:20:27,510 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 16:20:27,510 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 16:22:19,854 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 11569
+django.request WARNING 2025-03-23 16:22:20,007 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 16:22:20,007 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 16:30:29,157 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 16528
+django.request WARNING 2025-03-23 16:30:29,328 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 16:30:29,328 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 16:35:12,485 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 14337
+django.request WARNING 2025-03-23 16:35:12,631 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 16:35:12,632 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:03:49,743 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 14954
+django.server INFO 2025-03-23 18:03:49,796 basehttp 3953 140658635437760 "GET /static/leaderboard.css HTTP/1.1" 200 1892
+django.server INFO 2025-03-23 18:03:49,968 basehttp 3953 140658610259648 "GET /static/images/leaderboardBottom_v2.jpg HTTP/1.1" 200 31621
+django.server INFO 2025-03-23 18:03:49,971 basehttp 3953 140658635437760 "GET /static/images/leaderboardTop_v2.jpg HTTP/1.1" 200 1165356
+django.request WARNING 2025-03-23 18:03:50,053 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:03:50,053 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.request ERROR 2025-03-23 18:10:42,243 log 3953 140658610259648 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-23 18:10:42,244 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 500 184742
+django.request WARNING 2025-03-23 18:10:42,380 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:10:42,380 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.request ERROR 2025-03-23 18:10:45,923 log 3953 140658610259648 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-23 18:10:45,924 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 500 184742
+django.request ERROR 2025-03-23 18:11:02,877 log 3953 140658610259648 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-23 18:11:02,878 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 500 184845
+django.request ERROR 2025-03-23 18:11:04,564 log 3953 140658610259648 Internal Server Error: /leaderboard/
+Traceback (most recent call last):
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/SustainableApplication/leaderboard/views.py", line 25, in leaderboard
+    return render(request, 'leaderboard/leaderboard.html', {'ranked_users': ranked_users})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/finn/Group-Engineering-Project/.venv/lib/python3.12/site-packages/django/template/base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'block'. Looking for one of: endblock.
+django.server ERROR 2025-03-23 18:11:04,565 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 500 184845
+django.server INFO 2025-03-23 18:11:07,257 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16409
+django.server INFO 2025-03-23 18:11:26,434 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16852
+django.request WARNING 2025-03-23 18:11:26,578 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:11:26,578 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:17:38,163 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16857
+django.request WARNING 2025-03-23 18:17:38,328 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:17:38,328 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:19:16,049 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16857
+django.request WARNING 2025-03-23 18:19:16,196 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:19:16,197 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:21:22,524 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16492
+django.request WARNING 2025-03-23 18:21:22,640 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:21:22,640 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:23:58,059 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16492
+django.request WARNING 2025-03-23 18:23:58,181 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:23:58,181 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:24:55,321 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16514
+django.request WARNING 2025-03-23 18:24:55,476 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:24:55,477 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:29:21,642 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16505
+django.request WARNING 2025-03-23 18:29:21,803 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:29:21,803 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:33:15,009 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16581
+django.request WARNING 2025-03-23 18:33:15,174 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:33:15,174 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:33:44,998 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16514
+django.request WARNING 2025-03-23 18:33:45,163 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:33:45,163 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:33:48,176 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16514
+django.server INFO 2025-03-23 18:39:39,356 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16744
+django.request WARNING 2025-03-23 18:39:39,534 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:39:39,534 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:39:56,277 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16744
+django.request WARNING 2025-03-23 18:39:56,432 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:39:56,433 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:39:57,484 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16581
+django.server INFO 2025-03-23 18:40:57,369 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 14908
+django.server INFO 2025-03-23 18:43:33,933 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16514
+django.request WARNING 2025-03-23 18:43:34,109 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:43:34,109 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:43:35,330 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16514
+django.server INFO 2025-03-23 18:45:59,451 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16581
+django.request WARNING 2025-03-23 18:45:59,574 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:45:59,575 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 18:54:58,913 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16581
+django.request WARNING 2025-03-23 18:54:59,086 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:54:59,086 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
