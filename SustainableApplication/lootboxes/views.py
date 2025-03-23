@@ -22,7 +22,7 @@ def open_lootbox(request):
                 "error": "Not enough points to open a lootbox",
                 "new_points": user.current_points,
             }
-            return JsonResponse(response_data) 
+            return JsonResponse(response_data)
 
         user.current_points -= LOOTBOX_COST  # Deduct points
         user.save()
