@@ -1,23 +1,61 @@
 #loot-result {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    min-height: 200px; /* Ensure the result area has enough height */
-    text-align: center; /* Optional: Center text within the div */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.lootbox-result {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.lootbox-result img {
+  transform-origin: center;
+  opacity: 1;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.animated-card {
+  animation: spin 1.5s ease-out forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0;
   }
-  
-  .lootbox-result {
-    width: 100%;
-    max-width: 500px; /* Optional: Limit the width */
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: auto; /* Center horizontally */
+  100% {
+    transform: rotate(720deg) scale(1);
+    opacity: 1;
   }
-  
-  .lootbox-result img {
-    display: block; /* Ensures the image is treated as a block element */
-    margin: 20px auto; /* Centers the image horizontally and adds some space above/below it */
+}
+
+/* Confetti styles */
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: random;
+  opacity: 0;
+  animation: confetti-fall 2s infinite ease-out;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%);
   }
-  
+  100% {
+    transform: translateY(100vh);
+  }
+}
