@@ -1,13 +1,10 @@
-{% extends "base.html" %} {% load static %} 
-
-{% block title %}Lootbox{%endblock %} 
-
+{% extends "base.html" %} {% load static %} {% block title %}Lootbox{%endblock%}
 {% block content %}
 <!-- Link to open_lootbox.css -->
-<link rel="stylesheet" href="{% static 'css/open_lootbox.css' %}" />
+<link rel="stylesheet" href="{% static 'open_lootbox.css' %}" />
 
 <!-- Image Section -->
-<div class="top-section relative">
+<div class="top-section relative" id="box">
   <div
     class="image-container bg-green-700 overflow-hidden"
     style="height: 1000px"
@@ -34,21 +31,36 @@
     <!-- Lootbox Popup Section -->
     <div x-data="{ openLootbox: false }" class="mb-6">
       <!-- Lootbox Image (Triggers Popup) -->
-      <img @click="openLootbox = true" 
-          src="{% static 'images/lootbox.png' %}" 
-          alt="Lootbox" 
-          class="w-48 h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer">
+      <img
+        @click="openLootbox = true"
+        src="{% static 'images/lootbox.png' %}"
+        alt="Lootbox"
+        class="w-48 h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+      />
 
       <!-- Popup Modal -->
-      <div x-show="openLootbox" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div class="bg-white p-4 rounded-lg shadow-lg max-w-md text-center">
-              <h2 class="text-gray-700 text-2xl font-bold mb-4">Mystery Lootbox</h2>
-              <p class="text-gray-700 p-2">Points earned can be spent here.</p>
-              <p class="text-gray-700">Opening lootboxes gives you a chance to earn CarboCards for your collection.</p>
-              <p class="text-gray-700">Duplicates will return back points.</p>
-              <p class="text-gray-700 p-4">Click 'Open Lootbox' to see what you get!</p>
-              <button @click="openLootbox = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
-          </div>
+      <div
+        x-show="openLootbox"
+        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+      >
+        <div class="bg-white p-4 rounded-lg shadow-lg max-w-md text-center">
+          <h2 class="text-gray-700 text-2xl font-bold mb-4">Mystery Lootbox</h2>
+          <p class="text-gray-700 p-2">Points earned can be spent here.</p>
+          <p class="text-gray-700">
+            Opening lootboxes gives you a chance to earn CarboCards for your
+            collection.
+          </p>
+          <p class="text-gray-700">Duplicates will return back points.</p>
+          <p class="text-gray-700 p-4">
+            Click 'Open Lootbox' to see what you get!
+          </p>
+          <button
+            @click="openLootbox = false"
+            class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg"
+          >
+            Close
+          </button>
+        </div>
       </div>
     </div>
 
@@ -74,13 +86,13 @@
     </p>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script>
       $(document).ready(function () {
         $("#lootboxForm").submit(function (event) {
           event.preventDefault(); // Stop normal form submission
 
           let button = $("#openLootboxButton");
-          button.prop("disabled", true); // Disable button to prevent spam
 
           $.ajax({
             url: $("#lootboxForm").attr("action"),
@@ -101,16 +113,36 @@
                     : "";
 
                   lootResult.html(`
-                <div class="lootbox-result" style="text-align: center;">
-                  <h3>Congratulations!</h3>
-                  <p>You received: <strong>${response.loot_item.name}</strong></p>
-                  <div class="image-container p-10 border-12 overflow-hidden" style="height: 300px; display: flex; justify-content: flex-end; align-items: center;">
-                    <img src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px; position: absolute; left: 50%; top: 68%; transform: translate(-50%, -50%);"/>
-                  </div>
-                  <p>Fun Fact: ${response.loot_item.fact}</p>
-                  ${duplicateMessage}
-                </div>
-              `);
+                    <div class="lootbox-result" style="text-align: center; position: relative;">
+                      <h3>Congratulations!</h3>
+                      <p>You received: <strong>${response.loot_item.name}</strong></p>
+                      <div class="image-container p-10 border-12 overflow-hidden"
+                           style="height: 300px; display: flex; justify-content: center; align-items: center;">
+                        <img id="lootCard" src="${response.loot_item.image}"
+                             alt="${response.loot_item.name}" width="200"
+                             class="animated-card"
+                             style="border-radius: 10px;"/>
+                      </div>
+                      <p>Fun Fact: ${response.loot_item.fact}</p>
+                      ${duplicateMessage}
+                    </div>
+                `);
+
+                  setTimeout(function () {
+                    let lootResult = $("#loot-result");
+
+                    // Animate loot-result div to fade in and slide down
+                    lootResult
+                      .css({ opacity: 0, top: "-50px" }) // Start hidden and slightly above
+                      .animate({ opacity: 1, top: "0px" }, 800, "swing"); // Animate to visible state
+
+                    // Confetti trigger
+                    confetti({
+                      spread: 360,
+                      particles: 100,
+                      origin: { y: 0.6 },
+                    });
+                  }, 100);
                 } else {
                   lootResult.html(
                     "<p style='color: white;'>You got nothing this time.</p>"
@@ -128,9 +160,6 @@
               const errorMessage =
                 xhr.responseJSON?.error || "Error: Unable to open lootbox.";
               alert(errorMessage);
-            },
-            complete: function () {
-              button.prop("disabled", false); // Re-enable button after request completes
             },
           });
         });
