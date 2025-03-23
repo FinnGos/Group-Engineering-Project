@@ -865,3 +865,80 @@ django.server WARNING 2025-03-23 18:45:59,575 basehttp 3953 140658610259648 "GET
 django.server INFO 2025-03-23 18:54:58,913 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16581
 django.request WARNING 2025-03-23 18:54:59,086 log 3953 140658610259648 Not Found: /favicon.ico
 django.server WARNING 2025-03-23 18:54:59,086 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.utils.autoreload INFO 2025-03-23 20:55:23,617 autoreload 2908 140193900667008 Watching for file changes with StatReloader
+django.server INFO 2025-03-23 20:55:30,363 basehttp 2908 140193772336832 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-23 20:55:30,383 basehttp 2908 140193772336832 "GET /accounts/login/ HTTP/1.1" 200 8111
+django.server INFO 2025-03-23 20:55:30,467 basehttp 2908 140193772336832 "GET /static/auth.css HTTP/1.1" 200 1844
+django.server INFO 2025-03-23 20:55:30,715 basehttp 2908 140193772336832 "GET /static/images/signin.jpg HTTP/1.1" 200 482362
+django.request WARNING 2025-03-23 20:55:30,794 log 2908 140193772336832 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 20:55:30,794 basehttp 2908 140193772336832 "GET /favicon.ico HTTP/1.1" 404 4615
+django INFO 2025-03-23 20:55:51,835 views 2908 140193772336832 User logged in: nightmare
+django.server INFO 2025-03-23 20:55:51,848 basehttp 2908 140193772336832 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-23 20:55:51,856 basehttp 2908 140193772336832 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 20:55:51,952 basehttp 2908 140193772336832 "GET /static/images/Top_Image.jpg HTTP/1.1" 200 1041735
+django.server INFO 2025-03-23 20:55:52,067 basehttp 2908 140193772336832 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 200 886653
+django.server INFO 2025-03-23 20:55:53,805 basehttp 2908 140193772336832 "GET /get_location/1/ HTTP/1.1" 200 10578
+django.server INFO 2025-03-23 20:55:53,854 basehttp 2908 140193772336832 "GET /static/checkin.css HTTP/1.1" 200 1150
+django.server WARNING 2025-03-23 20:55:53,858 basehttp 2908 140193772336832 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-23 20:55:53,861 basehttp 2908 140193772336832 "GET /static/css/map.css HTTP/1.1" 200 851
+django.server WARNING 2025-03-23 20:55:53,888 basehttp 2908 140193772336832 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.server INFO 2025-03-23 20:55:53,900 basehttp 2908 140193772336832 "GET /static/images/checkin.jpg HTTP/1.1" 200 482362
+django.server INFO 2025-03-23 20:55:58,885 basehttp 2908 140193772336832 "GET /tasks/ HTTP/1.1" 200 24260
+django.server INFO 2025-03-23 20:55:58,931 basehttp 2908 140193772336832 "GET /static/tasks.css HTTP/1.1" 200 205
+django.server INFO 2025-03-23 20:55:58,935 basehttp 2908 140193772336832 "GET /static/images/dailyTasks.jpg HTTP/1.1" 200 472844
+django.request WARNING 2025-03-23 20:56:01,424 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:01,424 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 20:56:01,440 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:01,441 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 20:56:01,453 log 2908 140193763944128 Not Found: /checkin/get_location/1/
+django.request WARNING 2025-03-23 20:56:01,454 log 2908 140193755551424 Not Found: /checkin/get_location/1/
+django.request WARNING 2025-03-23 20:56:01,455 log 2908 140193747158720 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:01,455 basehttp 2908 140193755551424 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.server WARNING 2025-03-23 20:56:01,456 basehttp 2908 140193763944128 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 20:56:01,456 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:01,457 basehttp 2908 140193747158720 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.server WARNING 2025-03-23 20:56:01,457 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 20:56:04,663 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:04,664 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 20:56:09,538 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:56:09,538 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308523&lon=-3.5420956 HTTP/1.1" 404 4685
+django.server INFO 2025-03-23 20:57:58,621 basehttp 2908 140193772336832 "GET /get_location/1/ HTTP/1.1" 200 12226
+django.server WARNING 2025-03-23 20:57:58,681 basehttp 2908 140193772336832 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.server WARNING 2025-03-23 20:57:58,699 basehttp 2908 140193772336832 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.request WARNING 2025-03-23 20:57:58,763 log 2908 140193772336832 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 20:57:58,764 basehttp 2908 140193772336832 "GET /favicon.ico HTTP/1.1" 404 4615
+django.request WARNING 2025-03-23 20:58:04,102 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:04,102 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308407&lon=-3.5421 HTTP/1.1" 404 4682
+django.request WARNING 2025-03-23 20:58:04,119 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:04,120 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308407&lon=-3.5421 HTTP/1.1" 404 4682
+django.request WARNING 2025-03-23 20:58:04,120 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:04,121 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308407&lon=-3.5421 HTTP/1.1" 404 4682
+django.server INFO 2025-03-23 20:58:05,196 basehttp 2908 140193738766016 "GET /tasks/ HTTP/1.1" 200 24260
+django.request WARNING 2025-03-23 20:58:09,352 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.request WARNING 2025-03-23 20:58:09,353 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:09,353 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308407&lon=-3.5421 HTTP/1.1" 404 4682
+django.server WARNING 2025-03-23 20:58:09,353 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.7308407&lon=-3.5421 HTTP/1.1" 404 4682
+django.request WARNING 2025-03-23 20:58:49,754 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:49,755 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308672&lon=-3.542081 HTTP/1.1" 404 4684
+django.request WARNING 2025-03-23 20:58:54,519 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 20:58:54,519 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308672&lon=-3.542081 HTTP/1.1" 404 4684
+django.server INFO 2025-03-23 21:00:24,832 basehttp 2908 140193738766016 "GET /get_location/1/ HTTP/1.1" 200 12126
+django.server WARNING 2025-03-23 21:00:24,884 basehttp 2908 140193738766016 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.server WARNING 2025-03-23 21:00:24,915 basehttp 2908 140193738766016 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.request WARNING 2025-03-23 21:00:25,173 log 2908 140193738766016 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 21:00:25,173 basehttp 2908 140193738766016 "GET /favicon.ico HTTP/1.1" 404 4615
+django.request WARNING 2025-03-23 21:00:29,289 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 21:00:29,289 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308194&lon=-3.5420673 HTTP/1.1" 404 4685
+django.request WARNING 2025-03-23 21:00:29,294 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 21:00:29,294 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.7308194&lon=-3.5420673 HTTP/1.1" 404 4685
+django.server INFO 2025-03-23 21:00:29,888 basehttp 2908 140193738766016 "GET /tasks/ HTTP/1.1" 200 24260
+django.server INFO 2025-03-23 21:01:06,613 basehttp 2908 140193738766016 "GET /get_location/1/ HTTP/1.1" 200 12135
+django.server WARNING 2025-03-23 21:01:06,668 basehttp 2908 140193738766016 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.server WARNING 2025-03-23 21:01:06,696 basehttp 2908 140193738766016 "GET /static/css/button.css HTTP/1.1" 404 1902
+django.request WARNING 2025-03-23 21:01:11,037 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 21:01:11,038 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.730808&lon=-3.5421144 HTTP/1.1" 404 4684
+django.request WARNING 2025-03-23 21:01:11,043 log 2908 140193738766016 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 21:01:11,043 basehttp 2908 140193738766016 "GET /checkin/get_location/1/?lat=50.730808&lon=-3.5421144 HTTP/1.1" 404 4684
+django.request WARNING 2025-03-23 21:01:11,044 log 2908 140193772336832 Not Found: /checkin/get_location/1/
+django.server WARNING 2025-03-23 21:01:11,044 basehttp 2908 140193772336832 "GET /checkin/get_location/1/?lat=50.730808&lon=-3.5421144 HTTP/1.1" 404 4684
+django.server INFO 2025-03-23 21:01:11,608 basehttp 2908 140193772336832 "GET /tasks/ HTTP/1.1" 200 24260
