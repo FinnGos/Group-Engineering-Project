@@ -5,8 +5,6 @@ from .models import Item, Building, UserBuilding, UserItem, Rubbish, UserRubbish
 import random
 from django.utils.timezone import now
 
-CLEAN_COST = 5
-
 @login_required
 def buy_item(request, item_id):
     """Fuction that will be called when user clicks button to purchase an item
@@ -107,7 +105,7 @@ def game_map(request):
 
     # Get names of collectables the user owns
     unlocked_collectable_names = list(
-        user.collectables_owned.values_list("name", flat=True)
+        current_user.collectables_owned.values_list("name", flat=True)
     )
 
     # Create a dictionary to mark unlocked buildings
@@ -126,6 +124,8 @@ def game_map(request):
             "user_buildings": user_buildings,
             "user_items": user_items,
             "rubbish": rubbish,
+            "current_points": current_user.current_points,
+            "all_time_points": current_user.all_time_points,  # Pass all-time sustainability score
         },
     )
 
@@ -190,17 +190,19 @@ def clean_rubbish(request, rubbish_id):
     Returns:
         _type_: _description_
     """
-    rubbish = get_object_or_404(Rubbish, id=rubbish_id)
+    rubbish = get_object_or_404(UserRubbish, id=rubbish_id)
+    rubbish_object = get_object_or_404(Rubbish, id=rubbish_id)
 
-    if rubbish.cleaned:
-        messages.info(request, "This rubbish has already been cleaned.")
-    elif request.user.current_points >= CLEAN_COST:  # Require 5 Carbo Coins to clean
-        request.user.current_points -= CLEAN_COST
+    if request.user.current_points >= rubbish.clean_cost:  # Require 5 Carbo Coins to clean
+        request.user.current_points -= rubbish.clean_cost
         request.user.save()
 
         rubbish.cleaned = True
         rubbish.cleaned_at = now()
         rubbish.save()
+
+        request.user.all_time_points -= rubbish_object.sustainability_score
+        request.user.save()
 
         messages.success(request, "You cleaned up some rubbish for 5 Carbo Coins!")
     else:

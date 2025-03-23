@@ -70,11 +70,11 @@ class UserRubbish(models.Model):
                 self.cleaned_at = None
 
                 if self.item:
-                    self.useritem.all_time_points -= self.item.sustainability_score
+                    self.useritem.all_time_points += self.item.sustainability_score
                     self.useritem.save()
 
                 # Save the updated Rubbish object
                 self.save()
 
                 return True
-        return False
+        return False 
