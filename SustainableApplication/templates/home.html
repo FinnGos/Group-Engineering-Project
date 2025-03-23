@@ -21,18 +21,18 @@
 <div class="relative min-h-[300px] bg-cover bg-center" style="background-image: url('{% static 'images/Bottom_Image.jpg' %}');">
     <!-- Overlay for content -->
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="absolute top-0 left-0 right-0 bottom-20 flex flex-col justify-center items-center text-white px-6 sm:px-8">
-
+    <!-- Text Container: on mobile align text to bottom, on larger screens center it -->
+    <div class="absolute top-0 left-0 right-0 bottom-20 flex flex-col justify-end sm:justify-center items-center text-white px-6 sm:px-8">
         <!-- Welcome Heading -->
-        <h1 class="text-3xl sm:text-5xl font-bold mb-1 text-center">
+        <h1 class="text-xl sm:text-5xl font-bold mb-1 text-center">
             Welcome!
         </h1>
         <!-- Introduction Text -->
-        <p class="text-lg sm:text-2xl mb-6 text-center">
-            This is our task-based collectibles sustainability game, developed by Women in STEM
+        <p class="text-base sm:text-2xl mb-6 text-center">
+            This is our task-based collectibles sustainability game, developed by Woman in STEM
         </p>
         <!-- List -->
-        <ul class="mt-4 text-base sm:text-lg">
+        <ul class="mt-4 text-xs sm:text-lg">
             <li><strong>Explore</strong> – Follow the treasure hunts and discover sustainability hotspots.</li>
             <li><strong>Collect and Learn</strong> – Earn unique collectibles showing iconic places, SDGs, and sustainability facts.</li>
             <li><strong>Complete Quests</strong> – Take on eco-friendly challenges daily, weekly, and as part of the larger community.</li>
@@ -42,10 +42,10 @@
 
     <!-- Buttons Section -->
     <div x-data="{ open: false }" class="absolute bottom-6 w-full flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 px-4">
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 w-full sm:w-auto text-center">
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-800 w-full sm:w-auto text-center">
             Go to Your Daily Tasks
         </a>
-        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 w-full sm:w-auto text-center">
+        <button @click="open = true" class="bg-green-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-green-800 w-full sm:w-auto text-center">
             How to Play
         </button>
         <!-- Modal Popup -->
@@ -59,4 +59,3 @@
     </div>
 </div>
 {% endblock %}
-
