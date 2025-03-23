@@ -35,42 +35,53 @@
 <div class="bottom-section relative">
     <!-- Add a media query for mobile devices only -->
     <style>
-        /* Desktop-specific styles */
-        .desktop-buttons-container {
-            bottom: 150px;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .desktop-button {
-            display: inline-block;
-            padding: 10px 20px;
-            max-width: 250px;
-            margin: 0 10px;
-        }
-        
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            .mobile-bottom-height {
-                height: 150px !important;
+            .mobile-header h1 {
+                font-size: 3rem !important;
             }
+            .mobile-header h2 {
+                font-size: 1.5rem !important;
+            }
+            .mobile-header h3 {
+                font-size: 2rem !important;
+            }
+            
+            .mobile-bottom-section {
+                padding: 0 !important;
+                border: none !important;
+            }
+            
+            .mobile-bottom-image {
+                height: 200px !important;
+                object-fit: cover !important;
+                object-position: center !important;
+                transform: scale(1.2);
+            }
+            
             .mobile-current-points {
-                transform: scale(0.25);
+                transform: scale(0.5);
                 padding: 4px !important;
-                margin-top: 4px !important;
-                width: 50% !important;
-                max-width: 150px !important;
+                margin-top: 0 !important;
+                width: 80% !important;
+                max-width: 200px !important;
+                position: absolute;
+                bottom: 60px;
             }
+            
             .mobile-current-points h3 {
-                font-size: 1rem !important;
+                font-size: 1.2rem !important;
                 margin-bottom: 2px !important;
             }
+            
             .mobile-current-points p {
-                font-size: 0.75rem !important;
+                font-size: 0.9rem !important;
             }
+            
             .mobile-buttons-container {
-                bottom: 5px !important;
+                bottom: 10px !important;
             }
+            
             .mobile-button {
                 padding: 4px 8px !important;
                 font-size: 0.7rem !important;
@@ -80,14 +91,14 @@
         }
     </style>
     
-    <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden mobile-bottom-height" style="height: 600px;">
+    <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden sm:h-600" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
    
-    <!-- Leaderboard Section -->
-    <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+    <!-- Leaderboard Section - DESKTOP-->
+    <div class="hidden sm:flex leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white">
         <!-- Current Player's Points Section -->
-        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg mobile-current-points">
+        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
             <h3 class="text-3xl mb-4">Your Current Points</h3>
             <p class="text-xl">
                 {% if request.user.is_authenticated %}
@@ -98,25 +109,52 @@
             </p>
         </div>
     </div>
+    
+    <!-- MOBILE Leaderboard Section -->
+    <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
+        <div class="space-y-3 w-full flex flex-col items-center">
+            <!-- Current Player's Points Section - MOBILE -->
+            <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg" style="margin-bottom: 45px;">
+                <h3 class="text-3xl mb-2">Your Current Points</h3>
+                <p class="text-xl">
+                    {% if request.user.is_authenticated %}
+                        Points: <strong>{{ request.user.all_time_points }}</strong>
+                    {% else %}
+                        Please log in to see your points.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+    
     <!-- Buttons Section - Desktop -->
-    <div x-data="{ open: false }" class="hidden sm:block desktop-buttons-container absolute">
+    <div x-data="{ open: false }" class="hidden sm:block absolute bottom-20 w-full text-center">
         <div class="flex justify-center">
-            <a href="{% url 'tasks_view' %}" class="desktop-button bg-blue-700 text-white rounded-lg hover:bg-blue-800">
+            <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 mx-2 inline-block" style="max-width: 250px;">
                 Go to your Daily Tasks
             </a>
-            <button @click="open = true" class="desktop-button bg-green-700 text-white rounded-lg hover:bg-green-800">
+            <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 mx-2 inline-block" style="max-width: 250px;">
                 How to Play
             </button>
+        </div>
+        
+        <!-- Popup Modal -->
+        <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+                <h2 class="text-2xl font-bold mb-4">How to Play</h2>
+                <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+            </div>
         </div>
     </div>
     
     <!-- Buttons Section - Mobile -->
-    <div x-data="{ open: false }" class="sm:hidden mobile-buttons-container absolute bottom-20 w-full text-center">
+    <div x-data="{ open: false }" class="sm:hidden absolute bottom-2 w-full text-center">
         <div class="flex flex-col items-center space-y-1">
-            <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800">
+            <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
                 Go to your Daily Tasks
             </a>
-            <button @click="open = true" class="mobile-button bg-green-700 text-white rounded-lg hover:bg-green-800">
+            <button @click="open = true" class="mobile-button bg-green-700 text-white rounded-lg hover:bg-green-800 px-4 py-2 text-sm">
                 How to Play
             </button>
         </div>
