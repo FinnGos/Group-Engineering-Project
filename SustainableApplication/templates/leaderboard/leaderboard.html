@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{% static 'leaderboard.css' %}">
 <!-- Image Section -->
 <div class="top-section relative">
-    <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto"> <!-- Reverted to original size -->
+    <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
         <div class="font-bold text-white text-center p-6 mb-6 mobile-header-container">
@@ -31,66 +31,38 @@
         </div>
     </div>
 </div>
+
 <!-- Image Section -->
 <div class="bottom-section relative">
     <style>
         /* Mobile-specific styles */
         @media (max-width: 640px) {
-            /* Header adjustments */
-            .mobile-header-container {
-                padding-top: 0 !important;
-                padding-bottom: 0 !important;
-                margin-top: -20px !important;
-                margin-bottom: 0 !important;
+            /* Move the top image down slightly */
+            .top-section {
+                margin-top: 20px;
+            }
+
+            /* Move leaderboard rankings down slightly */
+            .leaderboard {
+                margin-top: 40px; /* Adjust margin-top to reduce the gap between images */
             }
             
-            /* Header text size reduction for mobile */
+            /* Mobile: adjust font size of headings */
             .top-section h1 {
-                font-size: 1.25rem !important; /* Further reduced text size */
-                margin-bottom: 0 !important;
+                font-size: 1.25rem !important;
             }
             .top-section h2 {
-                font-size: 0.75rem !important; /* Further reduced text size */
-                margin-bottom: 2px !important;
+                font-size: 0.75rem !important;
             }
             .top-section h3 {
-                font-size: 1rem !important; /* Further reduced text size */
-                margin-bottom: 2px !important;
+                font-size: 1rem !important;
             }
-            
+
             /* Rankings section: Adjust the layout and reduce text size */
             .mobile-rankings {
                 margin-top: 20px !important;
-                display: block !important;
-                visibility: visible !important;
-                width: 90% !important;
-                max-width: 90% ! important;
-                position: relative !important;
-                z-index: 50 !important; /* Ensure rankings are on top */
-                transform: scale(0.9) !important; /* Make entire rankings container smaller */
-                transform-origin: top center !important;
             }
-            
-            /* Shrink leaderboard entries even more */
-            .rank-item {
-                padding: 0.25rem !important;
-                margin-bottom: 0.25rem !important;
-                border-width: 1px !important;
-                min-height: 0 !important;
-            }
-            
-            .rank {
-                font-size: 0.5rem !important; /* Further reduced font size */
-            }
-            
-            .name {
-                font-size: 0.5rem !important; /* Further reduced font size */
-            }
-            
-            .points {
-                font-size: 0.5rem !important; /* Further reduced font size */
-            }
-            
+
             /* Bottom section image adjustments */
             .mobile-bottom-container {
                 padding: 0 !important;
@@ -100,19 +72,14 @@
                 margin-top: 20px !important; /* Move down */
                 z-index: 10 !important; /* Lower than rankings */
             }
-            
+
             .mobile-bottom-image {
                 height: 300px !important; /* Increased bottom image height */
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
             }
-            
-            /* Fix the duplicate current points issue - hide desktop version on mobile */
-            .desktop-current-points {
-                display: none !important;
-            }
-            
+
             /* Points section - make smaller */
             .mobile-current-points {
                 padding: 2px !important;
@@ -124,17 +91,17 @@
                 transform-origin: center bottom !important;
                 z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
-            
+
             .mobile-current-points h3 {
                 font-size: 0.9rem !important;
                 margin-bottom: 0 !important;
             }
-            
+
             .mobile-current-points p {
                 font-size: 0.7rem !important;
                 margin-bottom: 0 !important;
             }
-            
+
             /* Button adjustments - make smaller */
             .mobile-buttons-container {
                 bottom: 10px !important;
@@ -143,7 +110,7 @@
                 width: 100% !important;
                 z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
-            
+
             .mobile-button {
                 padding: 3px 6px !important;
                 font-size: 0.6rem !important;
@@ -156,12 +123,12 @@
     <div class="hidden sm:block image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 800px;"> <!-- Increased bottom image height -->
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
-    
+
     <!-- Mobile version of bottom section -->
     <div class="sm:hidden mobile-bottom-container overflow-hidden">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="mobile-bottom-image">
     </div>
-   
+
     <!-- Desktop Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white hidden sm:flex">
         <!-- Current Player's Points Section -->
@@ -176,7 +143,7 @@
             </p>
         </div>
     </div>
-    
+
     <!-- Mobile Content Overlay (Points + Buttons) -->
     <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
         <!-- Current Player's Points Section - MOBILE -->
@@ -190,7 +157,7 @@
                 {% endif %}
             </p>
         </div>
-        
+
         <!-- Buttons Section - Mobile -->
         <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute">
             <div class="flex flex-col items-center space-y-1">
@@ -201,7 +168,7 @@
                     How to Play
                 </button>
             </div>
-            
+
             <!-- Popup Modal -->
             <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                 <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
@@ -212,7 +179,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Buttons Section - Desktop -->
     <div x-data="{ open: false }" class="hidden sm:block absolute bottom-20 w-full text-center">
         <div class="flex justify-center">
@@ -223,7 +190,7 @@
                 How to Play
             </button>
         </div>
-        
+
         <!-- Popup Modal -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
