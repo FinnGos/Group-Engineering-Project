@@ -59,33 +59,37 @@
                 margin-bottom: 2px !important;
             }
             
-            /* Fix rankings visibility and move up */
+            /* Fix rankings visibility, make smaller, and ensure they're on top */
             .mobile-rankings {
                 margin-top: -10px !important;
                 display: block !important;
                 visibility: visible !important;
                 width: 90% !important;
                 max-width: 90% !important;
+                position: relative !important;
+                z-index: 50 !important; /* Ensure rankings are on top */
+                transform: scale(0.8) !important; /* Make entire rankings container smaller */
+                transform-origin: top center !important;
             }
             
-            /* Half size leaderboard entries */
+            /* Shrink leaderboard entries even more */
             .rank-item {
-                padding: 0.4rem !important;
-                margin-bottom: 0.4rem !important;
-                border-width: 2px !important;
+                padding: 0.25rem !important;
+                margin-bottom: 0.25rem !important;
+                border-width: 1px !important;
                 min-height: 0 !important;
             }
             
             .rank {
-                font-size: 0.8rem !important; /* 40% of 2xl */
+                font-size: 0.6rem !important; /* Smaller text */
             }
             
             .name {
-                font-size: 0.7rem !important; /* 40% of xl */
+                font-size: 0.6rem !important; /* Smaller text */
             }
             
             .points {
-                font-size: 0.6rem !important; /* 40% of lg */
+                font-size: 0.5rem !important; /* Smaller text */
             }
             
             /* Bottom section image adjustments */
@@ -95,6 +99,7 @@
                 background-color: transparent !important;
                 height: 180px !important;
                 margin-top: 20px !important; /* Move down */
+                z-index: 10 !important; /* Lower than rankings */
             }
             
             .mobile-bottom-image {
@@ -118,6 +123,7 @@
                 bottom: 60px !important;
                 transform: scale(0.4) !important;
                 transform-origin: center bottom !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
             
             .mobile-current-points h3 {
@@ -136,6 +142,7 @@
                 transform: scale(0.7) !important;
                 transform-origin: center bottom !important;
                 width: 100% !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
             }
             
             .mobile-button {
@@ -229,4 +236,3 @@
     </div>
 </div>
 {% endblock %}
-
