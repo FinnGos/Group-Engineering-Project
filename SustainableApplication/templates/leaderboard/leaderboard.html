@@ -31,22 +31,141 @@
         </div>
     </div>
 </div>
-
-<!-- Bottom Section -->
+<!-- Image Section -->
 <div class="bottom-section relative">
+    <!-- Add a media query for mobile devices only -->
+    <style>
+        /* Mobile-specific styles */
+        @media (max-width: 640px) {
+            /* Move header up and reduce size */
+            .mobile-header-container {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                margin-top: -20px !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Header text size reduction to 40% */
+            .top-section h1 {
+                font-size: 1.5rem !important; /* 40% of 6xl */
+                margin-bottom: 0 !important;
+            }
+            .top-section h2 {
+                font-size: 0.8rem !important; /* 40% of 3xl */
+                margin-bottom: 2px !important;
+            }
+            .top-section h3 {
+                font-size: 1rem !important; /* 40% of 4xl */
+                margin-bottom: 2px !important;
+            }
+            
+            /* Fix rankings visibility, make smaller, and ensure they're on top */
+            .mobile-rankings {
+                margin-top: -10px !important;
+                display: block !important;
+                visibility: visible !important;
+                width: 90% !important;
+                max-width: 90% !important;
+                position: relative !important;
+                z-index: 50 !important; /* Ensure rankings are on top */
+                transform: scale(0.8) !important; /* Make entire rankings container smaller */
+                transform-origin: top center !important;
+            }
+            
+            /* Shrink leaderboard entries even more */
+            .rank-item {
+                padding: 0.25rem !important;
+                margin-bottom: 0.25rem !important;
+                border-width: 1px !important;
+                min-height: 0 !important;
+            }
+            
+            .rank {
+                font-size: 0.6rem !important; /* Smaller text */
+            }
+            
+            .name {
+                font-size: 0.6rem !important; /* Smaller text */
+            }
+            
+            .points {
+                font-size: 0.5rem !important; /* Smaller text */
+            }
+            
+            /* Bottom section image adjustments */
+            .mobile-bottom-container {
+                padding: 0 !important;
+                border: none !important;
+                background-color: transparent !important;
+                height: 180px !important;
+                margin-top: 20px !important; /* Move down */
+                z-index: 10 !important; /* Lower than rankings */
+            }
+            
+            .mobile-bottom-image {
+                height: 180px !important;
+                width: 100vw !important;
+                object-fit: cover !important;
+                object-position: center !important;
+            }
+            
+            /* Fix the duplicate current points issue - hide desktop version on mobile */
+            .desktop-current-points {
+                display: none !important;
+            }
+            
+            /* Points section - make smaller */
+            .mobile-current-points {
+                padding: 2px !important;
+                width: 60% !important;
+                max-width: 150px !important;
+                position: absolute;
+                bottom: 60px !important;
+                transform: scale(0.4) !important;
+                transform-origin: center bottom !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-current-points h3 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            .mobile-current-points p {
+                font-size: 0.7rem !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Button adjustments - make smaller */
+            .mobile-buttons-container {
+                bottom: 10px !important;
+                transform: scale(0.7) !important;
+                transform-origin: center bottom !important;
+                width: 100% !important;
+                z-index: 20 !important; /* Higher than bottom image but lower than rankings */
+            }
+            
+            .mobile-button {
+                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
+                margin: 1px auto !important;
+            }
+        }
+    </style>
+    
     <!-- Desktop version of bottom section -->
     <div class="hidden sm:block image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
-
+    
     <!-- Mobile version of bottom section -->
     <div class="sm:hidden mobile-bottom-container overflow-hidden">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="mobile-bottom-image">
-        <div class="w-full bg-green-700 h-16 absolute bottom-0 left-0 -mb-1"></div>
     </div>
-
+   
     <!-- Desktop Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white hidden sm:flex">
+        <!-- Current Player's Points Section -->
         <div class="current-points desktop-current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
             <h3 class="text-3xl mb-4">Your Current Points</h3>
             <p class="text-xl">
@@ -58,9 +177,10 @@
             </p>
         </div>
     </div>
-
+    
     <!-- Mobile Content Overlay (Points + Buttons) -->
     <div class="sm:hidden absolute inset-0 flex flex-col justify-end items-center">
+        <!-- Current Player's Points Section - MOBILE -->
         <div class="mobile-current-points text-white text-center p-4 bg-green-700 rounded-lg">
             <h3 class="text-3xl mb-2">Your Current Points</h3>
             <p class="text-xl">
@@ -71,7 +191,8 @@
                 {% endif %}
             </p>
         </div>
-
+        
+        <!-- Buttons Section - Mobile -->
         <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute">
             <div class="flex flex-col items-center space-y-1">
                 <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
@@ -81,7 +202,8 @@
                     How to Play
                 </button>
             </div>
-
+            
+            <!-- Popup Modal -->
             <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                 <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
                     <h2 class="text-2xl font-bold mb-4">How to Play</h2>
@@ -91,66 +213,26 @@
             </div>
         </div>
     </div>
+    
+    <!-- Buttons Section - Desktop -->
+    <div x-data="{ open: false }" class="hidden sm:block absolute bottom-20 w-full text-center">
+        <div class="flex justify-center">
+            <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 mx-2 inline-block" style="max-width: 250px;">
+                Go to your Daily Tasks
+            </a>
+            <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 mx-2 inline-block" style="max-width: 250px;">
+                How to Play
+            </button>
+        </div>
+        
+        <!-- Popup Modal -->
+        <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+                <h2 class="text-2xl font-bold mb-4">How to Play</h2>
+                <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
-
-<!-- Fix for infinite green background -->
-<style>
-    /* Ensures green background is the furthest back */
-    body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #064e3b;
-        z-index: -9999;
-    }
-
-    /* Mobile-specific styles */
-    @media (max-width: 640px) {
-        .mobile-header-container {
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            margin-top: -20px !important;
-            margin-bottom: 0 !important;
-        }
-
-        .top-section h1 {
-            font-size: 1.5rem !important;
-        }
-        .top-section h2 {
-            font-size: 0.8rem !important;
-        }
-        .top-section h3 {
-            font-size: 1rem !important;
-        }
-
-        .mobile-rankings {
-            transform: scale(0.8) !important;
-        }
-
-        .rank-item {
-            padding: 0.25rem !important;
-        }
-
-        .mobile-current-points {
-            transform: scale(0.4) !important;
-        }
-
-        .mobile-buttons-container {
-            bottom: 10px !important;
-            transform: scale(0.7) !important;
-        }
-
-        .mobile-bottom-container {
-            height: 200px !important;
-        }
-
-        .mobile-bottom-image {
-            height: 100vh !important;
-        }
-    }
-</style>
-
 {% endblock %}
