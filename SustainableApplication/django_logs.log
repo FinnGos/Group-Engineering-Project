@@ -819,3 +819,6 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 4: 'block'. Looking for one of: endblock.
 django.server ERROR 2025-03-23 18:11:04,565 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 500 184845
 django.server INFO 2025-03-23 18:11:07,257 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16409
+django.server INFO 2025-03-23 18:11:26,434 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 16852
+django.request WARNING 2025-03-23 18:11:26,578 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 18:11:26,578 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
