@@ -445,3 +445,59 @@ django.server INFO 2025-03-23 14:39:00,346 basehttp 3953 140658635437760 "GET /l
 django.server INFO 2025-03-23 14:41:11,458 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 9350
 django.request WARNING 2025-03-23 14:41:11,593 log 3953 140658635437760 Not Found: /favicon.ico
 django.server WARNING 2025-03-23 14:41:11,594 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:42:39,135 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:40,483 basehttp 3953 140658627045056 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:41,681 basehttp 3953 140658627045056 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:42:42,662 basehttp 3953 140658627045056 "GET /lootboxes/open/ HTTP/1.1" 200 11137
+django.server WARNING 2025-03-23 14:42:42,719 basehttp 3953 140658627045056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-23 14:42:42,722 basehttp 3953 140658627045056 "GET /static/images/lootbox.png HTTP/1.1" 200 19128
+django.server INFO 2025-03-23 14:42:42,722 basehttp 3953 140658610259648 "GET /static/images/lootboxes_v4.jpg HTTP/1.1" 304 0
+django.server WARNING 2025-03-23 14:42:42,741 basehttp 3953 140658627045056 "GET /static/css/open_lootbox.css HTTP/1.1" 404 1987
+django.server INFO 2025-03-23 14:42:43,390 basehttp 3953 140658610259648 "GET /collectables/ HTTP/1.1" 200 6077
+django.server INFO 2025-03-23 14:42:43,880 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:42:44,864 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:13,122 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:14,347 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:43:27,777 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9350
+django.server INFO 2025-03-23 14:43:29,587 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:45:31,291 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.request WARNING 2025-03-23 14:45:31,437 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:45:31,437 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:45:36,057 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.request WARNING 2025-03-23 14:45:36,194 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:45:36,194 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:45:38,746 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8847
+django.server INFO 2025-03-23 14:46:26,164 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:46:26,873 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:46:27,394 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8975
+django.server INFO 2025-03-23 14:47:39,951 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 8896
+django.request WARNING 2025-03-23 14:47:40,102 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:47:40,103 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:48:40,612 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:48:42,347 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:48:44,560 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9035
+django.server INFO 2025-03-23 14:50:55,951 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9560
+django.server INFO 2025-03-23 14:50:59,837 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9560
+django.server INFO 2025-03-23 14:52:04,404 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:52:05,399 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:52:28,379 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:52:29,261 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 14:55:31,403 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.request WARNING 2025-03-23 14:55:31,526 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:55:31,527 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:56:39,768 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.request WARNING 2025-03-23 14:56:39,922 log 3953 140658610259648 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 14:56:39,922 basehttp 3953 140658610259648 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 14:56:40,563 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:56:43,825 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:56:44,473 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:56:44,773 basehttp 3953 140658610259648 "GET /home/ HTTP/1.1" 200 9142
+django.server INFO 2025-03-23 14:56:45,777 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9564
+django.server INFO 2025-03-23 14:57:32,724 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9585
+django.server INFO 2025-03-23 14:57:33,410 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9585
+django.server INFO 2025-03-23 14:58:06,056 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:07,661 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:12,291 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:21,690 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9543
+django.server INFO 2025-03-23 14:58:44,827 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245
+django.server INFO 2025-03-23 15:00:07,958 basehttp 3953 140658610259648 "GET /leaderboard/ HTTP/1.1" 200 9245

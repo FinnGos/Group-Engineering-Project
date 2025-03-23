@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block title %}Leaderboard{% endblock %}
-
 {% block content %}
 <!-- Link to leaderboard.css -->
 <link rel="stylesheet" href="{% static 'leaderboard.css' %}">
-
 <!-- Image Section -->
 <div class="top-section relative">
     <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
-
     <!-- Leaderboard Section -->
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
         <div class="font-bold text-white text-center p-6 mb-6">
@@ -18,7 +14,6 @@
             <h2 class="text-3xl mb-4">Can you become the ultimate CarboCollector?</h2>
             <h3 class="text-4xl">Current Rankings:</h3>
         </div>
-
         <!-- Display the Top 5 Leaderboard Entries -->
         <div class="rankings w-full max-w-3xl">
             {% for entry in ranked_users %}
@@ -36,19 +31,18 @@
         </div>
     </div>
 </div>
-
-<!-- Bottom Section -->
+<!-- Image Section -->
 <div class="bottom-section relative">
-    <!-- Responsive Image Container: smaller on mobile, larger on desktop -->
-    <div class="image-container bg-green-700 p-4 border-4 border-green-700 overflow-hidden h-64 sm:h-[600px]">
+    <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden sm:h-[200px]" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
     </div>
-    
-    <!-- Current Points Section -->
-    <div class="leaderboard mt-4 sm:mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
-        <div class="current-points text-white text-center p-4 sm:p-6 mt-4 bg-green-700 rounded-lg">
-            <h3 class="text-xl sm:text-3xl mb-2">Your Current Points</h3>
-            <p class="text-base sm:text-xl">
+   
+    <!-- Leaderboard Section -->
+    <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+        <!-- Current Player's Points Section -->
+        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg sm:p-2 sm:mt-2 sm:scale-75 sm:transform sm:w-1/3 sm:mx-auto">
+            <h3 class="text-3xl mb-4 sm:text-xl sm:mb-1">Your Current Points</h3>
+            <p class="text-xl sm:text-base">
                 {% if request.user.is_authenticated %}
                     Points: <strong>{{ request.user.all_time_points }}</strong>
                 {% else %}
@@ -57,27 +51,23 @@
             </p>
         </div>
     </div>
-
     <!-- Buttons Section -->
-    <div x-data="{ open: false }" class="mt-4 sm:mt-8 flex justify-center space-x-4 absolute bottom-10 w-full text-center"> 
-        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-800">
+    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center sm:space-x-0 sm:space-y-2 sm:flex-col sm:items-center sm:bottom-4">
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 sm:w-3/4 sm:px-4 sm:py-2 sm:text-sm sm:mx-auto">
             Go to your Daily Tasks
         </a>
-
         <!-- "How to Play" Button -->
-        <button @click="open = true" class="bg-green-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-green-800">
+        <button @click="open = true" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 sm:w-3/4 sm:px-4 sm:py-2 sm:text-sm sm:mx-auto">
             How to Play
         </button>
-
         <!-- Popup Modal -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
-                <h2 class="text-2xl font-bold mb-4">How to Play</h2>
-                <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
-                <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-xs sm:p-4">
+                <h2 class="text-2xl font-bold mb-4 sm:text-lg">How to Play</h2>
+                <p class="text-gray-700 sm:text-sm">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg sm:px-2 sm:py-1 sm:text-xs">Close</button>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
