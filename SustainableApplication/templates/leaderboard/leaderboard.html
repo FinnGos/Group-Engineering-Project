@@ -100,16 +100,20 @@
                 padding: 0 !important;
                 border: none !important;
                 background-color: transparent !important;
-                height: 180px !important;
+                height: 200px !important; /* Increased from 180px */
                 margin-top: 0 !important; /* Remove gap - was 20px */
                 z-index: 10 !important; /* Lower than rankings */
+                margin-bottom: -1px !important; /* Ensure no gap at bottom */
+                position: relative !important;
             }
             
             .mobile-bottom-image {
-                height: 180px !important;
+                height: 100vh !important; /* Use viewport height to extend down */
+                min-height: 200px !important; /* Minimum height */
                 width: 100vw !important;
                 object-fit: cover !important;
-                object-position: center !important;
+                object-position: center top !important; /* Align to top */
+                position: relative !important;
             }
             
             /* Fix the duplicate current points issue - hide desktop version on mobile */
@@ -164,6 +168,23 @@
             .top-section + .bottom-section {
                 margin-top: -1px !important;
             }
+            
+            /* Fix bottom gap with footer */
+            #content {
+                overflow: hidden !important;
+            }
+            
+            .bottom-section::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -10px; /* Extend past visible area */
+                left: 0;
+                width: 100%;
+                height: 20px;
+                background-color: #064e3b; /* Match color of image bottom or adjust as needed */
+                z-index: 5;
+            }
         }
     </style>
     
@@ -175,6 +196,8 @@
     <!-- Mobile version of bottom section -->
     <div class="sm:hidden mobile-bottom-container overflow-hidden">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Image" class="mobile-bottom-image">
+        <!-- Extra div to ensure full coverage -->
+        <div class="w-full bg-green-700 h-16 absolute bottom-0 left-0 -mb-1"></div>
     </div>
    
     <!-- Desktop Leaderboard Section -->
