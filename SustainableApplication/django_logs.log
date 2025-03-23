@@ -516,3 +516,6 @@ django.server INFO 2025-03-23 15:26:45,056 basehttp 3953 140658635437760 "GET /l
 django.server INFO 2025-03-23 15:31:34,377 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 13655
 django.request WARNING 2025-03-23 15:31:34,532 log 3953 140658635437760 Not Found: /favicon.ico
 django.server WARNING 2025-03-23 15:31:34,533 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745
+django.server INFO 2025-03-23 15:42:25,964 basehttp 3953 140658635437760 "GET /leaderboard/ HTTP/1.1" 200 14765
+django.request WARNING 2025-03-23 15:42:27,341 log 3953 140658635437760 Not Found: /favicon.ico
+django.server WARNING 2025-03-23 15:42:27,342 basehttp 3953 140658635437760 "GET /favicon.ico HTTP/1.1" 404 5745

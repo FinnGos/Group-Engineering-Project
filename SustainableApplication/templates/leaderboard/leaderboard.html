@@ -40,23 +40,42 @@
             /* Move header up */
             .mobile-header-container {
                 padding-top: 0 !important;
-                margin-top: -10px !important;
+                margin-top: -30px !important;
             }
             
-            /* Header text size reduction to 60% */
+            /* Header text size reduction to 50% */
             .top-section h1 {
-                font-size: 2.25rem !important; /* 60% of 6xl */
+                font-size: 1.8rem !important; /* 50% of 6xl */
             }
             .top-section h2 {
-                font-size: 1.2rem !important; /* 60% of 3xl */
+                font-size: 1rem !important; /* 50% of 3xl */
             }
             .top-section h3 {
-                font-size: 1.5rem !important; /* 60% of 4xl */
+                font-size: 1.25rem !important; /* 50% of 4xl */
             }
             
             /* Move rankings up */
             .mobile-rankings {
-                margin-top: -15px !important;
+                margin-top: -25px !important;
+            }
+            
+            /* Half size leaderboard entries */
+            .rank-item {
+                padding: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+                border-width: 2px !important;
+            }
+            
+            .rank {
+                font-size: 1rem !important; /* 50% of 2xl */
+            }
+            
+            .name {
+                font-size: 0.875rem !important; /* 50% of xl */
+            }
+            
+            .points {
+                font-size: 0.75rem !important; /* 50% of lg */
             }
             
             /* Bottom section image adjustments */
@@ -64,25 +83,30 @@
                 padding: 0 !important;
                 border: none !important;
                 background-color: transparent !important;
-                height: 120px !important;
+                height: 220px !important; /* Increased height */
+                margin-top: 30px !important; /* Move down */
             }
             
             .mobile-bottom-image {
-                height: 120px !important;
+                height: 220px !important;
                 width: 100vw !important;
                 object-fit: cover !important;
                 object-position: center !important;
+            }
+            
+            /* Fix the duplicate current points issue - hide desktop version on mobile */
+            .desktop-current-points {
+                display: none !important;
             }
             
             /* Points section */
             .mobile-current-points {
                 transform: scale(0.5);
                 padding: 4px !important;
-                margin-top: 85px !important;
                 width: 80% !important;
                 max-width: 200px !important;
                 position: absolute;
-                bottom: 40px;
+                bottom: 80px !important; /* Move down */
             }
             
             .mobile-current-points h3 {
@@ -96,8 +120,7 @@
             
             /* Button adjustments */
             .mobile-buttons-container {
-                bottom: 3px !important;
-                margin-top: 15px !important;
+                bottom: 20px !important; /* Move down */
             }
             
             .mobile-button {
@@ -120,9 +143,9 @@
     </div>
    
     <!-- Desktop Leaderboard Section -->
-    <div class="hidden sm:flex leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white">
+    <div class="leaderboard mt-8 absolute inset-0 flex-col justify-center items-center text-white hidden sm:flex">
         <!-- Current Player's Points Section -->
-        <div class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
+        <div class="current-points desktop-current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
             <h3 class="text-3xl mb-4">Your Current Points</h3>
             <p class="text-xl">
                 {% if request.user.is_authenticated %}
@@ -149,7 +172,7 @@
         </div>
         
         <!-- Buttons Section - Mobile -->
-        <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute bottom-0">
+        <div x-data="{ open: false }" class="mobile-buttons-container w-full text-center absolute">
             <div class="flex flex-col items-center space-y-1">
                 <a href="{% url 'tasks_view' %}" class="mobile-button bg-blue-700 text-white rounded-lg hover:bg-blue-800 px-4 py-2 text-sm">
                     Go to your Daily Tasks
