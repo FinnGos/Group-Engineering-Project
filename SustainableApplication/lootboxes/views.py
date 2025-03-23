@@ -7,6 +7,7 @@ from home.models import CustomUser
 
 LOOTBOX_COST = 100
 CHANCE = 0.4
+REFUND = 60
 
 
 @login_required
@@ -35,7 +36,7 @@ def open_lootbox(request):
             item = random.choice(list(collectables))
             if item in user.collectables_owned.all():
                 is_duplicate = True
-                user.current_points += LOOTBOX_COST  # Refund points
+                user.current_points += REFUND # Refund points
             else:
                 user.collectables_owned.add(item)  # Add to user's collection
 
