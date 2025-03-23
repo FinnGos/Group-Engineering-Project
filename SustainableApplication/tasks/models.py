@@ -42,14 +42,14 @@ class Tasks(models.Model):
 
 
 def unique_file_name(instance, filename):
-    """_summary_
+    """Change the file name of the image to a unique filename
 
     Args:
-        instance (_type_): _description_
-        filename (_type_): _description_
+        instance: instance of UploadedImage required by django
+        filename: name of the image being uploaded
 
     Returns:
-        _type_: _description_
+        The path of the uploaded image with the new filename
     """
     ext = filename.split(".")[-1]  # Get file extension
     filename = f"{uuid.uuid4().hex}_{int(now().timestamp())}.{ext}"  # Unique file name
