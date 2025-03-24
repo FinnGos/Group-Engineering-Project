@@ -1,9 +1,11 @@
+"""Views for the lootboxes app"""
 import random
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from collectables.models import Collectable
 from home.models import CustomUser
+from unlockables.models import Building
 
 LOOTBOX_COST = 100
 CHANCE = 0.4
@@ -22,7 +24,7 @@ def open_lootbox(request):
                 "error": "Not enough points to open a lootbox",
                 "new_points": user.current_points,
             }
-            return JsonResponse(response_data) 
+            return JsonResponse(response_data)
 
         user.current_points -= LOOTBOX_COST  # Deduct points
         user.save()
@@ -33,14 +35,20 @@ def open_lootbox(request):
         is_duplicate = False
 
         if collectables and random.random() > CHANCE:  # 60% chance to win an item
-            item = random.choice(list(collectables))
+            item = random.choice(list(collectables))  # Select a random collectable
+
             if item in user.collectables_owned.all():
                 is_duplicate = True
                 user.current_points += REFUND # Refund points
             else:
-                user.collectables_owned.add(item)  # Add to user's collection
+                user.collectables_owned.add(item)  # Add new collectable to user's collection
+                
+                # Get sustainability_score from the corresponding Building
+                building = Building.objects.filter(name=item.name).first()
+                if building:  # Ensure the building exists
+                    user.all_time_points += building.sustainability_score  
 
-        user.save()
+            user.save()  # Save user data
 
         # Prepare JSON response
         response_data = {

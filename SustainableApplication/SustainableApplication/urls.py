@@ -20,8 +20,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
-from django.conf import settings
-from django.conf.urls.static import static
 from tasks import views
 
 urlpatterns = [
@@ -39,6 +37,7 @@ urlpatterns = [
     path('gallery/', views.image_gallery, name='image_gallery'),
     path("collectables/", include("collectables.urls")),
     path("lootboxes/", include("lootboxes.urls")),
+    path('riddles/', include('riddles.urls')),
 ]
 
 # Serve static and media files in development mode

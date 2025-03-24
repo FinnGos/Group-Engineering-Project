@@ -1,3 +1,4 @@
+"""Custom exceptions for the points app"""
 class NotEnoughPoints(Exception):
     """Exception raised when subtracting too many points
     

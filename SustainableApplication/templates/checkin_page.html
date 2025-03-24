@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="{% static 'css/map.css' %}">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <!-- Include Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <style>
     /* Background Section */
     .background-section {
@@ -17,24 +19,20 @@
       height: 100vh;
       overflow: hidden;
     }
-
     .background-section img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(70%); /* Less dimming */
+      filter: brightness(70%);
     }
-
-    /* Overlay for additional dimming control */
     .background-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+      background: rgba(0, 0, 0, 0.3);
     }
-
     /* Form Section */
     .form-section {
       position: absolute;
@@ -44,39 +42,33 @@
       text-align: center;
       color: white;
       padding: 40px;
-      background: rgba(0, 0, 0, 0.6); /* Slightly transparent black */
+      background: rgba(0, 0, 0, 0.6);
       border-radius: 15px;
-      max-width: 600px;
       width: 90%;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center everything inside */
+      align-items: center;
+      max-width: 400px;
     }
-
-    /* Text Styling */
     .outlined-text {
       text-shadow: 2px 2px 5px black;
     }
-
-    /* Check-in Button */
+    /* Check-In Button */
     .checkin-btn {
-      width: 80%;
-      max-width: 300px;
+      width: 100%;
       background-color: #4caf50;
       color: white;
-      padding: 15px;
+      padding: 12px;
       border-radius: 8px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-top: 20px; /* Add spacing */
+      margin-top: 20px;
       text-align: center;
     }
-
     .checkin-btn:hover {
       background-color: #45a049;
     }
-
     /* Map Container */
     .map-container {
       display: flex;
@@ -85,32 +77,85 @@
       flex-direction: column;
       margin-top: 30px;
     }
-
     #map {
-      width: 500px;
-      height: 300px;
+      width: 100%;
+      max-width: 350px;
+      height: 250px;
       border-radius: 10px;
       margin-bottom: 15px;
     }
-
+    /* Message Box (if still used elsewhere) */
+    #message-box {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      z-index: 1000;
+    }
+    /* Modal Overlay & Content for locking screen */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+    }
+    .modal-content {
+      position: relative;
+      z-index: 1000;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 90%;
+    }
   </style>
 {% endblock %}
 
 {% block content %}
-<!-- Background Image Section -->
-<div class="background-section">
-  <img src="{% static 'images/checkin.jpg' %}" alt="Background Image">
-  <div class="background-overlay"></div>
-  
-  <!-- Form Section with Text and Button -->
-  <div class="form-section">
-    <h1 class="text-6xl font-bold mb-6 outlined-text">Check-In</h1>
-    <p class="text-3xl mb-6 outlined-text text-center">
-      Click below to check-in.<br>
-      You will only be able to check-in if you are within a registered sustainability hotspot.
-    </p>
-    <button id="checkin-btn" class="checkin-btn">Check-In</button>
+<!-- Alpine.js container for check-in functionality -->
+<div x-data="checkInApp()">
+  <!-- Background Image Section with Form -->
+  <div class="background-section">
+    <img src="{% static 'images/checkin.jpg' %}" alt="Background Image">
+    <div class="background-overlay"></div>
+    
+    <div class="form-section">
+      <h1 class="text-4xl font-bold mb-4 outlined-text">Check-In</h1>
+      <p class="text-lg mb-4 outlined-text text-center">
+        Click below to check-in.<br>
+        You must be within a registered sustainability hotspot.
+      </p>
+      <button @click="checkIn()" class="checkin-btn">Check-In</button>
+    </div>
   </div>
+
+  <!-- Modal Popup for Feedback (locks the screen when open) -->
+  <div x-show="open" x-cloak class="fixed inset-0 flex items-center justify-center" x-transition>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h2 class="text-2xl font-bold mb-4" x-text="feedbackMessage"></h2>
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+        <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 text-center text-xs sm:text-base">
+          Go to Your Daily Tasks
+        </a>
+        <button @click="open = false" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 text-center text-xs sm:text-base">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Message Box (if needed elsewhere) -->
+<div id="message-box">
+  <span id="message-text"></span>
 </div>
 
 <!-- Map Section -->
@@ -118,72 +163,136 @@
   {% if message %}
     <p class="success-message">{{ message }}</p>
     {% if task %}
-      <script>
-        setTimeout(function () {
-          window.location.href = "/tasks/";
-        }, 7000);
-      </script>
+      {# Optionally add redirect script or additional task logic here #}
     {% endif %}
   {% elif error %}
     <p class="error-message">{{ error }}</p>
   {% endif %}
-
   <div id="map"></div>
 </div>
 
-<!-- Hidden element to store task ID -->
+<!-- Hidden element to store task ID (defaults to 0 if not provided) -->
 <span id="taskData" data-task-id="{{ task.id|default:0 }}"></span>
 
-<script src="{% static 'js/checkin.js' %}"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-      var mapElement = document.getElementById("map");
-      if (!mapElement) {
-          console.error("Map container not found!");
-          return;
-      }
-
-      // Initialize map
-      var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-      }).addTo(map);
-
-      var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
-          .bindPopup("Your location")
-          .openPopup();
-
-      // Function to get user's geolocation
-      function getLocation(task_id) {
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(function (position) {
-                  var lat = position.coords.latitude;
-                  var lon = position.coords.longitude;
-
-                  // Update map marker
-                  marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
-                  map.setView([lat, lon], 15);
-
-                  // Send location to the backend
-                  fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
-                      .then(response => response.json())
-                      .then(data => {
-                          alert(data.message);
-                      })
-                      .catch(error => console.error('Error:', error));
-              }, function (error) {
-                  alert("Error getting location. Please enable location services.");
+  // Alpine component for check-in
+  function checkInApp() {
+    return {
+      open: false,
+      feedbackMessage: '',
+      checkIn() {
+        const taskId = document.getElementById("taskData").getAttribute("data-task-id");
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(position => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            fetch(`/checkin/get_location/${taskId}/?lat=${lat}&lon=${lon}`)
+              .then(response => response.json())
+              .then(data => {
+                // Adjust message based on backend response
+                if (data.message.includes("Succesfull")) {
+                  this.feedbackMessage = "Successfully checked in";
+                } else {
+                  this.feedbackMessage = "Could not check in, please ensure you are in range and try again";
+                }
+                this.open = true;
+              })
+              .catch(error => {
+                this.feedbackMessage = "Please ensure you are in range and try again!";
+                this.open = true;
               });
-          } else {
-              alert("Geolocation is not supported by this browser.");
-          }
+          }, () => {
+            this.feedbackMessage = "Please enable location services to check-in.";
+            this.open = true;
+          });
+        } else {
+          this.feedbackMessage = "Geolocation is not supported by this browser.";
+          this.open = true;
+        }
+      },
+      init() {
+        // Watch the 'open' property and lock/unlock page scrolling accordingly
+        this.$watch('open', value => {
+          document.body.style.overflow = value ? 'hidden' : '';
+        });
       }
+    }
+  }
+</script>
 
-      // Attach event listener to the check-in button
-      document.getElementById('checkin-btn').addEventListener('click', function() {
-          const taskId = 1; // Replace with dynamic task ID
-          getLocation(taskId);
+<script>
+  // Initialize Leaflet map
+  document.addEventListener("DOMContentLoaded", function () {
+    var mapElement = document.getElementById("map");
+    if (!mapElement) {
+      console.error("Map container not found!");
+      return;
+    }
+
+    // Initialize the map centered at the default location
+    var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker at the default location
+    var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
+      .bindPopup("Your location")
+      .openPopup();
+
+    // Function to get the user's geolocation, update the map, and send the location to the backend
+    function getLocation(task_id) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+
+          // Update marker and map view with user's current location
+          marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
+          map.setView([lat, lon], 15);
+
+          // Send the location to the backend via fetch
+          fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
+            .then(response => {
+              return response.headers.get("content-type")?.includes("application/json") 
+                ? response.json() 
+                : Promise.reject("Non-JSON response");
+            })
+            .then(data => {
+              showMessage(data.message, true);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              showMessage("Error during check-in. Please try again.", false);
+            });
+        }, function (error) {
+          showMessage("Error getting location. Please enable location services.", false);
+        });
+      } else {
+        showMessage("Geolocation is not supported by this browser.", false);
+      }
+    }
+
+    // Function to display a message box with a custom message and background based on success or error
+    function showMessage(message, success) {
+      var messageBox = document.getElementById("message-box");
+      var messageText = document.getElementById("message-text");
+      messageText.textContent = message;
+      messageBox.style.backgroundColor = success ? "rgba(0,128,0,0.8)" : "rgba(128,0,0,0.8)";
+      messageBox.style.display = "block";
+      setTimeout(function() {
+        messageBox.style.display = "none";
+      }, 5000);
+    }
+
+    // Attach event listener to the main check-in button (if you have one outside Alpine)
+    var btn = document.querySelector('.checkin-btn');
+    if(btn) {
+      btn.addEventListener('click', function() {
+        var taskId = document.getElementById("taskData").getAttribute("data-task-id") || 1;
+        getLocation(taskId);
       });
+    }
   });
 </script>
 {% endblock %}

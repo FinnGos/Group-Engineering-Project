@@ -1,3 +1,4 @@
+"""This module contains the PointManager class which is responsible for managing points for users."""
 from home.models import CustomUser
 from utils.exceptions import NotEnoughPoints, NegativePoints
 

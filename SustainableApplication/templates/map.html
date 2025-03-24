@@ -2,79 +2,166 @@
 {% load custom_filters %}
 {% load static %}
 
+{% block head_extra %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
 {% block content %}
-  <!-- Map Title -->
-  <div class="text-center my-10">
-    <h1 class="text-5xl font-bold">Your Exeter Campus</h1>
+  <div class="text-center my-4 md:my-10">
+    <h1 class="text-3xl md:text-5xl font-bold">Your Exeter Campus</h1>
   </div>
 
-  <!-- Go to Shop Button -->
-  <div class="text-center mb-6">
+  <div class="text-center mb-3 md:mb-6">
     <a href="{% url 'shop' %}">
-      <button class="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-600 transition">Go to Shop</button>
+      <button class="px-4 py-2 md:px-6 md:py-3 bg-green-700 text-white rounded-lg hover:bg-green-600 transition text-sm md:text-base">Go to Shop</button>
     </a>
   </div>
 
-  <!-- Map Container -->
-  <div class="flex justify-center my-8">
-    <div class="map-container">
-      <!-- Buildings -->
-      {% for building in buildings %}
-        {% if user_buildings|get_item:building.id %}
-          <img src="{{ building.image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
-        {% else %}
-          <img src="{{ building.locked_image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
-        {% endif %}
-      {% endfor %}
-
-      <!-- User's Items -->
-      {% for item in user_items %}
-        <img src="{{ item.item.image.url }}" class="item" style="top: {{ item.y }}px; left: {{ item.x }}px;">
-      {% endfor %}
+  <!-- User's Score Display -->
+  <div class="flex justify-center my-2 md:my-4">
+    <div class="bg-green-200 p-2 md:p-4 rounded-lg shadow-md flex gap-3 md:gap-6 text-sm md:text-lg">
+      <p class="font-semibold">💰 <span class="md:inline">Carbo Coins:</span> <span class="font-bold">{{ current_points }}</span></p>
+      <p class="font-semibold">🌱 <span class="md:inline">Campus Cred:</span> <span class="font-bold">{{ all_time_points }}</span></p>
     </div>
+  </div>
+
+  <!-- Wrap the map in a responsive wrapper -->
+  <div class="flex justify-center my-3 md:my-8">
+    <div class="map-wrapper">
+      <div class="map-container">
+        {% for building in buildings %}
+          {% if user_buildings|get_item:building.id %}
+            <img src="{{ building.image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+          {% else %}
+            <img src="{{ building.locked_image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+          {% endif %}
+        {% endfor %}
+
+        {% for user_item in user_items %}
+          <div class="item" style="left: {{ user_item.x }}px; top: {{ user_item.y }}px; width: {{ user_item.size }}px; height: {{ user_item.size }}px;">
+            <img src="{{ user_item.item.image.url }}" alt="{{ user_item.item.name }}">
+          </div>
+        {% endfor %}
+
+        {% for trash in rubbish %}
+          <img src="{{ trash.image.url }}" alt="Rubbish" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 20px; height: 20px;" />
+          <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:25 }}px;">
+            {% csrf_token %}
+            <button type="submit" class="text-xs md:text-base bg-green-100 px-1 py-0.5 rounded">Clean</button>
+          </form>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div id="message-box" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-6 rounded-md shadow-md bg-white hidden text-sm md:text-base">
+    <p id="message-text" class="text-lg md:text-xl"></p>
+    <button id="close-message" class="mt-3 md:mt-4 px-3 py-1 md:px-4 md:py-2 bg-green-700 text-white rounded-md hover:bg-green-600 focus:outline-none">Close</button>
   </div>
 {% endblock %}
 
 {% block extra_css %}
   <style>
-    /* Map Container */
+    /* Desktop: Fixed-size map container */
     .map-container {
       position: relative;
-      width: 1800px; /* Adjust based on your game map size */
-      height: 800px;
+      width: 2000px;
+      height: 1000px;
       background: url('{% static "images/grass_background.png" %}') no-repeat center;
       background-size: cover;
       border: 2px solid black;
-      /* Center map in the middle of the page */
-      overflow: hidden; /* Ensure nothing goes outside the map container */
+      overflow: hidden;
     }
 
-    /* Buildings */
     .building {
       position: absolute;
-      width: 150px;  /* Adjust based on image size */
+      width: 150px;
       height: 150px;
-      /* Prevent items from appearing outside the container */
-      max-width: 100%;
-      max-height: 100%;
     }
 
-    /* Items (Trees, Solar Panels, etc.) */
     .item {
       position: absolute;
-      width: 30px;  /* Adjust based on image size */
-      height: 30px;
-      /* Prevent items from appearing outside the container */
-      max-width: 100%;
-      max-height: 100%;
     }
 
-    /* Go to Shop Button */
-    .go-to-shop-button {
-      position: absolute;
-      bottom: 20px; /* Adjust the vertical position of the button */
-      left: 50%;
-      transform: translateX(-50%);
+    /* Base map wrapper for all screen sizes */
+    .map-wrapper {
+      width: 1800px; /* same as the map width */
+      height: 800px; /* same as the map height */
+      overflow: hidden;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      /* Compact UI to give more space to the map */
+      body {
+        font-size: 0.9rem;
+      }
+      
+      /* Make the map wrapper take most of the screen height */
+      .map-wrapper {
+        width: 100%;
+        height: 70vh; /* Use viewport height instead of a fixed ratio */
+        overflow: auto; /* Allow scrolling within the map area */
+        position: relative;
+      }
+
+      /* Scale and position the map for mobile */
+      .map-container {
+        transform: scale(0.3); /* More zoomed out to see more of the map */
+        transform-origin: top left;
+      }
+      
+      /* Allow the user to pan around the map */
+      .map-wrapper {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
+      
+      /* Make clean buttons more visible and tappable */
+      form button[type="submit"] {
+        padding: 4px 8px;
+        min-width: 50px;
+        min-height: 24px;
+      }
     }
   </style>
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const messageBox = document.getElementById("message-box");
+      const messageText = document.getElementById("message-text");
+      const closeButton = document.getElementById("close-message");
+
+      {% if messages %}
+        setTimeout(() => {
+          {% for message in messages %}
+            messageText.textContent = "{{ message|escapejs }}";
+            messageBox.classList.remove("hidden");
+          {% endfor %}
+        }, 100);
+      {% endif %}
+
+      closeButton.addEventListener("click", function () {
+        messageBox.classList.add("hidden");
+      });
+      
+      // Handle mobile map panning if touch events are available
+      if ('ontouchstart' in window) {
+        const mapWrapper = document.querySelector('.map-wrapper');
+        let initialScrollLeft = 0;
+        let initialScrollTop = 0;
+        
+        // Center the map initially 
+        window.addEventListener('load', function() {
+          // Center horizontally and vertically on load
+          if (mapWrapper) {
+            // Center to the middle of the map
+            mapWrapper.scrollLeft = (1800 * 0.3 - mapWrapper.clientWidth) / 2;
+            mapWrapper.scrollTop = (800 * 0.3 - mapWrapper.clientHeight) / 2;
+          }
+        });
+      }
+    });
+  </script>
 {% endblock %}

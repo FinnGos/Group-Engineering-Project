@@ -1,17 +1,13 @@
-from django.urls import path
-from django.contrib.auth import views as auth_views
-from . import views
-from django.shortcuts import redirect
-from tasks import views as tviews
-from leaderboard import views as lviews
-from .views import CustomLogoutView, LoginFormView
+"""Defines URL patterns for home."""
 from django.http import HttpResponse
-from django.conf import settings
-from django.conf.urls.static import static
-from collectables import views as c_views
+from django.urls import path
+from tasks import views as tviews
+from .views import CustomLogoutView, LoginFormView
+from . import views
 
 # Placeholder views
 def placeholder_view(request):
+    """Placeholder view for pages that are not yet implemented."""
     return HttpResponse("This page is under construction.", content_type="text/plain")
 
 urlpatterns = [

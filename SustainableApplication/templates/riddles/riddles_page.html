@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Riddles - Week {{ current_week }}{% endblock %}
+
+{% block content %}
+<div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-6">Riddle Challenge - Week {{ current_week }}</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        {% for riddle in riddles %}
+        <div class="bg-gray-200 p-4 rounded-lg shadow-md text-center {% if riddle in request.user.completed_riddles.all %}completed{% endif %}">
+            {% if riddle in request.user.completed_riddles.all %}
+                <h2 class="text-xl font-bold text-green-700">✅ Completed</h2>
+            {% endif %}
+            <h2 class="text-xl font-bold mt-2">
+                {{ riddle.riddle_question }}
+            </h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .riddle-box {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        background: #fff;
+    }   
+    .completed {
+        border: 2px solid green;
+        background-color: #d4edda;
+    }
+</style>
+
+{% endblock %}

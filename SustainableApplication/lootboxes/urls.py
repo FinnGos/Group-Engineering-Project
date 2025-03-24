@@ -1,3 +1,4 @@
+"""URLs for the lootboxes app."""
 from django.urls import path
 from . import views
 
