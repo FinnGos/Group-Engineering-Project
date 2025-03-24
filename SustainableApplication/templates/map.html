@@ -7,26 +7,26 @@
 {% endblock %}
 
 {% block content %}
-  <div class="text-center my-10">
-    <h1 class="text-5xl font-bold">Your Exeter Campus</h1>
+  <div class="text-center my-4 md:my-10">
+    <h1 class="text-3xl md:text-5xl font-bold">Your Exeter Campus</h1>
   </div>
 
-  <div class="text-center mb-6">
+  <div class="text-center mb-3 md:mb-6">
     <a href="{% url 'shop' %}">
-      <button class="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-600 transition">Go to Shop</button>
+      <button class="px-4 py-2 md:px-6 md:py-3 bg-green-700 text-white rounded-lg hover:bg-green-600 transition text-sm md:text-base">Go to Shop</button>
     </a>
   </div>
 
   <!-- User's Score Display -->
-  <div class="flex justify-center my-4">
-    <div class="score-box bg-green-200 p-4 rounded-lg shadow-md flex gap-6">
-      <p class="coin-text text-lg font-semibold">💰 Carbo Coins: <span class="font-bold">{{ current_points }}</span></p>
-      <p class="coin-text text-lg font-semibold">🌱 Campus Cred: <span class="font-bold">{{ all_time_points }}</span></p>
+  <div class="flex justify-center my-2 md:my-4">
+    <div class="bg-green-200 p-2 md:p-4 rounded-lg shadow-md flex gap-3 md:gap-6 text-sm md:text-lg">
+      <p class="font-semibold">💰 <span class="md:inline">Carbo Coins:</span> <span class="font-bold">{{ current_points }}</span></p>
+      <p class="font-semibold">🌱 <span class="md:inline">Campus Cred:</span> <span class="font-bold">{{ all_time_points }}</span></p>
     </div>
   </div>
 
-  <!-- Responsive Map Wrapper -->
-  <div class="flex justify-center my-8">
+  <!-- Wrap the map in a responsive wrapper -->
+  <div class="flex justify-center my-3 md:my-8">
     <div class="map-wrapper">
       <div class="map-container">
         {% for building in buildings %}
@@ -47,22 +47,22 @@
           <img src="{{ trash.image.url }}" alt="Rubbish" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 20px; height: 20px;" />
           <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:25 }}px;">
             {% csrf_token %}
-            <button type="submit">Clean</button>
+            <button type="submit" class="text-xs md:text-base bg-green-100 px-1 py-0.5 rounded">Clean</button>
           </form>
         {% endfor %}
       </div>
     </div>
   </div>
 
-  <div id="message-box" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-6 rounded-md shadow-md bg-white hidden">
-    <p id="message-text" class="text-xl"></p>
-    <button id="close-message" class="mt-4 px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-600 focus:outline-none">Close</button>
+  <div id="message-box" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-6 rounded-md shadow-md bg-white hidden text-sm md:text-base">
+    <p id="message-text" class="text-lg md:text-xl"></p>
+    <button id="close-message" class="mt-3 md:mt-4 px-3 py-1 md:px-4 md:py-2 bg-green-700 text-white rounded-md hover:bg-green-600 focus:outline-none">Close</button>
   </div>
 {% endblock %}
 
 {% block extra_css %}
   <style>
-    /* Desktop Map: Fixed dimensions */
+    /* Desktop: Fixed-size map container */
     .map-container {
       position: relative;
       width: 1800px;
@@ -83,36 +83,44 @@
       position: absolute;
     }
 
-    /* The map wrapper holds the map-container and prevents horizontal scrolling */
+    /* Base map wrapper for all screen sizes */
     .map-wrapper {
-      width: 1800px; /* Desktop dimensions */
-      height: 800px;
+      width: 1800px; /* same as the map width */
+      height: 800px; /* same as the map height */
+      overflow: hidden;
     }
 
-    /* Mobile-specific styles */
+    /* Mobile optimizations */
     @media (max-width: 768px) {
-      /* Adjust coin box text and padding */
-      .score-box {
-        padding: 0.5rem;
+      /* Compact UI to give more space to the map */
+      body {
+        font-size: 0.9rem;
       }
-      .coin-text {
-        font-size: 0.875rem; /* Smaller text */
-      }
-
-      /* Increase the total size of the map on mobile (e.g. 2400x1200) */
+      
+      /* Make the map wrapper take most of the screen height */
       .map-wrapper {
-        width: 100vw; /* Full viewport width */
-        height: calc(1200 * (100vw / 2400)); /* Scale height proportionally */
-        overflow: hidden;
+        width: 100%;
+        height: 70vh; /* Use viewport height instead of a fixed ratio */
+        overflow: auto; /* Allow scrolling within the map area */
         position: relative;
       }
 
-      /* Change map container dimensions for mobile */
+      /* Scale and position the map for mobile */
       .map-container {
-        width: 2400px;
-        height: 1200px;
-        transform: scale(calc(100vw / 2400));
+        transform: scale(0.3); /* More zoomed out to see more of the map */
         transform-origin: top left;
+      }
+      
+      /* Allow the user to pan around the map */
+      .map-wrapper {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
+      
+      /* Make clean buttons more visible and tappable */
+      form button[type="submit"] {
+        padding: 4px 8px;
+        min-width: 50px;
+        min-height: 24px;
       }
     }
   </style>
@@ -137,6 +145,23 @@
       closeButton.addEventListener("click", function () {
         messageBox.classList.add("hidden");
       });
+      
+      // Handle mobile map panning if touch events are available
+      if ('ontouchstart' in window) {
+        const mapWrapper = document.querySelector('.map-wrapper');
+        let initialScrollLeft = 0;
+        let initialScrollTop = 0;
+        
+        // Center the map initially 
+        window.addEventListener('load', function() {
+          // Center horizontally and vertically on load
+          if (mapWrapper) {
+            // Center to the middle of the map
+            mapWrapper.scrollLeft = (1800 * 0.3 - mapWrapper.clientWidth) / 2;
+            mapWrapper.scrollTop = (800 * 0.3 - mapWrapper.clientHeight) / 2;
+          }
+        });
+      }
     });
   </script>
 {% endblock %}
