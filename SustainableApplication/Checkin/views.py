@@ -25,14 +25,14 @@ def get_location(request, task_id):
         HttpResponseBadRequest: A 400 response if the latitude or longitude is invalid.
     """
 
-
-    task = get_object_or_404(Tasks, id=task_id)
+    task = get_object_or_404(Tasks, id=5)
 
     lat = request.GET.get("lat")
     lon = request.GET.get("lon")
 
     # If both provided, convert them into floating-point numbers
     if lat and lon:
+
         try:
             user_lat = float(lat)
             user_lon = float(lon)
@@ -71,25 +71,39 @@ def database_location(request, task):
 
     locations = Location.objects.using('location_db').all()
 
+    # auth_logger.info("HEREREREREREERER")
+    # auth_logger.info(f"Lat: {user_lat}" )
+    # auth_logger.info(f"Long: {user_lon}" )
+
+    # auth_logger.info(locations)
+
     for location in locations:
         # Checking the requested location is within any of the location in the DB locations
         if abs(user_lat - location.latitude) <= 0.001 and abs(user_lon - location.longitude) <= 0.001:
+            auth_logger.info(f"Lat of LAT: {user_lat-location.latitude}")
+            auth_logger.info(f"Long of LAT: {user_lon - location.longitude}")
+
             context = {
                 "lat": user_lat,
                 "lon": user_lon,
                 "message": f"Check-in Succesfull at {location.name}!",
             }
 
-            riddle = Riddle.objects.filter(location_id=location.id).first()
-            
+            auth_logger.info(location.id)
+
+            try:
+                current_location_id = location.id
+                riddle = Riddle.objects.get(location_id=current_location_id)
+                auth_logger.info(riddle)
+            except:
+                riddle = None
             
             if riddle != None:# getting into riddle tab by checking the location id is in a riddle
-                
-                # if riddle exists then riddle is completed for that user
-                if riddle not in request.user.completed_riddles.all():
-                    request.user.current_points += 350
-                    auth_logger.info(request.user.current_points)
+                user = request.user
+                user.current_points += 350
+                auth_logger.info(request.user.current_points)
                 request.user.completed_riddles.add(riddle)
+                user.save()
                 return render(request, "checkin_page.html", context)
 
             else:
@@ -99,8 +113,8 @@ def database_location(request, task):
                 reward = task.reward
                 user = request.user
                 user.current_points += reward
-                user.all_time_points += reward
                 user.save()
+                auth_logger.info(context)
                 return render(request, "checkin_page.html", context)
             
 
