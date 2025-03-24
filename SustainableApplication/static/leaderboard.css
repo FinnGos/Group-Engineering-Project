@@ -59,3 +59,7 @@
   font-size: 1.5rem;
   color: white;
 }
+
+ body {
+    background-color: #004d00; /* Apply the green background to the whole page */
+  }
