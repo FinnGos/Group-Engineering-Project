@@ -2697,3 +2697,47 @@ django.server INFO 2025-03-24 02:46:11,742 basehttp 15292 23640 "GET /media/rubb
 django.server INFO 2025-03-24 02:46:11,742 basehttp 15292 31820 "GET /media/rubbish/Rubbish_8jx2SXJ.png HTTP/1.1" 304 0
 django.server INFO 2025-03-24 02:46:11,743 basehttp 15292 23808 "GET /media/rubbish/Rubbish.png HTTP/1.1" 304 0
 django.server INFO 2025-03-24 02:46:11,743 basehttp 15292 23368 "GET /media/rubbish/Rubbish_7mbXcaJ.png HTTP/1.1" 304 0
+django.utils.autoreload INFO 2025-03-24 14:27:10,851 autoreload 20552 22000 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 14:27:14,534 basehttp 20552 3652 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-24 14:27:14,619 basehttp 20552 3652 "GET /accounts/login/ HTTP/1.1" 200 7672
+django.server INFO 2025-03-24 14:27:14,709 basehttp 20552 3652 "GET /static/auth.css HTTP/1.1" 304 0
+django.server INFO 2025-03-24 14:27:18,226 basehttp 20552 3652 "GET /static/images/signin.jpg HTTP/1.1" 200 2262128
+django.server INFO 2025-03-24 14:27:29,431 basehttp 20552 3652 "GET /accounts/login/ HTTP/1.1" 200 7672
+django.server INFO 2025-03-24 14:27:30,383 basehttp 20552 3652 "GET /accounts/login/ HTTP/1.1" 200 7672
+django.server INFO 2025-03-24 14:27:31,301 basehttp 20552 3652 "GET /accounts/login/ HTTP/1.1" 200 7672
+django.server INFO 2025-03-24 14:27:38,517 basehttp 20552 3652 "GET /home/signup/ HTTP/1.1" 200 9198
+django WARNING 2025-03-24 14:27:48,410 views 20552 3652 Failed signup attempt.
+django.server INFO 2025-03-24 14:27:48,414 basehttp 20552 3652 "POST /home/signup/ HTTP/1.1" 200 9634
+django.server INFO 2025-03-24 14:28:01,109 basehttp 20552 3652 "GET /home/signup/ HTTP/1.1" 200 9198
+django.server INFO 2025-03-24 14:28:04,765 basehttp 20552 3652 "GET /home/accounts/login/ HTTP/1.1" 200 7672
+django INFO 2025-03-24 14:28:17,549 views 20552 3652 User logged in: dc754
+django.server INFO 2025-03-24 14:28:17,670 basehttp 20552 3652 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 14:28:17,717 basehttp 20552 3652 "GET /home/ HTTP/1.1" 200 9524
+django.server INFO 2025-03-24 14:28:17,792 basehttp 20552 3652 "GET /static/images/Top_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-24 14:28:17,888 basehttp 20552 3652 "GET /static/images/Bottom_Image.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-24 14:28:24,566 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 15807
+django.server INFO 2025-03-24 14:28:24,613 basehttp 20552 3652 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-24 14:28:38,081 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16852
+django.server INFO 2025-03-24 14:28:38,146 basehttp 20552 3652 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django INFO 2025-03-24 14:29:35,946 views 20552 3652 User logged out: dc754
+django.server INFO 2025-03-24 14:29:35,947 basehttp 20552 3652 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 14:29:35,969 basehttp 20552 3652 "GET /home/accounts/login/ HTTP/1.1" 200 9267
+django.server INFO 2025-03-24 14:29:37,567 basehttp 20552 3652 "GET /home/signup/ HTTP/1.1" 200 10793
+django WARNING 2025-03-24 14:29:47,050 views 20552 3652 Failed signup attempt.
+django.server INFO 2025-03-24 14:29:47,060 basehttp 20552 3652 "POST /home/signup/ HTTP/1.1" 200 11028
+django.server INFO 2025-03-24 14:30:09,215 basehttp 20552 3652 "GET /home/signup/ HTTP/1.1" 200 10793
+django.server INFO 2025-03-24 14:30:12,166 basehttp 20552 3652 "GET /home/accounts/login/ HTTP/1.1" 200 9267
+django INFO 2025-03-24 14:30:14,877 views 20552 3652 User logged in: dc754
+django.server INFO 2025-03-24 14:30:14,973 basehttp 20552 3652 "POST /home/accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 14:30:15,001 basehttp 20552 3652 "GET /home/ HTTP/1.1" 200 9524
+django.server INFO 2025-03-24 14:30:53,103 basehttp 20552 3652 "GET /home/ HTTP/1.1" 200 9524
+django.server INFO 2025-03-24 14:30:55,991 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 15871
+django.server INFO 2025-03-24 14:31:09,173 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16833
+django.server INFO 2025-03-24 14:32:41,892 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16936
+django.server INFO 2025-03-24 14:32:57,138 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16925
+django.server INFO 2025-03-24 14:33:17,717 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16922
+django.server INFO 2025-03-24 14:33:23,661 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16938
+django.server INFO 2025-03-24 14:33:34,297 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16924
+django.server INFO 2025-03-24 14:33:38,353 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16923
+django.server INFO 2025-03-24 14:33:48,537 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16918
+django.utils.autoreload INFO 2025-03-24 14:55:37,427 autoreload 20552 22000 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\SustainableApplication\settings.py changed, reloading.

@@ -1,10 +1,60 @@
-/* Outlined text for headings */
-.outlined-text {
-  color: white;
+/* Ensure the image container covers the entire area */
+.image-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background-color: #1f7a1f; /* fallback color */
+}
+
+/* Enlarge the background image by 100px (50px extra on each side) */
+.image-container img {
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+/* Task grid styles */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Styles for task cards */
+.task-item {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar styles */
+.progress-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
   font-weight: bold;
-  text-shadow: 
-      -2px -2px 0 black,
-       2px -2px 0 black,
-      -2px  2px 0 black,
-       2px  2px 0 black;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
