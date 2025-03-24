@@ -2,6 +2,11 @@
 {% load custom_filters %}
 {% load static %}
 
+{# Ensure the mobile viewport is set; if your base.html doesn’t already include this, add it in a head block #}
+{% block head_extra %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
 {% block content %}
   <div class="text-center my-10">
     <h1 class="text-5xl font-bold">Your Exeter Campus</h1>
@@ -20,7 +25,6 @@
       <p class="text-lg font-semibold">🌱 Campus Cred: <span class="font-bold">{{ all_time_points }}</span></p>
     </div>
   </div>
-
 
   <div class="flex justify-center my-8">
     <div class="map-container">
@@ -75,29 +79,36 @@
     .item {
       position: absolute;
     }
+
+    /* Mobile styling: scale down the map container for small screens */
+    @media (max-width: 768px) {
+      .map-container {
+        transform: scale(0.5);
+        transform-origin: top left;
+      }
+    }
   </style>
 {% endblock %}
 
-<!-- JavaScript for pop up box that displays error or success messages -->
 {% block extra_js %}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const messageBox = document.getElementById("message-box");
-    const messageText = document.getElementById("message-text");
-    const closeButton = document.getElementById("close-message");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const messageBox = document.getElementById("message-box");
+      const messageText = document.getElementById("message-text");
+      const closeButton = document.getElementById("close-message");
 
-    {% if messages %}
-      setTimeout(() => {
-        {% for message in messages %}
-          messageText.textContent = "{{ message|escapejs }}";
-          messageBox.classList.remove("hidden");
-        {% endfor %}
-      }, 100);
-    {% endif %}
+      {% if messages %}
+        setTimeout(() => {
+          {% for message in messages %}
+            messageText.textContent = "{{ message|escapejs }}";
+            messageBox.classList.remove("hidden");
+          {% endfor %}
+        }, 100);
+      {% endif %}
 
-    closeButton.addEventListener("click", function () {
-      messageBox.classList.add("hidden");
+      closeButton.addEventListener("click", function () {
+        messageBox.classList.add("hidden");
+      });
     });
-  });
-</script>
+  </script>
 {% endblock %}
