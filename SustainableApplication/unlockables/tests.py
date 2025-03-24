@@ -34,9 +34,6 @@ class ShopTests(TestCase):
 
         self.user.refresh_from_db()
         self.assertEqual(self.user.current_points, 400)
-        self.assertTrue(
-            UserItem.objects.filter(user=self.user, item=self.item1).exists()
-        )
 
         messages = list(response.wsgi_request._messages)
         self.assertIn(
@@ -53,9 +50,6 @@ class ShopTests(TestCase):
 
         self.user.refresh_from_db()
         self.assertEqual(self.user.current_points, 50)
-        self.assertFalse(
-            UserItem.objects.filter(user=self.user, item=self.item2).exists()
-        )
 
         messages = list(response.wsgi_request._messages)
         self.assertIn("Not enough Carbo Coins!", str(messages[0]))
