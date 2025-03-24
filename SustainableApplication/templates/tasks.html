@@ -37,20 +37,24 @@
                                 </div>
                             </div>
 
-                            <!-- Task Actions - Compact Layout -->
+                            <!-- Task Actions - Compact Layout with White Text and Underlines -->
                             <div class="task-actions mt-2 flex flex-col">
                                 <!-- Check In Button -->
                                 <form action="{% url 'get_location' task.id %}" method="GET" class="w-full">
-                                    <button type="submit" class="btn btn-primary w-full mb-1 py-1 text-sm">Check In</button>
+                                    <button type="submit" class="btn btn-primary w-full mb-1 py-1 text-sm text-white hover:underline font-medium">
+                                        <span class="underline">Check In</span>
+                                    </button>
                                 </form>
 
                                 <!-- Claim Task Button -->
-                                <button id="claim-button-{{ task.id }}" class="btn btn-success mb-1 w-full py-1 text-sm" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
-                                    Claim Task
+                                <button id="claim-button-{{ task.id }}" class="btn btn-success mb-1 w-full py-1 text-sm text-white hover:underline font-medium" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
+                                    <span class="underline">Claim Task</span>
                                 </button>
 
                                 <!-- Progress Update Buttons -->
-                                <button class="btn btn-warning w-full py-1 text-sm" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease Progress</button>
+                                <button class="btn btn-warning w-full py-1 text-sm text-white hover:underline font-medium" onclick="updateProgress({{ task.id }}, 'decrease')">
+                                    <span class="underline">Decrease Progress</span>
+                                </button>
                             </div>
                         </div>
                     {% endfor %}
@@ -61,24 +65,35 @@
                 {% endif %}
             </div>
             
-            <!-- Navigation buttons with better visibility -->
+            <!-- Navigation buttons with better visibility and white text -->
             <div class="navigation-buttons flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 w-full mb-8">
                 <!-- Button to Go to Task Gallery -->
                 <div class="text-center">
-                    <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 shadow-lg inline-block">
-                        View Task Gallery
+                    <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 shadow-lg inline-block font-medium hover:underline">
+                        <span class="underline">View Task Gallery</span>
                     </a>
                 </div>
 
                 <div class="text-center">
-                    <a href="{% url 'home' %}" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 shadow-lg inline-block">
-                        Back to Home
+                    <a href="{% url 'home' %}" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 shadow-lg inline-block font-medium hover:underline">
+                        <span class="underline">Back to Home</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Optional: Add custom CSS to ensure button text is white even when using Bootstrap button classes -->
+<style>
+.btn-primary, .btn-success, .btn-warning {
+    color: white !important;
+    font-weight: 500 !important;
+}
+.btn-primary:disabled, .btn-success:disabled, .btn-warning:disabled {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+</style>
 
 <!-- JavaScript Section for AJAX Functionality -->
 <script>
