@@ -8,6 +8,36 @@
       -2px  2px 0 black,
        2px  2px 0 black;
 }
+@media (max-width: 640px) {
+    .mobile-bg {
+        background-color: transparent !important; /* Remove the green background */
+    }
+
+    .bottom-section {
+        margin-top: -20px; /* Pull the bottom section up */
+        position: relative;
+        z-index: 10;
+    }
+
+    .mobile-bottom-container {
+        margin-top: -50px !important; /* Adjust to remove gap */
+        padding: 0 !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .mobile-bottom-image {
+        width: 100vw !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        margin-top: -20px !important; /* Further adjust to remove any potential gaps */
+    }
+
+    .top-section {
+        margin-bottom: -10px !important; /* Reduce any potential spacing */
+    }
+}
 
 /* Image Section */
 .top-section {
