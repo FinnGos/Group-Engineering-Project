@@ -1,63 +1,46 @@
-/* Top Section */
-.top-section, .bottom-section {
-    position: relative;
-}
-
-.top-text, .bottom-text {
-    position: absolute;
+/* Ensure Navbar is Always on Top */
+nav {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; 
-    text-align: center;
-    z-index: 1; /* Ensures the text stays above the images */
+    width: 100%;
+    z-index: 9999; /* Extremely high z-index */
+    background-color: rgba(23, 114, 49, 0.95); /* Semi-transparent green to match design */
 }
 
-.top-section img, .bottom-section img {
-    width: 100%; 
-    height: auto; /* Maintain aspect ratio */
+/* Adjust body to account for fixed navbar */
+body {
+    padding-top: 70px; /* Adjust based on your actual navbar height */
 }
 
-.bottom-section {
-    min-height: 300px; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Dropdown Menu */
+nav .relative {
+    position: relative;
+    z-index: 10000; /* Even higher for user menu container */
 }
 
-/*We can change text style here if we want*/
-.top-text h1, .bottom-text h1 {
-    font-size: 3rem; 
-    margin: 10px 0;
+nav ul[x-show="userMenu"] {
+    position: absolute;
+    z-index: 10001; /* Highest z-index for dropdown */
+    top: 100%; /* Position below the trigger */
+    right: 0; /* Align to the right of the container */
+    min-width: 200px;
+    background-color: rgba(22, 101, 52, 0.95); /* Dark green with transparency */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.top-text p, .bottom-text ul {
-    font-size: 1.5rem; 
+/* Mobile Dropdown */
+nav div[x-show="open"] {
+    position: fixed;
+    top: 70px; /* Position right below the navbar */
+    left: 0;
+    width: 100%;
+    z-index: 9998; /* Slightly lower than navbar but above other content */
+    background-color: rgba(22, 101, 52, 0.95);
 }
 
-/* Sidebar Navigation styles */
-.sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    margin-bottom: 10px;
-}
-
-.sidebar-nav a {
-    text-decoration: none;
-    color: #008000; 
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.sidebar-nav a:hover {
-    color: #004d00; 
+/* Ensure all content below navbar is pushed down */
+.flex-1 {
+    margin-top: 70px; /* Match the body padding-top */
 }

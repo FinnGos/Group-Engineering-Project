@@ -17,7 +17,6 @@
       font-size: 1rem;
     }
 
-    /* Override any unwanted link styling in the footer */
     footer a {
       background: none !important;
       padding: 0 !important;
@@ -31,36 +30,15 @@
     }
   </style>
 
-  <!-- JavaScript to add confirmation on Delete Account link -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Find the "Delete Account" link
       let deleteAccountLink = document.getElementById("delete-account-link");
-
-      // Add confirmation dialog on click
       if (deleteAccountLink) {
         deleteAccountLink.addEventListener("click", function (event) {
           let confirmDelete = confirm("Are you sure you want to delete your account? This action cannot be undone.");
           if (!confirmDelete) {
-            event.preventDefault(); // Prevent navigation if user cancels
+            event.preventDefault();
           }
-        });
-      }
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the current URL
-      const currentUrl = window.location.pathname;
-
-      // Disable navbar buttons if on login or signup pages
-      const navbarLinks = document.querySelectorAll("nav a");
-
-      if (currentUrl.includes("login") || currentUrl.includes("signup")) {
-        navbarLinks.forEach(link => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();  // Prevent navigation if on login or signup page
-          });
         });
       }
     });
@@ -72,7 +50,7 @@
 <body class="flex flex-col min-h-screen">
 
   <!-- Navbar -->
-  <nav class="bg-green-700 text-white p-4" x-data="{ open: false }">
+  <nav class="bg-green-700 text-white p-4" x-data="{ open: false, userMenu: false }">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-xl font-bold">CarboCollect</div>
 
@@ -80,32 +58,24 @@
       <ul class="hidden md:flex space-x-6 text-lg">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
-
-        <!-- Check if user is on login/signup page, and disable specific links -->
-        {% if request.path == '/signup/' or request.path == '/login/' %}
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
-        {% else %}
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
-        {% endif %}
-        {% endif %}
-
-        {% if not user.is_authenticated %}
-        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
-        {% endif %}
-
-        {% if user.is_authenticated %}
-        {% endif %}
-
+        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
         <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
+
         {% if user.is_authenticated %}
+        <!-- User Section -->
+        <li class="relative" @click.away="userMenu = false">
+          <button @click="userMenu = !userMenu" class="hover:underline">User</button>
+          <ul x-show="userMenu" class="absolute bg-green-800 text-white mt-2 p-2 rounded shadow-lg space-y-2">
+            <li><a href="{% url 'update_profile' %}" class="block hover:underline">Update Profile</a></li>
+            <li><a href="{% url 'change_password' %}" class="block hover:underline">Change Password</a></li>
+            <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="block hover:underline text-red-500">Delete Account</a></li>
+            <li><a href="{% url 'logout' %}" class="block hover:underline">Logout</a></li>
+          </ul>
+        </li>
+        {% else %}
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
         {% endif %}
       </ul>
 
@@ -121,39 +91,29 @@
     <div x-show="open" class="md:hidden bg-green-800 text-white p-4">
       <ul class="flex flex-col space-y-2 text-lg">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-        <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
+        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
+        <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
 
-        <!-- Check if user is on login/signup page, and disable specific links for mobile -->
-        {% if request.path == '/signup/' or request.path == '/login/' %}
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
-        {% else %}
         {% if user.is_authenticated %}
-        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        {% endif %}
-        {% endif %}
-
-        {% if not user.is_authenticated %}
+        <!-- User Section in Mobile -->
+        <li>
+          <span class="font-bold">User</span>
+          <ul class="pl-4 space-y-2">
+            <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+            <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+            <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="hover:underline text-red-500">Delete Account</a></li>
+            <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+          </ul>
+        </li>
+        {% else %}
         <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
         {% endif %}
-
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
-        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
-        <li><a href="{%url 'open_lootbox'%}">Lootbox</a></li>
-        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
-        {% endif %}
-
       </ul>
     </div>
   </nav>
-
 
   <!-- Main Content -->
   <div class="flex-1">
@@ -169,7 +129,6 @@
         Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon
         <li><a href="{% url 'termsAndConditions' %}" class="hover:underline">Terms and Conditions</a></li>
         <li><a href="{% url 'privacyPolicy' %}" class="hover:underline">Privacy Policy</a></li>
-
       </p>
     </div>
   </footer>
