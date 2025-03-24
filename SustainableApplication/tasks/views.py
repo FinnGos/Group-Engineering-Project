@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
 from .forms import ImageUploadForm
 from .models import UploadedImage
-import logging 
+import logging
 import os
 from django.conf import settings
 
@@ -27,29 +27,23 @@ import random
 # Create your views here.
 @login_required
 def tasks_view(request):
-    incomplete_tasks = Tasks.objects.filter(completed=False)
-    return render(request, "tasks.html", {"tasks": incomplete_tasks})
-
+    """View to display a maximum of three random incomplete tasks for the user."""
     if not request.user.is_authenticated:
-        return render(request, "tasks.html", {"task": None})
+        return render(request, "tasks.html", {"tasks": []})
 
     user = request.user
     today = now().date()  # Ensure date-only comparison
 
-    # Get user's existing task if assigned today
-    if user.selected_task and user.task_assign_date == today:
-        task = user.selected_task
-    else:
-        user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
-        if user_incomplete_tasks:
-            task = random.choice(user_incomplete_tasks)
-            user.selected_task = task
-            user.task_assign_date = today  # Save as date
-            user.save(update_fields=["selected_task", "task_assign_date"])
-        else:
-            task = None  # No tasks available
+    # Fetch all incomplete tasks
+    incomplete_tasks = list(Tasks.objects.filter(completed=False))
 
-    return render(request, "tasks.html", {"task": task})
+    if incomplete_tasks:
+        # Select up to 3 random tasks
+        selected_tasks = random.sample(incomplete_tasks, min(3, len(incomplete_tasks)))
+    else:
+        selected_tasks = []  # No tasks available
+
+    return render(request, "tasks.html", {"tasks": selected_tasks})
 
 
 def update_progress(request, task_id, action):
@@ -93,8 +87,6 @@ def update_progress(request, task_id, action):
     )
 
 
-
-
 def upload_file(request, task_id):
     """
     Handles image uploads for a specific task.
@@ -109,71 +101,74 @@ def upload_file(request, task_id):
     else:
         task = get_object_or_404(Tasks, id=task_id)
 
-    if request.method == 'POST' and request.FILES.get('image'):
-        image = request.FILES['image']
-        
-        uploaded_image = UploadedImage.objects.create(
-            task=task, 
-            image=image, 
-            uploaded_by=request.user
-        )
-        return redirect('tasks_page')  # Redirect after upload
+    if request.method == "POST" and request.FILES.get("image"):
+        image = request.FILES["image"]
 
-    return render(request, 'upload.html', {'task': task, 'tasks': tasks})
+        uploaded_image = UploadedImage.objects.create(
+            task=task, image=image, uploaded_by=request.user
+        )
+        return redirect("tasks_page")  # Redirect after upload
+
+    return render(request, "upload.html", {"task": task, "tasks": tasks})
 
 
 @login_required
 def tasks_page(request):
     """
     Renders the tasks page with a list of all available tasks.
-    
+
     Args:
         request (HttpRequest): The HTTP request object.
-    
+
     Returns:
         HttpResponse: Renders the 'tasks.html' template with all tasks.
     """
     tasks = Tasks.objects.all()
-    return render(request, 'tasks.html', {'tasks': tasks})
+    return render(request, "tasks.html", {"tasks": tasks})
+
 
 @login_required
 def image_gallery(request):
     """
     Displays a gallery of all uploaded images linked to tasks.
-    
+
     Args:
         request (HttpRequest): The HTTP request object.
-    
+
     Returns:
         HttpResponse: Renders the 'gallery.html' template with uploaded images.
     """
-    images = UploadedImage.objects.select_related('task')
+    images = UploadedImage.objects.select_related("task")
     return render(request, "task_gallery.html", {"images": images})
+
 
 @login_required
 def delete_image(request, image_id):
     """
     Deletes a specific uploaded image and logs the action.
-    
+
     Args:
         request (HttpRequest): The HTTP request object.
         image_id (int): The ID of the image to be deleted.
-    
+
     Returns:
         HttpResponseRedirect: Redirects back to the gallery page.
     """
     image = get_object_or_404(UploadedImage, id=image_id)
     image.delete()
-    auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")    
-    return redirect('gallery_page')
+    auth_logger.info(
+        f"User {request.user.username} deleted image for Task {image.task.task_name}"
+    )
+    return redirect("gallery_page")
+
 
 def is_game_master(user):
     """
     Checks if the given user is the Game Master.
-    
+
     Args:
         user (User): The user object to check.
-    
+
     Returns:
         bool: True if the user is the Game Master, otherwise False.
     """
@@ -185,27 +180,31 @@ def is_game_master(user):
 def game_master_gallery(request):
     """
     Displays the Game Master's gallery, allowing them to view uploaded images by users.
-    
+
     Args:
         request (HttpRequest): The HTTP request object.
-    
+
     Returns:
         HttpResponse: Renders the 'game_master_gallery.html' template with user selection.
     """
     User = get_user_model()
-    users = User.objects.exclude(username='GameMaster')
+    users = User.objects.exclude(username="GameMaster")
 
     selected_user = None
-    if request.GET.get('user'):
+    if request.GET.get("user"):
         try:
-            selected_user = User.objects.get(id=request.GET['user'])
+            selected_user = User.objects.get(id=request.GET["user"])
         except User.DoesNotExist:
             selected_user = None
 
-    return render(request, 'game_master_gallery.html', {
-        'users': users,
-        'selected_user': selected_user,
-    })
+    return render(
+        request,
+        "game_master_gallery.html",
+        {
+            "users": users,
+            "selected_user": selected_user,
+        },
+    )
 
 
 @login_required
@@ -213,11 +212,11 @@ def game_master_gallery(request):
 def delete_image_game_master(request, image_id):
     """
     Allows the Game Master to delete any uploaded image and logs the action.
-    
+
     Args:
         request (HttpRequest): The HTTP request object.
         image_id (int): The ID of the image to be deleted.
-    
+
     Returns:
         HttpResponseRedirect: Redirects back to the Game Master gallery.
     """
@@ -226,11 +225,16 @@ def delete_image_game_master(request, image_id):
     # Check if user is the owner or GameMaster
     if request.user == image.uploaded_by or request.user.username == "GameMaster":
         image.delete()
-        auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")
+        auth_logger.info(
+            f"User {request.user.username} deleted image for Task {image.task.task_name}"
+        )
     else:
-        return JsonResponse({"success": False, "message": "Permission denied."}, status=403)
-    
-    auth_logger.info(f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}")
+        return JsonResponse(
+            {"success": False, "message": "Permission denied."}, status=403
+        )
 
-    return redirect('gallery_page')
+    auth_logger.info(
+        f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}"
+    )
 
+    return redirect("gallery_page")
