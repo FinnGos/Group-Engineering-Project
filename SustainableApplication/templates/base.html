@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
   <title>{% block title %}Carbo Collect{% endblock %}</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  
+
   <style>
     /* Reset default margins and paddings */
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -51,7 +53,7 @@
     }
 
     nav ul.desktop-menu li a:hover {
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     /* Mobile Responsiveness */
@@ -133,7 +135,7 @@
       position: relative;
     }
   </style>
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       let deleteAccountLink = document.getElementById("delete-account-link");
@@ -147,79 +149,82 @@
       }
     });
   </script>
-  
+
   {% block extra_css %}{% endblock %}
 </head>
+
 <body class="flex flex-col min-h-screen">
- <!-- Navbar -->
-<nav class="bg-green-700 text-white p-4" x-data="{ open: false, userMenu: false }">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white p-4" x-data="{ open: false, userMenu: false }">
     <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <div class="text-2xl font-bold">CarboCollect</div>
-        
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex space-x-6 text-lg desktop-menu">
-            <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-            <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
-            <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
-            <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
-            <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
-            <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
+      <!-- Logo -->
+      <div class="text-2xl font-bold">CarboCollect</div>
 
-            {% if user.is_authenticated %}
-            <!-- User Section -->
-            <li class="relative" @click.away="userMenu = false">
-                <button @click="userMenu = !userMenu" class="hover:underline">User</button>
-                <!-- Teleport the dropdown to the end of the body -->
-                <template x-if="userMenu">
-                    <ul x-teleport="body" class="user-dropdown bg-green-800 text-white p-2 rounded shadow-lg space-y-2">
-                        <li><a href="{% url 'update_profile' %}" class="block hover:underline">Update Profile</a></li>
-                        <li><a href="{% url 'change_password' %}" class="block hover:underline">Change Password</a></li>
-                        <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="block hover:underline text-red-500">Delete Account</a></li>
-                        <li><a href="{% url 'logout' %}" class="block hover:underline">Logout</a></li>
-                    </ul>
-                </template>
-            </li>
-            {% else %}
-            <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
-            {% endif %}
-        </ul>
-        
-        <!-- Mobile Menu Button (Hamburger Icon) -->
-        <button @click="open = !open" class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
+      <!-- Mobile Menu Button (Hamburger Icon) -->
+      <button @click="open = !open" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-lg desktop-menu">
+        <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
+        <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
+        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
+        <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
+
+        {% if user.is_authenticated %}
+        <!-- User Section -->
+        <li class="relative" @click.away="userMenu = false">
+          <button @click="userMenu = !userMenu" class="hover:underline">User</button>
+          <!-- Teleport the dropdown to the end of the body -->
+          <template x-if="userMenu">
+            <ul x-teleport="body" class="user-dropdown bg-green-800 text-white p-2 rounded shadow-lg space-y-2">
+              <li><a href="{% url 'update_profile' %}" class="block hover:underline">Update Profile</a></li>
+              <li><a href="{% url 'change_password' %}" class="block hover:underline">Change Password</a></li>
+              <li><a href="{% url 'delete_account' %}" id="delete-account-link"
+                  class="block hover:underline text-red-500">Delete Account</a></li>
+              <li><a href="{% url 'logout' %}" class="block hover:underline">Logout</a></li>
+            </ul>
+          </template>
+        </li>
+        {% else %}
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        {% endif %}
+      </ul>
     </div>
-    
+
     <!-- Mobile Dropdown Menu -->
-    <div x-show="open" x-transition class="md:hidden bg-green-800 text-white p-4 absolute top-full left-0 w-full shadow-lg">
-        <ul class="flex flex-col space-y-2 text-lg">
-            <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-            <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
-            <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
-            <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
-            <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
-            <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
+    <div x-show="open" x-transition
+      class="md:hidden bg-green-800 text-white p-4 absolute top-full left-0 w-full shadow-lg">
+      <ul class="flex flex-col space-y-2 text-lg">
+        <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
+        <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
+        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
+        <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
 
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-            <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-            <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-            <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-            {% else %}
-            <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
-            {% endif %}
-        </ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+        {% endif %}
+      </ul>
     </div>
-</nav>
+  </nav>
 
   <!-- Main Content -->
   <div class="flex-1">
     {% block content %}{% endblock %}
   </div>
-  
+
   <!-- Footer -->
   <footer class="bg-green-900 text-white text-center p-4 mt-auto">
     <div class="container mx-auto">
@@ -231,7 +236,8 @@
       </p>
     </div>
   </footer>
-  
+
   {% block extra_js %}{% endblock %}
 </body>
+
 </html>
