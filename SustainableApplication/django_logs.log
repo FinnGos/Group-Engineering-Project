@@ -2741,3 +2741,27 @@ django.server INFO 2025-03-24 14:33:34,297 basehttp 20552 3652 "GET /tasks/ HTTP
 django.server INFO 2025-03-24 14:33:38,353 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16923
 django.server INFO 2025-03-24 14:33:48,537 basehttp 20552 3652 "GET /tasks/ HTTP/1.1" 200 16918
 django.utils.autoreload INFO 2025-03-24 14:55:37,427 autoreload 20552 22000 C:\Users\dc754\OneDrive\Documents\year2\softwareEngineering\Group-Engineering-Project\SustainableApplication\SustainableApplication\settings.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 23:32:11,104 autoreload 66284 140108958720128 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 23:32:12,937 basehttp 66284 140108903405248 "GET /home/ HTTP/1.1" 200 11374
+django.request WARNING 2025-03-24 23:32:13,114 log 66284 140108903405248 Not Found: /favicon.ico
+django.server WARNING 2025-03-24 23:32:13,114 basehttp 66284 140108903405248 "GET /favicon.ico HTTP/1.1" 404 4928
+django INFO 2025-03-24 23:32:15,765 views 66284 140108903405248 User logged out: nightmare
+django.server INFO 2025-03-24 23:32:15,765 basehttp 66284 140108903405248 "GET /home/accounts/logout/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 23:32:15,773 basehttp 66284 140108903405248 "GET /home/accounts/login/ HTTP/1.1" 200 11117
+django.server INFO 2025-03-24 23:32:16,014 basehttp 66284 140108903405248 "GET /static/images/signin.jpg HTTP/1.1" 200 2262128
+django.server INFO 2025-03-24 23:32:17,280 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 11613
+django.server INFO 2025-03-24 23:32:22,311 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 11613
+django.server INFO 2025-03-24 23:32:30,412 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 11613
+django.server INFO 2025-03-24 23:32:33,212 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12643
+django.server INFO 2025-03-24 23:34:46,368 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12947
+django.request WARNING 2025-03-24 23:34:46,519 log 66284 140108903405248 Not Found: /favicon.ico
+django.server WARNING 2025-03-24 23:34:46,519 basehttp 66284 140108903405248 "GET /favicon.ico HTTP/1.1" 404 4928
+django.server INFO 2025-03-24 23:35:34,755 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12947
+django.server INFO 2025-03-24 23:37:17,373 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12909
+django.request WARNING 2025-03-24 23:37:17,531 log 66284 140108903405248 Not Found: /favicon.ico
+django.server WARNING 2025-03-24 23:37:17,532 basehttp 66284 140108903405248 "GET /favicon.ico HTTP/1.1" 404 4928
+django.server INFO 2025-03-24 23:37:37,338 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12922
+django.server INFO 2025-03-24 23:40:28,259 basehttp 66284 140108903405248 "GET /home/signup/ HTTP/1.1" 200 12922
+django.request WARNING 2025-03-24 23:40:28,433 log 66284 140108903405248 Not Found: /favicon.ico
+django.server WARNING 2025-03-24 23:40:28,433 basehttp 66284 140108903405248 "GET /favicon.ico HTTP/1.1" 404 4928
+django.server INFO 2025-03-24 23:40:30,201 basehttp 66284 140108903405248 "GET /home/accounts/login/ HTTP/1.1" 200 11117
