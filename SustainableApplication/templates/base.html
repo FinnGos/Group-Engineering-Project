@@ -27,8 +27,31 @@
       width: 100%;
       z-index: 9999;
       background-color: rgba(23, 114, 49, 0.95);
-      padding: 1.5rem; /* Increased padding to stretch navbar */
-      height: 5.5rem; /* Added explicit height */
+      padding: 1.5rem; /* Increased padding */
+      height: 5.5rem; /* Explicit height */
+      display: flex;
+      align-items: center; /* Vertically center items */
+    }
+
+    /* Navbar Links Styling */
+    nav ul.desktop-menu {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      gap: 1.5rem; /* Increased space between links */
+    }
+
+    nav ul.desktop-menu li a {
+      font-size: 1.25rem; /* Larger font size */
+      font-weight: 600; /* Slightly bolder */
+      padding: 0.5rem 1rem; /* Add some padding */
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      border-radius: 0.25rem;
+    }
+
+    nav ul.desktop-menu li a:hover {
+      background-color: rgba(255,255,255,0.2); /* Subtle hover effect */
     }
 
     /* Ensure main content starts immediately below navbar with no gap */
@@ -38,7 +61,7 @@
       background: transparent !important;
       margin-top: 0;
       position: relative;
-      top: 0; /* Removed previous -1px adjustment */
+      top: 0;
     }
 
     /* Dropdown Styling */
@@ -50,7 +73,9 @@
       min-width: 200px;
       background-color: rgba(22, 101, 52, 0.95);
       border-radius: 0.5rem;
-      box
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
     /* Footer Styling */
     footer {
       background-color: rgba(22, 101, 52, 0.95);
@@ -101,10 +126,10 @@
   <!-- Navbar -->
   <nav class="bg-green-700 text-white p-4" x-data="{ open: false, userMenu: false }">
     <div class="container mx-auto flex justify-between items-center">
-      <div class="text-xl font-bold">CarboCollect</div>
+      <div class="text-2xl font-bold">CarboCollect</div>
       
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-6 text-lg">
+      <ul class="hidden md:flex space-x-6 text-lg desktop-menu">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
         <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
