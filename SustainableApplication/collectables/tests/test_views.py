@@ -37,7 +37,7 @@ class TestCollectablesPage(TestCase):
         """Tests the collectables webpage uses the right html template"""
         self.client.login(username=TEST_USERNAME, password=TEST_PASSWORD)
         response = self.client.get("/collectables/")
-        self.assertTemplateUsed(response, "gallery.html")
+        self.assertTemplateUsed(response, "collectables/gallery.html")
 
     def test_webpage_displays_no_collectables(self):
         """Tests that a basic user that owns no collectables will have an empty gallery"""
