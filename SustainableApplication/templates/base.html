@@ -74,7 +74,7 @@
   <!-- Navbar -->
   <nav class="bg-green-700 text-white p-4" x-data="{ open: false }">
     <div class="container mx-auto flex justify-between items-center">
-        <div class="text-xl font-bold">CarboCollect</div>
+      <div class="text-xl font-bold">CarboCollect</div>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-lg">
@@ -109,12 +109,12 @@
         {% endif %}
       </ul>
 
-        <!-- Mobile Menu Button -->
-        <button @click="open = !open" class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
+      <!-- Mobile Menu Button -->
+      <button @click="open = !open" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </div>
 
     <!-- Mobile Dropdown Menu -->
@@ -141,13 +141,13 @@
         {% endif %}
 
         {% if user.is_authenticated %}
-          <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-          <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-          <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-          <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
-          <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
-          <li><a href="{%url 'open_lootbox'%}">Lootbox</a></li>
-          <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
+        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
+        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
+        <li><a href="{%url 'open_lootbox'%}">Lootbox</a></li>
+        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         {% endif %}
 
       </ul>
@@ -167,8 +167,9 @@
       </div>
       <p class="mt-2 footer-text">
         Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon
-                  <li><a href="{% url 'TermsAndConditions/' %}" class="hover:underline">Terms and Conditions</a></li>
-          <li><a href="{% url 'PrivacyPolicy/' %}" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="{% url 'termsAndConditions' %}" class="hover:underline">Terms and Conditions</a></li>
+        <li><a href="{% url 'privacyPolicy' %}" class="hover:underline">Privacy Policy</a></li>
+
       </p>
     </div>
   </footer>
