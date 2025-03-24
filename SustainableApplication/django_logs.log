@@ -293,3 +293,5 @@ django.utils.autoreload INFO 2025-03-24 00:57:21,821 autoreload 37172 31108 C:\U
 django.utils.autoreload INFO 2025-03-24 00:57:23,483 autoreload 34172 37020 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2025-03-24 00:57:41,083 autoreload 34172 37020 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\Checkin\models.py changed, reloading.
 django.utils.autoreload INFO 2025-03-24 00:57:42,950 autoreload 33368 40260 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:58:57,715 autoreload 33368 40260 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\unlockables\admin.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:58:59,610 autoreload 24888 47916 Watching for file changes with StatReloader
