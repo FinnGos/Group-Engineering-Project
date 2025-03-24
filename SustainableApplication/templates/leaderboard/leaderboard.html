@@ -8,7 +8,7 @@
 <div class="top-section relative">
     <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
     <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
-        <div class="font-bold text-white text-center p-6 mb-6">
+        <div class="header-text font-bold text-white text-center p-6 mb-6">
             <h1 class="text-6xl mb-1">Leaderboard</h1>
             <h2 class="text-3xl mb-4">Can you become the ultimate CarboCollector?</h2>
             <h3 class="text-4xl">Current Rankings:</h3>
@@ -36,7 +36,7 @@
     <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Bottom Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
         <!-- Overlay Current Points Box -->
-        <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+        <div class="points-overlay leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
             <div id="current-points-box" class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
                 <h3 class="text-3xl mb-4">Your Current Points</h3>
                 <p class="text-xl">
@@ -51,7 +51,7 @@
     </div>
     
     <!-- Buttons Section (Optional) -->
-    <div x-data="{ open: false }" class="mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
+    <div x-data="{ open: false }" class="buttons-section mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
         <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
             Go to your Daily Tasks
         </a>
@@ -68,34 +68,52 @@
     </div>
 </div>
 
-<!-- Mobile Styles for adjustments (only applied on mobile) -->
+<!-- Mobile-Only Adjustments -->
 <style>
   @media (max-width: 640px) {
-    /* Make the bottom image container 1/5 its original height */
+    /* Scale down the top section header text to 40% of its original size */
+    .top-section .header-text {
+      transform: scale(0.4);
+      transform-origin: top center;
+    }
+    /* Scale down each ranking bar (rank-item) to 50% of its original size */
+    .rank-item {
+      transform: scale(0.5);
+      transform-origin: top left;
+    }
+    /* Ensure ranking bars appear above the points box */
+    .top-section .leaderboard {
+      z-index: 10;
+    }
+    /* Stack top and bottom sections so background images don’t overlap */
+    .top-section,
+    .bottom-section {
+      position: static !important;
+      margin-bottom: 10px;
+    }
+    /* Shorten the bottom image container to 1/5 its current height */
     .image-container {
       height: 120px !important;
       padding: 0 !important;
     }
-    
-    /* Shrink the current points box even further if needed */
-    #current-points-box {
-      transform: translate(-50%, 0) scale(0.1);
-      transform-origin: center;
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
+    /* Adjust the overlay so the ranking bars remain above the current points box */
+    .points-overlay {
+      z-index: 5;
     }
-    
+    /* Enlarge the current points box by 5x relative to our previous mobile tiny size (from scale 0.1 to 0.5) */
+    #current-points-box {
+      transform: scale(0.5) !important;
+      transform-origin: center;
+      position: relative;
+      margin: 0 auto;
+      bottom: auto;
+      left: auto;
+    }
     /* Shrink the buttons */
-    [x-data] a,
-    [x-data] button {
+    .buttons-section a,
+    .buttons-section button {
       padding: 3px 5px !important;
       font-size: 0.6rem !important;
-    }
-    
-    /* Adjust button container position if needed */
-    [x-data] {
-      bottom: 10px !important;
     }
   }
 </style>
