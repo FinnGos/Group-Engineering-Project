@@ -68,9 +68,16 @@
     </div>
 </div>
 
-<!-- Mobile Styles for Current Points Box -->
+<!-- Mobile Styles for adjustments (only applied on mobile) -->
 <style>
   @media (max-width: 640px) {
+    /* Make the bottom image container 1/5 its original height */
+    .image-container {
+      height: 120px !important;
+      padding: 0 !important;
+    }
+    
+    /* Shrink the current points box even further if needed */
     #current-points-box {
       transform: translate(-50%, 0) scale(0.1);
       transform-origin: center;
@@ -78,7 +85,18 @@
       bottom: 20px;
       left: 50%;
     }
+    
+    /* Shrink the buttons */
+    [x-data] a,
+    [x-data] button {
+      padding: 3px 5px !important;
+      font-size: 0.6rem !important;
+    }
+    
+    /* Adjust button container position if needed */
+    [x-data] {
+      bottom: 10px !important;
+    }
   }
 </style>
 {% endblock %}
-
