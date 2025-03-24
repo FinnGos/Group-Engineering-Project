@@ -38,8 +38,23 @@ import random
 # Create your views here.
 @login_required
 def tasks_view(request):
-    incomplete_tasks = Tasks.objects.filter(completed=False)
-    return render(request, "tasks.html", {"tasks": incomplete_tasks})
+    """View to display a maximum of three random incomplete tasks for the user."""
+    if not request.user.is_authenticated:
+        return render(request, "tasks.html", {"tasks": []})
+
+    user = request.user
+    today = now().date()  # Ensure date-only comparison
+
+    # Fetch all incomplete tasks
+    incomplete_tasks = list(Tasks.objects.filter(completed=False))
+
+    if incomplete_tasks:
+        # Select up to 3 random tasks
+        selected_tasks = random.sample(incomplete_tasks, min(3, len(incomplete_tasks)))
+    else:
+        selected_tasks = []  # No tasks available
+
+    return render(request, "tasks.html", {"tasks": selected_tasks})
 
    
 
