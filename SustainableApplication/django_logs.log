@@ -289,3 +289,5 @@ django.server WARNING 2025-03-24 00:55:01,459 basehttp 25056 46364 "GET /static/
 django.server INFO 2025-03-24 00:55:01,594 basehttp 25056 33656 "GET /media/MediaPhotos/Screenshot_2023-10-05_180931.png HTTP/1.1" 200 25694
 django.utils.autoreload INFO 2025-03-24 00:55:34,339 autoreload 25056 21728 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
 django.utils.autoreload INFO 2025-03-24 00:55:35,369 autoreload 37172 31108 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:57:21,821 autoreload 37172 31108 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\collectables\urls.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:57:23,483 autoreload 34172 37020 Watching for file changes with StatReloader
