@@ -9,7 +9,7 @@ There are many cards to collect, points to earn, and fun facts to be learned, so
 
 **Play now at:** [Our Live Website](https://group-engineering-project.onrender.com/)
 
-Hosted on Render!
+Hosted on Render! Compaitable with desktop and mobile devices!
 
 ---
 
