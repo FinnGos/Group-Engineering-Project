@@ -7,13 +7,13 @@
 <!-- Top Section -->
 <div class="top-section relative">
     <img src="{% static 'images/leaderboardTop_v2.jpg' %}" alt="Top Image" class="w-full h-auto">
-    <div class="leaderboard mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
+    <div class="leaderboard absolute inset-0 flex flex-col items-center text-white">
         <div class="header-text font-bold text-white text-center p-6 mb-6">
             <h1 class="text-6xl mb-1">Leaderboard</h1>
             <h2 class="text-3xl mb-4">Can you become the ultimate CarboCollector?</h2>
             <h3 class="text-4xl">Current Rankings:</h3>
         </div>
-        <!-- Display the Top 5 Leaderboard Entries -->
+        <!-- Ranking Bars (Top 5) -->
         <div class="rankings w-full max-w-3xl">
             {% for entry in ranked_users %}
             <div class="rank-item bg-gray-700 p-4 mb-4 flex justify-between items-center rounded-lg
@@ -36,7 +36,7 @@
     <div class="image-container bg-green-700 p-10 border-12 border-green-700 overflow-hidden" style="height: 600px;">
         <img src="{% static 'images/leaderboardBottom_v2.jpg' %}" alt="Bottom Image" class="w-full h-full rounded-lg object-cover" style="object-position: center;">
         <!-- Overlay Current Points Box -->
-        <div class="points-overlay leaderboard mt-8 absolute inset-0 flex flex-col justify-center items-center text-white">
+        <div class="points-overlay leaderboard absolute inset-0 flex flex-col justify-center items-center text-white">
             <div id="current-points-box" class="current-points text-white text-center p-6 mt-6 bg-green-700 rounded-lg">
                 <h3 class="text-3xl mb-4">Your Current Points</h3>
                 <p class="text-xl">
@@ -51,7 +51,7 @@
     </div>
     
     <!-- Buttons Section (Optional) -->
-    <div x-data="{ open: false }" class="buttons-section mt-8 flex justify-center space-x-4 absolute bottom-20 w-full text-center"> 
+    <div x-data="{ open: false }" class="buttons-section absolute bottom-20 w-full text-center flex justify-center space-x-4"> 
         <a href="{% url 'tasks_view' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
             Go to your Daily Tasks
         </a>
@@ -71,43 +71,44 @@
 <!-- Mobile-Only Adjustments -->
 <style>
   @media (max-width: 640px) {
-    /* Scale down the top section header text to 40% of its original size */
+    /* Scale header text to 40% of desktop size */
     .top-section .header-text {
       transform: scale(0.4);
       transform-origin: top center;
+      margin-bottom: 0; /* reduce extra gap */
     }
-    /* Scale down each ranking bar (rank-item) to 50% of its original size */
+    /* Remove extra margin between header and ranking bars */
+    .rankings {
+      margin-top: 0 !important;
+    }
+    /* Scale each ranking bar to 50% */
     .rank-item {
       transform: scale(0.5);
-      transform-origin: top left;
+      transform-origin: top center;
+      margin-bottom: 5px !important;
     }
-    /* Ensure ranking bars appear above the points box */
-    .top-section .leaderboard {
-      z-index: 10;
-    }
-    /* Stack top and bottom sections so background images don’t overlap */
-    .top-section,
-    .bottom-section {
+    /* Ensure ranking bars appear just below header text */
+    .leaderboard {
       position: static !important;
-      margin-bottom: 10px;
+      padding-top: 10px;
     }
-    /* Shorten the bottom image container to 1/5 its current height */
+    /* Extend bottom image container to 200px tall */
     .image-container {
-      height: 120px !important;
+      height: 200px !important;
       padding: 0 !important;
     }
-    /* Adjust the overlay so the ranking bars remain above the current points box */
-    .points-overlay {
-      z-index: 5;
-    }
-    /* Enlarge the current points box by 5x relative to our previous mobile tiny size (from scale 0.1 to 0.5) */
+    /* Adjust current points box:
+       Enlarge it by a factor of 5 relative to the previous tiny size (scale 0.5)
+       and position it in normal flow so ranking bars remain above */
     #current-points-box {
       transform: scale(0.5) !important;
       transform-origin: center;
       position: relative;
-      margin: 0 auto;
-      bottom: auto;
-      left: auto;
+      margin: 10px auto 0 auto;
+    }
+    /* Move buttons up by 20px */
+    .buttons-section {
+      bottom: 40px !important;
     }
     /* Shrink the buttons */
     .buttons-section a,
@@ -118,3 +119,4 @@
   }
 </style>
 {% endblock %}
+
