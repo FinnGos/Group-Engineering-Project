@@ -2,7 +2,6 @@
 {% load custom_filters %}
 {% load static %}
 
-{# Ensure the mobile viewport is set; if your base.html doesn’t already include this, add it in a head block #}
 {% block head_extra %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
@@ -26,29 +25,32 @@
     </div>
   </div>
 
+  <!-- Wrap the map in a responsive wrapper -->
   <div class="flex justify-center my-8">
-    <div class="map-container">
-      {% for building in buildings %}
-        {% if user_buildings|get_item:building.id %}
-          <img src="{{ building.image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
-        {% else %}
-          <img src="{{ building.locked_image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
-        {% endif %}
-      {% endfor %}
+    <div class="map-wrapper">
+      <div class="map-container">
+        {% for building in buildings %}
+          {% if user_buildings|get_item:building.id %}
+            <img src="{{ building.image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+          {% else %}
+            <img src="{{ building.locked_image.url }}" class="building" style="top: {{ building.y }}px; left: {{ building.x }}px;">
+          {% endif %}
+        {% endfor %}
 
-      {% for user_item in user_items %}
-        <div class="item" style="left: {{ user_item.x }}px; top: {{ user_item.y }}px; width: {{ user_item.size }}px; height: {{ user_item.size }}px;">
-          <img src="{{ user_item.item.image.url }}" alt="{{ user_item.item.name }}">
-        </div>
-      {% endfor %}
+        {% for user_item in user_items %}
+          <div class="item" style="left: {{ user_item.x }}px; top: {{ user_item.y }}px; width: {{ user_item.size }}px; height: {{ user_item.size }}px;">
+            <img src="{{ user_item.item.image.url }}" alt="{{ user_item.item.name }}">
+          </div>
+        {% endfor %}
 
-      {% for trash in rubbish %}
-        <img src="{{ trash.image.url }}" alt="Rubbish" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 20px; height: 20px;" />
-        <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:25 }}px;">
-          {% csrf_token %}
-          <button type="submit">Clean</button>
-        </form>
-      {% endfor %}
+        {% for trash in rubbish %}
+          <img src="{{ trash.image.url }}" alt="Rubbish" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y }}px; width: 20px; height: 20px;" />
+          <form action="{% url 'clean_rubbish' trash.id %}" method="post" style="position: absolute; left: {{ trash.x }}px; top: {{ trash.y|add:25 }}px;">
+            {% csrf_token %}
+            <button type="submit">Clean</button>
+          </form>
+        {% endfor %}
+      </div>
     </div>
   </div>
 
@@ -60,6 +62,7 @@
 
 {% block extra_css %}
   <style>
+    /* Desktop: Fixed-size map container */
     .map-container {
       position: relative;
       width: 1800px;
@@ -80,10 +83,23 @@
       position: absolute;
     }
 
-    /* Mobile styling: scale down the map container for small screens */
+    /* Mobile: Responsive wrapper that scales the map */
+    .map-wrapper {
+      width: 1800px; /* same as the map width */
+      height: 800px; /* same as the map height */
+    }
+
     @media (max-width: 768px) {
+      .map-wrapper {
+        /* Scale the fixed map to fit the viewport width */
+        width: 100vw;
+        height: calc(800 * (100vw / 1800));
+        overflow: hidden;
+        position: relative;
+      }
+
       .map-container {
-        transform: scale(0.5);
+        transform: scale(calc(100vw / 1800));
         transform-origin: top left;
       }
     }
