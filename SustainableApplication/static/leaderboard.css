@@ -1,4 +1,9 @@
-/* Outlined text for headings and paragraphs (keep this for headings only) */
+/* Set background color for the wrapper */
+.mobile-bg {
+    background-color: #004d00;
+}
+
+/* Outlined text for headings (keep this for headings only) */
 .outlined-text {
   color: white;
   font-weight: bold;
@@ -8,9 +13,11 @@
       -2px  2px 0 black,
        2px  2px 0 black;
 }
+
+/* Mobile-specific adjustments */
 @media (max-width: 640px) {
     .mobile-bg {
-        background-color: transparent !important; /* Remove the green background */
+        background-color: #004d00 !important; /* Use #004d00 for mobile as well */
     }
 
     .bottom-section {
@@ -28,7 +35,7 @@
 
     .mobile-bottom-image {
         width: 100vw !important;
-        height: auto + 20px !important;
+        height: auto !important;
         max-height: none !important;
         object-fit: cover !important;
         margin-top: -20px !important; /* Further adjust to remove any potential gaps */
@@ -37,9 +44,32 @@
     .top-section {
         margin-bottom: -10px !important; /* Reduce any potential spacing */
     }
+
+    /* Current Points box on mobile: tiny version */
+    .desktop-current-points {
+        display: none !important;
+    }
+    .mobile-current-points {
+        padding: 2px !important;
+        width: 60% !important;
+        max-width: 150px !important;
+        position: absolute;
+        bottom: 60px !important;
+        transform: scale(0.4) !important;
+        transform-origin: center bottom !important;
+        z-index: 20 !important;
+    }
+    .mobile-current-points h3 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0 !important;
+    }
+    .mobile-current-points p {
+        font-size: 0.7rem !important;
+        margin-bottom: 0 !important;
+    }
 }
 
-/* Image Section */
+/* Leaderboard Section Styles */
 .top-section {
   position: relative;
 }
@@ -49,7 +79,6 @@
   height: auto;
 }
 
-/* Leaderboard Section Styles */
 .leaderboard {
   display: flex;
   flex-direction: column;
@@ -116,7 +145,7 @@
   color: white;
 }
 
-/* Current Player's Points Section */
+/* Current Player's Points Section for desktop */
 .current-points {
   background-color: #28a745;
   padding: 20px;
