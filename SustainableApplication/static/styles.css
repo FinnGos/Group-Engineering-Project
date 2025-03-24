@@ -1,46 +1,34 @@
-/* Ensure Navbar is Always on Top */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: transparent !important;
+}
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; /* Extremely high z-index */
-    background-color: rgba(23, 114, 49, 0.95); /* Semi-transparent green to match design */
+    z-index: 9999;
+    background-color: rgba(23, 114, 49, 0.95);
+    padding: 1rem;
 }
 
-/* Adjust body to account for fixed navbar */
-body {
-    padding-top: 70px; /* Adjust based on your actual navbar height */
+.flex-1 {
+    padding-top: 4.5rem; /* Slightly more than navbar height */
+    min-height: calc(100vh - 4.5rem);
+    background: transparent !important;
+    margin-top: -1px; /* Negative margin to remove potential white line */
 }
 
-/* Dropdown Menu */
-nav .relative {
-    position: relative;
-    z-index: 10000; /* Even higher for user menu container */
-}
-
-nav ul[x-show="userMenu"] {
-    position: absolute;
-    z-index: 10001; /* Highest z-index for dropdown */
-    top: 100%; /* Position below the trigger */
-    right: 0; /* Align to the right of the container */
+.user-dropdown {
+    position: fixed;
+    top: 4.5rem; /* Align exactly with navbar bottom */
+    right: 10px;
+    z-index: 10000;
     min-width: 200px;
-    background-color: rgba(22, 101, 52, 0.95); /* Dark green with transparency */
+    background-color: rgba(22, 101, 52, 0.95);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Mobile Dropdown */
-nav div[x-show="open"] {
-    position: fixed;
-    top: 70px; /* Position right below the navbar */
-    left: 0;
-    width: 100%;
-    z-index: 9998; /* Slightly lower than navbar but above other content */
-    background-color: rgba(22, 101, 52, 0.95);
-}
-
-/* Ensure all content below navbar is pushed down */
-.flex-1 {
-    margin-top: 70px; /* Match the body padding-top */
 }
