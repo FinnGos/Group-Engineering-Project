@@ -19,13 +19,13 @@
 
   <!-- User's Score Display -->
   <div class="flex justify-center my-4">
-    <div class="bg-green-200 p-4 rounded-lg shadow-md flex gap-6">
-      <p class="text-lg font-semibold">💰 Carbo Coins: <span class="font-bold">{{ current_points }}</span></p>
-      <p class="text-lg font-semibold">🌱 Campus Cred: <span class="font-bold">{{ all_time_points }}</span></p>
+    <div class="score-box bg-green-200 p-4 rounded-lg shadow-md flex gap-6">
+      <p class="coin-text text-lg font-semibold">💰 Carbo Coins: <span class="font-bold">{{ current_points }}</span></p>
+      <p class="coin-text text-lg font-semibold">🌱 Campus Cred: <span class="font-bold">{{ all_time_points }}</span></p>
     </div>
   </div>
 
-  <!-- Wrap the map in a responsive wrapper -->
+  <!-- Responsive Map Wrapper -->
   <div class="flex justify-center my-8">
     <div class="map-wrapper">
       <div class="map-container">
@@ -62,7 +62,7 @@
 
 {% block extra_css %}
   <style>
-    /* Desktop: Fixed-size map container */
+    /* Desktop Map: Fixed dimensions */
     .map-container {
       position: relative;
       width: 1800px;
@@ -83,23 +83,35 @@
       position: absolute;
     }
 
-    /* Mobile: Responsive wrapper that scales the map */
+    /* The map wrapper holds the map-container and prevents horizontal scrolling */
     .map-wrapper {
-      width: 1800px; /* same as the map width */
-      height: 800px; /* same as the map height */
+      width: 1800px; /* Desktop dimensions */
+      height: 800px;
     }
 
+    /* Mobile-specific styles */
     @media (max-width: 768px) {
+      /* Adjust coin box text and padding */
+      .score-box {
+        padding: 0.5rem;
+      }
+      .coin-text {
+        font-size: 0.875rem; /* Smaller text */
+      }
+
+      /* Increase the total size of the map on mobile (e.g. 2400x1200) */
       .map-wrapper {
-        /* Scale the fixed map to fit the viewport width */
-        width: 100vw;
-        height: calc(800 * (100vw / 1800));
+        width: 100vw; /* Full viewport width */
+        height: calc(1200 * (100vw / 2400)); /* Scale height proportionally */
         overflow: hidden;
         position: relative;
       }
 
+      /* Change map container dimensions for mobile */
       .map-container {
-        transform: scale(calc(100vw / 1800));
+        width: 2400px;
+        height: 1200px;
+        transform: scale(calc(100vw / 2400));
         transform-origin: top left;
       }
     }
