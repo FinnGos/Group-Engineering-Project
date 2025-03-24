@@ -39,6 +39,7 @@ urlpatterns = [
     path('gallery/', views.image_gallery, name='image_gallery'),
     path("collectables/", include("collectables.urls")),
     path("lootboxes/", include("lootboxes.urls")),
+    path('riddles/', include('riddles.urls')),
 ]
 
 # Serve static and media files in development mode

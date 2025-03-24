@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'collectables.apps.CollectablesConfig',
     "lootboxes.apps.LootboxesConfig",
     "unlockables.apps.UnlockablesConfig",
+    "riddles.apps.RiddlesConfig",
 ]
 
 MIDDLEWARE = [

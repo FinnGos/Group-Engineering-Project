@@ -9,6 +9,9 @@ from .models import UploadedImage
 import logging 
 import os
 from django.conf import settings
+from riddles.models import Riddle
+from Checkin.models import Location
+
 
 # Set up a logger for authentication events
 auth_logger = logging.getLogger("django")
@@ -162,9 +165,14 @@ def delete_image(request, image_id):
     Returns:
         HttpResponseRedirect: Redirects back to the gallery page.
     """
+    
     image = get_object_or_404(UploadedImage, id=image_id)
     image.delete()
-    auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")    
+
+    if request.user == "GameMaster":
+        auth_logger.info(f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}")    
+    else:
+        auth_logger.info(f"User {request.user.username} deleted image for Task {image.task.task_name}")    
     return redirect('gallery_page')
 
 def is_game_master(user):

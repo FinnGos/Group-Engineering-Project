@@ -54,11 +54,11 @@ to get the user's location and send it to the Django backend. -->
     {% if message %}
         <p class="success-message">{{ message }}</p>
         {% if task %}
-        <script>
+        {% comment %} <script>
             setTimeout(function () {
                 window.location.href = "/tasks/";
             }, 7000);
-        </script>
+        </script> {% endcomment %}
         {% endif %}
     {% elif error %}
         <p class="error-message">{{ error }}</p>
