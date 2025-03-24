@@ -71,7 +71,7 @@ def database_location(request, task):
     locations = Location.objects.using('location_db').all()
 
     for location in locations:
-
+        # Checking the requested location is within any of the location in the DB locations
         if abs(user_lat - location.latitude) <= 0.001 and abs(user_lon - location.longitude) <= 0.001:
             context = {
                 "lat": user_lat,
@@ -79,12 +79,12 @@ def database_location(request, task):
                 "message": f"Check-in Succesfull at {location.name}!",
             }
 
-            riddle = Riddle.objects.filter(location_id=location.id).first()# here where is location_id from - i need to iterate through the riddles
+            riddle = Riddle.objects.filter(location_id=location.id).first()
             
             
             if riddle != None:# getting into riddle tab by checking the location id is in a riddle
                 
-                
+                # if riddle exists then riddle is completed for that user
                 if riddle not in request.user.completed_riddles.all():
                     request.user.current_points += 350
                     auth_logger.info(request.user.current_points)
@@ -92,6 +92,7 @@ def database_location(request, task):
                 return render(request, "checkin_page.html", context)
 
             else:
+                #if not then they hae checked into a task and it is completed for that user
                 task.has_checked_in = True
                 task.save()
                 reward = task.reward

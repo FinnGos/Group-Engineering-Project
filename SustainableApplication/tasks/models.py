@@ -1,5 +1,4 @@
 from django.db import models
-from Checkin.models import Location
 from home.models import CustomUser
 from django.contrib.auth import get_user_model
 from django.db.models.signals import post_delete

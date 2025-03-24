@@ -1,13 +1,10 @@
 from django.db import models
 
-from django.contrib.auth import get_user_model
 
 class Riddle(models.Model):
-    # User = get_user_model()
-    # user = models.ManyToManyField(CustomUser,blank = True)
     riddle_question = models.TextField()
     location_id = models.IntegerField(null=True, blank=True)  # References Location in location_db
-    completed = models.BooleanField(default=False) # ADDED
+    completed = models.BooleanField(default=False)
     week_group = models.IntegerField(choices=[(1, "Week 1"), (2, "Week 2"), (3, "Week 3"), (4, "Week 4")], default=1)
     
     def save(self, *args, **kwargs):

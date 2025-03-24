@@ -17,24 +17,20 @@
       height: 100vh;
       overflow: hidden;
     }
-
     .background-section img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(70%); /* Less dimming */
+      filter: brightness(70%);
     }
-
-    /* Overlay for additional dimming control */
     .background-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+      background: rgba(0, 0, 0, 0.3);
     }
-
     /* Form Section */
     .form-section {
       position: absolute;
@@ -44,21 +40,18 @@
       text-align: center;
       color: white;
       padding: 40px;
-      background: rgba(0, 0, 0, 0.6); /* Slightly transparent black */
+      background: rgba(0, 0, 0, 0.6);
       border-radius: 15px;
       max-width: 600px;
       width: 90%;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center everything inside */
+      align-items: center;
     }
-
-    /* Text Styling */
     .outlined-text {
       text-shadow: 2px 2px 5px black;
     }
-
-    /* Check-in Button */
+    /* Check-In Button */
     .checkin-btn {
       width: 80%;
       max-width: 300px;
@@ -69,14 +62,12 @@
       font-size: 1.2rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-top: 20px; /* Add spacing */
+      margin-top: 20px;
       text-align: center;
     }
-
     .checkin-btn:hover {
       background-color: #45a049;
     }
-
     /* Map Container */
     .map-container {
       display: flex;
@@ -85,24 +76,32 @@
       flex-direction: column;
       margin-top: 30px;
     }
-
     #map {
       width: 500px;
       height: 300px;
       border-radius: 10px;
       margin-bottom: 15px;
     }
-
+    /* Message Box */
+    #message-box {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      z-index: 1000;
+    }
   </style>
 {% endblock %}
 
 {% block content %}
-<!-- Background Image Section -->
+<!-- Background Image and Form Section -->
 <div class="background-section">
   <img src="{% static 'images/checkin.jpg' %}" alt="Background Image">
   <div class="background-overlay"></div>
-  
-  <!-- Form Section with Text and Button -->
   <div class="form-section">
     <h1 class="text-6xl font-bold mb-6 outlined-text">Check-In</h1>
     <p class="text-3xl mb-6 outlined-text text-center">
@@ -113,77 +112,99 @@
   </div>
 </div>
 
+<!-- Message Box -->
+<div id="message-box">
+  <span id="message-text"></span>
+</div>
+
 <!-- Map Section -->
 <div class="map-container">
   {% if message %}
     <p class="success-message">{{ message }}</p>
     {% if task %}
-      {% comment %} <script>
-        setTimeout(function () {
-          window.location.href = "/tasks/";
-        }, 7000);
-      </script> {% endcomment %}
+      {# Optionally add redirect script or additional task logic here #}
     {% endif %}
   {% elif error %}
     <p class="error-message">{{ error }}</p>
   {% endif %}
-
   <div id="map"></div>
 </div>
 
-<!-- Hidden element to store task ID -->
+<!-- Hidden element to store task ID (defaults to 0 if not provided) -->
 <span id="taskData" data-task-id="{{ task.id|default:0 }}"></span>
 
 <script src="{% static 'js/checkin.js' %}"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-      var mapElement = document.getElementById("map");
-      if (!mapElement) {
-          console.error("Map container not found!");
-          return;
+    var mapElement = document.getElementById("map");
+    if (!mapElement) {
+      console.error("Map container not found!");
+      return;
+    }
+
+    // Initialize the map centered at the default location
+    var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker at the default location
+    var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
+      .bindPopup("Your location")
+      .openPopup();
+
+    // Function to get the user's geolocation, update the map, and send the location to the backend
+    function getLocation(task_id) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+
+          // Update marker and map view with user's current location
+          marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
+          map.setView([lat, lon], 15);
+
+          // Send the location to the backend via fetch
+          fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
+            .then(response => {
+              // Check if the response is JSON; if not, treat it as an error message.
+              return response.headers.get("content-type")?.includes("application/json") 
+                ? response.json() 
+                : Promise.reject("Non-JSON response");
+            })
+            .then(data => {
+              showMessage(data.message, true);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              showMessage("Error during check-in. Please try again.", false);
+            });
+        }, function (error) {
+          showMessage("Error getting location. Please enable location services.", false);
+        });
+      } else {
+        showMessage("Geolocation is not supported by this browser.", false);
       }
+    }
 
-      // Initialize map
-      var map = L.map('map').setView([50.73554094214717, -3.53377838012722], 13);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-      }).addTo(map);
+    // Function to display a message box with a custom message and background based on success or error
+    function showMessage(message, success) {
+      var messageBox = document.getElementById("message-box");
+      var messageText = document.getElementById("message-text");
+      messageText.textContent = message;
+      messageBox.style.backgroundColor = success ? "rgba(0,128,0,0.8)" : "rgba(128,0,0,0.8)";
+      messageBox.style.display = "block";
+      setTimeout(function() {
+        messageBox.style.display = "none";
+      }, 5000);
+    }
 
-      var marker = L.marker([50.73554094214717, -3.53377838012722]).addTo(map)
-          .bindPopup("Your location")
-          .openPopup();
-
-      // Function to get user's geolocation
-      function getLocation(task_id) {
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(function (position) {
-                  var lat = position.coords.latitude;
-                  var lon = position.coords.longitude;
-
-                  // Update map marker
-                  marker.setLatLng([lat, lon]).bindPopup("You are here").openPopup();
-                  map.setView([lat, lon], 15);
-
-                  // Send location to the backend
-                  fetch(`/checkin/get_location/${task_id}/?lat=${lat}&lon=${lon}`)
-                      .then(response => response.json())
-                      .then(data => {
-                          alert(data.message);
-                      })
-                      .catch(error => console.error('Error:', error));
-              }, function (error) {
-                  alert("Error getting location. Please enable location services.");
-              });
-          } else {
-              alert("Geolocation is not supported by this browser.");
-          }
-      }
-
-      // Attach event listener to the check-in button
-      document.getElementById('checkin-btn').addEventListener('click', function() {
-          const taskId = 1; // Replace with dynamic task ID
-          getLocation(taskId);
-      });
+    // Attach event listener to the main check-in button
+    document.getElementById('checkin-btn').addEventListener('click', function() {
+      // Use the task ID from the hidden element; default to 1 if not provided
+      var taskId = document.getElementById("taskData").getAttribute("data-task-id") || 1;
+      getLocation(taskId);
+    });
   });
 </script>
 {% endblock %}

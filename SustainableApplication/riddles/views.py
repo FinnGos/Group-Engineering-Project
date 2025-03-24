@@ -1,12 +1,22 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from .models import Riddle
 from Checkin.models import Location
-from home.models import CustomUser
 import datetime
 
 @login_required
 def checkin_page(request):
+    """
+      Handles user check-ins for riddle locations.
+
+    If the location does not exist or has no associated riddle, an error message is returned.
+
+    Args:
+        request (HttpRequest): The HTTP request object containing user data and POST parameters.
+
+    Returns:
+        HttpResponse: Renders the `checkin_page.html` template with a message indicating success or failure.
+    """
     message = ""
     if request.method == "POST":
         location_name = request.POST.get("location")

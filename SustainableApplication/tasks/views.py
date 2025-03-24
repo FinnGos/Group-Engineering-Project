@@ -2,15 +2,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Tasks
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required, user_passes_test
-from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
-from .forms import ImageUploadForm
 from .models import UploadedImage
 import logging 
 import os
 from django.conf import settings
-from riddles.models import Riddle
-from Checkin.models import Location
 
 
 # Set up a logger for authentication events
@@ -33,26 +29,9 @@ def tasks_view(request):
     incomplete_tasks = Tasks.objects.filter(completed=False)
     return render(request, "tasks.html", {"tasks": incomplete_tasks})
 
-    if not request.user.is_authenticated:
-        return render(request, "tasks.html", {"task": None})
+   
 
-    user = request.user
-    today = now().date()  # Ensure date-only comparison
-
-    # Get user's existing task if assigned today
-    if user.selected_task and user.task_assign_date == today:
-        task = user.selected_task
-    else:
-        user_incomplete_tasks = list(Tasks.objects.filter(completed=False))
-        if user_incomplete_tasks:
-            task = random.choice(user_incomplete_tasks)
-            user.selected_task = task
-            user.task_assign_date = today  # Save as date
-            user.save(update_fields=["selected_task", "task_assign_date"])
-        else:
-            task = None  # No tasks available
-
-    return render(request, "tasks.html", {"task": task})
+   
 
 
 def update_progress(request, task_id, action):
@@ -114,8 +93,7 @@ def upload_file(request, task_id):
 
     if request.method == 'POST' and request.FILES.get('image'):
         image = request.FILES['image']
-        
-        uploaded_image = UploadedImage.objects.create(
+        UploadedImage.objects.create(
             task=task, 
             image=image, 
             uploaded_by=request.user
@@ -247,7 +225,5 @@ def delete_image_game_master(request, image_id):
         return JsonResponse({"success": False, "message": "Permission denied."}, status=403)
     
     auth_logger.info(f"Game Master deleted image for Task {image.task.task_name} uploaded by {image.uploaded_by.username}")
-
-    return redirect('gallery_page')
 
     return redirect('gallery_page')

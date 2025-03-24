@@ -6,12 +6,6 @@ from django.db import models
 # To verify the database: .tables  (Should show tables only from the new database)
 # Important: Since we have more then one database, and I didnt use an automative router, make sure to direct correct database
 
-"""""
-class Riddle(models.Model):
-    id = models.AutoField(primary_key= True)
-    question = models.TextField()
-    answer = models.CharField(max_length=255)
-"""
 
 class Location(models.Model):
     name = models.CharField(max_length=255)
