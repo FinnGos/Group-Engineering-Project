@@ -185,52 +185,51 @@
         {% endif %}
       </ul>
       
-      <!-- Mobile Menu Button -->
-      <button @click="open = !open" class="md:hidden focus:outline-none mobile-menu-button">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-             xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-  
-    <!-- Mobile Dropdown Menu -->
-    <div x-show="open" class="md:hidden bg-green-800 text-white p-4">
-      <ul class="flex flex-col space-y-2 text-lg">
-        <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-        <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
-    
-        <!-- Check if user is on login/signup page, and disable specific links for mobile -->
-        {% if request.path == '/signup/' or request.path == '/login/' %}
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
-        <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
-        {% else %}
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        {% endif %}
-        {% endif %}
-    
-        {% if not user.is_authenticated %}
-        <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
-        {% endif %}
-    
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
-        <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
-        <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
-        <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
-        <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
-        <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
-        <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
-        {% endif %}
-    
-      </ul>
-    </div>
-  </nav>
+            <!-- Mobile Menu Button -->
+            <button @click="open = !open" class="md:hidden focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Mobile Dropdown Menu -->
+          <div x-show="open" class="md:hidden bg-green-800 text-white p-4">
+            <ul class="flex flex-col space-y-2 text-lg">
+              <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
+              <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+      
+              <!-- Check if user is on login/signup page, and disable specific links for mobile -->
+              {% if request.path == '/signup/' or request.path == '/login/' %}
+              <li><a href="#" class="text-gray-400 cursor-not-allowed">Update Profile</a></li>
+              <li><a href="#" class="text-gray-400 cursor-not-allowed">Change Password</a></li>
+              <li><a href="#" class="text-gray-400 cursor-not-allowed">View My Data</a></li>
+              {% else %}
+              {% if user.is_authenticated %}
+              <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+              <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+              <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+              {% endif %}
+              {% endif %}
+      
+              {% if not user.is_authenticated %}
+              <li><a href="{% url 'login' %}" class="hover:underline">Sign In</a></li>
+              {% endif %}
+      
+              {% if user.is_authenticated %}
+              <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
+              <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
+              <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
+              <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li> <!-- New Riddles Section -->
+              <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
+              <li><a href="{%url 'open_lootbox'%}">Lootbox</a></li>
+              <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
+              {% endif %}
+      
+            </ul>
+          </div>
+        </nav>
+      
   
   <!-- Main Content -->
   <div class="flex-1">
