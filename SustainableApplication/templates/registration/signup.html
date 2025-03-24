@@ -6,85 +6,55 @@
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'auth.css' %}">
   <style>
-    /* Override navbar styles on this page */
-    nav a {
-      background: none !important;
-      padding: 0 !important;
-      border-radius: 0 !important;
-      color: white !important;
-    }
-    footer a {
-      background: none !important;
-      padding: 0 !important;
-      border-radius: 0 !important;
-      color: white !important;
-    }
-    /* Style for displaying messages */
-    .messages {
-      margin-bottom: 20px;
-    }
-    .message {
-      color: red;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    /* Background Section */
-    .background-section {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Full viewport height */
-      background-image: url("{% static 'images/signin.jpg' %}");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    /* Sign Up Form Styling */
-    .form-section {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      width: 100%;
-      max-width: 500px;
-      padding: 20px;
-    }
-
-    /* Responsive adjustments for mobile devices */
+    /* Same mobile-specific CSS as defined above */
     @media (max-width: 768px) {
       .form-section {
         padding: 10px;
-        max-width: 300px; /* Reduce form width */
+        max-width: 300px;
       }
 
       .text-4xl {
-        font-size: 1.5rem; /* Reduce heading size */
+        font-size: 1.5rem;
       }
 
       .text-xl {
-        font-size: 1rem; /* Reduce paragraph text size */
+        font-size: 1rem;
       }
 
       .block.text-lg {
-        font-size: 0.9rem; /* Reduce label size */
+        font-size: 0.9rem;
       }
 
       input, select, textarea {
-        padding: 6px !important; /* Reduce input padding */
-        font-size: 0.9rem !important; /* Reduce input text size */
+        padding: 8px !important;
+        font-size: 0.9rem !important;
       }
 
       .w-full.bg-green-700,
       .w-full.bg-blue-500 {
-        padding: 6px 0; /* Reduce button padding */
-        font-size: 0.9rem; /* Reduce button text size */
+        padding: 8px 0;
+        font-size: 0.9rem;
       }
 
       .text-sm {
-        font-size: 0.75rem; /* Reduce sign-in text size */
+        font-size: 0.75rem;
+      }
+
+      .messages {
+        margin-bottom: 10px;
+      }
+
+      .message {
+        color: red;
+        font-size: 1rem;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      .sign-in-link {
+        margin-top: 15px;
+        font-size: 0.85rem;
+        color: #007bff;
       }
     }
   </style>
@@ -162,15 +132,17 @@
       <button type="submit" class="w-full bg-green-700 text-white px-6 py-0 rounded-lg hover:bg-green-800">
         Sign Up
       </button>
+
+      <!-- Sign In Link inside the form -->
+      <div class="sign-in-link mt-4 text-center">
+        <p class="text-sm text-gray-600 mb-3">Already have an account?</p>
+        <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+          Sign In
+        </a>
+      </div>
     </form>
 
-    <!-- Sign In Button -->
-    <div class="mt-4 text-lg text-center">
-      <p class="text-sm text-white mb-3">Already have an account?</p>
-      <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-0 rounded-lg hover:bg-blue-600">
-        Sign In
-      </a>
-    </div>
   </div>
 </div>
 {% endblock %}
+

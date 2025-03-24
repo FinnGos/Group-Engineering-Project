@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
@@ -106,3 +107,107 @@ a {
 a:hover {
     background-color: #0056b3;
 }
+
+/* Override navbar and footer link styles */
+nav a, footer a {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: white !important;
+  text-decoration: none;
+}
+
+nav a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Adjustments for Signup Page */
+@media (max-width: 768px) {
+  /* Adjust form section for mobile */
+  .form-section {
+    padding: 10px;
+    max-width: 300px; /* Make form narrower */
+  }
+
+  /* Adjust heading and text sizes */
+  .text-4xl {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
+
+  .text-xl {
+    font-size: 1rem; /* Reduce paragraph text size */
+  }
+
+  .block.text-lg {
+    font-size: 0.9rem; /* Reduce label size */
+  }
+
+  /* Adjust input field size */
+  input, select, textarea {
+    padding: 8px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Reduce padding and font-size for buttons */
+  .w-full.bg-green-700,
+  .w-full.bg-blue-500 {
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+
+  .text-sm {
+    font-size: 0.75rem;
+  }
+
+  /* Adjust message section */
+  .messages {
+    margin-bottom: 10px; /* Reduce space between messages */
+  }
+
+  /* Reduce font size and spacing for error messages */
+  .message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  /* Position "Already have an account?" inside the form */
+  .sign-in-link {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #007bff;
+  }
+
+  /* Adjust the form button */
+  button {
+    padding: 12px;
+  }
+
+  /* Reduce padding for mobile sign-in button */
+  .sign-in-link a {
+    padding: 8px 18px;
+  }
+}
+
+/* Ensure desktop view of Sign In page remains unchanged */
+@media (min-width: 769px) {
+  /* Keep form section size for desktop Sign In page */
+  .form-section {
+    padding: 20px;
+    max-width: 500px;
+  }
+
+  .sign-in-link {
+    font-size: 1.2rem;
+  }
+}
+
+/* Make sure signup page doesn't affect sign-in form */
+@media (min-width: 769px) {
+  /* Keep sign-in form unaltered */
+  .form-section {
+    max-width: 500px;
+  }
+}
+
