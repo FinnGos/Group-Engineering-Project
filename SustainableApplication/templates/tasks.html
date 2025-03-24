@@ -7,67 +7,75 @@
 <!-- Link to tasks.css -->
 <link rel="stylesheet" href="{% static 'tasks.css' %}">
 
-<!-- Image Section -->
-<div class="top-section relative">
-    <div class="image-container bg-green-700 overflow-hidden" style="height: 800px;">
-        <img src="{% static 'images/dailyTasks.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center top;">
-    </div>
-
-    <!-- Tasks Section -->
-    <div class="tasks-section absolute inset-0 flex flex-col justify-center items-center text-white">
-        <div class="text-white text-center mb-6">
-            <h1 class="text-6xl font-bold text-center mb-6 px-4 sm:px-0 sm:text-6xl text-4xl">Daily Tasks</h1>
-            <h2 class="text-3xl text-center mb-4 px-4 sm:text-3xl text-xl">Tasks that can be completed</h2>
+<!-- Main container with padding for navbar -->
+<div class="main-container pt-20 pb-16"> <!-- Added top and bottom padding -->
+    <!-- Image Section -->
+    <div class="top-section relative">
+        <div class="image-container bg-green-700 overflow-hidden" style="height: auto; min-height: 500px; max-height: 800px;">
+            <img src="{% static 'images/dailyTasks.jpg' %}" alt="Image" class="w-full h-full rounded-lg object-cover" style="object-position: center top;">
         </div>
-        
-        <!-- Changed grid to be responsive -->
-        <div class="task-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl px-4">
-            {% if tasks %}
-                {% for task in tasks %}
-                    <div class="task-item p-4 mb-4 bg-gray-800 rounded-lg overflow-hidden">
-                        <strong class="task-name text-xl text-white block mb-2 break-words">{{ task.task_name }}</strong>
 
-                        <!-- Progress Bar -->
-                        <div class="progress-container mt-2 w-full">
-                            <div class="progress-bar bg-green-400 text-center text-white overflow-hidden text-sm" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
-                                {{ task.current_progress }}/{{ task.target }}
+        <!-- Tasks Section -->
+        <div class="tasks-section absolute inset-0 flex flex-col justify-center items-center text-white overflow-y-auto py-24"> <!-- Added vertical padding and overflow scrolling -->
+            <div class="text-white text-center mb-6 mt-6"> <!-- Added top margin -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 px-4">Daily Tasks</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl text-center mb-6 px-4">Tasks that can be completed</h2>
+            </div>
+            
+            <!-- Changed grid to be responsive with container constraints -->
+            <div class="task-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl px-4 mb-6">
+                {% if tasks %}
+                    {% for task in tasks %}
+                        <div class="task-item p-4 mb-4 bg-gray-800 rounded-lg overflow-hidden">
+                            <strong class="task-name text-xl text-white block mb-2 break-words">{{ task.task_name }}</strong>
+
+                            <!-- Progress Bar -->
+                            <div class="progress-container mt-2 w-full">
+                                <div class="progress-bar bg-green-400 text-center text-white overflow-hidden text-sm" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
+                                    {{ task.current_progress }}/{{ task.target }}
+                                </div>
+                            </div>
+
+                            <!-- Task Actions -->
+                            <div class="task-actions mt-4 flex flex-col">
+                                <!-- Check In Button -->
+                                <form action="{% url 'get_location' task.id %}" method="GET" class="w-full">
+                                    <button type="submit" class="btn btn-primary w-full mb-2">Check In</button>
+                                </form>
+
+                                <!-- Claim Task Button -->
+                                <button id="claim-button-{{ task.id }}" class="btn btn-success mb-2 w-full" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
+                                    Claim Task
+                                </button>
+
+                                <!-- Progress Update Buttons -->
+                                <button class="btn btn-warning w-full" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease Progress</button>
                             </div>
                         </div>
-
-                        <!-- Task Actions -->
-                        <div class="task-actions mt-4 flex flex-col">
-                            <!-- Check In Button -->
-                            <form action="{% url 'get_location' task.id %}" method="GET" class="w-full">
-                                <button type="submit" class="btn btn-primary w-full mb-2">Check In</button>
-                            </form>
-
-                            <!-- Claim Task Button -->
-                            <button id="claim-button-{{ task.id }}" class="btn btn-success mb-2 w-full" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
-                                Claim Task
-                            </button>
-
-                            <!-- Progress Update Buttons -->
-                            <button class="btn btn-warning w-full" onclick="updateProgress({{ task.id }}, 'decrease')">Decrease Progress</button>
-                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-6 bg-gray-800 text-white p-4 rounded-lg shadow-lg mb-6 flex justify-center">
+                        <p class="text-white">No tasks available to complete.</p>
                     </div>
-                {% endfor %}
-            {% else %}
-                <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-6 bg-gray-800 text-white p-4 rounded-lg shadow-lg mb-6 flex justify-center">
-                    <p class="text-white">No tasks available to complete.</p>
+                {% endif %}
+            </div>
+            
+            <!-- Navigation buttons with proper spacing -->
+            <div class="navigation-buttons flex flex-col items-center justify-center space-y-4 w-full mb-8"> <!-- Added bottom margin -->
+                <!-- Button to Go to Task Gallery -->
+                <div class="text-center">
+                    <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 shadow-lg inline-block">
+                        View Task Gallery
+                    </a>
                 </div>
-            {% endif %}
-        </div>
-        
-        <!-- Button to Go to Task Gallery -->
-        <div class="text-center mt-6">
-            <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 shadow-lg">
-                View Task Gallery
-            </a>
-        </div>
 
-        <p class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6">
-            <a href="{% url 'home' %}" class="text-white">Back to Home</a>
-        </p>
+                <div class="text-center">
+                    <a href="{% url 'home' %}" class="bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-900 shadow-lg inline-block">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
