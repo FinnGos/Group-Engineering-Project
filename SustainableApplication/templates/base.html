@@ -79,7 +79,7 @@
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-lg">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
-        <li><a href="{% url 'get_location' task_id=1 %}" class="hover:underline">Checkin</a></li>
+        <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
 
         <!-- Check if user is on login/signup page, and disable specific links -->
         {% if request.path == '/signup/' or request.path == '/login/' %}
