@@ -57,6 +57,13 @@
       .form-section {
         padding: 15px;
       }
+      /* Mobile-specific overrides */
+      .form-section label {
+        /* Change label text color from text-gray-600 (desktop) to text-gray-300 on mobile */
+        color: #d1d5db !important; /* Tailwind's text-gray-300 */
+        /* You can adjust font size or other properties as needed */
+      }
+      /* If needed, you can also adjust input sizes or button padding here */
     }
   </style>
 {% endblock %}
@@ -64,7 +71,6 @@
 {% block content %}
 <!-- Background Image Section -->
 <div class="background-section">
-
   <!-- Sign Up Form Section -->
   <div class="form-section">
     <h1 class="text-4xl font-bold mb-4 outlined-text">Sign Up</h1>
@@ -124,13 +130,14 @@
       <!-- Confirm Password Field -->
       <div class="mb-4">
         <label for="id_password2" class="block text-lg font-bold text-gray-600">Confirm Password</label>
+        <!-- On mobile this will override to text-gray-300 via the media query -->
         <input type="password" name="password2" id="id_password2"
           class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           required>
       </div>
 
       <!-- Sign Up Button -->
-      <button type="submit" class="w-full bg-green-700 text-white px-6 py-0 rounded-lg hover:bg-green-800">
+      <button type="submit" class="w-full bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800">
         Sign Up
       </button>
     </form>
@@ -138,7 +145,7 @@
     <!-- Sign In Button -->
     <div class="mt-4 text-lg text-center">
       <p class="text-sm text-white mb-3">Already have an account?</p>
-      <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-0 rounded-lg hover:bg-blue-600">
+      <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
         Sign In
       </a>
     </div>
