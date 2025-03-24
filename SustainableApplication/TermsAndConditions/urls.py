@@ -1,3 +1,4 @@
+"""URL patterns for the TermsAndConditions application"""
 from django.urls import path
 from . import views
 

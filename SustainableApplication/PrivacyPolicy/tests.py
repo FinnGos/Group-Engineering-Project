@@ -1,11 +1,8 @@
-from django.test import TestCase, Client
+"""Tests for privacy policy"""
 from django.urls import reverse
 
-"""Tests to see if the webpage loads"""
 def test_privacy_page_loads(self):
-    """
-    Asks for the webpage checks if it gets returned
-    """
+    """Tests to see if the webpage loads"""
     response = self.client.get(reverse('privacyPolicy'))
     self.assertEqual(response.status_code, 200)
     self.assertTemplateUsed(response, 'privacy.html')

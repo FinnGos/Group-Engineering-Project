@@ -1,13 +1,11 @@
+"""Defines entities for database"""
+
 from django.db import models
-# Create your models here.
-# Important: After defining your models, run the migrations again to aply the changes to the database:
-# Python manage.py makemigrations
-# Python manage.py migrate
-# To verify the database: .tables  (Should show tables only from the new database)
-# Important: Since we have more then one database, and I didnt use an automative router, make sure to direct correct database
 
 
 class Location(models.Model):
+    """Model for locations, storing distance informations for check-in"""
+    #id = models. AutoField(primary_key= True)
     name = models.CharField(max_length=255)
     latitude = models.FloatField()
     longitude = models.FloatField()

@@ -8,5 +8,5 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.collectable_gallery, name="collectable_gallery"),    
+    path("", views.collectable_gallery, name="collectable_gallery"),
 ]

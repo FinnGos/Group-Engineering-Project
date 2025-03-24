@@ -6,6 +6,7 @@ from Checkin.models import Location
 from riddles.models import Riddle
 from home.models import CustomUser
 from geopy.distance import geodesic # pip install required (pip install geopy)
+from django.contrib.auth.decorators import login_required
 from tasks.models import Tasks
 import logging 
 # geopy is used fot geocoding(converting addresses to coordinates)
