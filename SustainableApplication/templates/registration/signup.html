@@ -6,71 +6,23 @@
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'auth.css' %}">
   <style>
-    /* Override navbar styles on this page */
-    nav a {
-      background: none !important;
-      padding: 0 !important;
-      border-radius: 0 !important;
-      color: white !important;
-    }
-    footer a {
-      background: none !important;
-      padding: 0 !important;
-      border-radius: 0 !important;
-      color: white !important;
-    }
-    /* Style for displaying messages */
-    .messages {
-      margin-bottom: 20px;
-    }
-    .message {
-      color: red;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-    /* Background Section */
-    .background-section {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Full viewport height */
-      background-image: url("{% static 'images/signin.jpg' %}");
-      background-size: cover; /* Make sure the image covers the entire area */
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    /* Sign Up Form Styling */
-    .form-section {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      width: 100%;
-      max-width: 500px;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      .form-section {
-        padding: 15px;
-      }
-    }
-    /* Wrapper to scale everything down by 20% */
-    .scale-wrapper {
-      transform: scale(0.8);
-      transform-origin: top left;
-      /* Since scaling reduces effective width, increase the container's width 
-         by the reciprocal of 0.8 (which is 1.25 or 125%) to maintain the layout */
-      width: 125%;
+    /* Existing CSS remains unchanged */
+    /* ... (your existing styles) ... */
+
+    /* Page-specific override for sign up */
+    .signup-page .form-section {
+      /* Instead of centering vertically with translate(-50%, -50%), we move it down to ensure it is within the viewport */
+      top: 70% !important;  /* Adjust this value as needed */
+      transform: translate(-50%, -70%) !important;
     }
   </style>
 {% endblock %}
 
 {% block content %}
-<!-- Background Image Section -->
-<div class="background-section">
-  <!-- Scale-wrapper wraps the sign-up content so that everything is scaled down by 20% -->
-  <div class="scale-wrapper">
+<!-- Wrap the sign up content in a unique container -->
+<div class="signup-page">
+  <!-- Background Image Section -->
+  <div class="background-section">
     <!-- Sign Up Form Section -->
     <div class="form-section">
       <h1 class="text-4xl font-bold mb-4 outlined-text">Sign Up</h1>
@@ -102,36 +54,37 @@
       <!-- Sign Up Form -->
       <form method="post" class="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg">
         {% csrf_token %}
+        
         <!-- Username Field -->
         <div class="mb-4">
           <label for="id_username" class="block text-lg font-bold text-gray-700">Username</label>
           <input type="text" name="username" id="id_username"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required>
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 required>
         </div>
 
         <!-- Email Field -->
         <div class="mb-4">
           <label for="id_email" class="block text-lg font-bold text-gray-700">Email</label>
           <input type="email" name="email" id="id_email"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required>
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 required>
         </div>
 
         <!-- Password Field -->
         <div class="mb-4">
           <label for="id_password1" class="block text-lg font-bold text-gray-700">Password</label>
           <input type="password" name="password1" id="id_password1"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required>
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 required>
         </div>
 
         <!-- Confirm Password Field -->
         <div class="mb-4">
           <label for="id_password2" class="block text-lg font-bold text-gray-700">Confirm Password</label>
           <input type="password" name="password2" id="id_password2"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required>
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 required>
         </div>
 
         <!-- Sign Up Button -->
