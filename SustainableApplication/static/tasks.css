@@ -1,4 +1,5 @@
-/* Updated CSS to remove white/green bars and ensure full screen coverage */
+/* Updated CSS to make the page more mobile-friendly */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -45,4 +46,53 @@ body, html {
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-bottom: 2rem; /* Avoid content getting cut off */
+}
+
+/* Shrink the title text for smaller screens */
+@media screen and (max-width: 768px) {
+  .top-section .text-4xl {
+    font-size: 3.2rem; /* 20% smaller */
+  }
+
+  .top-section .text-5xl {
+    font-size: 4rem; /* 20% smaller */
+  }
+
+  .top-section .text-6xl {
+    font-size: 4.8rem; /* 20% smaller */
+  }
+
+  .top-section .text-xl {
+    font-size: 0.9rem; /* 20% smaller */
+  }
+
+  .top-section .text-2xl {
+    font-size: 1.6rem; /* 20% smaller */
+  }
+
+  .top-section .text-3xl {
+    font-size: 2.4rem; /* 20% smaller */
+  }
+
+  /* Task grid layout for mobile screens */
+  .task-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack tasks in a single column */
+    gap: 1rem;
+  }
+
+  .image-container {
+    height: 60vh; /* Adjust height for smaller screens */
+  }
+
+  .task-item {
+    padding: 1rem;
+    transform: scale(1); /* Reset scale for better visibility on mobile */
+  }
+
+  .task-actions button {
+    padding: 0.5rem;
+    font-size: 0.875rem; /* Smaller buttons on mobile */
+  }
 }
