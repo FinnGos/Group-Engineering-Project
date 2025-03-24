@@ -27,10 +27,10 @@
       width: 100%;
       z-index: 9999;
       background-color: rgba(23, 114, 49, 0.95);
-      padding: 1.5rem; /* Increased padding */
-      height: 5.5rem; /* Explicit height */
+      padding: 1.5rem;
+      height: 5.5rem;
       display: flex;
-      align-items: center; /* Vertically center items */
+      align-items: center;
     }
 
     /* Navbar Links Styling */
@@ -38,25 +38,46 @@
       display: flex;
       align-items: center;
       height: 100%;
-      gap: 1.5rem; /* Increased space between links */
+      gap: 1.5rem;
     }
 
     nav ul.desktop-menu li a {
-      font-size: 1.25rem; /* Larger font size */
-      font-weight: 600; /* Slightly bolder */
-      padding: 0.5rem 1rem; /* Add some padding */
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
       display: inline-block;
       transition: background-color 0.3s ease;
       border-radius: 0.25rem;
     }
 
     nav ul.desktop-menu li a:hover {
-      background-color: rgba(255,255,255,0.2); /* Subtle hover effect */
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      nav {
+        height: 3rem;
+        padding: 0.75rem;
+      }
+
+      nav .text-2xl {
+        font-size: 1.25rem;
+      }
+
+      .mobile-menu-button {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      nav ul.mobile-menu {
+        font-size: 0.875rem;
+      }
     }
 
     /* Ensure main content starts immediately below navbar with no gap */
     .flex-1 {
-      padding-top: 5.5rem; /* Match navbar height */
+      padding-top: 5.5rem;
       min-height: calc(100vh - 5.5rem);
       background: transparent !important;
       margin-top: 0;
@@ -64,10 +85,17 @@
       top: 0;
     }
 
+    @media (max-width: 768px) {
+      .flex-1 {
+        padding-top: 3rem;
+        min-height: calc(100vh - 3rem);
+      }
+    }
+
     /* Dropdown Styling */
     .user-dropdown {
       position: fixed;
-      top: 5.5rem; /* Aligned with new navbar height */
+      top: 5.5rem;
       right: 10px;
       z-index: 10000;
       min-width: 200px;
@@ -158,7 +186,7 @@
       </ul>
       
       <!-- Mobile Menu Button -->
-      <button @click="open = !open" class="md:hidden focus:outline-none">
+      <button @click="open = !open" class="md:hidden focus:outline-none mobile-menu-button">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -168,7 +196,7 @@
     </div>
   
     <!-- Mobile Dropdown Menu -->
-    <div x-show="open" class="md:hidden bg-green-800 text-white p-4">
+    <div x-show="open" class="md:hidden bg-green-800 text-white p-4 mobile-menu">
       <ul class="flex flex-col space-y-2 text-lg">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
