@@ -380,6 +380,7 @@ class ViewUserDataTests(TestCase):
         self.assertContains(response, self.user.email)
 
     def test_user_sees_correct_log_entry(self):
+        """Test that the correct log entry appears on the page."""
         other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt4\n"
 
         # Properly write and close the log file
