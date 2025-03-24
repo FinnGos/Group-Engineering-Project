@@ -167,7 +167,7 @@
         </svg>
       </button>
 
-      <!-- Desktop Menu -->
+      <!-- Desktop Menu (Hidden on Mobile) -->
       <ul class="hidden md:flex space-x-6 text-lg desktop-menu">
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
@@ -197,7 +197,7 @@
       </ul>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
+    <!-- Mobile Dropdown Menu (Only Visible on Mobile When Hamburger is Clicked) -->
     <div x-show="open" x-transition
       class="md:hidden bg-green-800 text-white p-4 absolute top-full left-0 w-full shadow-lg">
       <ul class="flex flex-col space-y-2 text-lg">
@@ -219,6 +219,7 @@
       </ul>
     </div>
   </nav>
+
 
   <!-- Main Content -->
   <div class="flex-1">
