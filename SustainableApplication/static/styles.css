@@ -2,7 +2,9 @@
 .top-section, .bottom-section {
     position: relative;
 }
-
+ body {
+    background-color: #004d00; /* Apply the green background to the whole page */
+  }
 .top-text, .bottom-text {
     position: absolute;
     top: 0;
