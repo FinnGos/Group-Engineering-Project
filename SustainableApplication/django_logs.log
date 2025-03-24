@@ -1,2 +1,291 @@
+<<<<<<< HEAD
 
 django.utils.autoreload INFO 2025-03-22 18:21:49,175 autoreload 95573 139836997738624 Watching for file changes with StatReloader
+=======
+>>>>>>> RiddlesSystemImplemented
+django.utils.autoreload INFO 2025-03-24 00:26:47,588 autoreload 9692 41764 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 00:26:51,583 basehttp 9692 36384 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:26:51,628 basehttp 9692 36384 "GET /accounts/login/ HTTP/1.1" 200 7976
+django INFO 2025-03-24 00:26:59,673 views 9692 36384 User logged in: nightmare
+django.server INFO 2025-03-24 00:26:59,733 basehttp 9692 36384 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:26:59,760 basehttp 9692 36384 "GET /home/ HTTP/1.1" 200 8225
+django.server INFO 2025-03-24 00:27:02,480 basehttp 9692 36384 "GET /get_location/1/ HTTP/1.1" 200 10650
+django.server WARNING 2025-03-24 00:27:02,549 basehttp 9692 36384 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:29:42,057 basehttp 9692 31580 "GET /get_location/1/ HTTP/1.1" 200 9636
+django.server WARNING 2025-03-24 00:29:42,096 basehttp 9692 31580 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:29:46,174 basehttp 9692 22556 "GET /get_location/1/?lat=50.7197525&lon=-3.5342811 HTTP/1.1" 200 9489
+django.server WARNING 2025-03-24 00:29:46,232 basehttp 9692 22556 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:30:01,400 basehttp 9692 41304 "GET /get_location/1/?lat=50.7197525&lon=-3.5342811 HTTP/1.1" 200 10509
+django.server WARNING 2025-03-24 00:30:01,439 basehttp 9692 41304 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:34:39,462 basehttp 9692 2820 "GET /get_location/1/?lat=50.7197525&lon=-3.5342811 HTTP/1.1" 200 11686
+django.server WARNING 2025-03-24 00:34:39,496 basehttp 9692 2820 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-24 00:35:06,769 autoreload 35152 47508 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 00:35:08,567 basehttp 35152 39488 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:35:08,594 basehttp 35152 39488 "GET /accounts/login/ HTTP/1.1" 200 7976
+django INFO 2025-03-24 00:35:16,730 views 35152 39488 Failed login attempt for username: matt12
+django.server INFO 2025-03-24 00:35:16,732 basehttp 35152 39488 "POST /accounts/login/ HTTP/1.1" 200 8218
+django INFO 2025-03-24 00:35:22,868 views 35152 39488 Failed login attempt for username: matt12
+django.server INFO 2025-03-24 00:35:22,871 basehttp 35152 39488 "POST /accounts/login/ HTTP/1.1" 200 8218
+django INFO 2025-03-24 00:35:33,358 views 35152 39488 Failed login attempt for username: matt5
+django.server INFO 2025-03-24 00:35:33,362 basehttp 35152 39488 "POST /accounts/login/ HTTP/1.1" 200 8218
+django.server INFO 2025-03-24 00:35:38,699 basehttp 35152 39488 "GET /home/signup/ HTTP/1.1" 200 9165
+django WARNING 2025-03-24 00:35:59,406 views 35152 39488 Failed signup attempt.
+django.server INFO 2025-03-24 00:35:59,408 basehttp 35152 39488 "POST /home/signup/ HTTP/1.1" 200 9400
+django INFO 2025-03-24 00:36:16,427 views 35152 39488 User logged in: matt444
+django INFO 2025-03-24 00:36:16,460 views 35152 39488 New user signed up: matt444
+django.server INFO 2025-03-24 00:36:16,496 basehttp 35152 39488 "POST /home/signup/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:36:16,524 basehttp 35152 39488 "GET /home/ HTTP/1.1" 200 8225
+django.request ERROR 2025-03-24 00:36:20,077 log 35152 39488 Internal Server Error: /riddles/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: riddles_riddle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\riddles\views.py", line 45, in riddles_page
+    return render(request, 'riddles/riddles_page.html', {'riddles': riddles})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: riddles_riddle
+django.server ERROR 2025-03-24 00:36:20,095 basehttp 35152 39488 "GET /riddles/ HTTP/1.1" 500 208747
+django.request ERROR 2025-03-24 00:36:32,636 log 35152 39488 Internal Server Error: /riddles/
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: riddles_riddle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\riddles\views.py", line 45, in riddles_page
+    return render(request, 'riddles/riddles_page.html', {'riddles': riddles})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dight\miniconda3\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: riddles_riddle
+django.server ERROR 2025-03-24 00:36:32,642 basehttp 35152 39488 "GET /riddles/ HTTP/1.1" 500 208747
+django.utils.autoreload INFO 2025-03-24 00:40:48,661 autoreload 35152 47508 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\Checkin\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:40:49,533 autoreload 49148 6560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:44:09,573 autoreload 49148 6560 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\Checkin\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:44:10,479 autoreload 20420 23544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:44:49,108 autoreload 20420 23544 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\home\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:44:49,936 autoreload 4112 18552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:44:52,271 autoreload 4112 18552 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\home\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:44:53,277 autoreload 40872 46220 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:45:38,610 autoreload 40872 46220 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\riddles\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:45:39,505 autoreload 36416 32292 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:47:41,919 autoreload 36416 32292 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\riddles\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:47:42,703 autoreload 15388 864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:49:05,457 autoreload 15388 864 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\models.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:49:06,376 autoreload 8504 15768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:50:28,141 autoreload 8504 15768 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:50:28,933 autoreload 49632 46304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:51:23,381 autoreload 49632 46304 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:51:24,260 autoreload 40644 3184 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 00:51:28,434 basehttp 40644 36564 "GET / HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:51:28,469 basehttp 40644 36564 "GET /accounts/login/ HTTP/1.1" 200 7976
+django INFO 2025-03-24 00:51:35,406 views 40644 36564 User logged in: nightmare
+django.server INFO 2025-03-24 00:51:35,485 basehttp 40644 36564 "POST /accounts/login/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:51:35,513 basehttp 40644 36564 "GET /home/ HTTP/1.1" 200 8225
+django.server INFO 2025-03-24 00:51:54,042 basehttp 40644 36564 "GET /tasks/ HTTP/1.1" 200 23888
+django.server INFO 2025-03-24 00:51:54,103 basehttp 40644 36564 "GET /static/tasks.css HTTP/1.1" 304 0
+django.server INFO 2025-03-24 00:51:54,116 basehttp 40644 36564 "GET /static/images/dailyTasks.jpg HTTP/1.1" 304 0
+django.server INFO 2025-03-24 00:52:07,430 basehttp 40644 36564 "GET /tasks/gallery/ HTTP/1.1" 200 7478
+django.server WARNING 2025-03-24 00:52:07,479 basehttp 40644 36564 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:52:09,078 basehttp 40644 28460 "GET /tasks/ HTTP/1.1" 200 23888
+django.server INFO 2025-03-24 00:52:12,313 basehttp 40644 28460 "GET /get_location/5/? HTTP/1.1" 200 11827
+django.server WARNING 2025-03-24 00:52:12,379 basehttp 40644 28460 "GET /static/css/button.css HTTP/1.1" 404 1969
+django.utils.autoreload INFO 2025-03-24 00:54:00,945 autoreload 40644 3184 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:54:01,749 autoreload 36740 8256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-03-24 00:54:06,215 autoreload 36740 8256 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:54:07,003 autoreload 42384 28392 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 00:54:11,198 basehttp 42384 38728 "GET /home/ HTTP/1.1" 200 8225
+django.server INFO 2025-03-24 00:54:13,544 basehttp 42384 38728 "GET /tasks/ HTTP/1.1" 200 23888
+django.utils.autoreload INFO 2025-03-24 00:54:15,443 autoreload 42384 28392 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:54:16,441 autoreload 25056 21728 Watching for file changes with StatReloader
+django.server INFO 2025-03-24 00:54:17,240 basehttp 25056 26416 "GET /tasks/ HTTP/1.1" 200 23888
+django.server INFO 2025-03-24 00:54:19,310 basehttp 25056 26416 "GET /tasks/gallery/ HTTP/1.1" 200 7478
+django.server WARNING 2025-03-24 00:54:19,352 basehttp 25056 26416 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:54:20,744 basehttp 25056 46364 "GET /tasks/upload/0/ HTTP/1.1" 200 8667
+django.server INFO 2025-03-24 00:54:59,523 basehttp 25056 46364 "POST /tasks/upload/4/ HTTP/1.1" 302 0
+django.server INFO 2025-03-24 00:54:59,552 basehttp 25056 46364 "GET /tasks/tasks/ HTTP/1.1" 200 23888
+django.server INFO 2025-03-24 00:55:01,417 basehttp 25056 46364 "GET /tasks/gallery/ HTTP/1.1" 200 8605
+django.server WARNING 2025-03-24 00:55:01,459 basehttp 25056 46364 "GET /static/css/styles.css HTTP/1.1" 404 1969
+django.server INFO 2025-03-24 00:55:01,594 basehttp 25056 33656 "GET /media/MediaPhotos/Screenshot_2023-10-05_180931.png HTTP/1.1" 200 25694
+django.utils.autoreload INFO 2025-03-24 00:55:34,339 autoreload 25056 21728 C:\Users\dight\Documents\coursework\GroupSoftware\cloneofRepo8\Group-Engineering-Project\SustainableApplication\tasks\views.py changed, reloading.
+django.utils.autoreload INFO 2025-03-24 00:55:35,369 autoreload 37172 31108 Watching for file changes with StatReloader

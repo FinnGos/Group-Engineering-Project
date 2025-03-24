@@ -5,9 +5,13 @@ from django.db.models.functions import Lower  # returns lower case value of fiel
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from collectables.models import Collectable
+from riddles.models import Riddle
 
 class CustomUser(AbstractUser):
     """Extending AbstractUser in order to add points to a basic user"""
+    # ADDED THIS
+    completed_riddles = models.ManyToManyField(Riddle, blank=True)
+
 
     current_points = models.IntegerField(default=0)
     all_time_points = models.IntegerField(
@@ -21,6 +25,9 @@ class CustomUser(AbstractUser):
     all_time_points = models.IntegerField(default=0) #2 types of points for the leaderboard
     # Collectable cards owned by user
     collectables_owned = models.ManyToManyField(Collectable, blank=True)
+
+    # def has_completed_riddle(self, riddle):
+    #     return self.completed_riddles.filter(id=riddle.id).exists()
 
     def __str__(self):
         return self.username

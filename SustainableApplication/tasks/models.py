@@ -2,7 +2,8 @@ from django.db import models
 from Checkin.models import Location
 from home.models import CustomUser
 from django.contrib.auth import get_user_model
-
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 
 class Tasks(models.Model):
     User = get_user_model()
@@ -47,6 +48,13 @@ class UploadedImage(models.Model):
     image = models.ImageField(upload_to='MediaPhotos/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
     uploaded_by = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    @receiver(post_delete, sender=User)
+    def delete_user_images(sender, instance, **kwargs):
+        """
+        Deletes all images uploaded by the user when their account is deleted.
+        """
+        UploadedImage.objects.filter(uploaded_by=instance).delete()
 
     def __str__(self):
         return f"Image for {self.task.task_name}" if self.task else "Unassigned Image"
