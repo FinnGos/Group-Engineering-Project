@@ -3,7 +3,7 @@
   /* Adjust form section for mobile */
   .form-section {
     padding: 10px;
-    max-width: 375px; /* Make form 3/4 of its current size */
+    max-width: 319px; /* Make form 15% smaller than 375px */
   }
 
   /* Adjust heading and text sizes */
