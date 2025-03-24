@@ -74,7 +74,7 @@
   <!-- Navbar -->
   <nav class="bg-green-700 text-white p-4" x-data="{ open: false }">
     <div class="container mx-auto flex justify-between items-center">
-        <div class="text-xl font-bold">Sustainable App</div>
+        <div class="text-xl font-bold">CarboCollect</div>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-lg">
@@ -100,15 +100,12 @@
         {% endif %}
 
         {% if user.is_authenticated %}
-        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
         {% endif %}
 
         <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
         {% if user.is_authenticated %}
-        <li><a href="{% url 'delete_account' %}" id="delete-account-link" class="hover:underline text-red-500">Delete
-            Account</a></li>
         {% endif %}
       </ul>
 
@@ -144,8 +141,6 @@
         {% endif %}
 
         {% if user.is_authenticated %}
-        <li><a href="{% url 'logout' %}" class="hover:underline">Logout</a></li>
-        <li><a href="{% url 'delete_account' %}" id="delete-account-link-mobile"
           <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
           <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
           <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
@@ -172,6 +167,8 @@
       </div>
       <p class="mt-2 footer-text">
         Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon
+                  <li><a href="{% url 'TermsAndConditions' %}" class="hover:underline">Terms and Conditions</a></li>
+          <li><a href="{% url 'PrivacyPolicy' %}" class="hover:underline">Privacy Policy</a></li>
       </p>
     </div>
   </footer>
