@@ -104,7 +104,7 @@ def log_successful_login(sender, request, user, **kwargs):
         kwargs: Additional arguments.
     """
     auth_logger.info("User logged in: %s", user.username)
-    cleanup_old_logs()
+    #
 
 @receiver(user_login_failed)
 def log_failed_login(sender, credentials, request, **kwargs):
@@ -220,36 +220,7 @@ def change_password(request):
 
     return render(request, "registration/change_password.html", {"form": form})
 
-def cleanup_old_logs():
-    """
-    Deletes log entries older than 3 months to prevent log file bloat.
-    
-    Reads the log file, filters out old entries, and writes the updated logs back.
-    """
-    if not os.path.exists(LOG_FILE_PATH):
-        return  # Do nothing if log file does not exist
 
-    now = datetime.now()
-    cleaned_logs = []
-
-    with open(LOG_FILE_PATH, "r", encoding="utf-8") as file:
-        for line in file:
-            try:
-                # Extract timestamp from log line
-                timestamp_str = line.split()[2] + " " + line.split()[3]
-                timestamp = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S,%f")
-
-                # Keep logs that are less than 3 months old
-                if (now - timestamp).total_seconds() <= 7889472:
-                    cleaned_logs.append(line)
-
-            except (IndexError, ValueError):
-                # If log format is incorrect, keep the line (avoid accidental deletion)
-                cleaned_logs.append(line)
-
-    # Write the filtered logs back to the file
-    with open(LOG_FILE_PATH, "w", encoding="utf-8") as file:
-        file.writelines(cleaned_logs)
 
 
 def view_user_data(request):

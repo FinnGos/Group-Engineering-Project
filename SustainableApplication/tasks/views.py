@@ -34,6 +34,8 @@ from django.utils.timezone import now
 from django.contrib.auth.decorators import login_required
 import random
 
+global selected_tasks
+
 
 # Create your views here.
 @login_required
@@ -47,6 +49,8 @@ def tasks_view(request):
 
     # Fetch all incomplete tasks
     incomplete_tasks = list(Tasks.objects.filter(completed=False))
+
+    global selected_tasks
 
     if incomplete_tasks:
         # Select up to 3 random tasks
@@ -107,8 +111,6 @@ def upload_file(request, task_id):
     Handles image uploads for a specific task.
     If task_id is 0, create a new task for uploading or redirect to a default task page.
     """
-    # Get the list of all daily tasks
-    tasks = Tasks.objects.all()  # You can filter if needed
 
     # If task_id is 0, redirect to task selection
     if task_id == 0:
@@ -124,8 +126,11 @@ def upload_file(request, task_id):
             uploaded_by=request.user
         )
         return redirect("tasks_page")  # Redirect after upload
+    
+    global selected_tasks
+    print(selected_tasks)
 
-    return render(request, "upload.html", {"task": task, "tasks": tasks})
+    return render(request, "upload.html", {"task": task, "tasks": selected_tasks})
 
 
 @login_required
@@ -139,8 +144,9 @@ def tasks_page(request):
     Returns:
         HttpResponse: Renders the 'tasks.html' template with all tasks.
     """
-    tasks = Tasks.objects.all()
-    return render(request, "tasks.html", {"tasks": tasks})
+    global selected_tasks
+
+    return render(request, "tasks.html", {"tasks": selected_tasks})
 
 
 @login_required
