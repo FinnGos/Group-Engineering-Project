@@ -11,8 +11,10 @@
 <div class="main-container pt-20 pb-16">
     <!-- Image Section with Fixed Background -->
     <div class="top-section relative" style="min-height: 100vh;"> <!-- Increased height -->
-        <div class="image-container absolute inset-0 bg-green-700" style="min-height: 100vh;"> <!-- Ensure consistency -->    
-            <img src="{% static 'images/dailyTasks.jpg' %}" alt="Image" class="w-full h-full object-cover" style="object-position: center;">
+        <div class="image-container absolute inset-0 bg-green-700" style="min-height: 100vh;">
+            <!-- Ensure consistency -->
+            <img src="{% static 'images/dailyTasks.jpg' %}" alt="Image" class="w-full h-full object-cover"
+                style="object-position: center;">
         </div>
 
         <!-- Tasks Section with Semi-Transparent Overlay -->
@@ -22,60 +24,67 @@
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4">Daily Tasks</h1>
                 <h2 class="text-xl md:text-2xl lg:text-3xl text-center">Tasks that can be completed</h2>
             </div>
-            
+
             <!-- Task Grid with Smaller Boxes -->
             <div class="task-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full max-w-5xl px-4 mb-6">
                 {% if tasks %}
-                    {% for task in tasks %}
-                        <div class="task-item p-3 mb-3 bg-gray-800 bg-opacity-90 rounded-lg overflow-hidden shadow-lg" style="transform: scale(0.9);">
-                            <strong class="task-name text-lg text-white block mb-1 break-words">{{ task.task_name }}</strong>
+                {% for task in tasks %}
+                <div class="task-item p-3 mb-3 bg-gray-800 bg-opacity-90 rounded-lg overflow-hidden shadow-lg"
+                    style="transform: scale(0.9);">
+                    <strong class="task-name text-lg text-white block mb-1 break-words">{{ task.task_name }}</strong>
 
-                            <!-- Progress Bar -->
-                            <div class="progress-container mt-1 w-full">
-                                <div class="progress-bar bg-green-400 text-center text-white overflow-hidden text-xs" id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
-                                    {{ task.current_progress }}/{{ task.target }}
-                                </div>
-                            </div>
-
-                            <!-- Task Actions - Compact Layout with White Text and Underlines -->
-                            <div class="task-actions mt-2 flex flex-col">
-                                <!-- Check In Button -->
-                                <form action="{% url 'get_location' task.id %}" method="GET" class="w-full">
-                                    <button type="submit" class="btn btn-primary w-full mb-1 py-1 text-sm text-white hover:underline font-medium">
-                                        <span class="underline">Check In</span>
-                                    </button>
-                                </form>
-
-                                <!-- Claim Task Button -->
-                                <button id="claim-button-{{ task.id }}" class="btn btn-success mb-1 w-full py-1 text-sm text-white hover:underline font-medium" onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
-                                    <span class="underline">Claim Task</span>
-                                </button>
-
-                                <!-- Progress Update Buttons -->
-                                <button class="btn btn-warning w-full py-1 text-sm text-white hover:underline font-medium" onclick="updateProgress({{ task.id }}, 'decrease')">
-                                    <span class="underline">Decrease Progress</span>
-                                </button>
-                            </div>
+                    <!-- Progress Bar -->
+                    <div class="progress-container mt-1 w-full">
+                        <div class="progress-bar bg-green-400 text-center text-white overflow-hidden text-xs"
+                            id="progress-bar-{{ task.id }}" style="width: {{ task.progress_percentage }}%;">
+                            {{ task.current_progress }}/{{ task.target }}
                         </div>
-                    {% endfor %}
-                {% else %}
-                    <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-6 bg-gray-800 bg-opacity-90 text-white p-4 rounded-lg shadow-lg mb-6 flex justify-center">
-                        <p class="text-white">No tasks available to complete.</p>
                     </div>
+
+                    <!-- Task Actions - Compact Layout with White Text and Underlines -->
+                    <div class="task-actions mt-2 flex flex-col">
+                        <!-- Check In Button -->
+                        <form action="{% url 'get_location' task.id %}" method="GET" class="w-full">
+                            <button type="submit"
+                                class="btn btn-primary w-full mb-1 py-2 text-base text-white font-bold hover:underline hover:bg-opacity-80 hover:scale-105 transition-transform">
+                                <span class="underline">Check In</span>
+                            </button>
+                        </form>
+
+                        <!-- Claim Task Button -->
+                        <button id="claim-button-{{ task.id }}"
+                            class="btn btn-success mb-1 w-full py-1 text-sm text-white hover:underline font-medium"
+                            onclick="claimTask({{ task.id }})" {% if task.has_checked_in %} disabled {% endif %}>
+                            <span class="underline">Claim Task</span>
+                        </button>
+
+                        <!-- Progress Update Buttons -->
+
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <div
+                    class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-6 bg-gray-800 bg-opacity-90 text-white p-4 rounded-lg shadow-lg mb-6 flex justify-center">
+                    <p class="text-white">No tasks available to complete.</p>
+                </div>
                 {% endif %}
             </div>
-            
+
             <!-- Navigation buttons with better visibility and white text -->
-            <div class="navigation-buttons flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 w-full mb-8">
+            <div
+                class="navigation-buttons flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 w-full mb-8">
                 <!-- Button to Go to Task Gallery -->
                 <div class="text-center">
-                    <a href="{% url 'gallery_page' %}" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 shadow-lg inline-block font-medium hover:underline">
+                    <a href="{% url 'gallery_page' %}"
+                        class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 shadow-lg inline-block font-medium hover:underline">
                         <span class="underline">View Task Gallery</span>
                     </a>
                 </div>
 
                 <div class="text-center">
-                    <a href="{% url 'home' %}" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 shadow-lg inline-block font-medium hover:underline">
+                    <a href="{% url 'home' %}"
+                        class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 shadow-lg inline-block font-medium hover:underline">
                         <span class="underline">Back to Home</span>
                     </a>
                 </div>
@@ -86,13 +95,18 @@
 
 <!-- Optional: Add custom CSS to ensure button text is white even when using Bootstrap button classes -->
 <style>
-.btn-primary, .btn-success, .btn-warning {
-    color: white !important;
-    font-weight: 500 !important;
-}
-.btn-primary:disabled, .btn-success:disabled, .btn-warning:disabled {
-    color: rgba(255, 255, 255, 0.7) !important;
-}
+    .btn-primary,
+    .btn-success,
+    .btn-warning {
+        color: white !important;
+        font-weight: 500 !important;
+    }
+
+    .btn-primary:disabled,
+    .btn-success:disabled,
+    .btn-warning:disabled {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
 </style>
 
 <!-- JavaScript Section for AJAX Functionality -->
@@ -102,7 +116,7 @@
             url: "{% url 'update_progress' 1 'increase' %}".replace("1", taskId).replace("increase", action),
             type: "POST",
             data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
-            success: function(response) {
+            success: function (response) {
                 if (response.success) {
                     let progressBar = document.getElementById("progress-bar-" + taskId);
                     progressBar.style.width = response.new_progress + "%";
@@ -119,7 +133,7 @@
             url: "{% url 'update_progress' 1 'claim' %}".replace("1", taskId),
             type: "POST",
             data: { csrfmiddlewaretoken: "{{ csrf_token }}" },
-            success: function(response) {
+            success: function (response) {
                 if (response.success) {
                     let progressBar = document.getElementById("progress-bar-" + taskId);
                     progressBar.style.width = "100%";
