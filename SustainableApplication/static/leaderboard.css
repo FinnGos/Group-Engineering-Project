@@ -1,175 +1,59 @@
-/* Set background color for the wrapper */
-.mobile-bg {
-    background-color: #004d00;
-}
-
-/* Outlined text for headings (keep this for headings only) */
-.outlined-text {
-  color: white;
-  font-weight: bold;
-  text-shadow: 
-      -2px -2px 0 black,
-       2px -2px 0 black,
-      -2px  2px 0 black,
-       2px  2px 0 black;
-}
-
-/* Mobile-specific adjustments */
 @media (max-width: 640px) {
-    .mobile-bg {
-        background-color: #004d00 !important; /* Use #004d00 for mobile as well */
-    }
-
-    .bottom-section {
-        margin-top: -20px; /* Pull the bottom section up */
-        position: relative;
-        z-index: 10;
-    }
-
-    .mobile-bottom-container {
-        margin-top: -50px !important; /* Adjust to remove gap */
-        padding: 0 !important;
-        position: relative;
-        z-index: 10;
-    }
-
-    .mobile-bottom-image {
-        width: 100vw !important;
-        height: auto !important;
-        max-height: none !important;
-        object-fit: cover !important;
-        margin-top: -20px !important; /* Further adjust to remove any potential gaps */
-    }
-
+    /* Remove void between images and bring content up */
     .top-section {
-        margin-bottom: -10px !important; /* Reduce any potential spacing */
+        margin-bottom: -100px !important;
+        position: relative;
+        z-index: 10;
     }
 
-    /* Current Points box on mobile: tiny version */
-    .desktop-current-points {
-        display: none !important;
+    /* Adjust header text to be visible */
+    .top-section .header-text {
+        transform: scale(0.6); /* Slightly larger than previous 0.4 */
+        transform-origin: top center;
+        margin-bottom: -50px !important; /* Pull up to reduce space */
+        position: relative;
+        z-index: 15;
     }
-    .mobile-current-points {
-        padding: 2px !important;
-        width: 60% !important;
-        max-width: 150px !important;
-        position: absolute;
-        bottom: 60px !important;
-        transform: scale(0.4) !important;
-        transform-origin: center bottom !important;
-        z-index: 20 !important;
+
+    /* Adjust rankings to be closer together and higher */
+    .rankings {
+        margin-top: -80px !important;
+        position: relative;
+        z-index: 20;
+        transform: scale(0.7);
+        transform-origin: top center;
     }
-    .mobile-current-points h3 {
-        font-size: 0.9rem !important;
-        margin-bottom: 0 !important;
+
+    /* Ensure rank items are close together */
+    .rank-item {
+        margin-bottom: 5px !important;
     }
-    .mobile-current-points p {
-        font-size: 0.7rem !important;
-        margin-bottom: 0 !important;
+
+    /* Bottom section adjustments */
+    .bottom-section {
+        margin-top: -150px !important; /* Pull up to close gap */
+        position: relative;
+        z-index: 5;
     }
-}
 
-/* Leaderboard Section Styles */
-.top-section {
-  position: relative;
-}
+    /* Image container adjustment */
+    .image-container {
+        height: 300px !important; /* Slightly taller */
+        padding: 0 !important;
+    }
 
-.top-section img {
-  width: 100%;
-  height: auto;
-}
+    /* Current points box */
+    #current-points-box {
+        transform: scale(0.5) !important;
+        margin-top: 50px !important;
+        position: relative;
+        z-index: 25;
+    }
 
-.leaderboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Rank Item Styles */
-.rank-item {
-  background-color: #4a4a4a;
-  padding: 10px;
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-}
-
-.rank-item:hover {
-  transform: scale(1.05);
-}
-
-/* Rank-specific Styles */
-.rank-1 {
-  border: 4px solid #ecad0f;
-  background-color: #ecad0f;
-}
-
-.rank-2 {
-  border: 4px solid #8f8f8f;
-  background-color: #8f8f8f;
-}
-
-.rank-3 {
-  border: 4px solid #cd7f32;
-  background-color: #cd7f32;
-}
-
-.rank-4 {
-  border: 4px solid #464f59;
-  background-color: #464f59;
-}
-
-.rank-5 {
-  border: 4px solid #2f363d;
-  background-color: #2f363d;
-}
-
-/* Text inside rank items */
-.rank {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.name {
-  font-size: 1.2rem;
-  color: white;
-}
-
-.points {
-  font-size: 1rem;
-  color: white;
-}
-
-/* Current Player's Points Section for desktop */
-.current-points {
-  background-color: #28a745;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.current-points h3 {
-  font-size: 1.5rem;
-}
-
-.current-points p {
-  font-size: 1.2rem;
-}
-
-/* Buttons Section */
-.buttons-section a, .buttons-section button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.buttons-section a:hover, .buttons-section button:hover {
-  background-color: #0056b3;
+    /* Buttons section */
+    .buttons-section {
+        bottom: 10px !important;
+        transform: scale(0.7);
+        z-index: 30;
+    }
 }
