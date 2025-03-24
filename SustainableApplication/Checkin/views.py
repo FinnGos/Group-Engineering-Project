@@ -71,20 +71,6 @@ def database_location(request, task):
 
     locations = Location.objects.using('location_db').all()
 
-    location = Location.objects.using('location_db').get(id=15)
-    context = {
-                "lat": user_lat,
-                "lon": user_lon,
-                "message": f"Check-in Succesfull at {location.name}!",
-            }
-    riddle = Riddle.objects.get(location_id=15)
-    user = request.user
-    user.current_points += 350
-    auth_logger.info(request.user.current_points)
-    request.user.completed_riddles.add(riddle)
-    user.save()
-    return render(request, "checkin_page.html", context)
-
     for location in locations:
         # Checking the requested location is within any of the location in the DB locations
         if abs(user_lat - location.latitude) <= 0.001 and abs(user_lon - location.longitude) <= 0.001:
@@ -98,10 +84,10 @@ def database_location(request, task):
             }
 
             auth_logger.info(location.id)
+            auth_logger.info("HERE")
 
             try:
-                current_location_id = location.id
-                riddle = Riddle.objects.get(location_id=current_location_id)
+                riddle = Riddle.objects.get(location_id=location.id)
                 auth_logger.info(riddle)
             except:
                 riddle = None
