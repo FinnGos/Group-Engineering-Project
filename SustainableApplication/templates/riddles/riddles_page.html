@@ -7,9 +7,9 @@
 <div class="container mx-auto p-6">
     <h1 class="text-4xl font-bold text-center mb-6">Riddle Challenge - Week {{ current_week }}</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div class="riddles-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {% for riddle in riddles %}
-        <div class="bg-gray-200 p-4 rounded-lg shadow-md text-center {% if riddle in request.user.completed_riddles.all %}completed{% endif %}">
+        <div class="riddle-box bg-gray-200 p-4 rounded-lg shadow-md text-center {% if riddle in request.user.completed_riddles.all %}completed{% endif %}">
             {% if riddle in request.user.completed_riddles.all %}
                 <h2 class="text-xl font-bold text-green-700">✅ Completed</h2>
             {% endif %}
@@ -33,6 +33,36 @@
         border: 2px solid green;
         background-color: #d4edda;
     }
-</style>
 
+    /* Mobile-only adjustments */
+    @media (max-width: 768px) {
+      /* Shrink the overall container padding */
+      .container.mx-auto {
+         padding: 2rem 1rem;
+      }
+      
+      /* Reduce heading size */
+      .container.mx-auto h1 {
+         font-size: 2rem !important;
+      }
+      
+      /* Make the grid container scrollable if content overflows vertically */
+      .riddles-container {
+         max-height: calc(100vh - 100px); /* Adjust as needed for header/footer */
+         overflow-y: auto;
+      }
+      
+      /* Shrink each riddle box to 80% of its original size */
+      .riddle-box {
+         transform: scale(0.8);
+         transform-origin: top center;
+         margin-bottom: 0.5rem;
+      }
+      
+      /* Scale down the text inside the boxes */
+      .riddle-box h2 {
+         font-size: 1rem !important;
+      }
+    }
+</style>
 {% endblock %}
