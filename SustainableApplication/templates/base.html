@@ -12,13 +12,19 @@
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
   <style>
-    /* Reset default margins and paddings */
-    html,
-    body {
+    /* Ensure full height for body and html, allowing content to take full available space */
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: transparent !important;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container for content that will fill available space */
+    .flex-1 {
+      flex-grow: 1; /* Allow it to take the remaining space */
+      padding-top: 5.5rem; /* Adjust to match the height of the navbar */
     }
 
     /* Navbar Styling */
@@ -100,16 +106,6 @@
       }
     }
 
-    /* Ensure main content starts immediately below navbar with no gap */
-    .flex-1 {
-      padding-top: 5.5rem;
-      min-height: calc(100vh - 5.5rem);
-      background: transparent !important;
-      margin-top: 0;
-      position: relative;
-      top: 0;
-    }
-
     /* Dropdown Styling */
     .user-dropdown {
       position: fixed;
@@ -125,6 +121,10 @@
     /* Footer Styling */
     footer {
       background-color: rgba(22, 101, 52, 0.95);
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+      margin-top: auto; /* Ensures footer stays at the bottom */
     }
 
     /* Footer Text */
@@ -142,13 +142,6 @@
 
     footer a:hover {
       text-decoration: underline;
-    }
-
-    /* Remove any potential body margin or padding */
-    body {
-      margin: 0;
-      padding: 0;
-      position: relative;
     }
   </style>
 
@@ -188,6 +181,7 @@
         <li><a href="{% url 'home' %}" class="hover:underline">Home</a></li>
         <li><a href="{% url 'get_location' task_id=5 %}" class="hover:underline">Checkin</a></li>
         <li><a href="{% url 'riddles_page' %}" class="hover:underline">Riddles</a></li>
+        <li><a href="{% url 'tasks_view' %}" class="hover:underline">Daily Tasks</a></li>
         <li><a href="{% url 'leaderboard' %}" class="hover:underline">Leaderboard</a></li>
         <li><a href="{% url 'collectable_gallery' %}" class="hover:underline">Collectables</a></li>
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
@@ -199,6 +193,7 @@
           <!-- Teleport the dropdown to the end of the body -->
           <template x-if="userMenu">
             <ul x-teleport="body" class="user-dropdown bg-green-800 text-white p-2 rounded shadow-lg space-y-2">
+              <li><a href="{% url 'view_user_data' %}" class="block hover:underline">View Data</a></li>
               <li><a href="{% url 'update_profile' %}" class="block hover:underline">Update Profile</a></li>
               <li><a href="{% url 'change_password' %}" class="block hover:underline">Change Password</a></li>
               <li><a href="{% url 'delete_account' %}" id="delete-account-link"
@@ -225,6 +220,7 @@
         <li><a href="{% url 'open_lootbox' %}" class="hover:underline">Lootbox</a></li>
 
         {% if user.is_authenticated %}
+        <li><a href="{% url 'view_user_data' %}" class="block hover:underline">View Data</a></li>
         <li><a href="{% url 'update_profile' %}" class="hover:underline">Update Profile</a></li>
         <li><a href="{% url 'change_password' %}" class="hover:underline">Change Password</a></li>
         <li><a href="{% url 'view_user_data' %}" class="hover:underline">View My Data</a></li>
@@ -242,13 +238,13 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-green-900 text-white text-center p-4 mt-auto">
+  <footer class="bg-green-900 text-white text-center p-4">
     <div class="container mx-auto">
-      <div class="flex flex-wrap justify-center space-x-4"></div>
-      <p class="mt-2 footer-text">
+      <p class="footer-text">
         Team: Colum Bailey, Daniel Cook, Matthew Dawson, Finn Gosney, Zeynep Guler, Kadeem Hanan, Jacob Nixon
-        <li><a href="{% url 'termsAndConditions' %}" class="hover:underline">Terms and Conditions</a></li>
-        <li><a href="{% url 'privacyPolicy' %}" class="hover:underline">Privacy Policy</a></li>
+        <br>
+        <a href="{% url 'termsAndConditions' %}" class="hover:underline">Terms and Conditions</a> | 
+        <a href="{% url 'privacyPolicy' %}" class="hover:underline">Privacy Policy</a>
       </p>
     </div>
   </footer>
