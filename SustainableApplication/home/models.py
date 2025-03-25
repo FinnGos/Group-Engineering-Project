@@ -24,3 +24,11 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+    
+    def clean(self):
+        if self.current_points < 0:
+            raise ValueError("Points cannot be negative.")
+
+    def save(self, *args, **kwargs):
+        self.clean()  # Call clean before saving
+        super().save(*args, **kwargs)
