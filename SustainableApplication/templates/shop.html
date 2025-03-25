@@ -2,55 +2,56 @@
 
 {% block extra_css %}
 <style>
+  /* Mobile-only adjustments */
   @media (max-width: 768px) {
-    /* Ensure the overall shop container has extra bottom padding so the footer never covers content */
-    .shop-container {
-      padding-bottom: 150px; /* adjust based on your footer height */
+    /* Shrink the header section (shop title, back button, etc.) */
+    .header-section {
+      transform: scale(0.8);
+      transform-origin: top;
+      margin-bottom: 0.5rem;
     }
 
-    /* Wrap the list in a container that is locked to the page and scrollable */
-    .items-container {
-      max-height: calc(100vh - 200px); /* reserve space for header and other elements */
+    /* The scrollable container for purchase boxes is given a fixed height.
+       It will scroll independently so that the footer (locked at the bottom)
+       is never overlapped by the boxes. Adjust the height as needed. */
+    .scrollable-purchase {
+      max-height: calc(100vh - 150px); /* leave room for header and footer */
       overflow-y: auto;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0.5rem;
+      box-sizing: border-box;
     }
 
-    /* Shrink each shop item by 40% (scale to 60% of its original size) */
-    .items-container li {
+    /* Scale down each purchase box by 40% (scale to 60% of its original size) */
+    .scrollable-purchase li {
       transform: scale(0.6);
       transform-origin: top center;
-    }
-    
-    /* Optional: Adjust spacing inside the list items if needed */
-    .items-container li > * {
-      margin: 0.25rem;
+      margin-bottom: 1rem;
     }
   }
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="shop-container text-center my-10">
-  <!-- Large Shop Title -->
-  <h2 class="text-5xl font-bold text-center mb-6">Shop</h2>
-
-  <!-- Back Button to Game Map Page -->
-  <a href="{% url 'map' %}" class="text-lg text-green-700 hover:text-green-500 mb-6 inline-block">
-    <button class="px-6 py-2 border border-green-700 rounded-md bg-white hover:bg-green-50 focus:outline-none">
-      Back to Map
-    </button>
-  </a>
-
-  <h3 class="text-2xl font-semibold mb-4">Buy Items</h3>
-
-  <!-- Scrollable container for the items list -->
-  <div class="items-container">
+<div class="shop-container text-center">
+  <!-- Header Section: Title, Back Button, and Subheading -->
+  <div class="header-section my-5">
+    <h2 class="text-5xl font-bold mb-4">Shop</h2>
+    <a href="{% url 'map' %}" class="text-lg text-green-700 hover:text-green-500 inline-block mb-4">
+      <button class="px-6 py-2 border border-green-700 rounded-md bg-white hover:bg-green-50 focus:outline-none">
+        Back to Map
+      </button>
+    </a>
+    <h3 class="text-2xl font-semibold mb-4">Buy Items</h3>
+  </div>
+  
+  <!-- Scrollable Purchase Boxes Section -->
+  <div class="scrollable-purchase">
     <ul class="space-y-4">
       {% for item in items %}
       <li class="flex justify-between items-center p-4 border rounded-md shadow-md bg-white">
-        <span class="font-medium">{{ item.name }}</span> - <span class="text-green-700">{{ item.price }} Carbo Coins</span>
-
+        <span class="font-medium">{{ item.name }}</span> 
+        <span class="text-green-700">{{ item.price }} Carbo Coins</span>
         <!-- Buy Item Button -->
         <form action="{% url 'buy_item' item.id %}" method="POST" class="buy-item-form">
           {% csrf_token %}
@@ -77,12 +78,10 @@
 <!-- JavaScript to Handle Feedback Messages -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Get the message box and text
     const messageBox = document.getElementById("message-box");
     const messageText = document.getElementById("message-text");
     const closeButton = document.getElementById("close-message");
 
-    // Check if there are any messages from Django's messages framework
     {% if messages %}
       {% for message in messages %}
         setTimeout(() => {
@@ -90,14 +89,13 @@
             messageText.textContent = "Purchase successful!";
             messageBox.classList.remove("hidden");
           } else if ("{{ message.tags }}" === "error") {
-            messageText.textContent = "{{ message|escapejs }}";  // Ensure safe JavaScript output
+            messageText.textContent = "{{ message|escapejs }}";
             messageBox.classList.remove("hidden");
           }
-        }, 100); // Slight delay to ensure elements exist
+        }, 100);
       {% endfor %}
     {% endif %}
 
-    // Close the message box when the user clicks "Close"
     closeButton.addEventListener("click", function () {
       messageBox.classList.add("hidden");
     });
