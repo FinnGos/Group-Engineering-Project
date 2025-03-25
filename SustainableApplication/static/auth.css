@@ -1,3 +1,12 @@
+/* Ensure input text color is black */
+input, select, textarea {
+  color: black !important;  /* Force text to be black */
+  background-color: white !important;  /* Ensure the background is white */
+  border: 1px solid #ccc !important; /* Make sure the input fields are styled */
+  padding: 8px;
+  font-size: 1rem;
+}
+
 /* Mobile Adjustments for Signup Page */
 @media (max-width: 768px) {
   /* Adjust form section for mobile */
@@ -24,6 +33,7 @@
     padding: 8px !important;
     font-size: 0.9rem !important;
     color: black !important; /* Ensure text is black */
+    background-color: white !important; /* Ensure background is white */
   }
 
   /* Reduce padding and font-size for buttons */
@@ -71,6 +81,7 @@
 /* General Styles */
 input, select, textarea {
   color: black !important;  /* Force text to be black */
+  background-color: white !important;  /* Ensure background is white */
 }
 
 /* Override navbar styles on this page */
@@ -152,4 +163,3 @@ input, select, textarea {
     padding: 15px;
   }
 }
-
