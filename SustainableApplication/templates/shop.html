@@ -2,61 +2,36 @@
 
 {% block extra_css %}
 <style>
-/* Mobile Adjustments for the Shop Page */
-@media (max-width: 768px) {
-  /* Scale down large headings */
-  h2.text-5xl {
-    font-size: 2rem !important; /* smaller than 5xl */
+  @media (max-width: 768px) {
+    /* Ensure the overall shop container has extra bottom padding so the footer never covers content */
+    .shop-container {
+      padding-bottom: 150px; /* adjust based on your footer height */
+    }
+
+    /* Wrap the list in a container that is locked to the page and scrollable */
+    .items-container {
+      max-height: calc(100vh - 200px); /* reserve space for header and other elements */
+      overflow-y: auto;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Shrink each shop item by 40% (scale to 60% of its original size) */
+    .items-container li {
+      transform: scale(0.6);
+      transform-origin: top center;
+    }
+    
+    /* Optional: Adjust spacing inside the list items if needed */
+    .items-container li > * {
+      margin: 0.25rem;
+    }
   }
-  
-  h3.text-2xl {
-    font-size: 1.5rem !important; /* smaller than 2xl */
-  }
-  
-  /* Reduce font size on links and paragraphs */
-  .text-lg {
-    font-size: 1rem !important;
-  }
-  
-  /* Shrink the Back to Map button */
-  a.text-lg button {
-    padding: 0.5rem 1rem !important;
-    font-size: 0.875rem !important;
-  }
-  
-  /* For the list items (each product row) */
-  ul li {
-    padding: 0.5rem !important;
-    flex-direction: column !important; /* Stack elements vertically */
-    gap: 0.5rem;
-  }
-  
-  /* Adjust the Buy button inside the form */
-  .buy-item-form button {
-    padding: 0.5rem 1rem !important;
-    font-size: 0.875rem !important;
-  }
-  
-  /* Adjust the Message Box for feedback */
-  #message-box {
-    padding: 0.75rem !important;
-    width: 90% !important;
-  }
-  
-  #message-text {
-    font-size: 1rem !important;
-  }
-  
-  /* Reduce overall margins on the container */
-  .text-center.my-10 {
-    margin: 2rem auto !important;
-  }
-}
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="text-center my-10">
+<div class="shop-container text-center my-10">
   <!-- Large Shop Title -->
   <h2 class="text-5xl font-bold text-center mb-6">Shop</h2>
 
@@ -69,23 +44,26 @@
 
   <h3 class="text-2xl font-semibold mb-4">Buy Items</h3>
 
-  <ul class="space-y-4">
-    {% for item in items %}
-    <li class="flex justify-between items-center p-4 border rounded-md shadow-md bg-white">
-      <span class="font-medium">{{ item.name }}</span> - <span class="text-green-700">{{ item.price }} Carbo Coins</span>
+  <!-- Scrollable container for the items list -->
+  <div class="items-container">
+    <ul class="space-y-4">
+      {% for item in items %}
+      <li class="flex justify-between items-center p-4 border rounded-md shadow-md bg-white">
+        <span class="font-medium">{{ item.name }}</span> - <span class="text-green-700">{{ item.price }} Carbo Coins</span>
 
-      <!-- Buy Item Button -->
-      <form action="{% url 'buy_item' item.id %}" method="POST" class="buy-item-form">
-        {% csrf_token %}
-        <button type="submit" class="px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-600 focus:outline-none">
-          Buy
-        </button>
-      </form>
-    </li>
-    {% empty %}
-    <li class="text-gray-500">No items available.</li>
-    {% endfor %}
-  </ul>
+        <!-- Buy Item Button -->
+        <form action="{% url 'buy_item' item.id %}" method="POST" class="buy-item-form">
+          {% csrf_token %}
+          <button type="submit" class="px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-600 focus:outline-none">
+            Buy
+          </button>
+        </form>
+      </li>
+      {% empty %}
+      <li class="text-gray-500">No items available.</li>
+      {% endfor %}
+    </ul>
+  </div>
 
   <!-- Message Box for Feedback -->
   <div id="message-box" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-6 rounded-md shadow-md bg-white hidden">
@@ -94,7 +72,6 @@
       Close
     </button>
   </div>
-
 </div>
 
 <!-- JavaScript to Handle Feedback Messages -->
