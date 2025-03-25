@@ -1,21 +1,12 @@
-#loot-result {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  width: 100%;
-  position: relative;
-}
-
+/* Remove extra whitespace behind the card by adjusting the lootbox-result styles */
 .lootbox-result {
   width: 100%;
   max-width: 500px;
-  padding: 20px;
-  background-color: white;
+  margin: 0;       /* Remove margins */
+  padding: 10px;   /* Reduce padding */
+  background-color: transparent; /* No white background */
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: auto;
+  box-shadow: none; /* Remove any shadow if not desired */
 }
 
 .lootbox-result img {
@@ -24,7 +15,23 @@
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
-/* Confetti styles */
+/* Modal styles for the loot card popup */
+#lootcardModal {
+  /* The modal is hidden by default via the "hidden" class */
+}
+
+#lootcardModal:not(.hidden) {
+  display: flex !important;
+}
+
+/* (Optional) Style the close button inside the modal */
+#closeLootcardModal {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Confetti styles (if used) */
 .confetti {
   position: absolute;
   top: 0;
@@ -44,3 +51,4 @@
     transform: translateY(100vh);
   }
 }
+

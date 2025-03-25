@@ -1,14 +1,13 @@
-{% extends "base.html" %} {% load static %} {% block title %}Lootbox{%endblock%}
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Lootbox{% endblock %}
 {% block content %}
 <!-- Link to open_lootbox.css -->
 <link rel="stylesheet" href="{% static 'open_lootbox.css' %}" />
 
 <!-- Image Section -->
 <div class="top-section relative" id="box">
-  <div
-    class="image-container bg-green-700 overflow-hidden"
-    style="height: 1000px"
-  >
+  <div class="image-container bg-green-700 overflow-hidden" style="height: 1000px">
     <img
       src="{% static 'images/lootboxes_v4.jpg' %}"
       alt="Image"
@@ -18,9 +17,7 @@
   </div>
 
   <!-- Lootbox Section -->
-  <div
-    class="mt-8 absolute inset-0 flex flex-col justify-top items-center text-white"
-  >
+  <div class="mt-8 absolute inset-0 flex flex-col justify-top items-center text-white">
     <div class="font-bold outlined-text text-white text-center p-6 mb-6">
       <h1 class="text-6xl mb-1">Lootboxes</h1>
       <p class="text-3xl" id="user-points">
@@ -28,7 +25,7 @@
       </p>
     </div>
 
-    <!-- Lootbox Popup Section -->
+    <!-- Lootbox Popup Section (for instructions) -->
     <div x-data="{ openLootbox: false }" class="mb-6">
       <!-- Lootbox Image (Triggers Popup) -->
       <img
@@ -38,7 +35,7 @@
         class="w-48 h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
       />
 
-      <!-- Popup Modal -->
+      <!-- Instruction Popup Modal -->
       <div
         x-show="openLootbox"
         class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
@@ -47,8 +44,7 @@
           <h2 class="text-gray-700 text-2xl font-bold mb-4">Mystery Lootbox</h2>
           <p class="text-gray-700 p-2">Points earned can be spent here.</p>
           <p class="text-gray-700">
-            Opening lootboxes gives you a chance to earn CarboCards for your
-            collection.
+            Opening lootboxes gives you a chance to earn CarboCards for your collection.
           </p>
           <p class="text-gray-700">Duplicates will return back points.</p>
           <p class="text-gray-700 p-4">
@@ -76,95 +72,80 @@
       </button>
     </form>
 
-    <!-- Display Lootbox Result -->
-    <div id="loot-result"></div>
-
     <p
       class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-110"
     >
       <a href="{% url 'home' %}" class="text-white">Back to Home</a>
     </p>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#lootboxForm").submit(function (event) {
-          event.preventDefault(); // Stop normal form submission
-
-          let button = $("#openLootboxButton");
-
-          $.ajax({
-            url: $("#lootboxForm").attr("action"),
-            type: "POST",
-            data: $("#lootboxForm").serialize(),
-            dataType: "json",
-            success: function (response) {
-              const lootResult = $("#loot-result");
-
-              if (response.success) {
-                $("#user-points").text(
-                  `Current Points: ${response.new_points}`
-                );
-
-                if (response.loot_item) {
-                  let duplicateMessage = response.is_duplicate
-                    ? "<p style='color: white;'>(You already own this item, so points were refunded!)</p>"
-                    : "";
-
-                  lootResult.html(`
-                    <div class="lootbox-result" style="text-align: center; position: relative;">
-                      <h3>Congratulations!</h3>
-                      <p>You received: <strong>${response.loot_item.name}</strong></p>
-                      <div class="image-container p-10 border-12 overflow-hidden"
-                           style="height: 300px; display: flex; justify-content: center; align-items: center;">
-                        <img id="lootCard" src="${response.loot_item.image}"
-                             alt="${response.loot_item.name}" width="200"
-                             class="animated-card"
-                             style="border-radius: 10px;"/>
-                      </div>
-                      <p>Fun Fact: ${response.loot_item.fact}</p>
-                      ${duplicateMessage}
-                    </div>
-                `);
-
-                  setTimeout(function () {
-                    let lootResult = $("#loot-result");
-
-                    // Animate loot-result div to fade in and slide down
-                    lootResult
-                      .css({ opacity: 0, top: "-50px" }) // Start hidden and slightly above
-                      .animate({ opacity: 1, top: "0px" }, 800, "swing"); // Animate to visible state
-
-                    // Confetti trigger
-                    confetti({
-                      spread: 360,
-                      particles: 100,
-                      origin: { y: 0.6 },
-                    });
-                  }, 100);
-                } else {
-                  lootResult.html(
-                    "<p style='color: white;'>You got nothing this time.</p>"
-                  );
-                }
-              } else {
-                lootResult.html(
-                  `<p style="color:red;">${
-                    response.error || "Something went wrong!"
-                  }</p>`
-                );
-              }
-            },
-            error: function (xhr) {
-              const errorMessage =
-                xhr.responseJSON?.error || "Error: Unable to open lootbox.";
-              alert(errorMessage);
-            },
-          });
-        });
-      });
-    </script>
   </div>
-  {% endblock %}
 </div>
+
+<!-- New Modal for Loot Card Popup -->
+<div id="lootcardModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+  <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full text-center relative">
+    <button id="closeLootcardModal" class="absolute top-2 right-2 text-red-600 text-xl">&times;</button>
+    <h2 class="text-gray-700 text-2xl font-bold mb-4">You got a card!</h2>
+    <div id="lootcardContent">
+      <!-- Loot card content (card name, image, fun fact) will be injected here -->
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#lootboxForm").submit(function (event) {
+      event.preventDefault(); // Prevent normal form submission
+      $.ajax({
+        url: $("#lootboxForm").attr("action"),
+        type: "POST",
+        data: $("#lootboxForm").serialize(),
+        dataType: "json",
+        success: function (response) {
+          if (response.success) {
+            $("#user-points").text(`Current Points: ${response.new_points}`);
+            if (response.loot_item) {
+              let duplicateMessage = response.is_duplicate
+                ? "<p style='color: #333;'>(You already own this item, so points were refunded!)</p>"
+                : "";
+              $("#lootcardContent").html(`
+                <div class="lootbox-result" style="margin: 0; padding: 0;">
+                  <p>You received: <strong>${response.loot_item.name}</strong></p>
+                  <div class="image-container" style="display: flex; justify-content: center; align-items: center;">
+                    <img id="lootCard" src="${response.loot_item.image}" alt="${response.loot_item.name}" width="200" style="border-radius: 10px;"/>
+                  </div>
+                  <p>Fun Fact: ${response.loot_item.fact}</p>
+                  ${duplicateMessage}
+                </div>
+              `);
+              // Show the loot card modal
+              $("#lootcardModal").removeClass("hidden");
+              // Trigger confetti effect
+              confetti({
+                spread: 360,
+                particles: 100,
+                origin: { y: 0.6 },
+              });
+            } else {
+              alert("You got nothing this time.");
+            }
+          } else {
+            alert(response.error || "Something went wrong!");
+          }
+        },
+        error: function (xhr) {
+          const errorMessage = xhr.responseJSON?.error || "Error: Unable to open lootbox.";
+          alert(errorMessage);
+        },
+      });
+    });
+    
+    // Close modal when clicking the close button
+    $("#closeLootcardModal").click(function(){
+      $("#lootcardModal").addClass("hidden");
+    });
+  });
+</script>
+{% endblock %}
+
