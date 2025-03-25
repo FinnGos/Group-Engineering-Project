@@ -46,15 +46,16 @@
          font-size: 2rem !important;
       }
       
-      /* Make the grid container scrollable if content overflows vertically */
+      /* Make the grid container scrollable without overlapping the footer */
       .riddles-container {
-         max-height: calc(100vh - 100px); /* Adjust as needed for header/footer */
+         max-height: calc(100vh - 150px); /* Leaves room for header/footer */
          overflow-y: auto;
+         margin-bottom: 60px; /* Extra space so it doesn't clash with the footer */
       }
       
-      /* Shrink each riddle box to 80% of its original size */
+      /* Shrink each riddle box to 75% of its original size */
       .riddle-box {
-         transform: scale(0.8);
+         transform: scale(0.75);
          transform-origin: top center;
          margin-bottom: 0.5rem;
       }
