@@ -15,12 +15,40 @@ TEST_LOG_FILE = os.path.join(tempfile.gettempdir(), "django_test_logs.log")
 class CustomUserModelTest(TestCase):
     """Test case for the CustomUser model."""
 
+    def setUp(self):
+        self.client = Client()
+        self.user = CustomUser.objects.create_user(username="testuser", password="testpass")
+
     def test_create_user(self):
         """Test that a CustomUser object can be created successfully."""
-        user = CustomUser.objects.create_user(username="testuser", password="testpass")
-        self.assertEqual(str(user), "testuser")
-        self.assertEqual(user.current_points, 300)
-        self.assertEqual(user.all_time_points, 300)
+        self.assertEqual(str(self.user), "testuser")
+        self.assertEqual(self.user.current_points, 300)
+        self.assertEqual(self.user.all_time_points, 300)
+
+    def test_user_can_gain_points(self):
+        """Test that a CustomUser object can gain points successfully."""
+        self.user.current_points += 50
+        self.user.save()
+
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.current_points, 350)
+
+    def test_user_can_lose_points(self):
+        """Test that a CustomUser object can lose points successfully."""
+        self.user.current_points -= 50
+        self.user.save()
+
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.current_points, 250)
+
+    def test_user_cannot_have_negative_points(self):
+        """Test that a CustomUser object cannot have negative points."""
+        self.user.current_points = -50
+        with self.assertRaises(ValueError):
+            self.user.save()
+
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.current_points, 300)
 
 
 class LoginRequiredTests(TestCase):
@@ -302,7 +330,6 @@ def create_test_log_file():
 
     with open(TEST_LOG_FILE, "w", encoding="utf-8") as file:
         file.writelines([old_log_entry, recent_log_entry])
-
 
 
 class AccountTests(TestCase):

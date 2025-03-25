@@ -62,9 +62,46 @@
         </button>
         <!-- Modal Popup -->
         <div x-show="open" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full max-h-[80vh] overflow-y-auto">
                 <h2 class="text-2xl font-bold mb-4">How to Play</h2>
-                <p class="text-gray-700">Follow treasure hunts, complete quests, and collect sustainability rewards!</p>
+                <p class="text-gray-700 mb-4">Can you become an ultimate CarboCollector?</p>
+                <p class="text-gray-700 mb-4">Welcome to CarboCollect, the fun and engaging game that promotes sustainability on campus! Complete tasks, solve riddles, and build your very own University of Exeter campus while competing with friends to create the most sustainable environment.</p>
+                <p class="text-gray-700 mb-4"><strong>Ready to get started? Here’s your detailed guide on how to play!</strong></p>
+                
+                <h3 class="text-xl font-semibold mb-2">1. Earning Carbocoins</h3>
+                <p class="text-gray-700 mb-4">Your journey begins by collecting Carbocoins, the in-game currency used to build and upgrade your campus. Here’s how you can earn them:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Daily Sustainability Tasks:</strong> Check the app every day for new sustainability challenges (e.g., recycling, using reusable cups…). Complete the task and submit proof (either by checking in at a location or uploading a photo). Once verified, you’ll receive Carbopoints as a reward!</li>
+                    <li><strong>Solve Riddles for Hidden Rewards:</strong> Daily sustainability riddles will guide you to hidden eco-friendly spots on campus. Decode the riddle, visit the location, and check in to earn bonus Carbopoints and learn about Exeter’s sustainability efforts!</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2">2. Building Your Campus</h3>
+                <p class="text-gray-700 mb-4">Now that you’ve earned Carbopoints, it’s time to construct your dream campus!</p>
+                <p class="text-gray-700 mb-4"><strong>Buying Campus Buildings (Lootbox System):</strong> Spend 100 Carbopoints to open a lootbox. Each lootbox gives you a random Collectable (University of Exeter buildings e.g., Forum, Reed Hall, Peter Chalk Centre). But be careful!!! You might get a duplicate building or nothing at all—it’s all part of the fun!</p>
+                <p class="text-gray-700 mb-4">Every unique building you collect adds to your CampusCreds (your sustainability score!). You’ll be able to see your collectables in a card format in the collectable page, with a sustainable fact on it!</p>
+
+                <h3 class="text-xl font-semibold mb-2">3. Competing on the Leaderboard</h3>
+                <p class="text-gray-700 mb-4">The ultimate goal? Climb to the top of the leaderboard by having the highest CampusCreds!</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Unique buildings collected</li>
+                    <li>Sustainable upgrades installed</li>
+                    <li>Campus cleanliness (no rubbish!)</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2">4. Tips & Tricks for Success</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Complete daily tasks and riddles – Consistency is key to earning Carbocoins!</li>
+                    <li>Balance your spending – Invest in both buildings and eco-upgrades for maximum CampusCreds.</li>
+                    <li>Clean regularly – Don’t let rubbish pile up!</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2">5. Most Importantly… Have Fun!</h3>
+                <p class="text-gray-700 mb-4">CarboCollect is all about learning, competing, and making a real-world impact on sustainability. Challenge your friends, explore campus, and build the greenest Exeter possible!</p>
+                <p class="text-gray-700 mb-4">Ready to start? Begin your sustainability adventure! 🌱🏫</p>
+
+                <h3 class="text-xl font-semibold mb-2">Got Questions?</h3>
+                <p class="text-gray-700 mb-4">Reach out to our Game Master, Colum: <a href="maii:cb1265@exeter.ac.uk" class="text-blue-500">cb1265@exeter.ac.uk</a></p>
+                
                 <button @click="open = false" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg">Close</button>
             </div>
         </div>
