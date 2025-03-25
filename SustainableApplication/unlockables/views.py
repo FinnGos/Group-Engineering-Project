@@ -8,35 +8,39 @@ from django.utils.timezone import now
 
 @login_required
 def buy_item(request, item_id):
-    """Fuction that will be called when user clicks button to purchase an item
-    will allow them to purchase and place on map or reject
+    """Function that allows the user to purchase an item and place it on the map."""
+    
+    # Attempt to retrieve the item
+    try:
+        item = Item.objects.get(id=item_id)
+    except Item.DoesNotExist:
+        messages.error(request, "Item not found!")
+        return redirect("shop")
 
-    Args:
-        request: Request made to shop HTML
-        item_id: id of item to be purchased
-
-    Returns:
-        Redirect to the shop HTML
-    """
-    item = get_object_or_404(Item, id=item_id)
+    # Get the currently logged-in user
     current_user = request.user
 
+    # Get the maximum quantity allowed for this item
     max_quantity = item.max_quantity
+
+    # Count how many of this item the user already owns
     user_item_count = UserItem.objects.filter(useritem=current_user, item=item).count()
 
-
+    # Check if the user has reached the maximum allowed quantity
     if user_item_count >= max_quantity:
         messages.error(
             request, f"You can't own more than {max_quantity} of {item.name}!"
         )
         return redirect("shop")
 
+    # Check if the user has enough Carbo Coins to buy the item
     if current_user.current_points >= item.price:
         current_user.current_points -= item.price
-        current_user.all_time_points += item.sustainability_score  # Update sustainability score
+        current_user.all_time_points += item.sustainability_score
         current_user.save()
 
-        place_item(current_user, item)
+        # Add the item to the user's inventory
+        UserItem.objects.create(useritem=current_user, item=item, size=1)  # Default size = 1
 
         messages.success(request, f"You bought {item.name} and placed it on the map!")
     else:
@@ -115,6 +119,7 @@ def game_map(request):
         for building in buildings
     }
 
+    # Get all items the user owns
     user_items = UserItem.objects.filter(useritem=current_user)
 
     return render(
@@ -126,7 +131,7 @@ def game_map(request):
             "user_items": user_items,
             "rubbish": rubbish,
             "current_points": current_user.current_points,
-            "all_time_points": current_user.all_time_points,  # Pass all-time sustainability score
+            "all_time_points": current_user.all_time_points,
         },
     )
 
@@ -180,7 +185,7 @@ def place_item(Current_user, item):
 
 
 
-@login_required
+
 def clean_rubbish(request, rubbish_id):
     """Function that is called when user clicks on button to clean up rubbish
 
@@ -209,7 +214,7 @@ def clean_rubbish(request, rubbish_id):
         user_rubbish.save()
 
         # Add sustainability score
-        request.user.all_time_points += rubbish_object.sustainability_score  
+        request.user.all_time_points -= rubbish_object.sustainability_score  
         request.user.save()
 
         messages.success(request, f"You cleaned up Rubbish for {user_rubbish.clean_cost} Carbo Coins!")
@@ -217,3 +222,4 @@ def clean_rubbish(request, rubbish_id):
         messages.error(request, f"Not enough Carbo Coins to clean Rubbish! You need {user_rubbish.clean_cost} Carbo Coins.")
 
     return redirect("map")
+
