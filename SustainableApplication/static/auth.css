@@ -23,6 +23,7 @@
   input, select, textarea {
     padding: 8px !important;
     font-size: 0.9rem !important;
+    color: black !important; /* Ensure text is black */
   }
 
   /* Reduce padding and font-size for buttons */
@@ -64,6 +65,91 @@
   /* Reduce padding for mobile sign-in button */
   .sign-in-link a {
     padding: 8px 18px;
+  }
+}
+
+/* General Styles */
+input, select, textarea {
+  color: black !important;  /* Force text to be black */
+}
+
+/* Override navbar styles on this page */
+nav a {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+footer a {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+/* Style for displaying messages */
+.messages {
+  margin-bottom: 20px;
+}
+
+.message {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Background Section */
+.background-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url("{% static 'images/signin.jpg' %}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sign Up Form Styling */
+.form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Ensure input text color is black */
+input, select, textarea {
+  color: black !important; /* Force text to be black */
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    padding: 15px;
+  }
+}
+
+/* Sign In Form Styling */
+.form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    padding: 15px;
   }
 }
 
