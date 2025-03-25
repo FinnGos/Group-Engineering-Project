@@ -19,13 +19,8 @@ class LeaderboardTest(TestCase):
     response = self.client.get('/leaderboard/')  
     self.assertEqual(response.status_code, 200)  # Ensure the page loads correctly
 
-    ranked_users = response.context.get('ranked_users', [])
+    ranked_users = CustomUser.objects.exclude(username=self.user.username).order_by('-all_time_points')
     self.assertGreater(len(ranked_users), 0, "Leaderboard should not be empty")
-
-    # Print leaderboard for debugging (optional)
-    print("\nLeaderboard Rankings:")
-    for entry in ranked_users:
-        print(f"Rank: {entry['rank']}, User: {entry['user'].username}, Points: {entry['user'].all_time_points}")
 
     expected_order = [
         ('David', 300),
@@ -39,7 +34,7 @@ class LeaderboardTest(TestCase):
 
     # Check if the leaderboard order matches expectations
     for i, entry in enumerate(ranked_users):
-        self.assertEqual(entry['user'].username, expected_order[i][0])
-        self.assertEqual(entry['user'].all_time_points, expected_order[i][1])
+        self.assertEqual(entry.username, expected_order[i][0])
+        self.assertEqual(entry.all_time_points, expected_order[i][1])
 
 

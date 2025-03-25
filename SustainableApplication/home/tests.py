@@ -20,8 +20,8 @@ class CustomUserModelTest(TestCase):
         """Test that a CustomUser object can be created successfully."""
         user = CustomUser.objects.create_user(username="testuser", password="testpass")
         self.assertEqual(str(user), "testuser")
-        self.assertEqual(user.current_points, 0)
-        self.assertEqual(user.all_time_points, 0)
+        self.assertEqual(user.current_points, 300)
+        self.assertEqual(user.all_time_points, 300)
 
 
 class LoginRequiredTests(TestCase):
@@ -381,12 +381,7 @@ class ViewUserDataTests(TestCase):
 
     def test_user_sees_correct_log_entry(self):
         """Test that the correct log entry appears on the page."""
-        response = self.client.get(reverse("view_user_data"))
-        self.assertContains(response, self.log_entry.strip())
-
-    def test_user_does_not_see_other_user_logs(self):
-        """Ensure the user does not see logs from another user."""
-        other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt44\n"
+        other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt4\n"
 
         # Properly write and close the log file
         with open(TEST_LOG_FILE, "a", encoding="utf-8") as file:
@@ -394,5 +389,19 @@ class ViewUserDataTests(TestCase):
 
         response = self.client.get(reverse("view_user_data"))
 
-        self.assertContains(response, self.log_entry.strip())
-        self.assertNotContains(response, "matt44")
+        self.assertContains(response, "User asked for personal data stored: matt4")
+
+    def test_user_does_not_see_other_user_logs(self):
+        """Ensure the user does not see logs from another user."""
+        other_log = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: matt4\n"
+        other_log2 = "django INFO 2025-02-24 14:00:00,000 views 1234 56789 User asked for personal data stored: john4\n"
+
+        # Properly write and close the log file
+        with open(TEST_LOG_FILE, "a", encoding="utf-8") as file:
+            file.write(other_log)
+            file.write(other_log2)
+
+        response = self.client.get(reverse("view_user_data"))
+
+        self.assertContains(response, "User asked for personal data stored: matt4")
+        self.assertNotContains(response, "john4")

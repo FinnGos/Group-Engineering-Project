@@ -1,63 +1,34 @@
-/* Top Section */
-.top-section, .bottom-section {
-    position: relative;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: transparent !important;
 }
 
-.top-text, .bottom-text {
-    position: absolute;
+nav {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; 
-    text-align: center;
-    z-index: 1; /* Ensures the text stays above the images */
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(23, 114, 49, 0.95);
+    padding: 1rem;
 }
 
-.top-section img, .bottom-section img {
-    width: 100%; 
-    height: auto; /* Maintain aspect ratio */
+.flex-1 {
+    padding-top: 4.5rem; /* Slightly more than navbar height */
+    min-height: calc(100vh - 4.5rem);
+    background: transparent !important;
+    margin-top: -1px; /* Negative margin to remove potential white line */
 }
 
-.bottom-section {
-    min-height: 300px; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/*We can change text style here if we want*/
-.top-text h1, .bottom-text h1 {
-    font-size: 3rem; 
-    margin: 10px 0;
-}
-
-.top-text p, .bottom-text ul {
-    font-size: 1.5rem; 
-}
-
-/* Sidebar Navigation styles */
-.sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    margin-bottom: 10px;
-}
-
-.sidebar-nav a {
-    text-decoration: none;
-    color: #008000; 
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.sidebar-nav a:hover {
-    color: #004d00; 
+.user-dropdown {
+    position: fixed;
+    top: 4.5rem; /* Align exactly with navbar bottom */
+    right: 10px;
+    z-index: 10000;
+    min-width: 200px;
+    background-color: rgba(22, 101, 52, 0.95);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -1,108 +1,165 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
+/* Ensure input text color is black */
+input, select, textarea {
+  color: black !important;  /* Force text to be black */
+  background-color: white !important;  /* Ensure the background is white */
+  border: 1px solid #ccc !important; /* Make sure the input fields are styled */
+  padding: 8px;
+  font-size: 1rem;
 }
 
-.background-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
+/* Mobile Adjustments for Signup Page */
+@media (max-width: 768px) {
+  /* Adjust form section for mobile */
+  .form-section {
+    padding: 10px;
+    max-width: 319px; /* Make form 15% smaller than 375px */
+  }
 
-.background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  /* Adjust heading and text sizes */
+  .text-4xl {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
 
-.form-section {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    z-index: 1;
-}
+  .text-xl {
+    font-size: 1rem; /* Reduce paragraph text size */
+  }
 
-/* Use this class for outlined text */
-.outlined-text {
-    text-shadow:
-        -2px -2px 0 #000,
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-}
+  .block.text-lg {
+    font-size: 0.9rem; /* Reduce label size */
+  }
 
-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
+  /* Adjust input field size */
+  input, select, textarea {
+    padding: 8px !important;
+    font-size: 0.9rem !important;
+    color: black !important; /* Ensure text is black */
+    background-color: white !important; /* Ensure background is white */
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  /* Reduce padding and font-size for buttons */
+  .w-full.bg-green-700,
+  .w-full.bg-blue-500 {
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+
+  .text-sm {
+    font-size: 0.75rem;
+  }
+
+  /* Adjust message section */
+  .messages {
+    margin-bottom: 10px; /* Reduce space between messages */
+  }
+
+  /* Reduce font size and spacing for error messages */
+  .message {
+    color: red;
     font-size: 1rem;
-    color: #000;
-    background-color: #fff;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  /* Position "Already have an account?" inside the form */
+  .sign-in-link {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #007bff;
+  }
+
+  /* Adjust the form button */
+  button {
+    padding: 12px;
+  }
+
+  /* Reduce padding for mobile sign-in button */
+  .sign-in-link a {
+    padding: 8px 18px;
+  }
 }
 
-::placeholder {
-    color: #666;
-    opacity: 1;
+/* General Styles */
+input, select, textarea {
+  color: black !important;  /* Force text to be black */
+  background-color: white !important;  /* Ensure background is white */
 }
 
-input:focus {
-    color: #000;
-    border: 2px solid #4caf50;
-    outline: none;
+/* Override navbar styles on this page */
+nav a {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: white !important;
 }
 
-button {
-    width: 100%;
+footer a {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+/* Style for displaying messages */
+.messages {
+  margin-bottom: 20px;
+}
+
+.message {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Background Section */
+.background-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url("{% static 'images/signin.jpg' %}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sign Up Form Styling */
+.form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Ensure input text color is black */
+input, select, textarea {
+  color: black !important; /* Force text to be black */
+}
+
+@media (max-width: 768px) {
+  .form-section {
     padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  }
 }
 
-button:hover {
-    background-color: #45a049;
+/* Sign In Form Styling */
+.form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
 }
 
-a {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007bff;
-    border-radius: 5px;
-}
-
-a:hover {
-    background-color: #0056b3;
+@media (max-width: 768px) {
+  .form-section {
+    padding: 15px;
+  }
 }

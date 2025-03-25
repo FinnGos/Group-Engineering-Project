@@ -86,6 +86,16 @@
       .text-sm {
         font-size: 0.75rem; /* Reduce sign-in text size */
       }
+
+      /* Adjust the "Already have an account?" link and the Sign Up button inside the form */
+      .sign-in-link {
+        margin-top: 12px;
+        font-size: 0.85rem;
+      }
+
+      .sign-in-link a {
+        padding: 6px 18px;
+      }
     }
   </style>
 {% endblock %}
@@ -162,15 +172,16 @@
       <button type="submit" class="w-full bg-green-700 text-white px-6 py-0 rounded-lg hover:bg-green-800">
         Sign Up
       </button>
+
+      <!-- Sign In Button (Inside the Form for Mobile Version) -->
+     <div class="sign-in-link text-lg text-center mt-4">
+  <p class="text-sm text-black mb-3">Already have an account?</p>
+  <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
+    Sign In
+  </a>
+      </div>
     </form>
 
-    <!-- Sign In Button -->
-    <div class="mt-4 text-lg text-center">
-      <p class="text-sm text-white mb-3">Already have an account?</p>
-      <a href="{% url 'login' %}" class="inline-block bg-blue-500 text-white px-6 py-0 rounded-lg hover:bg-blue-600">
-        Sign In
-      </a>
-    </div>
   </div>
 </div>
 {% endblock %}

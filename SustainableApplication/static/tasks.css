@@ -1,60 +1,98 @@
-/* Ensure the image container covers the entire area */
+/* Updated CSS to make the page more mobile-friendly */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+.main-container {
+  padding-top: 0 !important; /* Remove top padding */
+  padding-bottom: 0 !important; /* Remove bottom padding */
+}
+
+.top-section {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .image-container {
   position: absolute;
-  inset: 0;
-  overflow: hidden;
-  background-color: #1f7a1f; /* fallback color */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-/* Enlarge the background image by 100px (50px extra on each side) */
 .image-container img {
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
+}
+
+.tasks-section {
   position: absolute;
-  top: -50px;
-  left: -50px;
-}
-
-/* Task grid styles */
-.task-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1000px;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-bottom: 2rem; /* Avoid content getting cut off */
 }
 
-/* Styles for task cards */
-.task-item {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+/* Shrink the title text for smaller screens */
+@media screen and (max-width: 768px) {
+  .top-section .text-4xl {
+    font-size: 3.2rem; /* 20% smaller */
+  }
 
-/* Progress bar styles */
-.progress-container {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  overflow: hidden;
-}
+  .top-section .text-5xl {
+    font-size: 4rem; /* 20% smaller */
+  }
 
-.progress-bar {
-  height: 20px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: bold;
-}
+  .top-section .text-6xl {
+    font-size: 4.8rem; /* 20% smaller */
+  }
 
-/* Button hover effects */
-.btn {
-  transition: all 0.3s ease-in-out;
-}
+  .top-section .text-xl {
+    font-size: 0.9rem; /* 20% smaller */
+  }
 
-.btn:hover {
-  transform: scale(1.05);
+  .top-section .text-2xl {
+    font-size: 1.6rem; /* 20% smaller */
+  }
+
+  .top-section .text-3xl {
+    font-size: 2.4rem; /* 20% smaller */
+  }
+
+  /* Task grid layout for mobile screens */
+  .task-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack tasks in a single column */
+    gap: 1rem;
+  }
+
+  .image-container {
+    height: 60vh; /* Adjust height for smaller screens */
+  }
+
+  .task-item {
+    padding: 1rem;
+    transform: scale(1); /* Reset scale for better visibility on mobile */
+  }
+
+  .task-actions button {
+    padding: 0.5rem;
+    font-size: 0.875rem; /* Smaller buttons on mobile */
+  }
 }

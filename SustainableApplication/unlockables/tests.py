@@ -207,7 +207,7 @@ class ShopTests(TestCase):
         response = self.client.post(reverse("buy_item", args=[self.item1.id]))
 
         self.user.refresh_from_db()
-
+        
         # Sets carbo coins to 100
         self.assertEqual(self.user.current_points, 100)
         self.assertTrue(
