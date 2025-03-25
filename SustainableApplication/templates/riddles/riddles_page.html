@@ -4,10 +4,10 @@
 {% block title %}Riddles - Week {{ current_week }}{% endblock %}
 
 {% block content %}
-<div class="container mx-auto p-6">
+<div class="container mx-auto p-6 flex flex-col min-h-screen">
     <h1 class="text-4xl font-bold text-center mb-6">Riddle Challenge - Week {{ current_week }}</h1>
 
-    <div class="riddles-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div class="riddles-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 flex-1">
         {% for riddle in riddles %}
         <div class="riddle-box bg-gray-200 p-4 rounded-lg shadow-md text-center {% if riddle in request.user.completed_riddles.all %}completed{% endif %}">
             {% if riddle in request.user.completed_riddles.all %}
@@ -34,33 +34,29 @@
         background-color: #d4edda;
     }
 
-    /* Mobile-only adjustments */
+    /* Mobile adjustments */
     @media (max-width: 768px) {
-      /* Shrink the overall container padding */
-      .container.mx-auto {
+      .container {
          padding: 2rem 1rem;
       }
       
-      /* Reduce heading size */
-      .container.mx-auto h1 {
+      .container h1 {
          font-size: 2rem !important;
       }
-      
-      /* Ensure riddles scroll under the footer instead of overlapping it */
+
+      /* Allow riddles to extend past the footer naturally */
       .riddles-container {
-         display: flex;
-         flex-direction: column;
-         gap: 10px;
+         flex-grow: 1; /* Allows natural expansion */
       }
-      
-      /* Shrink each riddle box slightly */
+
+      /* Reduce riddle size on mobile */
       .riddle-box {
-         transform: scale(0.85);
+         transform: scale(0.9);
          transform-origin: top center;
          margin-bottom: 0.5rem;
       }
-      
-      /* Scale down the text inside the boxes */
+
+      /* Adjust text size */
       .riddle-box h2 {
          font-size: 1rem !important;
       }
