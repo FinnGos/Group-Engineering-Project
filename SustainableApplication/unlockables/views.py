@@ -189,27 +189,31 @@ def clean_rubbish(request, rubbish_id):
         rubbish_id: The id of the rubbish pile to be cleaned
 
     Returns:
-        _type_: _description_
+        Redirects back to the map page
     """
-    rubbish = get_object_or_404(UserRubbish, id=rubbish_id)
+    # Get the Rubbish object (the generic type of rubbish)
     rubbish_object = get_object_or_404(Rubbish, id=rubbish_id)
 
-    if request.user.current_points >= rubbish.clean_cost:  # Require 5 Carbo Coins to clean
-        request.user.current_points -= rubbish.clean_cost
+    # Find the specific UserRubbish instance linked to this user and the rubbish type
+    user_rubbish = get_object_or_404(UserRubbish, useritem=request.user, item=rubbish_object)
+
+    # Check if user has enough Carbo Coins
+    if request.user.current_points >= user_rubbish.clean_cost:
+        # Deduct cost
+        request.user.current_points -= user_rubbish.clean_cost
         request.user.save()
 
-        rubbish.cleaned = True
-        rubbish.cleaned_at = now()
-        rubbish.save()
+        # Remove the rubbish instance for the user
+        user_rubbish.cleaned = True
+        user_rubbish.cleaned_at = now()
+        user_rubbish.save()
 
-        request.user.all_time_points -= rubbish_object.sustainability_score
+        # Add sustainability score
+        request.user.all_time_points += rubbish_object.sustainability_score  
         request.user.save()
 
-        messages.success(request, "You cleaned up some rubbish for 5 Carbo Coins!")
+        messages.success(request, f"You cleaned up Rubbish for {user_rubbish.clean_cost} Carbo Coins!")
     else:
-        messages.error(
-            request,
-            "Not enough Carbo Coins to clean up the rubbish, you need 5 Carbo Coins!",
-        )
+        messages.error(request, f"Not enough Carbo Coins to clean Rubbish! You need {user_rubbish.clean_cost} Carbo Coins.")
 
     return redirect("map")

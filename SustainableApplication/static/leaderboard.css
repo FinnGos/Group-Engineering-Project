@@ -1,49 +1,33 @@
-/* Outlined text for headings and paragraphs (keep this for headings only) */
-.outlined-text {
-  color: white;
-  font-weight: bold;
-  text-shadow: 
-      -2px -2px 0 black,
-       2px -2px 0 black,
-      -2px  2px 0 black,
-       2px  2px 0 black;
-}
+@media (max-width: 640px) {
+    .mobile-bg {
+        background-color: transparent !important; /* Remove the green background */
+    }
 
-/* Image Section */
-.top-section {
-  position: relative;
-}
+    .bottom-section {
+        margin-top: -20px; /* Pull the bottom section up */
+        position: relative;
+        z-index: 10;
+    }
 
-.top-section img {
-  width: 100%;
-  height: auto;
-}
+    .mobile-bottom-container {
+        margin-top: -50px !important; /* Adjust to remove gap */
+        padding: 0 !important;
+        position: relative;
+        z-index: 10;
+    }
 
-/* Leaderboard Section Styles */
-.leaderboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
+    .mobile-bottom-image {
+        width: 100vw !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        margin-top: -20px !important; /* Further adjust to remove any potential gaps */
+    }
 
-/* Rank Item Styles */
-.rank-item {
-  background-color: #4a4a4a;
-  padding: 10px;
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
+    .top-section {
+        margin-bottom: -10px !important; /* Reduce any potential spacing */
+    }
 }
-
-.rank-item:hover {
-  transform: scale(1.05);
-}
-
 /* Rank-specific Styles */
 .rank-1 {
   border: 4px solid #ecad0f;
@@ -76,41 +60,6 @@
   color: white;
 }
 
-.name {
-  font-size: 1.2rem;
-  color: white;
-}
-
-.points {
-  font-size: 1rem;
-  color: white;
-}
-
-/* Current Player's Points Section */
-.current-points {
-  background-color: #28a745;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.current-points h3 {
-  font-size: 1.5rem;
-}
-
-.current-points p {
-  font-size: 1.2rem;
-}
-
-/* Buttons Section */
-.buttons-section a, .buttons-section button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.buttons-section a:hover, .buttons-section button:hover {
-  background-color: #0056b3;
-}
+ body {
+    background-color: #004d00; /* Apply the green background to the whole page */
+  }

@@ -7,7 +7,17 @@
     width: 100%;
     overflow: hidden;
 }
-
+/* Mobile styles: reduce text sizes to 35% of the original (65% smaller) */
+@media (max-width: 640px) {
+  .form-section h1.outlined-text {
+      /* Original text-6xl is about 3.75rem, so 35% is ~1.3125rem */
+      font-size: 1.3125rem !important;
+  }
+  .form-section p.outlined-text {
+      /* Original text-3xl is about 1.875rem, so 35% is ~0.65625rem */
+      font-size: 0.65625rem !important;
+  }
+}
 .background-section img {
     width: 100%;
     height: 100%;
@@ -57,4 +67,16 @@
     height: 500px;
     width: 100%;
     border-radius: 8px;
+}
+
+/* Mobile styles: reduce text sizes to 70% of the original */
+@media (max-width: 640px) {
+  .form-section h1.outlined-text {
+      /* If original text-6xl is around 3.75rem, then 70% is ~2.625rem */
+      font-size: 2.625rem !important;
+  }
+  .form-section p.outlined-text {
+      /* If original text-3xl is around 1.875rem, then 70% is ~1.3125rem */
+      font-size: 1.3125rem !important;
+  }
 }
