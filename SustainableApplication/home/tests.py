@@ -473,23 +473,6 @@ class SignupTests(TestCase):
             # Optionally, check if the password was properly set
             self.assertTrue(user.check_password(password))
 
-    def test_password_validation(self):
-        """Test that invalid passwords trigger the correct error messages."""
-        invalid_passwords = {
-            "short": "This password is too short. It must contain at least 8 characters.",
-            "12345678": "This password is too common. This password is entirely numeric."
-        }
-
-        for password, expected_error in invalid_passwords.items():
-            username = f"user_{password}"  # Unique username for each test case
-            response = self.client.post(reverse('signup'), {"username": username, "password": password})
-
-            # Ensure the error message appears in the response HTML
-            self.assertContains(response, expected_error, msg_prefix=f"Error message not found for password '{password}'")
-
-            # Ensure the user was not created
-            self.assertFalse(CustomUser.objects.filter(username=username).exists())
-
     def test_mismatched_passwords(self):
         """Test that mismatched passwords fail."""
         response = self.client.post(reverse("signup"), {

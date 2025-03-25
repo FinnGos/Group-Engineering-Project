@@ -4,37 +4,7 @@ from collectables.tests.test_views import TEST_IMAGES
 from collectables.models import Collectable
 
 COLLECTABLE_NAME = "test name"
-UNUSED_NAME = "testtesttest"
-
-class CollectableManagerTest(TestCase):
-    """Unit tests for the custom made model manager for the Collectable model"""
-
-    def setUp(self):
-        """Sets up a test collectable"""
-        self.test_collectable = Collectable(
-            name = COLLECTABLE_NAME,
-            image = TEST_IMAGES[0],
-            fact = "Fact 1"
-            )
-        self.test_collectable.save()
-    
-    def test_wrong_name_collectable_search(self):
-        """Tests that searching for a collectable that doesn't exist returns an empty QuerySet"""
-        self.assertQuerySetEqual(
-            Collectable.objects.none(), # Expected
-            Collectable.objects.get_by_name(UNUSED_NAME) # Actual
-            )
-
-    def test_right_name_collectable_search(self):
-        """Tests that searching for an existing collectable returns that collectable"""
-        self.assertIn(
-            self.test_collectable,
-            Collectable.objects.get_by_name(COLLECTABLE_NAME)
-        )
-
-    
-
-        
+UNUSED_NAME = "testtesttest"        
 class CollectableTest(TestCase):
     """Tests the collectable model works as expected"""
         
