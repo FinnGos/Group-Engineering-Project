@@ -1,5 +1,60 @@
 {% extends 'base.html' %}
 
+{% block extra_css %}
+<style>
+/* Mobile Adjustments for the Shop Page */
+@media (max-width: 768px) {
+  /* Scale down large headings */
+  h2.text-5xl {
+    font-size: 2rem !important; /* smaller than 5xl */
+  }
+  
+  h3.text-2xl {
+    font-size: 1.5rem !important; /* smaller than 2xl */
+  }
+  
+  /* Reduce font size on links and paragraphs */
+  .text-lg {
+    font-size: 1rem !important;
+  }
+  
+  /* Shrink the Back to Map button */
+  a.text-lg button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* For the list items (each product row) */
+  ul li {
+    padding: 0.5rem !important;
+    flex-direction: column !important; /* Stack elements vertically */
+    gap: 0.5rem;
+  }
+  
+  /* Adjust the Buy button inside the form */
+  .buy-item-form button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Adjust the Message Box for feedback */
+  #message-box {
+    padding: 0.75rem !important;
+    width: 90% !important;
+  }
+  
+  #message-text {
+    font-size: 1rem !important;
+  }
+  
+  /* Reduce overall margins on the container */
+  .text-center.my-10 {
+    margin: 2rem auto !important;
+  }
+}
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="text-center my-10">
   <!-- Large Shop Title -->
@@ -71,5 +126,4 @@
     });
   });
 </script>
-
 {% endblock %}
