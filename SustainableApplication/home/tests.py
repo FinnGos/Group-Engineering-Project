@@ -419,3 +419,87 @@ class ViewUserDataTests(TestCase):
 
         self.assertContains(response, "User asked for personal data stored: matt4")
         self.assertNotContains(response, "john4")
+
+#creating tests to test the sign up page
+class SignupTests(TestCase):
+    def setUp(self):
+        self.signup_url = reverse("signup")
+
+    def test_signup_valid(self):
+        """Test that valid signup creates a user."""
+        data = {
+            "username": "testuser",
+            "email": "test@example.com",
+            "password1": "StrongPass123!",
+            "password2": "StrongPass123!"
+        }
+        response = self.client.post(self.signup_url, data)
+        self.assertEqual(CustomUser.objects.count(), 1)
+        self.assertRedirects(response, reverse("home"))
+
+    def test_missing_fields(self):
+        """Test all combinations of missing fields."""
+        required_fields = ["username", "password1", "password2"]
+
+        for field in required_fields:
+            form_data = {
+                "username": "testuser",
+                "password1": "ValidPass123!",
+                "password2": "ValidPass123!"
+            }
+            form_data.pop(field)  # Remove one required field
+
+            response = self.client.post(reverse("signup"), form_data)
+
+            # Ensure the response contains an error message for missing fields
+            self.assertContains(response, "This field is required.")
+            form = response.context.get("form")
+            self.assertIsNotNone(form, "Form was not found in response context.")
+            self.assertFormError(form, field, "This field is required.")
+
+
+    def test_passwords_that_pass(self):
+        """Test that passwords meeting requirements are accepted."""
+        valid_passwords = ["StrongPass123!", "AnotherGood#Pass1", "Complex@Pass99"]
+        
+        for password in valid_passwords:
+            username = f"user_{password}"  # Ensure unique usernames for each test case
+            user = CustomUser.objects.create_user(username=username, password=password)
+            self.assertIsNotNone(user)  # Check if user creation was successful
+            
+            # Verify that the user was created in the database
+            self.assertEqual(CustomUser.objects.filter(username=username).count(), 1)
+            
+            # Optionally, check if the password was properly set
+            self.assertTrue(user.check_password(password))
+
+    def test_password_validation(self):
+        """Test that invalid passwords trigger the correct error messages."""
+        invalid_passwords = {
+            "short": "This password is too short. It must contain at least 8 characters.",
+            "12345678": "This password is too common. This password is entirely numeric."
+        }
+
+        for password, expected_error in invalid_passwords.items():
+            username = f"user_{password}"  # Unique username for each test case
+            response = self.client.post(reverse('signup'), {"username": username, "password": password})
+
+            # Ensure the error message appears in the response HTML
+            self.assertContains(response, expected_error, msg_prefix=f"Error message not found for password '{password}'")
+
+            # Ensure the user was not created
+            self.assertFalse(CustomUser.objects.filter(username=username).exists())
+
+    def test_mismatched_passwords(self):
+        """Test that mismatched passwords fail."""
+        response = self.client.post(reverse("signup"), {
+            "username": "testuser",
+            "password1": "ValidPass123!",
+            "password2": "DifferentPass456!"
+        })
+
+        # Ensure the response contains a form before checking for errors
+        self.assertContains(response, "The two password fields didn’t match.")
+        form = response.context.get("form")  # Extract the form from context
+        self.assertIsNotNone(form, "Form was not found in response context.")
+        self.assertFormError(form, "password2", "The two password fields didn’t match.")
