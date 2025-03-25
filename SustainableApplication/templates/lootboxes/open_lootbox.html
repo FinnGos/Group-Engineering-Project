@@ -71,6 +71,9 @@
         Open Lootbox - 100 Points
       </button>
     </form>
+    
+    <!-- Error Message (initially hidden) -->
+    <div id="errorMessage" class="text-red-600 mt-4 hidden"></div>
 
     <p
       class="text-center mt-6 bg-blue-800 text-white p-3 rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-110"
@@ -91,12 +94,30 @@
   </div>
 </div>
 
+<!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 <script>
   $(document).ready(function () {
     $("#lootboxForm").submit(function (event) {
       event.preventDefault(); // Prevent normal form submission
+      
+      // Retrieve current points from the text and convert to a number
+      let currentPointsText = $("#user-points").text().replace("Current Points:", "").trim();
+      let currentPoints = parseInt(currentPointsText);
+      
+      // Check if the user has less than 100 points
+      if (currentPoints < 100) {
+        $("#errorMessage")
+          .text("You do not have the required points to open the box.")
+          .removeClass("hidden");
+        return; // Stop further execution
+      } else {
+        // Hide error message if previously shown
+        $("#errorMessage").addClass("hidden");
+      }
+      
+      // Proceed with the AJAX call if points are sufficient
       $.ajax({
         url: $("#lootboxForm").attr("action"),
         type: "POST",
@@ -148,4 +169,3 @@
   });
 </script>
 {% endblock %}
-
